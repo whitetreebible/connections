@@ -7,14 +7,14 @@ names:
   english: Rahab
 
 description: |
-  Rahab was a [[canaanite]] woman in [[jericho]] who hid the [[israelite]] spies sent by [[ref:joshua 2]]. 
+  Rahab was a [[canaanite]] woman in [[jericho]] who hid the [[israelite]] spies sent by [[joshua]]. 
   Because of her actions, she and her family were spared during the conquest of the city. 
-  She is later mentioned in the genealogy of Jesus in [[ref:matthew 1:5]] and praised for her faith in [[ref:hebrews 11:31]].
-  Scholars note that she should not be confused with the [[rahab_monster]] mentioned in [[ref:psalm 89:10]] and [[ref:job 26:12]].
+  She is later mentioned in the genealogy of Jesus in [[ref:Matthew 1:5]] and praised for her faith in [[ref:Hebrews 11:31]].
+  Scholars note that she should not be confused with the [[rahab_monster]] mentioned in [[ref:Psalm 89:10]] and [[ref:Job 26:12]].
 
 notes:
   - "Rahab’s story bridges the Old and New Testaments."
-  - "Some extra-bibiblical sources, like Josephus, recount her story in a similar way to Joshua."
+  - "Some extra-biblical sources, like Josephus, recount her story in a similar way to Joshua."
   - "Her inclusion among women in Jesus’ genealogy is notable and discussed in multiple commentaries."
   - "Scholarly debate exists on the historical versus symbolic elements of her story."
 
@@ -58,7 +58,7 @@ edges:
     refs:
       bib:
         - Job 26:12
-        - Psalm 89:10
+        - Psalms 89:10
   - target: jesus
     type: ancestor-of
     strength: strong

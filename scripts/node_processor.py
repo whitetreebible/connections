@@ -10,15 +10,41 @@ class NodeProcessor:
         self.data_dir = data_dir
         self.docs_dir = docs_dir
 
+
+
     def load_yaml(self, file_path):
         with open(file_path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
+
+
 
     def replace_links(self, text):
         """Convert [[node]] and [[ref:...]] to Markdown placeholders."""
         text = re.sub(r"\[\[ref:([^\]]+)\]\]", r"[\1](#)", text)
         text = re.sub(r"\[\[([^\]:]+)\]\]", r"[\1](#)", text)
         return text
+
+
+
+    def format_reference_bib(self, refs):
+        """Create a link to BibleHub for each reference in a comma separated list linking in the format: https://biblehub.com/context/genesis/1-14.htm"""
+        links = []
+        for ref in refs.get("bib", []):
+            book, chapterverse = ref.split(" ")
+            book = book.lower().replace(" ", "_")
+            if book == "psalm":
+                book = "psalms"
+            chapter, verse = chapterverse.split(":")
+            # if multiple verses, remove verses, link to chapter
+            if '-' in verse:
+                verse = ''
+            else:
+                verse = f"-{verse}"
+            # create a _blank anchor tag
+            links.append(f"<a href='https://biblehub.com/context/{book}/{chapter}{verse}.htm' target='_blank'>{ref}</a>")
+        return ", ".join(links)
+
+
 
     def format_edges(self, edges):
         lines = []
@@ -27,23 +53,38 @@ class NodeProcessor:
             etype = edge.get("type")
             strength = edge.get("strength", "")
             refs = edge.get("refs", {})
-            ref_str = ", ".join(refs.get("bib", []))
-            lines.append(f"- **{etype}** → {target} (strength: {strength}; refs: {ref_str})")
+            ref_str = self.format_reference_bib(refs)
+            lines.append(f"- **{etype}** → {target} ({strength}; refs: {ref_str})")
         return "\n".join(lines)
+
+
 
     def format_refs(self, refs):
         lines = []
         for key, ref_list in refs.items():
+            if key == 'bib':
+                key = 'Biblical'
+            if key == 'extra_bib':
+                key = 'Extra-Biblical'
             lines.append(f"### {key.capitalize()} references")
             for ref in ref_list:
+                if key == 'bib':
+                    ref = self.format_reference_bib(ref)
                 lines.append(f"- {ref}")
         return "\n".join(lines)
+
+
 
     def generate_markdown(self, node_data):
         md_lines = []
         md_lines.append(f"# {node_data['names'].get('english', node_data['id'])}")
-        md_lines.append(f"**Type:** {node_data.get('type','')}\n")
-        md_lines.append("## Description")
+        md_lines.append(f"**{node_data.get('type','')}**")
+        
+        if node_data.get("flags"):
+            md_lines.append("(")
+            md_lines.append(", ".join(node_data["flags"]))
+            md_lines.append(")")
+        md_lines.append("\n")
         md_lines.append(self.replace_links(node_data.get("description","")) + "\n")
 
         if node_data.get("notes"):
@@ -52,14 +93,8 @@ class NodeProcessor:
                 md_lines.append(f"- {note}")
             md_lines.append("")
 
-        if node_data.get("flags"):
-            md_lines.append("## Flags")
-            for flag in node_data["flags"]:
-                md_lines.append(f"- {flag}")
-            md_lines.append("")
-
         if node_data.get("edges"):
-            md_lines.append("## Edges")
+            md_lines.append("## Associations")
             md_lines.append(self.format_edges(node_data["edges"]))
             md_lines.append("")
 
@@ -73,9 +108,13 @@ class NodeProcessor:
 
         return "\n".join(md_lines)
 
+
+
     def ensure_dir(self, path):
         if not os.path.exists(path):
             os.makedirs(path)
+
+
 
     def process_nodes(self):
         """Walk through all YAML files and generate Markdown."""
