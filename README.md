@@ -41,3 +41,8 @@ source .venv/bin/activate
 mkdocs serve
 ```
 
+4. **Deploy the web**
+```sh
+mkdocs gh-deploy
+```
+This will build the static site and push it to the gh-pages branch where Github Pages is serving.
