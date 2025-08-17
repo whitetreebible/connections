@@ -1,0 +1,5 @@
+site_name: Bible Atlas Test
+site_url: https://whitetreelexicon.github.io/bible-atlas/
+use_directory_urls: true
+theme:
+  name: mkdocs
