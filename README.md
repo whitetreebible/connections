@@ -22,27 +22,4 @@ bible-atlas/
 ```
 
 ## Getting Started
-
-1. **Clone the repo**
-```sh
-git clone https://github.com/whitetreelexicon/bible-atlas.git
-cd bible-atlas
-```
-
-2. **Install dependencies**
-If you don't have it, [install UV first](https://docs.astral.sh/uv/getting-started/installation/)
-```sh
-uv install
-source .venv/bin/activate
-```
-
-3. **Serve the web**
-```sh
-mkdocs serve
-```
-
-4. **Deploy the web**
-```sh
-mkdocs gh-deploy
-```
-This will build the static site and push it to the gh-pages branch where Github Pages is serving.
+See [Contribution docs](docs/devs/contributing.md)

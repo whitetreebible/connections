@@ -1,0 +1,92 @@
+id: rahab_jericho
+type: person
+
+names:
+  hebrew: רָחָב
+  greek: Ῥαὰβ
+  english: Rahab
+
+description: |
+  Rahab was a [[canaanite]] woman in [[jericho]] who hid the [[israelite]] spies sent by [[ref:joshua 2]]. 
+  Because of her actions, she and her family were spared during the conquest of the city. 
+  She is later mentioned in the genealogy of Jesus in [[ref:matthew 1:5]] and praised for her faith in [[ref:hebrews 11:31]].
+  Scholars note that she should not be confused with the [[rahab_monster]] mentioned in [[ref:psalm 89:10]] and [[ref:job 26:12]].
+
+notes:
+  - "Rahab’s story bridges the Old and New Testaments."
+  - "Some extra-bibiblical sources, like Josephus, recount her story in a similar way to Joshua."
+  - "Her inclusion among women in Jesus’ genealogy is notable and discussed in multiple commentaries."
+  - "Scholarly debate exists on the historical versus symbolic elements of her story."
+
+flags:
+  - tentative
+  - disputed
+
+refs:
+  bib:
+    - Joshua 2:1-21
+    - Matthew 1:5
+    - Hebrews 11:31
+    - James 2:25
+  extra_bib:
+    - Josephus, Flavius. Antiquities of the Jews, Book 5, Section 1.
+  academic:
+    - Beale, G. K. Commentary on the New Testament Use of the Old Testament, pp. 208-212.
+
+edges:
+  - target: jericho
+    type: resident-of
+    strength: strong
+    refs:
+      bib:
+        - Joshua 2:1-21
+  - target: canaanite
+    type: member-of
+    strength: strong
+    refs:
+      bib:
+        - Joshua 2:1-21
+  - target: israel
+    type: assisted
+    strength: strong
+    refs:
+      bib:
+        - Joshua 2:1-21
+  - target: rahab_monster
+    type: name-shared-with
+    strength: weak
+    refs:
+      bib:
+        - Job 26:12
+        - Psalm 89:10
+  - target: jesus
+    type: ancestor-of
+    strength: strong
+    refs:
+      bib:
+        - Matthew 1:5
+  - target: faith_theme
+    type: example-of
+    strength: strong
+    refs:
+      bib:
+        - Hebrews 11:31
+        - James 2:25
+  - target: israelite_spies
+    type: hid
+    strength: strong
+    refs:
+      bib:
+        - Joshua 2:1-21
+  - target: salmon
+    type: married-to
+    strength: strong
+    refs:
+      bib:
+        - Matthew 1:5
+  - target: boaz
+    type: parent-of
+    strength: strong
+    refs:
+      bib:
+        - Matthew 1:5
