@@ -29,7 +29,10 @@ class NodeProcessor:
     def format_reference_bib(self, refs):
         """Create a link to BibleHub for each reference in a comma separated list linking in the format: https://biblehub.com/context/genesis/1-14.htm"""
         links = []
-        for ref in refs.get("bib", []):
+        # if refs isn't an array make it one
+        if not isinstance(refs, list):
+            refs = [refs]
+        for ref in refs:
             book, chapterverse = ref.split(" ")
             book = book.lower().replace(" ", "_")
             if book == "psalm":
@@ -53,7 +56,7 @@ class NodeProcessor:
             etype = edge.get("type")
             strength = edge.get("strength", "")
             refs = edge.get("refs", {})
-            ref_str = self.format_reference_bib(refs)
+            ref_str = self.format_reference_bib(refs.get("bib", [])) if refs.get("bib") else "None"
             lines.append(f"- **{etype}** → {target} ({strength}; refs: {ref_str})")
         return "\n".join(lines)
 
@@ -68,7 +71,7 @@ class NodeProcessor:
                 key = 'Extra-Biblical'
             lines.append(f"### {key.capitalize()} references")
             for ref in ref_list:
-                if key == 'bib':
+                if key == 'Biblical':
                     ref = self.format_reference_bib(ref)
                 lines.append(f"- {ref}")
         return "\n".join(lines)
@@ -85,11 +88,13 @@ class NodeProcessor:
             md_lines.append(", ".join(node_data["flags"]))
             md_lines.append(")")
         md_lines.append("\n")
+
         md_lines.append(self.replace_links(node_data.get("description","")) + "\n")
 
         if node_data.get("notes"):
             md_lines.append("## Notes")
             for note in node_data["notes"]:
+                note = self.replace_links(note)
                 md_lines.append(f"- {note}")
             md_lines.append("")
 

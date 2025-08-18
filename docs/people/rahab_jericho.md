@@ -13,8 +13,8 @@ Scholars note that she should not be confused with the [rahab_monster](#) mentio
 
 ## Notes
 - Rahab’s story bridges the Old and New Testaments.
-- Some extra-biblical sources, like Josephus, recount her story in a similar way to Joshua.
-- Her inclusion among women in Jesus’ genealogy is notable and discussed in multiple commentaries.
+- Some extra-biblical sources, like Josephus, recount her story in a similar way to [joshua](#).
+- Her inclusion among women in [jesus](#)’ genealogy is notable and discussed in multiple commentaries.
 - Scholarly debate exists on the historical versus symbolic elements of her story.
 
 ## Associations
@@ -30,10 +30,10 @@ Scholars note that she should not be confused with the [rahab_monster](#) mentio
 
 ## References
 ### Biblical references
-- Joshua 2:1-21
-- Matthew 1:5
-- Hebrews 11:31
-- James 2:25
+- <a href='https://biblehub.com/context/joshua/2.htm' target='_blank'>Joshua 2:1-21</a>
+- <a href='https://biblehub.com/context/matthew/1-5.htm' target='_blank'>Matthew 1:5</a>
+- <a href='https://biblehub.com/context/hebrews/11-31.htm' target='_blank'>Hebrews 11:31</a>
+- <a href='https://biblehub.com/context/james/2-25.htm' target='_blank'>James 2:25</a>
 ### Extra-biblical references
 - Josephus, Flavius. Antiquities of the Jews, Book 5, Section 1.
 ### Academic references
