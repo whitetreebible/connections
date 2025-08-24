@@ -29,7 +29,7 @@ mkdocs gh-deploy
 - This will build the static site and push it to the gh-pages branch where Github Pages is serving.
 
 5. **Submit a Pull Request:**
-- Make sure all YAML is validated (see scripts/validate_yaml.py).
+- Make sure all YAML is validated (see scripts/validate_yaml.py).[^validate]
 - PR should include new nodes or updates; generated Markdown will be reviewed automatically.
 
 
@@ -52,4 +52,4 @@ Markdown --> MkDocs
 
 ```
 
-
+[^validate]: Doesn't exist yet, but someday it will.
