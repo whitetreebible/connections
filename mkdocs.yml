@@ -1,5 +1,5 @@
 site_name: Bible Atlas Test
-site_url: https://whitetreelexicon.github.io/bible-atlas/
+site_url: https://treebible.github.io/bible-atlas/
 use_directory_urls: true
 theme:
   name: mkdocs
@@ -16,11 +16,7 @@ plugins:
           default: true
           name: English
           build: true
-          site_name: "MkDocs static i18n plugin documentation (en)"
-        - locale: fr
-          name: Français
-          build: true
-          site_name: "Documentation du plugin MkDocs static i18n (fr)"
+          site_name: "TreeBible - Bible Atlas"
 markdown_extensions:
   - footnotes
   - attr_list

@@ -1,0 +1,51 @@
+id: boaz
+type: person
+
+name:
+  hbo: בֹּעַז
+  grc: Βόες
+  en: Boaz
+  id: Boas
+
+name_disambiguous:
+  en: Boaz (son of Salmon and Rahab)
+  hbo: בֹּעַז (בן סַלְמוֹן ורָחָב)
+  grc: Βόες (υἱὸς τοῦ Σαλμών καὶ τῆς Ῥαάβ)
+
+description:
+  en: |
+    Boaz was a wealthy landowner in [[place/bethlehem]] and a prominent figure in the Book of Ruth. He is the son of Salmon and Rahab, and becomes the husband of [[person/ruth]]. Boaz is the great-grandfather of King [[person/david]] and is mentioned in the genealogy of [[person/jesus]] in [[bible:Matthew 1:5-6]].
+
+edges:
+  - target: person/salmon
+    type: child-of
+    weight: 1.0
+    refs:
+      - [[bible:Matthew 1:5]]
+  - target: person/rahab
+    type: child-of
+    weight: 1.0
+    refs:
+      - [[bible:Matthew 1:5]]
+  - target: person/ruth
+    type: married-to
+    weight: 1.0
+    refs:
+      - [[bible:Ruth 4:13]]
+  - target: person/obed
+    type: parent-of
+    weight: 1.0
+    refs:
+      - [[bible:Ruth 4:21]]
+  - target: place/bethlehem
+    type: resident-of
+    weight: 1.0
+    refs:
+      - [[bible:Ruth 2:1]]
+
+footnotes:
+  genealogy_matthew:
+    type: biblical
+    text:
+      en: "Boaz is listed as the son of Salmon and Rahab, and the husband of Ruth, in the genealogy of Jesus (Matthew 1:5-6)."
+      

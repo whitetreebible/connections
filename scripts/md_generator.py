@@ -144,7 +144,7 @@ class MdGenerator:
             os.makedirs(path)
 
     def generate_all(self):
-        supported_langs = ['en', 'id', 'es']
+        supported_langs = ['en']
         for node in self.nodes:
             for lang in supported_langs:
                 # Set up language-aware title and description for formatters

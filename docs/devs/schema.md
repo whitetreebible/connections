@@ -19,7 +19,7 @@ footnotes:                    # List of footnotes and scholarly references
 
 ## id
 Type: string
-Description: Unique identifier for the page. Should be lowercase and use underscores to separate words. Example: rahab_jericho.
+Description: Unique identifier for the page. Should be lowercase and use underscores to separate words. Example: rahab.
 
 ## type
 Type: string
@@ -99,7 +99,7 @@ All edges should point to other node IDs, not plain text.
 Include references for edges to capture scholarly context or scriptural support.
 weight allows filtering for strong vs weak connections and visualization purposes.
 ID Disambiguation:
-Keep IDs unique and descriptive. Example: rahab_jericho vs rahab_monster.
+Keep IDs unique and descriptive. Example: person/rahab vs creature/rahab.
 Extensibility:
 Future expansion may include additional languages, edge types, or node types.
 Footnotes and edges allow you to centralize translation and reference management.
