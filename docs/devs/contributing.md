@@ -31,3 +31,25 @@ mkdocs gh-deploy
 5. **Submit a Pull Request:**
 - Make sure all YAML is validated (see scripts/validate_yaml.py).
 - PR should include new nodes or updates; generated Markdown will be reviewed automatically.
+
+
+## Workflow
+
+```mermaid
+graph LR;
+
+Bible --> Yaml
+Resources --> Yaml
+Books --> Yaml
+
+Yaml -->|Ingestion| SQLite
+Yaml --> Generators
+SQLite --> Generators
+
+Generators --> Markdown
+
+Markdown --> MkDocs
+
+```
+
+

@@ -2,91 +2,99 @@ id: rahab_jericho
 type: person
 
 names:
-  hebrew: רָחָב
-  greek: Ῥαὰβ
-  english: Rahab
+  hbo: רָחָב
+  grc: Ῥαὰβ
+  en: Rahab
+  id: Rahab
 
 description: |
-  Rahab was a [[canaanite]] woman in [[jericho]] who hid the [[israelite]] spies sent by [[joshua]]. 
+  Rahab was a [[canaanite]] woman in [[jericho]] who hid the [[israelite]] spies sent by [[bible:Joshua 2]]. 
   Because of her actions, she and her family were spared during the conquest of the city. 
-  She is later mentioned in the genealogy of Jesus in [[ref:Matthew 1:5]] and praised for her faith in [[ref:Hebrews 11:31]].
-  Scholars note that she should not be confused with the [[rahab_monster]] mentioned in [[ref:Psalm 89:10]] and [[ref:Job 26:12]].
-
-notes:
-  - "Rahab’s story bridges the Old and New Testaments."
-  - "Some extra-biblical sources, like Josephus, recount her story in a similar way to [[joshua]]."
-  - "Her inclusion among women in [[jesus]]’ genealogy is notable and discussed in multiple commentaries."
-  - "Scholarly debate exists on the historical versus symbolic elements of her story."
-
-flags:
-  - tentative
-  - disputed
-
-refs:
-  bib:
-    - Joshua 2:1-21
-    - Matthew 1:5
-    - Hebrews 11:31
-    - James 2:25
-  extra_bib:
-    - Josephus, Flavius. Antiquities of the Jews, Book 5, Section 1.
-  academic:
-    - Beale, G. K. Commentary on the New Testament Use of the Old Testament, pp. 208-212.
+  She is later mentioned in the genealogy of Jesus in [[bible:Matthew 1:5]] and praised for her faith in [[bible:Hebrews 11:31]]. 
+  Scholars note that she should not be confused with the [[rahab_monster]] mentioned in [[bible:Psalm 89:10]] and [[bible:Job 26:12]].
+  Rahab’s story bridges the Old and New Testaments. Some extra-biblical sources, like Josephus, recount her story in a similar way to [[bible:Joshua 2]].
+  Her inclusion among women in [[bible:Jesus]]’ genealogy is notable and discussed in multiple commentaries. Scholarly debate exists on the historical versus symbolic elements of her story.
 
 edges:
   - target: jericho
     type: resident-of
-    strength: strong
+    weight: 0.9
     refs:
-      bib:
-        - Joshua 2:1-21
+      - [[bible:Joshua 2]]
+      - [^hamilton_handbook]
+
   - target: canaanite
     type: member-of
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Joshua 2:1-21
+      - [[bible:Joshua 2]]
+
   - target: israel
     type: assisted
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Joshua 2:1-21
+      - [[bible:Joshua 2]]
+
   - target: rahab_monster
     type: name-shared-with
-    strength: weak
+    weight: 0.2
     refs:
-      bib:
-        - Job 26:12
-        - Psalms 89:10
+      - [[bible:Job 26:12]]
+      - [[bible:Psalm 89:10]]
+
   - target: jesus
     type: ancestor-of
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Matthew 1:5
+      - [[bible:Matthew 1:5]]
+      - [^beale_commentary_ch]
+
   - target: faith_theme
     type: example-of
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Hebrews 11:31
-        - James 2:25
+      - [[bible:Hebrews 11:31]]
+      - [[bible:James 2:25]]
+
   - target: israelite_spies
     type: hid
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Joshua 2:1-21
+      - [[bible:Joshua 2]]
+
   - target: salmon
     type: married-to
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Matthew 1:5
+      - [[bible:Matthew 1:5]]
+
   - target: boaz
     type: parent-of
-    strength: strong
+    weight: 1.0
     refs:
-      bib:
-        - Matthew 1:5
+      - [[bible:Matthew 1:5]]
+
+footnotes:
+  hamilton_handbook:
+    type: academic
+    text:
+      en: "'To retain the traditional understanding of zonah as “prostitute,” ...' (Victor P. Hamilton, *Handbook on the Historical Books*, Grand Rapids, MI: Baker Academic, 2001, 22.)"
+      id: "'Untuk mempertahankan pemahaman tradisional zonah sebagai “pelacur,” ...' (Victor P. Hamilton, *Buku Panduan Kitab Sejarah*, Grand Rapids, MI: Baker Academic, 2001, 22.)"
+
+  josephus_note_1:
+    type: extra-biblical
+    text:
+      en: "'Josephus recounts Rahab hiding the spies and her family's preservation during Jericho's conquest.' (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)"
+      id: "'Josephus menceritakan Rahab menyembunyikan mata-mata dan keselamatan keluarganya selama penaklukan Yerikho.' (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)"
+
+  beale_commentary_ch:
+    type: academic
+    text:
+      en: "'Rahab’s inclusion among women in Jesus’ genealogy is significant and discussed in multiple commentaries.' (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)"
+      id: "'Keterlibatan Rahab di antara perempuan dalam silsilah Yesus signifikan dan dibahas dalam berbagai komentar.' (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)"
+
+  scholarship_debate:
+    type: academic
+    text:
+      en: "'Scholarly debate exists on the historical versus symbolic elements of her story.'"
+      id: "'Terdapat perdebatan akademis mengenai unsur sejarah versus simbolik dalam kisahnya.'"

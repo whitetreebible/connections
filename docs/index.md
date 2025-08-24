@@ -40,9 +40,11 @@ We welcome contributions! To add new pages or update connections:
 2. Run the **build script** to generate updated Markdown pages.  
 3. Submit a pull request to the repository for review.
 
-For more details, see out [contribution guidelines](devs/contributing) and [schema](devs/schema).
+For more details, see out [contribution guidelines](devs/contributing.md) and [schema](devs/schema.md).
 
 ---
 
 ## Project Structure
 
+> [TODO]()
+> Need to fill out the project structure a bit...

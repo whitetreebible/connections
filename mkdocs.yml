@@ -3,3 +3,6 @@ site_url: https://whitetreelexicon.github.io/bible-atlas/
 use_directory_urls: true
 theme:
   name: mkdocs
+plugins:
+  - search
+  - mermaid2
