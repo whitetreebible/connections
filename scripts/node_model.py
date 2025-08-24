@@ -11,8 +11,13 @@ class NodeModel:
     def __init__(self, data: Dict[str, Any]):
         self.id: str = data.get("id")
         self.type: str = data.get("type")
-        self.names: Dict[str, str] = data.get("names", {})
-        self.description: str = data.get("description", "")
+        # Use 'name' (singular, dict of lang:str)
+        self.name: Dict[str, str] = data.get("name", {})
+        # Use 'name_disambiguous' (dict of lang:str)
+        self.name_disambiguous: Dict[str, str] = data.get("name_disambiguous", {})
+        # Description can be dict (multilingual) or str
+        desc = data.get("description", "")
+        self.description: Any = desc if isinstance(desc, dict) else {"en": desc}
         self.footnotes: Dict[str, Any] = data.get("footnotes", {})
         self.edges: List[EdgeModel] = [EdgeModel(e) for e in data.get("edges", [])]
 

@@ -11,7 +11,7 @@ import_yaml:
 	# uv run scripts/import_yaml.py
 
 generate:
-	uv run scripts/markdown_generator.py
+	uv run scripts/md_generator.py
 
 launch:
 	uv sync
