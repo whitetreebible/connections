@@ -1,13 +1,61 @@
 import os
 import re
+import logging
 from node_model import NodeModelCollection
 from settings import SUPPORTED_LANGS
 from sqlite_atlas_db import SqliteAtlasDB
 from associations_lang import ASSOCIATIONS_LANG
 
+log = logging.getLogger(__name__)
+logging.basicConfig(level=logging.DEBUG)
+
+
 
 # Markdown formatters as a class for easy inheritance/extension
 class MdFormatters:
+
+    def format_graph_all_connections(self, node, md, lang):
+        """
+        Output a mermaid graph of all connections for this node from the db.
+        """
+        db = SqliteAtlasDB()
+        node_id = getattr(node, 'id', None)
+        node_type = getattr(node, 'type', None)
+        if not node_id or not node_type:
+            return md
+
+        node_id = f"{node_type}/{node_id}"
+        # Get all edges from or to this node (1 step, both directions)
+        edges = db.traverse_edges(node_id, direction="both", types=None, max_depth=None)
+        log.info(f"Node {node_id} ({node_type}) has {len(edges)} edges for graph.")
+        
+        # Collect all node ids/types involved
+        node_ids = set()
+        
+        for source, target, etype, weight in edges:
+            node_ids.add(source)
+            node_ids.add(target)
+        # Get names for all nodes in this graph
+        node_labels = {}
+        for nodes in node_ids:
+            nid, ntype = nodes.split('/')
+            name = db.select_name(node_id=nid, node_type=ntype, lang=lang)
+            node_labels[(nid, ntype)] = name if name else nid
+        # Build mermaid graph
+        lines = [] if not md else [md]
+        lines.append("## All connections")
+        lines.append('```mermaid')
+        lines.append('graph LR;')
+        for source, target, etype, weight in edges:
+            label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype)
+            s = node_labels.get((source, node_type), source)
+            t = node_labels.get((target, node_type), target)
+            lines.append(f'    {s} -->|{label}| {t}')
+        lines.append('```')
+        db.close()
+        return "\n".join(lines)
+    
+
     def format_header(self, node, md, lang):
         lines = [] if not md else [md]
         # Main header: name
@@ -89,7 +137,7 @@ class MdFormatters:
             # Warn for unused footnotes
             unused = set(node.footnotes.keys()) - set(footnote_order)
             for key in unused:
-                print(f"WARNING: Footnote '{key}' defined but not referenced in node '{node.id}'")
+                log.warning(f"Footnote '{key}' defined but not referenced in node '{node.id}'")
             if footnote_order:
                 lines.append("")
         return "\n".join(lines)
@@ -151,9 +199,10 @@ class MdGenerator:
         self.formatters = formatters or [
             self.formatter_obj.format_header,
             self.formatter_obj.format_description,
+            self.formatter_obj.format_links,
             self.formatter_obj.format_associations,
+            self.formatter_obj.format_graph_all_connections,
             self.formatter_obj.format_footnotes,
-            self.formatter_obj.format_links
         ]
         self.nodes = NodeModelCollection(self.data_dir).get_nodes()
 
@@ -186,7 +235,7 @@ class MdGenerator:
                 content = self.run_formatters(node_lang, lang)
                 with open(md_file, "w", encoding="utf-8") as f:
                     f.write(content)
-                print(f"Generated {md_file}")
+                log.info(f"Generated {md_file}")
 
     def run_formatters(self, node, lang):
         md = ""

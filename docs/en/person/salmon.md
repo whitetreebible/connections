@@ -7,3 +7,24 @@ Little else is known about Salmon, but his marriage to Rahab is significant in t
 ## Associations
 - **Married to** [Rahab](../../person/rahab/)
 - **Parent of** [Boaz](../../person/boaz/)
+
+## All connections
+```mermaid
+graph LR;
+    person/rahab -->|example of| theme/faith
+    person/boaz -->|child of| person/rahab
+    person/boaz -->|married to| person/ruth
+    person/boaz -->|parent of| person/obed
+    person/boaz -->|resident of| place/bethlehem
+    person/rahab -->|ancestor of| person/jesus
+    person/rahab -->|name shared with| creature/rahab
+    person/rahab -->|parent of| person/boaz
+    person/rahab -->|resident of| place/jericho
+    person/boaz -->|child of| person/salmon
+    person/salmon -->|married to| person/rahab
+    person/rahab -->|married to| person/salmon
+    person/salmon -->|parent of| person/boaz
+    person/rahab -->|hid| group/israelite_spies
+    person/rahab -->|member of| tribe/canaanite
+    person/rahab -->|assisted| tribe/israel
+```
