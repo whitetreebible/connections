@@ -8,67 +8,67 @@ names:
   id: Rahab
 
 description: |
-  Rahab was a [[canaanite]] woman in [[jericho]] who hid the [[israelite]] spies sent by [[bible:Joshua 2]]. 
-  Because of her actions, she and her family were spared during the conquest of the city. 
+  Rahab was a [[tribe/canaan]] woman in [[place/jericho]] who hid the [[tribe/israel]] spies sent by [[bible:Joshua 2]]. 
+  Because of her actions, she and her family were spared during the conquest of the city.[^test_footnote]
   She is later mentioned in the genealogy of Jesus in [[bible:Matthew 1:5]] and praised for her faith in [[bible:Hebrews 11:31]]. 
-  Scholars note that she should not be confused with the [[rahab_monster]] mentioned in [[bible:Psalm 89:10]] and [[bible:Job 26:12]].
-  Rahab’s story bridges the Old and New Testaments. Some extra-biblical sources, like Josephus[^josephus_note_1], recount her story in a similar way to [[bible:Joshua 2]].
-  Her inclusion among women in [[bible:Jesus]]’ genealogy is notable and discussed in multiple commentaries. Scholarly debate exists on the historical versus symbolic elements of her story.
+  Scholars note that she should not be confused with the [[creature/rahab_monster]] mentioned in [[bible:Psalm 89:10]] and [[bible:Job 26:12]].
+  Rahab's story bridges the Old and New Testaments. Some extra-biblical sources, like Josephus[^josephus_note_1], recount her story in a similar way to [[bible:Joshua 2]].
+  Her inclusion among women in [[bible:Jesus]]' genealogy is notable and discussed in multiple commentaries. Scholarly debate exists on the historical versus symbolic elements of her story.
 
 edges:
-  - target: jericho
+  - target: place/jericho
     type: resident-of
     weight: 0.9
     refs:
       - [[bible:Joshua 2]]
       - [^hamilton_handbook]
 
-  - target: canaanite
+  - target: tribe/canaanite
     type: member-of
     weight: 1.0
     refs:
       - [[bible:Joshua 2]]
 
-  - target: israel
+  - target: tribe/israel
     type: assisted
     weight: 1.0
     refs:
       - [[bible:Joshua 2]]
 
-  - target: rahab_monster
+  - target: creature/rahab_monster
     type: name-shared-with
     weight: 0.2
     refs:
       - [[bible:Job 26:12]]
       - [[bible:Psalm 89:10]]
 
-  - target: jesus
+  - target: person/jesus
     type: ancestor-of
     weight: 1.0
     refs:
       - [[bible:Matthew 1:5]]
       - [^beale_commentary_ch]
 
-  - target: faith_theme
+  - target: theme/faith
     type: example-of
     weight: 1.0
     refs:
       - [[bible:Hebrews 11:31]]
       - [[bible:James 2:25]]
 
-  - target: israelite_spies
+  - target: group/israelite_spies
     type: hid
     weight: 1.0
     refs:
       - [[bible:Joshua 2]]
 
-  - target: salmon
+  - target: person/salmon
     type: married-to
     weight: 1.0
     refs:
       - [[bible:Matthew 1:5]]
 
-  - target: boaz
+  - target: person/boaz
     type: parent-of
     weight: 1.0
     refs:
@@ -90,7 +90,7 @@ footnotes:
   beale_commentary_ch:
     type: academic
     text:
-      en: "'Rahab’s inclusion among women in Jesus’ genealogy is significant and discussed in multiple commentaries.' (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)"
+      en: "'Rahab's inclusion among women in Jesus' genealogy is significant and discussed in multiple commentaries.' (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)"
       id: "'Keterlibatan Rahab di antara perempuan dalam silsilah Yesus signifikan dan dibahas dalam berbagai komentar.' (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)"
 
   scholarship_debate:
@@ -98,3 +98,9 @@ footnotes:
     text:
       en: "'Scholarly debate exists on the historical versus symbolic elements of her story.'"
       id: "'Terdapat perdebatan akademis mengenai unsur sejarah versus simbolik dalam kisahnya.'"
+
+  test_footnote:
+    type: academic
+    text:
+      en: "This is a test footnote for demonstration purposes, it has a [[person/jesus]] link and a [[bible:Joshua 2]] link."
+      id: "Ini adalah catatan kaki percobaan untuk tujuan demonstrasi."
