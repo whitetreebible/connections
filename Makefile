@@ -8,10 +8,10 @@ import_external:
 # Import from YAML files (customize this command)
 import_yaml:
 	@echo "Importing from YAML files..."
-	# uv run scripts/import_yaml.py
+	uv run bible-atlas/import_yaml.py
 
 generate:
-	uv run scripts/md_generator.py
+	uv run bible-atlas/md_generator.py
 
 launch:
 	uv sync

@@ -1,6 +1,8 @@
 import os
 import re
-from node_model import NodeModel, NodeModelCollection
+from node_model import NodeModelCollection
+from settings import SUPPORTED_LANGS
+from sqlite_atlas_db import SqliteAtlasDB
 
 
 # Markdown formatters as a class for easy inheritance/extension
@@ -91,7 +93,10 @@ class MdFormatters:
     def format_links(self, node, md, lang=None):
         """
         Replace [[bible:Book Chapter:Verse]] with BibleHub links, and [[id]] with /type/id links.
+        For internal links, use the localized name from the sqlite db if available.
         """
+        db = SqliteAtlasDB()
+
         def biblehub_link(match):
             ref = match.group(1)
             try:
@@ -116,12 +121,21 @@ class MdFormatters:
 
         def id_link(match):
             page_id = match.group(1)
+            # Try to infer type from context (node.type if available)
+            node_type, node_id = page_id.split('/')
             # Use relative links for internal pages (add trailing slash for MkDocs)
-            url = f"{page_id}/"
-            return f"[{page_id}]({url})"
+            url = f"../../{page_id}/"
+            # Try to get localized name from db
+            link_text = page_id
+            if node_type and node_id:
+                db_name = db.select_name(node_type=node_type, node_id=node_id, lang=lang or "en")
+                if db_name:
+                    link_text = db_name
+            return f"[{link_text}]({url})"
 
         md = re.sub(r"\[\[bible:([^\]]+)\]\]", biblehub_link, md)
         md = re.sub(r"\[\[([^\]:]+)\]\]", id_link, md)
+        db.close()
         return md
 
 class MdGenerator:
@@ -144,7 +158,7 @@ class MdGenerator:
             os.makedirs(path)
 
     def generate_all(self):
-        supported_langs = ['en']
+        supported_langs = SUPPORTED_LANGS
         for node in self.nodes:
             for lang in supported_langs:
                 # Set up language-aware title and description for formatters

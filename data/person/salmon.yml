@@ -17,7 +17,7 @@ description:
     Little else is known about Salmon, but his marriage to Rahab is significant in the biblical narrative, linking the story of the conquest of Jericho to the lineage of King David and Jesus.
 
 edges:
-  - target: person/rahab_jericho
+  - target: person/rahab
     type: married-to
     weight: 1.0
     refs:
