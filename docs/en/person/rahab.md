@@ -9,15 +9,15 @@ Her inclusion among women in Jesus' genealogy is notable and discussed in multip
 
 
 ## Associations
-- **resident-of** → [place/jericho](../../place/jericho/)
-- **member-of** → [tribe/canaanite](../../tribe/canaanite/)
-- **assisted** → [tribe/israel](../../tribe/israel/)
-- **name-shared-with** → [creature/rahab](../../creature/rahab/)
-- **ancestor-of** → [person/jesus](../../person/jesus/)
-- **example-of** → [theme/faith](../../theme/faith/)
-- **hid** → [group/israelite_spies](../../group/israelite_spies/)
-- **married-to** → [Salmon](../../person/salmon/)
-- **parent-of** → [Boaz](../../person/boaz/)
+- **Resident of** [place/jericho](../../place/jericho/)
+- **Member of** [tribe/canaanite](../../tribe/canaanite/)
+- **Assisted** [tribe/israel](../../tribe/israel/)
+- **Name shared with** [creature/rahab](../../creature/rahab/)
+- **Ancestor of** [person/jesus](../../person/jesus/)
+- **Example of** [theme/faith](../../theme/faith/)
+- **Hid** [group/israelite_spies](../../group/israelite_spies/)
+- **Married to** [Salmon](../../person/salmon/)
+- **Parent of** [Boaz](../../person/boaz/)
 
 [^test_footnote]: This is a test footnote for demonstration purposes, it has a [person/jesus](../../person/jesus/) link and a [Joshua 2](https://biblehub.com/context/joshua/2.htm){:target="_blank"} link.
 [^josephus_note_1]: 'Josephus recounts Rahab hiding the spies and her family's preservation during Jericho's conquest.' (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)

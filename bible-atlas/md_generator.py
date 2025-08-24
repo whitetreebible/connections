@@ -3,6 +3,7 @@ import re
 from node_model import NodeModelCollection
 from settings import SUPPORTED_LANGS
 from sqlite_atlas_db import SqliteAtlasDB
+from associations_lang import ASSOCIATIONS_LANG
 
 
 # Markdown formatters as a class for easy inheritance/extension
@@ -43,7 +44,10 @@ class MdFormatters:
             for edge in node.edges:
                 # Turn target into an id link
                 target_link = self.format_links(node, f"[[{edge.target}]]", lang)
-                lines.append(f"- **{edge.type}** → {target_link}")
+                # Get the localized association type
+                assoc_type = ASSOCIATIONS_LANG.get(edge.type, {}).get(lang, edge.type)
+                assoc_type = assoc_type.capitalize()
+                lines.append(f"- **{assoc_type}** {target_link}")
             lines.append("")
         return "\n".join(lines)
 

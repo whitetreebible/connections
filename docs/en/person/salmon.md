@@ -5,5 +5,5 @@ Little else is known about Salmon, but his marriage to Rahab is significant in t
 
 
 ## Associations
-- **married-to** → [Rahab](../../person/rahab/)
-- **parent-of** → [Boaz](../../person/boaz/)
+- **Married to** [Rahab](../../person/rahab/)
+- **Parent of** [Boaz](../../person/boaz/)

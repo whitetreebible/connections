@@ -4,8 +4,8 @@ Boaz was a wealthy landowner in [place/bethlehem](../../place/bethlehem/) and a 
 
 
 ## Associations
-- **child-of** → [Salmon](../../person/salmon/)
-- **child-of** → [Rahab](../../person/rahab/)
-- **married-to** → [person/ruth](../../person/ruth/)
-- **parent-of** → [person/obed](../../person/obed/)
-- **resident-of** → [place/bethlehem](../../place/bethlehem/)
+- **Child of** [Salmon](../../person/salmon/)
+- **Child of** [Rahab](../../person/rahab/)
+- **Married to** [person/ruth](../../person/ruth/)
+- **Parent of** [person/obed](../../person/obed/)
+- **Resident of** [place/bethlehem](../../place/bethlehem/)
