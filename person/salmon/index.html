@@ -5,9 +5,9 @@
 <meta charset="utf-8"/>
 <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link href="https://treebible.github.io/bible-atlas/devs/contributing/" rel="canonical"/>
+<link href="https://treebible.github.io/bible-atlas/person/salmon/" rel="canonical"/>
 <link href="../../img/favicon.ico" rel="shortcut icon"/>
-<title>Contributing to Bible Atlas - TreeBible - Bible Atlas</title>
+<title>Salmon - TreeBible - Bible Atlas</title>
 <link href="../../css/bootstrap.min.css" rel="stylesheet"/>
 <link href="../../css/fontawesome.min.css" rel="stylesheet"/>
 <link href="../../css/brands.min.css" rel="stylesheet"/>
@@ -36,12 +36,12 @@
                             </a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="../.." rel="prev">
+<a class="nav-link" href="../rahab/" rel="prev">
 <i class="fa fa-arrow-left"></i> Previous
                                 </a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="../schema/" rel="next">
+<a class="nav-link disabled" rel="next">
                                     Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -59,13 +59,21 @@
 </div>
 <div class="navbar-collapse collapse card bg-body-tertiary" id="toc-collapse">
 <ul class="nav flex-column">
-<li class="nav-item" data-bs-level="1"><a class="nav-link" href="#contributing-to-bible-atlas">Contributing to Bible Atlas</a>
+<li class="nav-item" data-bs-level="1"><a class="nav-link" href="#salmon">Salmon</a>
 <ul class="nav flex-column">
-<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#how-to-contribute">How to Contribute</a>
+<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#salmon-husband-of-rahab">Salmon (husband of Rahab)</a>
 <ul class="nav flex-column">
 </ul>
 </li>
-<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#workflow">Workflow</a>
+<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#associations">Associations</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#family-connections">Family connections</a>
+<ul class="nav flex-column">
+</ul>
+</li>
+<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#all-connections">All connections</a>
 <ul class="nav flex-column">
 </ul>
 </li>
@@ -75,61 +83,50 @@
 </div>
 </div></div>
 <div class="col-md-9" role="main">
-<h1 id="contributing-to-bible-atlas">Contributing to Bible Atlas</h1>
-<p>Thank you for your interest in contributing! Bible Atlas is a collaborative project to map biblical figures, tribes, places, and themes. Contributions follow a clear workflow to ensure data integrity.</p>
-<h2 id="how-to-contribute">How to Contribute</h2>
-<ol>
-<li>
-<p><strong>Clone or fork the repo</strong>
-<pre class="highlight"><code class="language-sh">git clone https://github.com/whitetreelexicon/bible-atlas.git
-cd bible-atlas</code></pre></p>
-</li>
-<li>
-<p><strong>Install dependencies</strong>
-If you don't have it, <a href="https://docs.astral.sh/uv/getting-started/installation/">install UV first</a>
-<pre class="highlight"><code class="language-sh">uv install
-source .venv/bin/activate</code></pre></p>
-</li>
-<li>
-<p><strong>Serve the web</strong>
-<pre class="highlight"><code class="language-sh">mkdocs serve</code></pre></p>
-</li>
-<li>
-<p><strong>Deploy the web</strong>
-<pre class="highlight"><code class="language-sh">mkdocs gh-deploy</code></pre></p>
-</li>
-<li>
-<p>This will build the static site and push it to the gh-pages branch where Github Pages is serving.</p>
-</li>
-<li>
-<p><strong>Submit a Pull Request:</strong></p>
-</li>
-<li>Make sure all YAML is validated (see scripts/validate_yaml.py).<sup id="fnref:validate"><a class="footnote-ref" href="#fn:validate">1</a></sup></li>
-<li>PR should include new nodes or updates; generated Markdown will be reviewed automatically.</li>
-</ol>
-<h2 id="workflow">Workflow</h2>
+<h1 id="salmon">Salmon</h1>
+<h2 id="salmon-husband-of-rahab">Salmon (husband of Rahab)</h2>
+<p>Salmon was a member of the tribe of <a href="../../tribe/judah/">tribe/judah</a> and is noted in biblical genealogies as the husband of <a href="../../person/rahab/">Rahab</a> and the father of <a href="../../person/boaz/">Boaz</a>. He is mentioned in the genealogy of <a href="../../person/jesus/">person/jesus</a> in <a href="https://biblehub.com/context/matthew/1.htm" target="_blank">Matthew 1:4-5</a>.
+Little else is known about Salmon, but his marriage to Rahab is significant in the biblical narrative, linking the story of the conquest of Jericho to the lineage of King David and Jesus.</p>
+<h2 id="associations">Associations</h2>
+<ul>
+<li><strong>Married to</strong> <a href="../../person/rahab/">Rahab</a></li>
+<li><strong>Parent of</strong> <a href="../../person/boaz/">Boaz</a></li>
+</ul>
+<h2 id="family-connections">Family connections</h2>
 <div class="mermaid">graph LR;
-
-Bible --&gt; Yaml
-Resources --&gt; Yaml
-Books --&gt; Yaml
-
-Yaml --&gt;|Ingestion| SQLite
-Yaml --&gt; Generators
-SQLite --&gt; Generators
-
-Generators --&gt; Markdown
-
-Markdown --&gt; MkDocs
-</div>
-<div class="footnote">
-<hr/>
-<ol>
-<li id="fn:validate">
-<p>Doesn't exist yet, but someday it will. <a class="footnote-backref" href="#fnref:validate" title="Jump back to footnote 1 in the text">↩</a></p>
-</li>
-</ol>
-</div></div>
+    Rahab --&gt;|Ancestor of| person/jesus
+    Salmon --&gt;|Parent of| Boaz
+    Rahab --&gt;|Parent of| Boaz
+    Boaz --&gt;|Parent of| person/obed
+    Rahab &lt;--&gt;|Married to| Salmon
+    Boaz --&gt;|Married to| person/ruth
+    Boaz --&gt;|Child of| Salmon
+    Boaz --&gt;|Child of| Rahab
+    style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    click Salmon "../../person/salmon/"
+    click Boaz "../../person/boaz/"
+    click Rahab "../../person/rahab/"</div>
+<h2 id="all-connections">All connections</h2>
+<div class="mermaid">graph LR;
+    Rahab --&gt;|Ancestor of| person/jesus
+    Boaz --&gt;|Parent of| person/obed
+    Salmon --&gt;|Parent of| Boaz
+    Rahab --&gt;|Parent of| Boaz
+    Rahab --&gt;|Member of| tribe/canaanite
+    Boaz --&gt;|Resident of| place/bethlehem
+    Rahab &lt;--&gt;|Married to| Salmon
+    Rahab --&gt;|Example of| theme/faith
+    Rahab --&gt;|Resident of| place/jericho
+    Rahab --&gt;|Name shared with| creature/rahab
+    Boaz --&gt;|Married to| person/ruth
+    Rahab --&gt;|Hid| group/israelite_spies
+    Rahab --&gt;|Assisted| tribe/israel
+    Boaz --&gt;|Child of| Salmon
+    Boaz --&gt;|Child of| Rahab
+    style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    click Salmon "../../person/salmon/"
+    click Boaz "../../person/boaz/"
+    click Rahab "../../person/rahab/"</div></div>
 </div>
 </div>
 <footer class="col-md-12">
