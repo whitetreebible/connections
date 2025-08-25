@@ -35,12 +35,16 @@ class MdFormatters:
         for source, target, etype, weight in edges:
             node_ids.add(source)
             node_ids.add(target)
-        # Get names for all nodes in this graph
+        # Get names for all nodes in this graph, using format_links for link formatting
         node_labels = {}
         for nodes in node_ids:
             nid, ntype = nodes.split('/')
-            name = db.select_name(node_id=nid, node_type=ntype, lang=lang)
-            node_labels[(nid, ntype)] = name if name else nid
+            # Use format_links to get the formatted link (as markdown)
+            fake_node = type('FakeNode', (), {'type': ntype})()
+            link_md = self.format_links(fake_node, f"[[{ntype}/{nid}]]", lang)
+            # Remove markdown brackets for mermaid label, keep only the text
+            label = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", link_md)
+            node_labels[(nid, ntype)] = label
         # Build mermaid graph
         lines = [] if not md else [md]
         lines.append("## All connections")
@@ -48,8 +52,8 @@ class MdFormatters:
         lines.append('graph LR;')
         for source, target, etype, weight in edges:
             label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype)
-            s = node_labels.get((source, node_type), source)
-            t = node_labels.get((target, node_type), target)
+            s = node_labels.get(tuple(source.split('/')), source)
+            t = node_labels.get(tuple(target.split('/')), target)
             lines.append(f'    {s} -->|{label}| {t}')
         lines.append('```')
         db.close()

@@ -22,22 +22,22 @@ Her inclusion among women in Jesus' genealogy is notable and discussed in multip
 ## All connections
 ```mermaid
 graph LR;
-    person/rahab -->|example of| theme/faith
-    person/boaz -->|child of| person/rahab
-    person/boaz -->|married to| person/ruth
-    person/boaz -->|parent of| person/obed
-    person/boaz -->|resident of| place/bethlehem
-    person/rahab -->|ancestor of| person/jesus
-    person/rahab -->|name shared with| creature/rahab
-    person/rahab -->|parent of| person/boaz
-    person/rahab -->|resident of| place/jericho
-    person/boaz -->|child of| person/salmon
-    person/rahab -->|married to| person/salmon
-    person/salmon -->|married to| person/rahab
-    person/salmon -->|parent of| person/boaz
-    person/rahab -->|hid| group/israelite_spies
-    person/rahab -->|member of| tribe/canaanite
-    person/rahab -->|assisted| tribe/israel
+    rahab/person -->|member of| canaanite/tribe
+    rahab/person -->|hid| israelite_spies/group
+    salmon/person -->|parent of| boaz/person
+    rahab/person -->|example of| faith/theme
+    boaz/person -->|parent of| obed/person
+    rahab/person -->|resident of| jericho/place
+    rahab/person -->|married to| salmon/person
+    rahab/person -->|assisted| israel/tribe
+    rahab/person -->|ancestor of| jesus/person
+    boaz/person -->|child of| rahab/person
+    rahab/person -->|parent of| boaz/person
+    boaz/person -->|child of| salmon/person
+    boaz/person -->|married to| ruth/person
+    rahab/person -->|name shared with| rahab/creature
+    salmon/person -->|married to| rahab/person
+    boaz/person -->|resident of| bethlehem/place
 ```
 [^test_footnote]: This is a test footnote for demonstration purposes, it has a [person/jesus](../../person/jesus/) link and a [Joshua 2](https://biblehub.com/context/joshua/2.htm){:target="_blank"} link.
 [^josephus_note_1]: 'Josephus recounts Rahab hiding the spies and her family's preservation during Jericho's conquest.' (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)
