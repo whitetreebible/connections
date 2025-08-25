@@ -13,12 +13,12 @@ Little else is known about Salmon, but his marriage to Rahab is significant in t
 graph LR;
     Rahab -->|Ancestor of| person/jesus
     Salmon -->|Parent of| Boaz
-    Boaz -->|Parent of| person/obed
     Rahab -->|Parent of| Boaz
-    Boaz -->|Married to| person/ruth
+    Boaz -->|Parent of| person/obed
     Rahab <-->|Married to| Salmon
-    Boaz -->|Child of| Rahab
+    Boaz -->|Married to| person/ruth
     Boaz -->|Child of| Salmon
+    Boaz -->|Child of| Rahab
     style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
     click Salmon "../../person/salmon/"
     click Boaz "../../person/boaz/"
@@ -28,20 +28,20 @@ graph LR;
 ```mermaid
 graph LR;
     Rahab -->|Ancestor of| person/jesus
-    Salmon -->|Parent of| Boaz
     Boaz -->|Parent of| person/obed
+    Salmon -->|Parent of| Boaz
     Rahab -->|Parent of| Boaz
-    Boaz -->|Married to| person/ruth
     Rahab -->|Member of| tribe/canaanite
-    Rahab -->|Example of| theme/faith
+    Boaz -->|Resident of| place/bethlehem
     Rahab <-->|Married to| Salmon
+    Rahab -->|Example of| theme/faith
     Rahab -->|Resident of| place/jericho
+    Rahab -->|Name shared with| creature/rahab
+    Boaz -->|Married to| person/ruth
     Rahab -->|Hid| group/israelite_spies
     Rahab -->|Assisted| tribe/israel
-    Rahab -->|Name shared with| creature/rahab
-    Boaz -->|Resident of| place/bethlehem
-    Boaz -->|Child of| Rahab
     Boaz -->|Child of| Salmon
+    Boaz -->|Child of| Rahab
     style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
     click Salmon "../../person/salmon/"
     click Boaz "../../person/boaz/"
