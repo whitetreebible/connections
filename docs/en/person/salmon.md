@@ -8,27 +8,42 @@ Little else is known about Salmon, but his marriage to Rahab is significant in t
 - **Married to** [Rahab](../../person/rahab/)
 - **Parent of** [Boaz](../../person/boaz/)
 
+## Family connections
+```mermaid
+graph LR;
+    Rahab -->|Ancestor of| person/jesus
+    Salmon -->|Parent of| Boaz
+    Boaz -->|Parent of| person/obed
+    Rahab -->|Parent of| Boaz
+    Boaz -->|Married to| person/ruth
+    Rahab <-->|Married to| Salmon
+    Boaz -->|Child of| Rahab
+    Boaz -->|Child of| Salmon
+    style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    click Salmon "../../person/salmon/"
+    click Boaz "../../person/boaz/"
+    click Rahab "../../person/rahab/"
+```
 ## All connections
 ```mermaid
 graph LR;
-    Rahab -->|Assisted| tribe/israel
-    Boaz -->|Child of| Rahab
-    Boaz -->|Married to| person/ruth
-    Salmon -->|Married to| Rahab
-    Boaz -->|Child of| Salmon
-    Rahab -->|Parent of| Boaz
-    Salmon -->|Parent of| Boaz
-    Rahab -->|Member of| tribe/canaanite
-    Rahab -->|Resident of| place/jericho
-    Rahab -->|Name shared with| creature/rahab
-    Boaz -->|Parent of| person/obed
-    Rahab -->|Married to| Salmon
     Rahab -->|Ancestor of| person/jesus
-    Boaz -->|Resident of| place/bethlehem
+    Salmon -->|Parent of| Boaz
+    Boaz -->|Parent of| person/obed
+    Rahab -->|Parent of| Boaz
+    Boaz -->|Married to| person/ruth
+    Rahab -->|Member of| tribe/canaanite
     Rahab -->|Example of| theme/faith
+    Rahab <-->|Married to| Salmon
+    Rahab -->|Resident of| place/jericho
     Rahab -->|Hid| group/israelite_spies
-    style Salmon fill:#f9f,stroke:#333,stroke-width:4px;
-    click Boaz "../../person/boaz/"
+    Rahab -->|Assisted| tribe/israel
+    Rahab -->|Name shared with| creature/rahab
+    Boaz -->|Resident of| place/bethlehem
+    Boaz -->|Child of| Rahab
+    Boaz -->|Child of| Salmon
+    style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
     click Salmon "../../person/salmon/"
+    click Boaz "../../person/boaz/"
     click Rahab "../../person/rahab/"
 ```

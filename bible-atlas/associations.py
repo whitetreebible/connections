@@ -1,3 +1,12 @@
+# Edge directionality mapping for graph traversal and sorting
+EDGE_DIRECTION = {
+    "parent-of": 5,         # downstream (from parent to child)
+    "child-of": -5,         # upstream (from child to parent)
+    "married-to": 0,        # neutral (peer)
+    "descendant-of": -10,   # strong upstream (from descendant to ancestor)
+    "ancestor-of": 10,      # strong downstream (from ancestor to descendant)
+    # Add more edge types as needed
+}
 # associations_lang.py
 # Language dictionary for the 'Associations' section header and related terms
 
@@ -53,5 +62,14 @@ ASSOCIATIONS_LANG = {
         "grc": "ἔκρυψε"
     }
 }
+
+ASSOCIATIONS_FAMILY = [
+    "parent-of",
+    "child-of",
+    "sibling-of",
+    "married-to",
+    "descendant-of",
+    "ancestor-of",
+]
 
 # Add more terms or languages as needed

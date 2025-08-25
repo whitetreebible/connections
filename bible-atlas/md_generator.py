@@ -4,7 +4,7 @@ import logging
 from node_model import NodeModelCollection, NodeModel
 from settings import SUPPORTED_LANGS
 from sqlite_atlas_db import SqliteAtlasDB
-from associations_lang import ASSOCIATIONS_LANG
+from associations import ASSOCIATIONS_LANG, ASSOCIATIONS_FAMILY
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -52,26 +52,52 @@ class MdFormatters:
             else:
                 node_labels[node_id] = node_id  # fallback to id if name not found
 
-        # Build mermaid graph
+        # Build mermaid graph with sort order by edge directionality
+        from associations import EDGE_DIRECTION
         lines = [] if not md else [md]
         lines.append(f"## {title}")
         lines.append('```mermaid')
         lines.append('graph LR;')
+        # Build a set to track bidirectional edges with the same label
+        edge_lines = []
+        edge_map = {}
         for source, target, etype, weight in edges:
             label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype).capitalize()
             s = node_labels.get(source, "Unknown")
-            t = node_labels.get(target, "Unknown")  
-            lines.append(f'    {s} -->|{label}| {t}')
+            t = node_labels.get(target, "Unknown")
+            sort_bias = EDGE_DIRECTION.get(etype, 0)
+            # Use tuple (min, max, label) to detect bidirectional edges
+            key = tuple(sorted([s, t]) + [label])
+            if key in edge_map:
+                edge_map[key]["bidirectional"] = True
+            else:
+                edge_map[key] = {"from": s, "to": t, "label": label, "sort_bias": sort_bias, "bidirectional": False}
+        # Now build edge_lines
+        for info in edge_map.values():
+            if info["bidirectional"]:
+                edge_str = f'    {info["from"]} <-->|{info["label"]}| {info["to"]}'
+            else:
+                edge_str = f'    {info["from"]} -->|{info["label"]}| {info["to"]}'
+            edge_lines.append((info["sort_bias"], edge_str))
+        # Sort by sort_bias descending (so ancestor/descendant edges are at the ends)
+        edge_lines.sort(key=lambda x: -x[0])
+        for _, line in edge_lines:
+            lines.append(line)
         # style current node
         current_node_label = node_labels.get(f"{node.type}/{node.id}", f"{node.type}/{node.id}")
-        lines.append(f"    style {current_node_label} fill:#f9f,stroke:#333,stroke-width:4px;")
+        lines.append(f"    style {current_node_label} fill:#2fa4e7,stroke:#333,stroke-width:4px;")
         for name, link in links.items():
             link_location = link.split('(')[-1].rstrip('){:target="_blank"}')
-            link_location = f"\"{link_location}\""
+            link_location = f'"{link_location}"'
             lines.append(f"    click {name} {link_location}")
         lines.append('```')
         db.close()
         return "\n".join(lines)
+
+
+
+    def format_graph_family_connections(self, node, md, lang):
+        return self.format_graph_connections(node, md, lang, title="Family connections", direction="both", types=ASSOCIATIONS_FAMILY, max_depth=None) 
 
 
 
@@ -242,6 +268,7 @@ class MdGenerator:
             self.formatter_obj.format_description,
             self.formatter_obj.format_links,
             self.formatter_obj.format_associations,
+            self.formatter_obj.format_graph_family_connections,
             self.formatter_obj.format_graph_all_connections,
             self.formatter_obj.format_footnotes,
         ]
