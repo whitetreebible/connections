@@ -15,10 +15,10 @@ Boaz was a wealthy landowner in [place/bethlehem](../../place/bethlehem/) and a 
 graph LR;
     Rahab -->|Ancestor of| person/jesus
     Salmon -->|Parent of| Boaz
-    Rahab -->|Parent of| Boaz
     Boaz -->|Parent of| person/obed
-    Rahab <-->|Married to| Salmon
+    Rahab -->|Parent of| Boaz
     Boaz -->|Married to| person/ruth
+    Salmon <-->|Married to| Rahab
     Boaz -->|Child of| Salmon
     Boaz -->|Child of| Rahab
     style Boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
@@ -31,17 +31,17 @@ graph LR;
 graph LR;
     Rahab -->|Ancestor of| person/jesus
     Salmon -->|Parent of| Boaz
-    Rahab -->|Parent of| Boaz
     Boaz -->|Parent of| person/obed
+    Rahab -->|Parent of| Boaz
     Rahab -->|Member of| tribe/canaanite
-    Boaz -->|Resident of| place/bethlehem
-    Rahab <-->|Married to| Salmon
-    Rahab -->|Example of| theme/faith
-    Rahab -->|Resident of| place/jericho
     Rahab -->|Name shared with| creature/rahab
+    Rahab -->|Resident of| place/jericho
+    Rahab -->|Hid| group/israelite_spies
+    Boaz -->|Resident of| place/bethlehem
     Boaz -->|Married to| person/ruth
     Rahab -->|Assisted| tribe/israel
-    Rahab -->|Hid| group/israelite_spies
+    Rahab -->|Example of| theme/faith
+    Salmon <-->|Married to| Rahab
     Boaz -->|Child of| Salmon
     Boaz -->|Child of| Rahab
     style Boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;

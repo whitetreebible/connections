@@ -24,10 +24,10 @@ Her inclusion among women in Jesus' genealogy is notable and discussed in multip
 graph LR;
     Rahab -->|Ancestor of| person/jesus
     Salmon -->|Parent of| Boaz
-    Rahab -->|Parent of| Boaz
     Boaz -->|Parent of| person/obed
-    Rahab <-->|Married to| Salmon
+    Rahab -->|Parent of| Boaz
     Boaz -->|Married to| person/ruth
+    Salmon <-->|Married to| Rahab
     Boaz -->|Child of| Salmon
     Boaz -->|Child of| Rahab
     style Rahab fill:#2fa4e7,stroke:#333,stroke-width:4px;
@@ -39,18 +39,18 @@ graph LR;
 ```mermaid
 graph LR;
     Rahab -->|Ancestor of| person/jesus
-    Boaz -->|Parent of| person/obed
     Salmon -->|Parent of| Boaz
+    Boaz -->|Parent of| person/obed
     Rahab -->|Parent of| Boaz
     Rahab -->|Member of| tribe/canaanite
-    Boaz -->|Resident of| place/bethlehem
-    Rahab -->|Example of| theme/faith
-    Rahab <-->|Married to| Salmon
-    Rahab -->|Resident of| place/jericho
     Rahab -->|Name shared with| creature/rahab
-    Boaz -->|Married to| person/ruth
+    Rahab -->|Resident of| place/jericho
     Rahab -->|Hid| group/israelite_spies
+    Boaz -->|Resident of| place/bethlehem
+    Boaz -->|Married to| person/ruth
     Rahab -->|Assisted| tribe/israel
+    Rahab -->|Example of| theme/faith
+    Salmon <-->|Married to| Rahab
     Boaz -->|Child of| Salmon
     Boaz -->|Child of| Rahab
     style Rahab fill:#2fa4e7,stroke:#333,stroke-width:4px;

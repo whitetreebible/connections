@@ -13,10 +13,10 @@ Little else is known about Salmon, but his marriage to Rahab is significant in t
 graph LR;
     Rahab -->|Ancestor of| person/jesus
     Salmon -->|Parent of| Boaz
-    Rahab -->|Parent of| Boaz
     Boaz -->|Parent of| person/obed
-    Rahab <-->|Married to| Salmon
+    Rahab -->|Parent of| Boaz
     Boaz -->|Married to| person/ruth
+    Salmon <-->|Married to| Rahab
     Boaz -->|Child of| Salmon
     Boaz -->|Child of| Rahab
     style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
@@ -28,18 +28,18 @@ graph LR;
 ```mermaid
 graph LR;
     Rahab -->|Ancestor of| person/jesus
-    Boaz -->|Parent of| person/obed
     Salmon -->|Parent of| Boaz
+    Boaz -->|Parent of| person/obed
     Rahab -->|Parent of| Boaz
     Rahab -->|Member of| tribe/canaanite
-    Boaz -->|Resident of| place/bethlehem
-    Rahab <-->|Married to| Salmon
-    Rahab -->|Example of| theme/faith
-    Rahab -->|Resident of| place/jericho
     Rahab -->|Name shared with| creature/rahab
-    Boaz -->|Married to| person/ruth
+    Rahab -->|Resident of| place/jericho
     Rahab -->|Hid| group/israelite_spies
+    Boaz -->|Resident of| place/bethlehem
+    Boaz -->|Married to| person/ruth
     Rahab -->|Assisted| tribe/israel
+    Rahab -->|Example of| theme/faith
+    Salmon <-->|Married to| Rahab
     Boaz -->|Child of| Salmon
     Boaz -->|Child of| Rahab
     style Salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
