@@ -1,7 +1,7 @@
 import os
 import re
 import logging
-from node_model import NodeModelCollection
+from node_model import NodeModelCollection, NodeModel
 from settings import SUPPORTED_LANGS
 from sqlite_atlas_db import SqliteAtlasDB
 from associations_lang import ASSOCIATIONS_LANG
@@ -14,9 +14,9 @@ logging.basicConfig(level=logging.DEBUG)
 # Markdown formatters as a class for easy inheritance/extension
 class MdFormatters:
 
-    def format_graph_all_connections(self, node, md, lang):
+    def format_graph_connections(self, node, md, lang, title="Graph Connections", types=None, direction="both", max_depth=None):
         """
-        Output a mermaid graph of all connections for this node from the db.
+        Output a mermaid graph of connections for this node from the db, with customizable parameters.
         """
         db = SqliteAtlasDB()
         node_id = getattr(node, 'id', None)
@@ -25,40 +25,60 @@ class MdFormatters:
             return md
 
         node_id = f"{node_type}/{node_id}"
-        # Get all edges from or to this node (1 step, both directions)
-        edges = db.traverse_edges(node_id, direction="both", types=None, max_depth=None)
+        # Get edges based on parameters
+        edges = db.traverse_edges(start_id=node_id, direction=direction, types=types, max_depth=max_depth)
         log.info(f"Node {node_id} ({node_type}) has {len(edges)} edges for graph.")
-        
+
         # Collect all node ids/types involved
         node_ids = set()
-        
         for source, target, etype, weight in edges:
             node_ids.add(source)
             node_ids.add(target)
+
         # Get names for all nodes in this graph, using format_links for link formatting
         node_labels = {}
-        for nodes in node_ids:
-            nid, ntype = nodes.split('/')
+        links = {}
+        for node_id in node_ids:
+            ntype, nid = node_id.split('/')
             # Use format_links to get the formatted link (as markdown)
-            fake_node = type('FakeNode', (), {'type': ntype})()
-            link_md = self.format_links(fake_node, f"[[{ntype}/{nid}]]", lang)
-            # Remove markdown brackets for mermaid label, keep only the text
-            label = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", link_md)
-            node_labels[(nid, ntype)] = label
+            name = db.select_name(node_type=ntype, node_id=nid, lang=lang)
+            if name:
+                node_labels[node_id] = name
+                # Also store the formatted link
+                partial_node = NodeModel()
+                partial_node.type = ntype
+                partial_node.id = nid
+                links[name] = self.format_links(node=partial_node, lang=lang)
+            else:
+                node_labels[node_id] = node_id  # fallback to id if name not found
+
         # Build mermaid graph
         lines = [] if not md else [md]
-        lines.append("## All connections")
+        lines.append(f"## {title}")
         lines.append('```mermaid')
         lines.append('graph LR;')
         for source, target, etype, weight in edges:
-            label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype)
-            s = node_labels.get(tuple(source.split('/')), source)
-            t = node_labels.get(tuple(target.split('/')), target)
+            label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype).capitalize()
+            s = node_labels.get(source, "Unknown")
+            t = node_labels.get(target, "Unknown")  
             lines.append(f'    {s} -->|{label}| {t}')
+        # style current node
+        current_node_label = node_labels.get(f"{node.type}/{node.id}", f"{node.type}/{node.id}")
+        lines.append(f"    style {current_node_label} fill:#f9f,stroke:#333,stroke-width:4px;")
+        for name, link in links.items():
+            link_location = link.split('(')[-1].rstrip('){:target="_blank"}')
+            link_location = f"\"{link_location}\""
+            lines.append(f"    click {name} {link_location}")
         lines.append('```')
         db.close()
         return "\n".join(lines)
-    
+
+
+
+    def format_graph_all_connections(self, node, md, lang):
+        return self.format_graph_connections(node, md, lang, title="All connections", direction="both", types=None, max_depth=None) 
+
+
 
     def format_header(self, node, md, lang):
         lines = [] if not md else [md]
@@ -78,6 +98,8 @@ class MdFormatters:
             lines.append(f"## {sub_title}")
         return "\n".join(lines)
 
+
+
     def format_description(self, node, md, lang):
         lines = [] if not md else [md]
         desc = getattr(node, 'description', None)
@@ -88,6 +110,8 @@ class MdFormatters:
         if text:
             lines.append(text + "\n")
         return "\n".join(lines)
+
+
 
     def format_associations(self, node, md, lang):
         lines = [] if not md else [md]
@@ -102,6 +126,8 @@ class MdFormatters:
                 lines.append(f"- **{assoc_type}** {target_link}")
             lines.append("")
         return "\n".join(lines)
+
+
 
     def format_footnotes(self, node, md, lang):
         lines = [] if not md else [md]
@@ -146,7 +172,9 @@ class MdFormatters:
                 lines.append("")
         return "\n".join(lines)
 
-    def format_links(self, node, md, lang=None):
+
+
+    def format_links(self, node=None, md=None, lang='en'):
         """
         Replace [[bible:Book Chapter:Verse]] with BibleHub links, and [[id]] with /type/id links.
         For internal links, use the localized name from the sqlite db if available.
@@ -189,10 +217,19 @@ class MdFormatters:
                     link_text = db_name
             return f"[{link_text}]({url})"
 
-        md = re.sub(r"\[\[bible:([^\]]+)\]\]", biblehub_link, md)
-        md = re.sub(r"\[\[([^\]:]+)\]\]", id_link, md)
+        response = None
+        if md:
+            response = re.sub(r"\[\[bible:([^\]]+)\]\]", biblehub_link, md)
+            response = re.sub(r"\[\[([^\]:]+)\]\]", id_link, response)
+        elif node:
+            # create an id_link match for the current node
+            id_link_match = re.match(r"\[\[([^\]:]+)\]\]", f"[[{node.type}/{node.id}]]")
+            if id_link_match:
+                response = id_link(match=id_link_match)
         db.close()
-        return md
+        return response
+
+
 
 class MdGenerator:
     def __init__(self, data_dir="data", docs_dir="docs", formatters=None):

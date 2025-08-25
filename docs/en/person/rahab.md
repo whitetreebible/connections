@@ -22,22 +22,26 @@ Her inclusion among women in Jesus' genealogy is notable and discussed in multip
 ## All connections
 ```mermaid
 graph LR;
-    rahab/person -->|member of| canaanite/tribe
-    rahab/person -->|hid| israelite_spies/group
-    salmon/person -->|parent of| boaz/person
-    rahab/person -->|example of| faith/theme
-    boaz/person -->|parent of| obed/person
-    rahab/person -->|resident of| jericho/place
-    rahab/person -->|married to| salmon/person
-    rahab/person -->|assisted| israel/tribe
-    rahab/person -->|ancestor of| jesus/person
-    boaz/person -->|child of| rahab/person
-    rahab/person -->|parent of| boaz/person
-    boaz/person -->|child of| salmon/person
-    boaz/person -->|married to| ruth/person
-    rahab/person -->|name shared with| rahab/creature
-    salmon/person -->|married to| rahab/person
-    boaz/person -->|resident of| bethlehem/place
+    Rahab -->|Assisted| tribe/israel
+    Boaz -->|Child of| Rahab
+    Boaz -->|Married to| person/ruth
+    Salmon -->|Married to| Rahab
+    Boaz -->|Child of| Salmon
+    Rahab -->|Parent of| Boaz
+    Salmon -->|Parent of| Boaz
+    Rahab -->|Member of| tribe/canaanite
+    Rahab -->|Resident of| place/jericho
+    Rahab -->|Name shared with| creature/rahab
+    Boaz -->|Parent of| person/obed
+    Rahab -->|Married to| Salmon
+    Rahab -->|Ancestor of| person/jesus
+    Boaz -->|Resident of| place/bethlehem
+    Rahab -->|Example of| theme/faith
+    Rahab -->|Hid| group/israelite_spies
+    style Rahab fill:#f9f,stroke:#333,stroke-width:4px;
+    click Boaz "../../person/boaz/"
+    click Salmon "../../person/salmon/"
+    click Rahab "../../person/rahab/"
 ```
 [^test_footnote]: This is a test footnote for demonstration purposes, it has a [person/jesus](../../person/jesus/) link and a [Joshua 2](https://biblehub.com/context/joshua/2.htm){:target="_blank"} link.
 [^josephus_note_1]: 'Josephus recounts Rahab hiding the spies and her family's preservation during Jericho's conquest.' (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)

@@ -8,9 +8,10 @@ class NodeModel:
     Data Access Object for a node (person, place, tribe, etc) in the Bible Atlas.
     Loads from YAML and provides access to node data and edge relationships.
     """
-    def __init__(self, data: Dict[str, Any]):
-        self.id: str = data.get("id")
-        self.type: str = data.get("type")
+    def __init__(self, data: Dict[str, Any]=None):
+        data = data or {}
+        self.id: str = data.get("id", "")
+        self.type: str = data.get("type", "")
         # Use 'name' (singular, dict of lang:str)
         self.name: Dict[str, str] = data.get("name", {})
         # Use 'name_disambiguous' (dict of lang:str)
