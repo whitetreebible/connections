@@ -29,6 +29,37 @@
 </button>
 <!-- Expanded navigation -->
 <div class="navbar-collapse collapse" id="navbar-collapse">
+<!-- Main navigation -->
+<ul class="nav navbar-nav">
+<li class="nav-item">
+<a class="nav-link" href="../..">Bible Atlas</a>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Devs</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../devs/contributing/">Contributing to Bible Atlas</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../devs/schema/">Schema</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-current="page" aria-expanded="false" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" href="#" role="button">Person</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../boaz/">Boaz</a>
+</li>
+<li>
+<a aria-current="page" class="dropdown-item active" href="./">Rahab</a>
+</li>
+<li>
+<a class="dropdown-item" href="../salmon/">Salmon</a>
+</li>
+</ul>
+</li>
+</ul>
 <ul class="nav navbar-nav ms-md-auto">
 <li class="nav-item">
 <a class="nav-link" data-bs-target="#mkdocs_search_modal" data-bs-toggle="modal" href="#">
@@ -107,10 +138,10 @@ Her inclusion among women in Jesus' genealogy is notable and discussed in multip
 <div class="mermaid">graph LR;
     Rahab --&gt;|Ancestor of| person/jesus
     Salmon --&gt;|Parent of| Boaz
-    Rahab --&gt;|Parent of| Boaz
     Boaz --&gt;|Parent of| person/obed
-    Rahab &lt;--&gt;|Married to| Salmon
+    Rahab --&gt;|Parent of| Boaz
     Boaz --&gt;|Married to| person/ruth
+    Salmon &lt;--&gt;|Married to| Rahab
     Boaz --&gt;|Child of| Salmon
     Boaz --&gt;|Child of| Rahab
     style Rahab fill:#2fa4e7,stroke:#333,stroke-width:4px;
@@ -120,18 +151,18 @@ Her inclusion among women in Jesus' genealogy is notable and discussed in multip
 <h2 id="all-connections">All connections</h2>
 <div class="mermaid">graph LR;
     Rahab --&gt;|Ancestor of| person/jesus
-    Boaz --&gt;|Parent of| person/obed
     Salmon --&gt;|Parent of| Boaz
+    Boaz --&gt;|Parent of| person/obed
     Rahab --&gt;|Parent of| Boaz
     Rahab --&gt;|Member of| tribe/canaanite
-    Boaz --&gt;|Resident of| place/bethlehem
-    Rahab --&gt;|Example of| theme/faith
-    Rahab &lt;--&gt;|Married to| Salmon
-    Rahab --&gt;|Resident of| place/jericho
     Rahab --&gt;|Name shared with| creature/rahab
-    Boaz --&gt;|Married to| person/ruth
+    Rahab --&gt;|Resident of| place/jericho
     Rahab --&gt;|Hid| group/israelite_spies
+    Boaz --&gt;|Resident of| place/bethlehem
+    Boaz --&gt;|Married to| person/ruth
     Rahab --&gt;|Assisted| tribe/israel
+    Rahab --&gt;|Example of| theme/faith
+    Salmon &lt;--&gt;|Married to| Rahab
     Boaz --&gt;|Child of| Salmon
     Boaz --&gt;|Child of| Rahab
     style Rahab fill:#2fa4e7,stroke:#333,stroke-width:4px;
