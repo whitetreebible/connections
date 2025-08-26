@@ -59,12 +59,12 @@ def main():
             source_node, source_path = get_or_create_node(node_type, source)
             target_node, target_path = get_or_create_node(node_type, target)
             # Add edge to source node
-            edge_data = {"target": f"{target_node.type}/{target_node.id}", "type": edge_type, "weight": 1.0, "refs": [[[bible_ref]]]}
+            edge_data = {"target": f"{target_node.type}/{target_node.id}", "type": edge_type, "weight": 1.0, "refs": [f"[[bible:{bible_ref}]]"]}
             source_node.edges.append(EdgeModel(edge_data))
             # Add reciprocal edge if defined
             if edge_type in RECIPROCALS:
                 reciprocal = RECIPROCALS[edge_type]
-                recip_edge_data = {"target": f"{source_node.type}/{source_node.id}", "type": reciprocal, "weight": 1.0, "refs": [[[bible_ref]]]}
+                recip_edge_data = {"target": f"{source_node.type}/{source_node.id}", "type": reciprocal, "weight": 1.0, "refs": [f"[[bible:{bible_ref}]]"]}
                 target_node.edges.append(EdgeModel(recip_edge_data))
             # Save updated YAML
             source_str = source_node.to_yaml()

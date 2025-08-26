@@ -21,27 +21,27 @@ edges:
     type: child-of
     weight: 1.0
     refs:
-      - [[bible:Matthew 1:5]]
+      - "[[bible:Matthew 1:5]]"
   - target: person/rahab
     type: child-of
     weight: 1.0
     refs:
-      - [[bible:Matthew 1:5]]
+      - "[[bible:Matthew 1:5]]"
   - target: person/ruth
     type: married-to
     weight: 1.0
     refs:
-      - [[bible:Ruth 4:13]]
+      - "[[bible:Ruth 4:13]]"
   - target: person/obed
     type: parent-of
     weight: 1.0
     refs:
-      - [[bible:Ruth 4:21]]
+      - "[[bible:Ruth 4:21]]"
   - target: place/bethlehem
     type: resident-of
     weight: 1.0
     refs:
-      - [[bible:Ruth 2:1]]
+      - "[[bible:Ruth 2:1]]"
 
 footnotes:
   genealogy_matthew:
