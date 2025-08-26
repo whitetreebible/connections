@@ -21,12 +21,12 @@ edges:
     type: married-to
     weight: 1.0
     refs:
-      - [[bible:Matthew 1:5]]
+      - "[[bible:Matthew 1:5]]"
   - target: person/boaz
     type: parent-of
     weight: 1.0
     refs:
-      - [[bible:Matthew 1:5]]
+      - "[[bible:Matthew 1:5]]"
 
 footnotes:
   genealogy_matthew:

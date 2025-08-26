@@ -72,4 +72,13 @@ ASSOCIATIONS_FAMILY = [
     "ancestor-of",
 ]
 
+# Reciprocal edge mapping
+RECIPROCALS = {
+    "parent-of": "child-of",
+    "child-of": "parent-of",
+    "ancestor-of": "descendent-of",
+    "descendent-of": "ancestor-of",
+    "married-to": "married-to",
+}
+
 # Add more terms or languages as needed

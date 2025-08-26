@@ -3,7 +3,7 @@
 # Import data from outside sources (customize this command)
 import_external:
 	@echo "Importing from outside sources..."
-	# uv run scripts/import_external.py
+	uv run bible-atlas/import_external.py
 
 # Import from YAML files (customize this command)
 import_yaml:

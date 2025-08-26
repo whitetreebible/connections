@@ -28,6 +28,18 @@ class NodeModel:
             data = yaml.safe_load(f)
         return cls(data)
 
+    def to_yaml(self, file_path: str = None) -> str:
+        data = self.__dict__.copy()
+        # Convert EdgeModel objects to dicts for YAML serialization
+        data['edges'] = [e.__dict__ for e in self.edges]
+        yaml_str = yaml.safe_dump(data, sort_keys=False, allow_unicode=True)
+        if file_path:
+            with open(file_path, 'w', encoding='utf-8') as f:
+                f.write(yaml_str)
+        return yaml_str
+
+
+
 class NodeModelCollection:
     """
     Loads all YAML files in a directory tree into NodeModel objects.
