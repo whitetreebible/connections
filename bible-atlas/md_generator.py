@@ -4,7 +4,7 @@ import logging
 from node_model import NodeModelCollection, NodeModel
 from settings import SUPPORTED_LANGS
 from sqlite_atlas_db import SqliteAtlasDB
-from associations import ASSOCIATIONS_LANG, ASSOCIATIONS_FAMILY
+from associations import ASSOCIATIONS_LANG, ASSOCIATIONS_FAMILY, EDGE_DIRECTION, RECIPROCALS
 
 log = logging.getLogger(__name__)
 logging.basicConfig(level=logging.DEBUG)
@@ -53,7 +53,6 @@ class MdFormatters:
                 node_labels[node_id] = node_id  # fallback to id if name not found
 
         # Build mermaid graph with sort order by edge directionality
-        from associations import EDGE_DIRECTION
         lines = [] if not md else [md]
         lines.append(f"## {title}")
         lines.append('```mermaid')

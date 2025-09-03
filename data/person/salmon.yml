@@ -1,35 +1,42 @@
 id: salmon
 type: person
-
 name:
   hbo: סַלְמוֹן
   grc: Σαλμών
   en: Salmon
-
 name_disambiguous:
   en: Salmon (husband of Rahab)
   hbo: סַלְמוֹן (בעלה של רָחָב)
   grc: Σαλμών (σύζυγος της Ραάβ)
-
 description:
-  en: |
-    Salmon was a member of the tribe of [[tribe/judah]] and is noted in biblical genealogies as the husband of [[person/rahab]] and the father of [[person/boaz]]. He is mentioned in the genealogy of [[person/jesus]] in [[bible:Matthew 1:4-5]].
-    Little else is known about Salmon, but his marriage to Rahab is significant in the biblical narrative, linking the story of the conquest of Jericho to the lineage of King David and Jesus.
+  en: 'Salmon was a member of the tribe of [[tribe/judah]] and is noted in biblical
+    genealogies as the husband of [[person/rahab]] and the father of [[person/boaz]].
+    He is mentioned in the genealogy of [[person/jesus]] in [[bible:Matthew 1:4-5]].
 
-edges:
-  - target: person/rahab
-    type: married-to
-    weight: 1.0
-    refs:
-      - "[[bible:Matthew 1:5]]"
-  - target: person/boaz
-    type: parent-of
-    weight: 1.0
-    refs:
-      - "[[bible:Matthew 1:5]]"
+    Little else is known about Salmon, but his marriage to Rahab is significant in
+    the biblical narrative, linking the story of the conquest of Jericho to the lineage
+    of King David and Jesus.
 
+    '
 footnotes:
   genealogy_matthew:
     type: biblical
     text:
-      en: "Salmon is listed as the husband of Rahab and father of Boaz in the genealogy of Jesus (Matthew 1:4-5)."
+      en: Salmon is listed as the husband of Rahab and father of Boaz in the genealogy
+        of Jesus (Matthew 1:4-5).
+edges:
+- target: person/rahab
+  type: married-to
+  weight: 1.0
+  refs:
+  - '[[bible:Matthew 1:5]]'
+- target: person/boaz
+  type: parent-of
+  weight: 1.0
+  refs:
+  - '[[bible:Matthew 1:5]]'
+- target: person/nahshon
+  type: child-of
+  weight: 1.0
+  refs:
+  - '[[bible:Matthew 1:5]]'

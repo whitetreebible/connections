@@ -1,107 +1,101 @@
 id: rahab
 type: person
-
 name:
   hbo: רָחָב
   grc: Ῥαὰβ
   en: Rahab
-
 name_disambiguous:
   en: Rahab the Prostitute
   hbo: רָחָב הַזוֹנָה
   grc: Ῥαὰβ ἡ πόρνη
-
-description: 
-  en: |
-    Rahab was a [[tribe/canaan]] woman in [[place/jericho]] who hid the [[tribe/israel]] spies sent by [[person/joshua]]. 
-    Because of her actions, she and her family were spared during the conquest of the city.[^test_footnote]
-    She is later mentioned in the genealogy of Jesus in [[bible:Matthew 1:5]] and praised for her faith in [[bible:Hebrews 11:31]]. 
-    Scholars note that she should not be confused with the [[creature/rahab_monster]] mentioned in [[bible:Psalm 89:10]] and [[bible:Job 26:12]].
-    Rahab's story bridges the Old and New Testaments. Some extra-biblical sources, like Josephus[^josephus_note_1], recount her story in a similar way to [[bible:Joshua 2]].
-    Her inclusion among women in [[bible:Jesus]]' genealogy is notable and discussed in multiple commentaries. Scholarly debate exists on the historical versus symbolic elements of her story.
-
-edges:
-  - target: place/jericho
-    type: resident-of
-    weight: 0.9
-    refs:
-      - "[[bible:Joshua 2]]"
-      - "[^hamilton_handbook]"
-
-  - target: tribe/canaanite
-    type: member-of
-    weight: 1.0
-    refs:
-      - "[[bible:Joshua 2]]"
-
-  - target: tribe/israel
-    type: assisted
-    weight: 1.0
-    refs:
-      - "[[bible:Joshua 2]]"
-
-  - target: creature/rahab
-    type: name-shared-with
-    weight: 0.2
-    refs:
-      - "[[bible:Job 26:12]]"
-      - "[[bible:Psalm 89:10]]"
-
-  - target: person/jesus
-    type: ancestor-of
-    weight: 1.0
-    refs:
-      - "[[bible:Matthew 1:5]]"
-      - "[^beale_commentary_ch]"
-
-  - target: theme/faith
-    type: example-of
-    weight: 1.0
-    refs:
-      - "[[bible:Hebrews 11:31]]"
-      - "[[bible:James 2:25]]"
-
-  - target: group/israelite_spies
-    type: hid
-    weight: 1.0
-    refs:
-      - "[[bible:Joshua 2]]"
-
-  - target: person/salmon
-    type: married-to
-    weight: 1.0
-    refs:
-      - "[[bible:Matthew 1:5]]"
-
-  - target: person/boaz
-    type: parent-of
-    weight: 1.0
-    refs:
-      - "[[bible:Matthew 1:5]]"
-
+description:
+  en: "Rahab was a [[tribe/canaan]] woman in [[place/jericho]] who hid the [[tribe/israel]]\
+    \ spies sent by [[person/joshua]]. \nBecause of her actions, she and her family\
+    \ were spared during the conquest of the city.[^test_footnote]\nShe is later mentioned\
+    \ in the genealogy of Jesus in [[bible:Matthew 1:5]] and praised for her faith\
+    \ in [[bible:Hebrews 11:31]]. \nScholars note that she should not be confused\
+    \ with the [[creature/rahab_monster]] mentioned in [[bible:Psalm 89:10]] and [[bible:Job\
+    \ 26:12]].\nRahab's story bridges the Old and New Testaments. Some extra-biblical\
+    \ sources, like Josephus[^josephus_note_1], recount her story in a similar way\
+    \ to [[bible:Joshua 2]].\nHer inclusion among women in [[bible:Jesus]]' genealogy\
+    \ is notable and discussed in multiple commentaries. Scholarly debate exists on\
+    \ the historical versus symbolic elements of her story.\n"
 footnotes:
   hamilton_handbook:
     type: academic
     text:
-      en: "'To retain the traditional understanding of zonah as “prostitute,” ...' (Victor P. Hamilton, *Handbook on the Historical Books*, Grand Rapids, MI: Baker Academic, 2001, 22.)"
-
+      en: '''To retain the traditional understanding of zonah as “prostitute,” ...''
+        (Victor P. Hamilton, *Handbook on the Historical Books*, Grand Rapids, MI:
+        Baker Academic, 2001, 22.)'
   josephus_note_1:
     type: extra-biblical
     text:
-      en: "'Josephus recounts Rahab hiding the spies and her family's preservation during Jericho's conquest.' (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)"
-
+      en: '''Josephus recounts Rahab hiding the spies and her family''s preservation
+        during Jericho''s conquest.'' (Josephus, Flavius, *Antiquities of the Jews*,
+        Book 5, Section 1.)'
   beale_commentary_ch:
     type: academic
     text:
-      en: "'Rahab's inclusion among women in Jesus' genealogy is significant and discussed in multiple commentaries.' (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)"
-
+      en: '''Rahab''s inclusion among women in Jesus'' genealogy is significant and
+        discussed in multiple commentaries.'' (Beale, G. K., *Commentary on the New
+        Testament Use of the Old Testament*, pp. 208-212.)'
   scholarship_debate:
     type: academic
     text:
-      en: "'Scholarly debate exists on the historical versus symbolic elements of her story.'"
-
+      en: '''Scholarly debate exists on the historical versus symbolic elements of
+        her story.'''
   test_footnote:
     type: academic
     text:
-      en: "This is a test footnote for demonstration purposes, it has a [[person/jesus]] link and a [[bible:Joshua 2]] link."
-      
+      en: This is a test footnote for demonstration purposes, it has a [[person/jesus]]
+        link and a [[bible:Joshua 2]] link.
+edges:
+- target: place/jericho
+  type: resident-of
+  weight: 0.9
+  refs:
+  - '[[bible:Joshua 2]]'
+  - '[^hamilton_handbook]'
+- target: tribe/canaanite
+  type: member-of
+  weight: 1.0
+  refs:
+  - '[[bible:Joshua 2]]'
+- target: tribe/israel
+  type: assisted
+  weight: 1.0
+  refs:
+  - '[[bible:Joshua 2]]'
+- target: creature/rahab
+  type: name-shared-with
+  weight: 0.2
+  refs:
+  - '[[bible:Job 26:12]]'
+  - '[[bible:Psalm 89:10]]'
+- target: person/jesus
+  type: ancestor-of
+  weight: 1.0
+  refs:
+  - '[[bible:Matthew 1:5]]'
+  - '[^beale_commentary_ch]'
+- target: theme/faith
+  type: example-of
+  weight: 1.0
+  refs:
+  - '[[bible:Hebrews 11:31]]'
+  - '[[bible:James 2:25]]'
+- target: group/israelite_spies
+  type: hid
+  weight: 1.0
+  refs:
+  - '[[bible:Joshua 2]]'
+- target: person/salmon
+  type: married-to
+  weight: 1.0
+  refs:
+  - '[[bible:Matthew 1:5]]'
+- target: person/boaz
+  type: parent-of
+  weight: 1.0
+  refs:
+  - '[[bible:Matthew 1:5]]'
