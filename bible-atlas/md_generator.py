@@ -67,20 +67,43 @@ class MdFormatters:
         # Build a set to track bidirectional edges with the same label
         edge_lines = []
         edge_map = {}
+        # To handle reciprocal edges, use a key of (min, max) and store both edge types if present
         for source, target, etype, weight in edges:
             label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype)
             s = source
             t = target
             sort_bias = EDGE_DIRECTION.get(etype, 0)
-            # Use tuple (min, max, label) to detect bidirectional edges
-            key = tuple(sorted([s, t]) + [label])
-            if key in edge_map:
-                edge_map[key]["bidirectional"] = True
+            # Use tuple (min, max) as key, store both directions if present
+            key = tuple(sorted([s, t]))
+            if key not in edge_map:
+                edge_map[key] = {}
+            # Store by direction: (from, to, etype)
+            edge_map[key][(s, t, etype)] = {
+                "from": s,
+                "to": t,
+                "etype": etype,
+                "label": label,
+                "sort_bias": sort_bias
+            }
+        # For each node pair, keep only the edge with the higher sort_bias if reciprocals exist
+        filtered_edges = []
+        for key, edge_dict in edge_map.items():
+            if len(edge_dict) == 1:
+                # Only one direction, keep it
+                filtered_edges.append(list(edge_dict.values())[0])
             else:
-                edge_map[key] = {"from": s, "to": t, "label": label, "sort_bias": sort_bias, "bidirectional": False}
+                # More than one direction (reciprocal), pick the one with higher sort_bias
+                best = max(edge_dict.values(), key=lambda x: x["sort_bias"])
+                filtered_edges.append(best)
         # Now build edge_lines
-        for info in edge_map.values():
-            if info["bidirectional"]:
+        for info in filtered_edges:
+            # Check if reciprocal exists for bidirectional display (optional, can be improved)
+            is_bidirectional = False
+            for other in filtered_edges:
+                if info is not other and info["from"] == other["to"] and info["to"] == other["from"] and info["label"] == other["label"]:
+                    is_bidirectional = True
+                    break
+            if is_bidirectional:
                 edge_str = f'    {info["from"]} <-->|{info["label"]}| {info["to"]}'
             else:
                 edge_str = f'    {info["from"]} -->|{info["label"]}| {info["to"]}'
