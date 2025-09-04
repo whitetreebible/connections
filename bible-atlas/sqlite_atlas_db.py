@@ -85,6 +85,7 @@ class SqliteAtlasDB:
                 type TEXT,
                 lang TEXT,
                 name TEXT,
+                name_disambiguous TEXT,
                 PRIMARY KEY (id, type, lang)
             )
         ''')
@@ -102,8 +103,8 @@ class SqliteAtlasDB:
     def insert_node(self, node: NodeModel, lang="en"):
         name = node.name.get(lang, next(iter(node.name.values()), node.id))
         self.conn.execute(
-            "INSERT OR REPLACE INTO nodes (id, type, lang, name) VALUES (?, ?, ?, ?)",
-            (node.id, node.type, lang, name)
+            "INSERT OR REPLACE INTO nodes (id, type, lang, name, name_disambiguous) VALUES (?, ?, ?, ?, ?)",
+            (node.id, node.type, lang, name, node.name_disambiguous.get(lang))
         )
         self.conn.commit()
 

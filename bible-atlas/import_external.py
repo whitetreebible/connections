@@ -1,4 +1,4 @@
-
+from sqlite_atlas_db import SqliteAtlasDB
 """
 Script to process a CSV with columns: node_type, source, target, edge_type.
 For each row, verifies that source and target nodes exist (creates if missing),
@@ -15,7 +15,44 @@ import csv
 from node_model import NodeModel, EdgeModel
 from associations import RECIPROCALS
 import os
+import inquirer
 from logger import log
+
+
+def lookup_similar_nodes(node_type: str, name: str) -> list:
+    """
+    Try to find similar nodes by name using the DB if available, else scan YAML files.
+    Returns a list of (id, type, name, name_disambiguous) dicts.
+    """
+    results = []
+    # Try DB first
+    try:
+        db = SqliteAtlasDB()
+        cur = db.conn.cursor()
+        # Case-insensitive substring match
+        cur.execute("SELECT id, type, name, name_disambiguous FROM nodes WHERE type = ? AND LOWER(name) LIKE ?", (node_type, f"%{name.lower()}%"))
+        for row in cur.fetchall():
+            results.append({"id": row[0], "type": row[1], "name": row[2], "name_disambiguous": row[3]})
+    except Exception:
+        db = None
+    # Fallback: scan YAML files
+    if not results:
+        data_dir = os.path.join(DATA_DIR, node_type.lower())
+        if os.path.exists(data_dir):
+            for fname in os.listdir(data_dir):
+                if fname.endswith('.yml') or fname.endswith('.yaml'):
+                    path = os.path.join(data_dir, fname)
+                    try:
+                        node = NodeModel.from_yaml_file(path)
+                        n_en = node.name.get('en', '').lower()
+                        n_disamb = node.name_disambiguous.get('en', '') if hasattr(node, 'name_disambiguous') else ''
+                        if name.lower() in n_en or name.lower() in n_disamb.lower():
+                            results.append({"id": node.id, "type": node.type, "name": n_en, "name_disambiguous": n_disamb})
+                    except Exception:
+                        continue
+    return results
+
+
 
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
@@ -27,14 +64,31 @@ def get_node_yaml_path(node_type, node_id):
 
 
 
-def get_or_create_node(node_type: str, name: str) -> tuple[NodeModel, str]:
-    # TODO: Use a more robust lookup for node existence and disambiguation
+def get_or_create_node(node_type: str, name: str, bible_ref: str) -> tuple[NodeModel, str]:
+    # Look for similar nodes
+    matches = lookup_similar_nodes(node_type, name)
     node_id = name.lower()
+    if matches:
+        choices = []
+        for m in matches:
+            label = f"{m['type']}/{m['id']}"
+            if m.get('name_disambiguous'):
+                label += f" {m['name_disambiguous']}"
+            choices.append((label, m['id']))
+        if name.lower() in [m['name'].lower() for m in matches]:
+            node_id = f"{node_id}_{bible_ref.lower().replace(' ', '_').replace(':', '_')}"
+        choices.append((f"Create new: {node_type}/{node_id}", None))
+        answer = inquirer.list_input(f"Which {name} is in {bible_ref}", choices=choices)
+        if answer:
+            # Load the selected node
+            if answer in [m['id'] for m in matches]:
+                node_id = answer
+                yaml_path = get_node_yaml_path(node_type, node_id)
+                node = NodeModel.from_yaml_file(yaml_path)
+                return node, yaml_path
+    # Default: create new node
     yaml_path = get_node_yaml_path(node_type, node_id)
-    if os.path.exists(yaml_path):
-        node = NodeModel.from_yaml_file(yaml_path)
-    else:
-        node = NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
+    node = NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
     return node, yaml_path
 
 
@@ -57,8 +111,8 @@ def main():
             bible_ref = row["bible_ref"].strip()
             
             # Get or create source and target nodes 
-            source_node, source_path = get_or_create_node(node_type, source)
-            target_node, target_path = get_or_create_node(node_type, target)
+            source_node, source_path = get_or_create_node(node_type, source, bible_ref)
+            target_node, target_path = get_or_create_node(node_type, target, bible_ref)
             edge_ref = f"bible:{bible_ref}"
             # Check for existing edge in source_node
             found = False
