@@ -12,56 +12,65 @@ from logger import log
 # Markdown formatters as a class for easy inheritance/extension
 class MdFormatters:
 
-    def format_graph_connections(self, node, md, lang, title="Graph Connections", types=None, direction="both", max_depth=None):
+    def format_graph_connections(self, node:NodeModel, md, lang, title="Graph Connections", types=None, direction="both", max_depth=None):
         """
         Output a mermaid graph of connections for this node from the db, with customizable parameters.
         """
         db = SqliteAtlasDB()
-        node_id = getattr(node, 'id', None)
-        node_type = getattr(node, 'type', None)
-        if not node_id or not node_type:
+        if not node.link:
             return md
 
-        node_id = f"{node_type}/{node_id}"
         # Get edges based on parameters
-        edges = db.traverse_edges(start_id=node_id, direction=direction, types=types, max_depth=max_depth)
-        log.info(f"Node {node_id} ({node_type}) has {len(edges)} edges for graph.")
+        edges = db.traverse_edges(start_node_link=node.link, direction=direction, types=types, max_depth=max_depth)
+        log.info(f"Node {node.link} has {len(edges)} edges for graph.")
 
         # Collect all node ids/types involved
-        node_ids = set()
+        node_links = set()
         for source, target, etype, weight in edges:
-            node_ids.add(source)
-            node_ids.add(target)
+            node_links.add(source)
+            node_links.add(target)
 
         # Get names for all nodes in this graph, using format_links for link formatting
         node_labels = {}
         links = {}
-        for node_id in node_ids:
-            ntype, nid = node_id.split('/')
+        for node_link in node_links:
+            ntype, nid = node_link.split('/')
             # Use format_links to get the formatted link (as markdown)
             name = db.select_name(node_type=ntype, node_id=nid, lang=lang)
             if name:
-                node_labels[node_id] = name
+                node_labels[node_link] = name
                 # Also store the formatted link
                 partial_node = NodeModel()
                 partial_node.type = ntype
                 partial_node.id = nid
-                links[name] = self.format_links(node=partial_node, lang=lang)
+                links[node_link] = self.format_links(node=partial_node, lang=lang)
             else:
-                node_labels[node_id] = node_id  # fallback to id if name not found
+                node_labels[node_link] = node_link  # fallback to id if name not found
 
         # Build mermaid graph with sort order by edge directionality
         lines = [] if not md else [md]
         lines.append(f"## {title}")
         lines.append('```mermaid')
         lines.append('graph LR;')
+        # Style current node
+        lines.append(f"    style {node.link} fill:#2fa4e7,stroke:#333,stroke-width:4px;")
+        # Add labels
+        for node_link, label in node_labels.items():
+            if node_link != label:
+                lines.append(f'    {node_link}(["{label}"])')
+        # Add clickable links
+        for node_link, link in links.items():
+            link_location = link.split('(')[-1].rstrip('){:target="_blank"}')
+            link_location = f'"{link_location}"'
+            lines.append(f"    click {node_link} {link_location}")
+
         # Build a set to track bidirectional edges with the same label
         edge_lines = []
         edge_map = {}
         for source, target, etype, weight in edges:
-            label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype).capitalize()
-            s = node_labels.get(source, "Unknown")
-            t = node_labels.get(target, "Unknown")
+            label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype)
+            s = source
+            t = target
             sort_bias = EDGE_DIRECTION.get(etype, 0)
             # Use tuple (min, max, label) to detect bidirectional edges
             key = tuple(sorted([s, t]) + [label])
@@ -80,13 +89,6 @@ class MdFormatters:
         edge_lines.sort(key=lambda x: -x[0])
         for _, line in edge_lines:
             lines.append(line)
-        # style current node
-        current_node_label = node_labels.get(f"{node.type}/{node.id}", f"{node.type}/{node.id}")
-        lines.append(f"    style {current_node_label} fill:#2fa4e7,stroke:#333,stroke-width:4px;")
-        for name, link in links.items():
-            link_location = link.split('(')[-1].rstrip('){:target="_blank"}')
-            link_location = f'"{link_location}"'
-            lines.append(f"    click {name} {link_location}")
         lines.append('```')
         db.close()
         return "\n".join(lines)

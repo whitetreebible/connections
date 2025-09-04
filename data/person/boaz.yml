@@ -37,3 +37,13 @@ edges:
   weight: 1.0
   refs:
   - 'bible:Ruth 2:1'
+- target: person/salmon
+  type: child-of
+  weight: 1.0
+  refs:
+  - 'bible:Matthew 1:5'
+- target: person/rahab
+  type: child-of
+  weight: 1.0
+  refs:
+  - 'bible:Matthew 1:5'

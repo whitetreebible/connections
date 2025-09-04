@@ -9,7 +9,7 @@ class SqliteAtlasDB:
         self.conn = sqlite3.connect(db_path)
         self._create_tables()
 
-    def traverse_edges(self, start_id: str, direction: str = "both", types: list = None, max_depth: int = None) -> set:
+    def traverse_edges(self, start_node_link: str, direction: str = "both", types: list = None, max_depth: int = None) -> set:
         """
         Recursively get all edges from or to start_id within a list of types up to max_depth.
         direction: 'out', 'in', or 'both'
@@ -19,7 +19,7 @@ class SqliteAtlasDB:
         """
         visited_nodes = set()
         collected_edges = set()
-        queue = [(start_id, 0)]
+        queue = [(start_node_link, 0)]
         while queue:
             current_id, depth = queue.pop(0)
             if max_depth is not None and depth > max_depth:
