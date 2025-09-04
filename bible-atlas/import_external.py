@@ -64,7 +64,44 @@ def get_node_yaml_path(node_type, node_id):
 
 
 
-def get_or_create_node(node_type: str, name: str, bible_ref: str) -> tuple[NodeModel, str]:
+# def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) -> tuple[NodeModel, str]:
+#     # Look for similar nodes
+#     matches = lookup_similar_nodes(node_type, name)
+#     node_id = name.lower()
+#     if matches:
+#         choices = []
+#         for m in matches:
+#             label = f"{m['type']}/{m['id']}"
+#             if m.get('name_disambiguous'):
+#                 label += f" {m['name_disambiguous']}"
+#             choices.append((label, m['id']))
+#         if name.lower() in [m['name'].lower() for m in matches]:
+#             node_id = f"{node_id}_{bible_ref.lower().replace(' ', '_').replace(':', '_')}"
+#         choices.append((f"Create new: {node_type}/{node_id}", None))
+#         answer = inquirer.list_input(f"Which {name} is in {bible_ref} ({context})?", choices=choices)
+#         if answer:
+#             # Load the selected node
+#             if answer in [m['id'] for m in matches]:
+#                 node_id = answer
+#                 yaml_path = get_node_yaml_path(node_type, node_id)
+#                 node = NodeModel.from_yaml_file(yaml_path)
+#                 return node, yaml_path
+#     # Default: create new node
+#     yaml_path = get_node_yaml_path(node_type, node_id)
+#     node = NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
+#     log.info(f"Creating new node: {node_type}/{node_id}")
+#     return node, yaml_path
+
+# Cache for disambiguation prompts: {(node_type, name, bible_ref): node_id}
+_disambig_cache = {}
+
+def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) -> tuple[NodeModel, str]:
+    cache_key = (node_type, name, bible_ref)
+    if cache_key in _disambig_cache:
+        node_id = _disambig_cache[cache_key]
+        yaml_path = get_node_yaml_path(node_type, node_id)
+        node = NodeModel.from_yaml_file(yaml_path) if os.path.exists(yaml_path) else NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
+        return node, yaml_path
     # Look for similar nodes
     matches = lookup_similar_nodes(node_type, name)
     node_id = name.lower()
@@ -73,22 +110,25 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str) -> tuple[NodeM
         for m in matches:
             label = f"{m['type']}/{m['id']}"
             if m.get('name_disambiguous'):
-                label += f" {m['name_disambiguous']}"
+                label = f"{m['name_disambiguous']}"
             choices.append((label, m['id']))
         if name.lower() in [m['name'].lower() for m in matches]:
             node_id = f"{node_id}_{bible_ref.lower().replace(' ', '_').replace(':', '_')}"
         choices.append((f"Create new: {node_type}/{node_id}", None))
-        answer = inquirer.list_input(f"Which {name} is in {bible_ref}", choices=choices)
+        answer = inquirer.list_input(f"Which {name} is in {bible_ref} ({context})?", choices=choices)
         if answer:
             # Load the selected node
             if answer in [m['id'] for m in matches]:
                 node_id = answer
+                _disambig_cache[cache_key] = node_id
                 yaml_path = get_node_yaml_path(node_type, node_id)
                 node = NodeModel.from_yaml_file(yaml_path)
                 return node, yaml_path
     # Default: create new node
+    _disambig_cache[cache_key] = node_id
     yaml_path = get_node_yaml_path(node_type, node_id)
     node = NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
+    log.info(f"New node: {node_type}/{node_id}")
     return node, yaml_path
 
 
@@ -111,8 +151,8 @@ def main():
             bible_ref = row["bible_ref"].strip()
             
             # Get or create source and target nodes 
-            source_node, source_path = get_or_create_node(node_type, source, bible_ref)
-            target_node, target_path = get_or_create_node(node_type, target, bible_ref)
+            source_node, source_path = get_or_create_node(node_type, source, bible_ref, context=f"{source} {edge_type} {target}")
+            target_node, target_path = get_or_create_node(node_type, target, bible_ref, context=f"{source} {edge_type} {target}")
             edge_ref = f"bible:{bible_ref}"
             # Check for existing edge in source_node
             found = False
@@ -141,7 +181,7 @@ def main():
             # Save updated YAML
             source_str = source_node.to_yaml()
             target_str = target_node.to_yaml()
-            log.info(f"Added edge: {source_node.link} {edge_type} {target_node.link}")
+            log.info(f"New edge: {source_node.link} {edge_type} {target_node.link}")
             # write updated YAML back to files
             with open(source_path, 'w', encoding='utf-8') as f:
                 f.write(source_str)

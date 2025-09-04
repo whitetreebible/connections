@@ -23,3 +23,9 @@ bible-atlas/
 
 ## Getting Started
 See [Contribution docs](docs/devs/contributing.md)
+
+
+## ToDo List
+- create a way to import with disambiguate in mind
+- collapse reciprocal links in the graph
+- create a way to heal/suggest missing reciprocal links
