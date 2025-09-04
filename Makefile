@@ -13,7 +13,7 @@ import_yaml:
 generate:
 	uv run bible-atlas/md_generator.py
 
-launch:
+serve:
 	uv sync
 	uv run -m mkdocs serve
 
