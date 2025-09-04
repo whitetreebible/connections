@@ -26,6 +26,20 @@ See [Contribution docs](docs/devs/contributing.md)
 
 
 ## ToDo List
-- create a way to import with disambiguate in mind
+- make the Mermaid charts easier to read/traverse
+- figure out a way to disambiguous Mermaid charts, Joseph and Joseph overlap because I'm using name instead of id
 - collapse reciprocal links in the graph
 - create a way to heal/suggest missing reciprocal links
+
+
+```
+make import_yaml
+ls data/person
+python bible-atlas/import_external.py tmp/mt1_import.csv
+make import_yaml
+make generate
+make serve
+
+rm data/person/*
+git restore data/person/rahab.yml data/person/salmon.yml data/person/boaz.yml
+```
