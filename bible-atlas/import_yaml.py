@@ -3,10 +3,7 @@ from node_model import NodeModelCollection
 from sqlite_atlas_db import SqliteAtlasDB
 from settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
 from tqdm import tqdm
-import logging
-
-log = logging.getLogger(__name__)
-logging.basicConfig(level=logging.INFO)
+from logger import log
 
 def main():
     collection = NodeModelCollection(DATA_DIR)

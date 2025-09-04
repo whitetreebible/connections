@@ -5,9 +5,7 @@ from node_model import NodeModelCollection, NodeModel
 from settings import SUPPORTED_LANGS
 from sqlite_atlas_db import SqliteAtlasDB
 from associations import ASSOCIATIONS_LANG, ASSOCIATIONS_FAMILY, EDGE_DIRECTION, RECIPROCALS
-
-log = logging.getLogger(__name__)
-logging.basicConfig(level=logging.DEBUG)
+from logger import log
 
 
 

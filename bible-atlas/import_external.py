@@ -15,10 +15,8 @@ import csv
 from node_model import NodeModel, EdgeModel
 from associations import RECIPROCALS
 import os
-import logging
+from logger import log
 
-logging.basicConfig(level=logging.INFO)
-log = logging.getLogger(__name__)
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
 
@@ -27,16 +25,19 @@ def get_node_yaml_path(node_type, node_id):
     folder = node_type.lower()
     return os.path.join(DATA_DIR, folder, f"{node_id}.yml")
 
-def get_or_create_node(node_type: str, name: str):
+
+
+def get_or_create_node(node_type: str, name: str) -> tuple[NodeModel, str]:
     # TODO: Use a more robust lookup for node existence and disambiguation
     node_id = name.lower()
     yaml_path = get_node_yaml_path(node_type, node_id)
     if os.path.exists(yaml_path):
         node = NodeModel.from_yaml_file(yaml_path)
     else:
-        # TODO: Create a new NodeModel with minimal info if missing
         node = NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
     return node, yaml_path
+
+
 
 def main():
     if len(sys.argv) < 2:
@@ -58,38 +59,35 @@ def main():
             # Get or create source and target nodes 
             source_node, source_path = get_or_create_node(node_type, source)
             target_node, target_path = get_or_create_node(node_type, target)
-            edge_target = f"{target_node.type}/{target_node.id}"
-            edge_ref = f"[[bible:{bible_ref}]]"
+            edge_ref = f"bible:{bible_ref}"
             # Check for existing edge in source_node
             found = False
             for edge in source_node.edges:
-                if edge.target == edge_target and edge.type == edge_type:
+                if edge.target == target_node.link and edge.type == edge_type:
                     if edge_ref not in edge.refs:
                         edge.refs.append(edge_ref)
                     found = True
                     break
             if not found:
-                edge_data = {"target": edge_target, "type": edge_type, "weight": 1.0, "refs": [edge_ref]}
+                edge_data = {"target": target_node.link, "type": edge_type, "weight": 1.0, "refs": [edge_ref]}
                 source_node.edges.append(EdgeModel(edge_data))
             # Add reciprocal edge if defined
             if edge_type in RECIPROCALS:
                 reciprocal = RECIPROCALS[edge_type]
-                recip_target = f"{source_node.type}/{source_node.id}"
                 recip_found = False
                 for edge in target_node.edges:
-                    if edge.target == recip_target and edge.type == reciprocal:
+                    if edge.target == source_node.link and edge.type == reciprocal:
                         if edge_ref not in edge.refs:
                             edge.refs.append(edge_ref)
                         recip_found = True
                         break
                 if not recip_found:
-                    recip_edge_data = {"target": recip_target, "type": reciprocal, "weight": 1.0, "refs": [edge_ref]}
+                    recip_edge_data = {"target": source_node.link, "type": reciprocal, "weight": 1.0, "refs": [edge_ref]}
                     target_node.edges.append(EdgeModel(recip_edge_data))
             # Save updated YAML
             source_str = source_node.to_yaml()
             target_str = target_node.to_yaml()
-            log.info(f"Updated {source_path} and {target_path} with new edges.")
-            log.info(f"Added edge {edge_type} from {source} to {target}.")
+            log.info(f"Added edge: {source_node.link} {edge_type} {target_node.link}")
             # write updated YAML back to files
             with open(source_path, 'w', encoding='utf-8') as f:
                 f.write(source_str)

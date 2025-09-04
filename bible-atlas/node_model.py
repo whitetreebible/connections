@@ -22,11 +22,18 @@ class NodeModel:
         self.footnotes: Dict[str, Any] = data.get("footnotes", {})
         self.edges: List[EdgeModel] = [EdgeModel(e) for e in data.get("edges", [])]
 
+    @property
+    def link(self) -> str:
+        return f"{self.type}/{self.id}"
+
+
     @classmethod
     def from_yaml_file(cls, file_path: str) -> "NodeModel":
         with open(file_path, "r", encoding="utf-8") as f:
             data = yaml.safe_load(f)
         return cls(data)
+
+
 
     def to_yaml(self, file_path: str = None) -> str:
         data = self.__dict__.copy()
