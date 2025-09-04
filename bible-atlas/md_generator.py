@@ -148,7 +148,18 @@ class MdFormatters:
                 # Get the localized association type
                 assoc_type = ASSOCIATIONS_LANG.get(edge.type, {}).get(lang, edge.type)
                 assoc_type = assoc_type.capitalize()
-                lines.append(f"- **{assoc_type}** {target_link}")
+                # Show refs in readable format (bible:..., footnote:...)
+                ref_strs = []
+                for ref in getattr(edge, 'refs', []):
+                    if isinstance(ref, str):
+                        if ref.startswith('bible:') or ref.startswith('footnote:'):
+                            ref_strs.append(ref)
+                        elif ref.startswith('[[bible:') and ref.endswith(']]'):
+                            ref_strs.append(ref[2:-2])
+                        elif ref.startswith('[[footnote:') and ref.endswith(']]'):
+                            ref_strs.append(ref[2:-2])
+                refs_display = f" ({', '.join(ref_strs)})" if ref_strs else ""
+                lines.append(f"- **{assoc_type}** {target_link}{refs_display}")
             lines.append("")
         return "\n".join(lines)
 
@@ -163,7 +174,13 @@ class MdFormatters:
             def add_footnotes_from_text(text):
                 if not text:
                     return
+                # Find [^footnote] and footnote:... references
                 for match in re.finditer(r"\[\^([a-zA-Z0-9_\-]+)\]", text):
+                    key = match.group(1)
+                    if key not in seen:
+                        footnote_order.append(key)
+                        seen.add(key)
+                for match in re.finditer(r"footnote:([a-zA-Z0-9_\-]+)", text):
                     key = match.group(1)
                     if key not in seen:
                         footnote_order.append(key)

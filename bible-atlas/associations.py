@@ -76,8 +76,6 @@ ASSOCIATIONS_FAMILY = [
 RECIPROCALS = {
     "parent-of": "child-of",
     "child-of": "parent-of",
-    "ancestor-of": "descendant-of",
-    "descendant-of": "ancestor-of",
     "married-to": "married-to",
 }
 

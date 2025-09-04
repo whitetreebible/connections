@@ -24,3 +24,6 @@ test:
 lint:
 	uv sync
 	uv run -m flake8 scripts/
+
+clean:
+	rm -rf site/ .uv/ .mypy_cache/ .pytest_cache/ __pycache__/ docs/en/person docs/en/place docs/en/tribe docs/en/theme
