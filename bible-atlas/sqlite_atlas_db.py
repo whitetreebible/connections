@@ -15,7 +15,7 @@ class SqliteAtlasDB:
         direction: 'out', 'in', or 'both'
         types: list of edge types to include (None or ['*'] for all)
         max_depth: int or None for infinite
-        Returns a set of (source, target, type, weight)
+        Returns a set of (source, target, type)
         """
         visited_nodes = set()
         collected_edges = set()
@@ -31,12 +31,12 @@ class SqliteAtlasDB:
             if direction in ("out", "both"):
                 cur = self.conn.cursor()
                 if types and types != ["*"]:
-                    q = "SELECT source, target, type, weight FROM edges WHERE source = ? AND type IN ({})".format(
+                    q = "SELECT source, target, type FROM edges WHERE source = ? AND type IN ({})".format(
                         ",".join(["?" for _ in types])
                     )
                     cur.execute(q, (current_id, *types))
                 else:
-                    cur.execute("SELECT source, target, type, weight FROM edges WHERE source = ?", (current_id,))
+                    cur.execute("SELECT source, target, type FROM edges WHERE source = ?", (current_id,))
                 for row in cur.fetchall():
                     edge = tuple(row)
                     if edge not in collected_edges:
@@ -46,12 +46,12 @@ class SqliteAtlasDB:
             if direction in ("in", "both"):
                 cur = self.conn.cursor()
                 if types and types != ["*"]:
-                    q = "SELECT source, target, type, weight FROM edges WHERE target = ? AND type IN ({})".format(
+                    q = "SELECT source, target, type FROM edges WHERE target = ? AND type IN ({})".format(
                         ",".join(["?" for _ in types])
                     )
                     cur.execute(q, (current_id, *types))
                 else:
-                    cur.execute("SELECT source, target, type, weight FROM edges WHERE target = ?", (current_id,))
+                    cur.execute("SELECT source, target, type FROM edges WHERE target = ?", (current_id,))
                 for row in cur.fetchall():
                     edge = tuple(row)
                     if edge not in collected_edges:
@@ -72,7 +72,7 @@ class SqliteAtlasDB:
     def select_edges(self, node_id: str) -> list:
         cur = self.conn.cursor()
         cur.execute(
-            "SELECT source, target, type, weight FROM edges WHERE source = ?",
+            "SELECT source, target, type FROM edges WHERE source = ?",
             (node_id,)
         )
         return cur.fetchall()
@@ -94,8 +94,7 @@ class SqliteAtlasDB:
                 id INTEGER PRIMARY KEY AUTOINCREMENT,
                 source TEXT,
                 target TEXT,
-                type TEXT,
-                weight REAL
+                type TEXT
             )
         ''')
         self.conn.commit()
@@ -110,8 +109,8 @@ class SqliteAtlasDB:
 
     def insert_edge(self, source_type: str, source_id: str, edge: EdgeModel):
         self.conn.execute(
-            "INSERT INTO edges (source, target, type, weight) VALUES (?, ?, ?, ?)",
-            (f"{source_type}/{source_id}", edge.target, edge.type, edge.weight)
+            "INSERT INTO edges (source, target, type) VALUES (?, ?, ?)",
+            (f"{source_type}/{source_id}", edge.target, edge.type)
         )
         self.conn.commit()
 

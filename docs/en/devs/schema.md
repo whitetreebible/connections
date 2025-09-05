@@ -55,17 +55,15 @@ Description: Connections to other nodes/pages, representing relationships, affil
 Fields:
 target → The ID of the connected node/page.
 type → The type of connection (e.g., resident-of, ancestor-of, married-to).
-weight → A decimal (0–1) representing the strength or certainty of the connection.
 refs → List of references related to this edge; can include Bible links [[bible:Book Chapter:Verse]] or footnote references [^footnote_id].
 Example:
 ```
 edges:
   - target: jericho
     type: resident-of
-    weight: 0.9
     refs:
-      - [[bible:Joshua 2]]
-      - [^hamilton_handbook]
+      - "bible:Joshua 2"
+      - "footnote:hamilton_handbook"
 ```
 
 ## footnotes
@@ -97,7 +95,6 @@ Use [^\<footnote_id>] for academic, scholarly, or extra-biblical sources.
 Edges:
 All edges should point to other node IDs, not plain text.
 Include references for edges to capture scholarly context or scriptural support.
-weight allows filtering for strong vs weak connections and visualization purposes.
 ID Disambiguation:
 Keep IDs unique and descriptive. Example: person/rahab vs creature/rahab.
 Extensibility:

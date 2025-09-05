@@ -27,16 +27,13 @@ footnotes:
 edges:
 - target: person/rahab
   type: married-to
-  weight: 1.0
   refs:
   - bible:Matthew 1:5
 - target: person/nahshon
   type: child-of
-  weight: 1.0
   refs:
   - bible:Matthew 1:5
 - target: person/boaz
   type: parent-of
-  weight: 1.0
   refs:
   - bible:Matthew 1:5

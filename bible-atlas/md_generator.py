@@ -26,7 +26,7 @@ class MdFormatters:
 
         # Collect all node ids/types involved
         node_links = set()
-        for source, target, etype, weight in edges:
+        for source, target, etype in edges:
             node_links.add(source)
             node_links.add(target)
 
@@ -68,7 +68,7 @@ class MdFormatters:
         edge_lines = []
         edge_map = {}
         # To handle reciprocal edges, use a key of (min, max) and store both edge types if present
-        for source, target, etype, weight in edges:
+        for source, target, etype in edges:
             label = ASSOCIATIONS_LANG.get(etype, {}).get(lang, etype)
             s = source
             t = target

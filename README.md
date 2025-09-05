@@ -26,7 +26,14 @@ See [Contribution docs](docs/devs/contributing.md)
 
 
 ## ToDo List
-- make the Mermaid charts easier to read/traverse
+- make disambiguous detection better
+  - verse name isn't a good default as a suffix
+  - add an automatic "shares-name-with"
+  - don't suggest based on name_disambiguous text
+- identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
+- transition away from makefile, I need a better script runner framework
+- fix bilateral relationships (married)
+- identify a more comprehensive list of relationship types
 - create a way to heal/suggest missing reciprocal links
 
 

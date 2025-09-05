@@ -181,7 +181,7 @@ def main():
                     found = True
                     break
             if not found:
-                edge_data = {"target": target_node.link, "type": edge_type, "weight": 1.0, "refs": [edge_ref]}
+                edge_data = {"target": target_node.link, "type": edge_type, "refs": [edge_ref]}
                 source_node.edges.append(EdgeModel(edge_data))
             # Add reciprocal edge if defined
             if edge_type in RECIPROCALS:
@@ -194,7 +194,7 @@ def main():
                         recip_found = True
                         break
                 if not recip_found:
-                    recip_edge_data = {"target": source_node.link, "type": reciprocal, "weight": 1.0, "refs": [edge_ref]}
+                    recip_edge_data = {"target": source_node.link, "type": reciprocal, "refs": [edge_ref]}
                     target_node.edges.append(EdgeModel(recip_edge_data))
             # Save updated YAML
             source_str = source_node.to_yaml()

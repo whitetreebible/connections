@@ -3,12 +3,11 @@ from typing import Any, Dict, List, Union
 class EdgeModel:
     """
     Data Access Object for an edge (relationship) between nodes in the Bible Atlas.
-    Each edge connects a source node to a target node with a type, weight, and refs.
+    Each edge connects a source node to a target node with a type, and refs.
     """
     def __init__(self, data: Dict[str, Any]):
         self.target: str = data.get("target")
         self.type: str = data.get("type")
-        self.weight: float = float(data.get("weight", 1.0))
         self.refs: List[Union[str, Dict[str, Any]]] = data.get("refs", [])
 
     @staticmethod
