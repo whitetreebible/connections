@@ -54,44 +54,44 @@ edges:
   type: resident-of
   weight: 0.9
   refs:
-  - 'bible:Joshua 2'
-  - 'footnote:hamilton_handbook'
+  - bible:Joshua 2
+  - footnote:hamilton_handbook
 - target: tribe/canaanite
   type: member-of
   weight: 1.0
   refs:
-  - 'bible:Joshua 2'
+  - bible:Joshua 2
 - target: tribe/israel
   type: assisted
   weight: 1.0
   refs:
-  - 'bible:Joshua 2'
+  - bible:Joshua 2
 - target: creature/rahab
   type: name-shared-with
   weight: 0.2
   refs:
-  - 'bible:Job 26:12'
-  - 'bible:Psalm 89:10'
+  - bible:Job 26:12
+  - bible:Psalm 89:10
 - target: person/jesus
   type: ancestor-of
   weight: 1.0
   refs:
-  - 'bible:Matthew 1:5'
-  - 'footnote:beale_commentary_ch'
+  - bible:Matthew 1:5
+  - footnote:beale_commentary_ch
 - target: theme/faith
   type: example-of
   weight: 1.0
   refs:
-  - 'bible:Hebrews 11:31'
-  - 'bible:James 2:25'
+  - bible:Hebrews 11:31
+  - bible:James 2:25
 - target: group/israelite_spies
   type: hid
   weight: 1.0
   refs:
-  - 'bible:Joshua 2'
+  - bible:Joshua 2
 - target: person/boaz
   type: parent-of
   weight: 1.0
   refs:
-  - 'bible:Matthew 1:5'
-  - 'footnote:scholarship_debate'
+  - bible:Matthew 1:5
+  - footnote:scholarship_debate

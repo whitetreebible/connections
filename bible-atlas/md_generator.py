@@ -119,7 +119,7 @@ class MdFormatters:
 
 
     def format_graph_family_connections(self, node, md, lang):
-        return self.format_graph_connections(node, md, lang, title="Family connections", direction="both", types=ASSOCIATIONS_FAMILY, max_depth=None) 
+        return self.format_graph_connections(node, md, lang, title="Family connections", direction="both", types=ASSOCIATIONS_FAMILY, max_depth=5) 
 
 
 

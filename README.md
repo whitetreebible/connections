@@ -27,8 +27,6 @@ See [Contribution docs](docs/devs/contributing.md)
 
 ## ToDo List
 - make the Mermaid charts easier to read/traverse
-- figure out a way to disambiguous Mermaid charts, Joseph and Joseph overlap because I'm using name instead of id
-- collapse reciprocal links in the graph
 - create a way to heal/suggest missing reciprocal links
 
 

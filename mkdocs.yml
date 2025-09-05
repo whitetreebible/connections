@@ -3,6 +3,11 @@ site_url: https://treebible.github.io/bible-atlas/
 use_directory_urls: true
 theme:
   name: mkdocs
+extra_css:
+  - mermaid-mod.css
+extra_javascript:
+  - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
+  - mermaid-mod.js
 plugins:
   - search
   - mermaid2
