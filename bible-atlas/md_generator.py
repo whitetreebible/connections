@@ -175,12 +175,10 @@ class MdFormatters:
                 ref_strs = []
                 for ref in getattr(edge, 'refs', []):
                     if isinstance(ref, str):
-                        if ref.startswith('bible:') or ref.startswith('footnote:'):
-                            ref_strs.append(ref)
-                        elif ref.startswith('[[bible:') and ref.endswith(']]'):
-                            ref_strs.append(ref[2:-2])
-                        elif ref.startswith('[[footnote:') and ref.endswith(']]'):
-                            ref_strs.append(ref[2:-2])
+                        if ref.startswith('bible:'):
+                            ref_strs.append(f"[[{ref}]]")
+                        elif ref.startswith('footnote:'):
+                            ref_strs.append(f"[^{ref.split(':',1)[1]}]")
                 refs_display = f" ({', '.join(ref_strs)})" if ref_strs else ""
                 lines.append(f"- **{assoc_type}** {target_link}{refs_display}")
             lines.append("")
@@ -305,8 +303,8 @@ class MdGenerator:
         self.formatters = formatters or [
             self.formatter_obj.format_header,
             self.formatter_obj.format_description,
-            self.formatter_obj.format_links,
             self.formatter_obj.format_associations,
+            self.formatter_obj.format_links,
             self.formatter_obj.format_graph_family_connections,
             self.formatter_obj.format_graph_all_connections,
             self.formatter_obj.format_footnotes,
