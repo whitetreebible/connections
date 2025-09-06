@@ -26,6 +26,7 @@ See [Contribution docs](docs/devs/contributing.md)
 
 
 ## ToDo List
+- use NodeType everywhere
 - make disambiguous detection better
   - verse name isn't a good default as a suffix
   - add an automatic "shares-name-with"
@@ -33,14 +34,12 @@ See [Contribution docs](docs/devs/contributing.md)
 - identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
 - transition away from makefile, I need a better script runner framework
 - fix bilateral relationships (married)
-- identify a more comprehensive list of relationship types
 - create a way to heal/suggest missing reciprocal links
 
 
 ```
 make import_yaml
-ls data/person
-python bible-atlas/import_external.py tmp/mt1_import.csv
+python -m bible_atlas.import_external tmp/mt1_import.csv
 make import_yaml
 make generate
 make serve

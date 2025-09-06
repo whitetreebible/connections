@@ -9,14 +9,14 @@ CSV example:
     person, Seth, Enos, parent-of
     person, Enos, Seth, child-of
 """
+from bible_atlas.logger import log
+from bible_atlas.models.edge_type import EdgeType, RECIPROCALS
+from bible_atlas.models.node_model import NodeModel, EdgeModel
 from bible_atlas.sqlite_db import SqliteDB
-import sys
 import csv
-from .models.node_model import NodeModel, EdgeModel
-from .models.edge_type import EdgeType, RECIPROCALS
-import os
 import inquirer
-from logger import log
+import os
+import sys
 
 
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
@@ -31,57 +31,63 @@ def lookup_similar_nodes(node_type: str, name: str) -> list:
     If name_disambiguous is empty, construct it from name and first edge, or fallback to type/id.
     """
     results = []
-    # Try DB first
+    name_norm = name.strip().lower()
+    seen_ids = set()
+    # Always check DB
     try:
         db = SqliteDB()
         cur = db.conn.cursor()
-        # Case-insensitive substring match
-        cur.execute("SELECT id, type, name FROM nodes WHERE type = ? AND LOWER(name) LIKE ?", (node_type, f"%{name.lower()}%"))
+        cur.execute("SELECT id, type, name FROM nodes WHERE type = ?", (node_type,))
         for row in cur.fetchall():
             node_id, ntype, n_en = row[0], row[1], row[2]
-            # Try to get name_disambiguous from YAML if possible
-            yaml_path = get_node_yaml_path(ntype, node_id)
-            n_disamb = ''
-            if os.path.exists(yaml_path):
-                try:
-                    node = NodeModel.from_yaml_file(yaml_path)
-                    n_disamb = node.name_disambiguous.get('en', '') if hasattr(node, 'name_disambiguous') else ''
-                    if not n_disamb:
-                        # Try to construct from first edge
-                        if node.edges:
-                            first_edge = node.edges[0]
-                            n_disamb = format_disambiguous_from_edge(node_id, n_en, first_edge.type, first_edge.target)
-                        else:
-                            n_disamb = format_disambiguous_from_edge(node_id, n_en, '', '')
-                except Exception:
-                    n_disamb = n_en or f"{ntype}/{node_id}"
-            else:
-                n_disamb = n_en or f"{ntype}/{node_id}"
-            results.append({"id": node_id, "type": ntype, "name": n_en, "name_disambiguous": n_disamb})
-    except Exception:
-        db = None
-    # Fallback: scan YAML files
-    if not results:
-        data_dir = os.path.join(DATA_DIR, node_type.lower())
-        if os.path.exists(data_dir):
-            for fname in os.listdir(data_dir):
-                if fname.endswith('.yml') or fname.endswith('.yaml'):
-                    path = os.path.join(data_dir, fname)
+            node_id_norm = str(node_id).strip().lower()
+            n_en_norm = str(n_en).strip().lower()
+            if name_norm == node_id_norm or name_norm == n_en_norm:
+                yaml_path = get_node_yaml_path(ntype, node_id)
+                n_disamb = ''
+                if os.path.exists(yaml_path):
                     try:
-                        node = NodeModel.from_yaml_file(path)
-                        n_en = node.name.get('en', '')
+                        node = NodeModel.from_yaml_file(yaml_path)
                         n_disamb = node.name_disambiguous.get('en', '') if hasattr(node, 'name_disambiguous') else ''
                         if not n_disamb:
-                            # Try to construct from first edge
                             if node.edges:
                                 first_edge = node.edges[0]
-                                n_disamb = format_disambiguous_from_edge(node.id, n_en, first_edge.type, first_edge.target)
+                                n_disamb = format_disambiguous_from_edge(node_id, n_en, first_edge.type, first_edge.target)
                             else:
-                                n_disamb = format_disambiguous_from_edge(node.id, n_en, '', '')
-                        if name.lower() in n_en or name.lower() in n_disamb.lower():
-                            results.append({"id": node.id, "type": node.type, "name": n_en, "name_disambiguous": n_disamb})
+                                n_disamb = format_disambiguous_from_edge(node_id, n_en, '', '')
                     except Exception:
-                        continue
+                        n_disamb = n_en or f"{ntype}/{node_id}"
+                else:
+                    n_disamb = n_en or f"{ntype}/{node_id}"
+                results.append({"id": node_id, "type": ntype, "name": n_en, "name_disambiguous": n_disamb})
+                seen_ids.add((ntype, node_id_norm))
+    except Exception as e:
+        log.warning(f"DB lookup failed: {e}")
+    # Always check YAML files
+    data_dir = os.path.join(DATA_DIR, node_type.lower())
+    if os.path.exists(data_dir):
+        for fname in os.listdir(data_dir):
+            if fname.endswith('.yml') or fname.endswith('.yaml'):
+                path = os.path.join(data_dir, fname)
+                node_id_from_file = os.path.splitext(fname)[0].strip().lower()
+                try:
+                    node = NodeModel.from_yaml_file(path)
+                    n_en = node.name.get('en', '')
+                    n_en_norm = n_en.strip().lower()
+                    n_disamb = node.name_disambiguous.get('en', '') if hasattr(node, 'name_disambiguous') else ''
+                    if not n_disamb:
+                        if node.edges:
+                            first_edge = node.edges[0]
+                            n_disamb = format_disambiguous_from_edge(node.id, n_en, first_edge.type, first_edge.target)
+                        else:
+                            n_disamb = format_disambiguous_from_edge(node.id, n_en, '', '')
+                    # Match on filename or name_en
+                    if (name_norm == node_id_from_file or name_norm == n_en_norm) and (node.type, node_id_from_file) not in seen_ids:
+                        results.append({"id": node.id, "type": node.type, "name": n_en, "name_disambiguous": n_disamb})
+                        seen_ids.add((node.type, node_id_from_file))
+                except Exception as e:
+                    log.warning(f"YAML lookup failed for {fname}: {e}")
+    log.info(f"lookup_similar_nodes('{node_type}', '{name}') found {len(results)} matches: {[r['id'] for r in results]}")
     return results
 
 
@@ -120,30 +126,45 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) 
         return node, yaml_path
     # Look for similar nodes
     matches = lookup_similar_nodes(node_type, name)
+    log.info(f"Looking up {node_type} named '{name}' found {len(matches)} matches.")
     node_id = name.lower()
     if matches:
         choices = []
+        create_new_label = f"Create new: {name} ({node_type}/{node_id})"
         for m in matches:
             label = f"{m['type']}/{m['id']}"
             if m.get('name_disambiguous'):
                 label = f"{m['name_disambiguous']}"
             choices.append((label, m['id']))
-        if name.lower() in [m['name'].lower() for m in matches]:
-            node_id = f"{node_id}_{bible_ref.lower().replace(' ', '_').replace(':', '_')}"
-        choices.append((f"Create new: {name} ({node_type}/{node_id})", None))
+        choices.append((create_new_label, None))
         answer = inquirer.list_input(f"Which {name} is in {bible_ref} ({context})?", choices=choices)
-        if answer:
-            # Load the selected node
-            if answer in [m['id'] for m in matches]:
-                node_id = answer
+        # Robustly detect 'Create new' selection (None or label string)
+        if answer in [m['id'] for m in matches]:
+            node_id = answer
+            _disambig_cache[cache_key] = node_id
+            yaml_path = get_node_yaml_path(node_type, node_id)
+            node = NodeModel.from_yaml_file(yaml_path)
+            return node, yaml_path
+        if answer is None or (isinstance(answer, str) and answer.startswith('Create new:')):
+            default_id = f"{node_id}_{bible_ref.lower().replace(' ', '_').replace(':', '_')}"
+            new_id = inquirer.text(message=f"Please provide a disambiguated id for new '{name}' in {node_type} (e.g., lamech_murderer):", default=default_id)
+            if new_id:
+                node_id = new_id.strip()
                 _disambig_cache[cache_key] = node_id
-                yaml_path = get_node_yaml_path(node_type, node_id)
-                node = NodeModel.from_yaml_file(yaml_path)
-                return node, yaml_path
+            else:
+                node_id = default_id
     # Default: create new node
     _disambig_cache[cache_key] = node_id
     yaml_path = get_node_yaml_path(node_type, node_id)
-    node = NodeModel({"id": node_id, "type": node_type, "name": {"en": name}, "edges": []})
+    # Set a meaningful disambiguated name if possible
+    disamb = f"{name} ({context})" if context else name
+    node = NodeModel({
+        "id": node_id,
+        "type": node_type,
+        "name": {"en": name},
+        "name_disambiguous": {"en": disamb},
+        "edges": []
+    })
     log.info(f"New node: {node_type}/{node_id}")
     return node, yaml_path
 

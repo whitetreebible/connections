@@ -37,13 +37,27 @@ class NodeModel:
 
     def to_yaml(self, file_path: str = None) -> str:
         data = self.__dict__.copy()
-        # Convert EdgeModel objects to dicts for YAML serialization
-        data['edges'] = [e.__dict__ for e in self.edges]
+        # Convert EdgeModel objects to dicts for YAML serialization, ensuring type is a string
+        def edge_to_dict(e):
+            d = e.__dict__.copy()
+            d['type'] = e.type.value if hasattr(e.type, 'value') else str(e.type)
+            return d
+        data['edges'] = [edge_to_dict(e) for e in self.edges]
         yaml_str = yaml.safe_dump(data, sort_keys=False, allow_unicode=True)
         if file_path:
             with open(file_path, 'w', encoding='utf-8') as f:
                 f.write(yaml_str)
         return yaml_str
+    
+
+
+class NodeType:
+    PERSON = "person"
+    PLACE = "place"
+    TRIBE = "tribe"
+    NATION = "nation"
+    ARTIFACT = "artifact"
+    THEME = "theme"
 
 
 
