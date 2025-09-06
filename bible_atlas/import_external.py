@@ -9,11 +9,11 @@ CSV example:
     person, Seth, Enos, parent-of
     person, Enos, Seth, child-of
 """
-from sqlite_atlas_db import SqliteAtlasDB
+from bible_atlas.sqlite_db import SqliteDB
 import sys
 import csv
-from node_model import NodeModel, EdgeModel
-from associations import RECIPROCALS
+from .models.node_model import NodeModel, EdgeModel
+from .models.edge_type import EdgeType, RECIPROCALS
 import os
 import inquirer
 from logger import log
@@ -33,7 +33,7 @@ def lookup_similar_nodes(node_type: str, name: str) -> list:
     results = []
     # Try DB first
     try:
-        db = SqliteAtlasDB()
+        db = SqliteDB()
         cur = db.conn.cursor()
         # Case-insensitive substring match
         cur.execute("SELECT id, type, name FROM nodes WHERE type = ? AND LOWER(name) LIKE ?", (node_type, f"%{name.lower()}%"))
@@ -86,7 +86,7 @@ def lookup_similar_nodes(node_type: str, name: str) -> list:
 
 
 
-def format_disambiguous_from_edge(node_id, name, edge_type, edge_target) -> str:
+def format_disambiguous_from_edge(node_id, name, edge_type:EdgeType, edge_target) -> str:
     if not name:
         name = node_id.capitalize()
     if not edge_type:

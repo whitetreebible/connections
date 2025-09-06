@@ -64,7 +64,7 @@ edges:
   refs:
   - bible:Joshua 2
 - target: creature/rahab
-  type: name-shared-with
+  type: name-matches
   refs:
   - bible:Job 26:12
   - bible:Psalm 89:10
@@ -79,7 +79,7 @@ edges:
   - bible:Hebrews 11:31
   - bible:James 2:25
 - target: group/israelite_spies
-  type: hid
+  type: assisted
   refs:
   - bible:Joshua 2
 - target: person/boaz

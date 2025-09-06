@@ -1,15 +1,16 @@
 import sqlite3
-from node_model import NodeModel, NodeModelCollection
-from edge_model import EdgeModel
-from settings import SUPPORTED_LANGS, DB_PATH, DATA_DIR
+from bible_atlas.models.node_model import NodeModel, NodeModelCollection
+from bible_atlas.models.edge_model import EdgeModel
+from bible_atlas.models.edge_type import EdgeType
+from bible_atlas.settings import SUPPORTED_LANGS, DB_PATH, DATA_DIR
 
-class SqliteAtlasDB:
+class SqliteDB:
     
     def __init__(self, db_path=DB_PATH):
         self.conn = sqlite3.connect(db_path)
         self._create_tables()
 
-    def traverse_edges(self, start_node_link: str, direction: str = "both", types: list = None, max_depth: int = None) -> set:
+    def traverse_edges(self, start_node_link: str, direction: str = "both", types: list[EdgeType] = None, max_depth: int = None) -> set[EdgeModel]:
         """
         Recursively get all edges from or to start_id within a list of types up to max_depth.
         direction: 'out', 'in', or 'both'
@@ -30,33 +31,35 @@ class SqliteAtlasDB:
             # Outgoing edges
             if direction in ("out", "both"):
                 cur = self.conn.cursor()
-                if types and types != ["*"]:
+                if types:
+                    types_arr = [t.value if isinstance(t, EdgeType) else t for t in types]
                     q = "SELECT source, target, type FROM edges WHERE source = ? AND type IN ({})".format(
                         ",".join(["?" for _ in types])
                     )
-                    cur.execute(q, (current_id, *types))
+                    cur.execute(q, (current_id, *types_arr))
                 else:
                     cur.execute("SELECT source, target, type FROM edges WHERE source = ?", (current_id,))
                 for row in cur.fetchall():
-                    edge = tuple(row)
+                    edge = EdgeModel.from_row(row)
                     if edge not in collected_edges:
                         collected_edges.add(edge)
-                        queue.append((row[1], depth + 1))  # row[1] is target
+                        queue.append((edge.target, depth + 1))
             # Incoming edges
             if direction in ("in", "both"):
                 cur = self.conn.cursor()
-                if types and types != ["*"]:
+                if types:
+                    types_arr = [t.value if isinstance(t, EdgeType) else t for t in types]
                     q = "SELECT source, target, type FROM edges WHERE target = ? AND type IN ({})".format(
                         ",".join(["?" for _ in types])
                     )
-                    cur.execute(q, (current_id, *types))
+                    cur.execute(q, (current_id, *types_arr))
                 else:
                     cur.execute("SELECT source, target, type FROM edges WHERE target = ?", (current_id,))
                 for row in cur.fetchall():
-                    edge = tuple(row)
+                    edge = EdgeModel.from_row(row)
                     if edge not in collected_edges:
                         collected_edges.add(edge)
-                        queue.append((row[0], depth + 1))  # row[0] is source
+                        queue.append((edge.source, depth + 1))
         return collected_edges
     
     
@@ -110,7 +113,7 @@ class SqliteAtlasDB:
     def insert_edge(self, source_type: str, source_id: str, edge: EdgeModel):
         self.conn.execute(
             "INSERT INTO edges (source, target, type) VALUES (?, ?, ?)",
-            (f"{source_type}/{source_id}", edge.target, edge.type)
+            (f"{source_type}/{source_id}", edge.target, edge.type.value)
         )
         self.conn.commit()
 
@@ -120,7 +123,7 @@ class SqliteAtlasDB:
 if __name__ == "__main__":
     # Example usage: collect all nodes/edges and insert into DB
     collector = NodeModelCollection(DATA_DIR)
-    db = SqliteAtlasDB(DB_PATH)
+    db = SqliteDB(DB_PATH)
     for node in collector.get_nodes():
         for lang in SUPPORTED_LANGS:
             db.insert_node(node, lang=lang)

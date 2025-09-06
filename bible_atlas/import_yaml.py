@@ -1,9 +1,9 @@
-import os
-from node_model import NodeModelCollection
-from sqlite_atlas_db import SqliteAtlasDB
-from settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
+from bible_atlas.logger import log
+from bible_atlas.models.node_model import NodeModelCollection
+from bible_atlas.settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
+from bible_atlas.sqlite_db import SqliteDB
 from tqdm import tqdm
-from logger import log
+import os
 
 def main():
     collection = NodeModelCollection(DATA_DIR)
@@ -11,7 +11,7 @@ def main():
     if os.path.exists(DB_PATH):
         os.remove(DB_PATH)
         log.info(f"Deleted old database at {DB_PATH}.")
-    db = SqliteAtlasDB(DB_PATH)
+    db = SqliteDB(DB_PATH)
     nodes = collection.get_nodes()
     log.info(f"Importing {len(nodes)} nodes from {DATA_DIR} into {DB_PATH}...")
     edges = 0

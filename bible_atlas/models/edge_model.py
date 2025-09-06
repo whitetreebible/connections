@@ -1,14 +1,33 @@
 from typing import Any, Dict, List, Union
+from .edge_type import EdgeType
 
 class EdgeModel:
+
     """
     Data Access Object for an edge (relationship) between nodes in the Bible Atlas.
     Each edge connects a source node to a target node with a type, and refs.
     """
     def __init__(self, data: Dict[str, Any]):
-        self.target: str = data.get("target")
-        self.type: str = data.get("type")
+        self.source: str = data.get("source", "")
+        self.target: str = data.get("target", "")
+        self.type: EdgeType = EdgeType(data.get("type", ""))
         self.refs: List[Union[str, Dict[str, Any]]] = data.get("refs", [])
+
+    def __eq__(self, other):
+        if not isinstance(other, EdgeModel):
+            return False
+        return (self.source, self.target, self.type) == (other.source, other.target, other.type)
+
+    def __hash__(self):
+        return hash((self.source, self.target, self.type))
+
+
+    @staticmethod
+    def from_row(row: tuple) -> "EdgeModel":
+        source, target, etype = row
+        return EdgeModel({"source": source, "target": target, "type": etype, "refs": []})
+
+
 
     @staticmethod
     def parse_refs(refs: List[Union[str, Dict[str, Any]]]) -> Dict[str, List[str]]:
