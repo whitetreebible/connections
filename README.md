@@ -12,7 +12,7 @@
 
 ## Repo Structure
 ```sh
-treebible/connections/
+whitetreebible/connections/
 ├── data/ # YAML nodes (and edges)
 ├── docs/ # Generated and static Markdown pages (factsheets & graphs)
 ├── connections/ # Python build/validation scripts

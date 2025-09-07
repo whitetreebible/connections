@@ -1,9 +1,9 @@
-from treebible.connections.logger import log
-from treebible.connections.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, RECIPROCALS
-from treebible.connections.models.edge_model import EdgeModel
-from treebible.connections.models.node_model import NodeModelCollection, NodeModel
-from treebible.connections.settings import SUPPORTED_LANGS
-from treebible.connections.sqlite_db import SqliteDB
+from whitetreebible.connections.logger import log
+from whitetreebible.connections.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, RECIPROCALS
+from whitetreebible.connections.models.edge_model import EdgeModel
+from whitetreebible.connections.models.node_model import NodeModelCollection, NodeModel
+from whitetreebible.connections.settings import SUPPORTED_LANGS
+from whitetreebible.connections.sqlite_db import SqliteDB
 import os
 import re
 
@@ -206,7 +206,7 @@ class MdFormatters:
             lines.append("## Associations")
             for edge in node.edges:
                 # Turn target into an id link
-                target_link = self.format_links(node, f"[[{edge.target}]]", lang)
+                target_link = self.format_links(db=db, node=node, md=f"[[{edge.target}]]", lang=lang)
                 # Show refs in readable format (bible:..., footnote:...)
                 ref_strs = []
                 for ref in getattr(edge, 'refs', []):
@@ -262,8 +262,8 @@ class MdFormatters:
             for key in footnote_order:
                 val = node.footnotes.get(key)
                 if val:
-                    text = val['text'].get(lang, '')
-                    text = self.format_links(node, text, lang)
+                    text = val['text'].get(lang, next(iter(val['text'].values()), ''))
+                    text = self.format_links(db=db, node=node, md=text, lang=lang)
                     lines.append(f"[^{key}]: {text}")
             # Warn for unused footnotes
             unused = set(node.footnotes.keys()) - set(footnote_order)

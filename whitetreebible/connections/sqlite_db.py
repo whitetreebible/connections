@@ -1,20 +1,38 @@
+
 import sqlite3
-from treebible.connections.models.node_model import NodeModel, NodeModelCollection
-from treebible.connections.models.edge_model import EdgeModel
-from treebible.connections.models.edge_type import EdgeType
-from treebible.connections.settings import SUPPORTED_LANGS, DB_PATH, DATA_DIR
 import os
+from typing import Optional, Callable, Any
+from whitetreebible.connections.models.node_model import NodeModel, NodeModelCollection
+from whitetreebible.connections.models.edge_model import EdgeModel
+from whitetreebible.connections.models.edge_type import EdgeType
+from whitetreebible.connections.settings import SUPPORTED_LANGS, DB_PATH, DATA_DIR
+
 
 class SqliteDB:
-    
-    def __init__(self, db_path=DB_PATH):
-        # if the db path does not exist, create it
-        if not os.path.exists(os.path.dirname(db_path)):
-            os.makedirs(os.path.dirname(db_path))
-        self.conn = sqlite3.connect(db_path)
+    def __init__(
+        self,
+        db_path: Optional[str] = None,
+        connection: Optional[Any] = None,
+        connection_factory: Optional[Callable[[str], Any]] = None,
+    ):
+        """
+        db_path: Path to the sqlite database file. Defaults to DB_PATH.
+        connection: Optionally provide an existing sqlite3.Connection (for testing/mocking).
+        connection_factory: Optionally provide a factory to create a connection (for testing/mocking).
+        """
+        self.db_path = db_path or DB_PATH
+        if connection is not None:
+            self.conn = connection
+        else:
+            if not os.path.exists(os.path.dirname(self.db_path)):
+                os.makedirs(os.path.dirname(self.db_path))
+            if connection_factory is not None:
+                self.conn = connection_factory(self.db_path)
+            else:
+                self.conn = sqlite3.connect(self.db_path)
         self._create_tables()
 
-    def traverse_edges(self, start_node_link: str, direction: str = "both", types: list[EdgeType] = None, max_depth: int = None) -> set[EdgeModel]:
+    def traverse_edges(self, start_node_link: str, direction: str = "both", types: Optional[list[EdgeType]] = None, max_depth: Optional[int] = None) -> set[EdgeModel]:
         """
         Recursively get all edges from or to start_id within a list of types up to max_depth.
         direction: 'out', 'in', or 'both'
@@ -67,7 +85,7 @@ class SqliteDB:
         return collected_edges
     
     
-    def select_name(self, node_type: str, node_id: str, lang: str = "en") -> str:
+    def select_name(self, node_type: str, node_id: str, lang: str = "en") -> Optional[str]:
         cur = self.conn.cursor()
         cur.execute(
             "SELECT name FROM nodes WHERE id = ? AND type = ? AND lang = ?",
@@ -124,8 +142,9 @@ class SqliteDB:
     def close(self):
         self.conn.close()
 
+
 if __name__ == "__main__":
-    # Example usage: collect all nodes/edges and insert into DB
+    # Example usage: collect all nodes/edges and insert into DB.. this is now done in import_yaml.py
     collector = NodeModelCollection(DATA_DIR)
     db = SqliteDB(DB_PATH)
     for node in collector.get_nodes():

@@ -9,10 +9,10 @@ CSV example:
     person, Seth, Enos, parent-of
     person, Enos, Seth, child-of
 """
-from treebible.connections.logger import log
-from treebible.connections.models.edge_type import EdgeType, RECIPROCALS
-from treebible.connections.models.node_model import NodeModel, EdgeModel
-from treebible.connections.sqlite_db import SqliteDB
+from whitetreebible.connections.logger import log
+from whitetreebible.connections.models.edge_type import EdgeType, RECIPROCALS
+from whitetreebible.connections.models.node_model import NodeModel, EdgeModel
+from whitetreebible.connections.sqlite_db import SqliteDB
 import csv
 import inquirer
 import os

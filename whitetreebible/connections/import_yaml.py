@@ -1,7 +1,7 @@
-from treebible.connections.logger import log
-from treebible.connections.models.node_model import NodeModelCollection
-from treebible.connections.settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
-from treebible.connections.sqlite_db import SqliteDB
+from whitetreebible.connections.logger import log
+from whitetreebible.connections.models.node_model import NodeModelCollection
+from whitetreebible.connections.settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
+from whitetreebible.connections.sqlite_db import SqliteDB
 from tqdm import tqdm
 import os
 

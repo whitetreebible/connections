@@ -1,7 +1,7 @@
 import yaml
 import os
 from typing import Any, Dict, List, Optional
-from treebible.connections.models.edge_model import EdgeModel
+from whitetreebible.connections.models.edge_model import EdgeModel
 
 class NodeModel:
     """

@@ -3,15 +3,15 @@
 # Import data from outside sources (customize this command)
 import_external:
 	@echo "Importing from outside sources..."
-	uv run -m treebible.connections.import_external
+	uv run -m whitetreebible.connections.import_external
 
 # Import from YAML files (customize this command)
 import_yaml:
 	@echo "Importing from YAML files..."
-	uv run -m treebible.connections.import_yaml
+	uv run -m whitetreebible.connections.import_yaml
 
 generate:
-	uv run -m treebible.connections.md_generator
+	uv run -m whitetreebible.connections.md_generator
 
 serve:
 	uv sync

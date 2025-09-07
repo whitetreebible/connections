@@ -1,5 +1,5 @@
-site_name: TreeBible - Connections
-site_url: https://treebible.github.io/connections/
+site_name: WhiteTreeBible - Connections
+site_url: https://whitetreebible.github.io/connections/
 use_directory_urls: true
 theme:
   name: mkdocs
@@ -21,7 +21,7 @@ plugins:
           default: true
           name: English
           build: true
-          site_name: "TreeBible - Connections"
+          site_name: "WhiteTreeBible - Connections"
 markdown_extensions:
   - footnotes
   - attr_list
