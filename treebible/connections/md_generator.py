@@ -88,11 +88,10 @@ class MdFormatters:
 
 
 
-    def format_graph_connections(self, node:NodeModel, md, lang:str='en', title="Graph Connections", types: list[EdgeType]=None, direction="both", max_depth=None):
+    def format_graph_connections(self, db:SqliteDB, node:NodeModel, md, lang:str='en', title="Graph Connections", types: list[EdgeType]=None, direction="both", max_depth=None):
         """
         Output a mermaid graph of connections for this node from the db, with customizable parameters.
         """
-        db = SqliteDB()
         if not node.link:
             return md
 
@@ -119,7 +118,7 @@ class MdFormatters:
                 partial_node = NodeModel()
                 partial_node.type = ntype
                 partial_node.id = nid
-                links[node_link] = self.format_links(node=partial_node, lang=lang)
+                links[node_link] = self.format_links(db=db, node=partial_node, lang=lang)
             else:
                 node_labels[node_link] = node_link  # fallback to id if name not found
 
@@ -150,26 +149,25 @@ class MdFormatters:
             edge_str = f'    {edge.source} {arrow}|{label}| {edge.target}'
             lines.append(edge_str)
         lines.append('```')
-        db.close()
         log.info(f"Generated mermaid graph with {len(filtered_edges)} edges.")
         return "\n".join(lines)
 
 
 
-    def format_graph_family_connections(self, node, md, lang):
+    def format_graph_family_connections(self, db:SqliteDB, node, md, lang):
         group = EdgeGroups.FAMILY
         title = group.for_lang(lang=lang, capitalize=True)
         types = EDGE_GROUPS_ASSOCIATIONS.get(group, None)
-        return self.format_graph_connections(node, md, lang, title=title, direction="both", types=types, max_depth=4)
+        return self.format_graph_connections(db, node, md, lang, title=title, direction="both", types=types, max_depth=4)
 
 
 
-    def format_graph_all_connections(self, node, md, lang):
-        return self.format_graph_connections(node, md, lang, title="All connections", direction="both", types=None, max_depth=None) 
+    def format_graph_all_connections(self, db:SqliteDB, node, md, lang):
+        return self.format_graph_connections(db, node, md, lang, title="All connections", direction="both", types=None, max_depth=None)
 
 
 
-    def format_header(self, node, md, lang):
+    def format_header(self, db: SqliteDB, node, md, lang):
         lines = [] if not md else [md]
         # Main header: name
         name = getattr(node, 'name', None)
@@ -189,7 +187,7 @@ class MdFormatters:
 
 
 
-    def format_description(self, node, md, lang):
+    def format_description(self, db: SqliteDB, node, md, lang):
         lines = [] if not md else [md]
         desc = getattr(node, 'description', None)
         if desc and isinstance(desc, dict):
@@ -202,7 +200,7 @@ class MdFormatters:
 
 
 
-    def format_associations(self, node, md, lang):
+    def format_associations(self, db: SqliteDB, node, md, lang):
         lines = [] if not md else [md]
         if node.edges:
             lines.append("## Associations")
@@ -226,7 +224,7 @@ class MdFormatters:
 
 
 
-    def format_footnotes(self, node, md, lang):
+    def format_footnotes(self, db: SqliteDB, node, md, lang):
         lines = [] if not md else [md]
         if node.footnotes:
             # Find all referenced footnotes in order of appearance
@@ -277,7 +275,7 @@ class MdFormatters:
 
 
 
-    def format_links(self, node=None, md=None, lang='en'):
+    def format_links(self, db: SqliteDB, node=None, md=None, lang='en'):
         """
         Replace [[bible:Book Chapter:Verse]] with BibleHub links, and [[id]] with /type/id links.
         For internal links, use the localized name from the sqlite db if available.
@@ -329,13 +327,13 @@ class MdFormatters:
             id_link_match = re.match(r"\[\[([^\]:]+)\]\]", f"[[{node.type}/{node.id}]]")
             if id_link_match:
                 response = id_link(match=id_link_match)
-        db.close()
         return response
 
 
 
 class MdGenerator:
-    def __init__(self, data_dir="data", docs_dir="docs", formatters=None):
+    def __init__(self, db: SqliteDB, data_dir="data", docs_dir="docs", formatters=None):
+        self.db = db    
         self.data_dir = data_dir
         self.docs_dir = docs_dir
         self.formatter_obj = MdFormatters()
@@ -385,7 +383,7 @@ class MdGenerator:
     def run_formatters(self, node, lang):
         md = ""
         for formatter in self.formatters:
-            md = formatter(node, md, lang)
+            md = formatter(self.db, node, md, lang)
         return md
 
 
@@ -396,10 +394,14 @@ def main():
     parser.add_argument('--data-dir', default='data', help='Directory containing YAML node data')
     parser.add_argument('--docs-dir', default='docs', help='Directory to output markdown files')
     args = parser.parse_args()
-    generator = MdGenerator(data_dir=args.data_dir, docs_dir=args.docs_dir)
-    generator.generate_all()
-
-
+    try:
+        db = SqliteDB()
+        generator = MdGenerator(db=db, data_dir=args.data_dir, docs_dir=args.docs_dir)
+        generator.generate_all()
+    except Exception as e:
+        log.error(f"Error occurred: {e}")
+    finally:
+        db.close()  
 
 if __name__ == "__main__":
     main()
