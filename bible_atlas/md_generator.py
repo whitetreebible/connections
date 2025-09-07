@@ -1,5 +1,6 @@
 from bible_atlas.logger import log
 from bible_atlas.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, EDGE_TYPE_LANG_LABELS, RECIPROCALS
+from bible_atlas.models.edge_model import EdgeModel
 from bible_atlas.models.node_model import NodeModelCollection, NodeModel
 from bible_atlas.settings import SUPPORTED_LANGS
 from bible_atlas.sqlite_db import SqliteDB
@@ -10,6 +11,41 @@ import re
 
 # Markdown formatters as a class for easy inheritance/extension
 class MdFormatters:
+
+    def filter_edges(self, edges:set[EdgeModel]) -> tuple[list[EdgeModel], list[str]]:
+        # create a map of source/target pairs to gather all the edges between them
+        edge_map = {}
+        for edge in edges:
+            key = tuple(sorted([edge.source, edge.target]))
+            if key not in edge_map:
+                edge_map[key] = []
+            edge_map[key].append(edge)
+
+        # Filter out duplicates and handle reciprocals
+        filtered_edges = []
+        arrows = []
+        for key, group in edge_map.items():
+            # if only one edge, keep it (simplest case)
+            # if len(group) == 1:
+            filtered_edges.append(group[0])
+            arrows.append(self.get_arrow_for_edge(group[0]))
+
+        return filtered_edges, arrows
+
+
+
+    def get_arrow_for_edge(self, edge:EdgeModel) -> str:
+        ARROW_DEFAULT = "--"
+        ARROW_THIN = ".-"
+        ARROW_THICK = "=="
+        symmetrical = edge.type in RECIPROCALS and RECIPROCALS.get(edge.type, None) == edge.type
+        arrow_thickness = ARROW_DEFAULT
+        if edge.type in [EdgeType.ANCESTOR_OF, EdgeType.DESCENDANT_OF, EdgeType.ASSOCIATED_WITH, EdgeType.VISITED]:
+            arrow_thickness = ARROW_THIN
+        arrow = f"<{arrow_thickness}>" if symmetrical else f"{arrow_thickness}>"
+        return arrow
+
+
 
     def format_graph_connections(self, node:NodeModel, md, lang:str='en', title="Graph Connections", types: list[EdgeType]=None, direction="both", max_depth=None):
         """
@@ -53,58 +89,25 @@ class MdFormatters:
         lines.append('graph LR;')
         # Style current node
         lines.append(f"    style {node.link} fill:#2fa4e7,stroke:#333,stroke-width:4px;")
+
         # Add labels
         for node_link, label in node_labels.items():
             if node_link != label:
                 lines.append(f'    {node_link}(["{label}"])')
+
         # Add clickable links
         for node_link, link in links.items():
             link_location = link.split('(')[-1].rstrip('){:target="_blank"}')
             link_location = f'"{link_location}"'
             lines.append(f"    click {node_link} {link_location}")
 
-        # Build a set to track bidirectional edges with the same label
-        edge_lines = []
-        edge_map = {}
-        # To handle reciprocal edges, use a key of (min, max) and store both edge types if present
-        for edge in edges:
-            s = edge.source
-            t = edge.target
-            etype = edge.type
-            # Use tuple (min, max) as key, store both directions if present
-            key = tuple(sorted([s, t]))
-            if key not in edge_map:
-                edge_map[key] = {}
-            # Store by direction: (from, to, etype)
-            edge_map[key][(s, t, etype)] = {
-                "from": s,
-                "to": t,
-                "etype": etype.value,
-                "label": etype.for_lang(lang=lang)
-            }
-        # For each node pair, keep only the edge with the higher sort_bias if reciprocals exist
-        filtered_edges = []
-        for key, edge_dict in edge_map.items():
-            if len(edge_dict) == 1:
-                # Only one direction, keep it
-                filtered_edges.append(list(edge_dict.values())[0])
-            else:
-                filtered_edges.append(edge_dict[edge_dict.keys().__iter__().__next__()])  # keep one arbitrarily
-        # Now build edge_lines
-        for info in filtered_edges:
-            # Check if reciprocal exists for bidirectional display (optional, can be improved)
-            is_bidirectional = False
-            for other in filtered_edges:
-                if info is not other and info["from"] == other["to"] and info["to"] == other["from"] and info["label"] == other["label"]:
-                    is_bidirectional = True
-                    break
-            if is_bidirectional:
-                edge_str = f'    {info["from"]} <-->|{info["label"]}| {info["to"]}'
-            else:
-                edge_str = f'    {info["from"]} -->|{info["label"]}| {info["to"]}'
-            edge_lines.append(edge_str)
-        for line in edge_lines:
-            lines.append(line)
+        # Add edges
+        filtered_edges, arrows = self.filter_edges(edges=edges)
+        for edge, arrow in zip(filtered_edges, arrows):
+            edge_type:EdgeType = edge.type
+            label = edge_type.for_lang(lang=lang, capitalize=True)
+            edge_str = f'    {edge.source} {arrow}|{label}| {edge.target}'
+            lines.append(edge_str)
         lines.append('```')
         db.close()
         log.info(f"Generated mermaid graph with {len(filtered_edges)} edges.")

@@ -184,11 +184,11 @@ def main():
             node_type = row["node_type"].strip()
             source = row["source"].strip()
             target = row["target"].strip()
-            edge_type = row["edge_type"].strip()
+            edge_type = EdgeType(row["edge_type"].strip())
             bible_ref = row["bible_ref"].strip()
             
             # Get or create source and target nodes 
-            readable_edge = edge_type.replace('-', ' ')
+            readable_edge = edge_type.for_lang(lang="en")
             context = f"{source} {readable_edge} {target}"
             source_node, source_path = get_or_create_node(node_type, source, bible_ref, context=context)
             target_node, target_path = get_or_create_node(node_type, target, bible_ref, context=context)
@@ -209,7 +209,8 @@ def main():
                 reciprocal = RECIPROCALS[edge_type]
                 recip_found = False
                 for edge in target_node.edges:
-                    if edge.target == source_node.link and edge.type == reciprocal:
+                    edge_type_val = edge.type.value if hasattr(edge.type, 'value') else edge.type
+                    if edge.target == source_node.link and edge_type_val == reciprocal:
                         if edge_ref not in edge.refs:
                             edge.refs.append(edge_ref)
                         recip_found = True
@@ -217,11 +218,10 @@ def main():
                 if not recip_found:
                     recip_edge_data = {"target": source_node.link, "type": reciprocal, "refs": [edge_ref]}
                     target_node.edges.append(EdgeModel(recip_edge_data))
-            # Save updated YAML
+            # Save updated YAML (write only once after all edge modifications)
             source_str = source_node.to_yaml()
             target_str = target_node.to_yaml()
             log.info(f"New edge: {source_node.link} {edge_type} {target_node.link}")
-            # write updated YAML back to files
             with open(source_path, 'w', encoding='utf-8') as f:
                 f.write(source_str)
             with open(target_path, 'w', encoding='utf-8') as f:

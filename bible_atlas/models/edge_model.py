@@ -16,10 +16,19 @@ class EdgeModel:
     def __eq__(self, other):
         if not isinstance(other, EdgeModel):
             return False
-        return (self.source, self.target, self.type) == (other.source, other.target, other.type)
+        return (self.target, self.type) == (other.target, other.type)
 
     def __hash__(self):
-        return hash((self.source, self.target, self.type))
+        return hash((self.target, self.type))
+    
+    def to_dict(self) -> Dict[str, Any]:
+        return {
+            # source is implicit in context for yaml so do not serialize it
+            "target": self.target,
+            "type": self.type.value if hasattr(self.type, 'value') else str(self.type),
+            "refs": self.refs
+        }
+
 
 
     @staticmethod
