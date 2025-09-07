@@ -1,309 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
-        <loc>https://treebible.github.io/bible-atlas/</loc>
-        <lastmod>2025-09-05</lastmod>
+        <loc>https://whitetreebible.github.io/connections/</loc>
+        <lastmod>2025-09-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/"/>
     </url>
     <url>
-        <loc>https://treebible.github.io/bible-atlas/devs/contributing/</loc>
-        <lastmod>2025-09-05</lastmod>
+        <loc>https://whitetreebible.github.io/connections/devs/contributing/</loc>
+        <lastmod>2025-09-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/devs/contributing/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/devs/contributing/"/>
     </url>
     <url>
-        <loc>https://treebible.github.io/bible-atlas/devs/schema/</loc>
-        <lastmod>2025-09-05</lastmod>
+        <loc>https://whitetreebible.github.io/connections/person/boaz/</loc>
+        <lastmod>2025-09-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/devs/schema/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/boaz/"/>
     </url>
     <url>
-        <loc>https://treebible.github.io/bible-atlas/person/abijah/</loc>
-        <lastmod>2025-09-05</lastmod>
+        <loc>https://whitetreebible.github.io/connections/person/rahab/</loc>
+        <lastmod>2025-09-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/abijah/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/rahab/"/>
     </url>
     <url>
-        <loc>https://treebible.github.io/bible-atlas/person/abiud/</loc>
-        <lastmod>2025-09-05</lastmod>
+        <loc>https://whitetreebible.github.io/connections/person/salmon/</loc>
+        <lastmod>2025-09-07</lastmod>
         <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/abiud/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/abraham/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/abraham/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/achim/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/achim/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/ahaz/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/ahaz/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/amminadab/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/amminadab/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/amon/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/amon/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/aram/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/aram/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/asa/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/asa/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/azor/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/azor/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/bathsheba/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/bathsheba/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/boaz/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/boaz/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/david/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/david/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/eleazar/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/eleazar/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/eliakim/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/eliakim/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/eliud/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/eliud/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/hezekiah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/hezekiah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/hezron/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/hezron/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/isaac/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/isaac/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jacob/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jacob/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jacob_matthew_1_16/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jacob_matthew_1_16/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jechoniah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jechoniah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jehoshaphat/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jehoshaphat/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jesse/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jesse/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jesus/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jesus/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/joram/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/joram/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/joseph/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/joseph/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/josiah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/josiah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/jotham/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/jotham/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/judah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/judah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/manasseh/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/manasseh/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/mary/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/mary/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/matthan/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/matthan/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/nahshon/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/nahshon/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/obed/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/obed/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/perez/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/perez/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/rahab/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/rahab/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/rehoboam/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/rehoboam/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/ruth/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/ruth/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/salmon/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/salmon/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/shealtiel/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/shealtiel/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/solomon/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/solomon/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/tamar/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/tamar/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/uriah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/uriah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/uzziah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/uzziah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/zadok/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/zadok/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/zerah/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/zerah/"/>
-    </url>
-    <url>
-        <loc>https://treebible.github.io/bible-atlas/person/zerubbabel/</loc>
-        <lastmod>2025-09-05</lastmod>
-        <changefreq>daily</changefreq>
-        <xhtml:link rel="alternate" hreflang="en" href="https://treebible.github.io/bible-atlas/person/zerubbabel/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/salmon/"/>
     </url>
 </urlset>
