@@ -34,13 +34,26 @@ Bible Atlas was created by a software engineer with a passion for biblical studi
 
 ## Contributing
 
+### Financial Contributors
+
+Someday, I would love to spend more than a few hours here or there on nights and weekends contributing to this project, but my day-job is still a big part of my life. Once I setup a way to donate, I'll have a way to track if this is a project that can be supported by my full-time work. I'll keep you posted.
+
+### Academic Contributors
+As a Bible enthusiast, I hope that others who love to study the Bible want to contribute to this (rather large) potential body of work! I welcome emails and 
+
+### Software Dev Contributors
+
 We welcome contributions! To add new pages or update connections:  
 
 1. Create or modify YAML files in the `data/` folder.  
 2. Run the **build script** to generate updated Markdown pages.  
 3. Submit a pull request to the repository for review.
 
-For more details, see out [contribution guidelines](devs/contributing.md) and [schema](devs/schema.md).
+For more details, see out [contribution guidelines](devs/contributing.md)
+
+### Email Updates
+<script src="https://js-na2.hsforms.net/forms/embed/243805031.js" defer></script>
+<div class="hs-form-frame" data-region="na2" data-form-id="1dae0866-beca-4bf7-a76d-83825456fa3b" data-portal-id="243805031"></div>
 
 ---
 

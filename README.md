@@ -25,10 +25,12 @@ whitetreebible/connections/
 See [Contribution docs](docs/devs/contributing.md)
 
 
-## ToDo List
-- identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
-- transition away from makefile, I need a better script runner framework
-- create a way to heal/suggest missing reciprocal links
+## TODO List
+- blockers to get to Phase 3
+- nice to haves:
+  - identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
+  - transition away from makefile, I need a better script runner framework
+  - create a way to heal/suggest missing reciprocal links
 
 ```
 make import_yaml
