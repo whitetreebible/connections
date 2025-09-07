@@ -24,21 +24,3 @@ whitetreebible/connections/
 ## Getting Started
 See [Contribution docs](docs/devs/contributing.md)
 
-
-## TODO List
-- blockers to get to Phase 3
-- nice to haves:
-  - identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
-  - transition away from makefile, I need a better script runner framework
-  - create a way to heal/suggest missing reciprocal links
-
-```
-make import_yaml
-python -m bible_atlas.import_external tmp/mt1_import.csv
-make import_yaml
-make generate
-make serve
-
-rm data/person/*
-git restore data/person/rahab.yml data/person/salmon.yml data/person/boaz.yml
-```

@@ -57,6 +57,32 @@ For more details, see out [contribution guidelines](devs/contributing.md)
 
 ---
 
+## Priority List
+### Phase 1: POC
+- complete 2025-09-04 (ish)
+- it demonstrated the graphs in a manual way that seemed promising!
+### Phase 2: Core Build
+- refactor/rename/rebuild so it's scalable/testable/usable - done!
+- in progress!
+- blockers to get to Phase 3
+  - must haves:
+    - ... I think they're done now? testing/classes
+  - nice to haves:
+    - identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
+    - transition away from makefile, I need a better script runner framework
+    - create a way to heal/suggest missing reciprocal links
+### Phase 3: Import Genesis
+- all of Genesis links--mostly by hand according to defined categories
+- this does not include any academic resources, just Bible
+### Phase 4: Torah
+- add subscription/payment ability
+- share with trusted academics/pastors/influencers
+- complete Ex-De
+### Phase 5
+- See where it goes?
+
+---
+
 ## Project Structure
 
 > [TODO]()

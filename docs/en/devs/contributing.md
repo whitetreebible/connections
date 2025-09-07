@@ -27,6 +27,13 @@ mkdocs serve
 - Make sure all YAML is validated (see scripts/validate_yaml.py).[^validate]
 - PR should include new nodes or updates; generated Markdown will be reviewed automatically.
 
+5. **Deploy the web**
+```sh
+mkdocs gh-deploy
+```
+- This will build the static site and push it to the gh-pages branch where Github Pages is serving.
+
+
 
 ## Workflow
 
