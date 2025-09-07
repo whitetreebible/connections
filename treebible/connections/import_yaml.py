@@ -5,10 +5,10 @@ from treebible.connections.sqlite_db import SqliteDB
 from tqdm import tqdm
 import os
 
-def main():
-    collection = NodeModelCollection(DATA_DIR)
+def import_yaml(db: SqliteDB, data_dir: str, clear_existing: bool = True):
+    collection = NodeModelCollection(data_dir)
     # delete old db
-    if os.path.exists(DB_PATH):
+    if os.path.exists(DB_PATH) and clear_existing:
         os.remove(DB_PATH)
         log.info(f"Deleted old database at {DB_PATH}.")
     db = SqliteDB(DB_PATH)
@@ -21,8 +21,15 @@ def main():
         for edge in node.edges:
             db.insert_edge(source_type=node.type, source_id=node.id, edge=edge)
             edges += 1
-    db.close()
     log.info(f"Imported {len(nodes)} nodes and {edges} edges into {DB_PATH}.")
+
+
+
+def main():
+    db = SqliteDB(DB_PATH)
+    import_yaml(db=db, data_dir=DATA_DIR)
+    db.close()
+
 
     
 if __name__ == "__main__":
