@@ -29,11 +29,6 @@ See [Contribution docs](docs/devs/contributing.md)
 - identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
 - transition away from makefile, I need a better script runner framework
 - create a way to heal/suggest missing reciprocal links
-- testing refactor
-  - md_generator.py: Refactor to allow passing in a DB or data, and separate graph formatting from DB access.
-  - import_yaml.py: Refactor to allow passing in a DB, and separate YAML parsing from DB writing.
-  - sqlite_db.py: Consider a repository pattern or interface for DB access, so it can be mocked.
-  - EdgeModel/NodeModel: Ensure all logic can be tested with plain Python objects.
 
 ```
 make import_yaml

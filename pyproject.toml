@@ -12,3 +12,8 @@ dependencies = [
     "pymdown-extensions>=10.16.1",
     "tqdm>=4.67.1",
 ]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
