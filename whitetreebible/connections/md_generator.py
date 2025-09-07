@@ -145,7 +145,7 @@ class MdFormatters:
         filtered_edges, arrows = self.filter_edges(edges=edges)
         for edge, arrow in zip(filtered_edges, arrows):
             edge_type:EdgeType = edge.type
-            label = edge_type.for_lang(lang=lang, capitalize=True)
+            label = edge_type.for_lang(lang=lang)
             edge_str = f'    {edge.source} {arrow}|{label}| {edge.target}'
             lines.append(edge_str)
         lines.append('```')
