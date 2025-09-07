@@ -40,6 +40,7 @@ class SqliteDB:
         max_depth: int or None for infinite
         Returns a set of (source, target, type)
         """
+        visited_edges = set()
         visited_nodes = set()
         collected_edges = set()
         queue = [(start_node_link, 0)]
@@ -47,10 +48,9 @@ class SqliteDB:
             current_id, depth = queue.pop(0)
             if max_depth is not None and depth > max_depth:
                 continue
-            if (current_id, depth) in visited_nodes:
+            if current_id in visited_nodes:
                 continue
-            visited_nodes.add((current_id, depth))
-            # Outgoing edges
+            # Traverse all outgoing and incoming edges before marking node as visited
             if direction in ("out", "both"):
                 cur = self.conn.cursor()
                 if types:
@@ -63,10 +63,11 @@ class SqliteDB:
                     cur.execute("SELECT source, target, type FROM edges WHERE source = ?", (current_id,))
                 for row in cur.fetchall():
                     edge = EdgeModel.from_row(row)
-                    if edge not in collected_edges:
+                    edge_key = (edge.source, edge.target, edge.type)
+                    if edge_key not in visited_edges:
+                        visited_edges.add(edge_key)
                         collected_edges.add(edge)
                         queue.append((edge.target, depth + 1))
-            # Incoming edges
             if direction in ("in", "both"):
                 cur = self.conn.cursor()
                 if types:
@@ -79,9 +80,12 @@ class SqliteDB:
                     cur.execute("SELECT source, target, type FROM edges WHERE target = ?", (current_id,))
                 for row in cur.fetchall():
                     edge = EdgeModel.from_row(row)
-                    if edge not in collected_edges:
+                    edge_key = (edge.source, edge.target, edge.type)
+                    if edge_key not in visited_edges:
+                        visited_edges.add(edge_key)
                         collected_edges.add(edge)
                         queue.append((edge.source, depth + 1))
+            visited_nodes.add(current_id)
         return collected_edges
     
     
