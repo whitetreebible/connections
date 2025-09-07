@@ -51,16 +51,6 @@ class NodeModel:
     
 
 
-class NodeType:
-    PERSON = "person"
-    PLACE = "place"
-    TRIBE = "tribe"
-    NATION = "nation"
-    ARTIFACT = "artifact"
-    THEME = "theme"
-
-
-
 class NodeModelCollection:
     """
     Loads all YAML files in a directory tree into NodeModel objects.

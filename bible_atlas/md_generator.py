@@ -1,5 +1,5 @@
 from bible_atlas.logger import log
-from bible_atlas.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, EDGE_TYPE_LANG_LABELS, RECIPROCALS
+from bible_atlas.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, RECIPROCALS
 from bible_atlas.models.edge_model import EdgeModel
 from bible_atlas.models.node_model import NodeModelCollection, NodeModel
 from bible_atlas.settings import SUPPORTED_LANGS
@@ -13,7 +13,6 @@ import re
 class MdFormatters:
 
     def filter_edges(self, edges:set[EdgeModel]) -> tuple[list[EdgeModel], list[str]]:
-        # create a map of source/target pairs to gather all the edges between them
         edge_map = {}
         for edge in edges:
             key = tuple(sorted([edge.source, edge.target]))
@@ -21,24 +20,66 @@ class MdFormatters:
                 edge_map[key] = []
             edge_map[key].append(edge)
 
-        # Filter out duplicates and handle reciprocals
+        log.info(edge_map)
         filtered_edges = []
         arrows = []
+        reciprocal_priority_order = list(RECIPROCALS.keys())
+        # For reciprocal filtering, use the order in RECIPROCALS.keys()
         for key, group in edge_map.items():
-            # if only one edge, keep it (simplest case)
-            # if len(group) == 1:
-            filtered_edges.append(group[0])
-            arrows.append(self.get_arrow_for_edge(group[0]))
-
+            edge_lookup = {(e.type, e.source, e.target): e for e in group}
+            used = set()
+            for edge in group:
+                etype = edge.type
+                if etype in used:
+                    continue
+                has_reciprocal = etype in RECIPROCALS
+                is_symmetric = RECIPROCALS.get(etype, None) == etype
+                # 1. Symmetric: only keep one direction (source < target for determinism)
+                if is_symmetric:
+                    log.info(f"Symmetric edge {edge.source} {etype} {edge.target}")
+                    used.add(etype)
+                    filtered_edges.append(edge)
+                    arrows.append(self.get_arrow_for_edge(edge, symmetrical=True))
+                # 2. Reciprocal: only keep canonical direction (key in RECIPROCALS, source->target)
+                elif has_reciprocal:
+                    reciprocal_edge = edge_lookup.get((RECIPROCALS.get(etype, None), edge.target, edge.source))
+                    log.info(f"Reciprocal edge {edge.source} {etype} {edge.target} (reciprocal: {reciprocal_edge.type if reciprocal_edge else "None found"})")
+                    if reciprocal_edge:
+                        # check if this is the better one, if so keep it, if not, continue
+                        if reciprocal_priority_order.index(etype) < reciprocal_priority_order.index(reciprocal_edge.type):
+                            log.info(f"Keeping edge {edge.source} {etype} {edge.target} over {reciprocal_edge.source} {reciprocal_edge.type} {reciprocal_edge.target}")
+                            used.add(etype)
+                            used.add(reciprocal_edge.type)
+                            filtered_edges.append(edge)
+                            arrows.append(self.get_arrow_for_edge(edge, symmetrical=False))
+                        else:
+                            continue
+                    else:
+                        log.info(f"Reciprocal edge {edge.source} {etype} {edge.target} has no reciprocal defined, keeping it.")
+                        # the other side doesn't exist (it probably should), display
+                        used.add(etype)
+                        filtered_edges.append(edge)
+                        arrows.append(self.get_arrow_for_edge(edge, symmetrical=False))
+                # 3. Symmetric but no reciprocal defined: collapse into one (like enemy/enemy)
+                elif edge_lookup.get((etype, edge.target, edge.source), None):
+                    log.info(f"Symmetric (no reciprocal defined) edge {edge.source} {etype} {edge.target}")
+                    used.add(etype)
+                    filtered_edges.append(edge)
+                    arrows.append(self.get_arrow_for_edge(edge, symmetrical=True))
+                # 4. All others: keep
+                else:
+                    log.info(f"Normal edge {edge.source} {etype} {edge.target}, keeping it.")
+                    used.add(etype)
+                    filtered_edges.append(edge)
+                    arrows.append(self.get_arrow_for_edge(edge, symmetrical=False))
         return filtered_edges, arrows
 
 
 
-    def get_arrow_for_edge(self, edge:EdgeModel) -> str:
+    def get_arrow_for_edge(self, edge:EdgeModel, symmetrical: bool) -> str:
         ARROW_DEFAULT = "--"
         ARROW_THIN = ".-"
         ARROW_THICK = "=="
-        symmetrical = edge.type in RECIPROCALS and RECIPROCALS.get(edge.type, None) == edge.type
         arrow_thickness = ARROW_DEFAULT
         if edge.type in [EdgeType.ANCESTOR_OF, EdgeType.DESCENDANT_OF, EdgeType.ASSOCIATED_WITH, EdgeType.VISITED]:
             arrow_thickness = ARROW_THIN
@@ -119,7 +160,7 @@ class MdFormatters:
         group = EdgeGroups.FAMILY
         title = group.for_lang(lang=lang, capitalize=True)
         types = EDGE_GROUPS_ASSOCIATIONS.get(group, None)
-        return self.format_graph_connections(node, md, lang, title=title, direction="both", types=types, max_depth=3)
+        return self.format_graph_connections(node, md, lang, title=title, direction="both", types=types, max_depth=4)
 
 
 

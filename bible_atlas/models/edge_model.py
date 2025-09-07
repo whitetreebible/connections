@@ -31,6 +31,11 @@ class EdgeModel:
 
 
 
+    def __repr__(self):
+        return f"Edge {self.source} {self.type} {self.target}"
+
+
+
     @staticmethod
     def from_row(row: tuple) -> "EdgeModel":
         source, target, etype = row

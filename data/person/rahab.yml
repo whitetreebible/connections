@@ -86,4 +86,7 @@ edges:
   type: parent-of
   refs:
   - bible:Matthew 1:5
-  - footnote:scholarship_debate
+- target: person/salmon
+  type: married-to
+  refs:
+  - bible:Matthew 1:5
