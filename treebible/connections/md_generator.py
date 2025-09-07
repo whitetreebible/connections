@@ -1,9 +1,9 @@
-from bible_atlas.logger import log
-from bible_atlas.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, RECIPROCALS
-from bible_atlas.models.edge_model import EdgeModel
-from bible_atlas.models.node_model import NodeModelCollection, NodeModel
-from bible_atlas.settings import SUPPORTED_LANGS
-from bible_atlas.sqlite_db import SqliteDB
+from treebible.connections.logger import log
+from treebible.connections.models.edge_type import EdgeGroups, EdgeType, EDGE_GROUPS_ASSOCIATIONS, RECIPROCALS
+from treebible.connections.models.edge_model import EdgeModel
+from treebible.connections.models.node_model import NodeModelCollection, NodeModel
+from treebible.connections.settings import SUPPORTED_LANGS
+from treebible.connections.sqlite_db import SqliteDB
 import os
 import re
 

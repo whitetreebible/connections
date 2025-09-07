@@ -1,12 +1,16 @@
 import sqlite3
-from bible_atlas.models.node_model import NodeModel, NodeModelCollection
-from bible_atlas.models.edge_model import EdgeModel
-from bible_atlas.models.edge_type import EdgeType
-from bible_atlas.settings import SUPPORTED_LANGS, DB_PATH, DATA_DIR
+from treebible.connections.models.node_model import NodeModel, NodeModelCollection
+from treebible.connections.models.edge_model import EdgeModel
+from treebible.connections.models.edge_type import EdgeType
+from treebible.connections.settings import SUPPORTED_LANGS, DB_PATH, DATA_DIR
+import os
 
 class SqliteDB:
     
     def __init__(self, db_path=DB_PATH):
+        # if the db path does not exist, create it
+        if not os.path.exists(os.path.dirname(db_path)):
+            os.makedirs(os.path.dirname(db_path))
         self.conn = sqlite3.connect(db_path)
         self._create_tables()
 

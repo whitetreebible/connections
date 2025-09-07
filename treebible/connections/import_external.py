@@ -9,10 +9,10 @@ CSV example:
     person, Seth, Enos, parent-of
     person, Enos, Seth, child-of
 """
-from bible_atlas.logger import log
-from bible_atlas.models.edge_type import EdgeType, RECIPROCALS
-from bible_atlas.models.node_model import NodeModel, EdgeModel
-from bible_atlas.sqlite_db import SqliteDB
+from treebible.connections.logger import log
+from treebible.connections.models.edge_type import EdgeType, RECIPROCALS
+from treebible.connections.models.node_model import NodeModel, EdgeModel
+from treebible.connections.sqlite_db import SqliteDB
 import csv
 import inquirer
 import os

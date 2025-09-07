@@ -6,8 +6,8 @@ Thank you for your interest in contributing! Bible Atlas is a collaborative proj
 
 1. **Clone or fork the repo**
 ```sh
-git clone https://github.com/whitetreelexicon/bible-atlas.git
-cd bible-atlas
+git clone https://github.com/treebible/connections.git
+cd connections
 ```
 
 2. **Install dependencies**

@@ -12,10 +12,10 @@
 
 ## Repo Structure
 ```sh
-bible-atlas/
+treebible/connections/
 ├── data/ # YAML nodes (and edges)
-├── docs/ # Generated Markdown factsheets & graphs
-├── scripts/ # Python build/validation scripts
+├── docs/ # Generated and static Markdown pages (factsheets & graphs)
+├── connections/ # Python build/validation scripts
 ├── mkdocs.yml # MkDocs configuration
 ├── pyproject.toml # UV requirements and dependency management
 └── README.md
@@ -26,16 +26,15 @@ See [Contribution docs](docs/devs/contributing.md)
 
 
 ## ToDo List
-- use NodeType everywhere
-- make disambiguous detection better
-  - verse name isn't a good default as a suffix
-  - add an automatic "shares-name-with"
-  - don't suggest based on name_disambiguous text
+- migrate to connections naming
 - identify a good way to add incrementally instead of rebuilding everything. versions on nodes?
 - transition away from makefile, I need a better script runner framework
-- fix bilateral relationships (married)
 - create a way to heal/suggest missing reciprocal links
-
+- testing refactor
+  - md_generator.py: Refactor to allow passing in a DB or data, and separate graph formatting from DB access.
+  - import_yaml.py: Refactor to allow passing in a DB, and separate YAML parsing from DB writing.
+  - sqlite_db.py: Consider a repository pattern or interface for DB access, so it can be mocked.
+  - EdgeModel/NodeModel: Ensure all logic can be tested with plain Python objects.
 
 ```
 make import_yaml

@@ -1,7 +1,7 @@
 import yaml
 import os
 from typing import Any, Dict, List, Optional
-from bible_atlas.models.edge_model import EdgeModel
+from treebible.connections.models.edge_model import EdgeModel
 
 class NodeModel:
     """

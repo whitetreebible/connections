@@ -1,7 +1,7 @@
-from bible_atlas.logger import log
-from bible_atlas.models.node_model import NodeModelCollection
-from bible_atlas.settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
-from bible_atlas.sqlite_db import SqliteDB
+from treebible.connections.logger import log
+from treebible.connections.models.node_model import NodeModelCollection
+from treebible.connections.settings import DB_PATH, DATA_DIR, SUPPORTED_LANGS
+from treebible.connections.sqlite_db import SqliteDB
 from tqdm import tqdm
 import os
 
