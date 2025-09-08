@@ -23,4 +23,5 @@ plugins:
           build: true
           site_name: "WhiteTreeBible - Connections"
 markdown_extensions:
-  - footnotes
+  - footnotes   # needed for footnotes to render
+  - attr_list   # needed for _target links to render
