@@ -24,5 +24,3 @@ plugins:
           site_name: "WhiteTreeBible - Connections"
 markdown_extensions:
   - footnotes
-  - attr_list
-  - pymdownx.extra
