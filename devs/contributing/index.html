@@ -108,33 +108,41 @@
 <p>Thank you for your interest in contributing! Bible Atlas is a collaborative project to map biblical figures, tribes, places, and themes. Contributions follow a clear workflow to ensure data integrity.</p>
 <h2 id="how-to-contribute">How to Contribute</h2>
 <ol>
-<li>
-<p><strong>Clone or fork the repo</strong>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/whitetreebible/connections.git
-<span class="nb">cd</span><span class="w"> </span>connections
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Install dependencies</strong>
-If you don't have it, <a href="https://docs.astral.sh/uv/getting-started/installation/">install UV first</a>
-<div class="highlight"><pre><span></span><code>uv<span class="w"> </span>sync
-<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Serve the web</strong>
-<div class="highlight"><pre><span></span><code>make<span class="w"> </span>import_yaml
-mkdocs<span class="w"> </span>serve
-</code></pre></div></p>
-</li>
-<li>
-<p><strong>Submit a Pull Request:</strong></p>
-</li>
-<li>Make sure all YAML is validated (see scripts/validate_yaml.py).<sup id="fnref:validate"><a class="footnote-ref" href="#fn:validate">1</a></sup></li>
-<li>PR should include new nodes or updates; generated Markdown will be reviewed automatically.</li>
+<li><strong>Clone or fork the repo</strong></li>
 </ol>
+<pre><code class="language-sh">git clone https://github.com/whitetreebible/connections.git
+cd connections
+</code></pre>
+<ol>
+<li><strong>Install dependencies</strong>
+If you don't have it, <a href="https://docs.astral.sh/uv/getting-started/installation/">install UV first</a></li>
+</ol>
+<pre><code class="language-sh">uv sync
+source .venv/bin/activate
+</code></pre>
+<ol>
+<li><strong>Serve the web</strong></li>
+</ol>
+<pre><code class="language-sh">make import_yaml
+mkdocs serve
+</code></pre>
+<ol>
+<li><strong>Submit a Pull Request:</strong></li>
+<li>Make sure all YAML is validated (see scripts/validate_yaml.py).<sup id="fnref:validate"><a class="footnote-ref" href="#fn:validate">1</a></sup></li>
+<li>
+<p>PR should include new nodes or updates; generated Markdown will be reviewed automatically.</p>
+</li>
+<li>
+<p><strong>Deploy the web</strong></p>
+</li>
+</ol>
+<pre><code class="language-sh">mkdocs gh-deploy
+</code></pre>
+<ul>
+<li>This will build the static site and push it to the gh-pages branch where Github Pages is serving.</li>
+</ul>
 <h2 id="workflow">Workflow</h2>
-<div class="highlight"><pre><span></span><code>graph LR;
+<div class="mermaid">graph LR;
 
 Bible --&gt; Yaml
 Resources --&gt; Yaml
@@ -147,7 +155,8 @@ SQLite --&gt; Generators
 Generators --&gt; Markdown
 
 Markdown --&gt; MkDocs
-</code></pre></div>
+
+</div>
 <div class="footnote">
 <hr/>
 <ol>
@@ -231,5 +240,5 @@ Markdown --&gt; MkDocs
 </div>
 </div>
 </div>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>
