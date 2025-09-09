@@ -16,10 +16,7 @@ description:
     '
 footnotes:
   genealogy_matthew:
-    type: biblical
-    text:
-      en: Boaz is listed as the son of Salmon and Rahab, and the husband of Ruth,
-        in the genealogy of Jesus (Matthew 1:5-6).
+    en: Boaz is listed as the son of Salmon and Rahab, and the husband of Ruth, in the genealogy of Jesus (Matthew 1:5-6).
 edges:
 - target: person/ruth
   type: married-to

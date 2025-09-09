@@ -19,7 +19,7 @@ class NodeModel:
         # Description can be dict (multilingual) or str
         desc = data.get("description", "")
         self.description: Any = desc if isinstance(desc, dict) else {"en": desc}
-        self.footnotes: Dict[str, Any] = data.get("footnotes", {})
+        self.footnotes: Dict[str, str] = data.get("footnotes", {})
         self.edges: List[EdgeModel] = [EdgeModel(e) for e in data.get("edges", [])]
 
     @property

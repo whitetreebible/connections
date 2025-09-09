@@ -262,7 +262,7 @@ class MdFormatters:
             for key in footnote_order:
                 val = node.footnotes.get(key)
                 if val:
-                    text = val['text'].get(lang, next(iter(val['text'].values()), ''))
+                    text = val.get(lang, next(iter(val.values()), ''))
                     text = self.format_links(db=db, node=node, md=text, lang=lang)
                     lines.append(f"[^{key}]: {text}")
             # Warn for unused footnotes

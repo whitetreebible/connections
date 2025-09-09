@@ -213,13 +213,11 @@ def main():
                 if not hasattr(source_node, 'footnotes') or source_node.footnotes is None:
                     source_node.footnotes = {}
                 if anchor not in source_node.footnotes:
-                    source_node.footnotes[anchor] = {
-                        "text": {"en": text} if text else {}
-                    }
+                    source_node.footnotes[anchor] = {"en": text} if text else {}
                 elif text:
                     # Update text if anchor exists but text is missing
-                    if "text" not in source_node.footnotes[anchor] or not source_node.footnotes[anchor]["text"].get("en"):
-                        source_node.footnotes[anchor]["text"] = {"en": text}
+                    if not source_node.footnotes[anchor].get("en"):
+                        source_node.footnotes[anchor]["en"] = text
                 # Add footnote:<anchor> to refs
                 edge_refs.append(f"footnote:{anchor}")
 

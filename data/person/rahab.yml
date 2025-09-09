@@ -22,28 +22,15 @@ description:
     \ the historical versus symbolic elements of her story.\n"
 footnotes:
   hamilton_handbook:
-    text:
-      en: '"To retain the traditional understanding of zonah as "prostitute," ..."
-        (Victor P. Hamilton, *Handbook on the Historical Books*, Grand Rapids, MI:
-        Baker Academic, 2001, 22.)'
+    en: '"To retain the traditional understanding of zonah as "prostitute," ..." (Victor P. Hamilton, *Handbook on the Historical Books*, Grand Rapids, MI: Baker Academic, 2001, 22.)'
   josephus_note_1:
-    text:
-      en: '"Josephus recounts Rahab hiding the spies and her family''s preservation
-        during Jericho''s conquest."" (Josephus, Flavius, *Antiquities of the Jews*,
-        Book 5, Section 1.)'
+    en: '"Josephus recounts Rahab hiding the spies and her family''s preservation during Jericho''s conquest."" (Josephus, Flavius, *Antiquities of the Jews*, Book 5, Section 1.)'
   beale_commentary_ch:
-    text:
-      en: '"Rahab''s inclusion among women in Jesus'' genealogy is significant and
-        discussed in multiple commentaries." (Beale, G. K., *Commentary on the New
-        Testament Use of the Old Testament*, pp. 208-212.)'
+    en: '"Rahab''s inclusion among women in Jesus'' genealogy is significant and discussed in multiple commentaries." (Beale, G. K., *Commentary on the New Testament Use of the Old Testament*, pp. 208-212.)'
   scholarship_debate:
-    text:
-      en: 'Scholarly debate exists on the historical versus symbolic elements of
-        her story.'
+    en: 'Scholarly debate exists on the historical versus symbolic elements of her story.'
   test_footnote:
-    text:
-      en: This is a test footnote for demonstration purposes, it has a [[person/jesus]]
-        link and a [[bible:Joshua 2]] link.
+    en: This is a test footnote for demonstration purposes, it has a [[person/jesus]] link and a [[bible:Joshua 2]] link.
 edges:
 - target: place/jericho
   type: resident-of
