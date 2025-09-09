@@ -19,7 +19,7 @@ import os
 import sys
 
 
-DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../data'))
+DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data'))
 
 _disambig_cache = {}
 
@@ -176,52 +176,99 @@ def main():
         sys.exit(1)
     file_path = sys.argv[1]
     with open(file_path, newline='', encoding='utf-8') as csvfile:
-        reader = csv.DictReader(csvfile, fieldnames=["node_type", "source", "target", "edge_type", "bible_ref"])
+        reader = csv.DictReader(csvfile, fieldnames=[
+            "s_type", "s_name", "edge_type", "t_type", "t_name",
+            "ref_bible", "ref_footnote_anchor", "ref_footnote_text"
+        ])
         for row in reader:
             # skip header
-            if row["node_type"] == "node_type":
+            if row["s_type"] == "s_type":
                 continue
-            node_type = row["node_type"].strip()
-            source = row["source"].strip()
-            target = row["target"].strip()
+            s_type = row["s_type"].strip()
+            s_name = row["s_name"].strip()
             edge_type = EdgeType(row["edge_type"].strip())
-            bible_ref = row["bible_ref"].strip()
-            
-            # Get or create source and target nodes 
+            t_type = row["t_type"].strip()
+            t_name = row["t_name"].strip()
+            ref_bible = row["ref_bible"].strip()
+            ref_footnote_anchor = row["ref_footnote_anchor"].strip()
+            ref_footnote_text = row["ref_footnote_text"].strip()
+
+            # Get or create source and target nodes
             readable_edge = edge_type.for_lang(lang="en")
-            context = f"{source} {readable_edge} {target}"
-            source_node, source_path = get_or_create_node(node_type, source, bible_ref, context=context)
-            target_node, target_path = get_or_create_node(node_type, target, bible_ref, context=context)
-            edge_ref = f"bible:{bible_ref}"
+            context = f"{s_name} {readable_edge} {t_name}"
+            source_node, source_path = get_or_create_node(s_type, s_name, ref_bible, context=context)
+            target_node, target_path = get_or_create_node(t_type, t_name, ref_bible, context=context)
+
+
+            # Build refs, including bible and footnote refs
+            edge_refs = []
+            if ref_bible:
+                edge_refs.append(f"bible:{ref_bible}")
+
+            # Add footnote to node's footnotes dict if anchor/text present
+            anchor = ref_footnote_anchor.strip() if ref_footnote_anchor else ''
+            text = ref_footnote_text.strip() if ref_footnote_text else ''
+            if anchor:
+                # Add to source_node.footnotes (create if missing)
+                if not hasattr(source_node, 'footnotes') or source_node.footnotes is None:
+                    source_node.footnotes = {}
+                if anchor not in source_node.footnotes:
+                    source_node.footnotes[anchor] = {
+                        "text": {"en": text} if text else {}
+                    }
+                elif text:
+                    # Update text if anchor exists but text is missing
+                    if "text" not in source_node.footnotes[anchor] or not source_node.footnotes[anchor]["text"].get("en"):
+                        source_node.footnotes[anchor]["text"] = {"en": text}
+                # Add footnote:<anchor> to refs
+                edge_refs.append(f"footnote:{anchor}")
+
             # Check for existing edge in source_node
             found = False
             for edge in source_node.edges:
                 if edge.target == target_node.link and edge.type == edge_type:
-                    if edge_ref not in edge.refs:
-                        edge.refs.append(edge_ref)
+                    for ref in edge_refs:
+                        if ref and ref not in edge.refs:
+                            edge.refs.append(ref)
                     found = True
                     break
             if not found:
-                edge_data = {"target": target_node.link, "type": edge_type, "refs": [edge_ref]}
+                edge_data = {
+                    "target": target_node.link,
+                    "type": edge_type,
+                    "refs": edge_refs
+                }
                 source_node.edges.append(EdgeModel(edge_data))
+
             # Add reciprocal edge if defined
             if edge_type in RECIPROCALS:
                 reciprocal = RECIPROCALS[edge_type]
                 recip_found = False
+                # Only mirror non-footnote refs (e.g., bible refs) to reciprocal edge
+                mirrored_refs = [ref for ref in edge_refs if not (isinstance(ref, str) and ref.startswith("footnote:"))]
                 for edge in target_node.edges:
                     edge_type_val = edge.type.value if hasattr(edge.type, 'value') else edge.type
                     if edge.target == source_node.link and edge_type_val == reciprocal:
-                        if edge_ref not in edge.refs:
-                            edge.refs.append(edge_ref)
+                        for ref in mirrored_refs:
+                            if ref and ref not in edge.refs:
+                                edge.refs.append(ref)
                         recip_found = True
                         break
                 if not recip_found:
-                    recip_edge_data = {"target": source_node.link, "type": reciprocal, "refs": [edge_ref]}
+                    recip_edge_data = {
+                        "target": source_node.link,
+                        "type": reciprocal,
+                        "refs": mirrored_refs
+                    }
                     target_node.edges.append(EdgeModel(recip_edge_data))
+
             # Save updated YAML (write only once after all edge modifications)
             source_str = source_node.to_yaml()
             target_str = target_node.to_yaml()
             log.info(f"New edge: {source_node.link} {edge_type} {target_node.link}")
+            # Ensure parent directories exist before writing
+            os.makedirs(os.path.dirname(source_path), exist_ok=True)
+            os.makedirs(os.path.dirname(target_path), exist_ok=True)
             with open(source_path, 'w', encoding='utf-8') as f:
                 f.write(source_str)
             with open(target_path, 'w', encoding='utf-8') as f:
