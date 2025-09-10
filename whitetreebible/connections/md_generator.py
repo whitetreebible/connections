@@ -12,6 +12,19 @@ import re
 # Markdown formatters as a class for easy inheritance/extension
 class MdFormatters:
 
+    def format_graphs_by_edge_group(self, db: SqliteDB, node: NodeModel, md, lang):
+        lines = [] if not md else [md]
+        for group in EdgeGroups:
+            group_types = EDGE_GROUPS_ASSOCIATIONS.get(group, None)
+            if not group_types:
+                continue
+            title = group.for_lang(lang=lang, capitalize=True)
+            graph_md = self.format_graph_connections(
+                db, node, md=None, lang=lang, title=title, types=group_types, direction="both", max_depth=1
+            )
+            lines.append(graph_md)
+        return "\n".join(lines)
+
     def filter_edges(self, edges:set[EdgeModel]) -> tuple[list[EdgeModel], list[str]]:
         edge_map = {}
         for edge in edges:
@@ -124,6 +137,8 @@ class MdFormatters:
 
         # Build mermaid graph with sort order by edge directionality
         lines = [] if not md else [md]
+        if len(node_labels) == 0 or len(edges) == 0:
+            return "\n".join(lines)
         lines.append(f"## {title}")
         lines.append('```mermaid')
         lines.append('graph LR;')
@@ -151,19 +166,6 @@ class MdFormatters:
         lines.append('```')
         log.info(f"Generated mermaid graph with {len(filtered_edges)} edges.")
         return "\n".join(lines)
-
-
-
-    def format_graph_family_connections(self, db:SqliteDB, node, md, lang):
-        group = EdgeGroups.FAMILY
-        title = group.for_lang(lang=lang, capitalize=True)
-        types = EDGE_GROUPS_ASSOCIATIONS.get(group, None)
-        return self.format_graph_connections(db, node, md, lang, title=title, direction="both", types=types, max_depth=4)
-
-
-
-    def format_graph_all_connections(self, db:SqliteDB, node, md, lang):
-        return self.format_graph_connections(db, node, md, lang, title="All connections", direction="both", types=None, max_depth=None)
 
 
 
@@ -343,8 +345,7 @@ class MdGenerator:
             self.formatter_obj.format_description,
             self.formatter_obj.format_associations,
             self.formatter_obj.format_links,
-            self.formatter_obj.format_graph_family_connections,
-            self.formatter_obj.format_graph_all_connections,
+            self.formatter_obj.format_graphs_by_edge_group,
             self.formatter_obj.format_footnotes,
         ]
         self.nodes = NodeModelCollection(self.data_dir).get_nodes()
