@@ -102,7 +102,7 @@
 <ul class="nav flex-column">
 </ul>
 </li>
-<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#all-connections">All connections</a>
+<li class="nav-item" data-bs-level="2"><a class="nav-link" href="#geographic">Geographic</a>
 <ul class="nav flex-column">
 </ul>
 </li>
@@ -114,11 +114,11 @@
 <div class="col-md-9" role="main">
 <h1 id="boaz">Boaz</h1>
 <h2 id="boaz-kinsman-redeemer-of-ruth-from-bethlehem">Boaz (kinsman redeemer of Ruth, from Bethlehem)</h2>
-<p>Boaz was a wealthy landowner in <a href="../../place/bethlehem/">place/bethlehem</a> and a prominent figure in the Book of Ruth. He is the son of Salmon and Rahab, and becomes the husband of <a href="../../person/ruth/">person/ruth</a>. Boaz is the great-grandfather of King <a href="../../person/david/">person/david</a> and is mentioned in the genealogy of <a href="../../person/jesus/">person/jesus</a> in <a href="https://biblehub.com/context/matthew/1.htm" target="_blank">Matthew 1:5-6</a>.</p>
+<p>Boaz was a wealthy landowner in <a href="../../place/bethlehem/">place/bethlehem</a> and a prominent figure in the Book of Ruth. He is the son of Salmon and Rahab, and becomes the husband of <a href="../../person/ruth/">Ruth</a>. Boaz is the great-grandfather of King <a href="../../person/david/">David</a> and is mentioned in the genealogy of <a href="../../person/jesus/">Jesus</a> in <a href="https://biblehub.com/context/matthew/1.htm" target="_blank">Matthew 1:5-6</a>.</p>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Married to</strong> <a href="../../person/ruth/">person/ruth</a> (<a href="https://biblehub.com/context/ruth/4-13.htm" target="_blank">Ruth 4:13</a>, <a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>)</li>
-<li><strong>Parent of</strong> <a href="../../person/obed/">person/obed</a> (<a href="https://biblehub.com/context/ruth/4-21.htm" target="_blank">Ruth 4:21</a>)</li>
+<li><strong>Married to</strong> <a href="../../person/ruth/">Ruth</a> (<a href="https://biblehub.com/context/ruth/4-13.htm" target="_blank">Ruth 4:13</a>, <a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/obed/">Obed</a> (<a href="https://biblehub.com/context/ruth/4-21.htm" target="_blank">Ruth 4:21</a>)</li>
 <li><strong>Resident of</strong> <a href="../../place/bethlehem/">place/bethlehem</a> (<a href="https://biblehub.com/context/ruth/2-1.htm" target="_blank">Ruth 2:1</a>)</li>
 <li><strong>Child of</strong> <a href="../../person/salmon/">Salmon</a> (<a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>)</li>
 <li><strong>Child of</strong> <a href="../../person/rahab/">Rahab</a> (<a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>)</li>
@@ -126,43 +126,37 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph LR;
     style person/boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/ruth(["Ruth"])
     person/rahab(["Rahab"])
     person/salmon(["Salmon"])
     person/boaz(["Boaz"])
+    person/jesus(["Jesus"])
+    person/jesse(["Jesse"])
+    person/obed(["Obed"])
+    person/nahshon(["Nahshon"])
+    click person/ruth "../../person/ruth/"
     click person/rahab "../../person/rahab/"
     click person/salmon "../../person/salmon/"
     click person/boaz "../../person/boaz/"
-    person/boaz &lt;--&gt;|married to| person/ruth
+    click person/jesus "../../person/jesus/"
+    click person/jesse "../../person/jesse/"
+    click person/obed "../../person/obed/"
+    click person/nahshon "../../person/nahshon/"
     person/salmon --&gt;|parent of| person/boaz
-    person/rahab &lt;--&gt;|married to| person/salmon
+    person/obed --&gt;|parent of| person/jesse
     person/rahab --&gt;|parent of| person/boaz
-    person/boaz --&gt;|parent of| person/obed
+    person/rahab &lt;--&gt;|married to| person/salmon
+    person/nahshon --&gt;|parent of| person/salmon
     person/rahab .-&gt;|ancestor of| person/jesus
-    person/salmon --&gt;|child of| person/nahshon
+    person/ruth &lt;--&gt;|married to| person/boaz
+    person/boaz --&gt;|parent of| person/obed
 </div>
-<h2 id="all-connections">All connections</h2>
+<h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph LR;
     style person/boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/rahab(["Rahab"])
-    person/salmon(["Salmon"])
     person/boaz(["Boaz"])
-    click person/rahab "../../person/rahab/"
-    click person/salmon "../../person/salmon/"
     click person/boaz "../../person/boaz/"
     person/boaz --&gt;|resident of| place/bethlehem
-    person/boaz &lt;--&gt;|married to| person/ruth
-    person/salmon --&gt;|parent of| person/boaz
-    person/rahab &lt;--&gt;|married to| person/salmon
-    person/rahab --&gt;|member of| tribe/canaanite
-    person/rahab &lt;--&gt;|name matches| creature/rahab
-    person/rahab --&gt;|example of| theme/faith
-    person/rahab --&gt;|parent of| person/boaz
-    person/boaz --&gt;|parent of| person/obed
-    person/rahab .-&gt;|ancestor of| person/jesus
-    person/rahab --&gt;|assisted| tribe/israel
-    person/rahab --&gt;|assisted| group/israelite_spies
-    person/salmon --&gt;|child of| person/nahshon
-    person/rahab --&gt;|resident of| place/jericho
 </div></div>
 </div>
 </div>
