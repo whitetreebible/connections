@@ -1,0 +1,14 @@
+id: plague
+type: natural_phenomenon
+name:
+  en: plague
+name_disambiguous:
+  en: plague (Elimelech mentioned with plague)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/elimelech
+  type: mentioned-with
+  refs:
+  - bible:Ruth 1:1

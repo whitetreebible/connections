@@ -1,0 +1,18 @@
+id: orpah
+type: person
+name:
+  en: Orpah
+name_disambiguous:
+  en: Orpah (Mahlon married to Orpah)
+description:
+  en: ''
+footnotes:
+  death_ordering:
+    en: 10 years of marriage without children may indicate infertility for both [[person/orpah]]
+      and [[person/ruth]] (Robert Whiting, 2025).
+edges:
+- target: person/mahlon
+  type: married-to
+  refs:
+  - bible:Ruth 1:4
+  - footnote:death_ordering

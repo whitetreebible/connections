@@ -1,0 +1,38 @@
+id: elimelech
+type: person
+name:
+  en: Elimelech
+name_disambiguous:
+  en: Elimelech (Elimelech mentioned with plague)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: natural_phenomenon/plague
+  type: mentioned-with
+  refs:
+  - bible:Ruth 1:1
+- target: person/naomi
+  type: married-to
+  refs:
+  - bible:Ruth 1:1-2
+- target: place/bethlehem
+  type: resident-of
+  refs:
+  - bible:Ruth 1:1-2
+- target: place/moab
+  type: visited
+  refs:
+  - bible:Ruth 1:1
+- target: person/mahlon
+  type: parent-of
+  refs:
+  - bible:Ruth 1:2
+- target: person/kilion
+  type: parent-of
+  refs:
+  - bible:Ruth 1:2
+- target: place/moab
+  type: died-in
+  refs:
+  - bible:Ruth 1:3

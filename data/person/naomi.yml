@@ -1,0 +1,26 @@
+id: naomi
+type: person
+name:
+  en: Naomi
+name_disambiguous:
+  en: Naomi (Elimelech married to Naomi)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/elimelech
+  type: married-to
+  refs:
+  - bible:Ruth 1:1-2
+- target: place/moab
+  type: visited
+  refs:
+  - bible:Ruth 1:1
+- target: person/mahlon
+  type: parent-of
+  refs:
+  - bible:Ruth 1:2
+- target: person/kilion
+  type: parent-of
+  refs:
+  - bible:Ruth 1:2

@@ -38,8 +38,23 @@ class NodeModel:
 
     def to_yaml(self, file_path: str = None) -> str:
         data = self.__dict__.copy()
-        # Convert EdgeModel objects to dicts for YAML serialization, ensuring type is a string
-        data['edges'] = [e.to_dict() for e in self.edges]
+        # Combine edges with the same type and target, keeping unique refs
+        edge_map = {}
+        for e in self.edges:
+            key = (str(e.type), e.target)
+            if key not in edge_map:
+                edge_map[key] = e.to_dict()
+                # Ensure refs is a set for uniqueness
+                edge_map[key]['refs'] = set(edge_map[key].get('refs', []))
+            else:
+                # Merge refs
+                edge_map[key]['refs'].update(e.to_dict().get('refs', []))
+        # Convert refs back to sorted lists for YAML
+        combined_edges = []
+        for edge in edge_map.values():
+            edge['refs'] = sorted(edge['refs'])
+            combined_edges.append(edge)
+        data['edges'] = combined_edges
         yaml_str = yaml.safe_dump(data, sort_keys=False, allow_unicode=True)
         if file_path:
             with open(file_path, 'w', encoding='utf-8') as f:

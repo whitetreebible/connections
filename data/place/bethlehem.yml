@@ -1,0 +1,14 @@
+id: bethlehem
+type: place
+name:
+  en: Bethlehem
+name_disambiguous:
+  en: Bethlehem (Elimelech resident of Bethlehem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/judah
+  type: member-of
+  refs:
+  - bible:Ruth 1:1

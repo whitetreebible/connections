@@ -137,7 +137,11 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) 
                 label = f"{m['name_disambiguous']}"
             choices.append((label, m['id']))
         choices.append((create_new_label, None))
-        answer = inquirer.list_input(f"Which {name} is in {bible_ref} ({context})?", choices=choices)
+        answer = inquirer.list_input(
+            f"Which {name} is in {bible_ref} ({context})?",
+            choices=choices,
+            default=choices[0][1] if choices else None
+        )
         # Robustly detect 'Create new' selection (None or label string)
         if answer in [m['id'] for m in matches]:
             node_id = answer
@@ -147,7 +151,7 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) 
             return node, yaml_path
         if answer is None or (isinstance(answer, str) and answer.startswith('Create new:')):
             default_id = f"{node_id}_{bible_ref.lower().replace(' ', '_').replace(':', '_')}"
-            new_id = inquirer.text(message=f"Please provide a disambiguated id for new '{name}' in {node_type} (e.g., lamech_murderer):", default=default_id)
+            new_id = inquirer.text(message=f"Please provide a disambiguated id for new '{name}' in {node_type} (e.g., lamech_murderer):")
             if new_id:
                 node_id = new_id.strip()
                 _disambig_cache[cache_key] = node_id
@@ -189,9 +193,15 @@ def main():
             edge_type = EdgeType(row["edge_type"].strip())
             t_type = row["t_type"].strip()
             t_name = row["t_name"].strip()
-            ref_bible = row["ref_bible"].strip()
-            ref_footnote_anchor = row["ref_footnote_anchor"].strip()
-            ref_footnote_text = row["ref_footnote_text"].strip()
+            ref_bible = None
+            if row["ref_bible"] is not None:
+                ref_bible = row["ref_bible"].strip()
+            ref_footnote_anchor = None
+            if row["ref_footnote_anchor"] is not None:
+                ref_footnote_anchor = row["ref_footnote_anchor"].strip()
+            ref_footnote_text = None
+            if row["ref_footnote_text"] is not None:
+                ref_footnote_text = row["ref_footnote_text"].strip()
 
             # Get or create source and target nodes
             readable_edge = edge_type.for_lang(lang="en")
@@ -206,8 +216,8 @@ def main():
                 edge_refs.append(f"bible:{ref_bible}")
 
             # Add footnote to node's footnotes dict if anchor/text present
-            anchor = ref_footnote_anchor.strip() if ref_footnote_anchor else ''
-            text = ref_footnote_text.strip() if ref_footnote_text else ''
+            anchor = ref_footnote_anchor if ref_footnote_anchor else ''
+            text = ref_footnote_text if ref_footnote_text else ''
             if anchor:
                 # Add to source_node.footnotes (create if missing)
                 if not hasattr(source_node, 'footnotes') or source_node.footnotes is None:

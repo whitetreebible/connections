@@ -29,7 +29,7 @@ See [Contribution docs](docs/devs/contributing.md)
 ```sh
 source .venv/bin/activate
 tom import  # import csv to yml files
-tom yaml    # import yml to db
+tom yml    # import yml to db
 tom md      # generate md files from yml & db
 tom serve   # serve mkdocs locally
 tom test    # run whatever unit tests there are

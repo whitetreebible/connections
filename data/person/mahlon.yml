@@ -1,0 +1,35 @@
+id: mahlon
+type: person
+name:
+  en: Mahlon
+name_disambiguous:
+  en: Mahlon (Mahlon visited Moab)
+description:
+  en: ''
+footnotes:
+  death_ordering:
+    en: In my imagination, Elimelech was alive for the marriage of his son, but the
+      text does not say that explicitly, infact, it seems to indicate he was not involved
+      in the marriage of his sons to foreign women (Robert Whiting, 2025).
+edges:
+- target: place/moab
+  type: visited
+  refs:
+  - bible:Ruth 1:1
+- target: person/elimelech
+  type: child-of
+  refs:
+  - bible:Ruth 1:2
+- target: person/naomi
+  type: child-of
+  refs:
+  - bible:Ruth 1:2
+- target: person/orpah
+  type: married-to
+  refs:
+  - bible:Ruth 1:4
+  - footnote:death_ordering
+- target: place/moab
+  type: died-in
+  refs:
+  - bible:Ruth 1:5
