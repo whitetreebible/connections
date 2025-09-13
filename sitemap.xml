@@ -2,32 +2,116 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://whitetreebible.github.io/connections/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-13</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/"/>
     </url>
     <url>
         <loc>https://whitetreebible.github.io/connections/devs/contributing/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-13</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/devs/contributing/"/>
     </url>
     <url>
+        <loc>https://whitetreebible.github.io/connections/el/shaddai/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/el/shaddai/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/el/yahweh/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/el/yahweh/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/nation/judah/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/nation/judah/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/natural_phenomenon/plague/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/natural_phenomenon/plague/"/>
+    </url>
+    <url>
         <loc>https://whitetreebible.github.io/connections/person/boaz/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-13</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/boaz/"/>
     </url>
     <url>
+        <loc>https://whitetreebible.github.io/connections/person/elimelech/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/elimelech/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/person/kilion/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/kilion/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/person/mahlon/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/mahlon/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/person/mara/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/mara/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/person/naomi/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/naomi/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/person/orpah/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/orpah/"/>
+    </url>
+    <url>
         <loc>https://whitetreebible.github.io/connections/person/rahab/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-13</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/rahab/"/>
     </url>
     <url>
+        <loc>https://whitetreebible.github.io/connections/person/ruth/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/ruth/"/>
+    </url>
+    <url>
         <loc>https://whitetreebible.github.io/connections/person/salmon/</loc>
-        <lastmod>2025-09-12</lastmod>
+        <lastmod>2025-09-13</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/person/salmon/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/place/bethlehem/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/place/bethlehem/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/place/judah/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/place/judah/"/>
+    </url>
+    <url>
+        <loc>https://whitetreebible.github.io/connections/place/moab/</loc>
+        <lastmod>2025-09-13</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://whitetreebible.github.io/connections/place/moab/"/>
     </url>
 </urlset>

@@ -44,16 +44,78 @@
 </ul>
 </li>
 <li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">El</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../el/shaddai/">Shaddai</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../el/yahweh/">Yahweh</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Nation</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../nation/judah/">Judah</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Natural phenomenon</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../natural_phenomenon/plague/">plague</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
 <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Person</a>
 <ul class="dropdown-menu">
 <li>
 <a class="dropdown-item" href="../../person/boaz/">Boaz</a>
 </li>
 <li>
+<a class="dropdown-item" href="../../person/elimelech/">Elimelech</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../person/kilion/">Kilion</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../person/mahlon/">Mahlon</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../person/mara/">Mara</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../person/naomi/">Naomi</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../person/orpah/">Orpah</a>
+</li>
+<li>
 <a class="dropdown-item" href="../../person/rahab/">Rahab</a>
 </li>
 <li>
+<a class="dropdown-item" href="../../person/ruth/">Ruth</a>
+</li>
+<li>
 <a class="dropdown-item" href="../../person/salmon/">Salmon</a>
+</li>
+</ul>
+</li>
+<li class="nav-item dropdown">
+<a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button">Place</a>
+<ul class="dropdown-menu">
+<li>
+<a class="dropdown-item" href="../../place/bethlehem/">Bethlehem</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../place/judah/">Judah</a>
+</li>
+<li>
+<a class="dropdown-item" href="../../place/moab/">Moab</a>
 </li>
 </ul>
 </li>
@@ -70,7 +132,7 @@
                                 </a>
 </li>
 <li class="nav-item">
-<a class="nav-link" href="../../person/boaz/" rel="next">
+<a class="nav-link" href="../../el/shaddai/" rel="next">
                                     Next <i class="fa fa-arrow-right"></i>
 </a>
 </li>
@@ -117,14 +179,13 @@ cd connections
 <li><strong>Install dependencies</strong>
 If you don't have it, <a href="https://docs.astral.sh/uv/getting-started/installation/">install UV first</a></li>
 </ol>
-<pre><code class="language-sh">uv sync
-source .venv/bin/activate
+<pre><code class="language-sh">source .venv/bin/activate
 </code></pre>
 <ol>
 <li><strong>Serve the web</strong></li>
 </ol>
-<pre><code class="language-sh">make import_yaml
-mkdocs serve
+<pre><code class="language-sh">tom yaml
+tom serve
 </code></pre>
 <ol>
 <li><strong>Submit a Pull Request:</strong></li>
@@ -136,7 +197,7 @@ mkdocs serve
 <p><strong>Deploy the web</strong></p>
 </li>
 </ol>
-<pre><code class="language-sh">mkdocs gh-deploy
+<pre><code class="language-sh">tom deploy
 </code></pre>
 <ul>
 <li>This will build the static site and push it to the gh-pages branch where Github Pages is serving.</li>
