@@ -16,3 +16,11 @@ edges:
   refs:
   - bible:Ruth 1:4
   - footnote:death_ordering
+- target: el/yahweh
+  type: associated-with
+  refs:
+  - bible:Ruth 1:16
+- target: place/bethlehem
+  type: resident-of
+  refs:
+  - bible:Ruth 1:19

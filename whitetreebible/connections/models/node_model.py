@@ -115,5 +115,4 @@ class NodeType(Enum):
     SYMBOL = "symbol"           # symbolic items/imagery (e.g., lampstand as symbol)
 
     # Supernatural
-    DIVINE = "divine"           # Yahweh, Baal, Molech, gods
-    SPIRIT = "spirit"           # mal’ak (messenger/angel), šēdîm, evil spirit, NT daimōn/unclean spirit
+    EL = "el"           # Yahweh, Baal, Molech, gods, spiritual beings

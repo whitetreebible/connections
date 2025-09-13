@@ -1,14 +1,14 @@
 id: judah
-type: place
+type: nation
 name:
   en: Judah
 name_disambiguous:
-  en: Judah (Bethlehem member of Judah)
+  en: Judah (Yahweh assisted Judah)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: nation/judah
+- target: place/judah
   type: name-matches
   refs:
   - bible:Ruth 1:6-7

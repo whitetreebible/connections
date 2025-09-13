@@ -1,0 +1,26 @@
+id: yahweh
+type: el
+name:
+  en: Yahweh
+name_disambiguous:
+  en: Yahweh (Yahweh assisted Judah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: nation/judah
+  type: assisted
+  refs:
+  - bible:Ruth 1:6-7
+- target: person/naomi
+  type: enemy-of
+  refs:
+  - bible:Ruth 1:13
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 1:16
+- target: el/shaddai
+  type: name-matches
+  refs:
+  - bible:Ruth 1:20

@@ -1,0 +1,18 @@
+id: shaddai
+type: el
+name:
+  en: Shaddai
+name_disambiguous:
+  en: Shaddai (Shaddai name matches Yahweh)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: el/yahweh
+  type: name-matches
+  refs:
+  - bible:Ruth 1:20
+- target: person/naomi
+  type: enemy-of
+  refs:
+  - bible:Ruth 1:20-21

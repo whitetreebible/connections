@@ -1,0 +1,14 @@
+id: mara
+type: person
+name:
+  en: Mara
+name_disambiguous:
+  en: Mara (Naomi name matches Mara)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/naomi
+  type: name-matches
+  refs:
+  - bible:Ruth 1:20
