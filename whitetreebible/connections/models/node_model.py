@@ -1,5 +1,6 @@
 import yaml
 import os
+from enum import Enum
 from typing import Any, Dict, List, Optional
 from whitetreebible.connections.models.edge_model import EdgeModel
 
@@ -66,3 +67,38 @@ class NodeModelCollection:
 
     def get_nodes(self) -> List[NodeModel]:
         return self.nodes
+
+
+class NodeType(Enum):
+    # Human / kinship
+    PERSON = "person"
+    FAMILY = "family"           # household / immediate familial unit
+    PEOPLE = "people"           # "the people", e.g., "the people of Israel"
+    NATION = "nation"           # nation / peoples group (Egyptians, Moabites)
+
+    # Social / institutional
+    GROUP = "group"             # non-kin collectives (Pharisees, disciples, soldiers)
+    ROLE = "role"               # offices, titles, vocational roles (king, priest, prophet)
+
+    # Geography / places / structures
+    PLACE = "place"             # city, region, mountain, river
+    STRUCTURE = "structure"     # buildings, temple, altar, city-wall (distinct from abstract place)
+
+    # Material / artifacts / living creatures
+    OBJECT = "object"           # artifacts, tools, Ark, tablets
+    ANIMAL = "animal"
+    PLANT = "plant"
+
+    # Events / rituals / phenomena
+    EVENT = "event"                   # historical/ceremonial events (Exodus, Passover)
+    RITUAL = "ritual"                 # cultic practices, sacrificial rites
+    NATURAL_PHENOMENON = "natural_phenomenon"  # storms, earthquakes, plagues
+
+    # Textual / conceptual / symbolic
+    TEXT = "text"               # Scripture, books, documents
+    THEME = "theme"             # abstract theological concepts (covenant, faith, sin)
+    SYMBOL = "symbol"           # symbolic items/imagery (e.g., lampstand as symbol)
+
+    # Supernatural
+    DIVINE = "divine"           # Yahweh, Baal, Molech, gods
+    SPIRIT = "spirit"           # mal’ak (messenger/angel), šēdîm, evil spirit, NT daimōn/unclean spirit

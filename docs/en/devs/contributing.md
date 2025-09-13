@@ -13,14 +13,13 @@ cd connections
 2. **Install dependencies**
 If you don't have it, [install UV first](https://docs.astral.sh/uv/getting-started/installation/)
 ```sh
-uv sync
 source .venv/bin/activate
 ```
 
 3. **Serve the web**
 ```sh
-make import_yaml
-mkdocs serve
+tom yaml
+tom serve
 ```
 
 4. **Submit a Pull Request:**
@@ -29,7 +28,7 @@ mkdocs serve
 
 5. **Deploy the web**
 ```sh
-mkdocs gh-deploy
+tom deploy
 ```
 - This will build the static site and push it to the gh-pages branch where Github Pages is serving.
 

@@ -24,3 +24,16 @@ whitetreebible/connections/
 ## Getting Started
 See [Contribution docs](docs/devs/contributing.md)
 
+## Commands
+
+```sh
+source .venv/bin/activate
+tom import  # import csv to yml files
+tom yaml    # import yml to db
+tom md      # generate md files from yml & db
+tom serve   # serve mkdocs locally
+tom test    # run whatever unit tests there are
+tom lint    # run python linter... when it exists
+tom clean   # delete old crud so you can start over
+tom deploy  # deploy generated mkdocs to prod
+```

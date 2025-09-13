@@ -1,15 +1,17 @@
 [project]
 name = "whitetreebible"
-version = "0.1.0"
+version = "0.2.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "inquirer>=3.4.1",
+    "jinja2>=3.1.6",
     "mkdocs>=1.6.1",
     "mkdocs-mermaid2-plugin>=1.2.1",
     "mkdocs-static-i18n>=1.3.0",
     "pymdown-extensions>=10.16.1",
+    "tomlscript>=0.2.1",
     "tqdm>=4.67.1",
 ]
 
@@ -17,3 +19,13 @@ dependencies = [
 dev = [
     "pytest>=8.4.2",
 ]
+
+[tool.tomlscript]
+import = "uv run -m whitetreebible.connections.import_external_to_yml"
+yaml = "uv run -m whitetreebible.connections.import_yml_to_db"
+md = "uv run -m whitetreebible.connections.md_generator"
+serve = "uv run -m mkdocs serve"
+test = "uv run pytest"
+lint = "echo no lint yet"
+clean = "rm -rf site/ .uv/ .mypy_cache/ .pytest_cache/ __pycache__/ docs/en/person docs/en/place docs/en/tribe docs/en/theme"
+deploy = "mkdocs gh-deploy"
