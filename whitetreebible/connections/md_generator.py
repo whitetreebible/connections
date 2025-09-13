@@ -386,6 +386,24 @@ class MdGenerator:
         for formatter in self.formatters:
             md = formatter(self.db, node, md, lang)
         return md
+    
+    def copy_static_files(self):
+        # copy files from static folder recursively into docs folder
+        static_src = os.path.join("static")
+        if not os.path.exists(static_src):
+            log.warning(f"No static directory found at {static_src}, skipping copy.")
+            return
+        for root, dirs, files in os.walk(static_src):
+            for file in files:
+                rel_path = os.path.relpath(root, static_src)
+                dest_dir = os.path.join(self.docs_dir, rel_path)
+                self.ensure_dir(dest_dir)
+                src_file = os.path.join(root, file)
+                dest_file = os.path.join(dest_dir, file)
+                with open(src_file, "rb") as fsrc:
+                    with open(dest_file, "wb") as fdst:
+                        fdst.write(fsrc.read())
+                log.info(f"Copied static file {src_file} to {dest_file}")
 
 
 
@@ -399,6 +417,7 @@ def main():
         db = SqliteDB()
         generator = MdGenerator(db=db, data_dir=args.data_dir, docs_dir=args.docs_dir)
         generator.generate_all()
+        generator.copy_static_files()
     except Exception as e:
         log.error(f"Error occurred: {e}")
     finally:

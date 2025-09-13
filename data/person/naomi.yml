@@ -24,7 +24,7 @@ edges:
   type: parent-of
   refs:
   - bible:Ruth 1:2
-- target: el/yahweh
+- target: being/yahweh
   type: enemy-of
   refs:
   - bible:Ruth 1:13
@@ -36,7 +36,7 @@ edges:
   type: name-matches
   refs:
   - bible:Ruth 1:20
-- target: el/shaddai
+- target: being/shaddai
   type: enemy-of
   refs:
   - bible:Ruth 1:20-21

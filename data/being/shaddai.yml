@@ -1,5 +1,5 @@
 id: shaddai
-type: el
+type: being
 name:
   en: Shaddai
 name_disambiguous:
@@ -8,7 +8,7 @@ description:
   en: ''
 footnotes: {}
 edges:
-- target: el/yahweh
+- target: being/yahweh
   type: name-matches
   refs:
   - bible:Ruth 1:20

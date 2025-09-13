@@ -16,7 +16,7 @@ edges:
   refs:
   - bible:Ruth 1:4
   - footnote:death_ordering
-- target: el/yahweh
+- target: being/yahweh
   type: associated-with
   refs:
   - bible:Ruth 1:16

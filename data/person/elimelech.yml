@@ -8,7 +8,7 @@ description:
   en: ''
 footnotes: {}
 edges:
-- target: natural_phenomenon/plague
+- target: event/plague
   type: mentioned-with
   refs:
   - bible:Ruth 1:1

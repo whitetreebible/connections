@@ -47,7 +47,7 @@ From this section in the Bible (Ruth 1:1-5):
 We create this relationship table:
 ```csv
 s_type,s_name,edge_type,t_type,t_name,ref_bible,ref_footnote_anchor,ref_footnote_text
-person,Elimelech,mentioned-with,natural_phenomenon,plague,Ruth 1:1
+person,Elimelech,mentioned-with,event,plague,Ruth 1:1
 person,Elimelech,married-to,person,Naomi,Ruth 1:1-2
 person,Elimelech,resident-of,place,Bethlehem,Ruth 1:1-2
 place,Bethlehem,member-of,place,Judah,Ruth 1:1

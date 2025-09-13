@@ -1,0 +1,51 @@
+/* Hide mermaid content until processed */
+div.mermaid:not([data-processed="true"]) {
+    color: transparent !important;
+    position: relative;
+    min-height: 2em;
+}
+
+/* Show spinner while processing */
+div.mermaid:not([data-processed="true"])::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 2em;
+    height: 2em;
+    margin-left: -1em;
+    margin-top: -1em;
+    border: 0.3em solid #ccc;
+    border-top: 0.3em solid #0078d7;
+    border-radius: 50%;
+    animation: mermaid-spin 1s linear infinite;
+    z-index: 2;
+}
+
+@keyframes mermaid-spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Make mermaid SVGs scrollable and full width */
+div.mermaid {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100vw;
+}
+div.mermaid > svg {
+    height: auto;
+    max-width: none;
+    display: block;
+}
+div.mermaid {
+    overflow-x: auto;
+    width: 100%;
+    max-width: 100vw;
+}
+div.mermaid > svg {
+    height: auto;
+    max-width: none;
+    display: block;
+}

@@ -26,10 +26,26 @@ class EdgeType(Enum):
     DIED_IN = "died-in"           # Place of death
     BURIED_IN = "buried-in"       # Place of burial
 
+
     # Vocational / Functional
     ROLE_AS = "role-as"
     WORKED_WITH = "worked-with"     # Symmetric, mutual ongoing vocational or ministry partnership
     ASSISTED = "assisted"           # Asymmetrical, temporary or situational
+
+    # Action-based (Event/Interaction)
+    TAUGHT = "taught"               # Asymmetrical, e.g. teacher → student
+    LEARNED_FROM = "learned-from"   # Asymmetrical, e.g. student → teacher
+    SENT = "sent"                   # Asymmetrical, sender → sent person
+    RECEIVED_FROM = "received-from" # Asymmetrical, recipient → sender
+    BLESSED = "blessed"             # Asymmetrical, blesser → blessed
+    CURSED = "cursed"               # Asymmetrical, curser → cursed
+    ANOINTED = "anointed"           # Asymmetrical, anointer → anointed
+    APPOINTED = "appointed"         # Asymmetrical, appointer → appointed
+    JUDGED = "judged"               # Asymmetrical, judge → judged
+    HEALED = "healed"               # Asymmetrical, healer → healed
+    PERSECUTED = "persecuted"       # Asymmetrical, persecutor → persecuted
+    SAVED = "saved"                 # Asymmetrical, savior → saved
+    KILLED = "killed"               # Asymmetrical, killer → killed
 
     # Textual / Symbolic
     NAME_MATCHES = "name-matches"
@@ -55,6 +71,8 @@ class EdgeGroups(Enum):
     SOCIAL = "social/political"
     GEOGRAPHIC = "geographic"
     VOCATIONAL = "vocational/functional"
+
+    ACTION = "action/event"
     TEXTUAL = "textual/symbolic"
 
     def __str__(self):
@@ -99,6 +117,21 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.ROLE_AS,
         EdgeType.WORKED_WITH,
         EdgeType.ASSISTED,
+    },
+    EdgeGroups.ACTION: {
+        EdgeType.TAUGHT,
+        EdgeType.LEARNED_FROM,
+        EdgeType.SENT,
+        EdgeType.RECEIVED_FROM,
+        EdgeType.BLESSED,
+        EdgeType.CURSED,
+        EdgeType.ANOINTED,
+        EdgeType.APPOINTED,
+        EdgeType.JUDGED,
+        EdgeType.HEALED,
+        EdgeType.PERSECUTED,
+        EdgeType.SAVED,
+        EdgeType.KILLED,
     },
     EdgeGroups.TEXTUAL: {
         EdgeType.NAME_MATCHES,
@@ -216,6 +249,7 @@ EDGE_GROUPS_LANG_LABELS = {
         EdgeGroups.SOCIAL: "social / political",
         EdgeGroups.GEOGRAPHIC: "geographic",
         EdgeGroups.VOCATIONAL: "vocational / functional",
+        EdgeGroups.ACTION: "action / event",
         EdgeGroups.TEXTUAL: "textual / symbolic",
     },
     "es": {
@@ -223,6 +257,7 @@ EDGE_GROUPS_LANG_LABELS = {
         EdgeGroups.SOCIAL: "social / político",
         EdgeGroups.GEOGRAPHIC: "geográfico",
         EdgeGroups.VOCATIONAL: "vocacional / funcional",
+        EdgeGroups.ACTION: "acción / evento",
         EdgeGroups.TEXTUAL: "textual / simbólico",
     }
 }

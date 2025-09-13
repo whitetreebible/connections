@@ -8,7 +8,7 @@ description:
   en: ''
 footnotes: {}
 edges:
-- target: nation/judah
+- target: group/judah
   type: name-matches
   refs:
   - bible:Ruth 1:6-7

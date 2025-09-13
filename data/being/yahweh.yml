@@ -1,14 +1,14 @@
 id: yahweh
-type: el
+type: being
 name:
   en: Yahweh
 name_disambiguous:
-  en: Yahweh (Yahweh assisted Judah)
+  en: Yahweh (Yahweh, God of gods)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: nation/judah
+- target: group/judah
   type: assisted
   refs:
   - bible:Ruth 1:6-7
@@ -20,7 +20,7 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 1:16
-- target: el/shaddai
+- target: being/shaddai
   type: name-matches
   refs:
   - bible:Ruth 1:20

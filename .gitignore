@@ -208,6 +208,4 @@ __marimo__/
 
 tmp/
 # hide generated md files except static files
-/docs/**/*.md
-!/docs/**/index.md
-!/docs/**/devs/*
+/docs

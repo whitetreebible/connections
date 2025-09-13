@@ -85,17 +85,14 @@ class NodeModelCollection:
 
 
 class NodeType(Enum):
-    # Human / kinship
+    # Human / kinship / social
     PERSON = "person"
-    FAMILY = "family"           # household / immediate familial unit
-    PEOPLE = "people"           # "the people", e.g., "the people of Israel"
-    NATION = "nation"           # nation / peoples group (Egyptians, Moabites)
-
-    # Social / institutional
-    GROUP = "group"             # non-kin collectives (Pharisees, disciples, soldiers)
     ROLE = "role"               # offices, titles, vocational roles (king, priest, prophet)
+    # Supernatural
+    BEING = "being"           # Yahweh, Baal, Molech, gods, spiritual beings
 
     # Geography / places / structures
+    GROUP = "group"             # family, tribe, nation, people, collective, etc.
     PLACE = "place"             # city, region, mountain, river
     STRUCTURE = "structure"     # buildings, temple, altar, city-wall (distinct from abstract place)
 
@@ -104,15 +101,11 @@ class NodeType(Enum):
     ANIMAL = "animal"
     PLANT = "plant"
 
-    # Events / rituals / phenomena
-    EVENT = "event"                   # historical/ceremonial events (Exodus, Passover)
-    RITUAL = "ritual"                 # cultic practices, sacrificial rites
-    NATURAL_PHENOMENON = "natural_phenomenon"  # storms, earthquakes, plagues
+    # Events (all kinds)
+    EVENT = "event"             # historical, ritual, natural, ceremonial, etc.
 
     # Textual / conceptual / symbolic
     TEXT = "text"               # Scripture, books, documents
     THEME = "theme"             # abstract theological concepts (covenant, faith, sin)
     SYMBOL = "symbol"           # symbolic items/imagery (e.g., lampstand as symbol)
 
-    # Supernatural
-    EL = "el"           # Yahweh, Baal, Molech, gods, spiritual beings
