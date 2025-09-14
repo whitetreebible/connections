@@ -1,0 +1,14 @@
+id: drinking
+type: event
+name:
+  en: drinking
+name_disambiguous:
+  en: drinking (Boaz associated with drinking)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/boaz
+  type: associated-with
+  refs:
+  - bible:Ruth 3:7

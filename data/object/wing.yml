@@ -1,0 +1,18 @@
+id: wing
+type: object
+name:
+  en: wing
+name_disambiguous:
+  en: wing (Ruth associated with wing)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:1
+- target: person/boaz
+  type: associated-with
+  refs:
+  - bible:Ruth 3:9

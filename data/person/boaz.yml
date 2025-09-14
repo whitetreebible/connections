@@ -12,12 +12,15 @@ description:
     in the Book of Ruth. He is the son of Salmon and Rahab, and becomes the husband
     of [[person/ruth]]. Boaz is the great-grandfather of King [[person/david]] and
     is mentioned in the genealogy of [[person/jesus]] in [[bible:Matthew 1:5-6]].
-
     '
 footnotes:
   genealogy_matthew:
     en: Boaz is listed as the son of Salmon and Rahab, and the husband of Ruth, in
       the genealogy of Jesus (Matthew 1:5-6).
+  good_heart:
+    en: "\"And Boaz drank and ate until his heart was good\" is an idiom for getting drunk. Boaz celebrated with the reapers, had a lot to drink, and made good choices (Robert Whiting, 2025)."
+  wing:
+    en: "Boaz says in 2:1 \"May Yahweh reward your work and may a full reward be given to you from Yahweh, the God of Israel, under whose wings you came to take refuge\" and in 3:9, Ruth asks him to \"Spread your wing over your servant because you are a redeemer.\" This is likely an allusion to Ruth taking refuge under the wings of God, and Boaz is being asked to symbolically do the same by spreading his \"wing\" (sometimes translated garment) over her. This is a culturally significant gesture indicating protection and care, akin to the way God protects His people (Robert Whiting, 2025)."
 edges:
 - target: person/ruth
   type: married-to
@@ -64,3 +67,18 @@ edges:
   type: role-as
   refs:
   - bible:Ruth 2:20
+  - bible:Ruth 3:9
+- target: event/drinking
+  type: associated-with
+  refs:
+  - bible:Ruth 3:7
+  - footnote:good_heart
+- target: object/wing
+  type: associated-with
+  refs:
+  - bible:Ruth 3:9
+  - footnote:wing
+- target: theme/will_not_rest
+  type: associated-with
+  refs:
+  - bible:Ruth 3:18

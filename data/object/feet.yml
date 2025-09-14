@@ -1,0 +1,15 @@
+id: feet
+type: object
+name:
+  en: feet
+name_disambiguous:
+  en: feet (Ruth associated with feet)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 3:14
+  - bible:Ruth 3:7

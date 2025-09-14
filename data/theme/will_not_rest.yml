@@ -1,0 +1,14 @@
+id: will_not_rest
+type: theme
+name:
+  en: will_not_rest
+name_disambiguous:
+  en: will_not_rest (Boaz associated with will_not_rest)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/boaz
+  type: associated-with
+  refs:
+  - bible:Ruth 3:18
