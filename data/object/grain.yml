@@ -1,0 +1,14 @@
+id: grain
+type: object
+name:
+  en: grain
+name_disambiguous:
+  en: grain (Ruth associated with grain)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:14

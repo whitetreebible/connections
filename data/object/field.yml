@@ -1,0 +1,18 @@
+id: field
+type: object
+name:
+  en: field
+name_disambiguous:
+  en: field (Boaz associated with field)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/boaz
+  type: associated-with
+  refs:
+  - bible:Ruth 2:3
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:3

@@ -24,3 +24,47 @@ edges:
   type: resident-of
   refs:
   - bible:Ruth 1:19
+- target: group/moab
+  type: member-of
+  refs:
+  - bible:Ruth 1:4
+- target: person/naomi
+  type: child-of
+  refs:
+  - bible:Ruth 1:2
+- target: object/field
+  type: associated-with
+  refs:
+  - bible:Ruth 2:3
+- target: role/foreigner
+  type: role-as
+  refs:
+  - bible:Ruth 2:10
+- target: theme/leaving-family
+  type: example-of
+  refs:
+  - bible:Ruth 2:11
+- target: theme/humility
+  type: example-of
+  refs:
+  - bible:Ruth 2:13
+- target: object/bread
+  type: associated-with
+  refs:
+  - bible:Ruth 2:14
+- target: object/wine-vinegar
+  type: associated-with
+  refs:
+  - bible:Ruth 2:14
+- target: object/grain
+  type: associated-with
+  refs:
+  - bible:Ruth 2:14
+- target: object/barley
+  type: associated-with
+  refs:
+  - bible:Ruth 2:17
+- target: object/wheat
+  type: associated-with
+  refs:
+  - bible:Ruth 2:23

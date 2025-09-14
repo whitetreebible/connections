@@ -37,6 +37,7 @@ class EdgeType(Enum):
     LEARNED_FROM = "learned-from"   # Asymmetrical, e.g. student → teacher
     SENT = "sent"                   # Asymmetrical, sender → sent person
     RECEIVED_FROM = "received-from" # Asymmetrical, recipient → sender
+    GAVE_TO = "gave-to"             # Asymmetrical, giver → receiver
     BLESSED = "blessed"             # Asymmetrical, blesser → blessed
     CURSED = "cursed"               # Asymmetrical, curser → cursed
     ANOINTED = "anointed"           # Asymmetrical, anointer → anointed

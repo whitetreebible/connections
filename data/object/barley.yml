@@ -1,0 +1,14 @@
+id: barley
+type: object
+name:
+  en: barley
+name_disambiguous:
+  en: barley (Ruth associated with barley)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:17

@@ -1,0 +1,14 @@
+id: wheat
+type: object
+name:
+  en: wheat
+name_disambiguous:
+  en: wheat (Ruth associated with wheat)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:23

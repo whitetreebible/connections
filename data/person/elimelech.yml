@@ -36,3 +36,7 @@ edges:
   type: died-in
   refs:
   - bible:Ruth 1:3
+- target: person/boaz
+  type: related-to
+  refs:
+  - bible:Ruth 2:1

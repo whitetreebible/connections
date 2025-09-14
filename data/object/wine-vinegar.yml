@@ -1,0 +1,14 @@
+id: wine-vinegar
+type: object
+name:
+  en: wine-vinegar
+name_disambiguous:
+  en: wine-vinegar (Ruth associated with wine-vinegar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:14

@@ -1,0 +1,14 @@
+id: bread
+type: object
+name:
+  en: bread
+name_disambiguous:
+  en: bread (Ruth associated with bread)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 2:14

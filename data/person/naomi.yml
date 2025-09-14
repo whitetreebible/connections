@@ -40,3 +40,11 @@ edges:
   type: enemy-of
   refs:
   - bible:Ruth 1:20-21
+- target: person/ruth
+  type: parent-of
+  refs:
+  - bible:Ruth 1:2
+- target: person/boaz
+  type: blessed
+  refs:
+  - bible:Ruth 2:19
