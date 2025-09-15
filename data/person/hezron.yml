@@ -1,0 +1,18 @@
+id: hezron
+type: person
+name:
+  en: Hezron
+name_disambiguous:
+  en: Hezron (Perez parent of Hezron)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/perez
+  type: child-of
+  refs:
+  - bible:Ruth 4:18
+- target: person/ram
+  type: parent-of
+  refs:
+  - bible:Ruth 4:19

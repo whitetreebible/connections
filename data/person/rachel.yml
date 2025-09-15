@@ -1,0 +1,14 @@
+id: rachel
+type: person
+name:
+  en: Rachel
+name_disambiguous:
+  en: Rachel (Ruth associated with Rachel)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11

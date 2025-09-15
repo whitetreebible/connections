@@ -1,0 +1,18 @@
+id: ram
+type: person
+name:
+  en: Ram
+name_disambiguous:
+  en: Ram (Hezron parent of Ram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/hezron
+  type: child-of
+  refs:
+  - bible:Ruth 4:19
+- target: person/amminadab
+  type: parent-of
+  refs:
+  - bible:Ruth 4:19

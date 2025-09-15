@@ -1,0 +1,19 @@
+id: jesse
+type: person
+name:
+  en: Jesse
+name_disambiguous:
+  en: Jesse (Obed parent of Jesse)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/obed
+  type: child-of
+  refs:
+  - bible:Ruth 4:17
+  - bible:Ruth 4:22
+- target: person/david
+  type: parent-of
+  refs:
+  - bible:Ruth 4:22

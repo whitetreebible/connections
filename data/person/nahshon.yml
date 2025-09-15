@@ -1,0 +1,18 @@
+id: nahshon
+type: person
+name:
+  en: Nahshon
+name_disambiguous:
+  en: Nahshon (Amminadab parent of Nahshon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/amminadab
+  type: child-of
+  refs:
+  - bible:Ruth 4:20
+- target: person/salmon
+  type: parent-of
+  refs:
+  - bible:Ruth 4:20

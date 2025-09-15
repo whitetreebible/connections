@@ -1,0 +1,22 @@
+id: tamar
+type: person
+name:
+  en: Tamar
+name_disambiguous:
+  en: Tamar (Ruth associated with Tamar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 4:12
+- target: person/perez
+  type: parent-of
+  refs:
+  - bible:Ruth 4:12
+- target: person/judah
+  type: married-to
+  refs:
+  - bible:Ruth 4:12

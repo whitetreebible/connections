@@ -1,17 +1,13 @@
-id: bethlehem
+id: ephrathah
 type: place
 name:
-  en: Bethlehem
+  en: Ephrathah
 name_disambiguous:
-  en: Bethlehem (Elimelech resident of Bethlehem)
+  en: Ephrathah (Ruth associated with Ephrathah)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: place/judah
-  type: member-of
-  refs:
-  - bible:Ruth 1:1
 - target: person/ruth
   type: associated-with
   refs:

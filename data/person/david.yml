@@ -1,0 +1,14 @@
+id: david
+type: person
+name:
+  en: David
+name_disambiguous:
+  en: David (Jesse parent of David)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jesse
+  type: child-of
+  refs:
+  - bible:Ruth 4:22

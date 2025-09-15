@@ -1,0 +1,22 @@
+id: judah
+type: person
+name:
+  en: Judah
+name_disambiguous:
+  en: Judah (Ruth associated with Judah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 4:12
+- target: person/perez
+  type: parent-of
+  refs:
+  - bible:Ruth 4:12
+- target: person/tamar
+  type: married-to
+  refs:
+  - bible:Ruth 4:12

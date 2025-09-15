@@ -1,0 +1,10 @@
+id: witness
+type: role
+name:
+  en: witness
+name_disambiguous:
+  en: witness (elders role as witness)
+description:
+  en: ''
+footnotes: {}
+edges: []

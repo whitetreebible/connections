@@ -1,0 +1,18 @@
+id: amminadab
+type: person
+name:
+  en: Amminadab
+name_disambiguous:
+  en: Amminadab (Ram parent of Amminadab)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ram
+  type: child-of
+  refs:
+  - bible:Ruth 4:19
+- target: person/nahshon
+  type: parent-of
+  refs:
+  - bible:Ruth 4:20

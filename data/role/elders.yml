@@ -1,0 +1,14 @@
+id: elders
+type: role
+name:
+  en: elders
+name_disambiguous:
+  en: elders (elders role as witness)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: role/witness
+  type: role-as
+  refs:
+  - bible:Ruth 4:2

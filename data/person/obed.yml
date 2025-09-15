@@ -1,0 +1,29 @@
+id: obed
+type: person
+name:
+  en: Obed
+name_disambiguous:
+  en: Obed (Ruth parent of Obed)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: child-of
+  refs:
+  - bible:Ruth 4:13
+  - bible:Ruth 4:17
+- target: person/boaz
+  type: child-of
+  refs:
+  - bible:Ruth 4:17
+  - bible:Ruth 4:21
+- target: person/naomi
+  type: child-of
+  refs:
+  - bible:Ruth 4:17
+- target: person/jesse
+  type: parent-of
+  refs:
+  - bible:Ruth 4:17
+  - bible:Ruth 4:22

@@ -1,0 +1,34 @@
+id: elimelechs-redeemer
+type: person
+name:
+  en: Elimelech's Redeemer
+name_disambiguous:
+  en: Elimelech's Redeemer (Unnamed kinsman-redeemer of Ruth, Naomi, Elimelech)
+description:
+  en: ''
+footnotes:
+  elimelechs_redeemer:
+    en: The redeemer of whom Boaz had spoken is not named, but he is likely a close
+      relative of Elimelech, possibly a brother or cousin. He has the first right
+      of right/responsibility of redeem the land and marry Ruth according to the custom
+      of levirate marriage (Robert Whiting, 2025).
+  unsandaled_one:
+    en: The "unsandaled one" is a reference to [[bible:Leviticus 25:9]], "she shall 
+      pull off his sandal from his foot, and she shall spit in his face," which describes 
+      a shameful practice where the kinsman-redeemer is publicly humiliated, apparently 
+      it had been normalized by this time into an accepted cultural practice (Robert Whiting, 2025).
+edges:
+- target: object/city_gate
+  type: associated-with
+  refs:
+  - bible:Ruth 4:1
+  - footnote:elimelechs_redeemer
+- target: role/kinsman-redeemer
+  type: role-as
+  refs:
+  - bible:Ruth 4:1
+- target: symbol/unsandaled_one
+  type: example-of
+  refs:
+  - bible:Ruth 4:7
+  - footnote:unsandaled_one

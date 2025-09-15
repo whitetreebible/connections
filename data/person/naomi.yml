@@ -48,3 +48,11 @@ edges:
   type: blessed
   refs:
   - bible:Ruth 2:19
+- target: person/obed
+  type: parent-of
+  refs:
+  - bible:Ruth 4:17
+- target: person/elimelechs-redeemer
+  type: related-to
+  refs:
+  - bible:Ruth 3:12

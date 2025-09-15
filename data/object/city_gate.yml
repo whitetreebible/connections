@@ -1,0 +1,18 @@
+id: city_gate
+type: object
+name:
+  en: city_gate
+name_disambiguous:
+  en: city_gate (Boaz associated with city_gate)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/boaz
+  type: associated-with
+  refs:
+  - bible:Ruth 4:1
+- target: person/elimelechs-redeemer
+  type: associated-with
+  refs:
+  - bible:Ruth 4:1

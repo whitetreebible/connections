@@ -11,9 +11,21 @@ footnotes:
     en: 10 years of marriage without children may indicate infertility for both [[person/orpah]]
       and [[person/ruth]] (Robert Whiting, 2025).
   feet:
-    en: "\"Opening the feet\" is a euphemism for sexual relations. It is unclear what exactly Ruth did, but it was likely more than just uncovering his feet while he slept (Robert Whiting, 2025)."
+    en: '"Opening the feet" is a euphemism for sexual relations. It is unclear what
+      exactly Ruth did, but it was likely more than just uncovering his feet while
+      he slept (Robert Whiting, 2025).'
   wing:
-    en: "Boaz says in 2:1 \"May Yahweh reward your work and may a full reward be given to you from Yahweh, the God of Israel, under whose wings you came to take refuge\" and in 3:9, Ruth asks him to \"Spread your wing over your servant because you are a redeemer.\" This is likely an allusion to Ruth taking refuge under the wings of God, and Boaz is being asked to symbolically do the same by spreading his \"wing\" (sometimes translated garment) over her. This is a culturally significant gesture indicating protection and care, akin to the way God protects His people (Robert Whiting, 2025)."
+    en: Boaz says in 2:1 "May Yahweh reward your work and may a full reward be given
+      to you from Yahweh, the God of Israel, under whose wings you came to take refuge"
+      and in 3:9, Ruth asks him to "Spread your wing over your servant because you
+      are a redeemer." This is likely an allusion to Ruth taking refuge under the
+      wings of God, and Boaz is being asked to symbolically do the same by spreading
+      his "wing" (sometimes translated garment) over her. This is a culturally significant
+      gesture indicating protection and care, akin to the way God protects His people
+      (Robert Whiting, 2025).
+  conception:
+      en: '"Yahweh enabled her to conceive" indicates that Ruth had
+        difficulty conceiving and Yahweh overcame said difficulties (Robert Whiting, 2025).'
 edges:
 - target: person/kilion
   type: married-to
@@ -81,9 +93,51 @@ edges:
 - target: object/wing
   type: associated-with
   refs:
-  - bible:Ruth2:1
+  - bible:Ruth 2:1
   - footnote:wing
 - target: role/worthy_woman
   type: associated-with
   refs:
   - bible:Ruth 3:11
+- target: person/rachel
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11
+- target: person/leah
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11
+- target: group/israel
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11
+- target: person/perez
+  type: associated-with
+  refs:
+  - bible:Ruth 4:12
+- target: place/ephrathah
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11
+- target: place/bethlehem
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11
+- target: person/tamar
+  type: associated-with
+  refs:
+  - bible:Ruth 4:12
+- target: person/judah
+  type: associated-with
+  refs:
+  - bible:Ruth 4:12
+- target: person/obed
+  type: parent-of
+  refs:
+  - bible:Ruth 4:13
+  - bible:Ruth 4:17
+  - footnote:conception
+- target: person/elimelechs-redeemer
+  type: related-to
+  refs:
+  - bible:Ruth 3:12

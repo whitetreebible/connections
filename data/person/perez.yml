@@ -1,0 +1,26 @@
+id: perez
+type: person
+name:
+  en: Perez
+name_disambiguous:
+  en: Perez (Ruth associated with Perez)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 4:12
+- target: person/tamar
+  type: child-of
+  refs:
+  - bible:Ruth 4:12
+- target: person/judah
+  type: child-of
+  refs:
+  - bible:Ruth 4:12
+- target: person/hezron
+  type: parent-of
+  refs:
+  - bible:Ruth 4:18

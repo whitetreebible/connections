@@ -1,0 +1,14 @@
+id: israel
+type: group
+name:
+  en: Israel
+name_disambiguous:
+  en: Israel (Ruth associated with Israel)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 4:11

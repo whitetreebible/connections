@@ -20,7 +20,8 @@ description:
     '
 footnotes:
   genealogy_matthew:
-    en: Salmon is listed as the husband of Rahab and father of Boaz in the genealogy of Jesus (Matthew 1:4-5).
+    en: Salmon is listed as the husband of Rahab and father of Boaz in the genealogy
+      of Jesus (Matthew 1:4-5).
 edges:
 - target: person/rahab
   type: married-to
@@ -30,7 +31,9 @@ edges:
   type: child-of
   refs:
   - bible:Matthew 1:5
+  - bible:Ruth 4:20
 - target: person/boaz
   type: parent-of
   refs:
   - bible:Matthew 1:5
+  - bible:Ruth 4:21
