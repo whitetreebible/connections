@@ -308,27 +308,27 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph LR;
     style place/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/moab(["Moab"])
-    person/mahlon(["Mahlon"])
-    person/kilion(["Kilion"])
     person/elimelech(["Elimelech"])
+    person/kilion(["Kilion"])
     person/naomi(["Naomi"])
     place/bethlehem(["Bethlehem"])
-    click place/moab "../../place/moab/"
-    click person/mahlon "../../person/mahlon/"
-    click person/kilion "../../person/kilion/"
+    place/moab(["Moab"])
+    person/mahlon(["Mahlon"])
     click person/elimelech "../../person/elimelech/"
+    click person/kilion "../../person/kilion/"
     click person/naomi "../../person/naomi/"
     click place/bethlehem "../../place/bethlehem/"
+    click place/moab "../../place/moab/"
+    click person/mahlon "../../person/mahlon/"
+    person/mahlon .-&gt;|visited| place/moab
+    person/mahlon --&gt;|died in| place/moab
+    person/naomi --&gt;|resident of| place/bethlehem
     person/elimelech .-&gt;|visited| place/moab
     person/elimelech --&gt;|died in| place/moab
     person/elimelech --&gt;|resident of| place/bethlehem
     person/kilion .-&gt;|visited| place/moab
     person/kilion --&gt;|died in| place/moab
-    person/naomi --&gt;|resident of| place/bethlehem
     person/naomi .-&gt;|visited| place/moab
-    person/mahlon --&gt;|died in| place/moab
-    person/mahlon .-&gt;|visited| place/moab
 </div></div>
 </div>
 </div>

@@ -321,23 +321,23 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph LR;
     style being/shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    being/shaddai(["Shaddai"])
     person/naomi(["Naomi"])
     being/yahweh(["Yahweh"])
-    being/shaddai(["Shaddai"])
+    click being/shaddai "../../being/shaddai/"
     click person/naomi "../../person/naomi/"
     click being/yahweh "../../being/yahweh/"
-    click being/shaddai "../../being/shaddai/"
-    person/naomi &lt;--&gt;|enemy of| being/shaddai
+    being/shaddai &lt;--&gt;|enemy of| person/naomi
     being/yahweh &lt;--&gt;|enemy of| person/naomi
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph LR;
     style being/shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/yahweh(["Yahweh"])
     being/shaddai(["Shaddai"])
-    click being/yahweh "../../being/yahweh/"
+    being/yahweh(["Yahweh"])
     click being/shaddai "../../being/shaddai/"
-    being/yahweh &lt;--&gt;|name matches| being/shaddai
+    click being/yahweh "../../being/yahweh/"
+    being/shaddai &lt;--&gt;|name matches| being/yahweh
 </div></div>
 </div>
 </div>

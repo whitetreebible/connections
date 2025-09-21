@@ -318,22 +318,22 @@
 <div class="mermaid">graph LR;
     style person/hezron fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/amminadab(["Amminadab"])
-    person/tamar(["Tamar"])
-    person/perez(["Perez"])
     person/ram(["Ram"])
-    person/hezron(["Hezron"])
+    person/perez(["Perez"])
+    person/tamar(["Tamar"])
     person/judah(["Judah"])
+    person/hezron(["Hezron"])
     click person/amminadab "../../person/amminadab/"
-    click person/tamar "../../person/tamar/"
-    click person/perez "../../person/perez/"
     click person/ram "../../person/ram/"
-    click person/hezron "../../person/hezron/"
+    click person/perez "../../person/perez/"
+    click person/tamar "../../person/tamar/"
     click person/judah "../../person/judah/"
-    person/perez --&gt;|parent of| person/hezron
+    click person/hezron "../../person/hezron/"
+    person/tamar --&gt;|parent of| person/perez
     person/ram --&gt;|parent of| person/amminadab
     person/judah --&gt;|parent of| person/perez
+    person/perez --&gt;|parent of| person/hezron
     person/hezron --&gt;|parent of| person/ram
-    person/tamar --&gt;|parent of| person/perez
 </div></div>
 </div>
 </div>

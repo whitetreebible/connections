@@ -316,26 +316,26 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph LR;
     style theme/will_not_rest fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/boaz(["Boaz"])
-    object/city_gate(["city_gate"])
-    object/wing(["wing"])
     event/drinking(["drinking"])
     group/judah(["Judah"])
-    theme/will_not_rest(["will_not_rest"])
+    object/wing(["wing"])
     object/field(["field"])
-    click person/boaz "../../person/boaz/"
-    click object/city_gate "../../object/city_gate/"
-    click object/wing "../../object/wing/"
+    person/boaz(["Boaz"])
+    theme/will_not_rest(["will_not_rest"])
+    object/city_gate(["city_gate"])
     click event/drinking "../../event/drinking/"
     click group/judah "../../group/judah/"
-    click theme/will_not_rest "../../theme/will_not_rest/"
+    click object/wing "../../object/wing/"
     click object/field "../../object/field/"
-    object/field &lt;.-&gt;|associated with| person/boaz
-    object/wing &lt;.-&gt;|associated with| person/boaz
-    person/boaz --&gt;|member of| group/judah
-    person/boaz &lt;.-&gt;|associated with| event/drinking
+    click person/boaz "../../person/boaz/"
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click object/city_gate "../../object/city_gate/"
+    object/city_gate &lt;.-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| object/wing
     theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
-    person/boaz &lt;.-&gt;|associated with| object/city_gate
+    object/field &lt;.-&gt;|associated with| person/boaz
+    event/drinking &lt;.-&gt;|associated with| person/boaz
+    person/boaz --&gt;|member of| group/judah
 </div></div>
 </div>
 </div>
