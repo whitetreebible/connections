@@ -1,12 +1,12 @@
-# Bible Atlas
+# Connections
 
-Welcome to **Bible Atlas**, an interactive resource for exploring biblical people, places, tribes, and themes. This project visualizes relationships across the Bible and related sources, providing a rich reference for pastors, scholars, and curious readers alike.
+Welcome to **Connections**, an interactive resource for exploring biblical people, places, tribes, and themes. This project visualizes relationships across the Bible and related sources, providing a rich reference for pastors, scholars, and curious readers alike.
 
-Bible Atlas was created by a software engineer with a passion for biblical studies. It applies **network and graph theory** to connect ideas, themes, people, and places, offering both intuitive exploration and scholarly depth.
+Connections was created by a software engineer with a passion for biblical studies. It applies **network and graph theory** to connect ideas, themes, people, and places, offering both intuitive exploration and scholarly depth.
 
 ---
 
-## What Bible Atlas Does
+## What Connections Does
 
 - Maps biblical relationships: who is connected to whom, familial lineages, tribal affiliations, and thematic links.  
 - Each **page** includes references, notes, and visualizations showing its **connections** to other pages.  

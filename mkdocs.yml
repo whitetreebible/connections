@@ -1,5 +1,5 @@
 site_name: WhiteTreeBible - Connections
-site_url: https://whitetreebible.github.io/connections/
+site_url: https://connections.whitetreebible.com
 use_directory_urls: true
 theme:
   name: mkdocs

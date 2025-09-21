@@ -1,5 +1,5 @@
 # settings.py
-# Centralized settings for Bible Atlas project
+# Centralized settings for Connections project
 
 SUPPORTED_LANGS = ["en"]
 DB_PATH = "tmp/atlas.db"

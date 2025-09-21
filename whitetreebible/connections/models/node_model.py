@@ -6,7 +6,7 @@ from whitetreebible.connections.models.edge_model import EdgeModel
 
 class NodeModel:
     """
-    Data Access Object for a node (person, place, tribe, etc) in the Bible Atlas.
+    Data Access Object for a node (person, place, tribe, etc) in the Connections.
     Loads from YAML and provides access to node data and edge relationships.
     """
     def __init__(self, data: Dict[str, Any]=None):

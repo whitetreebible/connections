@@ -1,6 +1,6 @@
 # Contributing
 
-Thank you for your interest in contributing! Bible Atlas is a collaborative project to map biblical figures, tribes, places, and themes. Contributions follow a clear workflow to ensure data integrity.
+Thank you for your interest in contributing! Connections is a collaborative project to map biblical figures, tribes, places, and themes. Contributions follow a clear workflow to ensure data integrity.
 
 ## Financial Contributors
 

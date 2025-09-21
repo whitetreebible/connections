@@ -4,7 +4,7 @@ from .edge_type import EdgeType
 class EdgeModel:
 
     """
-    Data Access Object for an edge (relationship) between nodes in the Bible Atlas.
+    Data Access Object for an edge (relationship) between nodes in the Connections.
     Each edge connects a source node to a target node with a type, and refs.
     """
     def __init__(self, data: Dict[str, Any]):
