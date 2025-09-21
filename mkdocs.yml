@@ -1,13 +1,37 @@
 site_name: WhiteTreeBible - Connections
 site_url: https://connections.whitetreebible.com
 use_directory_urls: true
+
 theme:
-  name: mkdocs
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.highlight
+    - search.share
+  palette:
+    - scheme: default
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: deep purple
+      accent: purple
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
 extra_css:
   - mermaid-mod.css
+
 extra_javascript:
   - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
   - mermaid-mod.js
+
 plugins:
   - search
   - mermaid2
@@ -22,6 +46,7 @@ plugins:
           name: English
           build: true
           site_name: "WhiteTreeBible - Connections"
+
 markdown_extensions:
   - footnotes   # needed for footnotes to render
   - attr_list   # needed for _target links to render
