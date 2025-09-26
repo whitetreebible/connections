@@ -5,7 +5,6 @@ use_directory_urls: true
 theme:
   name: material
   features:
-    - navigation.tabs
     - navigation.sections
     - navigation.expand
     - navigation.top
@@ -31,6 +30,16 @@ extra_css:
 extra_javascript:
   - https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js
   - mermaid-mod.js
+
+nav:
+  - Home: https://whitetreebible.com
+  - Tools:
+    - Connections: index.md
+    - Blog: https://blog.whitetreebible.com/blog
+  - About:
+    - About Us: https://whitetreebible.com/about/about-us.md
+    - Get Updates: https://whitetreebible.com/about/get-email-updates.md
+    - Support Us: https://whitetreebible.com/about/support-us.md
 
 plugins:
   - search

@@ -28,7 +28,6 @@ div.mermaid:not([data-processed="true"])::after {
     100% { transform: rotate(360deg); }
 }
 
-/* Make mermaid SVGs scrollable and full width */
 div.mermaid {
     overflow-x: auto;
     width: 100%;
@@ -39,13 +38,30 @@ div.mermaid > svg {
     max-width: none;
     display: block;
 }
-div.mermaid {
-    overflow-x: auto;
-    width: 100%;
-    max-width: 100vw;
+
+/* Random Page Button Styling */
+#random-page, .random-page {
+    background: linear-gradient(45deg, #673ab7, #9c27b0) !important;
+    color: white !important;
+    border: none !important;
+    padding: 12px 24px !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    border-radius: 8px !important;
+    cursor: pointer !important;
+    margin: 10px 0 !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 2px 8px rgba(103, 58, 183, 0.3) !important;
+    text-decoration: none !important;
+    display: inline-block !important;
 }
-div.mermaid > svg {
-    height: auto;
-    max-width: none;
-    display: block;
+
+#random-page:hover, .random-page:hover {
+    background: linear-gradient(45deg, #5e35b1, #8e24aa) !important;
+    box-shadow: 0 4px 12px rgba(103, 58, 183, 0.4) !important;
+    transform: translateY(-2px) !important;
+}
+
+#random-page:active, .random-page:active {
+    transform: translateY(0) !important;
 }

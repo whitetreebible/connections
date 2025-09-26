@@ -6,6 +6,14 @@ Connections was created by a software engineer with a passion for biblical studi
 
 ---
 
+## Quick Start
+
+<button id="random-page" style="background-color: #673ab7; color: white; border: none; padding: 12px 24px; font-size: 16px; border-radius: 5px; cursor: pointer; margin: 10px 0;">🎲 Go to Random Page</button>
+
+Explore a randomly selected person, place, theme, or concept from the biblical connections database. Or start with [Bethlehem](/place/bethlehem), [Rahab](/person/rahab), [barley](/object/barley), or [Jesus](/person/jesus) to see how it works!
+
+---
+
 ## What Connections Does
 
 - Maps biblical relationships: who is connected to whom, familial lineages, tribal affiliations, and thematic links.  
@@ -19,7 +27,7 @@ Connections was created by a software engineer with a passion for biblical studi
 ## How to Use
 
 ### Browsing
-- Search for primary agents like **People**, **Places**, **Tribes**, and **Themes** using the search bar or nav panel.
+- Search for primary agents like **People**, **Places**, **Tribes**, and **Themes** using the search bar.
 - Click on a page to view detailed information, references, notes, and visualizations of its connections.
 
 ### References
