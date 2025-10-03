@@ -23,7 +23,7 @@ edges:
   refs:
   - bible:Ruth 4:1
   - footnote:elimelechs_redeemer
-- target: role/kinsman-redeemer
+- target: role/redeemer
   type: role-as
   refs:
   - bible:Ruth 4:1
