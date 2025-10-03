@@ -250,34 +250,36 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Married to</strong> <a href="../../person/mahlon/">Mahlon</a> (<a href="https://biblehub.com/context/ruth/1-4.htm" target="_blank">Ruth 1:4</a>, <sup id="fnref:death_ordering"><a class="footnote-ref" href="#fn:death_ordering">1</a></sup>)</li>
-<li><strong>Member of</strong> <a href="../../group/moab/">Moab</a> (<a href="https://biblehub.com/context/ruth/1-4.htm" target="_blank">Ruth 1:4</a>)</li>
+<li><strong>Member of</strong> <a href="../../group/moabite/">Moabite</a> (<a href="https://biblehub.com/context/ruth/1-4.htm" target="_blank">Ruth 1:4</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style person/orpah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/mahlon(["Mahlon"])
-    person/orpah(["Orpah"])
-    person/naomi(["Naomi"])
     person/elimelech(["Elimelech"])
+    person/naomi(["Naomi"])
+    person/orpah(["Orpah"])
     click person/mahlon "../../person/mahlon/"
-    click person/orpah "../../person/orpah/"
-    click person/naomi "../../person/naomi/"
     click person/elimelech "../../person/elimelech/"
+    click person/naomi "../../person/naomi/"
+    click person/orpah "../../person/orpah/"
+    person/orpah &lt;--&gt;|married to| person/mahlon
     person/naomi --&gt;|parent of| person/mahlon
     person/elimelech --&gt;|parent of| person/mahlon
-    person/orpah &lt;--&gt;|married to| person/mahlon
 </div>
 <h2 id="social-political">Social / political</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style person/orpah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    group/moabite(["Moabite"])
     person/ruth(["Ruth"])
     person/orpah(["Orpah"])
-    group/moab(["Moab"])
+    click group/moabite "../../group/moabite/"
     click person/ruth "../../person/ruth/"
     click person/orpah "../../person/orpah/"
-    click group/moab "../../group/moab/"
-    person/ruth --&gt;|member of| group/moab
-    person/orpah --&gt;|member of| group/moab
+    group/moabite &lt;.-&gt;|associated with| person/orpah
+    person/orpah --&gt;|member of| group/moabite
+    group/moabite &lt;.-&gt;|associated with| person/ruth
+    person/ruth --&gt;|member of| group/moabite
 </div>
 <div class="footnote">
 <hr/>

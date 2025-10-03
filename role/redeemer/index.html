@@ -211,13 +211,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#redeemer-boaz-role-as-redeemer">
-<span class="md-ellipsis">
-      redeemer (Boaz role as redeemer)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#vocational-functional">
 <span class="md-ellipsis">
       Vocational / functional
@@ -232,14 +225,16 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="redeemer">redeemer</h1>
-<h2 id="redeemer-boaz-role-as-redeemer">redeemer (Boaz role as redeemer)</h2>
 <h2 id="vocational-functional">Vocational / functional</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style role/redeemer fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    role/redeemer(["redeemer"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
     person/boaz(["Boaz"])
-    click role/redeemer "../../role/redeemer/"
+    role/redeemer(["redeemer"])
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     click person/boaz "../../person/boaz/"
+    click role/redeemer "../../role/redeemer/"
+    person/elimelechs_redeemer --&gt;|role as| role/redeemer
     person/boaz --&gt;|role as| role/redeemer
 </div>
 </article>

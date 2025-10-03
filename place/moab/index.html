@@ -211,9 +211,9 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#moab-elimelech-visited-moab">
+<a class="md-nav__link" href="#moab-ancient-kingdom-east-of-the-dead-sea">
 <span class="md-ellipsis">
-      Moab (Elimelech visited Moab)
+      Moab (ancient kingdom east of the Dead Sea)
     </span>
 </a>
 </li>
@@ -232,29 +232,29 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="moab">Moab</h1>
-<h2 id="moab-elimelech-visited-moab">Moab (Elimelech visited Moab)</h2>
+<h2 id="moab-ancient-kingdom-east-of-the-dead-sea">Moab (ancient kingdom east of the Dead Sea)</h2>
 <h2 id="geographic">Geographic</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style place/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/mahlon(["Mahlon"])
     place/bethlehem(["Bethlehem"])
     person/elimelech(["Elimelech"])
-    person/kilion(["Kilion"])
     person/naomi(["Naomi"])
     place/moab(["Moab"])
-    click person/mahlon "../../person/mahlon/"
+    person/kilion(["Kilion"])
+    person/mahlon(["Mahlon"])
     click place/bethlehem "../../place/bethlehem/"
     click person/elimelech "../../person/elimelech/"
-    click person/kilion "../../person/kilion/"
     click person/naomi "../../person/naomi/"
     click place/moab "../../place/moab/"
+    click person/kilion "../../person/kilion/"
+    click person/mahlon "../../person/mahlon/"
     person/mahlon .-&gt;|visited| place/moab
     person/mahlon --&gt;|died in| place/moab
+    person/elimelech --&gt;|died in| place/moab
+    person/elimelech .-&gt;|visited| place/moab
     person/kilion .-&gt;|visited| place/moab
     person/kilion --&gt;|died in| place/moab
     person/naomi .-&gt;|visited| place/moab
-    person/elimelech .-&gt;|visited| place/moab
-    person/elimelech --&gt;|died in| place/moab
     person/elimelech --&gt;|resident of| place/bethlehem
     person/naomi --&gt;|resident of| place/bethlehem
 </div>

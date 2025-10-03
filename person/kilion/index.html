@@ -249,66 +249,65 @@
 <h2 id="kilion-son-of-elimelech-and-naomi">Kilion (son of Elimelech and Naomi)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Visited</strong> <a href="../../place/moab/">Moab</a> (<a href="https://biblehub.com/context/ruth/1-1.htm" target="_blank">Ruth 1:1</a>)</li>
-<li><strong>Child of</strong> <a href="../../person/elimelech/">Elimelech</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>)</li>
-<li><strong>Child of</strong> <a href="../../person/naomi/">Naomi</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>)</li>
-<li><strong>Married to</strong> <a href="../../person/ruth/">Ruth</a> (<a href="https://biblehub.com/context/ruth/1-4.htm" target="_blank">Ruth 1:4</a>, <sup id="fnref:death_ordering"><a class="footnote-ref" href="#fn:death_ordering">1</a></sup>)</li>
+<li><strong>Child of</strong> <a href="../../person/elimelech/">Elimelech</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>), <a href="../../person/naomi/">Naomi</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>)</li>
 <li><strong>Died in</strong> <a href="../../place/moab/">Moab</a> (<a href="https://biblehub.com/context/ruth/1-5.htm" target="_blank">Ruth 1:5</a>)</li>
+<li><strong>Married to</strong> <a href="../../person/ruth/">Ruth</a> (<a href="https://biblehub.com/context/ruth/1-4.htm" target="_blank">Ruth 1:4</a>, <sup id="fnref:death_ordering"><a class="footnote-ref" href="#fn:death_ordering">1</a></sup>)</li>
+<li><strong>Visited</strong> <a href="../../place/moab/">Moab</a> (<a href="https://biblehub.com/context/ruth/1-1.htm" target="_blank">Ruth 1:1</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style person/kilion fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/boaz(["Boaz"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
+    person/elimelech(["Elimelech"])
     person/ruth(["Ruth"])
+    person/naomi(["Naomi"])
+    person/kilion(["Kilion"])
     person/mahlon(["Mahlon"])
     person/obed(["Obed"])
-    person/elimelech(["Elimelech"])
-    person/kilion(["Kilion"])
-    person/boaz(["Boaz"])
-    person/elimelechs-redeemer(["Elimelech's Redeemer"])
-    person/naomi(["Naomi"])
+    click person/boaz "../../person/boaz/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    click person/elimelech "../../person/elimelech/"
     click person/ruth "../../person/ruth/"
+    click person/naomi "../../person/naomi/"
+    click person/kilion "../../person/kilion/"
     click person/mahlon "../../person/mahlon/"
     click person/obed "../../person/obed/"
-    click person/elimelech "../../person/elimelech/"
-    click person/kilion "../../person/kilion/"
-    click person/boaz "../../person/boaz/"
-    click person/elimelechs-redeemer "../../person/elimelechs-redeemer/"
-    click person/naomi "../../person/naomi/"
-    person/naomi --&gt;|related to| person/elimelechs-redeemer
-    person/naomi --&gt;|parent of| person/mahlon
-    person/boaz &lt;--&gt;|married to| person/ruth
-    person/naomi --&gt;|parent of| person/obed
-    person/ruth --&gt;|related to| person/elimelechs-redeemer
     person/elimelech --&gt;|parent of| person/kilion
-    person/kilion &lt;--&gt;|married to| person/ruth
-    person/elimelech --&gt;|related to| person/elimelechs-redeemer
-    person/elimelech --&gt;|parent of| person/mahlon
-    person/elimelech --&gt;|related to| person/boaz
-    person/naomi --&gt;|parent of| person/kilion
-    person/elimelech &lt;--&gt;|married to| person/naomi
-    person/naomi --&gt;|parent of| person/ruth
+    person/boaz &lt;--&gt;|married to| person/ruth
     person/ruth --&gt;|parent of| person/obed
+    person/naomi --&gt;|parent of| person/kilion
+    person/elimelech --&gt;|parent of| person/mahlon
+    person/naomi --&gt;|parent of| person/obed
+    person/ruth --&gt;|related to| person/elimelechs_redeemer
+    person/elimelech &lt;--&gt;|married to| person/naomi
+    person/naomi --&gt;|parent of| person/mahlon
+    person/kilion &lt;--&gt;|married to| person/ruth
+    person/naomi --&gt;|parent of| person/ruth
+    person/naomi --&gt;|related to| person/elimelechs_redeemer
+    person/elimelech --&gt;|related to| person/boaz
+    person/elimelech --&gt;|related to| person/elimelechs_redeemer
 </div>
 <h2 id="geographic">Geographic</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style person/kilion fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/mahlon(["Mahlon"])
     person/elimelech(["Elimelech"])
-    person/kilion(["Kilion"])
     person/naomi(["Naomi"])
     place/moab(["Moab"])
-    click person/mahlon "../../person/mahlon/"
+    person/kilion(["Kilion"])
+    person/mahlon(["Mahlon"])
     click person/elimelech "../../person/elimelech/"
-    click person/kilion "../../person/kilion/"
     click person/naomi "../../person/naomi/"
     click place/moab "../../place/moab/"
+    click person/kilion "../../person/kilion/"
+    click person/mahlon "../../person/mahlon/"
     person/mahlon .-&gt;|visited| place/moab
     person/mahlon --&gt;|died in| place/moab
+    person/elimelech --&gt;|died in| place/moab
+    person/elimelech .-&gt;|visited| place/moab
     person/kilion .-&gt;|visited| place/moab
     person/kilion --&gt;|died in| place/moab
     person/naomi .-&gt;|visited| place/moab
-    person/elimelech .-&gt;|visited| place/moab
-    person/elimelech --&gt;|died in| place/moab
 </div>
 <div class="footnote">
 <hr/>

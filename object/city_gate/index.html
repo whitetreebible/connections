@@ -8,7 +8,7 @@
 <link href="https://connections.whitetreebible.com/object/city_gate/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.20" name="generator"/>
-<title>city_gate - WhiteTreeBible - Connections</title>
+<title>city gate - WhiteTreeBible - Connections</title>
 <link href="../../assets/stylesheets/main.e53b48f4.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -22,7 +22,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#city_gate">
+<a class="md-skip" href="#city-gate">
           Skip to content
         </a>
 </div>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              city_gate
+              city gate
             
           </span>
 </div>
@@ -211,13 +211,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#city_gate-boaz-associated-with-city_gate">
-<span class="md-ellipsis">
-      city_gate (Boaz associated with city_gate)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#associations">
 <span class="md-ellipsis">
       Associations
@@ -238,39 +231,37 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="city_gate">city_gate</h1>
-<h2 id="city_gate-boaz-associated-with-city_gate">city_gate (Boaz associated with city_gate)</h2>
+<h1 id="city-gate">city gate</h1>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Associated with</strong> <a href="../../person/boaz/">Boaz</a> (<a href="https://biblehub.com/context/ruth/4-1.htm" target="_blank">Ruth 4:1</a>)</li>
-<li><strong>Associated with</strong> <a href="../../person/elimelechs-redeemer/">Elimelech's Redeemer</a> (<a href="https://biblehub.com/context/ruth/4-1.htm" target="_blank">Ruth 4:1</a>)</li>
+<li><strong>Associated with</strong> <a href="../../person/boaz/">Boaz</a> (<a href="https://biblehub.com/context/ruth/4-1.htm" target="_blank">Ruth 4:1</a>), <a href="../../person/elimelechs_redeemer/">Elimelech's Redeemer</a> (<a href="https://biblehub.com/context/ruth/4-1.htm" target="_blank">Ruth 4:1</a>)</li>
 </ul>
 <h2 id="social-political">Social / political</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style object/city_gate fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    theme/will_not_rest(["will_not_rest"])
+    group/judah(["tribe of Judah"])
     person/boaz(["Boaz"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
     event/drinking(["drinking"])
-    object/city_gate(["city_gate"])
-    object/field(["field"])
-    group/judah(["Judah"])
-    person/elimelechs-redeemer(["Elimelech's Redeemer"])
     object/wing(["wing"])
-    click theme/will_not_rest "../../theme/will_not_rest/"
+    theme/will_not_rest(["will not rest"])
+    object/city_gate(["city gate"])
+    object/field(["field"])
+    click group/judah "../../group/judah/"
     click person/boaz "../../person/boaz/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     click event/drinking "../../event/drinking/"
+    click object/wing "../../object/wing/"
+    click theme/will_not_rest "../../theme/will_not_rest/"
     click object/city_gate "../../object/city_gate/"
     click object/field "../../object/field/"
-    click group/judah "../../group/judah/"
-    click person/elimelechs-redeemer "../../person/elimelechs-redeemer/"
-    click object/wing "../../object/wing/"
-    person/boaz --&gt;|member of| group/judah
-    person/boaz &lt;.-&gt;|associated with| object/field
-    person/boaz &lt;.-&gt;|associated with| event/drinking
-    object/city_gate &lt;.-&gt;|associated with| person/elimelechs-redeemer
+    person/boaz &lt;.-&gt;|associated with| object/wing
+    event/drinking &lt;.-&gt;|associated with| person/boaz
+    object/field &lt;.-&gt;|associated with| person/boaz
     theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
     object/city_gate &lt;.-&gt;|associated with| person/boaz
-    person/boaz &lt;.-&gt;|associated with| object/wing
+    person/boaz --&gt;|member of| group/judah
+    person/elimelechs_redeemer &lt;.-&gt;|associated with| object/city_gate
 </div>
 </article>
 </div>

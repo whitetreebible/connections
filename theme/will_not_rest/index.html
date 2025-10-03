@@ -8,7 +8,7 @@
 <link href="https://connections.whitetreebible.com/theme/will_not_rest/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.20" name="generator"/>
-<title>will_not_rest - WhiteTreeBible - Connections</title>
+<title>will not rest - WhiteTreeBible - Connections</title>
 <link href="../../assets/stylesheets/main.e53b48f4.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.06af60db.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -22,7 +22,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#will_not_rest">
+<a class="md-skip" href="#will-not-rest">
           Skip to content
         </a>
 </div>
@@ -46,7 +46,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              will_not_rest
+              will not rest
             
           </span>
 </div>
@@ -211,13 +211,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#will_not_rest-boaz-associated-with-will_not_rest">
-<span class="md-ellipsis">
-      will_not_rest (Boaz associated with will_not_rest)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#associations">
 <span class="md-ellipsis">
       Associations
@@ -238,35 +231,34 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="will_not_rest">will_not_rest</h1>
-<h2 id="will_not_rest-boaz-associated-with-will_not_rest">will_not_rest (Boaz associated with will_not_rest)</h2>
+<h1 id="will-not-rest">will not rest</h1>
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Associated with</strong> <a href="../../person/boaz/">Boaz</a> (<a href="https://biblehub.com/context/ruth/3-18.htm" target="_blank">Ruth 3:18</a>)</li>
 </ul>
 <h2 id="social-political">Social / political</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style theme/will_not_rest fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    theme/will_not_rest(["will_not_rest"])
+    group/judah(["tribe of Judah"])
     person/boaz(["Boaz"])
     event/drinking(["drinking"])
-    object/field(["field"])
-    object/city_gate(["city_gate"])
-    group/judah(["Judah"])
     object/wing(["wing"])
-    click theme/will_not_rest "../../theme/will_not_rest/"
+    theme/will_not_rest(["will not rest"])
+    object/city_gate(["city gate"])
+    object/field(["field"])
+    click group/judah "../../group/judah/"
     click person/boaz "../../person/boaz/"
     click event/drinking "../../event/drinking/"
-    click object/field "../../object/field/"
-    click object/city_gate "../../object/city_gate/"
-    click group/judah "../../group/judah/"
     click object/wing "../../object/wing/"
-    person/boaz --&gt;|member of| group/judah
-    person/boaz &lt;.-&gt;|associated with| object/field
-    person/boaz &lt;.-&gt;|associated with| event/drinking
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click object/city_gate "../../object/city_gate/"
+    click object/field "../../object/field/"
+    person/boaz &lt;.-&gt;|associated with| object/wing
+    event/drinking &lt;.-&gt;|associated with| person/boaz
     theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
+    object/field &lt;.-&gt;|associated with| person/boaz
     object/city_gate &lt;.-&gt;|associated with| person/boaz
-    object/wing &lt;.-&gt;|associated with| person/boaz
+    person/boaz --&gt;|member of| group/judah
 </div>
 </article>
 </div>

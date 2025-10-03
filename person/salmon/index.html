@@ -244,36 +244,36 @@
 Little else is known about Salmon, but his marriage to Rahab is significant in the biblical narrative, linking the story of the conquest of Jericho to the lineage of King David and Jesus.</p>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Married to</strong> <a href="../../person/rahab/">Rahab</a> (<a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>)</li>
 <li><strong>Child of</strong> <a href="../../person/nahshon/">Nahshon</a> (<a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>, <a href="https://biblehub.com/context/ruth/4-20.htm" target="_blank">Ruth 4:20</a>)</li>
+<li><strong>Married to</strong> <a href="../../person/rahab/">Rahab</a> (<a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>)</li>
 <li><strong>Parent of</strong> <a href="../../person/boaz/">Boaz</a> (<a href="https://biblehub.com/context/matthew/1-5.htm" target="_blank">Matthew 1:5</a>, <a href="https://biblehub.com/context/ruth/4-21.htm" target="_blank">Ruth 4:21</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style person/salmon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/amminadab(["Amminadab"])
+    person/boaz(["Boaz"])
+    person/rahab(["Rahab"])
+    person/elimelech(["Elimelech"])
     person/salmon(["Salmon"])
     person/ruth(["Ruth"])
-    person/obed(["Obed"])
-    person/elimelech(["Elimelech"])
-    person/amminadab(["Amminadab"])
-    person/rahab(["Rahab"])
-    person/boaz(["Boaz"])
     person/nahshon(["Nahshon"])
+    person/obed(["Obed"])
+    click person/amminadab "../../person/amminadab/"
+    click person/boaz "../../person/boaz/"
+    click person/rahab "../../person/rahab/"
+    click person/elimelech "../../person/elimelech/"
     click person/salmon "../../person/salmon/"
     click person/ruth "../../person/ruth/"
-    click person/obed "../../person/obed/"
-    click person/elimelech "../../person/elimelech/"
-    click person/amminadab "../../person/amminadab/"
-    click person/rahab "../../person/rahab/"
-    click person/boaz "../../person/boaz/"
     click person/nahshon "../../person/nahshon/"
-    person/rahab &lt;--&gt;|married to| person/salmon
+    click person/obed "../../person/obed/"
+    person/rahab --&gt;|parent of| person/boaz
+    person/boaz --&gt;|parent of| person/obed
+    person/nahshon --&gt;|parent of| person/salmon
+    person/elimelech --&gt;|related to| person/boaz
     person/salmon --&gt;|parent of| person/boaz
     person/rahab .-&gt;|ancestor of| person/jesus
-    person/nahshon --&gt;|parent of| person/salmon
-    person/boaz --&gt;|parent of| person/obed
-    person/rahab --&gt;|parent of| person/boaz
-    person/elimelech --&gt;|related to| person/boaz
+    person/salmon &lt;--&gt;|married to| person/rahab
     person/amminadab --&gt;|parent of| person/nahshon
     person/boaz &lt;--&gt;|married to| person/ruth
 </div>

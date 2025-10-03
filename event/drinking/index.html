@@ -211,13 +211,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#drinking-boaz-associated-with-drinking">
-<span class="md-ellipsis">
-      drinking (Boaz associated with drinking)
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#associations">
 <span class="md-ellipsis">
       Associations
@@ -239,34 +232,33 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="drinking">drinking</h1>
-<h2 id="drinking-boaz-associated-with-drinking">drinking (Boaz associated with drinking)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Associated with</strong> <a href="../../person/boaz/">Boaz</a> (<a href="https://biblehub.com/context/ruth/3-7.htm" target="_blank">Ruth 3:7</a>)</li>
+<li><strong>Associated with</strong> <a href="../../person/boaz/">person/boaz</a> (<a href="https://biblehub.com/context/ruth/3-7.htm" target="_blank">Ruth 3:7</a>)</li>
 </ul>
 <h2 id="social-political">Social / political</h2>
-<div class="mermaid">graph LR;
+<div class="mermaid">graph TD;
     style event/drinking fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    theme/will_not_rest(["will_not_rest"])
+    group/judah(["tribe of Judah"])
     person/boaz(["Boaz"])
     event/drinking(["drinking"])
-    object/field(["field"])
-    object/city_gate(["city_gate"])
-    group/judah(["Judah"])
     object/wing(["wing"])
-    click theme/will_not_rest "../../theme/will_not_rest/"
+    theme/will_not_rest(["will not rest"])
+    object/city_gate(["city gate"])
+    object/field(["field"])
+    click group/judah "../../group/judah/"
     click person/boaz "../../person/boaz/"
     click event/drinking "../../event/drinking/"
-    click object/field "../../object/field/"
-    click object/city_gate "../../object/city_gate/"
-    click group/judah "../../group/judah/"
     click object/wing "../../object/wing/"
-    person/boaz --&gt;|member of| group/judah
-    person/boaz &lt;.-&gt;|associated with| object/field
-    person/boaz &lt;.-&gt;|associated with| event/drinking
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click object/city_gate "../../object/city_gate/"
+    click object/field "../../object/field/"
+    event/drinking &lt;.-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| object/wing
+    object/field &lt;.-&gt;|associated with| person/boaz
     theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
     object/city_gate &lt;.-&gt;|associated with| person/boaz
-    object/wing &lt;.-&gt;|associated with| person/boaz
+    person/boaz --&gt;|member of| group/judah
 </div>
 </article>
 </div>
