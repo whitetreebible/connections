@@ -16,7 +16,7 @@ edges:
   refs:
   - bible:Ruth 1:4
   - footnote:death_ordering
-- target: group/moab
+- target: group/moabite
   type: member-of
   refs:
   - bible:Ruth 1:4

@@ -25,6 +25,7 @@ dev = [
 import = "uv run -m whitetreebible.connections.import_external_to_yml"
 yml = "uv run -m whitetreebible.connections.import_yml_to_db"
 md = "uv run -m whitetreebible.connections.md_generator"
+edit = "uv run -m whitetreebible.connections.manual_editor"
 serve = "uv run -m mkdocs serve"
 test = "uv run pytest"
 lint = "echo no lint yet"

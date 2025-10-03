@@ -1,9 +1,9 @@
 id: city_gate
 type: object
 name:
-  en: city_gate
+  en: city gate
 name_disambiguous:
-  en: city_gate (Boaz associated with city_gate)
+  en: city gate
 description:
   en: ''
 footnotes: {}

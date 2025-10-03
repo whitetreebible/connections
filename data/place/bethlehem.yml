@@ -3,7 +3,7 @@ type: place
 name:
   en: Bethlehem
 name_disambiguous:
-  en: Bethlehem (Elimelech resident of Bethlehem)
+  en: Bethlehem
 description:
   en: ''
 footnotes: {}
@@ -16,3 +16,6 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 4:11
+- target: place/ephrathah
+  type: name-matches
+  refs: []

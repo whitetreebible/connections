@@ -24,8 +24,8 @@ footnotes:
       gesture indicating protection and care, akin to the way God protects His people
       (Robert Whiting, 2025).
   conception:
-      en: '"Yahweh enabled her to conceive" indicates that Ruth had
-        difficulty conceiving and Yahweh overcame said difficulties (Robert Whiting, 2025).'
+    en: '"Yahweh enabled her to conceive" indicates that Ruth had difficulty conceiving
+      and Yahweh overcame said difficulties (Robert Whiting, 2025).'
 edges:
 - target: person/kilion
   type: married-to
@@ -40,7 +40,7 @@ edges:
   type: resident-of
   refs:
   - bible:Ruth 1:19
-- target: group/moab
+- target: group/moabite
   type: member-of
   refs:
   - bible:Ruth 1:4
@@ -107,7 +107,7 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 4:11
-- target: group/israel
+- target: group/israelite
   type: associated-with
   refs:
   - bible:Ruth 4:11
@@ -141,3 +141,7 @@ edges:
   type: related-to
   refs:
   - bible:Ruth 3:12
+- target: group/moabite
+  type: associated-with
+  refs:
+  - bible:Ruth 1:4

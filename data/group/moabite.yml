@@ -1,0 +1,18 @@
+id: moabite
+type: group
+name:
+  en: Moabite
+name_disambiguous:
+  en: Moabite (descendants of Lot and his older daughter)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ruth
+  type: associated-with
+  refs:
+  - bible:Ruth 1:4
+- target: person/orpah
+  type: associated-with
+  refs:
+  - bible:Ruth 1:4

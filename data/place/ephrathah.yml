@@ -3,7 +3,7 @@ type: place
 name:
   en: Ephrathah
 name_disambiguous:
-  en: Ephrathah (Ruth associated with Ephrathah)
+  en: Ephrathah (Bethlehem)
 description:
   en: ''
 footnotes: {}
@@ -12,3 +12,6 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 4:11
+- target: place/bethlehem
+  type: name-matches
+  refs: []

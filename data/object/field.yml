@@ -3,7 +3,7 @@ type: object
 name:
   en: field
 name_disambiguous:
-  en: field (Boaz associated with field)
+  en: field
 description:
   en: ''
 footnotes: {}
