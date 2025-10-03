@@ -52,7 +52,7 @@ edges:
   type: parent-of
   refs:
   - bible:Ruth 4:17
-- target: person/elimelechs-redeemer
+- target: person/elimelechs_redeemer
   type: related-to
   refs:
   - bible:Ruth 3:12

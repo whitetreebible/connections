@@ -56,7 +56,7 @@ edges:
   type: role-as
   refs:
   - bible:Ruth 2:10
-- target: theme/leaving-family
+- target: theme/leaving_family
   type: example-of
   refs:
   - bible:Ruth 2:11
@@ -68,7 +68,7 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 2:14
-- target: object/wine-vinegar
+- target: object/wine_vinegar
   type: associated-with
   refs:
   - bible:Ruth 2:14
@@ -137,7 +137,7 @@ edges:
   - bible:Ruth 4:13
   - bible:Ruth 4:17
   - footnote:conception
-- target: person/elimelechs-redeemer
+- target: person/elimelechs_redeemer
   type: related-to
   refs:
   - bible:Ruth 3:12

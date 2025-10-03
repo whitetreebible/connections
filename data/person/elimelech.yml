@@ -40,7 +40,7 @@ edges:
   type: related-to
   refs:
   - bible:Ruth 2:1
-- target: person/elimelechs-redeemer
+- target: person/elimelechs_redeemer
   type: related-to
   refs:
   - bible:Ruth 3:12

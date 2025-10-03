@@ -12,7 +12,7 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 4:1
-- target: person/elimelechs-redeemer
+- target: person/elimelechs_redeemer
   type: associated-with
   refs:
   - bible:Ruth 4:1
