@@ -32,11 +32,52 @@ div.mermaid {
     overflow-x: auto;
     width: 100%;
     max-width: 100vw;
+    /* Mobile-friendly scrolling */
+    -webkit-overflow-scrolling: touch;
 }
+
 div.mermaid > svg {
     height: auto;
     max-width: none;
     display: block;
+}
+
+/* Mobile-specific improvements */
+@media (max-width: 768px) {
+    div.mermaid {
+        /* Smaller container on mobile for easier navigation */
+        max-height: 60vh;
+        overflow-y: auto;
+        /* Add border to indicate scrollable area */
+        border: 1px solid #e0e0e0;
+        border-radius: 4px;
+        padding: 8px;
+        margin: 8px 0;
+    }
+    
+    div.mermaid > svg {
+        /* Scale down slightly on mobile if needed */
+        transform-origin: top left;
+        /* Ensure nodes are more compact on mobile */
+        font-size: 12px !important;
+    }
+    
+    /* Make mermaid node text more readable on mobile */
+    div.mermaid .node text {
+        font-size: 12px !important;
+    }
+    
+    div.mermaid .edgeLabel {
+        font-size: 10px !important;
+    }
+}
+
+/* Tablet improvements */
+@media (max-width: 1024px) and (min-width: 769px) {
+    div.mermaid {
+        max-height: 70vh;
+        overflow-y: auto;
+    }
 }
 
 /* Random Page Button Styling */

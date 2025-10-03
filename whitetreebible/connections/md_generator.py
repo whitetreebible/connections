@@ -141,7 +141,7 @@ class MdFormatters:
             return "\n".join(lines)
         lines.append(f"## {title}")
         lines.append('```mermaid')
-        lines.append('graph LR;')
+        lines.append('graph TD;')
         # Style current node
         lines.append(f"    style {node.link} fill:#2fa4e7,stroke:#333,stroke-width:4px;")
 
