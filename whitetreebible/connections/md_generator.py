@@ -206,21 +206,40 @@ class MdFormatters:
         lines = [] if not md else [md]
         if node.edges:
             lines.append("## Associations")
+            
+            # Group edges by type
+            edge_groups = {}
             for edge in node.edges:
-                # Turn target into an id link
-                target_link = self.format_links(db=db, node=node, md=f"[[{edge.target}]]", lang=lang)
-                # Show refs in readable format (bible:..., footnote:...)
-                ref_strs = []
-                for ref in getattr(edge, 'refs', []):
-                    if isinstance(ref, str):
-                        if ref.startswith('bible:'):
-                            ref_strs.append(f"[[{ref}]]")
-                        elif ref.startswith('footnote:'):
-                            ref_strs.append(f"[^{ref.split(':',1)[1]}]")
-                refs_display = f" ({', '.join(ref_strs)})" if ref_strs else ""
-                edge_type:EdgeType = edge.type
+                edge_type = edge.type
+                if edge_type not in edge_groups:
+                    edge_groups[edge_type] = []
+                edge_groups[edge_type].append(edge)
+            
+            # Sort groups by edge type display name
+            sorted_groups = sorted(edge_groups.items(), key=lambda x: x[0].for_lang(lang=lang))
+            
+            for edge_type, edges in sorted_groups:
+                # Collect targets and their references for this edge type
+                targets_with_refs = []
+                for edge in edges:
+                    # Turn target into an id link
+                    target_link = self.format_links(db=db, node=node, md=f"[[{edge.target}]]", lang=lang)
+                    # Show refs in readable format (bible:..., footnote:...)
+                    ref_strs = []
+                    for ref in getattr(edge, 'refs', []):
+                        if isinstance(ref, str):
+                            if ref.startswith('bible:'):
+                                ref_strs.append(f"[[{ref}]]")
+                            elif ref.startswith('footnote:'):
+                                ref_strs.append(f"[^{ref.split(':',1)[1]}]")
+                    refs_display = f" ({', '.join(ref_strs)})" if ref_strs else ""
+                    targets_with_refs.append(f"{target_link}{refs_display}")
+                
+                # Format the line with all targets for this edge type
                 label = edge_type.for_lang(lang=lang, capitalize=True)
-                lines.append(f"- **{label}** {target_link}{refs_display}")
+                targets_display = ", ".join(targets_with_refs)
+                lines.append(f"- **{label}** {targets_display}")
+            
             lines.append("")
         return "\n".join(lines)
 
