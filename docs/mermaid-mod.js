@@ -8,31 +8,38 @@ function fixMermaidSVGs() {
                 const parts = vb.split(' ');
                 const w = parseFloat(parts[2]);
                 const h = parseFloat(parts[3]);
+                svg.style.width = w + 'px';
+                svg.style.minWidth = w + 'px';
+                svg.style.maxWidth = 'none';
                 
-                // Basic mobile responsiveness
+                // Mobile-specific improvements
                 const isMobile = window.innerWidth <= 768;
                 if (isMobile) {
-                    // On mobile, let the SVG use its natural size but constrain the container
-                    svg.style.width = w + 'px';
-                    svg.style.minWidth = w + 'px';
-                    svg.style.maxWidth = 'none';
-                    
-                    // Make the container scrollable and limit its width
-                    div.style.maxWidth = '100vw';
-                    div.style.overflowX = 'auto';
-                    div.style.overflowY = 'auto';
+                    // Add smooth scrolling for better touch experience
+                    div.style.scrollBehavior = 'smooth';
+                    // Try to find and center on the current node (highlighted in blue)
+                    setTimeout(() => {
+                        const currentNode = div.querySelector('[style*="fill:#2fa4e7"]') || 
+                                          div.querySelector('[fill="#2fa4e7"]');
+                        if (currentNode) {
+                            // Center on the current node instead of the whole graph
+                            const rect = currentNode.getBoundingClientRect();
+                            const containerRect = div.getBoundingClientRect();
+                            div.scrollLeft += rect.left - containerRect.left - containerRect.width / 2;
+                            div.scrollTop += rect.top - containerRect.top - containerRect.height / 2;
+                        } else {
+                            // Fallback to center of graph
+                            div.scrollLeft = (svg.scrollWidth - div.clientWidth) / 2;
+                            div.scrollTop = (svg.scrollHeight - div.clientHeight) / 2;
+                        }
+                    }, 100);
                 } else {
-                    svg.style.width = w + 'px';
-                    svg.style.minWidth = w + 'px';
-                    svg.style.maxWidth = 'none';
+                    // Desktop: center normally
+                    setTimeout(() => {
+                        div.scrollLeft = (svg.scrollWidth - div.clientWidth) / 2;
+                        div.scrollTop = (svg.scrollHeight - div.clientHeight) / 2;
+                    }, 50);
                 }
-                
-                // Scroll horizontally and vertically to center
-                // Use setTimeout to ensure layout is updated
-                setTimeout(() => {
-                    div.scrollLeft = (svg.scrollWidth - div.clientWidth) / 2;
-                    div.scrollTop = (svg.scrollHeight - div.clientHeight) / 2;
-                }, 50);
             }
         }
     });
