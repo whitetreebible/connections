@@ -239,32 +239,32 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style object/city_gate fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    symbol/unsandaled_one(["unsandaled one"])
-    person/boaz(["Boaz"])
-    object/city_gate(["city gate"])
-    theme/hospitality(["hospitality"])
-    event/drinking(["drinking"])
     person/elimelechs_redeemer(["Elimelech's Redeemer"])
     theme/will_not_rest(["will not rest"])
-    object/wing(["wing"])
+    event/drinking(["drinking"])
+    person/boaz(["Boaz"])
     object/field(["field"])
-    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
-    click person/boaz "../../person/boaz/"
-    click object/city_gate "../../object/city_gate/"
-    click theme/hospitality "../../theme/hospitality/"
-    click event/drinking "../../event/drinking/"
+    object/wing(["wing"])
+    theme/hospitality(["hospitality"])
+    object/city_gate(["city gate"])
+    symbol/unsandaled_one(["unsandaled one"])
     click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     click theme/will_not_rest "../../theme/will_not_rest/"
-    click object/wing "../../object/wing/"
+    click event/drinking "../../event/drinking/"
+    click person/boaz "../../person/boaz/"
     click object/field "../../object/field/"
-    object/wing &lt;.-&gt;|associated with| person/boaz
+    click object/wing "../../object/wing/"
+    click theme/hospitality "../../theme/hospitality/"
+    click object/city_gate "../../object/city_gate/"
+    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
     object/field &lt;.-&gt;|associated with| person/boaz
     person/elimelechs_redeemer --&gt;|example of| symbol/unsandaled_one
     event/drinking &lt;.-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
     object/city_gate &lt;.-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| object/wing
     object/city_gate &lt;.-&gt;|associated with| person/elimelechs_redeemer
     person/boaz --&gt;|example of| theme/hospitality
-    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
 </div>
 </article>
 </div>
