@@ -5,7 +5,10 @@ name:
 name_disambiguous:
   en: Hezron (son of Perez)
 description:
-  en: ''
+  en: 'Hezron was the son of Perez and the grandson of Judah, making him a descendant of Abraham,
+    Isaac, and Jacob. He is an important figure in the genealogies of the Bible, as he is an ancestor
+    of King David and, according to Christian tradition, Jesus Christ. He lived during the period
+    of the Judges and is mentioned in the genealogies found in the books of Ruth and 1 Chronicles.'
 footnotes: {}
 edges:
 - target: person/perez

@@ -5,7 +5,12 @@ name:
 name_disambiguous:
   en: Naomi (mother in law of Ruth)
 description:
-  en: ''
+  en: 'Naomi was the wife of Elimelech and the mother-in-law of Ruth. She was originally 
+       from Bethlehem in Judah but moved to Moab with her husband and two sons during a 
+       time of famine. After the deaths of her husband and sons, Naomi decided to return 
+       to Bethlehem. Her story is one of loss, faith, and redemption, as she encourages 
+       Ruth to stay with her and ultimately finds hope through Ruth''s marriage to Boaz, 
+       which leads to their inclusion in the lineage of King David.'
 footnotes: {}
 edges:
 - target: person/elimelech

@@ -5,7 +5,10 @@ name:
 name_disambiguous:
   en: Judah (place in southern Israel)
 description:
-  en: ''
+  en: 'Judah geographically refers to the territory allocated to the tribe of Judah, one of the
+    twelve tribes of Israel. It is located in the southern part of the country and is known for its
+    significant historical and biblical events, including the reign of King David and the birthplace
+    of Jesus Christ in Bethlehem, which is situated within its borders.'
 footnotes: {}
 edges:
 - target: group/judah

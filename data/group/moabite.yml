@@ -5,7 +5,11 @@ name:
 name_disambiguous:
   en: Moabite (descendants of Lot and his older daughter)
 description:
-  en: ''
+  en: The Moabites were descendants of Moab, the son of Lot and his older daughter.
+    They settled in the region east of the Dead Sea, in what is now modern-day Jordan.
+    The Moabites had a complex relationship with the Israelites, often marked by conflict
+    but also by periods of peace and intermarriage, as seen in the story of Ruth,
+    a Moabite woman who became the great-grandmother of King David.
 footnotes: {}
 edges:
 - target: person/ruth
@@ -16,3 +20,6 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 1:4
+- target: place/moab
+  type: name-matches
+  refs: []

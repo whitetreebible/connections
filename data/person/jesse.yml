@@ -5,7 +5,9 @@ name:
 name_disambiguous:
   en: Jesse (son of Obed)
 description:
-  en: ''
+  en: 'Jesse was the son of Obed and the father of King David. He was a member of the tribe of Judah
+    and lived in Bethlehem. Jesse is notable for being the grandfather of King Solomon and an ancestor
+    of Jesus Christ according to the genealogies presented in the Bible.'
 footnotes: {}
 edges:
 - target: person/obed

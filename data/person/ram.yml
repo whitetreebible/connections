@@ -5,7 +5,9 @@ name:
 name_disambiguous:
   en: Ram (son of Hezron)
 description:
-  en: ''
+  en: 'Ram was the son of Hezron and the father of Amminadab, making him an important figure
+    in the genealogy of King David. He is part of the lineage that connects to the tribe of Judah,
+    which plays a significant role in the history of Israel.'
 footnotes: {}
 edges:
 - target: person/hezron

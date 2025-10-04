@@ -5,7 +5,10 @@ name:
 name_disambiguous:
   en: Rachel (favored wife of Jacob)
 description:
-  en: ''
+  en: 'Rachel was the favored wife of Jacob and the mother of Joseph and Benjamin, two of the twelve
+    tribes of Israel. She is known for her beauty and for being the beloved wife of Jacob, who worked
+    many years to marry her. Rachel''s story is one of love, rivalry, and motherhood, as she struggled
+    with infertility while her sister Leah bore many children.'
 footnotes: {}
 edges:
 - target: person/ruth

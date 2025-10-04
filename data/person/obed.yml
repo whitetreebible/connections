@@ -5,7 +5,10 @@ name:
 name_disambiguous:
   en: Obed (son of Ruth)
 description:
-  en: ''
+  en: 'Obed was the son of Ruth and Boaz, making him a significant figure in the lineage of King David.
+    He was born in Bethlehem after Ruth, a Moabite widow, married Boaz, a wealthy landowner from
+    the tribe of Judah. Obed is notable for being the grandfather of King David, one of the most
+    important figures in the Bible.'
 footnotes: {}
 edges:
 - target: person/ruth

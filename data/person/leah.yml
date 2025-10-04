@@ -5,7 +5,13 @@ name:
 name_disambiguous:
   en: Leah (first wife of Jacob)
 description:
-  en: ''
+  en: 'Leah was the first wife of Jacob and the mother of six of his twelve sons, who became
+    the ancestors of six of the twelve tribes of Israel. She was the daughter of Laban and the
+    older sister of Rachel. Leah''s story is one of love, rivalry, and faithfulness, as she
+    bore children to Jacob while Rachel, whom he loved more, remained barren for a time. 
+    Despite the challenges she faced, Leah is remembered for her significant role in the 
+    lineage of the Israelite people, particularly as the mother of Judah, from whom the
+    Davidic line would come.'
 footnotes: {}
 edges:
 - target: person/ruth

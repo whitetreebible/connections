@@ -5,7 +5,13 @@ name:
 name_disambiguous:
   en: Mara (Naomi name matches Mara)
 description:
-  en: ''
+  en: 'Mara is the name that Naomi adopts for herself after experiencing great personal loss.
+       The name "Mara" means "bitter" in Hebrew, reflecting her feelings of sorrow and hardship
+       following the deaths of her husband Elimelech and her two sons, Mahlon and Kilion.
+       Naomi''s choice to call herself Mara signifies her deep grief and the challenges she faces
+       as a widow in a foreign land. Despite this, the story of Naomi and her daughter-in-law
+       Ruth ultimately leads to redemption and hope, as Ruth''s loyalty and faithfulness result
+       in their restoration and inclusion in the lineage of King David. '
 footnotes: {}
 edges:
 - target: person/naomi

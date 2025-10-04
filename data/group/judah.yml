@@ -5,7 +5,11 @@ name:
 name_disambiguous:
   en: tribe of Judah (descendants of Judah)
 description:
-  en: ''
+  en: 'Judah was the fourth son of Jacob and Leah, and his descendants formed the tribe of Judah,
+    one of the twelve tribes of Israel. The tribe of Judah played a significant role in biblical history,
+    being the tribe from which King David and, according to Christian tradition, Jesus Christ descended.
+    The tribe settled in the southern part of the land of Canaan, which later became known as the Kingdom of Judah
+    after the division of the united monarchy.'
 footnotes: {}
 edges:
 - target: place/judah

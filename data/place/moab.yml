@@ -5,6 +5,15 @@ name:
 name_disambiguous:
   en: Moab (ancient kingdom east of the Dead Sea)
 description:
-  en: ''
+  en: Moab was an ancient kingdom located east of the Dead Sea, in what is now modern-day
+    Jordan. It was inhabited by the Moabites, who were descendants of Lot, the nephew
+    of Abraham. The Moabites are frequently mentioned in the Bible, often in relation
+    to the Israelites. The relationship between the two peoples was complex, marked
+    by both conflict and cooperation. Notably, Ruth, the Moabite woman who became
+    the great-grandmother of King David, is a key figure in this narrative, illustrating
+    the intertwined destinies of the Moabites and Israelites.
 footnotes: {}
-edges: []
+edges:
+- target: group/moabite
+  type: name-matches
+  refs: []

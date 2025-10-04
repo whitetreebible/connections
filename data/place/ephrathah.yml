@@ -5,7 +5,12 @@ name:
 name_disambiguous:
   en: Ephrathah (Bethlehem)
 description:
-  en: ''
+  en: 'Ephrathah, also known as Bethlehem Ephrathah, is a significant town in biblical history.
+    It is located in the region of Judah and is famously known as the birthplace of King David
+    and, according to Christian tradition, Jesus Christ. Bethlehem is often associated with themes
+    of humility and divine providence, as it was a small town chosen by God for these monumental
+    events. The town is mentioned multiple times in the Bible, particularly in the books of Ruth,
+    Samuel, and the Gospels.'
 footnotes: {}
 edges:
 - target: person/ruth

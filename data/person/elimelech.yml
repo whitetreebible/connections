@@ -5,7 +5,10 @@ name:
 name_disambiguous:
   en: Elimelech (husband of Naomi)
 description:
-  en: ''
+  en: 'Elimelech was a man from Bethlehem in Judah who, during a time of famine, 
+       moved his family to the land of Moab. He is the husband of Naomi and the 
+       father of two sons, Mahlon and Kilion. The family faced many challenges 
+       in Moab, including the deaths of Elimelech and his sons.'
 footnotes: {}
 edges:
 - target: event/plague

@@ -5,7 +5,10 @@ name:
 name_disambiguous:
   en: David (son of Jesse)
 description:
-  en: ''
+  en: 'David, the youngest son of Jesse from the tribe of Judah, rose from humble beginnings
+    as a shepherd to become the second king of Israel, succeeding Saul. He is known for his
+    military prowess, his poetic abilities (attributed as the author of many Psalms), and his
+    complex personal life, which included significant moral failures but also deep repentance.'
 footnotes: {}
 edges:
 - target: person/jesse
