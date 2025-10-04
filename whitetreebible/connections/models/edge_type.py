@@ -105,7 +105,6 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.ENEMY_OF,
         EdgeType.CONTEMPORARY_OF,
         EdgeType.ORIGIN_OF,
-        EdgeType.ASSOCIATED_WITH,
     },
     EdgeGroups.GEOGRAPHIC: {
         EdgeType.RESIDENT_OF,
@@ -140,6 +139,7 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.ANTITYPE_OF,
         EdgeType.EXAMPLE_OF,
         EdgeType.MENTIONED_WITH,
+        EdgeType.ASSOCIATED_WITH,
     },
 }
 
