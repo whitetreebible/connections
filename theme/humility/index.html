@@ -228,14 +228,71 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style theme/humility fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    theme/humility(["humility"])
+    place/bethlehem(["Bethlehem"])
+    object/bread(["bread"])
+    object/wheat(["wheat"])
+    being/yahweh(["Yahweh"])
+    object/feet(["feet"])
+    role/worthy_woman(["worthy woman"])
+    group/moabite(["Moabite"])
+    person/perez(["Perez"])
+    object/wine_vinegar(["wine vinegar"])
     theme/leaving_family(["leaving family"])
+    person/leah(["Leah"])
+    object/grain(["grain"])
+    group/israelite(["Israelite"])
+    theme/humility(["humility"])
+    object/wing(["wing"])
+    object/barley(["barley"])
+    object/field(["field"])
     person/ruth(["Ruth"])
-    click theme/humility "../../theme/humility/"
+    person/tamar(["Tamar"])
+    person/judah(["Judah"])
+    person/rachel(["Rachel"])
+    place/ephrathah(["Ephrathah"])
+    click place/bethlehem "../../place/bethlehem/"
+    click object/bread "../../object/bread/"
+    click object/wheat "../../object/wheat/"
+    click being/yahweh "../../being/yahweh/"
+    click object/feet "../../object/feet/"
+    click role/worthy_woman "../../role/worthy_woman/"
+    click group/moabite "../../group/moabite/"
+    click person/perez "../../person/perez/"
+    click object/wine_vinegar "../../object/wine_vinegar/"
     click theme/leaving_family "../../theme/leaving_family/"
+    click person/leah "../../person/leah/"
+    click object/grain "../../object/grain/"
+    click group/israelite "../../group/israelite/"
+    click theme/humility "../../theme/humility/"
+    click object/wing "../../object/wing/"
+    click object/barley "../../object/barley/"
+    click object/field "../../object/field/"
     click person/ruth "../../person/ruth/"
+    click person/tamar "../../person/tamar/"
+    click person/judah "../../person/judah/"
+    click person/rachel "../../person/rachel/"
+    click place/ephrathah "../../place/ephrathah/"
+    object/wing &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| person/judah
+    object/wheat &lt;.-&gt;|associated with| person/ruth
+    person/rachel &lt;.-&gt;|associated with| person/ruth
     person/ruth --&gt;|example of| theme/humility
+    group/moabite &lt;.-&gt;|associated with| person/ruth
+    object/bread &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| place/bethlehem
+    person/ruth &lt;.-&gt;|associated with| role/worthy_woman
+    person/ruth &lt;.-&gt;|associated with| being/yahweh
+    person/ruth &lt;.-&gt;|associated with| object/barley
+    person/ruth &lt;.-&gt;|associated with| person/tamar
     person/ruth --&gt;|example of| theme/leaving_family
+    object/grain &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| group/israelite
+    object/feet &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| object/field
+    place/ephrathah &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| object/wine_vinegar
+    person/leah &lt;.-&gt;|associated with| person/ruth
+    person/perez &lt;.-&gt;|associated with| person/ruth
 </div>
 </article>
 </div>

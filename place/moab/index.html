@@ -237,26 +237,26 @@
 <div class="mermaid">graph TD;
     style place/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/bethlehem(["Bethlehem"])
-    person/elimelech(["Elimelech"])
-    person/naomi(["Naomi"])
     place/moab(["Moab"])
-    person/kilion(["Kilion"])
     person/mahlon(["Mahlon"])
+    person/naomi(["Naomi"])
+    person/kilion(["Kilion"])
+    person/elimelech(["Elimelech"])
     click place/bethlehem "../../place/bethlehem/"
-    click person/elimelech "../../person/elimelech/"
-    click person/naomi "../../person/naomi/"
     click place/moab "../../place/moab/"
-    click person/kilion "../../person/kilion/"
     click person/mahlon "../../person/mahlon/"
-    person/mahlon .-&gt;|visited| place/moab
+    click person/naomi "../../person/naomi/"
+    click person/kilion "../../person/kilion/"
+    click person/elimelech "../../person/elimelech/"
+    person/naomi --&gt;|resident of| place/bethlehem
     person/mahlon --&gt;|died in| place/moab
+    person/mahlon .-&gt;|visited| place/moab
+    person/naomi .-&gt;|visited| place/moab
+    person/kilion --&gt;|died in| place/moab
+    person/kilion .-&gt;|visited| place/moab
+    person/elimelech --&gt;|resident of| place/bethlehem
     person/elimelech --&gt;|died in| place/moab
     person/elimelech .-&gt;|visited| place/moab
-    person/kilion .-&gt;|visited| place/moab
-    person/kilion --&gt;|died in| place/moab
-    person/naomi .-&gt;|visited| place/moab
-    person/elimelech --&gt;|resident of| place/bethlehem
-    person/naomi --&gt;|resident of| place/bethlehem
 </div>
 </article>
 </div>

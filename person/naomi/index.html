@@ -282,108 +282,105 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/boaz(["Boaz"])
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    person/elimelech(["Elimelech"])
-    person/ruth(["Ruth"])
-    person/naomi(["Naomi"])
     person/jesse(["Jesse"])
-    person/kilion(["Kilion"])
-    person/mahlon(["Mahlon"])
-    person/obed(["Obed"])
+    person/boaz(["Boaz"])
+    person/ruth(["Ruth"])
     person/orpah(["Orpah"])
-    click person/boaz "../../person/boaz/"
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click person/elimelech "../../person/elimelech/"
-    click person/ruth "../../person/ruth/"
-    click person/naomi "../../person/naomi/"
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
+    person/obed(["Obed"])
+    person/mahlon(["Mahlon"])
+    person/naomi(["Naomi"])
+    person/kilion(["Kilion"])
+    person/elimelech(["Elimelech"])
     click person/jesse "../../person/jesse/"
-    click person/kilion "../../person/kilion/"
-    click person/mahlon "../../person/mahlon/"
-    click person/obed "../../person/obed/"
+    click person/boaz "../../person/boaz/"
+    click person/ruth "../../person/ruth/"
     click person/orpah "../../person/orpah/"
-    person/elimelech --&gt;|parent of| person/kilion
-    person/obed --&gt;|parent of| person/jesse
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    click person/obed "../../person/obed/"
+    click person/mahlon "../../person/mahlon/"
+    click person/naomi "../../person/naomi/"
+    click person/kilion "../../person/kilion/"
+    click person/elimelech "../../person/elimelech/"
     person/boaz &lt;--&gt;|married to| person/ruth
-    person/ruth --&gt;|parent of| person/obed
-    person/naomi --&gt;|parent of| person/kilion
-    person/mahlon &lt;--&gt;|married to| person/orpah
     person/elimelech --&gt;|parent of| person/mahlon
-    person/naomi --&gt;|parent of| person/obed
-    person/ruth --&gt;|related to| person/elimelechs_redeemer
-    person/elimelech &lt;--&gt;|married to| person/naomi
+    person/ruth --&gt;|parent of| person/obed
     person/naomi --&gt;|parent of| person/mahlon
-    person/boaz --&gt;|parent of| person/obed
-    person/kilion &lt;--&gt;|married to| person/ruth
-    person/naomi --&gt;|parent of| person/ruth
-    person/naomi --&gt;|related to| person/elimelechs_redeemer
-    person/elimelech --&gt;|related to| person/boaz
     person/elimelech --&gt;|related to| person/elimelechs_redeemer
+    person/ruth &lt;--&gt;|married to| person/kilion
+    person/naomi &lt;--&gt;|married to| person/elimelech
+    person/orpah &lt;--&gt;|married to| person/mahlon
+    person/ruth --&gt;|related to| person/elimelechs_redeemer
+    person/naomi --&gt;|parent of| person/kilion
+    person/obed --&gt;|parent of| person/jesse
+    person/boaz --&gt;|parent of| person/obed
+    person/naomi --&gt;|parent of| person/ruth
+    person/elimelech --&gt;|related to| person/boaz
+    person/elimelech --&gt;|parent of| person/kilion
+    person/naomi --&gt;|parent of| person/obed
+    person/naomi --&gt;|related to| person/elimelechs_redeemer
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
     being/shaddai(["Shaddai"])
+    person/naomi(["Naomi"])
     being/yahweh(["Yahweh"])
-    person/ruth(["Ruth"])
-    click person/naomi "../../person/naomi/"
     click being/shaddai "../../being/shaddai/"
+    click person/naomi "../../person/naomi/"
     click being/yahweh "../../being/yahweh/"
-    click person/ruth "../../person/ruth/"
-    person/ruth &lt;.-&gt;|associated with| being/yahweh
-    person/naomi &lt;--&gt;|enemy of| being/yahweh
     person/naomi &lt;--&gt;|enemy of| being/shaddai
+    being/yahweh &lt;--&gt;|enemy of| person/naomi
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/bethlehem(["Bethlehem"])
     person/boaz(["Boaz"])
-    person/elimelech(["Elimelech"])
     person/ruth(["Ruth"])
-    person/naomi(["Naomi"])
     place/moab(["Moab"])
-    person/kilion(["Kilion"])
     person/mahlon(["Mahlon"])
+    person/naomi(["Naomi"])
+    person/kilion(["Kilion"])
+    person/elimelech(["Elimelech"])
     click place/bethlehem "../../place/bethlehem/"
     click person/boaz "../../person/boaz/"
-    click person/elimelech "../../person/elimelech/"
     click person/ruth "../../person/ruth/"
-    click person/naomi "../../person/naomi/"
     click place/moab "../../place/moab/"
-    click person/kilion "../../person/kilion/"
     click person/mahlon "../../person/mahlon/"
-    person/mahlon .-&gt;|visited| place/moab
+    click person/naomi "../../person/naomi/"
+    click person/kilion "../../person/kilion/"
+    click person/elimelech "../../person/elimelech/"
+    person/naomi --&gt;|resident of| place/bethlehem
+    person/boaz .-&gt;|visited| place/bethlehem
+    person/boaz --&gt;|resident of| place/bethlehem
     person/mahlon --&gt;|died in| place/moab
+    person/mahlon .-&gt;|visited| place/moab
+    person/naomi .-&gt;|visited| place/moab
+    person/kilion --&gt;|died in| place/moab
+    person/kilion .-&gt;|visited| place/moab
+    person/elimelech --&gt;|resident of| place/bethlehem
+    person/ruth --&gt;|resident of| place/bethlehem
     person/elimelech --&gt;|died in| place/moab
     person/elimelech .-&gt;|visited| place/moab
-    person/kilion .-&gt;|visited| place/moab
-    person/kilion --&gt;|died in| place/moab
-    person/ruth --&gt;|resident of| place/bethlehem
-    person/naomi .-&gt;|visited| place/moab
-    person/elimelech --&gt;|resident of| place/bethlehem
-    person/naomi --&gt;|resident of| place/bethlehem
-    person/boaz --&gt;|resident of| place/bethlehem
-    person/boaz .-&gt;|visited| place/bethlehem
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
     person/boaz(["Boaz"])
-    click person/naomi "../../person/naomi/"
+    person/naomi(["Naomi"])
     click person/boaz "../../person/boaz/"
+    click person/naomi "../../person/naomi/"
     person/naomi --&gt;|blessed| person/boaz
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
     person/mara(["Mara"])
-    click person/naomi "../../person/naomi/"
+    person/naomi(["Naomi"])
     click person/mara "../../person/mara/"
-    person/naomi &lt;--&gt;|name matches| person/mara
+    click person/naomi "../../person/naomi/"
+    person/mara &lt;--&gt;|name matches| person/naomi
 </div>
 </article>
 </div>

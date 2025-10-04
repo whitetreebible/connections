@@ -248,23 +248,23 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/jesse fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/boaz(["Boaz"])
-    person/david(["David"])
-    person/ruth(["Ruth"])
-    person/naomi(["Naomi"])
     person/jesse(["Jesse"])
+    person/boaz(["Boaz"])
+    person/ruth(["Ruth"])
+    person/david(["David"])
     person/obed(["Obed"])
-    click person/boaz "../../person/boaz/"
-    click person/david "../../person/david/"
-    click person/ruth "../../person/ruth/"
-    click person/naomi "../../person/naomi/"
+    person/naomi(["Naomi"])
     click person/jesse "../../person/jesse/"
+    click person/boaz "../../person/boaz/"
+    click person/ruth "../../person/ruth/"
+    click person/david "../../person/david/"
     click person/obed "../../person/obed/"
-    person/ruth --&gt;|parent of| person/obed
+    click person/naomi "../../person/naomi/"
     person/boaz --&gt;|parent of| person/obed
-    person/jesse --&gt;|parent of| person/david
-    person/naomi --&gt;|parent of| person/obed
     person/obed --&gt;|parent of| person/jesse
+    person/ruth --&gt;|parent of| person/obed
+    person/naomi --&gt;|parent of| person/obed
+    person/jesse --&gt;|parent of| person/david
 </div>
 </article>
 </div>
