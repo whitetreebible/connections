@@ -1,0 +1,14 @@
+id: ephrathite
+type: group
+name:
+  en: Ephrathite
+name_disambiguous:
+  en: Ephrathite (from Bethlehem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/elimelech
+  type: associated-with
+  refs:
+  - bible:Ruth 1:2
