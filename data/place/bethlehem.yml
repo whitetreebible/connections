@@ -5,12 +5,12 @@ name:
 name_disambiguous:
   en: Bethlehem
 description:
-  en: 'Bethlehem, also known as Bethlehem Ephrathah, is a significant town in biblical history.
-    It is located in the region of Judah and is famously known as the birthplace of King David
-    and, according to Christian tradition, Jesus Christ. Bethlehem is often associated with themes
-    of humility and divine providence, as it was a small town chosen by God for these monumental
-    events. The town is mentioned multiple times in the Bible, particularly in the books of Ruth,
-    Samuel, and the Gospels.'
+  en: Bethlehem, also known as Bethlehem Ephrathah, is a significant town in biblical
+    history. It is located in the region of Judah and is famously known as the birthplace
+    of King David and, according to Christian tradition, Jesus Christ. Bethlehem is
+    often associated with themes of humility and divine providence, as it was a small
+    town chosen by God for these monumental events. The town is mentioned multiple
+    times in the Bible, particularly in the books of Ruth, Samuel, and the Gospels.
 footnotes: {}
 edges:
 - target: place/judah
@@ -24,3 +24,15 @@ edges:
 - target: place/ephrathah
   type: name-matches
   refs: []
+- target: person/elimelech
+  type: associated-with
+  refs:
+  - bible:Ruth 1:1-2
+- target: person/boaz
+  type: associated-with
+  refs:
+  - bible:Ruth 2:1
+- target: person/naomi
+  type: associated-with
+  refs:
+  - bible:Ruth 1:19

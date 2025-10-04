@@ -5,11 +5,11 @@ name:
 name_disambiguous:
   en: Ruth (daughter-in-law of Naomi)
 description:
-  en: 'Ruth is the Moabite daughter-in-law of Naomi. After the deaths of her
-    husband and father-in-law, she chooses to stay with Naomi and return to Bethlehem.
-    There, she gleans in the fields of Boaz, who later marries her. Ruth is the great-grandmother
+  en: Ruth is the Moabite daughter-in-law of Naomi. After the deaths of her husband
+    and father-in-law, she chooses to stay with Naomi and return to Bethlehem. There,
+    she gleans in the fields of Boaz, who later marries her. Ruth is the great-grandmother
     of King David and an ancestor of Jesus Christ. Her story is one of loyalty, faith,
-    and divine providence as well as Gentile inclusion in the lineage of the Messiah.'
+    and divine providence as well as Gentile inclusion in the lineage of the Messiah.
 footnotes:
   death_ordering:
     en: 10 years of marriage without children may indicate infertility for both [[person/orpah]]
@@ -149,3 +149,8 @@ edges:
   type: associated-with
   refs:
   - bible:Ruth 1:4
+- target: person/boaz
+  type: married-to
+  refs:
+  - bible:Matthew 1:5
+  - bible:Ruth 4:13

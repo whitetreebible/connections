@@ -153,7 +153,7 @@ RECIPROCALS = {
     EdgeType.DESCENDANT_OF: EdgeType.ANCESTOR_OF,
     EdgeType.LEADER_OF: EdgeType.LED_BY,
     EdgeType.LED_BY: EdgeType.LEADER_OF,
-    EdgeType.ASSOCIATED_WITH: EdgeType.ASSOCIATED_WITH,
+    EdgeType.RESIDENT_OF: EdgeType.ASSOCIATED_WITH,
     EdgeType.CITED: EdgeType.CITED_BY,
     EdgeType.CITED_BY: EdgeType.CITED,
     EdgeType.ALLY_OF: EdgeType.ALLY_OF,                 # symmetric
