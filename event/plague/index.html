@@ -239,11 +239,17 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style event/plague fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/elimelech(["Elimelech"])
     event/plague(["plague"])
-    click person/elimelech "../../person/elimelech/"
+    group/ephrathite(["Ephrathite"])
+    place/bethlehem(["Bethlehem"])
+    person/elimelech(["Elimelech"])
     click event/plague "../../event/plague/"
-    event/plague &lt;--&gt;|mentioned with| person/elimelech
+    click group/ephrathite "../../group/ephrathite/"
+    click place/bethlehem "../../place/bethlehem/"
+    click person/elimelech "../../person/elimelech/"
+    place/bethlehem .-&gt;|associated with| person/elimelech
+    group/ephrathite .-&gt;|associated with| person/elimelech
+    person/elimelech &lt;--&gt;|mentioned with| event/plague
 </div>
 </article>
 </div>

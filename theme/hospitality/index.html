@@ -228,26 +228,29 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style theme/hospitality fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    theme/will_not_rest(["will not rest"])
-    event/drinking(["drinking"])
-    person/boaz(["Boaz"])
-    object/field(["field"])
-    object/wing(["wing"])
-    theme/hospitality(["hospitality"])
     object/city_gate(["city gate"])
-    click theme/will_not_rest "../../theme/will_not_rest/"
-    click event/drinking "../../event/drinking/"
-    click person/boaz "../../person/boaz/"
-    click object/field "../../object/field/"
-    click object/wing "../../object/wing/"
-    click theme/hospitality "../../theme/hospitality/"
+    place/bethlehem(["Bethlehem"])
+    theme/will_not_rest(["will not rest"])
+    object/wing(["wing"])
+    person/boaz(["Boaz"])
+    event/drinking(["drinking"])
+    object/field(["field"])
+    theme/hospitality(["hospitality"])
     click object/city_gate "../../object/city_gate/"
-    object/field &lt;.-&gt;|associated with| person/boaz
-    event/drinking &lt;.-&gt;|associated with| person/boaz
-    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
-    person/boaz &lt;.-&gt;|associated with| object/wing
-    object/city_gate &lt;.-&gt;|associated with| person/boaz
+    click place/bethlehem "../../place/bethlehem/"
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click object/wing "../../object/wing/"
+    click person/boaz "../../person/boaz/"
+    click event/drinking "../../event/drinking/"
+    click object/field "../../object/field/"
+    click theme/hospitality "../../theme/hospitality/"
+    person/boaz &lt;.-&gt;|associated with| object/city_gate
+    object/wing &lt;.-&gt;|associated with| person/boaz
+    theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| event/drinking
+    place/bethlehem .-&gt;|associated with| person/boaz
     person/boaz --&gt;|example of| theme/hospitality
+    object/field &lt;.-&gt;|associated with| person/boaz
 </div>
 </article>
 </div>

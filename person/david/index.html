@@ -249,13 +249,13 @@
 <div class="mermaid">graph TD;
     style person/david fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/david(["David"])
-    person/jesse(["Jesse"])
     person/obed(["Obed"])
+    person/jesse(["Jesse"])
     click person/david "../../person/david/"
-    click person/jesse "../../person/jesse/"
     click person/obed "../../person/obed/"
-    person/obed --&gt;|parent of| person/jesse
+    click person/jesse "../../person/jesse/"
     person/jesse --&gt;|parent of| person/david
+    person/obed --&gt;|parent of| person/jesse
 </div>
 </article>
 </div>
