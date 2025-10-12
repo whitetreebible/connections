@@ -228,12 +228,12 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style concept/fruit fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    plant/fruit_trees(["fruit trees"])
-    concept/fruit(["fruit"])
     plant/vegetation(["vegetation"])
-    click plant/fruit_trees "../../plant/fruit_trees/"
-    click concept/fruit "../../concept/fruit/"
+    concept/fruit(["fruit"])
+    plant/fruit_trees(["fruit trees"])
     click plant/vegetation "../../plant/vegetation/"
+    click concept/fruit "../../concept/fruit/"
+    click plant/fruit_trees "../../plant/fruit_trees/"
     plant/vegetation .-&gt;|associated with| plant/fruit_trees
     plant/fruit_trees .-&gt;|associated with| concept/fruit
 </div>

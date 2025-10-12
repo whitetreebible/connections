@@ -239,28 +239,28 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/dry_land fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    symbol/darkness(["darkness"])
-    place/earth(["earth"])
-    symbol/wilderness(["wilderness"])
     animal/sea_creature(["sea creature"])
-    place/waters(["waters"])
-    symbol/emptiness(["emptiness"])
-    animal/sea_dragon(["sea dragon"])
     place/dry_land(["dry land"])
-    click symbol/darkness "../../symbol/darkness/"
-    click place/earth "../../place/earth/"
-    click symbol/wilderness "../../symbol/wilderness/"
+    symbol/darkness(["darkness"])
+    symbol/emptiness(["emptiness"])
+    place/earth(["earth"])
+    animal/sea_dragon(["sea dragon"])
+    symbol/wilderness(["wilderness"])
+    place/waters(["waters"])
     click animal/sea_creature "../../animal/sea_creature/"
-    click place/waters "../../place/waters/"
-    click symbol/emptiness "../../symbol/emptiness/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
     click place/dry_land "../../place/dry_land/"
-    place/dry_land .-&gt;|associated with| place/waters
+    click symbol/darkness "../../symbol/darkness/"
+    click symbol/emptiness "../../symbol/emptiness/"
+    click place/earth "../../place/earth/"
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click symbol/wilderness "../../symbol/wilderness/"
+    click place/waters "../../place/waters/"
     place/earth .-&gt;|associated with| symbol/darkness
     place/earth .-&gt;|associated with| symbol/emptiness
     place/waters .-&gt;|associated with| animal/sea_dragon
-    place/dry_land .-&gt;|associated with| place/earth
+    place/dry_land .-&gt;|associated with| place/waters
     place/waters .-&gt;|associated with| animal/sea_creature
+    place/dry_land .-&gt;|associated with| place/earth
     place/earth .-&gt;|associated with| symbol/wilderness
 </div>
 </article>

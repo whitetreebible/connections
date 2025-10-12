@@ -256,137 +256,137 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style place/bethlehem fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/judah(["Judah"])
     place/bethlehem(["Bethlehem"])
-    click place/judah "../../place/judah/"
+    place/judah(["Judah"])
     click place/bethlehem "../../place/bethlehem/"
+    click place/judah "../../place/judah/"
     place/bethlehem --&gt;|member of| place/judah
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/bethlehem fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/bethlehem(["Bethlehem"])
-    person/elimelech(["Elimelech"])
-    place/moab(["Moab"])
-    person/boaz(["Boaz"])
-    person/ruth(["Ruth"])
     person/naomi(["Naomi"])
-    click place/bethlehem "../../place/bethlehem/"
-    click person/elimelech "../../person/elimelech/"
-    click place/moab "../../place/moab/"
-    click person/boaz "../../person/boaz/"
-    click person/ruth "../../person/ruth/"
+    person/boaz(["Boaz"])
+    place/bethlehem(["Bethlehem"])
+    place/moab(["Moab"])
+    person/ruth(["Ruth"])
+    person/elimelech(["Elimelech"])
     click person/naomi "../../person/naomi/"
+    click person/boaz "../../person/boaz/"
+    click place/bethlehem "../../place/bethlehem/"
+    click place/moab "../../place/moab/"
+    click person/ruth "../../person/ruth/"
+    click person/elimelech "../../person/elimelech/"
+    person/elimelech --&gt;|died in| place/moab
+    person/elimelech .-&gt;|visited| place/moab
+    person/naomi .-&gt;|visited| place/moab
     person/elimelech --&gt;|resident of| place/bethlehem
+    person/naomi --&gt;|resident of| place/bethlehem
+    person/ruth --&gt;|resident of| place/bethlehem
     person/boaz .-&gt;|visited| place/bethlehem
     person/boaz --&gt;|resident of| place/bethlehem
-    person/naomi .-&gt;|visited| place/moab
-    person/naomi --&gt;|resident of| place/bethlehem
-    person/elimelech .-&gt;|visited| place/moab
-    person/elimelech --&gt;|died in| place/moab
-    person/ruth --&gt;|resident of| place/bethlehem
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/bethlehem fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/judah(["Judah"])
-    person/elimelech(["Elimelech"])
-    object/bread(["bread"])
-    person/perez(["Perez"])
-    theme/hospitality(["hospitality"])
-    theme/leaving_family(["leaving family"])
-    group/israelite(["Israelite"])
-    person/boaz(["Boaz"])
-    place/ephrathah(["Ephrathah"])
-    person/ruth(["Ruth"])
-    event/plague(["plague"])
-    person/tamar(["Tamar"])
-    object/city_gate(["city gate"])
-    place/bethlehem(["Bethlehem"])
-    theme/will_not_rest(["will not rest"])
-    person/leah(["Leah"])
     person/naomi(["Naomi"])
-    person/rachel(["Rachel"])
-    object/wheat(["wheat"])
-    role/worthy_woman(["worthy woman"])
-    object/wine_vinegar(["wine vinegar"])
-    object/grain(["grain"])
-    person/mara(["Mara"])
-    being/yahweh(["Yahweh"])
-    object/wing(["wing"])
-    group/moabite(["Moabite"])
-    object/barley(["barley"])
-    event/drinking(["drinking"])
-    theme/humility(["humility"])
+    group/israelite(["Israelite"])
     object/feet(["feet"])
+    object/barley(["barley"])
+    person/tamar(["Tamar"])
+    event/drinking(["drinking"])
+    object/bread(["bread"])
+    theme/will_not_rest(["will not rest"])
+    person/judah(["Judah"])
+    person/ruth(["Ruth"])
+    object/wheat(["wheat"])
+    object/city_gate(["city gate"])
+    person/perez(["Perez"])
+    person/leah(["Leah"])
+    object/wine_vinegar(["wine vinegar"])
+    event/plague(["plague"])
+    group/moabite(["Moabite"])
+    place/bethlehem(["Bethlehem"])
+    theme/leaving_family(["leaving family"])
+    theme/hospitality(["hospitality"])
+    being/yahweh(["Yahweh"])
+    person/elimelech(["Elimelech"])
+    person/mara(["Mara"])
+    person/boaz(["Boaz"])
+    theme/humility(["humility"])
+    role/worthy_woman(["worthy woman"])
+    place/ephrathah(["Ephrathah"])
+    person/rachel(["Rachel"])
     object/field(["field"])
+    object/grain(["grain"])
+    object/wing(["wing"])
     group/ephrathite(["Ephrathite"])
-    click person/judah "../../person/judah/"
-    click person/elimelech "../../person/elimelech/"
-    click object/bread "../../object/bread/"
-    click person/perez "../../person/perez/"
-    click theme/hospitality "../../theme/hospitality/"
-    click theme/leaving_family "../../theme/leaving_family/"
-    click group/israelite "../../group/israelite/"
-    click person/boaz "../../person/boaz/"
-    click place/ephrathah "../../place/ephrathah/"
-    click person/ruth "../../person/ruth/"
-    click event/plague "../../event/plague/"
-    click person/tamar "../../person/tamar/"
-    click object/city_gate "../../object/city_gate/"
-    click place/bethlehem "../../place/bethlehem/"
-    click theme/will_not_rest "../../theme/will_not_rest/"
-    click person/leah "../../person/leah/"
     click person/naomi "../../person/naomi/"
-    click person/rachel "../../person/rachel/"
-    click object/wheat "../../object/wheat/"
-    click role/worthy_woman "../../role/worthy_woman/"
-    click object/wine_vinegar "../../object/wine_vinegar/"
-    click object/grain "../../object/grain/"
-    click person/mara "../../person/mara/"
-    click being/yahweh "../../being/yahweh/"
-    click object/wing "../../object/wing/"
-    click group/moabite "../../group/moabite/"
-    click object/barley "../../object/barley/"
-    click event/drinking "../../event/drinking/"
-    click theme/humility "../../theme/humility/"
+    click group/israelite "../../group/israelite/"
     click object/feet "../../object/feet/"
+    click object/barley "../../object/barley/"
+    click person/tamar "../../person/tamar/"
+    click event/drinking "../../event/drinking/"
+    click object/bread "../../object/bread/"
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click person/judah "../../person/judah/"
+    click person/ruth "../../person/ruth/"
+    click object/wheat "../../object/wheat/"
+    click object/city_gate "../../object/city_gate/"
+    click person/perez "../../person/perez/"
+    click person/leah "../../person/leah/"
+    click object/wine_vinegar "../../object/wine_vinegar/"
+    click event/plague "../../event/plague/"
+    click group/moabite "../../group/moabite/"
+    click place/bethlehem "../../place/bethlehem/"
+    click theme/leaving_family "../../theme/leaving_family/"
+    click theme/hospitality "../../theme/hospitality/"
+    click being/yahweh "../../being/yahweh/"
+    click person/elimelech "../../person/elimelech/"
+    click person/mara "../../person/mara/"
+    click person/boaz "../../person/boaz/"
+    click theme/humility "../../theme/humility/"
+    click role/worthy_woman "../../role/worthy_woman/"
+    click place/ephrathah "../../place/ephrathah/"
+    click person/rachel "../../person/rachel/"
     click object/field "../../object/field/"
+    click object/grain "../../object/grain/"
+    click object/wing "../../object/wing/"
     click group/ephrathite "../../group/ephrathite/"
-    person/ruth &lt;.-&gt;|associated with| object/wing
-    person/ruth &lt;.-&gt;|associated with| place/bethlehem
-    being/yahweh &lt;.-&gt;|associated with| person/ruth
-    person/judah &lt;.-&gt;|associated with| person/ruth
-    object/wing &lt;.-&gt;|associated with| person/boaz
-    theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
-    person/ruth &lt;.-&gt;|associated with| group/israelite
-    person/ruth &lt;.-&gt;|associated with| place/ephrathah
-    person/ruth &lt;.-&gt;|associated with| group/moabite
-    person/ruth &lt;.-&gt;|associated with| person/rachel
-    person/ruth &lt;.-&gt;|associated with| object/grain
-    object/field &lt;.-&gt;|associated with| person/ruth
-    object/bread &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/wheat
-    person/perez &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/feet
-    role/worthy_woman &lt;.-&gt;|associated with| person/ruth
-    person/boaz &lt;.-&gt;|associated with| object/city_gate
-    person/mara &lt;--&gt;|name matches| person/naomi
-    person/ruth &lt;.-&gt;|associated with| person/tamar
-    person/elimelech &lt;--&gt;|mentioned with| event/plague
-    person/ruth --&gt;|example of| theme/leaving_family
-    person/ruth --&gt;|example of| theme/humility
     object/field &lt;.-&gt;|associated with| person/boaz
-    place/bethlehem .-&gt;|associated with| person/naomi
-    person/ruth &lt;.-&gt;|associated with| person/leah
-    person/boaz &lt;.-&gt;|associated with| event/drinking
-    group/ephrathite .-&gt;|associated with| person/elimelech
-    person/ruth &lt;.-&gt;|associated with| object/wine_vinegar
-    object/barley &lt;.-&gt;|associated with| person/ruth
-    place/ephrathah &lt;--&gt;|name matches| place/bethlehem
-    place/bethlehem .-&gt;|associated with| person/elimelech
     person/boaz --&gt;|example of| theme/hospitality
+    being/yahweh &lt;.-&gt;|associated with| person/ruth
+    object/grain &lt;.-&gt;|associated with| person/ruth
+    object/field &lt;.-&gt;|associated with| person/ruth
+    event/plague &lt;--&gt;|mentioned with| person/elimelech
+    place/bethlehem &lt;.-&gt;|associated with| person/ruth
+    place/ephrathah &lt;.-&gt;|associated with| person/ruth
+    person/perez &lt;.-&gt;|associated with| person/ruth
+    person/ruth --&gt;|example of| theme/humility
+    person/ruth &lt;.-&gt;|associated with| person/tamar
+    person/rachel &lt;.-&gt;|associated with| person/ruth
+    object/wheat &lt;.-&gt;|associated with| person/ruth
+    event/drinking &lt;.-&gt;|associated with| person/boaz
+    person/naomi &lt;--&gt;|name matches| person/mara
+    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
     place/bethlehem .-&gt;|associated with| person/boaz
+    group/israelite &lt;.-&gt;|associated with| person/ruth
+    group/moabite &lt;.-&gt;|associated with| person/ruth
+    person/boaz &lt;.-&gt;|associated with| object/wing
+    person/ruth &lt;.-&gt;|associated with| object/bread
+    person/ruth &lt;.-&gt;|associated with| role/worthy_woman
+    person/ruth &lt;.-&gt;|associated with| object/wine_vinegar
+    person/ruth &lt;.-&gt;|associated with| person/judah
+    object/wing &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| object/feet
+    place/bethlehem .-&gt;|associated with| person/naomi
+    person/leah &lt;.-&gt;|associated with| person/ruth
+    place/ephrathah &lt;--&gt;|name matches| place/bethlehem
+    person/ruth &lt;.-&gt;|associated with| object/barley
+    place/bethlehem .-&gt;|associated with| person/elimelech
+    person/ruth --&gt;|example of| theme/leaving_family
+    person/boaz &lt;.-&gt;|associated with| object/city_gate
+    group/ephrathite .-&gt;|associated with| person/elimelech
 </div>
 </article>
 </div>

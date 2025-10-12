@@ -246,32 +246,32 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style object/stars fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    object/greater_light(["greater light"])
-    place/heavens(["heavens"])
     object/lesser_light(["lesser light"])
     object/stars(["stars"])
-    click object/greater_light "../../object/greater_light/"
-    click place/heavens "../../place/heavens/"
+    place/heavens(["heavens"])
+    object/greater_light(["greater light"])
     click object/lesser_light "../../object/lesser_light/"
     click object/stars "../../object/stars/"
-    object/stars --&gt;|resident of| place/heavens
-    object/lesser_light --&gt;|resident of| place/heavens
+    click place/heavens "../../place/heavens/"
+    click object/greater_light "../../object/greater_light/"
     object/greater_light --&gt;|resident of| place/heavens
+    object/lesser_light --&gt;|resident of| place/heavens
+    object/stars --&gt;|resident of| place/heavens
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style object/stars fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    object/greater_light(["greater light"])
-    place/heavens(["heavens"])
-    object/stars(["stars"])
     object/lesser_light(["lesser light"])
-    click object/greater_light "../../object/greater_light/"
-    click place/heavens "../../place/heavens/"
-    click object/stars "../../object/stars/"
+    object/stars(["stars"])
+    place/heavens(["heavens"])
+    object/greater_light(["greater light"])
     click object/lesser_light "../../object/lesser_light/"
+    click object/stars "../../object/stars/"
+    click place/heavens "../../place/heavens/"
+    click object/greater_light "../../object/greater_light/"
+    place/heavens .-&gt;|associated with| object/greater_light
     place/heavens .-&gt;|associated with| object/lesser_light
     place/heavens .-&gt;|associated with| object/stars
-    place/heavens .-&gt;|associated with| object/greater_light
 </div>
 </article>
 </div>

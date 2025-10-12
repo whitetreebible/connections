@@ -246,32 +246,32 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/waters fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/waters(["waters"])
-    animal/sea_dragon(["sea dragon"])
     animal/sea_creature(["sea creature"])
-    click place/waters "../../place/waters/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
+    animal/sea_dragon(["sea dragon"])
+    place/waters(["waters"])
     click animal/sea_creature "../../animal/sea_creature/"
-    animal/sea_dragon --&gt;|resident of| place/waters
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click place/waters "../../place/waters/"
     animal/sea_creature --&gt;|resident of| place/waters
+    animal/sea_dragon --&gt;|resident of| place/waters
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/waters fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/earth(["earth"])
     animal/sea_creature(["sea creature"])
-    place/waters(["waters"])
-    animal/sea_dragon(["sea dragon"])
     place/dry_land(["dry land"])
-    click place/earth "../../place/earth/"
+    place/earth(["earth"])
+    animal/sea_dragon(["sea dragon"])
+    place/waters(["waters"])
     click animal/sea_creature "../../animal/sea_creature/"
-    click place/waters "../../place/waters/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
     click place/dry_land "../../place/dry_land/"
-    place/waters .-&gt;|associated with| animal/sea_dragon
+    click place/earth "../../place/earth/"
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click place/waters "../../place/waters/"
+    place/dry_land .-&gt;|associated with| place/waters
     place/dry_land .-&gt;|associated with| place/earth
     place/waters .-&gt;|associated with| animal/sea_creature
-    place/dry_land .-&gt;|associated with| place/waters
+    place/waters .-&gt;|associated with| animal/sea_dragon
 </div>
 </article>
 </div>
