@@ -1,0 +1,22 @@
+id: earth
+type: place
+name:
+  en: earth
+name_disambiguous:
+  en: earth
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: symbol/wilderness
+  type: associated-with
+  refs:
+  - bible:Genesis 1:2
+- target: symbol/emptiness
+  type: associated-with
+  refs:
+  - bible:Genesis 1:2
+- target: symbol/darkness
+  type: associated-with
+  refs:
+  - bible:Genesis 1:2

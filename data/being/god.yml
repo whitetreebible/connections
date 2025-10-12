@@ -1,0 +1,102 @@
+id: god
+type: being
+name:
+  en: God
+name_disambiguous:
+  en: God (creator of the heavens)
+description:
+  en: 'Elhim is used for God in the Hebrew Bible. It is used for both the creator 
+    God and for other gods and divine beings. The singular form Eloah is also used,
+    but less frequently. The name [[being/yahweh]] (often rendered as LORD in English translations)
+    is the personal name of the God of [[group/israel]].'
+footnotes: {}
+edges:
+- target: place/heavens
+  type: created
+  refs:
+  - bible:Genesis 1:1
+  - bible:Genesis 1:8
+- target: place/earth
+  type: created
+  refs:
+  - bible:Genesis 1:1
+- target: concept/light 
+  type: created
+  refs:
+  - bible:Genesis 1:3
+- target: concept/night
+  type: created
+  refs:
+  - bible:Genesis 1:5
+- target: concept/day
+  type: created
+  refs:
+  - bible:Genesis 1:5
+- target: place/expanse
+  type: created
+  refs:
+  - bible:Genesis 1:6
+- target: concept/dry_land
+  type: created
+  refs:
+  - bible:Genesis 1:9
+- target: plant/vegetation
+  type: created
+  refs:
+  - bible:Genesis 1:11
+- target: object/lights
+  type: created
+  refs:
+  - bible:Genesis 1:14
+- target: object/greater_light
+  type: created
+  refs:
+  - bible:Genesis 1:16
+- target: object/lesser_light
+  type: created
+  refs:
+  - bible:Genesis 1:16
+- target: animal/bird
+  type: created
+  refs:
+  - bible:Genesis 1:20
+- target: animal/sea_dragon
+  type: created
+  refs:
+  - bible:Genesis 1:21
+- target: animal/sea_creature
+  type: created
+  refs:
+  - bible:Genesis 1:21
+- target: animal/bird
+  type: blessed
+  refs:
+  - bible:Genesis 1:22
+- target: animal/sea_creature
+  type: blessed
+  refs:
+  - bible:Genesis 1:22
+- target: animal/sea_dragon
+  type: blessed
+  refs:
+  - bible:Genesis 1:22
+- target: animal/livestock
+  type: created
+  refs:
+  - bible:Genesis 1:24
+- target: animal/crawlers
+  type: created
+  refs:
+  - bible:Genesis 1:24
+- target: animal/living_creatures
+  type: created
+  refs:
+  - bible:Genesis 1:24
+- target: being/human
+  type: created
+  refs:
+  - bible:Genesis 1:26
+- target: being/human
+  type: blessed
+  refs:
+  - bible:Genesis 1:28

@@ -1,0 +1,14 @@
+id: spirit_of_god
+type: being
+name:
+  en: Spirit of God
+name_disambiguous:
+  en: Spirit of God (hovered over the waters)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: animal/bird
+  type: associated-with
+  refs:
+  - bible:Genesis 1:2

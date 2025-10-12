@@ -3,7 +3,7 @@ type: being
 name:
   en: Shaddai
 name_disambiguous:
-  en: Shaddai (Shaddai name matches Yahweh)
+  en: Shaddai (Almighty, same as Yahweh)
 description:
   en: ''
 footnotes: {}
@@ -12,6 +12,8 @@ edges:
   type: name-matches
   refs:
   - bible:Ruth 1:20
+- target: being/god
+  type: name-matches
 - target: person/naomi
   type: enemy-of
   refs:

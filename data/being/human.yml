@@ -1,0 +1,39 @@
+id: human
+type: being
+name:
+  en: human
+name_disambiguous:
+  en: human (created in God's image)
+description:
+  en: 'Adam means "human" or "humanity" in Hebrew. The term is used in the Bible to 
+    refer to the first human created by God, as well as to humanity in general. According 
+    to [[bible:Genesis 1:26-27]], humans were created in the image of God, which signifies 
+    a special status and relationship with the divine. This concept is foundational in 
+    Judeo-Christian theology, emphasizing the dignity and worth of every human being. 
+    Humans are distinct from other creatures due to their responsibility to steward creation.'
+footnotes: {}
+edges:
+- target: concept/image_of_god
+  type: associated-with
+  refs:
+  - bible:Genesis 1:26
+- target: role/ruler
+  type: role-as
+  refs:
+  - bible:Genesis 1:26
+- target: animal/sea_creature
+  type: leader-of
+  refs:
+  - bible:Genesis 1:26
+- target: animal/bird
+  type: leader-of
+  refs:
+  - bible:Genesis 1:26
+- target: animal/livestock
+  type: leader-of
+  refs:
+  - bible:Genesis 1:26
+- target: animal/crawlers
+  type: leader-of
+  refs:
+  - bible:Genesis 1:26

@@ -1,0 +1,33 @@
+id: lights
+type: object
+name:
+  en: lights
+name_disambiguous:
+  en: lights (of the heavens)
+description:
+  en: 'The lights in the heavens have been interpreted to be the literal sun, moon and stars
+    as well as the spiritual beings that they represented in the ancient world. They are the
+    only other creature given authority to rule in the Genesis account, which gives credence
+    to the idea that they are more than just physical objects.'
+footnotes: {}
+edges:
+- target: place/expanse
+  type: resident-of
+  refs:
+  - bible:Genesis 1:14
+- target: concept/signs
+  type: associated-with
+  refs:
+  - bible:Genesis 1:14
+- target: concept/seasons
+  type: associated-with
+  refs:
+  - bible:Genesis 1:14
+- target: concept/days
+  type: associated-with
+  refs:
+  - bible:Genesis 1:14
+- target: concept/years
+  type: associated-with
+  refs:
+  - bible:Genesis 1:14

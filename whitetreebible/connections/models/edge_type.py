@@ -47,6 +47,7 @@ class EdgeType(Enum):
     PERSECUTED = "persecuted"       # Asymmetrical, persecutor → persecuted
     SAVED = "saved"                 # Asymmetrical, savior → saved
     KILLED = "killed"               # Asymmetrical, killer → killed
+    CREATED = "created"             # Asymmetrical, creator → created
 
     # Textual / Symbolic
     NAME_MATCHES = "name-matches"
@@ -55,7 +56,6 @@ class EdgeType(Enum):
     EXAMPLE_OF = "example-of"
     MENTIONED_WITH = "mentioned-with"
     CITED = "cited"                     # Textual citation, e.g. NT citing OT, direct or indirect
-    CITED_BY = "cited-by"               # Textual citation, e.g. NT citing OT, direct or indirect
     
     def __str__(self):
         return self.value
@@ -132,6 +132,7 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.PERSECUTED,
         EdgeType.SAVED,
         EdgeType.KILLED,
+        EdgeType.CREATED,
     },
     EdgeGroups.TEXTUAL: {
         EdgeType.NAME_MATCHES,
@@ -154,8 +155,6 @@ RECIPROCALS = {
     EdgeType.LEADER_OF: EdgeType.LED_BY,
     EdgeType.LED_BY: EdgeType.LEADER_OF,
     EdgeType.RESIDENT_OF: EdgeType.ASSOCIATED_WITH,
-    EdgeType.CITED: EdgeType.CITED_BY,
-    EdgeType.CITED_BY: EdgeType.CITED,
     EdgeType.ALLY_OF: EdgeType.ALLY_OF,                 # symmetric
     EdgeType.ENEMY_OF: EdgeType.ENEMY_OF,               # symmetric
     EdgeType.MARRIED_TO: EdgeType.MARRIED_TO,           # symmetric
@@ -186,6 +185,8 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.CONTEMPORARY_OF: "contemporary of",
         EdgeType.ORIGIN_OF: "origin of",
         EdgeType.ASSOCIATED_WITH: "associated with",
+        EdgeType.BLESSED: "blessed",
+        EdgeType.CURSED: "cursed",
         # Geographic
         EdgeType.RESIDENT_OF: "resident of",
         EdgeType.VISITED: "visited",
@@ -196,6 +197,7 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.ROLE_AS: "role as",
         EdgeType.WORKED_WITH: "worked with",
         EdgeType.ASSISTED: "assisted",
+        EdgeType.CREATED: "created",
         # Textual / Symbolic
         EdgeType.NAME_MATCHES: "name matches",
         EdgeType.TYPE_OF: "type of",
@@ -203,7 +205,6 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.EXAMPLE_OF: "example of",
         EdgeType.MENTIONED_WITH: "mentioned with",
         EdgeType.CITED: "cited",
-        EdgeType.CITED_BY: "cited by",
     },
     "es": {
         # Family
@@ -222,6 +223,8 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.CONTEMPORARY_OF: "contemporáneo de",
         EdgeType.ORIGIN_OF: "origen de",
         EdgeType.ASSOCIATED_WITH: "asociado con",
+        EdgeType.BLESSED: "bendito",
+        EdgeType.CURSED: "maldito",
         # Geographic
         EdgeType.RESIDENT_OF: "residente de",
         EdgeType.VISITED: "visitado",
@@ -239,7 +242,7 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.EXAMPLE_OF: "ejemplo de",
         EdgeType.MENTIONED_WITH: "mencionado con",
         EdgeType.CITED: "citó",
-        EdgeType.CITED_BY: "citado por",
+        EdgeType.CREATED: "creód",
     }
 }
 

@@ -1,0 +1,22 @@
+id: bird
+type: animal
+name:
+  en: bird
+name_disambiguous:
+  en: bird
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/expanse
+  type: resident-of
+  refs:
+  - bible:Genesis 1:20
+- target: object/wing
+  type: associated-with
+  refs:
+  - bible:Genesis 1:21
+- target: being/human
+  type: led-by
+  refs:
+  - bible:Genesis 1:26

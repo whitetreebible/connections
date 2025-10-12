@@ -1,0 +1,14 @@
+id: crawlers
+type: animal
+name:
+  en: crawlers
+name_disambiguous:
+  en: crawlers
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: being/human
+  type: led-by
+  refs:
+  - bible:Genesis 1:26

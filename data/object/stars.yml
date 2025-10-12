@@ -1,0 +1,14 @@
+id: stars
+type: object
+name:
+  en: stars
+name_disambiguous:
+  en: stars
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/heavens
+  type: resident-of
+  refs:
+  - bible:Genesis 1:16

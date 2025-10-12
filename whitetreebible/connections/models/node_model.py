@@ -100,6 +100,7 @@ class NodeType(Enum):
     OBJECT = "object"           # artifacts, tools, Ark, tablets
     ANIMAL = "animal"
     PLANT = "plant"
+    CONCEPT = "concept"         # abstract ideas, e.g. sin, faith, covenant
 
     # Events (all kinds)
     EVENT = "event"             # historical, ritual, natural, ceremonial, etc.

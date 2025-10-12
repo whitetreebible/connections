@@ -1,0 +1,18 @@
+id: vegetation
+type: plant
+name:
+  en: vegetation
+name_disambiguous:
+  en: vegetation
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: concept/seed
+  type: associated-with
+  refs:
+  - bible:Genesis 1:11
+- target: plant/fruit_trees
+  type: associated-with
+  refs:
+  - bible:Genesis 1:11

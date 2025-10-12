@@ -1,0 +1,18 @@
+id: dry_land
+type: place
+name:
+  en: dry land
+name_disambiguous:
+  en: dry land
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/earth
+  type: associated-with
+  refs:
+  - bible:Genesis 1:10
+- target: place/waters
+  type: associated-with
+  refs:
+  - bible:Genesis 1:10

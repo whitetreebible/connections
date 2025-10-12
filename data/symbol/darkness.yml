@@ -1,0 +1,14 @@
+id: darkness
+type: symbol
+name:
+  en: darkness
+name_disambiguous:
+  en: darkness
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/watery_abyss
+  type: associated-with
+  refs:
+  - bible:Genesis 1:2

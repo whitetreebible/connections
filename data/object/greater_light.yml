@@ -1,0 +1,22 @@
+id: greater_light
+type: object
+name:
+  en: greater light
+name_disambiguous:
+  en: greater light (the sun)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/heavens
+  type: resident-of
+  refs:
+  - bible:"Genesis 1:16"
+- target: concept/day
+  type: associated-with
+  refs:
+  - bible:"Genesis 1:16"
+- target: role/ruler
+  type: role-as
+  refs:
+  - bible:"Genesis 1:16"

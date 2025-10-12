@@ -1,0 +1,18 @@
+id: waters
+type: place
+name:
+  en: waters
+name_disambiguous:
+  en: waters
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: animal/sea_dragon
+  type: associated-with
+  refs:
+  - bible:Genesis 1:21
+- target: animal/sea_creature
+  type: associated-with
+  refs:
+  - bible:Genesis 1:21

@@ -1,0 +1,14 @@
+id: fruit_trees
+type: plant
+name:
+  en: fruit trees
+name_disambiguous:
+  en: fruit trees
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: concept/fruit
+  type: associated-with
+  refs:
+  - bible:Genesis 1:11

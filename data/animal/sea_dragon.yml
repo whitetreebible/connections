@@ -1,0 +1,16 @@
+id: sea_dragon
+type: animal
+name:
+  en: sea dragon
+name_disambiguous:
+  en: sea dragon
+description:
+  en: 'The sea dragon is a type of sea creature mentioned in some Bible translations, 
+    often associated with large or mythical sea creatures. It is sometimes linked to the Leviathan,
+    a powerful sea monster described in [[bible:Psalm 104:26]] and [[bible:Job 41]].'
+footnotes: {}
+edges:
+- target: place/waters
+  type: resident-of
+  refs:
+  - bible:Genesis 1:21

@@ -24,3 +24,5 @@ edges:
   type: name-matches
   refs:
   - bible:Ruth 1:20
+- target: being/god
+  type: name-matches
