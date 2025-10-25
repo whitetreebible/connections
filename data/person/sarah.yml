@@ -12,3 +12,19 @@ edges:
   type: name-matches
   refs:
   - bible:Genesis 17:15
+- target: person/terah
+  type: child-of
+  refs:
+  - bible:Genesis 20:12
+- target: person/isaac
+  type: parent-of
+  refs:
+  - bible:Genesis 21:2
+- target: place/kiriath_arba
+  type: died-in
+  refs:
+  - bible:Genesis 23:2
+- target: place/machpelah
+  type: buried-in
+  refs:
+  - bible:Genesis 23:19

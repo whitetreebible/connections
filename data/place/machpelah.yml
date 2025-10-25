@@ -1,0 +1,14 @@
+id: machpelah
+type: place
+name:
+  en: Machpelah
+name_disambiguous:
+  en: Machpelah
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/mamre
+  type: near
+  refs:
+  - bible:Genesis 23:19

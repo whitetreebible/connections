@@ -1,0 +1,14 @@
+id: adbeel
+type: person
+name:
+  en: Adbeel
+name_disambiguous:
+  en: Adbeel (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:13

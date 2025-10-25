@@ -1,0 +1,30 @@
+id: reumah
+type: person
+name:
+  en: Reumah
+name_disambiguous:
+  en: Reumah (married to Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: married-to
+  refs:
+  - bible:Genesis 22:24
+- target: person/tebah
+  type: parent-of
+  refs:
+  - bible:Genesis 22:24
+- target: person/gaham
+  type: parent-of
+  refs:
+  - bible:Genesis 22:24
+- target: person/tahash
+  type: parent-of
+  refs:
+  - bible:Genesis 22:24
+- target: person/maacah
+  type: parent-of
+  refs:
+  - bible:Genesis 22:24

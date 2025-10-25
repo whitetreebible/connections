@@ -1,0 +1,22 @@
+id: abraham_servant
+type: person
+name:
+  en: Abraham's servant
+name_disambiguous:
+  en: Abraham's servant (household manager)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: role/manager
+  type: role-as
+  refs:
+  - bible:Genesis 24:2
+- target: person/abraham
+  type: led-by
+  refs:
+  - bible:Genesis 24:2
+- target: person/rebekah
+  type: gave-to
+  refs:
+  - bible:Genesis 24:53

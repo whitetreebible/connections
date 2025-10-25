@@ -1,0 +1,14 @@
+id: leummim
+type: person
+name:
+  en: Leummim
+name_disambiguous:
+  en: Leummim (son of Dedan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/dedan
+  type: child-of
+  refs:
+  - bible:Genesis 25:4

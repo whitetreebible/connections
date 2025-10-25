@@ -1,0 +1,14 @@
+id: hazo
+type: person
+name:
+  en: Hazo
+name_disambiguous:
+  en: Hazo (son of Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: child-of
+  refs:
+  - bible:Genesis 22:21

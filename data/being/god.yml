@@ -100,3 +100,11 @@ edges:
   type: blessed
   refs:
   - bible:Genesis 1:28
+- target: person/abimelech
+  type: visited
+  refs:
+  - bible:Genesis 20:3
+- target: person/isaac
+  type: blessed
+  refs:
+  - bible:Genesis 25:11

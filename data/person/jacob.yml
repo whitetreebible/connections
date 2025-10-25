@@ -1,0 +1,18 @@
+id: jacob
+type: person
+name:
+  en: Jacob
+name_disambiguous:
+  en: Jacob (son of Isaac)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/rebekah
+  type: child-of
+  refs:
+  - bible:Genesis 25:24
+- target: person/isaac
+  type: child-of
+  refs:
+  - bible:Genesis 25:24

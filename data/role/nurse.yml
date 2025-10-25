@@ -1,0 +1,10 @@
+id: nurse
+type: role
+name:
+  en: nurse
+name_disambiguous:
+  en: nurse
+description:
+  en: ''
+footnotes: {}
+edges: []

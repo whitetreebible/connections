@@ -1,0 +1,36 @@
+id: isaac
+type: person
+name:
+  en: Isaac
+name_disambiguous:
+  en: Isaac (son of Abraham)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/sarah
+  type: child-of
+  refs:
+  - bible:Genesis 21:2
+- target: person/abraham
+  type: child-of
+  refs:
+  - bible:Genesis 21:2
+  - bible:Genesis 25:19
+- target: person/rebekah
+  type: married-to
+  refs:
+  - bible:Genesis 24:67
+  - bible:Genesis 25:20
+- target: place/beer_lahai_roi
+  type: resident-of
+  refs:
+  - bible:Genesis 25:11
+- target: person/jacob
+  type: parent-of
+  refs:
+  - bible:Genesis 25:24
+- target: person/esau
+  type: parent-of
+  refs:
+  - bible:Genesis 25:24

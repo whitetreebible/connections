@@ -28,3 +28,7 @@ edges:
   type: died-in
   refs:
   - bible:Genesis 11:32
+- target: person/sarah
+  type: parent-of
+  refs:
+  - bible:Genesis 20:12

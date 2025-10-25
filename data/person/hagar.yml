@@ -3,7 +3,7 @@ type: person
 name:
   en: Hagar
 name_disambiguous:
-  en: Hagar (wife of Abram)
+  en: Hagar (concubine/wife of Abram)
 description:
   en: ''
 footnotes: {}
@@ -24,7 +24,9 @@ edges:
   type: member-of
   refs:
   - bible:Genesis 16:1
+  - bible:Genesis 25:12
 - target: person/ishmael
   type: parent-of
   refs:
   - bible:Genesis 16:15
+  - bible:Genesis 25:12

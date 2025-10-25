@@ -1,17 +1,13 @@
-id: uz
+id: buz
 type: person
 name:
-  en: Uz
+  en: Buz
 name_disambiguous:
-  en: Uz (son of Aram)
+  en: Buz (son of Nahor)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: person/aram
-  type: child-of
-  refs:
-  - bible:Genesis 10:23
 - target: person/nahor
   type: child-of
   refs:

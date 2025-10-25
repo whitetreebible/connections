@@ -1,0 +1,14 @@
+id: kesed
+type: person
+name:
+  en: Kesed
+name_disambiguous:
+  en: Kesed (son of Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: child-of
+  refs:
+  - bible:Genesis 22:21

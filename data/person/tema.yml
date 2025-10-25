@@ -1,0 +1,14 @@
+id: tema
+type: person
+name:
+  en: Tema
+name_disambiguous:
+  en: Tema (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:15

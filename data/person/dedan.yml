@@ -12,3 +12,19 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 10:7
+- target: person/jokshan
+  type: child-of
+  refs:
+  - bible:Genesis 25:3
+- target: person/asshurim
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4
+- target: person/letushim
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4
+- target: person/leummim
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4

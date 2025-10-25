@@ -1,0 +1,14 @@
+id: dumah
+type: person
+name:
+  en: Dumah
+name_disambiguous:
+  en: Dumah (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:14

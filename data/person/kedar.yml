@@ -1,0 +1,14 @@
+id: kedar
+type: person
+name:
+  en: Kedar
+name_disambiguous:
+  en: Kedar (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:13

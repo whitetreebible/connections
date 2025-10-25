@@ -1,0 +1,14 @@
+id: massa
+type: person
+name:
+  en: Massa
+name_disambiguous:
+  en: Massa (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:14

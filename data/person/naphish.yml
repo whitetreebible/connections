@@ -1,0 +1,14 @@
+id: naphish
+type: person
+name:
+  en: Naphish
+name_disambiguous:
+  en: Naphish (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:15

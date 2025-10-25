@@ -16,3 +16,68 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 16:15
+  - bible:Genesis 25:12
+- target: place/paran
+  type: resident-of
+  refs:
+  - bible:Genesis 21:21
+- target: person/ishmael_wife
+  type: married-to
+  refs:
+  - bible:Genesis 21:21
+- target: person/abraham
+  type: child-of
+  refs:
+  - bible:Genesis 25:12
+- target: person/nebaioth
+  type: parent-of
+  refs:
+  - bible:Genesis 25:13
+- target: person/kedar
+  type: parent-of
+  refs:
+  - bible:Genesis 25:13
+- target: person/adbeel
+  type: parent-of
+  refs:
+  - bible:Genesis 25:13
+- target: person/mibsam
+  type: parent-of
+  refs:
+  - bible:Genesis 25:13
+- target: person/mishma
+  type: parent-of
+  refs:
+  - bible:Genesis 25:14
+- target: person/dumah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:14
+- target: person/massa
+  type: parent-of
+  refs:
+  - bible:Genesis 25:14
+- target: person/hadad
+  type: parent-of
+  refs:
+  - bible:Genesis 25:15
+- target: person/tema
+  type: parent-of
+  refs:
+  - bible:Genesis 25:15
+- target: person/jetur
+  type: parent-of
+  refs:
+  - bible:Genesis 25:15
+- target: person/naphish
+  type: parent-of
+  refs:
+  - bible:Genesis 25:15
+- target: person/kedemah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:15
+- target: place/canaan
+  type: died-in
+  refs:
+  - bible:Genesis 25:17

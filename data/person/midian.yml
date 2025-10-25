@@ -1,0 +1,38 @@
+id: midian
+type: person
+name:
+  en: Midian
+name_disambiguous:
+  en: Midian (son of Keturah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/keturah
+  type: child-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/abraham
+  type: child-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/ephah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4
+- target: person/epher
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4
+- target: person/hanoch
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4
+- target: person/abidah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4
+- target: person/eldaah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:4

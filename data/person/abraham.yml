@@ -3,7 +3,7 @@ type: person
 name:
   en: Abraham
 name_disambiguous:
-  en: Abraham (name matches Abram)
+  en: Abraham (aka Abram)
 description:
   en: ''
 footnotes: {}
@@ -12,3 +12,65 @@ edges:
   type: name-matches
   refs:
   - bible:Genesis 17:5
+- target: person/isaac
+  type: parent-of
+  refs:
+  - bible:Genesis 21:2
+  - bible:Genesis 25:19
+- target: group/philistines
+  type: resident-of
+  refs:
+  - bible:Genesis 21:34
+- target: person/nahor
+  type: related-to
+  refs:
+  - bible:Genesis 22:20
+  - bible:Genesis 24:15
+- target: person/ephron
+  type: gave-to
+  refs:
+  - bible:Genesis 23:16
+- target: person/abraham_servant
+  type: leader-of
+  refs:
+  - bible:Genesis 24:2
+- target: person/keturah
+  type: married-to
+  refs:
+  - bible:Genesis 25:1
+- target: person/zimran
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/jokshan
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/medan
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/midian
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/ishbak
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/shuah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: place/canaan
+  type: died-in
+  refs:
+  - bible:Genesis 25:8
+- target: place/machpelah
+  type: buried-in
+  refs:
+  - bible:Genesis 25:9
+- target: person/ishmael
+  type: parent-of
+  refs:
+  - bible:Genesis 25:12

@@ -1,0 +1,18 @@
+id: zimran
+type: person
+name:
+  en: Zimran
+name_disambiguous:
+  en: Zimran (son of Keturah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/keturah
+  type: child-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/abraham
+  type: child-of
+  refs:
+  - bible:Genesis 25:2

@@ -1,0 +1,14 @@
+id: hanoch
+type: person
+name:
+  en: Hanoch
+name_disambiguous:
+  en: Hanoch (son of Midian)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/midian
+  type: child-of
+  refs:
+  - bible:Genesis 25:4

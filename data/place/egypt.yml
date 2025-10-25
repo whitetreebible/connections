@@ -1,0 +1,14 @@
+id: egypt
+type: place
+name:
+  en: Egypt
+name_disambiguous:
+  en: Egypt
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael_wife
+  type: associated-with
+  refs:
+  - bible:Genesis 21:21

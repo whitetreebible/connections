@@ -7,4 +7,8 @@ name_disambiguous:
 description:
   en: ''
 footnotes: {}
-edges: []
+edges:
+- target: person/abraham
+  type: associated-with
+  refs:
+  - bible:Genesis 21:34

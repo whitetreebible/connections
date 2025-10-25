@@ -1,0 +1,15 @@
+id: zohar
+type: person
+name:
+  en: Zohar
+name_disambiguous:
+  en: Zohar (father of Ephron)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ephron
+  type: parent-of
+  refs:
+  - bible:Genesis 23:8
+  - bible:Genesis 25:9

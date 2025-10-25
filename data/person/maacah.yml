@@ -1,0 +1,14 @@
+id: maacah
+type: person
+name:
+  en: Maacah
+name_disambiguous:
+  en: Maacah (son of Reumah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reumah
+  type: child-of
+  refs:
+  - bible:Genesis 22:24

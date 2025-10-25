@@ -1,0 +1,14 @@
+id: hadad
+type: person
+name:
+  en: Hadad
+name_disambiguous:
+  en: Hadad (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:15

@@ -1,0 +1,19 @@
+id: laban
+type: person
+name:
+  en: Laban
+name_disambiguous:
+  en: Laban (son of Bethuel)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/bethuel
+  type: child-of
+  refs:
+  - bible:Genesis 24:29
+  - bible:Genesis 25:20
+- target: group/arameans
+  type: member-of
+  refs:
+  - bible:Genesis 25:20

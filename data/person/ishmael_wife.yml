@@ -1,0 +1,18 @@
+id: ishmael_wife
+type: person
+name:
+  en: Ishmael's wife
+name_disambiguous:
+  en: Ishmael's wife (unnamed wife of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: married-to
+  refs:
+  - bible:Genesis 21:21
+- target: place/egypt
+  type: resident-of
+  refs:
+  - bible:Genesis 21:21

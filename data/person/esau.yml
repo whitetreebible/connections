@@ -1,0 +1,18 @@
+id: esau
+type: person
+name:
+  en: Esau
+name_disambiguous:
+  en: Esau (son of Isaac)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/rebekah
+  type: child-of
+  refs:
+  - bible:Genesis 25:24
+- target: person/isaac
+  type: child-of
+  refs:
+  - bible:Genesis 25:24

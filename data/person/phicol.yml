@@ -1,0 +1,18 @@
+id: phicol
+type: person
+name:
+  en: Phicol
+name_disambiguous:
+  en: Phicol (army commander of Abimelech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abimelech
+  type: led-by
+  refs:
+  - bible:Genesis 21:22
+- target: role/army_commander
+  type: role-as
+  refs:
+  - bible:Genesis 21:22

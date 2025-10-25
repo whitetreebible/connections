@@ -1,0 +1,14 @@
+id: nebaioth
+type: person
+name:
+  en: Nebaioth
+name_disambiguous:
+  en: Nebaioth (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:13

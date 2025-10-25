@@ -1,0 +1,14 @@
+id: abidah
+type: person
+name:
+  en: Abidah
+name_disambiguous:
+  en: Abidah (son of Midian)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/midian
+  type: child-of
+  refs:
+  - bible:Genesis 25:4

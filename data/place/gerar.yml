@@ -1,0 +1,14 @@
+id: gerar
+type: place
+name:
+  en: Gerar
+name_disambiguous:
+  en: Gerar
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abimelech
+  type: led-by
+  refs:
+  - bible:Genesis 20:2

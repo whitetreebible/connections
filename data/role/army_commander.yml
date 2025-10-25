@@ -1,0 +1,10 @@
+id: army_commander
+type: role
+name:
+  en: army commander
+name_disambiguous:
+  en: army commander
+description:
+  en: ''
+footnotes: {}
+edges: []

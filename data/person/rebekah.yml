@@ -1,0 +1,33 @@
+id: rebekah
+type: person
+name:
+  en: Rebekah
+name_disambiguous:
+  en: Rebekah (daughter of Bethuel)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/bethuel
+  type: child-of
+  refs:
+  - bible:Genesis 22:23
+  - bible:Genesis 24:15
+  - bible:Genesis 25:20
+- target: person/laban
+  type: related-to
+  refs:
+  - bible:Genesis 24:29
+- target: person/isaac
+  type: married-to
+  refs:
+  - bible:Genesis 24:67
+  - bible:Genesis 25:20
+- target: person/jacob
+  type: parent-of
+  refs:
+  - bible:Genesis 25:24
+- target: person/esau
+  type: parent-of
+  refs:
+  - bible:Genesis 25:24

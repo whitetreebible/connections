@@ -1,0 +1,14 @@
+id: pildash
+type: person
+name:
+  en: Pildash
+name_disambiguous:
+  en: Pildash (son of Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: child-of
+  refs:
+  - bible:Genesis 22:21

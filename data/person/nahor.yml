@@ -24,3 +24,41 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 11:29
+  - bible:Genesis 22:24
+  - bible:Genesis 24:15
+- target: person/uz
+  type: parent-of
+  refs:
+  - bible:Genesis 22:20
+- target: person/buz
+  type: parent-of
+  refs:
+  - bible:Genesis 22:20
+- target: person/kemuel
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/kesed
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/hazo
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/pildash
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/jidlaph
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/bethuel
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/reumah
+  type: married-to
+  refs:
+  - bible:Genesis 22:24

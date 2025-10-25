@@ -1,0 +1,14 @@
+id: rebekah_servant
+type: person
+name:
+  en: Rebekah's servant
+name_disambiguous:
+  en: Rebekah's servant (nurse)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: role/nurse
+  type: role-as
+  refs:
+  - bible:Genesis 24:59

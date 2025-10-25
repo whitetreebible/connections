@@ -1,0 +1,38 @@
+id: keturah
+type: person
+name:
+  en: Keturah
+name_disambiguous:
+  en: Keturah (married to Abraham)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abraham
+  type: married-to
+  refs:
+  - bible:Genesis 25:1
+- target: person/zimran
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/jokshan
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/medan
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/midian
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/ishbak
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/shuah
+  type: parent-of
+  refs:
+  - bible:Genesis 25:2

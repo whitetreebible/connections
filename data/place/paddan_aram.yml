@@ -1,0 +1,14 @@
+id: paddan_aram
+type: place
+name:
+  en: Paddan Aram
+name_disambiguous:
+  en: Paddan Aram
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/bethuel
+  type: associated-with
+  refs:
+  - bible:Genesis 25:20

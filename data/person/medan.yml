@@ -1,0 +1,18 @@
+id: medan
+type: person
+name:
+  en: Medan
+name_disambiguous:
+  en: Medan (son of Abraham)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/keturah
+  type: child-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/abraham
+  type: child-of
+  refs:
+  - bible:Genesis 25:2

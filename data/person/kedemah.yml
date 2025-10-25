@@ -1,0 +1,14 @@
+id: kedemah
+type: person
+name:
+  en: Kedemah
+name_disambiguous:
+  en: Kedemah (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:15

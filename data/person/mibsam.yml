@@ -1,0 +1,14 @@
+id: mibsam
+type: person
+name:
+  en: Mibsam
+name_disambiguous:
+  en: Mibsam (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:13

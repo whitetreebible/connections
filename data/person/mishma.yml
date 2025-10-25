@@ -1,0 +1,14 @@
+id: mishma
+type: person
+name:
+  en: Mishma
+name_disambiguous:
+  en: Mishma (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:14

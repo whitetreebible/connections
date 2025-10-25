@@ -1,0 +1,10 @@
+id: manager
+type: role
+name:
+  en: manager
+name_disambiguous:
+  en: manager
+description:
+  en: ''
+footnotes: {}
+edges: []

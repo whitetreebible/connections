@@ -12,7 +12,13 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 11:29
+  - bible:Genesis 22:24
+  - bible:Genesis 24:15
 - target: person/haran
   type: child-of
   refs:
   - bible:Genesis 11:29
+- target: person/bethuel
+  type: parent-of
+  refs:
+  - bible:Genesis 24:15

@@ -1,0 +1,14 @@
+id: ephah
+type: person
+name:
+  en: Ephah
+name_disambiguous:
+  en: Ephah (son of Midian)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/midian
+  type: child-of
+  refs:
+  - bible:Genesis 25:4

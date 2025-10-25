@@ -1,0 +1,14 @@
+id: beer_lahai_roi
+type: place
+name:
+  en: Beer Lahai Roi
+name_disambiguous:
+  en: Beer Lahai Roi
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/isaac
+  type: associated-with
+  refs:
+  - bible:Genesis 25:11

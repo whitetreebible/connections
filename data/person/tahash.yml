@@ -1,0 +1,14 @@
+id: tahash
+type: person
+name:
+  en: Tahash
+name_disambiguous:
+  en: Tahash (son of Reumah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reumah
+  type: child-of
+  refs:
+  - bible:Genesis 22:24

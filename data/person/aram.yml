@@ -28,3 +28,7 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 10:23
+- target: person/kemuel
+  type: child-of
+  refs:
+  - bible:Genesis 22:21

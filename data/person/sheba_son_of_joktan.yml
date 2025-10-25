@@ -15,3 +15,7 @@ edges:
 - target: person/sheba
   type: name-matches
   refs: []
+- target: person/jokshan
+  type: child-of
+  refs:
+  - bible:Genesis 25:3

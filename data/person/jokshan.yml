@@ -1,0 +1,26 @@
+id: jokshan
+type: person
+name:
+  en: Jokshan
+name_disambiguous:
+  en: Jokshan (son of Keturah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/keturah
+  type: child-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/abraham
+  type: child-of
+  refs:
+  - bible:Genesis 25:2
+- target: person/sheba_son_of_joktan
+  type: parent-of
+  refs:
+  - bible:Genesis 25:3
+- target: person/dedan
+  type: parent-of
+  refs:
+  - bible:Genesis 25:3

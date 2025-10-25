@@ -39,3 +39,25 @@ edges:
   type: name-matches
   refs:
   - bible:Genesis 17:1
+- target: person/abimelech
+  type: cursed
+  refs:
+  - bible:Genesis 20:18
+- target: person/abimelech
+  type: healed
+  refs:
+  - bible:Genesis 20:18
+- target: person/sarah
+  type: visited
+  refs:
+  - bible:Genesis 21:1
+- target: person/abraham
+  type: blessed
+  refs:
+  - bible:Genesis 22:17
+  - bible:Genesis 24:1
+  - bible:Genesis 24:35
+- target: person/abraham_servant
+  type: blessed
+  refs:
+  - bible:Genesis 24:27

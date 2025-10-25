@@ -1,0 +1,14 @@
+id: jetur
+type: person
+name:
+  en: Jetur
+name_disambiguous:
+  en: Jetur (son of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 25:15

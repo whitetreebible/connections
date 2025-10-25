@@ -1,0 +1,18 @@
+id: kemuel
+type: person
+name:
+  en: Kemuel
+name_disambiguous:
+  en: Kemuel (son of Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: child-of
+  refs:
+  - bible:Genesis 22:21
+- target: person/aram
+  type: parent-of
+  refs:
+  - bible:Genesis 22:21

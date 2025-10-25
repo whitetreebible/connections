@@ -1,0 +1,30 @@
+id: abimelech
+type: person
+name:
+  en: Abimelech
+name_disambiguous:
+  en: Abimelech (leader of Gerar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/gerar
+  type: leader-of
+  refs:
+  - bible:Genesis 20:2
+- target: person/sarah
+  type: associated-with
+  refs:
+  - bible:Genesis 20:2
+- target: person/abraham
+  type: gave-to
+  refs:
+  - bible:Genesis 20:12
+- target: person/abraham
+  type: associated-with
+  refs:
+  - bible:Genesis 21:22
+- target: person/phicol
+  type: leader-of
+  refs:
+  - bible:Genesis 21:22

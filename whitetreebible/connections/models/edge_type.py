@@ -25,7 +25,7 @@ class EdgeType(Enum):
     BORN_IN = "born-in"           # Place of birth
     DIED_IN = "died-in"           # Place of death
     BURIED_IN = "buried-in"       # Place of burial
-
+    NEAR = "near"                 # Geographic proximity
 
     # Vocational / Functional
     ROLE_AS = "role-as"
@@ -114,6 +114,7 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.BORN_IN,
         EdgeType.DIED_IN,
         EdgeType.BURIED_IN,
+        EdgeType.NEAR,
     },
     EdgeGroups.VOCATIONAL: {
         EdgeType.ROLE_AS,

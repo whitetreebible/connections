@@ -1,0 +1,14 @@
+id: gaham
+type: person
+name:
+  en: Gaham
+name_disambiguous:
+  en: Gaham (son of Reumah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reumah
+  type: child-of
+  refs:
+  - bible:Genesis 22:24

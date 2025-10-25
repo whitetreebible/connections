@@ -1,0 +1,14 @@
+id: epher
+type: person
+name:
+  en: Epher
+name_disambiguous:
+  en: Epher (son of Midian)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/midian
+  type: child-of
+  refs:
+  - bible:Genesis 25:4

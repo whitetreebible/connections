@@ -1,0 +1,14 @@
+id: hebron
+type: place
+name:
+  en: Hebron
+name_disambiguous:
+  en: Hebron (aka Kiriath Arba)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/kiriath_arba
+  type: name-matches
+  refs:
+  - bible:Genesis 23:2

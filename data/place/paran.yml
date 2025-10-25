@@ -1,0 +1,14 @@
+id: paran
+type: place
+name:
+  en: Paran
+name_disambiguous:
+  en: Paran
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: associated-with
+  refs:
+  - bible:Genesis 21:21

@@ -1,0 +1,20 @@
+id: ephron
+type: person
+name:
+  en: Ephron
+name_disambiguous:
+  en: Ephron (son of Zohar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/zohar
+  type: child-of
+  refs:
+  - bible:Genesis 23:8
+  - bible:Genesis 25:9
+- target: group/hittites
+  type: member-of
+  refs:
+  - bible:Genesis 23:10
+  - bible:Genesis 25:9
