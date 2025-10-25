@@ -243,33 +243,33 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/serug/">Serug</a> (<a href="https://biblehub.com/context/genesis/11-22.htm" target="_blank">Genesis 11:22</a>), <a href="../../person/terah/">Terah</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>)</li>
-<li><strong>Married to</strong> <a href="../../person/milcah/">Milcah</a> (<a href="https://biblehub.com/context/genesis/11-29.htm" target="_blank">Genesis 11:29</a>)</li>
-<li><strong>Parent of</strong> <a href="../../person/terah/">Terah</a> (<a href="https://biblehub.com/context/genesis/11-24.htm" target="_blank">Genesis 11:24</a>)</li>
+<li><strong>Married to</strong> <a href="../../person/milcah/">Milcah</a> (<a href="https://biblehub.com/context/genesis/11-29.htm" target="_blank">Genesis 11:29</a>, <a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>, <a href="https://biblehub.com/context/genesis/24-15.htm" target="_blank">Genesis 24:15</a>), <a href="../../person/reumah/">Reumah</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/terah/">Terah</a> (<a href="https://biblehub.com/context/genesis/11-24.htm" target="_blank">Genesis 11:24</a>), <a href="../../person/uz/">Uz</a> (<a href="https://biblehub.com/context/genesis/22-20.htm" target="_blank">Genesis 22:20</a>), <a href="../../person/buz/">Buz</a> (<a href="https://biblehub.com/context/genesis/22-20.htm" target="_blank">Genesis 22:20</a>), <a href="../../person/kemuel/">Kemuel</a> (<a href="https://biblehub.com/context/genesis/22-21.htm" target="_blank">Genesis 22:21</a>), <a href="../../person/kesed/">Kesed</a> (<a href="https://biblehub.com/context/genesis/22-21.htm" target="_blank">Genesis 22:21</a>), <a href="../../person/hazo/">Hazo</a> (<a href="https://biblehub.com/context/genesis/22-21.htm" target="_blank">Genesis 22:21</a>), <a href="../../person/pildash/">Pildash</a> (<a href="https://biblehub.com/context/genesis/22-21.htm" target="_blank">Genesis 22:21</a>), <a href="../../person/jidlaph/">Jidlaph</a> (<a href="https://biblehub.com/context/genesis/22-21.htm" target="_blank">Genesis 22:21</a>), <a href="../../person/bethuel/">Bethuel</a> (<a href="https://biblehub.com/context/genesis/22-21.htm" target="_blank">Genesis 22:21</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/nahor fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/nahor(["Nahor"])
-    person/haran(["Haran"])
     person/serug(["Serug"])
-    person/terah(["Terah"])
-    person/milcah(["Milcah"])
-    person/reu(["Reu"])
+    person/haran(["Haran"])
     person/abram(["Abram"])
-    click person/nahor "../../person/nahor/"
-    click person/haran "../../person/haran/"
+    person/nahor(["Nahor"])
+    person/milcah(["Milcah"])
+    person/terah(["Terah"])
+    person/reu(["Reu"])
     click person/serug "../../person/serug/"
-    click person/terah "../../person/terah/"
-    click person/milcah "../../person/milcah/"
-    click person/reu "../../person/reu/"
+    click person/haran "../../person/haran/"
     click person/abram "../../person/abram/"
+    click person/nahor "../../person/nahor/"
+    click person/milcah "../../person/milcah/"
+    click person/terah "../../person/terah/"
+    click person/reu "../../person/reu/"
     person/milcah &lt;--&gt;|married to| person/nahor
-    person/terah --&gt;|parent of| person/abram
-    person/serug --&gt;|parent of| person/nahor
     person/haran --&gt;|parent of| person/milcah
+    person/serug --&gt;|parent of| person/nahor
+    person/nahor --&gt;|parent of| person/terah
     person/reu --&gt;|parent of| person/serug
+    person/terah --&gt;|parent of| person/abram
     person/terah --&gt;|parent of| person/haran
-    person/terah --&gt;|parent of| person/nahor
 </div>
 </article>
 </div>

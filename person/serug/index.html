@@ -248,23 +248,23 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/serug fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/nahor(["Nahor"])
     person/serug(["Serug"])
-    person/terah(["Terah"])
+    person/nahor(["Nahor"])
     person/milcah(["Milcah"])
+    person/terah(["Terah"])
     person/peleg(["Peleg"])
     person/reu(["Reu"])
-    click person/nahor "../../person/nahor/"
     click person/serug "../../person/serug/"
-    click person/terah "../../person/terah/"
+    click person/nahor "../../person/nahor/"
     click person/milcah "../../person/milcah/"
+    click person/terah "../../person/terah/"
     click person/peleg "../../person/peleg/"
     click person/reu "../../person/reu/"
-    person/terah --&gt;|parent of| person/nahor
     person/milcah &lt;--&gt;|married to| person/nahor
-    person/peleg --&gt;|parent of| person/reu
     person/serug --&gt;|parent of| person/nahor
     person/reu --&gt;|parent of| person/serug
+    person/nahor --&gt;|parent of| person/terah
+    person/peleg --&gt;|parent of| person/reu
 </div>
 </article>
 </div>

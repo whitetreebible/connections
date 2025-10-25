@@ -240,34 +240,34 @@
 <div class="mermaid">graph TD;
     style object/city_gate fill:#2fa4e7,stroke:#333,stroke-width:4px;
     object/field(["field"])
-    theme/hospitality(["hospitality"])
-    event/drinking(["drinking"])
-    person/boaz(["Boaz"])
     theme/will_not_rest(["will not rest"])
-    object/city_gate(["city gate"])
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    symbol/unsandaled_one(["unsandaled one"])
     place/bethlehem(["Bethlehem"])
+    symbol/unsandaled_one(["unsandaled one"])
+    object/city_gate(["city gate"])
     object/wing(["wing"])
+    theme/hospitality(["hospitality"])
+    person/boaz(["Boaz"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
+    event/drinking(["drinking"])
     click object/field "../../object/field/"
-    click theme/hospitality "../../theme/hospitality/"
-    click event/drinking "../../event/drinking/"
-    click person/boaz "../../person/boaz/"
     click theme/will_not_rest "../../theme/will_not_rest/"
-    click object/city_gate "../../object/city_gate/"
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
     click place/bethlehem "../../place/bethlehem/"
+    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
+    click object/city_gate "../../object/city_gate/"
     click object/wing "../../object/wing/"
-    person/boaz --&gt;|example of| theme/hospitality
-    place/bethlehem .-&gt;|associated with| person/boaz
-    object/city_gate &lt;.-&gt;|associated with| person/boaz
-    person/boaz &lt;.-&gt;|associated with| object/wing
+    click theme/hospitality "../../theme/hospitality/"
+    click person/boaz "../../person/boaz/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    click event/drinking "../../event/drinking/"
     person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
-    person/boaz &lt;.-&gt;|associated with| object/field
-    person/elimelechs_redeemer --&gt;|example of| symbol/unsandaled_one
-    person/elimelechs_redeemer &lt;.-&gt;|associated with| object/city_gate
+    object/field &lt;.-&gt;|associated with| person/boaz
+    object/city_gate &lt;.-&gt;|associated with| person/elimelechs_redeemer
     person/boaz &lt;.-&gt;|associated with| event/drinking
+    place/bethlehem .-&gt;|associated with| person/boaz
+    person/elimelechs_redeemer --&gt;|example of| symbol/unsandaled_one
+    person/boaz &lt;.-&gt;|associated with| object/city_gate
+    person/boaz --&gt;|example of| theme/hospitality
+    object/wing &lt;.-&gt;|associated with| person/boaz
 </div>
 </article>
 </div>

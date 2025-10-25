@@ -251,52 +251,52 @@
 <ul>
 <li><strong>Child of</strong> <a href="../../person/nahor/">Nahor</a> (<a href="https://biblehub.com/context/genesis/11-24.htm" target="_blank">Genesis 11:24</a>)</li>
 <li><strong>Died in</strong> <a href="../../place/haran/">Haran</a> (<a href="https://biblehub.com/context/genesis/11-32.htm" target="_blank">Genesis 11:32</a>)</li>
-<li><strong>Parent of</strong> <a href="../../person/abram/">Abram</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>), <a href="../../person/nahor/">Nahor</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>), <a href="../../person/haran/">Haran</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/abram/">Abram</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>), <a href="../../person/nahor/">Nahor</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>), <a href="../../person/haran/">Haran</a> (<a href="https://biblehub.com/context/genesis/11-26.htm" target="_blank">Genesis 11:26</a>), <a href="../../person/sarah/">Sarah</a> (<a href="https://biblehub.com/context/genesis/20-12.htm" target="_blank">Genesis 20:12</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/terah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/nahor(["Nahor"])
-    person/haran(["Haran"])
     person/serug(["Serug"])
+    person/haran(["Haran"])
+    person/sarai(["Sarai"])
+    person/abram(["Abram"])
+    person/nahor(["Nahor"])
     person/ishmael(["Ishmael"])
-    person/terah(["Terah"])
-    person/hagar(["Hagar"])
     person/milcah(["Milcah"])
     person/lot(["Lot"])
-    person/sarai(["Sarai"])
+    person/terah(["Terah"])
+    person/hagar(["Hagar"])
     person/iscah(["Iscah"])
-    person/abram(["Abram"])
-    click person/nahor "../../person/nahor/"
-    click person/haran "../../person/haran/"
     click person/serug "../../person/serug/"
+    click person/haran "../../person/haran/"
+    click person/sarai "../../person/sarai/"
+    click person/abram "../../person/abram/"
+    click person/nahor "../../person/nahor/"
     click person/ishmael "../../person/ishmael/"
-    click person/terah "../../person/terah/"
-    click person/hagar "../../person/hagar/"
     click person/milcah "../../person/milcah/"
     click person/lot "../../person/lot/"
-    click person/sarai "../../person/sarai/"
+    click person/terah "../../person/terah/"
+    click person/hagar "../../person/hagar/"
     click person/iscah "../../person/iscah/"
-    click person/abram "../../person/abram/"
-    person/abram --&gt;|parent of| person/ishmael
-    person/terah --&gt;|parent of| person/haran
-    person/sarai &lt;--&gt;|married to| person/abram
-    person/haran --&gt;|parent of| person/iscah
+    person/milcah &lt;--&gt;|married to| person/nahor
+    person/abram &lt;--&gt;|married to| person/hagar
     person/nahor --&gt;|parent of| person/terah
-    person/terah --&gt;|parent of| person/abram
-    person/serug --&gt;|parent of| person/nahor
-    person/nahor &lt;--&gt;|married to| person/milcah
     person/haran --&gt;|parent of| person/lot
+    person/terah --&gt;|parent of| person/abram
+    person/haran --&gt;|parent of| person/iscah
+    person/serug --&gt;|parent of| person/nahor
+    person/abram &lt;--&gt;|married to| person/sarai
     person/haran --&gt;|parent of| person/milcah
-    person/hagar &lt;--&gt;|married to| person/abram
+    person/terah --&gt;|parent of| person/haran
+    person/abram --&gt;|parent of| person/ishmael
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/terah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/haran(["Haran"])
     person/terah(["Terah"])
-    click place/haran "../../place/haran/"
+    place/haran(["Haran"])
     click person/terah "../../person/terah/"
+    click place/haran "../../place/haran/"
     person/terah --&gt;|died in| place/haran
 </div>
 </article>

@@ -239,23 +239,23 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style symbol/darkness fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    symbol/darkness(["darkness"])
-    place/dry_land(["dry land"])
-    symbol/emptiness(["emptiness"])
-    place/watery_abyss(["watery abyss"])
     place/earth(["earth"])
+    place/watery_abyss(["watery abyss"])
+    symbol/emptiness(["emptiness"])
+    place/dry_land(["dry land"])
+    symbol/darkness(["darkness"])
     symbol/wilderness(["wilderness"])
-    click symbol/darkness "../../symbol/darkness/"
-    click place/dry_land "../../place/dry_land/"
-    click symbol/emptiness "../../symbol/emptiness/"
-    click place/watery_abyss "../../place/watery_abyss/"
     click place/earth "../../place/earth/"
+    click place/watery_abyss "../../place/watery_abyss/"
+    click symbol/emptiness "../../symbol/emptiness/"
+    click place/dry_land "../../place/dry_land/"
+    click symbol/darkness "../../symbol/darkness/"
     click symbol/wilderness "../../symbol/wilderness/"
     place/earth .-&gt;|associated with| symbol/darkness
     place/earth .-&gt;|associated with| symbol/wilderness
+    place/dry_land .-&gt;|associated with| place/earth
     symbol/darkness .-&gt;|associated with| place/watery_abyss
     place/earth .-&gt;|associated with| symbol/emptiness
-    place/dry_land .-&gt;|associated with| place/earth
 </div>
 </article>
 </div>

@@ -258,56 +258,56 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/mahlon fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/kilion(["Kilion"])
+    person/mahlon(["Mahlon"])
     person/elimelech(["Elimelech"])
-    person/ruth(["Ruth"])
+    person/kilion(["Kilion"])
     person/orpah(["Orpah"])
     person/boaz(["Boaz"])
+    person/naomi(["Naomi"])
     person/elimelechs_redeemer(["Elimelech's Redeemer"])
     person/obed(["Obed"])
-    person/naomi(["Naomi"])
-    person/mahlon(["Mahlon"])
-    click person/kilion "../../person/kilion/"
+    person/ruth(["Ruth"])
+    click person/mahlon "../../person/mahlon/"
     click person/elimelech "../../person/elimelech/"
-    click person/ruth "../../person/ruth/"
+    click person/kilion "../../person/kilion/"
     click person/orpah "../../person/orpah/"
     click person/boaz "../../person/boaz/"
+    click person/naomi "../../person/naomi/"
     click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     click person/obed "../../person/obed/"
-    click person/naomi "../../person/naomi/"
-    click person/mahlon "../../person/mahlon/"
-    person/naomi --&gt;|parent of| person/kilion
-    person/elimelech --&gt;|parent of| person/mahlon
-    person/orpah &lt;--&gt;|married to| person/mahlon
-    person/naomi --&gt;|parent of| person/mahlon
-    person/elimelech --&gt;|parent of| person/kilion
-    person/naomi --&gt;|related to| person/elimelechs_redeemer
+    click person/ruth "../../person/ruth/"
     person/naomi --&gt;|parent of| person/obed
+    person/elimelech --&gt;|parent of| person/kilion
+    person/naomi --&gt;|parent of| person/kilion
+    person/naomi --&gt;|parent of| person/mahlon
     person/naomi --&gt;|parent of| person/ruth
-    person/naomi &lt;--&gt;|married to| person/elimelech
-    person/elimelech --&gt;|related to| person/elimelechs_redeemer
     person/elimelech --&gt;|related to| person/boaz
+    person/orpah &lt;--&gt;|married to| person/mahlon
+    person/elimelech --&gt;|parent of| person/mahlon
+    person/elimelech --&gt;|related to| person/elimelechs_redeemer
+    person/elimelech &lt;--&gt;|married to| person/naomi
+    person/naomi --&gt;|related to| person/elimelechs_redeemer
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/mahlon fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/kilion(["Kilion"])
-    person/elimelech(["Elimelech"])
-    place/moab(["Moab"])
-    person/naomi(["Naomi"])
     person/mahlon(["Mahlon"])
-    click person/kilion "../../person/kilion/"
-    click person/elimelech "../../person/elimelech/"
-    click place/moab "../../place/moab/"
-    click person/naomi "../../person/naomi/"
+    place/moab(["Moab"])
+    person/elimelech(["Elimelech"])
+    person/kilion(["Kilion"])
+    person/naomi(["Naomi"])
     click person/mahlon "../../person/mahlon/"
-    person/kilion .-&gt;|visited| place/moab
+    click place/moab "../../place/moab/"
+    click person/elimelech "../../person/elimelech/"
+    click person/kilion "../../person/kilion/"
+    click person/naomi "../../person/naomi/"
     person/kilion --&gt;|died in| place/moab
+    person/kilion .-&gt;|visited| place/moab
+    person/naomi .-&gt;|visited| place/moab
+    person/mahlon --&gt;|died in| place/moab
+    person/mahlon .-&gt;|visited| place/moab
     person/elimelech .-&gt;|visited| place/moab
     person/elimelech --&gt;|died in| place/moab
-    person/mahlon .-&gt;|visited| place/moab
-    person/mahlon --&gt;|died in| place/moab
-    person/naomi .-&gt;|visited| place/moab
 </div>
 <div class="footnote">
 <hr/>

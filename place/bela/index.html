@@ -247,10 +247,10 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style place/bela fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/bela(["Bela"])
     person/king_of_bela(["king of Bela"])
-    click place/bela "../../place/bela/"
+    place/bela(["Bela"])
     click person/king_of_bela "../../person/king_of_bela/"
+    click place/bela "../../place/bela/"
     person/king_of_bela --&gt;|leader of| place/bela
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
@@ -260,7 +260,7 @@
     place/bela(["Bela"])
     click place/zoar "../../place/zoar/"
     click place/bela "../../place/bela/"
-    place/zoar &lt;--&gt;|name matches| place/bela
+    place/bela &lt;--&gt;|name matches| place/zoar
 </div>
 </article>
 </div>

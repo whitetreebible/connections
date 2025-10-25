@@ -248,24 +248,24 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/lot_daughter_older fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/lot_daughter_younger(["Lot's younger daughter"])
     person/haran(["Haran"])
-    person/lot(["Lot"])
     person/lot_daughter_older(["Lot's older daughter"])
     person/ben-ammi(["Ben Ammi"])
+    person/lot(["Lot"])
     person/moab(["Moab"])
-    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
+    person/lot_daughter_younger(["Lot's younger daughter"])
     click person/haran "../../person/haran/"
-    click person/lot "../../person/lot/"
     click person/lot_daughter_older "../../person/lot_daughter_older/"
     click person/ben-ammi "../../person/ben-ammi/"
+    click person/lot "../../person/lot/"
     click person/moab "../../person/moab/"
-    person/lot --&gt;|parent of| person/moab
+    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
     person/lot --&gt;|parent of| person/lot_daughter_older
-    person/lot --&gt;|parent of| person/lot_daughter_younger
     person/lot --&gt;|parent of| person/ben-ammi
-    person/lot_daughter_older --&gt;|parent of| person/moab
     person/haran --&gt;|parent of| person/lot
+    person/lot_daughter_older --&gt;|parent of| person/moab
+    person/lot --&gt;|parent of| person/moab
+    person/lot --&gt;|parent of| person/lot_daughter_younger
 </div>
 </article>
 </div>

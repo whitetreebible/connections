@@ -243,32 +243,33 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/haran/">Haran</a> (<a href="https://biblehub.com/context/genesis/11-29.htm" target="_blank">Genesis 11:29</a>)</li>
-<li><strong>Married to</strong> <a href="../../person/nahor/">Nahor</a> (<a href="https://biblehub.com/context/genesis/11-29.htm" target="_blank">Genesis 11:29</a>)</li>
+<li><strong>Married to</strong> <a href="../../person/nahor/">Nahor</a> (<a href="https://biblehub.com/context/genesis/11-29.htm" target="_blank">Genesis 11:29</a>, <a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>, <a href="https://biblehub.com/context/genesis/24-15.htm" target="_blank">Genesis 24:15</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/bethuel/">Bethuel</a> (<a href="https://biblehub.com/context/genesis/24-15.htm" target="_blank">Genesis 24:15</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/milcah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/nahor(["Nahor"])
-    person/haran(["Haran"])
     person/serug(["Serug"])
-    person/terah(["Terah"])
+    person/haran(["Haran"])
+    person/nahor(["Nahor"])
     person/milcah(["Milcah"])
     person/lot(["Lot"])
+    person/terah(["Terah"])
     person/iscah(["Iscah"])
-    click person/nahor "../../person/nahor/"
-    click person/haran "../../person/haran/"
     click person/serug "../../person/serug/"
-    click person/terah "../../person/terah/"
+    click person/haran "../../person/haran/"
+    click person/nahor "../../person/nahor/"
     click person/milcah "../../person/milcah/"
     click person/lot "../../person/lot/"
+    click person/terah "../../person/terah/"
     click person/iscah "../../person/iscah/"
-    person/terah --&gt;|parent of| person/nahor
     person/milcah &lt;--&gt;|married to| person/nahor
-    person/serug --&gt;|parent of| person/nahor
-    person/haran --&gt;|parent of| person/milcah
     person/haran --&gt;|parent of| person/iscah
-    person/terah --&gt;|parent of| person/haran
+    person/haran --&gt;|parent of| person/milcah
+    person/serug --&gt;|parent of| person/nahor
+    person/nahor --&gt;|parent of| person/terah
     person/haran --&gt;|parent of| person/lot
+    person/terah --&gt;|parent of| person/haran
 </div>
 </article>
 </div>

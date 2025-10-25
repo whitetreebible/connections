@@ -248,21 +248,21 @@
 <div class="mermaid">graph TD;
     style person/abel fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/cain(["Cain"])
-    person/eve(["Eve"])
-    person/seth(["Seth"])
-    person/adam(["Adam"])
     person/abel(["Abel"])
+    person/seth(["Seth"])
+    person/eve(["Eve"])
+    person/adam(["Adam"])
     click person/cain "../../person/cain/"
-    click person/eve "../../person/eve/"
-    click person/seth "../../person/seth/"
-    click person/adam "../../person/adam/"
     click person/abel "../../person/abel/"
-    person/adam &lt;--&gt;|married to| person/eve
-    person/adam --&gt;|parent of| person/abel
-    person/adam --&gt;|parent of| person/seth
+    click person/seth "../../person/seth/"
+    click person/eve "../../person/eve/"
+    click person/adam "../../person/adam/"
     person/eve --&gt;|parent of| person/seth
     person/eve --&gt;|parent of| person/cain
+    person/adam --&gt;|parent of| person/abel
     person/adam --&gt;|parent of| person/cain
+    person/adam --&gt;|parent of| person/seth
+    person/eve &lt;--&gt;|married to| person/adam
     person/eve --&gt;|parent of| person/abel
 </div>
 </article>
