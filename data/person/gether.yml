@@ -1,0 +1,14 @@
+id: gether
+type: person
+name:
+  en: Gether
+name_disambiguous:
+  en: Gether (son of Aram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/aram
+  type: child-of
+  refs:
+  - bible:"Genesis 10:23"

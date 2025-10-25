@@ -1,0 +1,18 @@
+id: methuselah
+type: person
+name:
+  en: Methuselah
+name_disambiguous:
+  en: Methuselah (son of Enoch)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/enoch
+  type: child-of
+  refs:
+  - bible:"Genesis 5:21"
+- target: person/lamech_son_of_methuselah
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:25"

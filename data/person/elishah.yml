@@ -1,0 +1,14 @@
+id: elishah
+type: person
+name:
+  en: Elishah
+name_disambiguous:
+  en: Elishah (son of Javan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/javan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:4"

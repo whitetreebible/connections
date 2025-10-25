@@ -22,6 +22,7 @@ import sys
 DATA_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../data'))
 
 _disambig_cache = {}
+_name_matches_to_add = []  # Track name-matches relationships to add at the end
 
 
 def lookup_similar_nodes(node_type: str, name: str) -> list:
@@ -95,14 +96,42 @@ def lookup_similar_nodes(node_type: str, name: str) -> list:
 def format_disambiguous_from_edge(node_id, name, edge_type:EdgeType, edge_target) -> str:
     if not name:
         name = node_id.capitalize()
+    
+    # Capitalize the base name for persons
+    name = name.title()
+    
     if not edge_type:
         return name
-    # split the edge_target on '/' and take last part
-    edge_type = edge_type.replace('-', ' ')
+    
+    # Special handling for parent/child relationships
+    if hasattr(edge_type, 'value'):
+        edge_type_str = edge_type.value
+    else:
+        edge_type_str = str(edge_type)
+    
+    # Extract target name from the link (remove type prefix)
     if '/' in edge_target:
-        edge_target = edge_target.split('/')[-1]
-    edge_target = edge_target.replace('-', ' ').capitalize()
-    return f"{name} ({edge_type} {edge_target})"
+        target_type, target_name = edge_target.split('/', 1)
+        # Capitalize if it's a person type
+        if target_type.lower() == 'person':
+            target_name = target_name.replace('-', ' ').replace('_', ' ').title()
+        else:
+            target_name = target_name.replace('-', ' ').replace('_', ' ')
+    else:
+        target_name = edge_target
+        target_name = target_name.replace('-', ' ').replace('_', ' ').title()
+    
+    # Format parent/child relationships specially
+    if edge_type_str == "child-of":
+        # This node is the child, so format as "Child (son of Parent)"
+        return f"{name} (son of {target_name})"
+    elif edge_type_str == "parent-of":
+        # This node is the parent, so format as "Parent (father of Child)"
+        return f"{name} (father of {target_name})"
+    else:
+        # Keep existing format for other edge types
+        edge_type_display = edge_type_str.replace('-', ' ')
+        return f"{name} ({edge_type_display} {target_name})"
 
 
 
@@ -116,8 +145,61 @@ def get_node_yaml_path(node_type, node_id):
     return os.path.join(data_dir, f"{node_id}.yml")
 
 
+def add_name_matches_relationship(base_name: str, node1: NodeModel, node2: NodeModel):
+    """Track a name-matches relationship to be added later."""
+    _name_matches_to_add.append((base_name, node1, node2))
 
-def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) -> tuple[NodeModel, str]:
+
+def create_name_matches_edges():
+    """Create all pending name-matches edges between nodes with the same base name."""
+    log.info(f"Creating {len(_name_matches_to_add)} name-matches relationships...")
+    
+    for base_name, node1, node2 in _name_matches_to_add:
+        # Add name-matches edge from node1 to node2
+        found = False
+        for edge in node1.edges:
+            if edge.target == node2.link and edge.type == EdgeType.NAME_MATCHES:
+                found = True
+                break
+        if not found:
+            edge_data = {
+                "target": node2.link,
+                "type": EdgeType.NAME_MATCHES,
+                "refs": []
+            }
+            node1.edges.append(EdgeModel(edge_data))
+            log.info(f"Added name-matches: {node1.link} -> {node2.link}")
+
+        # Add name-matches edge from node2 to node1 (symmetric relationship)
+        found = False
+        for edge in node2.edges:
+            if edge.target == node1.link and edge.type == EdgeType.NAME_MATCHES:
+                found = True
+                break
+        if not found:
+            edge_data = {
+                "target": node1.link,
+                "type": EdgeType.NAME_MATCHES,
+                "refs": []
+            }
+            node2.edges.append(EdgeModel(edge_data))
+            log.info(f"Added name-matches: {node2.link} -> {node1.link}")
+
+        # Save both nodes
+        node1_path = get_node_yaml_path(node1.type, node1.id)
+        node2_path = get_node_yaml_path(node2.type, node2.id)
+        
+        os.makedirs(os.path.dirname(node1_path), exist_ok=True)
+        os.makedirs(os.path.dirname(node2_path), exist_ok=True)
+        
+        with open(node1_path, 'w', encoding='utf-8') as f:
+            f.write(node1.to_yaml())
+        with open(node2_path, 'w', encoding='utf-8') as f:
+            f.write(node2.to_yaml())
+
+
+
+def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str, edge_type: EdgeType = None, target_link: str = None) -> tuple[NodeModel, str]:
     cache_key = (node_type, name, bible_ref)
     if cache_key in _disambig_cache:
         node_id = _disambig_cache[cache_key]
@@ -128,6 +210,7 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) 
     matches = lookup_similar_nodes(node_type, name)
     log.info(f"Looking up {node_type} named '{name}' found {len(matches)} matches.")
     node_id = name.lower()
+    
     if matches:
         choices = []
         create_new_label = f"Create new: {name} ({node_type}/{node_id})"
@@ -155,20 +238,55 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str) 
             if new_id:
                 node_id = new_id.strip()
                 _disambig_cache[cache_key] = node_id
+                
+                # Track name-matches relationships when creating disambiguated nodes
+                for match in matches:
+                    if match['name'].lower() == name.lower():
+                        # Load the existing node to add name-matches relationship
+                        existing_yaml_path = get_node_yaml_path(match['type'], match['id'])
+                        if os.path.exists(existing_yaml_path):
+                            try:
+                                existing_node = NodeModel.from_yaml_file(existing_yaml_path)
+                                # We'll create the new node below, then add the relationship
+                                # Store for later processing
+                                add_name_matches_relationship(name, None, existing_node)  # placeholder for new node
+                            except Exception as e:
+                                log.warning(f"Could not load existing node for name-matches: {e}")
             else:
                 node_id = default_id
     # Default: create new node
     _disambig_cache[cache_key] = node_id
     yaml_path = get_node_yaml_path(node_type, node_id)
+    
+    # Capitalize names for person types
+    display_name = name.title() if node_type.lower() == 'person' else name
+    
     # Set a meaningful disambiguated name if possible
-    disamb = f"{name} ({context})" if context else name
+    if edge_type and target_link and node_type.lower() == 'person':
+        # Use the edge-based formatting for parent/child relationships
+        disamb = format_disambiguous_from_edge(node_id, display_name, edge_type, target_link)
+    elif context:
+        # Capitalize the disambiguous name too for person types
+        if node_type.lower() == 'person':
+            disamb = f"{display_name} ({context})"
+        else:
+            disamb = f"{name} ({context})"
+    else:
+        disamb = display_name
+    
     node = NodeModel({
         "id": node_id,
         "type": node_type,
-        "name": {"en": name},
+        "name": {"en": display_name},
         "name_disambiguous": {"en": disamb},
         "edges": []
     })
+    
+    # Update any pending name-matches relationships with the actual new node
+    for i, (base_name, placeholder_node, existing_node) in enumerate(_name_matches_to_add):
+        if placeholder_node is None and base_name == name:
+            _name_matches_to_add[i] = (base_name, node, existing_node)
+    
     log.info(f"New node: {node_type}/{node_id}")
     return node, yaml_path
 
@@ -181,18 +299,16 @@ def main():
     file_path = sys.argv[1]
     with open(file_path, newline='', encoding='utf-8') as csvfile:
         reader = csv.DictReader(csvfile, fieldnames=[
-            "s_type", "s_name", "edge_type", "t_type", "t_name",
+            "source", "edge_type", "target",
             "ref_bible", "ref_footnote_anchor", "ref_footnote_text"
         ])
         for row in reader:
             # skip header
-            if row["s_type"] == "s_type":
+            if row["source"] == "source":
                 continue
-            s_type = row["s_type"].strip()
-            s_name = row["s_name"].strip()
+            s_type, s_name = row["source"].strip().split('/')
             edge_type = EdgeType(row["edge_type"].strip())
-            t_type = row["t_type"].strip()
-            t_name = row["t_name"].strip()
+            t_type, t_name = row["target"].strip().split('/')
             ref_bible = None
             if row["ref_bible"] is not None:
                 ref_bible = row["ref_bible"].strip()
@@ -206,13 +322,22 @@ def main():
             # Get or create source and target nodes
             readable_edge = edge_type.for_lang(lang="en")
             context = f"{s_name} {readable_edge} {t_name}"
-            source_node, source_path = get_or_create_node(s_type, s_name, ref_bible, context=context)
-            target_node, target_path = get_or_create_node(t_type, t_name, ref_bible, context=context)
+            
+            # First create target node (needed for source node's disambiguous name)
+            reciprocal_edge = RECIPROCALS.get(edge_type) if edge_type in RECIPROCALS else None
+            target_node, target_path = get_or_create_node(t_type, t_name, ref_bible, context=context, 
+                                                        edge_type=reciprocal_edge, target_link=f"{s_type}/{s_name}")
+            
+            # Then create source node with target info
+            source_node, source_path = get_or_create_node(s_type, s_name, ref_bible, context=context, 
+                                                        edge_type=edge_type, target_link=target_node.link)
 
 
             # Build refs, including bible and footnote refs
             edge_refs = []
             if ref_bible:
+                # remove quotes if present
+                ref_bible = ref_bible.strip('"').strip("'")
                 edge_refs.append(f"bible:{ref_bible}")
 
             # Add footnote to node's footnotes dict if anchor/text present
@@ -281,7 +406,12 @@ def main():
                 f.write(source_str)
             with open(target_path, 'w', encoding='utf-8') as f:
                 f.write(target_str)
+    
+    # Create all pending name-matches relationships
+    create_name_matches_edges()
+    
     print("Nodes and edges updated in YAML files from CSV.")
+    print(f"Added {len(_name_matches_to_add)} name-matches relationships.")
 
 if __name__ == "__main__":
     main()

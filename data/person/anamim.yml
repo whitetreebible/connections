@@ -1,0 +1,14 @@
+id: anamim
+type: person
+name:
+  en: Anamim
+name_disambiguous:
+  en: Anamim (son of Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/egypt
+  type: child-of
+  refs:
+  - bible:"Genesis 10:13"

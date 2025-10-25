@@ -1,0 +1,17 @@
+id: sheba_son_of_joktan
+type: person
+name:
+  en: Sheba
+name_disambiguous:
+  en: Sheba (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:28"
+- target: person/sheba
+  type: name-matches
+  refs: []

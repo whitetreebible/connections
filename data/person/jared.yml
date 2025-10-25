@@ -1,0 +1,18 @@
+id: jared
+type: person
+name:
+  en: Jared
+name_disambiguous:
+  en: Jared (son of Mahalalel)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/mahalalel
+  type: child-of
+  refs:
+  - bible:"Genesis 5:15"
+- target: person/enoch
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:18"

@@ -1,0 +1,14 @@
+id: lehabim
+type: person
+name:
+  en: Lehabim
+name_disambiguous:
+  en: Lehabim (son of Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/egypt
+  type: child-of
+  refs:
+  - bible:"Genesis 10:13"

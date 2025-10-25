@@ -1,0 +1,18 @@
+id: jabal
+type: person
+name:
+  en: Jabal
+name_disambiguous:
+  en: Jabal (son of Lamech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lamech
+  type: child-of
+  refs:
+  - bible:"Genesis 4:20"
+- target: person/adah
+  type: child-of
+  refs:
+  - bible:"Genesis 4:20"

@@ -1,0 +1,18 @@
+id: arphaxad
+type: person
+name:
+  en: Arphaxad
+name_disambiguous:
+  en: Arphaxad (son of Shem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shem
+  type: child-of
+  refs:
+  - bible:"Genesis 10:22"
+- target: person/shelah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:24"

@@ -1,0 +1,14 @@
+id: sidon
+type: person
+name:
+  en: Sidon
+name_disambiguous:
+  en: Sidon (son of Canaan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/canaan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:15"

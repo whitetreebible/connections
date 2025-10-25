@@ -1,0 +1,14 @@
+id: peleg
+type: person
+name:
+  en: Peleg
+name_disambiguous:
+  en: Peleg (son of Eber)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eber
+  type: child-of
+  refs:
+  - bible:"Genesis 10:25"

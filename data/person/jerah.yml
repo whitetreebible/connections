@@ -1,0 +1,14 @@
+id: jerah
+type: person
+name:
+  en: Jerah
+name_disambiguous:
+  en: Jerah (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:26"

@@ -1,0 +1,18 @@
+id: irad
+type: person
+name:
+  en: Irad
+name_disambiguous:
+  en: Irad (son of Enoch Son Of Cain)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/enoch_son_of_cain
+  type: child-of
+  refs:
+  - bible:"Genesis 4:18"
+- target: person/mehujael
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:18"

@@ -1,0 +1,14 @@
+id: sheleph
+type: person
+name:
+  en: Sheleph
+name_disambiguous:
+  en: Sheleph (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:26"

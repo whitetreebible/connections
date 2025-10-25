@@ -1,0 +1,14 @@
+id: ludim
+type: person
+name:
+  en: Ludim
+name_disambiguous:
+  en: Ludim (son of Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/egypt
+  type: child-of
+  refs:
+  - bible:"Genesis 10:13"

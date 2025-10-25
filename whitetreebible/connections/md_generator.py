@@ -228,6 +228,8 @@ class MdFormatters:
                     ref_strs = []
                     for ref in getattr(edge, 'refs', []):
                         if isinstance(ref, str):
+                            # strip quotes if they eneded up in the ref
+                            ref = ref.replace('"', '').replace("'", "")
                             if ref.startswith('bible:'):
                                 ref_strs.append(f"[[{ref}]]")
                             elif ref.startswith('footnote:'):

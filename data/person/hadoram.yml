@@ -1,0 +1,14 @@
+id: hadoram
+type: person
+name:
+  en: Hadoram
+name_disambiguous:
+  en: Hadoram (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:27"

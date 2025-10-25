@@ -1,0 +1,14 @@
+id: nimrod
+type: person
+name:
+  en: Nimrod
+name_disambiguous:
+  en: Nimrod (son of Cush)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cush
+  type: child-of
+  refs:
+  - bible:"Genesis 10:8"

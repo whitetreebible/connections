@@ -1,0 +1,27 @@
+id: adam
+type: person
+name:
+  en: Adam
+name_disambiguous:
+  en: Adam (married to Eve)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eve
+  type: married-to
+  refs:
+  - bible:"Genesis 3:20"
+- target: person/cain
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:1"
+- target: person/abel
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:2"
+- target: person/seth
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:25"
+  - bible:"Genesis 5:3"

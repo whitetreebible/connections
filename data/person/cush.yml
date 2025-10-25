@@ -1,0 +1,38 @@
+id: cush
+type: person
+name:
+  en: Cush
+name_disambiguous:
+  en: Cush (son of Ham)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ham
+  type: child-of
+  refs:
+  - bible:"Genesis 10:6"
+- target: person/seba
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/havilah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/sabtah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/raamah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/sabteca
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/nimrod
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:8"

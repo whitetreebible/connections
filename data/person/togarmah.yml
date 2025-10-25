@@ -1,0 +1,14 @@
+id: togarmah
+type: person
+name:
+  en: Togarmah
+name_disambiguous:
+  en: Togarmah (son of Gomer)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gomer
+  type: child-of
+  refs:
+  - bible:"Genesis 10:3"

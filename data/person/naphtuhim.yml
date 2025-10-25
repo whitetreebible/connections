@@ -1,0 +1,14 @@
+id: naphtuhim
+type: person
+name:
+  en: Naphtuhim
+name_disambiguous:
+  en: Naphtuhim (son of Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/egypt
+  type: child-of
+  refs:
+  - bible:"Genesis 10:13"

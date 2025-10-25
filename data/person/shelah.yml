@@ -1,0 +1,18 @@
+id: shelah
+type: person
+name:
+  en: Shelah
+name_disambiguous:
+  en: Shelah (son of Arphaxad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/arphaxad
+  type: child-of
+  refs:
+  - bible:"Genesis 10:24"
+- target: person/eber
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:25"

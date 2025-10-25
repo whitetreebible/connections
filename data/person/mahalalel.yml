@@ -1,0 +1,18 @@
+id: mahalalel
+type: person
+name:
+  en: Mahalalel
+name_disambiguous:
+  en: Mahalalel (son of Kenan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/kenan
+  type: child-of
+  refs:
+  - bible:"Genesis 5:12"
+- target: person/jared
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:15"

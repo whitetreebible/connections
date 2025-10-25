@@ -1,0 +1,14 @@
+id: tarshish
+type: person
+name:
+  en: Tarshish
+name_disambiguous:
+  en: Tarshish (son of Javan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/javan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:4"

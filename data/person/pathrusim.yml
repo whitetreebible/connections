@@ -1,0 +1,14 @@
+id: pathrusim
+type: person
+name:
+  en: Pathrusim
+name_disambiguous:
+  en: Pathrusim (son of Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/egypt
+  type: child-of
+  refs:
+  - bible:"Genesis 10:14"

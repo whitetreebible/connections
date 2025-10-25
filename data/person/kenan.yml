@@ -1,0 +1,18 @@
+id: kenan
+type: person
+name:
+  en: Kenan
+name_disambiguous:
+  en: Kenan (son of Enosh)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/enosh
+  type: child-of
+  refs:
+  - bible:"Genesis 5:9"
+- target: person/mahalalel
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:12"

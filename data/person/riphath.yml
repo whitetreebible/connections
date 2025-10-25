@@ -1,0 +1,14 @@
+id: riphath
+type: person
+name:
+  en: Riphath
+name_disambiguous:
+  en: Riphath (son of Gomer)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gomer
+  type: child-of
+  refs:
+  - bible:"Genesis 10:3"

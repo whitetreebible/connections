@@ -1,0 +1,18 @@
+id: naamah
+type: person
+name:
+  en: Naamah
+name_disambiguous:
+  en: Naamah (son of Lamech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lamech
+  type: child-of
+  refs:
+  - bible:"Genesis 4:22"
+- target: person/zillah
+  type: child-of
+  refs:
+  - bible:"Genesis 4:22"

@@ -1,0 +1,17 @@
+id: havilah
+type: person
+name:
+  en: Havilah
+name_disambiguous:
+  en: Havilah (son of Cush)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cush
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/havilah_son_of_joktan
+  type: name-matches
+  refs: []

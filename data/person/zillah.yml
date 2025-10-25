@@ -1,0 +1,22 @@
+id: zillah
+type: person
+name:
+  en: Zillah
+name_disambiguous:
+  en: Zillah (married to Lamech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lamech
+  type: married-to
+  refs:
+  - bible:"Genesis 4:19"
+- target: person/tubal_cain
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:22"
+- target: person/naamah
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:22"

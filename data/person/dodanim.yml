@@ -1,0 +1,14 @@
+id: dodanim
+type: person
+name:
+  en: Dodanim
+name_disambiguous:
+  en: Dodanim (son of Javan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/javan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:4"

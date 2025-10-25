@@ -1,0 +1,14 @@
+id: meshech
+type: person
+name:
+  en: Meshech
+name_disambiguous:
+  en: Meshech (son of Japheth)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/japheth
+  type: child-of
+  refs:
+  - bible:"Genesis 10:2"

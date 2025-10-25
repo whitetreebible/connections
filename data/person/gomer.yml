@@ -1,0 +1,26 @@
+id: gomer
+type: person
+name:
+  en: Gomer
+name_disambiguous:
+  en: Gomer (son of Japheth)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/japheth
+  type: child-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/ashkenaz
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:3"
+- target: person/riphath
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:3"
+- target: person/togarmah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:3"

@@ -1,0 +1,14 @@
+id: jobab
+type: person
+name:
+  en: Jobab
+name_disambiguous:
+  en: Jobab (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:29"

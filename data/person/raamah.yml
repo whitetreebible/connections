@@ -1,0 +1,22 @@
+id: raamah
+type: person
+name:
+  en: Raamah
+name_disambiguous:
+  en: Raamah (son of Cush)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cush
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/sheba
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/dedan
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:7"

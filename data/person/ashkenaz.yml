@@ -1,0 +1,14 @@
+id: ashkenaz
+type: person
+name:
+  en: Ashkenaz
+name_disambiguous:
+  en: Ashkenaz (son of Gomer)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gomer
+  type: child-of
+  refs:
+  - bible:"Genesis 10:3"

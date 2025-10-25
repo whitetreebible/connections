@@ -1,0 +1,14 @@
+id: mash
+type: person
+name:
+  en: Mash
+name_disambiguous:
+  en: Mash (son of Aram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/aram
+  type: child-of
+  refs:
+  - bible:"Genesis 10:23"

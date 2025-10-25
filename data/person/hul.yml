@@ -1,0 +1,14 @@
+id: hul
+type: person
+name:
+  en: Hul
+name_disambiguous:
+  en: Hul (son of Aram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/aram
+  type: child-of
+  refs:
+  - bible:"Genesis 10:23"

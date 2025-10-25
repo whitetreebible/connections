@@ -1,0 +1,14 @@
+id: elam
+type: person
+name:
+  en: Elam
+name_disambiguous:
+  en: Elam (son of Shem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shem
+  type: child-of
+  refs:
+  - bible:"Genesis 10:22"

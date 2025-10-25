@@ -1,0 +1,18 @@
+id: casluhim
+type: person
+name:
+  en: Casluhim
+name_disambiguous:
+  en: Casluhim (son of Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/egypt
+  type: child-of
+  refs:
+  - bible:"Genesis 10:14"
+- target: group/philistines
+  type: origin-of
+  refs:
+  - bible:"Genesis 10:14"

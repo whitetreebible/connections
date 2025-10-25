@@ -1,0 +1,14 @@
+id: kittim
+type: person
+name:
+  en: Kittim
+name_disambiguous:
+  en: Kittim (son of Javan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/javan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:4"

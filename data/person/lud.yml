@@ -1,0 +1,14 @@
+id: lud
+type: person
+name:
+  en: Lud
+name_disambiguous:
+  en: Lud (son of Shem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shem
+  type: child-of
+  refs:
+  - bible:"Genesis 10:22"

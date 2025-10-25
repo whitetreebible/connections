@@ -1,0 +1,14 @@
+id: tiras
+type: person
+name:
+  en: Tiras
+name_disambiguous:
+  en: Tiras (son of Japheth)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/japheth
+  type: child-of
+  refs:
+  - bible:"Genesis 10:2"

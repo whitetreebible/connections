@@ -1,0 +1,42 @@
+id: japheth
+type: person
+name:
+  en: Japheth
+name_disambiguous:
+  en: Japheth (son of Noah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/noah
+  type: child-of
+  refs:
+  - bible:"Genesis 5:32"
+- target: person/gomer
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/magog
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/madai
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/javan
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/tubal
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/meshech
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/tiras
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:2"

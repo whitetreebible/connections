@@ -26,3 +26,8 @@ edges:
   - bible:Ruth 1:20
 - target: being/god
   type: name-matches
+  refs: []
+- target: being/cherubim
+  type: appointed
+  refs:
+  - bible:"Genesis 3:24"

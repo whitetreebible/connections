@@ -1,0 +1,30 @@
+id: noah
+type: person
+name:
+  en: Noah
+name_disambiguous:
+  en: Noah (son of Lamech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lamech_son_of_methuselah
+  type: child-of
+  refs:
+  - bible:"Genesis 5:28"
+- target: person/shem
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:32"
+- target: person/ham
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:32"
+- target: person/japheth
+  type: parent-of
+  refs:
+  - bible:"Genesis 5:32"
+- target: person/noah_wife
+  type: married-to
+  refs:
+  - bible:"Genesis 6:18"

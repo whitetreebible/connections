@@ -1,0 +1,22 @@
+id: enoch_son_of_cain
+type: person
+name:
+  en: Enoch
+name_disambiguous:
+  en: Enoch (son of Cain)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cain
+  type: child-of
+  refs:
+  - bible:"Genesis 4:17"
+- target: person/irad
+  type: parent-of
+  refs:
+  - bible:"Genesis 4:18"
+- target: person/enoch
+  type: name-matches
+  refs:
+  - bible:"Genesis 4:17"

@@ -1,0 +1,14 @@
+id: dedan
+type: person
+name:
+  en: Dedan
+name_disambiguous:
+  en: Dedan (son of Raamah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/raamah
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"

@@ -1,0 +1,18 @@
+id: tubal_cain
+type: person
+name:
+  en: Tubal_Cain
+name_disambiguous:
+  en: Tubal_Cain (son of Lamech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lamech
+  type: child-of
+  refs:
+  - bible:"Genesis 4:22"
+- target: person/zillah
+  type: child-of
+  refs:
+  - bible:"Genesis 4:22"

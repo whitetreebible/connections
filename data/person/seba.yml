@@ -1,0 +1,14 @@
+id: seba
+type: person
+name:
+  en: Seba
+name_disambiguous:
+  en: Seba (son of Cush)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cush
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"

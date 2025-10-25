@@ -1,0 +1,18 @@
+id: jubal
+type: person
+name:
+  en: Jubal
+name_disambiguous:
+  en: Jubal (son of Lamech)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lamech
+  type: child-of
+  refs:
+  - bible:"Genesis 4:21"
+- target: person/adah
+  type: child-of
+  refs:
+  - bible:"Genesis 4:21"

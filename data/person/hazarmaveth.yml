@@ -1,0 +1,14 @@
+id: hazarmaveth
+type: person
+name:
+  en: Hazarmaveth
+name_disambiguous:
+  en: Hazarmaveth (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:26"

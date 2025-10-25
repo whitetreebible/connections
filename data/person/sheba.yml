@@ -1,0 +1,17 @@
+id: sheba
+type: person
+name:
+  en: Sheba
+name_disambiguous:
+  en: Sheba (son of Raamah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/raamah
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"
+- target: person/sheba_son_of_joktan
+  type: name-matches
+  refs: []

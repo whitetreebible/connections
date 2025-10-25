@@ -1,0 +1,30 @@
+id: javan
+type: person
+name:
+  en: Javan
+name_disambiguous:
+  en: Javan (son of Japheth)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/japheth
+  type: child-of
+  refs:
+  - bible:"Genesis 10:2"
+- target: person/elishah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:4"
+- target: person/tarshish
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:4"
+- target: person/kittim
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:4"
+- target: person/dodanim
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:4"

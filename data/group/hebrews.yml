@@ -1,0 +1,14 @@
+id: hebrews
+type: group
+name:
+  en: Hebrews
+name_disambiguous:
+  en: Hebrews (descendants of Shem through Eber)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eber
+  type: name-matches
+  refs:
+  - bible:"Genesis 10:21"

@@ -1,0 +1,14 @@
+id: tubal
+type: person
+name:
+  en: Tubal
+name_disambiguous:
+  en: Tubal (son of Japheth)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/japheth
+  type: child-of
+  refs:
+  - bible:"Genesis 10:2"

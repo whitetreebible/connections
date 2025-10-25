@@ -1,0 +1,14 @@
+id: sabteca
+type: person
+name:
+  en: Sabteca
+name_disambiguous:
+  en: Sabteca (son of Cush)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cush
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"

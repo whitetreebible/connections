@@ -1,0 +1,66 @@
+id: joktan
+type: person
+name:
+  en: Joktan
+name_disambiguous:
+  en: Joktan (son of Eber)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eber
+  type: child-of
+  refs:
+  - bible:"Genesis 10:25"
+- target: person/almodad
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:26"
+- target: person/sheleph
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:26"
+- target: person/hazarmaveth
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:26"
+- target: person/jerah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:26"
+- target: person/hadoram
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:27"
+- target: person/uzal
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:27"
+- target: person/diklah
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:28"
+- target: person/obal
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:28"
+- target: person/abimael
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:28"
+- target: person/sheba_son_of_joktan
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:28"
+- target: person/ophir
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:29"
+- target: person/havilah_son_of_joktan
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:29"
+- target: person/jobab
+  type: parent-of
+  refs:
+  - bible:"Genesis 10:29"

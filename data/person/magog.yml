@@ -1,0 +1,14 @@
+id: magog
+type: person
+name:
+  en: Magog
+name_disambiguous:
+  en: Magog (son of Japheth)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/japheth
+  type: child-of
+  refs:
+  - bible:"Genesis 10:2"

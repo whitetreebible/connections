@@ -1,0 +1,14 @@
+id: abimael
+type: person
+name:
+  en: Abimael
+name_disambiguous:
+  en: Abimael (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:28"

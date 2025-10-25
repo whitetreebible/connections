@@ -1,0 +1,14 @@
+id: cain_wife
+type: person
+name:
+  en: Cain_Wife
+name_disambiguous:
+  en: Cain_Wife (married to Cain)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cain
+  type: married-to
+  refs:
+  - bible:"Genesis 4:17"

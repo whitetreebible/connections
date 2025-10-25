@@ -1,0 +1,18 @@
+id: abel
+type: person
+name:
+  en: Abel
+name_disambiguous:
+  en: Abel (son of Adam)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/adam
+  type: child-of
+  refs:
+  - bible:"Genesis 4:2"
+- target: person/eve
+  type: child-of
+  refs:
+  - bible:"Genesis 4:2"

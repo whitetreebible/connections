@@ -1,0 +1,14 @@
+id: asshur
+type: person
+name:
+  en: Asshur
+name_disambiguous:
+  en: Asshur (son of Shem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shem
+  type: child-of
+  refs:
+  - bible:"Genesis 10:22"

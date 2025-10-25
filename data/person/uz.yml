@@ -1,0 +1,14 @@
+id: uz
+type: person
+name:
+  en: Uz
+name_disambiguous:
+  en: Uz (son of Aram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/aram
+  type: child-of
+  refs:
+  - bible:"Genesis 10:23"

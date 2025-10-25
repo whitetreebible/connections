@@ -1,0 +1,14 @@
+id: put
+type: person
+name:
+  en: Put
+name_disambiguous:
+  en: Put (son of Ham)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ham
+  type: child-of
+  refs:
+  - bible:"Genesis 10:6"

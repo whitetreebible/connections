@@ -1,0 +1,14 @@
+id: diklah
+type: person
+name:
+  en: Diklah
+name_disambiguous:
+  en: Diklah (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:28"

@@ -1,0 +1,14 @@
+id: almodad
+type: person
+name:
+  en: Almodad
+name_disambiguous:
+  en: Almodad (son of Joktan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joktan
+  type: child-of
+  refs:
+  - bible:"Genesis 10:26"

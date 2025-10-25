@@ -1,0 +1,14 @@
+id: sabtah
+type: person
+name:
+  en: Sabtah
+name_disambiguous:
+  en: Sabtah (son of Cush)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/cush
+  type: child-of
+  refs:
+  - bible:"Genesis 10:7"
