@@ -258,86 +258,86 @@
 <div class="mermaid">graph TD;
     style person/judah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/judah(["Judah"])
-    person/perez(["Perez"])
     person/hezron(["Hezron"])
+    person/perez(["Perez"])
     person/tamar(["Tamar"])
     click person/judah "../../person/judah/"
-    click person/perez "../../person/perez/"
     click person/hezron "../../person/hezron/"
+    click person/perez "../../person/perez/"
     click person/tamar "../../person/tamar/"
     person/judah --&gt;|parent of| person/perez
-    person/tamar --&gt;|parent of| person/perez
     person/perez --&gt;|parent of| person/hezron
-    person/tamar &lt;--&gt;|married to| person/judah
+    person/tamar --&gt;|parent of| person/perez
+    person/judah &lt;--&gt;|married to| person/tamar
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/judah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/bethlehem(["Bethlehem"])
     object/feet(["feet"])
-    object/grain(["grain"])
-    group/moabite(["Moabite"])
-    role/worthy_woman(["worthy woman"])
     person/ruth(["Ruth"])
-    theme/humility(["humility"])
     theme/leaving_family(["leaving family"])
-    object/wing(["wing"])
-    object/barley(["barley"])
-    person/leah(["Leah"])
-    group/israelite(["Israelite"])
-    place/ephrathah(["Ephrathah"])
-    person/rachel(["Rachel"])
-    object/bread(["bread"])
-    object/field(["field"])
-    being/yahweh(["Yahweh"])
-    person/judah(["Judah"])
     person/perez(["Perez"])
+    group/moabite(["Moabite"])
+    person/judah(["Judah"])
     person/tamar(["Tamar"])
-    object/wheat(["wheat"])
+    group/israelite(["Israelite"])
+    object/field(["field"])
     object/wine_vinegar(["wine vinegar"])
-    click place/bethlehem "../../place/bethlehem/"
+    object/bread(["bread"])
+    object/grain(["grain"])
+    person/rachel(["Rachel"])
+    being/yahweh(["Yahweh"])
+    theme/humility(["humility"])
+    object/wing(["wing"])
+    role/worthy_woman(["worthy woman"])
+    object/barley(["barley"])
+    place/bethlehem(["Bethlehem"])
+    place/ephrathah(["Ephrathah"])
+    person/leah(["Leah"])
+    object/wheat(["wheat"])
     click object/feet "../../object/feet/"
-    click object/grain "../../object/grain/"
-    click group/moabite "../../group/moabite/"
-    click role/worthy_woman "../../role/worthy_woman/"
     click person/ruth "../../person/ruth/"
-    click theme/humility "../../theme/humility/"
     click theme/leaving_family "../../theme/leaving_family/"
-    click object/wing "../../object/wing/"
-    click object/barley "../../object/barley/"
-    click person/leah "../../person/leah/"
-    click group/israelite "../../group/israelite/"
-    click place/ephrathah "../../place/ephrathah/"
-    click person/rachel "../../person/rachel/"
-    click object/bread "../../object/bread/"
-    click object/field "../../object/field/"
-    click being/yahweh "../../being/yahweh/"
-    click person/judah "../../person/judah/"
     click person/perez "../../person/perez/"
+    click group/moabite "../../group/moabite/"
+    click person/judah "../../person/judah/"
     click person/tamar "../../person/tamar/"
-    click object/wheat "../../object/wheat/"
+    click group/israelite "../../group/israelite/"
+    click object/field "../../object/field/"
     click object/wine_vinegar "../../object/wine_vinegar/"
-    person/ruth &lt;.-&gt;|associated with| person/leah
-    person/tamar &lt;.-&gt;|associated with| person/ruth
-    role/worthy_woman &lt;.-&gt;|associated with| person/ruth
-    person/judah &lt;.-&gt;|associated with| person/ruth
-    object/bread &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| place/bethlehem
-    object/wine_vinegar &lt;.-&gt;|associated with| person/ruth
-    object/barley &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/field
-    person/perez &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/wheat
-    group/moabite &lt;.-&gt;|associated with| person/ruth
-    being/yahweh &lt;.-&gt;|associated with| person/ruth
+    click object/bread "../../object/bread/"
+    click object/grain "../../object/grain/"
+    click person/rachel "../../person/rachel/"
+    click being/yahweh "../../being/yahweh/"
+    click theme/humility "../../theme/humility/"
+    click object/wing "../../object/wing/"
+    click role/worthy_woman "../../role/worthy_woman/"
+    click object/barley "../../object/barley/"
+    click place/bethlehem "../../place/bethlehem/"
+    click place/ephrathah "../../place/ephrathah/"
+    click person/leah "../../person/leah/"
+    click object/wheat "../../object/wheat/"
+    person/ruth &lt;.-&gt;|associated with| object/bread
     place/ephrathah &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/wing
+    person/ruth &lt;.-&gt;|associated with| being/yahweh
+    person/ruth &lt;.-&gt;|associated with| person/perez
     person/ruth &lt;.-&gt;|associated with| object/grain
-    person/ruth --&gt;|example of| theme/leaving_family
-    object/feet &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| object/field
+    person/ruth &lt;.-&gt;|associated with| place/bethlehem
+    person/ruth &lt;.-&gt;|associated with| group/moabite
+    person/ruth &lt;.-&gt;|associated with| person/leah
+    role/worthy_woman &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| group/israelite
+    person/ruth &lt;.-&gt;|associated with| object/wheat
+    object/wing &lt;.-&gt;|associated with| person/ruth
     person/rachel &lt;.-&gt;|associated with| person/ruth
-    group/israelite &lt;.-&gt;|associated with| person/ruth
+    object/barley &lt;.-&gt;|associated with| person/ruth
+    person/judah &lt;.-&gt;|associated with| person/ruth
+    person/tamar &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| object/wine_vinegar
+    person/ruth --&gt;|example of| theme/leaving_family
     person/ruth --&gt;|example of| theme/humility
+    object/feet &lt;.-&gt;|associated with| person/ruth
 </div>
 </article>
 </div>

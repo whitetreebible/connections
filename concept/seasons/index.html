@@ -229,22 +229,22 @@
 <div class="mermaid">graph TD;
     style concept/seasons fill:#2fa4e7,stroke:#333,stroke-width:4px;
     concept/years(["years"])
-    concept/seasons(["seasons"])
-    place/expanse(["expanse"])
-    concept/days(["days"])
-    object/lights(["lights"])
     concept/signs(["signs"])
+    object/lights(["lights"])
+    place/expanse(["expanse"])
+    concept/seasons(["seasons"])
+    concept/days(["days"])
     click concept/years "../../concept/years/"
-    click concept/seasons "../../concept/seasons/"
-    click place/expanse "../../place/expanse/"
-    click concept/days "../../concept/days/"
-    click object/lights "../../object/lights/"
     click concept/signs "../../concept/signs/"
-    object/lights .-&gt;|associated with| concept/seasons
+    click object/lights "../../object/lights/"
+    click place/expanse "../../place/expanse/"
+    click concept/seasons "../../concept/seasons/"
+    click concept/days "../../concept/days/"
     object/lights .-&gt;|associated with| concept/signs
     place/expanse .-&gt;|associated with| object/lights
-    object/lights .-&gt;|associated with| concept/years
     object/lights .-&gt;|associated with| concept/days
+    object/lights .-&gt;|associated with| concept/seasons
+    object/lights .-&gt;|associated with| concept/years
 </div>
 </article>
 </div>

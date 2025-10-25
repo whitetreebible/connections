@@ -256,62 +256,62 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/ham(["Ham"])
+    person/sidon(["Sidon"])
+    person/cush(["Cush"])
+    person/canaan(["Canaan"])
     person/egypt(["Egypt"])
     person/noah(["Noah"])
-    person/ham(["Ham"])
-    person/put(["Put"])
-    person/cush(["Cush"])
     person/heth(["Heth"])
-    person/sidon(["Sidon"])
-    person/canaan(["Canaan"])
+    person/put(["Put"])
+    click person/ham "../../person/ham/"
+    click person/sidon "../../person/sidon/"
+    click person/cush "../../person/cush/"
+    click person/canaan "../../person/canaan/"
     click person/egypt "../../person/egypt/"
     click person/noah "../../person/noah/"
-    click person/ham "../../person/ham/"
-    click person/put "../../person/put/"
-    click person/cush "../../person/cush/"
     click person/heth "../../person/heth/"
-    click person/sidon "../../person/sidon/"
-    click person/canaan "../../person/canaan/"
-    person/ham --&gt;|parent of| person/cush
-    person/ham --&gt;|parent of| person/egypt
-    person/noah --&gt;|parent of| person/ham
-    person/ham --&gt;|parent of| person/put
+    click person/put "../../person/put/"
     person/canaan --&gt;|parent of| person/sidon
-    person/ham --&gt;|parent of| person/canaan
+    person/ham --&gt;|parent of| person/cush
+    person/ham --&gt;|parent of| person/put
+    person/noah --&gt;|parent of| person/ham
+    person/ham --&gt;|parent of| person/egypt
     person/canaan --&gt;|parent of| person/heth
+    person/ham --&gt;|parent of| person/canaan
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/jebusites(["Jebusites"])
-    group/girgashites(["Girgashites"])
-    group/hamathites(["Hamathites"])
+    group/amorites(["Amorites"])
     group/arkites(["Arkites"])
     group/arvadites(["Arvadites"])
-    group/amorites(["Amorites"])
-    group/hivites(["Hivites"])
-    person/canaan(["Canaan"])
+    group/jebusites(["Jebusites"])
     group/sinites(["Sinites"])
+    person/canaan(["Canaan"])
     group/zemarites(["Zemarites"])
-    click group/jebusites "../../group/jebusites/"
-    click group/girgashites "../../group/girgashites/"
-    click group/hamathites "../../group/hamathites/"
+    group/hamathites(["Hamathites"])
+    group/girgashites(["Girgashites"])
+    group/hivites(["Hivites"])
+    click group/amorites "../../group/amorites/"
     click group/arkites "../../group/arkites/"
     click group/arvadites "../../group/arvadites/"
-    click group/amorites "../../group/amorites/"
-    click group/hivites "../../group/hivites/"
-    click person/canaan "../../person/canaan/"
+    click group/jebusites "../../group/jebusites/"
     click group/sinites "../../group/sinites/"
+    click person/canaan "../../person/canaan/"
     click group/zemarites "../../group/zemarites/"
-    person/canaan --&gt;|origin of| group/hivites
-    person/canaan --&gt;|origin of| group/hamathites
-    person/canaan --&gt;|origin of| group/arvadites
+    click group/hamathites "../../group/hamathites/"
+    click group/girgashites "../../group/girgashites/"
+    click group/hivites "../../group/hivites/"
     person/canaan --&gt;|origin of| group/amorites
-    person/canaan --&gt;|origin of| group/sinites
     person/canaan --&gt;|origin of| group/arkites
     person/canaan --&gt;|origin of| group/zemarites
-    person/canaan --&gt;|origin of| group/jebusites
+    person/canaan --&gt;|origin of| group/arvadites
+    person/canaan --&gt;|origin of| group/hamathites
     person/canaan --&gt;|origin of| group/girgashites
+    person/canaan --&gt;|origin of| group/hivites
+    person/canaan --&gt;|origin of| group/sinites
+    person/canaan --&gt;|origin of| group/jebusites
 </div>
 </article>
 </div>

@@ -255,29 +255,29 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/lamech_son_of_methuselah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/noah_wife(["Noah's wife"])
+    person/enoch(["Enoch"])
+    person/ham(["Ham"])
+    person/shem(["Shem"])
     person/japheth(["Japheth"])
     person/methuselah(["Methuselah"])
     person/noah(["Noah"])
-    person/ham(["Ham"])
-    person/shem(["Shem"])
     person/lamech_son_of_methuselah(["Lamech"])
-    person/enoch(["Enoch"])
-    click person/noah_wife "../../person/noah_wife/"
+    person/noah_wife(["Noah's wife"])
+    click person/enoch "../../person/enoch/"
+    click person/ham "../../person/ham/"
+    click person/shem "../../person/shem/"
     click person/japheth "../../person/japheth/"
     click person/methuselah "../../person/methuselah/"
     click person/noah "../../person/noah/"
-    click person/ham "../../person/ham/"
-    click person/shem "../../person/shem/"
     click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
-    click person/enoch "../../person/enoch/"
-    person/noah --&gt;|parent of| person/japheth
-    person/noah --&gt;|parent of| person/shem
+    click person/noah_wife "../../person/noah_wife/"
     person/noah_wife &lt;--&gt;|married to| person/noah
     person/enoch --&gt;|parent of| person/methuselah
     person/methuselah --&gt;|parent of| person/lamech_son_of_methuselah
-    person/noah --&gt;|child of| person/lamech_son_of_methuselah
     person/noah --&gt;|parent of| person/ham
+    person/noah --&gt;|parent of| person/japheth
+    person/noah --&gt;|child of| person/lamech_son_of_methuselah
+    person/noah --&gt;|parent of| person/shem
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
@@ -286,7 +286,7 @@
     person/lamech(["Lamech"])
     click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
     click person/lamech "../../person/lamech/"
-    person/lamech &lt;--&gt;|name matches| person/lamech_son_of_methuselah
+    person/lamech_son_of_methuselah &lt;--&gt;|name matches| person/lamech
 </div>
 </article>
 </div>

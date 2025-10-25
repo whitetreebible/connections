@@ -242,30 +242,30 @@
 <h2 id="shelah-son-of-arphaxad">Shelah (son of Arphaxad)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Child of</strong> <a href="../../person/arphaxad/">Arphaxad</a> (<a href="https://biblehub.com/context/genesis/10-24.htm" target="_blank">Genesis 10:24</a>)</li>
-<li><strong>Parent of</strong> <a href="../../person/eber/">Eber</a> (<a href="https://biblehub.com/context/genesis/10-25.htm" target="_blank">Genesis 10:25</a>)</li>
+<li><strong>Child of</strong> <a href="../../person/arphaxad/">Arphaxad</a> (<a href="https://biblehub.com/context/genesis/10-24.htm" target="_blank">Genesis 10:24</a>, <a href="https://biblehub.com/context/genesis/11-12.htm" target="_blank">Genesis 11:12</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/eber/">Eber</a> (<a href="https://biblehub.com/context/genesis/10-25.htm" target="_blank">Genesis 10:25</a>, <a href="https://biblehub.com/context/genesis/11-14.htm" target="_blank">Genesis 11:14</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/shelah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/peleg(["Peleg"])
     person/joktan(["Joktan"])
     person/shem(["Shem"])
-    person/arphaxad(["Arphaxad"])
+    person/peleg(["Peleg"])
     person/shelah(["Shelah"])
+    person/arphaxad(["Arphaxad"])
     person/eber(["Eber"])
-    click person/peleg "../../person/peleg/"
     click person/joktan "../../person/joktan/"
     click person/shem "../../person/shem/"
-    click person/arphaxad "../../person/arphaxad/"
+    click person/peleg "../../person/peleg/"
     click person/shelah "../../person/shelah/"
+    click person/arphaxad "../../person/arphaxad/"
     click person/eber "../../person/eber/"
-    person/eber --&gt;|parent of| person/peleg
+    person/shem --&gt;|parent of| person/arphaxad
     person/shem .-&gt;|ancestor of| person/eber
     person/eber --&gt;|parent of| person/joktan
-    person/shelah --&gt;|parent of| person/eber
-    person/shem --&gt;|parent of| person/arphaxad
+    person/eber --&gt;|parent of| person/peleg
     person/arphaxad --&gt;|parent of| person/shelah
+    person/shelah --&gt;|parent of| person/eber
 </div>
 </article>
 </div>

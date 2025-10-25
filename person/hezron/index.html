@@ -249,23 +249,23 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/hezron fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/ram(["Ram"])
-    person/judah(["Judah"])
-    person/perez(["Perez"])
-    person/amminadab(["Amminadab"])
-    person/tamar(["Tamar"])
     person/hezron(["Hezron"])
-    click person/ram "../../person/ram/"
-    click person/judah "../../person/judah/"
-    click person/perez "../../person/perez/"
-    click person/amminadab "../../person/amminadab/"
-    click person/tamar "../../person/tamar/"
+    person/perez(["Perez"])
+    person/judah(["Judah"])
+    person/tamar(["Tamar"])
+    person/amminadab(["Amminadab"])
+    person/ram(["Ram"])
     click person/hezron "../../person/hezron/"
+    click person/perez "../../person/perez/"
+    click person/judah "../../person/judah/"
+    click person/tamar "../../person/tamar/"
+    click person/amminadab "../../person/amminadab/"
+    click person/ram "../../person/ram/"
     person/judah --&gt;|parent of| person/perez
-    person/tamar --&gt;|parent of| person/perez
     person/perez --&gt;|parent of| person/hezron
-    person/ram --&gt;|parent of| person/amminadab
     person/hezron --&gt;|parent of| person/ram
+    person/ram --&gt;|parent of| person/amminadab
+    person/tamar --&gt;|parent of| person/perez
 </div>
 </article>
 </div>

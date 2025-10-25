@@ -255,30 +255,36 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style being/shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/naomi(["Naomi"])
     being/yahweh(["Yahweh"])
     being/shaddai(["Shaddai"])
-    person/naomi(["Naomi"])
+    click person/naomi "../../person/naomi/"
     click being/yahweh "../../being/yahweh/"
     click being/shaddai "../../being/shaddai/"
-    click person/naomi "../../person/naomi/"
-    person/naomi &lt;--&gt;|enemy of| being/yahweh
     person/naomi &lt;--&gt;|enemy of| being/shaddai
+    person/naomi &lt;--&gt;|enemy of| being/yahweh
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/god(["God"])
-    being/yahweh(["Yahweh"])
     person/ruth(["Ruth"])
     being/shaddai(["Shaddai"])
-    click being/god "../../being/god/"
-    click being/yahweh "../../being/yahweh/"
+    being/el-shaddai(["El Shaddai"])
+    being/yahweh(["Yahweh"])
+    being/god(["God"])
+    being/el-roi(["El Roi"])
     click person/ruth "../../person/ruth/"
     click being/shaddai "../../being/shaddai/"
+    click being/el-shaddai "../../being/el-shaddai/"
+    click being/yahweh "../../being/yahweh/"
+    click being/god "../../being/god/"
+    click being/el-roi "../../being/el-roi/"
     being/yahweh &lt;--&gt;|name matches| being/god
-    person/ruth &lt;.-&gt;|associated with| being/yahweh
-    being/shaddai &lt;--&gt;|name matches| being/yahweh
+    being/el-roi &lt;--&gt;|name matches| being/yahweh
+    being/yahweh &lt;.-&gt;|associated with| person/ruth
     being/shaddai &lt;--&gt;|name matches| being/god
+    being/shaddai &lt;--&gt;|name matches| being/yahweh
+    being/el-shaddai &lt;--&gt;|name matches| being/yahweh
 </div>
 </article>
 </div>

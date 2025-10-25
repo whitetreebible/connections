@@ -255,14 +255,14 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/sheba fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/dedan(["Dedan"])
-    person/raamah(["Raamah"])
-    person/sheba(["Sheba"])
     person/cush(["Cush"])
-    click person/dedan "../../person/dedan/"
-    click person/raamah "../../person/raamah/"
-    click person/sheba "../../person/sheba/"
+    person/raamah(["Raamah"])
+    person/dedan(["Dedan"])
+    person/sheba(["Sheba"])
     click person/cush "../../person/cush/"
+    click person/raamah "../../person/raamah/"
+    click person/dedan "../../person/dedan/"
+    click person/sheba "../../person/sheba/"
     person/cush --&gt;|parent of| person/raamah
     person/raamah --&gt;|parent of| person/sheba
     person/raamah --&gt;|parent of| person/dedan
@@ -270,10 +270,10 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/sheba fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sheba(["Sheba"])
     person/sheba_son_of_joktan(["Sheba"])
-    click person/sheba "../../person/sheba/"
+    person/sheba(["Sheba"])
     click person/sheba_son_of_joktan "../../person/sheba_son_of_joktan/"
+    click person/sheba "../../person/sheba/"
     person/sheba_son_of_joktan &lt;--&gt;|name matches| person/sheba
 </div>
 </article>

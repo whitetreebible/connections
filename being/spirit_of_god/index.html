@@ -247,16 +247,16 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/spirit_of_god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    object/wing(["wing"])
-    place/expanse(["expanse"])
     being/spirit_of_god(["Spirit of God"])
+    object/wing(["wing"])
     animal/bird(["bird"])
-    click object/wing "../../object/wing/"
-    click place/expanse "../../place/expanse/"
+    place/expanse(["expanse"])
     click being/spirit_of_god "../../being/spirit_of_god/"
+    click object/wing "../../object/wing/"
     click animal/bird "../../animal/bird/"
-    animal/bird .-&gt;|associated with| object/wing
+    click place/expanse "../../place/expanse/"
     place/expanse .-&gt;|associated with| animal/bird
+    animal/bird .-&gt;|associated with| object/wing
     being/spirit_of_god .-&gt;|associated with| animal/bird
 </div>
 </article>

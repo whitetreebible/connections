@@ -242,24 +242,31 @@
 <h2 id="peleg-son-of-eber">Peleg (son of Eber)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Child of</strong> <a href="../../person/eber/">Eber</a> (<a href="https://biblehub.com/context/genesis/10-25.htm" target="_blank">Genesis 10:25</a>)</li>
+<li><strong>Child of</strong> <a href="../../person/eber/">Eber</a> (<a href="https://biblehub.com/context/genesis/10-25.htm" target="_blank">Genesis 10:25</a>, <a href="https://biblehub.com/context/genesis/11-16.htm" target="_blank">Genesis 11:16</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/reu/">Reu</a> (<a href="https://biblehub.com/context/genesis/11-18.htm" target="_blank">Genesis 11:18</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/peleg fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/peleg(["Peleg"])
     person/joktan(["Joktan"])
     person/shem(["Shem"])
+    person/serug(["Serug"])
     person/shelah(["Shelah"])
+    person/peleg(["Peleg"])
+    person/reu(["Reu"])
     person/eber(["Eber"])
-    click person/peleg "../../person/peleg/"
     click person/joktan "../../person/joktan/"
     click person/shem "../../person/shem/"
+    click person/serug "../../person/serug/"
     click person/shelah "../../person/shelah/"
+    click person/peleg "../../person/peleg/"
+    click person/reu "../../person/reu/"
     click person/eber "../../person/eber/"
-    person/eber --&gt;|parent of| person/peleg
-    person/eber --&gt;|parent of| person/joktan
+    person/peleg --&gt;|parent of| person/reu
     person/shem .-&gt;|ancestor of| person/eber
+    person/eber --&gt;|parent of| person/joktan
+    person/eber --&gt;|parent of| person/peleg
+    person/reu --&gt;|parent of| person/serug
     person/shelah --&gt;|parent of| person/eber
 </div>
 </article>

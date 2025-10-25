@@ -247,17 +247,17 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/heth fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/ham(["Ham"])
     person/canaan(["Canaan"])
     person/heth(["Heth"])
-    person/ham(["Ham"])
     person/sidon(["Sidon"])
+    click person/ham "../../person/ham/"
     click person/canaan "../../person/canaan/"
     click person/heth "../../person/heth/"
-    click person/ham "../../person/ham/"
     click person/sidon "../../person/sidon/"
     person/canaan --&gt;|parent of| person/sidon
-    person/ham --&gt;|parent of| person/canaan
     person/canaan --&gt;|parent of| person/heth
+    person/ham --&gt;|parent of| person/canaan
 </div>
 </article>
 </div>

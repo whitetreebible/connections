@@ -241,19 +241,19 @@
 <h1 id="stars">stars</h1>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Resident of</strong> <a href="../../place/heavens/">place/heavens</a> (<a href="https://biblehub.com/context/genesis/1-16.htm" target="_blank">Genesis 1:16</a>)</li>
+<li><strong>Resident of</strong> <a href="../../place/heavens/">heavens</a> (<a href="https://biblehub.com/context/genesis/1-16.htm" target="_blank">Genesis 1:16</a>)</li>
 </ul>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style object/stars fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    object/greater_light(["greater light"])
     object/lesser_light(["lesser light"])
     place/heavens(["heavens"])
     object/stars(["stars"])
-    object/greater_light(["greater light"])
+    click object/greater_light "../../object/greater_light/"
     click object/lesser_light "../../object/lesser_light/"
     click place/heavens "../../place/heavens/"
     click object/stars "../../object/stars/"
-    click object/greater_light "../../object/greater_light/"
     object/lesser_light --&gt;|resident of| place/heavens
     object/stars --&gt;|resident of| place/heavens
     object/greater_light --&gt;|resident of| place/heavens
@@ -261,17 +261,17 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style object/stars fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/heavens(["heavens"])
-    object/lesser_light(["lesser light"])
-    object/stars(["stars"])
     object/greater_light(["greater light"])
-    click place/heavens "../../place/heavens/"
-    click object/lesser_light "../../object/lesser_light/"
-    click object/stars "../../object/stars/"
+    object/lesser_light(["lesser light"])
+    place/heavens(["heavens"])
+    object/stars(["stars"])
     click object/greater_light "../../object/greater_light/"
+    click object/lesser_light "../../object/lesser_light/"
+    click place/heavens "../../place/heavens/"
+    click object/stars "../../object/stars/"
+    place/heavens .-&gt;|associated with| object/stars
     place/heavens .-&gt;|associated with| object/lesser_light
     place/heavens .-&gt;|associated with| object/greater_light
-    place/heavens .-&gt;|associated with| object/stars
 </div>
 </article>
 </div>

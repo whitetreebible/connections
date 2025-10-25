@@ -248,32 +248,32 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/eve fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/adam(["Adam"])
-    person/seth(["Seth"])
-    person/abel(["Abel"])
     person/cain(["Cain"])
-    person/cain_wife(["Cain_Wife"])
-    person/enosh(["Enosh"])
-    person/enoch_son_of_cain(["Enoch"])
     person/eve(["Eve"])
-    click person/adam "../../person/adam/"
-    click person/seth "../../person/seth/"
-    click person/abel "../../person/abel/"
+    person/enosh(["Enosh"])
+    person/seth(["Seth"])
+    person/enoch_son_of_cain(["Enoch"])
+    person/adam(["Adam"])
+    person/cain_wife(["Cain_Wife"])
+    person/abel(["Abel"])
     click person/cain "../../person/cain/"
-    click person/cain_wife "../../person/cain_wife/"
-    click person/enosh "../../person/enosh/"
-    click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
     click person/eve "../../person/eve/"
-    person/adam --&gt;|parent of| person/abel
-    person/eve --&gt;|parent of| person/abel
+    click person/enosh "../../person/enosh/"
+    click person/seth "../../person/seth/"
+    click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
+    click person/adam "../../person/adam/"
+    click person/cain_wife "../../person/cain_wife/"
+    click person/abel "../../person/abel/"
     person/seth --&gt;|parent of| person/enosh
     person/adam &lt;--&gt;|married to| person/eve
-    person/cain_wife &lt;--&gt;|married to| person/cain
     person/adam --&gt;|parent of| person/seth
-    person/eve --&gt;|parent of| person/cain
-    person/cain --&gt;|parent of| person/enoch_son_of_cain
-    person/adam --&gt;|parent of| person/cain
+    person/eve --&gt;|parent of| person/abel
+    person/adam --&gt;|parent of| person/abel
     person/eve --&gt;|parent of| person/seth
+    person/eve --&gt;|parent of| person/cain
+    person/adam --&gt;|parent of| person/cain
+    person/cain &lt;--&gt;|married to| person/cain_wife
+    person/cain --&gt;|parent of| person/enoch_son_of_cain
 </div>
 </article>
 </div>

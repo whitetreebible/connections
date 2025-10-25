@@ -256,20 +256,20 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/enoch fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/methuselah(["Methuselah"])
-    person/mahalalel(["Mahalalel"])
-    person/lamech_son_of_methuselah(["Lamech"])
     person/enoch(["Enoch"])
+    person/mahalalel(["Mahalalel"])
     person/jared(["Jared"])
-    click person/methuselah "../../person/methuselah/"
-    click person/mahalalel "../../person/mahalalel/"
-    click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
+    person/methuselah(["Methuselah"])
+    person/lamech_son_of_methuselah(["Lamech"])
     click person/enoch "../../person/enoch/"
+    click person/mahalalel "../../person/mahalalel/"
     click person/jared "../../person/jared/"
-    person/mahalalel --&gt;|parent of| person/jared
+    click person/methuselah "../../person/methuselah/"
+    click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
     person/enoch --&gt;|parent of| person/methuselah
-    person/methuselah --&gt;|parent of| person/lamech_son_of_methuselah
     person/jared --&gt;|parent of| person/enoch
+    person/methuselah --&gt;|parent of| person/lamech_son_of_methuselah
+    person/mahalalel --&gt;|parent of| person/jared
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;

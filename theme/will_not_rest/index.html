@@ -239,29 +239,29 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style theme/will_not_rest fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/boaz(["Boaz"])
-    place/bethlehem(["Bethlehem"])
-    theme/hospitality(["hospitality"])
     object/field(["field"])
+    theme/hospitality(["hospitality"])
     event/drinking(["drinking"])
+    person/boaz(["Boaz"])
     theme/will_not_rest(["will not rest"])
     object/city_gate(["city gate"])
+    place/bethlehem(["Bethlehem"])
     object/wing(["wing"])
-    click person/boaz "../../person/boaz/"
-    click place/bethlehem "../../place/bethlehem/"
-    click theme/hospitality "../../theme/hospitality/"
     click object/field "../../object/field/"
+    click theme/hospitality "../../theme/hospitality/"
     click event/drinking "../../event/drinking/"
+    click person/boaz "../../person/boaz/"
     click theme/will_not_rest "../../theme/will_not_rest/"
     click object/city_gate "../../object/city_gate/"
+    click place/bethlehem "../../place/bethlehem/"
     click object/wing "../../object/wing/"
-    theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
-    person/boaz &lt;.-&gt;|associated with| object/wing
     person/boaz --&gt;|example of| theme/hospitality
+    place/bethlehem .-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| object/wing
+    object/city_gate &lt;.-&gt;|associated with| person/boaz
+    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
     person/boaz &lt;.-&gt;|associated with| object/field
     person/boaz &lt;.-&gt;|associated with| event/drinking
-    object/city_gate &lt;.-&gt;|associated with| person/boaz
-    place/bethlehem .-&gt;|associated with| person/boaz
 </div>
 </article>
 </div>
