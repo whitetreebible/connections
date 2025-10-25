@@ -264,61 +264,61 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/elimelechs_redeemer fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
     person/boaz(["Boaz"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
+    person/obed(["Obed"])
     person/ruth(["Ruth"])
     person/kilion(["Kilion"])
-    person/obed(["Obed"])
+    person/naomi(["Naomi"])
     person/mahlon(["Mahlon"])
     person/elimelech(["Elimelech"])
-    click person/naomi "../../person/naomi/"
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     click person/boaz "../../person/boaz/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    click person/obed "../../person/obed/"
     click person/ruth "../../person/ruth/"
     click person/kilion "../../person/kilion/"
-    click person/obed "../../person/obed/"
+    click person/naomi "../../person/naomi/"
     click person/mahlon "../../person/mahlon/"
     click person/elimelech "../../person/elimelech/"
-    person/naomi --&gt;|parent of| person/ruth
-    person/ruth --&gt;|parent of| person/obed
-    person/naomi --&gt;|parent of| person/obed
-    person/elimelech --&gt;|parent of| person/kilion
-    person/naomi &lt;--&gt;|married to| person/elimelech
-    person/ruth --&gt;|related to| person/elimelechs_redeemer
-    person/boaz &lt;--&gt;|married to| person/ruth
-    person/naomi --&gt;|parent of| person/mahlon
-    person/naomi --&gt;|related to| person/elimelechs_redeemer
-    person/elimelech --&gt;|related to| person/boaz
     person/elimelech --&gt;|parent of| person/mahlon
-    person/kilion &lt;--&gt;|married to| person/ruth
+    person/elimelech --&gt;|parent of| person/kilion
+    person/ruth --&gt;|parent of| person/obed
+    person/elimelech &lt;--&gt;|married to| person/naomi
+    person/ruth &lt;--&gt;|married to| person/boaz
+    person/ruth &lt;--&gt;|married to| person/kilion
+    person/naomi --&gt;|parent of| person/ruth
     person/naomi --&gt;|parent of| person/kilion
+    person/naomi --&gt;|parent of| person/obed
+    person/naomi --&gt;|parent of| person/mahlon
+    person/ruth --&gt;|related to| person/elimelechs_redeemer
     person/elimelech --&gt;|related to| person/elimelechs_redeemer
+    person/elimelech --&gt;|related to| person/boaz
+    person/naomi --&gt;|related to| person/elimelechs_redeemer
 </div>
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style person/elimelechs_redeemer fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    person/boaz(["Boaz"])
     role/redeemer(["redeemer"])
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click person/boaz "../../person/boaz/"
+    person/boaz(["Boaz"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
     click role/redeemer "../../role/redeemer/"
+    click person/boaz "../../person/boaz/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     person/boaz --&gt;|role as| role/redeemer
     person/elimelechs_redeemer --&gt;|role as| role/redeemer
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/elimelechs_redeemer fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    symbol/unsandaled_one(["unsandaled one"])
     person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    person/boaz(["Boaz"])
     object/city_gate(["city gate"])
-    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
+    symbol/unsandaled_one(["unsandaled one"])
+    person/boaz(["Boaz"])
     click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click person/boaz "../../person/boaz/"
     click object/city_gate "../../object/city_gate/"
-    person/elimelechs_redeemer &lt;.-&gt;|associated with| object/city_gate
+    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
+    click person/boaz "../../person/boaz/"
+    object/city_gate &lt;.-&gt;|associated with| person/elimelechs_redeemer
     object/city_gate &lt;.-&gt;|associated with| person/boaz
     person/elimelechs_redeemer --&gt;|example of| symbol/unsandaled_one
 </div>

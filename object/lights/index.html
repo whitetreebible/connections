@@ -264,101 +264,101 @@
 <div class="mermaid">graph TD;
     style object/lights fill:#2fa4e7,stroke:#333,stroke-width:4px;
     object/lights(["lights"])
-    place/expanse(["expanse"])
     animal/bird(["bird"])
+    place/expanse(["expanse"])
     click object/lights "../../object/lights/"
-    click place/expanse "../../place/expanse/"
     click animal/bird "../../animal/bird/"
-    animal/bird --&gt;|resident of| place/expanse
+    click place/expanse "../../place/expanse/"
     object/lights --&gt;|resident of| place/expanse
+    animal/bird --&gt;|resident of| place/expanse
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style object/lights fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    animal/living_creatures(["living creatures"])
-    place/earth(["earth"])
     being/human(["human"])
-    object/lesser_light(["lesser light"])
+    place/expanse(["expanse"])
     being/god(["God"])
     object/lights(["lights"])
+    object/lesser_light(["lesser light"])
+    place/heavens(["heavens"])
+    concept/dry_land(["dry_land"])
     concept/night(["night"])
-    animal/crawlers(["crawlers"])
-    object/greater_light(["greater light"])
+    concept/day(["day"])
+    animal/sea_creature(["sea creature"])
     animal/bird(["bird"])
-    place/expanse(["expanse"])
-    animal/sea_dragon(["sea dragon"])
     concept/light(["light"])
     plant/vegetation(["vegetation"])
-    animal/sea_creature(["sea creature"])
-    concept/dry_land(["dry_land"])
-    place/heavens(["heavens"])
+    object/greater_light(["greater light"])
     animal/livestock(["livestock"])
-    concept/day(["day"])
-    click animal/living_creatures "../../animal/living_creatures/"
-    click place/earth "../../place/earth/"
+    animal/crawlers(["crawlers"])
+    place/earth(["earth"])
+    animal/sea_dragon(["sea dragon"])
+    animal/living_creatures(["living creatures"])
     click being/human "../../being/human/"
-    click object/lesser_light "../../object/lesser_light/"
+    click place/expanse "../../place/expanse/"
     click being/god "../../being/god/"
     click object/lights "../../object/lights/"
+    click object/lesser_light "../../object/lesser_light/"
+    click place/heavens "../../place/heavens/"
+    click concept/dry_land "../../concept/dry_land/"
     click concept/night "../../concept/night/"
-    click animal/crawlers "../../animal/crawlers/"
-    click object/greater_light "../../object/greater_light/"
+    click concept/day "../../concept/day/"
+    click animal/sea_creature "../../animal/sea_creature/"
     click animal/bird "../../animal/bird/"
-    click place/expanse "../../place/expanse/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
     click concept/light "../../concept/light/"
     click plant/vegetation "../../plant/vegetation/"
-    click animal/sea_creature "../../animal/sea_creature/"
-    click concept/dry_land "../../concept/dry_land/"
-    click place/heavens "../../place/heavens/"
+    click object/greater_light "../../object/greater_light/"
     click animal/livestock "../../animal/livestock/"
-    click concept/day "../../concept/day/"
-    being/god --&gt;|blessed| animal/sea_dragon
-    being/god --&gt;|created| animal/sea_dragon
-    being/god --&gt;|created| place/earth
+    click animal/crawlers "../../animal/crawlers/"
+    click place/earth "../../place/earth/"
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click animal/living_creatures "../../animal/living_creatures/"
     being/god --&gt;|created| animal/livestock
+    being/god --&gt;|created| animal/living_creatures
+    being/god --&gt;|created| animal/crawlers
+    being/god --&gt;|created| object/lesser_light
     being/god --&gt;|blessed| animal/bird
     being/god --&gt;|created| animal/bird
-    being/god --&gt;|created| object/lesser_light
-    being/god --&gt;|created| plant/vegetation
-    being/god --&gt;|created| concept/light
-    being/god --&gt;|created| place/expanse
-    being/god --&gt;|created| object/greater_light
-    being/god --&gt;|blessed| being/human
-    being/god --&gt;|created| being/human
-    being/god --&gt;|created| object/lights
-    being/god --&gt;|created| place/heavens
-    being/god --&gt;|created| concept/day
+    being/god --&gt;|created| concept/dry_land
     being/god --&gt;|blessed| animal/sea_creature
     being/god --&gt;|created| animal/sea_creature
-    being/god --&gt;|created| animal/living_creatures
-    being/god --&gt;|created| concept/dry_land
     being/god --&gt;|created| concept/night
-    being/god --&gt;|created| animal/crawlers
+    being/god --&gt;|blessed| being/human
+    being/god --&gt;|created| being/human
+    being/god --&gt;|created| concept/day
+    being/god --&gt;|created| place/heavens
+    being/god --&gt;|blessed| animal/sea_dragon
+    being/god --&gt;|created| animal/sea_dragon
+    being/god --&gt;|created| object/lights
+    being/god --&gt;|created| object/greater_light
+    being/god --&gt;|created| place/expanse
+    being/god --&gt;|created| plant/vegetation
+    being/god --&gt;|created| place/earth
+    being/god --&gt;|created| concept/light
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style object/lights fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    object/lights(["lights"])
-    concept/days(["days"])
     concept/years(["years"])
-    concept/signs(["signs"])
-    animal/bird(["bird"])
     concept/seasons(["seasons"])
+    animal/bird(["bird"])
     place/expanse(["expanse"])
-    click object/lights "../../object/lights/"
-    click concept/days "../../concept/days/"
+    concept/days(["days"])
+    object/lights(["lights"])
+    concept/signs(["signs"])
     click concept/years "../../concept/years/"
-    click concept/signs "../../concept/signs/"
-    click animal/bird "../../animal/bird/"
     click concept/seasons "../../concept/seasons/"
+    click animal/bird "../../animal/bird/"
     click place/expanse "../../place/expanse/"
-    object/lights .-&gt;|associated with| concept/signs
-    object/lights .-&gt;|associated with| concept/days
-    place/expanse .-&gt;|associated with| object/lights
+    click concept/days "../../concept/days/"
+    click object/lights "../../object/lights/"
+    click concept/signs "../../concept/signs/"
     object/lights .-&gt;|associated with| concept/seasons
+    object/lights .-&gt;|associated with| concept/signs
     place/expanse .-&gt;|associated with| animal/bird
+    place/expanse .-&gt;|associated with| object/lights
     object/lights .-&gt;|associated with| concept/years
+    object/lights .-&gt;|associated with| concept/days
 </div>
 </article>
 </div>

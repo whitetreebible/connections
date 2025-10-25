@@ -2,577 +2,1189 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
     <url>
         <loc>https://connections.whitetreebible.com/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/about/about-us/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/about/about-us/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/about/contributing/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/about/contributing/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/about/get-email-updates/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/about/get-email-updates/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/about/project-status/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/about/project-status/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/animal/bird/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/animal/bird/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/animal/crawlers/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/animal/crawlers/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/animal/livestock/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/animal/livestock/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/animal/living_creatures/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/animal/living_creatures/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/animal/sea_creature/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/animal/sea_creature/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/animal/sea_dragon/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/animal/sea_dragon/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/being/cherubim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/being/cherubim/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/being/god/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/being/god/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/being/human/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/being/human/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/being/shaddai/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/being/shaddai/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/being/spirit_of_god/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/being/spirit_of_god/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/being/yahweh/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/being/yahweh/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/day/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/day/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/days/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/days/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/dry_land/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/dry_land/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/fruit/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/fruit/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/good/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/good/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/image_of_god/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/image_of_god/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/light/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/light/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/night/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/night/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/seasons/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/seasons/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/seed/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/seed/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/signs/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/signs/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/concept/years/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/concept/years/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/event/drinking/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/event/drinking/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/event/plague/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/event/plague/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/group/amorites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/amorites/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/arkites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/arkites/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/arvadites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/arvadites/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/group/ephrathite/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/ephrathite/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/group/girgashites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/girgashites/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/hamathites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/hamathites/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/hebrews/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/hebrews/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/hivites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/hivites/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/group/israelite/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/israelite/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/group/jebusites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/jebusites/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/group/judah/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/judah/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/group/moabite/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/moabite/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/group/philistines/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/philistines/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/sinites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/sinites/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/group/zemarites/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/group/zemarites/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/object/barley/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/barley/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/bread/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/bread/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/city_gate/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/city_gate/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/feet/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/feet/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/field/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/field/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/grain/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/grain/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/greater_light/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/greater_light/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/lesser_light/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/lesser_light/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/lights/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/lights/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/stars/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/stars/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/wheat/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/wheat/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/wine_vinegar/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/wine_vinegar/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/object/wing/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/object/wing/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/abel/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/abel/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/abimael/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/abimael/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/adah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/adah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/adam/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/adam/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/almodad/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/almodad/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/amminadab/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/amminadab/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/anamim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/anamim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/aram/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/aram/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/arphaxad/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/arphaxad/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/ashkenaz/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/ashkenaz/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/asshur/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/asshur/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/boaz/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/boaz/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/cain/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/cain/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/cain_wife/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/cain_wife/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/canaan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/canaan/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/caphtorim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/caphtorim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/casluhim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/casluhim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/cush/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/cush/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/david/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/david/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/dedan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/dedan/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/diklah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/diklah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/dodanim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/dodanim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/eber/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/eber/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/egypt/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/egypt/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/elam/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/elam/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/elimelech/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/elimelech/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/person/elimelechs_redeemer/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/elimelechs_redeemer/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/elishah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/elishah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/enoch/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/enoch/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/enoch_son_of_cain/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/enoch_son_of_cain/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/enosh/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/enosh/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/eve/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/eve/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/gether/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/gether/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/gomer/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/gomer/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/hadoram/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/hadoram/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/ham/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/ham/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/havilah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/havilah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/havilah_son_of_joktan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/havilah_son_of_joktan/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/hazarmaveth/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/hazarmaveth/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/heth/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/heth/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/hezron/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/hezron/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/hul/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/hul/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/irad/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/irad/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/jabal/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/jabal/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/japheth/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/japheth/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/jared/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/jared/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/javan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/javan/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/jerah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/jerah/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/jesse/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/jesse/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/jobab/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/jobab/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/joktan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/joktan/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/jubal/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/jubal/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/judah/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/judah/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/kenan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/kenan/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/kilion/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/kilion/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/kittim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/kittim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/lamech/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/lamech/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/lamech_son_of_methuselah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/lamech_son_of_methuselah/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/leah/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/leah/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/lehabim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/lehabim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/lud/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/lud/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/ludim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/ludim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/madai/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/madai/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/magog/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/magog/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/mahalalel/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/mahalalel/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/mahlon/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/mahlon/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/person/mara/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/mara/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/mash/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/mash/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/mehujael/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/mehujael/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/meshech/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/meshech/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/methuselah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/methuselah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/methushael/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/methushael/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/naamah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/naamah/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/nahshon/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/nahshon/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/person/naomi/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/naomi/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/naphtuhim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/naphtuhim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/nimrod/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/nimrod/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/noah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/noah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/noah_wife/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/noah_wife/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/obal/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/obal/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/obed/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/obed/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/ophir/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/ophir/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/orpah/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/orpah/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/pathrusim/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/pathrusim/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/peleg/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/peleg/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/perez/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/perez/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/put/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/put/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/raamah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/raamah/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/rachel/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/rachel/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/person/rahab/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/rahab/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/person/ram/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/ram/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/riphath/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/riphath/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/ruth/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/ruth/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/sabtah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/sabtah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/sabteca/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/sabteca/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/salmon/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/salmon/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/seba/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/seba/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/seth/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/seth/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/sheba/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/sheba/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/sheba_son_of_joktan/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/sheba_son_of_joktan/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/shelah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/shelah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/sheleph/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/sheleph/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/shem/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/shem/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/sidon/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/sidon/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/person/tamar/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/tamar/"/>
     </url>
     <url>
+        <loc>https://connections.whitetreebible.com/person/tarshish/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/tarshish/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/tiras/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/tiras/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/togarmah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/togarmah/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/tubal/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/tubal/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/tubal_cain/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/tubal_cain/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/uz/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/uz/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/uzal/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/uzal/"/>
+    </url>
+    <url>
+        <loc>https://connections.whitetreebible.com/person/zillah/</loc>
+        <lastmod>2025-10-25</lastmod>
+        <changefreq>daily</changefreq>
+        <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/person/zillah/"/>
+    </url>
+    <url>
         <loc>https://connections.whitetreebible.com/place/bethlehem/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/bethlehem/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/dry_land/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/dry_land/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/earth/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/earth/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/ephrathah/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/ephrathah/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/expanse/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/expanse/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/heavens/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/heavens/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/judah/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/judah/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/moab/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/moab/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/waters/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/waters/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/place/watery_abyss/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/place/watery_abyss/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/plant/fruit_trees/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/plant/fruit_trees/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/plant/vegetation/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/plant/vegetation/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/role/elders/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/role/elders/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/role/foreigner/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/role/foreigner/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/role/redeemer/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/role/redeemer/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/role/ruler/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/role/ruler/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/role/witness/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/role/witness/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/role/worthy_woman/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/role/worthy_woman/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/symbol/darkness/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/symbol/darkness/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/symbol/emptiness/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/symbol/emptiness/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/symbol/unsandaled_one/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/symbol/unsandaled_one/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/symbol/wilderness/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/symbol/wilderness/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/theme/hospitality/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/theme/hospitality/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/theme/humility/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/theme/humility/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/theme/leaving_family/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/theme/leaving_family/"/>
     </url>
     <url>
         <loc>https://connections.whitetreebible.com/theme/will_not_rest/</loc>
-        <lastmod>2025-10-12</lastmod>
+        <lastmod>2025-10-25</lastmod>
         <changefreq>daily</changefreq>
         <xhtml:link rel="alternate" hreflang="en" href="https://connections.whitetreebible.com/theme/will_not_rest/"/>
     </url>

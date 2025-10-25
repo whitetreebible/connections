@@ -228,23 +228,23 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style concept/signs fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    object/lights(["lights"])
-    concept/days(["days"])
     concept/years(["years"])
-    concept/signs(["signs"])
     concept/seasons(["seasons"])
     place/expanse(["expanse"])
-    click object/lights "../../object/lights/"
-    click concept/days "../../concept/days/"
+    concept/days(["days"])
+    object/lights(["lights"])
+    concept/signs(["signs"])
     click concept/years "../../concept/years/"
-    click concept/signs "../../concept/signs/"
     click concept/seasons "../../concept/seasons/"
     click place/expanse "../../place/expanse/"
-    object/lights .-&gt;|associated with| concept/signs
-    object/lights .-&gt;|associated with| concept/days
-    place/expanse .-&gt;|associated with| object/lights
+    click concept/days "../../concept/days/"
+    click object/lights "../../object/lights/"
+    click concept/signs "../../concept/signs/"
     object/lights .-&gt;|associated with| concept/seasons
+    object/lights .-&gt;|associated with| concept/signs
+    place/expanse .-&gt;|associated with| object/lights
     object/lights .-&gt;|associated with| concept/years
+    object/lights .-&gt;|associated with| concept/days
 </div>
 </article>
 </div>

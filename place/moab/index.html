@@ -255,42 +255,42 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
+    person/mahlon(["Mahlon"])
     place/bethlehem(["Bethlehem"])
+    person/naomi(["Naomi"])
     place/moab(["Moab"])
     person/kilion(["Kilion"])
-    person/mahlon(["Mahlon"])
     person/elimelech(["Elimelech"])
-    click person/naomi "../../person/naomi/"
+    click person/mahlon "../../person/mahlon/"
     click place/bethlehem "../../place/bethlehem/"
+    click person/naomi "../../person/naomi/"
     click place/moab "../../place/moab/"
     click person/kilion "../../person/kilion/"
-    click person/mahlon "../../person/mahlon/"
     click person/elimelech "../../person/elimelech/"
-    person/elimelech --&gt;|died in| place/moab
-    person/elimelech .-&gt;|visited| place/moab
-    person/naomi .-&gt;|visited| place/moab
-    person/mahlon --&gt;|died in| place/moab
-    person/mahlon .-&gt;|visited| place/moab
-    person/elimelech --&gt;|resident of| place/bethlehem
-    person/naomi --&gt;|resident of| place/bethlehem
     person/kilion --&gt;|died in| place/moab
     person/kilion .-&gt;|visited| place/moab
+    person/elimelech .-&gt;|visited| place/moab
+    person/elimelech --&gt;|died in| place/moab
+    person/naomi --&gt;|resident of| place/bethlehem
+    person/elimelech --&gt;|resident of| place/bethlehem
+    person/mahlon .-&gt;|visited| place/moab
+    person/mahlon --&gt;|died in| place/moab
+    person/naomi .-&gt;|visited| place/moab
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/moab(["Moab"])
+    person/orpah(["Orpah"])
     person/ruth(["Ruth"])
     group/moabite(["Moabite"])
-    person/orpah(["Orpah"])
-    click place/moab "../../place/moab/"
+    place/moab(["Moab"])
+    click person/orpah "../../person/orpah/"
     click person/ruth "../../person/ruth/"
     click group/moabite "../../group/moabite/"
-    click person/orpah "../../person/orpah/"
-    group/moabite &lt;--&gt;|name matches| place/moab
-    group/moabite &lt;.-&gt;|associated with| person/ruth
+    click place/moab "../../place/moab/"
+    person/ruth &lt;.-&gt;|associated with| group/moabite
     group/moabite .-&gt;|associated with| person/orpah
+    place/moab &lt;--&gt;|name matches| group/moabite
 </div>
 </article>
 </div>

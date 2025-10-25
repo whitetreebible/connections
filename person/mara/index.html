@@ -248,12 +248,12 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/mara fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/mara(["Mara"])
     place/bethlehem(["Bethlehem"])
     person/naomi(["Naomi"])
-    person/mara(["Mara"])
+    click person/mara "../../person/mara/"
     click place/bethlehem "../../place/bethlehem/"
     click person/naomi "../../person/naomi/"
-    click person/mara "../../person/mara/"
     person/naomi &lt;--&gt;|name matches| person/mara
     place/bethlehem .-&gt;|associated with| person/naomi
 </div>

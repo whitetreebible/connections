@@ -240,15 +240,15 @@
 <div class="mermaid">graph TD;
     style plant/fruit_trees fill:#2fa4e7,stroke:#333,stroke-width:4px;
     plant/vegetation(["vegetation"])
+    plant/fruit_trees(["fruit trees"])
     concept/fruit(["fruit"])
     concept/seed(["seed"])
-    plant/fruit_trees(["fruit trees"])
     click plant/vegetation "../../plant/vegetation/"
+    click plant/fruit_trees "../../plant/fruit_trees/"
     click concept/fruit "../../concept/fruit/"
     click concept/seed "../../concept/seed/"
-    click plant/fruit_trees "../../plant/fruit_trees/"
-    plant/vegetation .-&gt;|associated with| plant/fruit_trees
     plant/vegetation .-&gt;|associated with| concept/seed
+    plant/vegetation .-&gt;|associated with| plant/fruit_trees
     plant/fruit_trees .-&gt;|associated with| concept/fruit
 </div>
 </article>

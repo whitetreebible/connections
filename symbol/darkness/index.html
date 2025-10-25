@@ -241,20 +241,20 @@
     style symbol/darkness fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/watery_abyss(["watery abyss"])
     place/dry_land(["dry land"])
+    symbol/wilderness(["wilderness"])
+    place/earth(["earth"])
     symbol/darkness(["darkness"])
     symbol/emptiness(["emptiness"])
-    place/earth(["earth"])
-    symbol/wilderness(["wilderness"])
     click place/watery_abyss "../../place/watery_abyss/"
     click place/dry_land "../../place/dry_land/"
+    click symbol/wilderness "../../symbol/wilderness/"
+    click place/earth "../../place/earth/"
     click symbol/darkness "../../symbol/darkness/"
     click symbol/emptiness "../../symbol/emptiness/"
-    click place/earth "../../place/earth/"
-    click symbol/wilderness "../../symbol/wilderness/"
     place/earth .-&gt;|associated with| symbol/darkness
-    place/earth .-&gt;|associated with| symbol/emptiness
-    symbol/darkness .-&gt;|associated with| place/watery_abyss
     place/dry_land .-&gt;|associated with| place/earth
+    symbol/darkness .-&gt;|associated with| place/watery_abyss
+    place/earth .-&gt;|associated with| symbol/emptiness
     place/earth .-&gt;|associated with| symbol/wilderness
 </div>
 </article>

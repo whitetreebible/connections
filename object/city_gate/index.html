@@ -239,35 +239,35 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style object/city_gate fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    theme/will_not_rest(["will not rest"])
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
     person/boaz(["Boaz"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
     place/bethlehem(["Bethlehem"])
-    object/city_gate(["city gate"])
-    object/field(["field"])
-    symbol/unsandaled_one(["unsandaled one"])
     theme/hospitality(["hospitality"])
+    object/field(["field"])
     event/drinking(["drinking"])
+    theme/will_not_rest(["will not rest"])
+    object/city_gate(["city gate"])
     object/wing(["wing"])
-    click theme/will_not_rest "../../theme/will_not_rest/"
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    symbol/unsandaled_one(["unsandaled one"])
     click person/boaz "../../person/boaz/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
     click place/bethlehem "../../place/bethlehem/"
-    click object/city_gate "../../object/city_gate/"
-    click object/field "../../object/field/"
-    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
     click theme/hospitality "../../theme/hospitality/"
+    click object/field "../../object/field/"
     click event/drinking "../../event/drinking/"
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click object/city_gate "../../object/city_gate/"
     click object/wing "../../object/wing/"
-    object/field &lt;.-&gt;|associated with| person/boaz
-    person/boaz --&gt;|example of| theme/hospitality
-    theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
-    event/drinking &lt;.-&gt;|associated with| person/boaz
-    person/elimelechs_redeemer &lt;.-&gt;|associated with| object/city_gate
-    place/bethlehem .-&gt;|associated with| person/boaz
+    click symbol/unsandaled_one "../../symbol/unsandaled_one/"
     person/boaz &lt;.-&gt;|associated with| object/wing
+    theme/will_not_rest &lt;.-&gt;|associated with| person/boaz
+    person/boaz --&gt;|example of| theme/hospitality
+    person/boaz &lt;.-&gt;|associated with| object/field
     object/city_gate &lt;.-&gt;|associated with| person/boaz
+    object/city_gate &lt;.-&gt;|associated with| person/elimelechs_redeemer
+    person/boaz &lt;.-&gt;|associated with| event/drinking
     person/elimelechs_redeemer --&gt;|example of| symbol/unsandaled_one
+    place/bethlehem .-&gt;|associated with| person/boaz
 </div>
 </article>
 </div>
