@@ -11,16 +11,16 @@ edges:
 - target: person/adam
   type: child-of
   refs:
-  - bible:"Genesis 4:1"
+  - bible:Genesis 4:1
 - target: person/eve
   type: child-of
   refs:
-  - bible:"Genesis 4:1"
+  - bible:Genesis 4:1
 - target: person/cain_wife
   type: married-to
   refs:
-  - bible:"Genesis 4:17"
+  - bible:Genesis 4:17
 - target: person/enoch_son_of_cain
   type: parent-of
   refs:
-  - bible:"Genesis 4:17"
+  - bible:Genesis 4:17

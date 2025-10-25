@@ -11,8 +11,8 @@ edges:
 - target: person/enosh
   type: child-of
   refs:
-  - bible:"Genesis 5:9"
+  - bible:Genesis 5:9
 - target: person/mahalalel
   type: parent-of
   refs:
-  - bible:"Genesis 5:12"
+  - bible:Genesis 5:12

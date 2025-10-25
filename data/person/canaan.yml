@@ -11,49 +11,49 @@ edges:
 - target: person/ham
   type: child-of
   refs:
-  - bible:"Genesis 10:6"
-  - bible:"Genesis 9:18"
+  - bible:Genesis 10:6
+  - bible:Genesis 9:18
 - target: person/sidon
   type: parent-of
   refs:
-  - bible:"Genesis 10:15"
+  - bible:Genesis 10:15
 - target: person/heth
   type: parent-of
   refs:
-  - bible:"Genesis 10:15"
+  - bible:Genesis 10:15
 - target: group/jebusites
   type: origin-of
   refs:
-  - bible:"Genesis 10:16"
+  - bible:Genesis 10:16
 - target: group/amorites
   type: origin-of
   refs:
-  - bible:"Genesis 10:16"
+  - bible:Genesis 10:16
 - target: group/girgashites
   type: origin-of
   refs:
-  - bible:"Genesis 10:16"
+  - bible:Genesis 10:16
 - target: group/hivites
   type: origin-of
   refs:
-  - bible:"Genesis 10:17"
+  - bible:Genesis 10:17
 - target: group/arkites
   type: origin-of
   refs:
-  - bible:"Genesis 10:17"
+  - bible:Genesis 10:17
 - target: group/sinites
   type: origin-of
   refs:
-  - bible:"Genesis 10:17"
+  - bible:Genesis 10:17
 - target: group/arvadites
   type: origin-of
   refs:
-  - bible:"Genesis 10:18"
+  - bible:Genesis 10:18
 - target: group/zemarites
   type: origin-of
   refs:
-  - bible:"Genesis 10:18"
+  - bible:Genesis 10:18
 - target: group/hamathites
   type: origin-of
   refs:
-  - bible:"Genesis 10:18"
+  - bible:Genesis 10:18

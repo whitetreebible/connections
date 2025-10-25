@@ -11,16 +11,16 @@ edges:
 - target: person/adam
   type: married-to
   refs:
-  - bible:"Genesis 3:20"
+  - bible:Genesis 3:20
 - target: person/cain
   type: parent-of
   refs:
-  - bible:"Genesis 4:1"
+  - bible:Genesis 4:1
 - target: person/abel
   type: parent-of
   refs:
-  - bible:"Genesis 4:2"
+  - bible:Genesis 4:2
 - target: person/seth
   type: parent-of
   refs:
-  - bible:"Genesis 4:25"
+  - bible:Genesis 4:25

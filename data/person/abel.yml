@@ -11,8 +11,8 @@ edges:
 - target: person/adam
   type: child-of
   refs:
-  - bible:"Genesis 4:2"
+  - bible:Genesis 4:2
 - target: person/eve
   type: child-of
   refs:
-  - bible:"Genesis 4:2"
+  - bible:Genesis 4:2

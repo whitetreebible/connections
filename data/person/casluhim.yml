@@ -11,8 +11,8 @@ edges:
 - target: person/egypt
   type: child-of
   refs:
-  - bible:"Genesis 10:14"
+  - bible:Genesis 10:14
 - target: group/philistines
   type: origin-of
   refs:
-  - bible:"Genesis 10:14"
+  - bible:Genesis 10:14

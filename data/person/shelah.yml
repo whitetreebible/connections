@@ -11,10 +11,10 @@ edges:
 - target: person/arphaxad
   type: child-of
   refs:
-  - bible:"Genesis 10:24"
+  - bible:Genesis 10:24
   - bible:Genesis 11:12
 - target: person/eber
   type: parent-of
   refs:
-  - bible:"Genesis 10:25"
+  - bible:Genesis 10:25
   - bible:Genesis 11:14

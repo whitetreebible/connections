@@ -11,8 +11,8 @@ edges:
 - target: person/enoch
   type: child-of
   refs:
-  - bible:"Genesis 5:21"
+  - bible:Genesis 5:21
 - target: person/lamech_son_of_methuselah
   type: parent-of
   refs:
-  - bible:"Genesis 5:25"
+  - bible:Genesis 5:25

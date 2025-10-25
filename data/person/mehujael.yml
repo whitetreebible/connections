@@ -11,8 +11,8 @@ edges:
 - target: person/irad
   type: child-of
   refs:
-  - bible:"Genesis 4:18"
+  - bible:Genesis 4:18
 - target: person/methushael
   type: parent-of
   refs:
-  - bible:"Genesis 4:18"
+  - bible:Genesis 4:18

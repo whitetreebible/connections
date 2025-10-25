@@ -11,12 +11,12 @@ edges:
 - target: person/lamech
   type: married-to
   refs:
-  - bible:"Genesis 4:19"
+  - bible:Genesis 4:19
 - target: person/tubal_cain
   type: parent-of
   refs:
-  - bible:"Genesis 4:22"
+  - bible:Genesis 4:22
 - target: person/naamah
   type: parent-of
   refs:
-  - bible:"Genesis 4:22"
+  - bible:Genesis 4:22

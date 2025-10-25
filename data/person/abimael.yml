@@ -11,4 +11,4 @@ edges:
 - target: person/joktan
   type: child-of
   refs:
-  - bible:"Genesis 10:28"
+  - bible:Genesis 10:28

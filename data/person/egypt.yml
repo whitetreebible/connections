@@ -11,32 +11,32 @@ edges:
 - target: person/ham
   type: child-of
   refs:
-  - bible:"Genesis 10:6"
+  - bible:Genesis 10:6
 - target: person/ludim
   type: parent-of
   refs:
-  - bible:"Genesis 10:13"
+  - bible:Genesis 10:13
 - target: person/anamim
   type: parent-of
   refs:
-  - bible:"Genesis 10:13"
+  - bible:Genesis 10:13
 - target: person/lehabim
   type: parent-of
   refs:
-  - bible:"Genesis 10:13"
+  - bible:Genesis 10:13
 - target: person/naphtuhim
   type: parent-of
   refs:
-  - bible:"Genesis 10:13"
+  - bible:Genesis 10:13
 - target: person/pathrusim
   type: parent-of
   refs:
-  - bible:"Genesis 10:14"
+  - bible:Genesis 10:14
 - target: person/casluhim
   type: parent-of
   refs:
-  - bible:"Genesis 10:14"
+  - bible:Genesis 10:14
 - target: person/caphtorim
   type: parent-of
   refs:
-  - bible:"Genesis 10:14"
+  - bible:Genesis 10:14

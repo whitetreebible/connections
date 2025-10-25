@@ -11,12 +11,12 @@ edges:
 - target: person/cain
   type: child-of
   refs:
-  - bible:"Genesis 4:17"
+  - bible:Genesis 4:17
 - target: person/irad
   type: parent-of
   refs:
-  - bible:"Genesis 4:18"
+  - bible:Genesis 4:18
 - target: person/enoch
   type: name-matches
   refs:
-  - bible:"Genesis 4:17"
+  - bible:Genesis 4:17

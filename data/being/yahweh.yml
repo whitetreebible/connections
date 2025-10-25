@@ -30,7 +30,7 @@ edges:
 - target: being/cherubim
   type: appointed
   refs:
-  - bible:"Genesis 3:24"
+  - bible:Genesis 3:24
 - target: being/el-roi
   type: name-matches
   refs:

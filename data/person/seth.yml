@@ -11,14 +11,14 @@ edges:
 - target: person/adam
   type: child-of
   refs:
-  - bible:"Genesis 4:25"
-  - bible:"Genesis 5:3"
+  - bible:Genesis 4:25
+  - bible:Genesis 5:3
 - target: person/eve
   type: child-of
   refs:
-  - bible:"Genesis 4:25"
+  - bible:Genesis 4:25
 - target: person/enosh
   type: parent-of
   refs:
-  - bible:"Genesis 4:26"
-  - bible:"Genesis 5:6"
+  - bible:Genesis 4:26
+  - bible:Genesis 5:6

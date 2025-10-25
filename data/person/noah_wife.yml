@@ -11,4 +11,4 @@ edges:
 - target: person/noah
   type: married-to
   refs:
-  - bible:"Genesis 6:18"
+  - bible:Genesis 6:18

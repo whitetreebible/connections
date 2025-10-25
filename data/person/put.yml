@@ -11,4 +11,4 @@ edges:
 - target: person/ham
   type: child-of
   refs:
-  - bible:"Genesis 10:6"
+  - bible:Genesis 10:6

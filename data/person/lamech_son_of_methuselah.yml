@@ -11,7 +11,7 @@ edges:
 - target: person/methuselah
   type: child-of
   refs:
-  - bible:"Genesis 5:25"
+  - bible:Genesis 5:25
 - target: person/lamech
   type: name-matches
   refs: []

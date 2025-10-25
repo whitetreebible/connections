@@ -11,8 +11,8 @@ edges:
 - target: person/lamech
   type: child-of
   refs:
-  - bible:"Genesis 4:20"
+  - bible:Genesis 4:20
 - target: person/adah
   type: child-of
   refs:
-  - bible:"Genesis 4:20"
+  - bible:Genesis 4:20

@@ -11,16 +11,16 @@ edges:
 - target: person/japheth
   type: child-of
   refs:
-  - bible:"Genesis 10:2"
+  - bible:Genesis 10:2
 - target: person/ashkenaz
   type: parent-of
   refs:
-  - bible:"Genesis 10:3"
+  - bible:Genesis 10:3
 - target: person/riphath
   type: parent-of
   refs:
-  - bible:"Genesis 10:3"
+  - bible:Genesis 10:3
 - target: person/togarmah
   type: parent-of
   refs:
-  - bible:"Genesis 10:3"
+  - bible:Genesis 10:3

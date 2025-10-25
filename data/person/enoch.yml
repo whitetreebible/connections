@@ -11,12 +11,12 @@ edges:
 - target: person/enoch_son_of_cain
   type: name-matches
   refs:
-  - bible:"Genesis 4:17"
+  - bible:Genesis 4:17
 - target: person/jared
   type: child-of
   refs:
-  - bible:"Genesis 5:18"
+  - bible:Genesis 5:18
 - target: person/methuselah
   type: parent-of
   refs:
-  - bible:"Genesis 5:21"
+  - bible:Genesis 5:21

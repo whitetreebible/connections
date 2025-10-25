@@ -11,4 +11,4 @@ edges:
 - target: person/gomer
   type: child-of
   refs:
-  - bible:"Genesis 10:3"
+  - bible:Genesis 10:3

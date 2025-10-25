@@ -11,31 +11,31 @@ edges:
 - target: person/methushael
   type: child-of
   refs:
-  - bible:"Genesis 4:18"
+  - bible:Genesis 4:18
 - target: person/adah
   type: married-to
   refs:
-  - bible:"Genesis 4:19"
+  - bible:Genesis 4:19
 - target: person/zillah
   type: married-to
   refs:
-  - bible:"Genesis 4:19"
+  - bible:Genesis 4:19
 - target: person/jabal
   type: parent-of
   refs:
-  - bible:"Genesis 4:20"
+  - bible:Genesis 4:20
 - target: person/jubal
   type: parent-of
   refs:
-  - bible:"Genesis 4:21"
+  - bible:Genesis 4:21
 - target: person/tubal_cain
   type: parent-of
   refs:
-  - bible:"Genesis 4:22"
+  - bible:Genesis 4:22
 - target: person/naamah
   type: parent-of
   refs:
-  - bible:"Genesis 4:22"
+  - bible:Genesis 4:22
 - target: person/lamech_son_of_methuselah
   type: name-matches
   refs: []

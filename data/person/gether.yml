@@ -11,4 +11,4 @@ edges:
 - target: person/aram
   type: child-of
   refs:
-  - bible:"Genesis 10:23"
+  - bible:Genesis 10:23

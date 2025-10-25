@@ -11,12 +11,12 @@ edges:
 - target: person/lamech
   type: married-to
   refs:
-  - bible:"Genesis 4:19"
+  - bible:Genesis 4:19
 - target: person/jabal
   type: parent-of
   refs:
-  - bible:"Genesis 4:20"
+  - bible:Genesis 4:20
 - target: person/jubal
   type: parent-of
   refs:
-  - bible:"Genesis 4:21"
+  - bible:Genesis 4:21

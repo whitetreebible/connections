@@ -11,22 +11,22 @@ edges:
 - target: person/shem
   type: descendant-of
   refs:
-  - bible:"Genesis 10:21"
+  - bible:Genesis 10:21
 - target: group/hebrews
   type: name-matches
   refs:
-  - bible:"Genesis 10:21"
+  - bible:Genesis 10:21
 - target: person/shelah
   type: child-of
   refs:
-  - bible:"Genesis 10:25"
+  - bible:Genesis 10:25
   - bible:Genesis 11:14
 - target: person/peleg
   type: parent-of
   refs:
-  - bible:"Genesis 10:25"
+  - bible:Genesis 10:25
   - bible:Genesis 11:16
 - target: person/joktan
   type: parent-of
   refs:
-  - bible:"Genesis 10:25"
+  - bible:Genesis 10:25

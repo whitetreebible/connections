@@ -11,7 +11,7 @@ edges:
 - target: person/eber
   type: child-of
   refs:
-  - bible:"Genesis 10:25"
+  - bible:Genesis 10:25
   - bible:Genesis 11:16
 - target: person/reu
   type: parent-of

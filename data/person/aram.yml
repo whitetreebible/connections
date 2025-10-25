@@ -11,20 +11,20 @@ edges:
 - target: person/shem
   type: child-of
   refs:
-  - bible:"Genesis 10:22"
+  - bible:Genesis 10:22
 - target: person/uz
   type: parent-of
   refs:
-  - bible:"Genesis 10:23"
+  - bible:Genesis 10:23
 - target: person/hul
   type: parent-of
   refs:
-  - bible:"Genesis 10:23"
+  - bible:Genesis 10:23
 - target: person/gether
   type: parent-of
   refs:
-  - bible:"Genesis 10:23"
+  - bible:Genesis 10:23
 - target: person/mash
   type: parent-of
   refs:
-  - bible:"Genesis 10:23"
+  - bible:Genesis 10:23

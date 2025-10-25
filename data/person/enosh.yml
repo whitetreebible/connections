@@ -11,9 +11,9 @@ edges:
 - target: person/seth
   type: child-of
   refs:
-  - bible:"Genesis 4:26"
-  - bible:"Genesis 5:6"
+  - bible:Genesis 4:26
+  - bible:Genesis 5:6
 - target: person/kenan
   type: parent-of
   refs:
-  - bible:"Genesis 5:9"
+  - bible:Genesis 5:9

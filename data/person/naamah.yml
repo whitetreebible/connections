@@ -11,8 +11,8 @@ edges:
 - target: person/lamech
   type: child-of
   refs:
-  - bible:"Genesis 4:22"
+  - bible:Genesis 4:22
 - target: person/zillah
   type: child-of
   refs:
-  - bible:"Genesis 4:22"
+  - bible:Genesis 4:22

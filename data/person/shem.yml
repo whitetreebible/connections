@@ -11,37 +11,37 @@ edges:
 - target: person/noah
   type: child-of
   refs:
-  - bible:"Genesis 5:32"
+  - bible:Genesis 5:32
 - target: person/eber
   type: ancestor-of
   refs:
-  - bible:"Genesis 10:21"
+  - bible:Genesis 10:21
 - target: group/hebrews
   type: origin-of
   refs:
-  - bible:"Genesis 10:21"
+  - bible:Genesis 10:21
 - target: person/japheth
   type: related-to
   refs:
-  - bible:"Genesis 10:21"
+  - bible:Genesis 10:21
 - target: person/elam
   type: parent-of
   refs:
-  - bible:"Genesis 10:22"
+  - bible:Genesis 10:22
 - target: person/asshur
   type: parent-of
   refs:
-  - bible:"Genesis 10:22"
+  - bible:Genesis 10:22
 - target: person/arphaxad
   type: parent-of
   refs:
-  - bible:"Genesis 10:22"
+  - bible:Genesis 10:22
   - bible:Genesis 11:10
 - target: person/lud
   type: parent-of
   refs:
-  - bible:"Genesis 10:22"
+  - bible:Genesis 10:22
 - target: person/aram
   type: parent-of
   refs:
-  - bible:"Genesis 10:22"
+  - bible:Genesis 10:22

@@ -11,4 +11,4 @@ edges:
 - target: person/cain
   type: married-to
   refs:
-  - bible:"Genesis 4:17"
+  - bible:Genesis 4:17
