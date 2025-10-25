@@ -1,0 +1,14 @@
+id: kedorlaomer
+type: person
+name:
+  en: Kedorlaomer
+name_disambiguous:
+  en: Kedorlaomer (leader of Elam)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/elam
+  type: leader-of
+  refs:
+  - bible:Genesis 14:1

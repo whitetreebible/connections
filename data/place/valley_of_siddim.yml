@@ -1,0 +1,14 @@
+id: valley_of_siddim
+type: place
+name:
+  en: valley of Siddim
+name_disambiguous:
+  en: valley of Siddim (aksa the sea of salt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/sea_of_salt
+  type: name-matches
+  refs:
+  - bible:Genesis 14:3

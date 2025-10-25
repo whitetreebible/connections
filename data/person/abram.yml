@@ -1,0 +1,107 @@
+id: abram
+type: person
+name:
+  en: Abram
+name_disambiguous:
+  en: Abram (son of Terah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/terah
+  type: child-of
+  refs:
+  - bible:Genesis 11:26
+- target: person/sarai
+  type: married-to
+  refs:
+  - bible:Genesis 11:29
+  - bible:Genesis 16:1
+- target: person/kedorlaomer
+  type: defeated
+  refs:
+  - bible:Genesis 14:15
+- target: person/amraphel
+  type: defeated
+  refs:
+  - bible:Genesis 14:15
+- target: person/arioch
+  type: defeated
+  refs:
+  - bible:Genesis 14:15
+- target: person/tidal
+  type: defeated
+  refs:
+  - bible:Genesis 14:15
+- target: place/valley_of_shaveh
+  type: visited
+  refs:
+  - bible:Genesis 14:17
+- target: person/aner
+  type: ally-of
+  refs:
+  - bible:Genesis 14:13
+- target: person/eshcol
+  type: ally-of
+  refs:
+  - bible:Genesis 14:13
+- target: person/mamre
+  type: ally-of
+  refs:
+  - bible:Genesis 14:13
+- target: place/kenites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/kenizzites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/kadmonites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/hittites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/perizzites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/rephaim
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/amorites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/canaanites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/girgashites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: place/jebusites
+  type: promised
+  refs:
+  - bible:Genesis 15:18
+- target: person/hagar
+  type: leader-of
+  refs:
+  - bible:Genesis 16:1
+- target: person/hagar
+  type: married-to
+  refs:
+  - bible:Genesis 16:3
+- target: person/ishmael
+  type: parent-of
+  refs:
+  - bible:Genesis 16:15
+- target: person/abraham
+  type: name-matches
+  refs:
+  - bible:Genesis 17:5

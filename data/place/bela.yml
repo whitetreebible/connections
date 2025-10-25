@@ -1,0 +1,18 @@
+id: bela
+type: place
+name:
+  en: Bela
+name_disambiguous:
+  en: Bela
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/king_of_bela
+  type: led-by
+  refs:
+  - bible:Genesis 14:2
+- target: place/zoar
+  type: name-matches
+  refs:
+  - bible:Genesis 14:2

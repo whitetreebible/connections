@@ -1,0 +1,14 @@
+id: king_of_bela
+type: person
+name:
+  en: king of Bela
+name_disambiguous:
+  en: king of Bela (unnamed leader of Bela)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/bela
+  type: leader-of
+  refs:
+  - bible:Genesis 14:2

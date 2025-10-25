@@ -1,0 +1,14 @@
+id: sodom
+type: place
+name:
+  en: Sodom
+name_disambiguous:
+  en: Sodom (led by Bera)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/bera
+  type: led-by
+  refs:
+  - bible:Genesis 14:2

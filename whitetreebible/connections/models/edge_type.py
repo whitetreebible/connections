@@ -48,6 +48,8 @@ class EdgeType(Enum):
     SAVED = "saved"                 # Asymmetrical, savior → saved
     KILLED = "killed"               # Asymmetrical, killer → killed
     CREATED = "created"             # Asymmetrical, creator → created
+    DEFEATED = "defeated"           # Asymmetrical, victor → defeated
+    PROMISED = "promised"           # Asymmetrical, promiser → promised
 
     # Textual / Symbolic
     NAME_MATCHES = "name-matches"
@@ -133,6 +135,8 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.SAVED,
         EdgeType.KILLED,
         EdgeType.CREATED,
+        EdgeType.DEFEATED,
+        EdgeType.PROMISED,
     },
     EdgeGroups.TEXTUAL: {
         EdgeType.NAME_MATCHES,

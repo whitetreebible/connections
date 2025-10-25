@@ -1,0 +1,14 @@
+id: haran
+type: place
+name:
+  en: Haran
+name_disambiguous:
+  en: Haran
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/haran
+  type: name-matches
+  refs:
+  - bible:Genesis 11:27

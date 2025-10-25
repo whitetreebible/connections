@@ -1,0 +1,10 @@
+id: priest
+type: role
+name:
+  en: priest
+name_disambiguous:
+  en: priest
+description:
+  en: ''
+footnotes: {}
+edges: []

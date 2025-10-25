@@ -1,0 +1,22 @@
+id: moab
+type: person
+name:
+  en: Moab
+name_disambiguous:
+  en: Moab (son of Lot)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lot
+  type: child-of
+  refs:
+  - bible:Genesis 19:37
+- target: person/lot_daughter_older
+  type: child-of
+  refs:
+  - bible:Genesis 19:37
+- target: group/moabites
+  type: origin-of
+  refs:
+  - bible:Genesis 19:37

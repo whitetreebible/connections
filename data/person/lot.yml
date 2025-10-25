@@ -1,0 +1,30 @@
+id: lot
+type: person
+name:
+  en: Lot
+name_disambiguous:
+  en: Lot (son of Haran)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/haran
+  type: child-of
+  refs:
+  - bible:Genesis 11:27
+- target: person/lot_daughter_older
+  type: parent-of
+  refs:
+  - bible:Genesis 19:30
+- target: person/lot_daughter_younger
+  type: parent-of
+  refs:
+  - bible:Genesis 19:30
+- target: person/moab
+  type: parent-of
+  refs:
+  - bible:Genesis 19:37
+- target: person/ben-ammi
+  type: parent-of
+  refs:
+  - bible:Genesis 19:38

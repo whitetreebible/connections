@@ -1,0 +1,14 @@
+id: iscah
+type: person
+name:
+  en: Iscah
+name_disambiguous:
+  en: Iscah (daughter of Haran)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/haran
+  type: child-of
+  refs:
+  - bible:Genesis 11:29

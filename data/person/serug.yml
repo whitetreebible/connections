@@ -1,0 +1,18 @@
+id: serug
+type: person
+name:
+  en: Serug
+name_disambiguous:
+  en: Serug (son of Reu)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reu
+  type: child-of
+  refs:
+  - bible:Genesis 11:20
+- target: person/nahor
+  type: parent-of
+  refs:
+  - bible:Genesis 11:22

@@ -1,0 +1,18 @@
+id: lot_daughter_younger
+type: person
+name:
+  en: Lot's younger daughter
+name_disambiguous:
+  en: Lot's younger daughter (unnamed daughter of Lot)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lot
+  type: child-of
+  refs:
+  - bible:Genesis 19:30
+- target: person/ben-ammi
+  type: parent-of
+  refs:
+  - bible:Genesis 19:38

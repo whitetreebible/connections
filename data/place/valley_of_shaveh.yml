@@ -1,0 +1,14 @@
+id: valley_of_shaveh
+type: place
+name:
+  en: valley of Shaveh
+name_disambiguous:
+  en: valley of Shaveh (aka the valley of the king)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/valley_of_the_king
+  type: name-matches
+  refs:
+  - bible:Genesis 14:18

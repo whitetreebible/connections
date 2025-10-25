@@ -1,0 +1,30 @@
+id: hagar
+type: person
+name:
+  en: Hagar
+name_disambiguous:
+  en: Hagar (wife of Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: led-by
+  refs:
+  - bible:Genesis 16:1
+- target: person/sarai
+  type: led-by
+  refs:
+  - bible:Genesis 16:1
+- target: person/abram
+  type: married-to
+  refs:
+  - bible:Genesis 16:3
+- target: group/egyptians
+  type: member-of
+  refs:
+  - bible:Genesis 16:1
+- target: person/ishmael
+  type: parent-of
+  refs:
+  - bible:Genesis 16:15

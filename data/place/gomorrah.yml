@@ -1,0 +1,14 @@
+id: gomorrah
+type: place
+name:
+  en: Gomorrah
+name_disambiguous:
+  en: Gomorrah (led by Birsha)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/birsha
+  type: led-by
+  refs:
+  - bible:Genesis 14:2

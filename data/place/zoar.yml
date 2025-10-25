@@ -1,0 +1,14 @@
+id: zoar
+type: place
+name:
+  en: Zoar
+name_disambiguous:
+  en: Zoar (aka Bela)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/bela
+  type: name-matches
+  refs:
+  - bible:Genesis 14:2

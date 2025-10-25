@@ -1,0 +1,18 @@
+id: lot_daughter_older
+type: person
+name:
+  en: Lot's older daughter
+name_disambiguous:
+  en: Lot's older daughter (unnamed daughter of Lot)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lot
+  type: child-of
+  refs:
+  - bible:Genesis 19:30
+- target: person/moab
+  type: parent-of
+  refs:
+  - bible:Genesis 19:37

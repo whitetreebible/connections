@@ -1,0 +1,14 @@
+id: el-roi
+type: being
+name:
+  en: El Roi
+name_disambiguous:
+  en: El Roi (God who sees)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: being/yahweh
+  type: name-matches
+  refs:
+  - bible:Genesis 16:13

@@ -1,0 +1,22 @@
+id: melchizedek
+type: person
+name:
+  en: Melchizedek
+name_disambiguous:
+  en: Melchizedek (leader of Salem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/salem
+  type: leader-of
+  refs:
+  - bible:Genesis 14:18
+- target: role/priest
+  type: role-as
+  refs:
+  - bible:Genesis 14:18
+- target: person/abram
+  type: blessed
+  refs:
+  - bible:Genesis 14:19

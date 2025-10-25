@@ -1,0 +1,14 @@
+id: abraham
+type: person
+name:
+  en: Abraham
+name_disambiguous:
+  en: Abraham (name matches Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: name-matches
+  refs:
+  - bible:Genesis 17:5

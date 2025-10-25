@@ -1,0 +1,14 @@
+id: arioch
+type: person
+name:
+  en: Arioch
+name_disambiguous:
+  en: Arioch (leader of Ellasar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/ellasar
+  type: leader-of
+  refs:
+  - bible:Genesis 14:1

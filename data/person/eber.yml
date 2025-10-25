@@ -20,10 +20,12 @@ edges:
   type: child-of
   refs:
   - bible:"Genesis 10:25"
+  - bible:Genesis 11:14
 - target: person/peleg
   type: parent-of
   refs:
   - bible:"Genesis 10:25"
+  - bible:Genesis 11:16
 - target: person/joktan
   type: parent-of
   refs:

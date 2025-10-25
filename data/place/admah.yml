@@ -1,0 +1,14 @@
+id: admah
+type: place
+name:
+  en: Admah
+name_disambiguous:
+  en: Admah (led by Shinab)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shinab
+  type: led-by
+  refs:
+  - bible:Genesis 14:2

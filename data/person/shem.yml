@@ -36,6 +36,7 @@ edges:
   type: parent-of
   refs:
   - bible:"Genesis 10:22"
+  - bible:Genesis 11:10
 - target: person/lud
   type: parent-of
   refs:

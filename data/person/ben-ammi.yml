@@ -1,0 +1,22 @@
+id: ben-ammi
+type: person
+name:
+  en: Ben Ammi
+name_disambiguous:
+  en: Ben Ammi (son of Lot)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lot
+  type: child-of
+  refs:
+  - bible:Genesis 19:38
+- target: person/lot_daughter_younger
+  type: child-of
+  refs:
+  - bible:Genesis 19:38
+- target: group/ammonites
+  type: origin-of
+  refs:
+  - bible:Genesis 19:38

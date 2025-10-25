@@ -1,0 +1,18 @@
+id: reu
+type: person
+name:
+  en: Reu
+name_disambiguous:
+  en: Reu (son of Peleg)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/peleg
+  type: child-of
+  refs:
+  - bible:Genesis 11:18
+- target: person/serug
+  type: parent-of
+  refs:
+  - bible:Genesis 11:20

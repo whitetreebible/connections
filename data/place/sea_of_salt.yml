@@ -1,0 +1,14 @@
+id: sea_of_salt
+type: place
+name:
+  en: sea of salt
+name_disambiguous:
+  en: sea of salt (aka the valley of Siddim)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/valley_of_siddim
+  type: name-matches
+  refs:
+  - bible:Genesis 14:3

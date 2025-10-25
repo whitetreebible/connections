@@ -1,0 +1,18 @@
+id: milcah
+type: person
+name:
+  en: Milcah
+name_disambiguous:
+  en: Milcah (married to Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: married-to
+  refs:
+  - bible:Genesis 11:29
+- target: person/haran
+  type: child-of
+  refs:
+  - bible:Genesis 11:29

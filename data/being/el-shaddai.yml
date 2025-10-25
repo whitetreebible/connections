@@ -1,0 +1,14 @@
+id: el-shaddai
+type: being
+name:
+  en: El Shaddai
+name_disambiguous:
+  en: El Shaddai (God Almighty)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: being/yahweh
+  type: name-matches
+  refs:
+  - bible:Genesis 17:1

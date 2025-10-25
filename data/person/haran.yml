@@ -1,0 +1,38 @@
+id: haran
+type: person
+name:
+  en: Haran
+name_disambiguous:
+  en: Haran (son of Terah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/terah
+  type: child-of
+  refs:
+  - bible:Genesis 11:26
+- target: person/lot
+  type: parent-of
+  refs:
+  - bible:Genesis 11:27
+- target: place/ur
+  type: died-in
+  refs:
+  - bible:Genesis 11:28
+- target: person/milcah
+  type: parent-of
+  refs:
+  - bible:Genesis 11:29
+- target: person/milcah
+  type: parent-of
+  refs:
+  - bible:Genesis 11:29
+- target: person/iscah
+  type: parent-of
+  refs:
+  - bible:Genesis 11:29
+- target: place/haran
+  type: name-matches
+  refs:
+  - bible:Genesis 11:27

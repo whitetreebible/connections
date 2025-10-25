@@ -1,0 +1,18 @@
+id: bera
+type: person
+name:
+  en: Bera
+name_disambiguous:
+  en: Bera (leader of Sodom)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/sodom
+  type: leader-of
+  refs:
+  - bible:Genesis 14:2
+- target: person/abram
+  type: blessed
+  refs:
+  - bible:Genesis 14:20

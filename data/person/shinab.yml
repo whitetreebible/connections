@@ -1,0 +1,14 @@
+id: shinab
+type: person
+name:
+  en: Shinab
+name_disambiguous:
+  en: Shinab (leader of Admah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/admah
+  type: leader-of
+  refs:
+  - bible:Genesis 14:2

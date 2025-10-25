@@ -1,0 +1,14 @@
+id: elam
+type: place
+name:
+  en: Elam
+name_disambiguous:
+  en: Elam (led by Kedorlaomer)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/kedorlaomer
+  type: led-by
+  refs:
+  - bible:Genesis 14:1

@@ -1,0 +1,14 @@
+id: ellasar
+type: place
+name:
+  en: Ellasar
+name_disambiguous:
+  en: Ellasar (led by Arioch)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/arioch
+  type: led-by
+  refs:
+  - bible:Genesis 14:1

@@ -1,0 +1,14 @@
+id: amraphel
+type: person
+name:
+  en: Amraphel
+name_disambiguous:
+  en: Amraphel (leader of Shinar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/shinar
+  type: leader-of
+  refs:
+  - bible:Genesis 14:1

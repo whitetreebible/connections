@@ -31,3 +31,11 @@ edges:
   type: appointed
   refs:
   - bible:"Genesis 3:24"
+- target: being/el-roi
+  type: name-matches
+  refs:
+  - bible:Genesis 16:13
+- target: being/el-shaddai
+  type: name-matches
+  refs:
+  - bible:Genesis 17:1

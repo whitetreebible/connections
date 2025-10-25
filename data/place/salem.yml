@@ -1,0 +1,14 @@
+id: salem
+type: place
+name:
+  en: Salem
+name_disambiguous:
+  en: Salem (led by Melchizedek)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/melchizedek
+  type: led-by
+  refs:
+  - bible:Genesis 14:18

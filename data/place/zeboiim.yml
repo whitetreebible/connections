@@ -1,0 +1,14 @@
+id: zeboiim
+type: place
+name:
+  en: Zeboiim
+name_disambiguous:
+  en: Zeboiim (led by Shemeber)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shemeber
+  type: led-by
+  refs:
+  - bible:Genesis 14:2

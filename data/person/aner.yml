@@ -1,0 +1,14 @@
+id: aner
+type: person
+name:
+  en: Aner
+name_disambiguous:
+  en: Aner (ally of Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: ally-of
+  refs:
+  - bible:Genesis 14:13

@@ -1,0 +1,14 @@
+id: birsha
+type: person
+name:
+  en: Birsha
+name_disambiguous:
+  en: Birsha (leader of Gomorrah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/gomorrah
+  type: leader-of
+  refs:
+  - bible:Genesis 14:2

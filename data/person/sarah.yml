@@ -1,0 +1,14 @@
+id: sarah
+type: person
+name:
+  en: Sarah
+name_disambiguous:
+  en: Sarah (name matches Sarai)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/sarai
+  type: name-matches
+  refs:
+  - bible:Genesis 17:15

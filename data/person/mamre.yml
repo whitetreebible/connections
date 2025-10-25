@@ -1,0 +1,14 @@
+id: mamre
+type: person
+name:
+  en: Mamre
+name_disambiguous:
+  en: Mamre (ally of Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: ally-of
+  refs:
+  - bible:Genesis 14:13

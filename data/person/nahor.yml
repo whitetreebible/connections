@@ -1,0 +1,26 @@
+id: nahor
+type: person
+name:
+  en: Nahor
+name_disambiguous:
+  en: Nahor (son of Serug)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/serug
+  type: child-of
+  refs:
+  - bible:Genesis 11:22
+- target: person/terah
+  type: parent-of
+  refs:
+  - bible:Genesis 11:24
+- target: person/terah
+  type: child-of
+  refs:
+  - bible:Genesis 11:26
+- target: person/milcah
+  type: married-to
+  refs:
+  - bible:Genesis 11:29

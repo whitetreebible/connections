@@ -1,0 +1,14 @@
+id: goiim
+type: place
+name:
+  en: Goiim
+name_disambiguous:
+  en: Goiim (led by Tidal)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/tidal
+  type: led-by
+  refs:
+  - bible:Genesis 14:1

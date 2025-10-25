@@ -1,0 +1,14 @@
+id: tidal
+type: person
+name:
+  en: Tidal
+name_disambiguous:
+  en: Tidal (leader of Goiim)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/goiim
+  type: leader-of
+  refs:
+  - bible:Genesis 14:1

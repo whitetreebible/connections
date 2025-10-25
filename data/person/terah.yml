@@ -1,0 +1,30 @@
+id: terah
+type: person
+name:
+  en: Terah
+name_disambiguous:
+  en: Terah (son of Nahor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/nahor
+  type: child-of
+  refs:
+  - bible:Genesis 11:24
+- target: person/abram
+  type: parent-of
+  refs:
+  - bible:Genesis 11:26
+- target: person/nahor
+  type: parent-of
+  refs:
+  - bible:Genesis 11:26
+- target: person/haran
+  type: parent-of
+  refs:
+  - bible:Genesis 11:26
+- target: place/haran
+  type: died-in
+  refs:
+  - bible:Genesis 11:32

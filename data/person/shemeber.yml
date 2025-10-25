@@ -1,0 +1,14 @@
+id: shemeber
+type: person
+name:
+  en: Shemeber
+name_disambiguous:
+  en: Shemeber (leader of Zeboiim)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/zeboiim
+  type: leader-of
+  refs:
+  - bible:Genesis 14:2

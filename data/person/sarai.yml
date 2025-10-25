@@ -1,0 +1,23 @@
+id: sarai
+type: person
+name:
+  en: Sarai
+name_disambiguous:
+  en: Sarai (married to Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: married-to
+  refs:
+  - bible:Genesis 11:29
+  - bible:Genesis 16:1
+- target: person/hagar
+  type: leader-of
+  refs:
+  - bible:Genesis 16:1
+- target: person/sarah
+  type: name-matches
+  refs:
+  - bible:Genesis 17:15

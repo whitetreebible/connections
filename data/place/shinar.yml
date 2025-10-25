@@ -1,0 +1,14 @@
+id: shinar
+type: place
+name:
+  en: Shinar
+name_disambiguous:
+  en: Shinar (led by Amraphel)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/amraphel
+  type: led-by
+  refs:
+  - bible:Genesis 14:1

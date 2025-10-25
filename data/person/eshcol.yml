@@ -1,0 +1,14 @@
+id: eshcol
+type: person
+name:
+  en: Eshcol
+name_disambiguous:
+  en: Eshcol (ally of Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: ally-of
+  refs:
+  - bible:Genesis 14:13

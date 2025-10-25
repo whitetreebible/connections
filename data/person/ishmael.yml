@@ -1,0 +1,18 @@
+id: ishmael
+type: person
+name:
+  en: Ishmael
+name_disambiguous:
+  en: Ishmael (son of Abram)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abram
+  type: child-of
+  refs:
+  - bible:Genesis 16:15
+- target: person/hagar
+  type: child-of
+  refs:
+  - bible:Genesis 16:15
