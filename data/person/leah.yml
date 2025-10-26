@@ -5,16 +5,56 @@ name:
 name_disambiguous:
   en: Leah (first wife of Jacob)
 description:
-  en: 'Leah was the first wife of Jacob and the mother of six of his twelve sons, who became
-    the ancestors of six of the twelve tribes of Israel. She was the daughter of Laban and the
-    older sister of Rachel. Leah''s story is one of love, rivalry, and faithfulness, as she
-    bore children to Jacob while Rachel, whom he loved more, remained barren for a time. 
-    Despite the challenges she faced, Leah is remembered for her significant role in the 
-    lineage of the Israelite people, particularly as the mother of Judah, from whom the
-    Davidic line would come.'
+  en: Leah was the first wife of Jacob and the mother of six of his twelve sons, who
+    became the ancestors of six of the twelve tribes of Israel. She was the daughter
+    of Laban and the older sister of Rachel. Leah's story is one of love, rivalry,
+    and faithfulness, as she bore children to Jacob while Rachel, whom he loved more,
+    remained barren for a time. Despite the challenges she faced, Leah is remembered
+    for her significant role in the lineage of the Israelite people, particularly
+    as the mother of Judah, from whom the Davidic line would come.
 footnotes: {}
 edges:
 - target: person/ruth
   type: associated-with
   refs:
   - bible:Ruth 4:11
+- target: person/laban
+  type: child-of
+  refs:
+  - bible:Genesis 29:16
+- target: person/jacob
+  type: married-to
+  refs:
+  - bible:Genesis 29:23
+- target: person/zilpah
+  type: leader-of
+  refs:
+  - bible:Genesis 29:24
+- target: person/reuben
+  type: parent-of
+  refs:
+  - bible:Genesis 29:32
+- target: person/simeon
+  type: parent-of
+  refs:
+  - bible:Genesis 29:33
+- target: person/levi
+  type: parent-of
+  refs:
+  - bible:Genesis 29:34
+- target: person/judah
+  type: parent-of
+  refs:
+  - bible:Genesis 29:35
+- target: person/issachar
+  type: parent-of
+  refs:
+  - bible:Genesis 30:18
+- target: person/zebulun
+  type: parent-of
+  refs:
+  - bible:Genesis 30:20
+- target: person/dinah
+  type: parent-of
+  refs:
+  - bible:Genesis 30:21

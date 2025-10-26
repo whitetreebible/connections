@@ -1,0 +1,18 @@
+id: asher
+type: person
+name:
+  en: Asher
+name_disambiguous:
+  en: Asher (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:12
+- target: person/zilpah
+  type: child-of
+  refs:
+  - bible:Genesis 30:13

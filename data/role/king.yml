@@ -1,0 +1,10 @@
+id: king
+type: role
+name:
+  en: king
+name_disambiguous:
+  en: king (royal title)
+description:
+  en: ''
+footnotes: {}
+edges: []

@@ -12,3 +12,11 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 21:34
+- target: person/abimelech_2
+  type: led-by
+  refs:
+  - bible:Genesis 26:1
+- target: place/gerar
+  type: near
+  refs:
+  - bible:Genesis 26:1

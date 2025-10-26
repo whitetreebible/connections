@@ -1,0 +1,18 @@
+id: reuben
+type: person
+name:
+  en: Reuben
+name_disambiguous:
+  en: Reuben (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 29:32
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 29:32

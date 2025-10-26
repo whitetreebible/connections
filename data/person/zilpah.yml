@@ -1,0 +1,26 @@
+id: zilpah
+type: person
+name:
+  en: Zilpah
+name_disambiguous:
+  en: Zilpah (Leah's servant and Jacob's wife/concubine)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/leah
+  type: led-by
+  refs:
+  - bible:Genesis 29:24
+- target: person/jacob
+  type: married-to
+  refs:
+  - bible:Genesis 30:9
+- target: person/gad
+  type: parent-of
+  refs:
+  - bible:Genesis 30:11
+- target: person/asher
+  type: parent-of
+  refs:
+  - bible:Genesis 30:13

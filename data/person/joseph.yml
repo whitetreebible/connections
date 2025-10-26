@@ -1,0 +1,18 @@
+id: joseph
+type: person
+name:
+  en: Joseph
+name_disambiguous:
+  en: Joseph (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:24
+- target: person/rachel
+  type: child-of
+  refs:
+  - bible:Genesis 30:24

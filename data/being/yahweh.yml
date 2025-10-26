@@ -61,3 +61,15 @@ edges:
   type: blessed
   refs:
   - bible:Genesis 24:27
+- target: person/laban
+  type: blessed
+  refs:
+  - bible:Genesis 30:27
+- target: person/jacob
+  type: blessed
+  refs:
+  - bible:Genesis 30:30
+- target: person/isaac
+  type: blessed
+  refs:
+  - bible:Genesis 26:12

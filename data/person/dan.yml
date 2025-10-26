@@ -1,0 +1,18 @@
+id: dan
+type: person
+name:
+  en: Dan
+name_disambiguous:
+  en: Dan (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:5
+- target: person/bilhah
+  type: child-of
+  refs:
+  - bible:Genesis 30:6

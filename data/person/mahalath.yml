@@ -1,0 +1,22 @@
+id: mahalath
+type: person
+name:
+  en: Mahalath
+name_disambiguous:
+  en: Mahalath (married to Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: married-to
+  refs:
+  - bible:Genesis 28:9
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 28:9
+- target: person/nebaoth
+  type: related-to
+  refs:
+  - bible:Genesis 28:9

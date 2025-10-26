@@ -5,10 +5,10 @@ name:
 name_disambiguous:
   en: Judah (son of Jacob)
 description:
-  en: 'Judah was the fourth son of Jacob and Leah, and his descendants formed the tribe of Judah,
-    one of the twelve tribes of Israel. He is a significant figure in the biblical narrative, known
-    for his role in the story of Joseph and for being an ancestor of King David and, according to
-    Christian tradition, Jesus Christ.'
+  en: Judah was the fourth son of Jacob and Leah, and his descendants formed the tribe
+    of Judah, one of the twelve tribes of Israel. He is a significant figure in the
+    biblical narrative, known for his role in the story of Joseph and for being an
+    ancestor of King David and, according to Christian tradition, Jesus Christ.
 footnotes: {}
 edges:
 - target: person/ruth
@@ -23,3 +23,11 @@ edges:
   type: married-to
   refs:
   - bible:Ruth 4:12
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 29:35
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 29:35

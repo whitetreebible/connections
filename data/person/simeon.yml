@@ -1,0 +1,18 @@
+id: simeon
+type: person
+name:
+  en: Simeon
+name_disambiguous:
+  en: Simeon (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 29:33
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 29:33

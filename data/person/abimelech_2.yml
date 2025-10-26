@@ -1,0 +1,13 @@
+id: abimelech_2
+type: person
+name:
+  en: Abimelech
+name_disambiguous:
+  en: Abimelech (leader of Gerar in Isaac's time)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/abimelech
+  type: name-matches
+  refs: []

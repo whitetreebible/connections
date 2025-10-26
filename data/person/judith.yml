@@ -1,0 +1,22 @@
+id: judith
+type: person
+name:
+  en: Judith
+name_disambiguous:
+  en: Judith (married to Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: married-to
+  refs:
+  - bible:Genesis 26:34
+- target: person/beeri
+  type: child-of
+  refs:
+  - bible:Genesis 26:34
+- target: group/hittites
+  type: member-of
+  refs:
+  - bible:Genesis 26:34

@@ -1,0 +1,26 @@
+id: bilhah
+type: person
+name:
+  en: Bilhah
+name_disambiguous:
+  en: Bilhah (Rachel's servant and Jacob's wife/concubine)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/rachel
+  type: led-by
+  refs:
+  - bible:Genesis 29:29
+- target: person/jacob
+  type: married-to
+  refs:
+  - bible:Genesis 30:4
+- target: person/dan
+  type: parent-of
+  refs:
+  - bible:Genesis 30:6
+- target: person/naphtali
+  type: parent-of
+  refs:
+  - bible:Genesis 30:8

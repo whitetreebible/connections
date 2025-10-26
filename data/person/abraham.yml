@@ -74,3 +74,4 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 25:12
+  - bible:Genesis 28:9

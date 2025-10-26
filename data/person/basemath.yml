@@ -1,0 +1,22 @@
+id: basemath
+type: person
+name:
+  en: Basemath
+name_disambiguous:
+  en: Basemath (married to Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: married-to
+  refs:
+  - bible:Genesis 26:34
+- target: person/elon
+  type: child-of
+  refs:
+  - bible:Genesis 26:34
+- target: group/hittites
+  type: member-of
+  refs:
+  - bible:Genesis 26:34

@@ -29,6 +29,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:12
+  - bible:Genesis 28:9
 - target: person/nebaioth
   type: parent-of
   refs:
@@ -81,3 +82,7 @@ edges:
   type: died-in
   refs:
   - bible:Genesis 25:17
+- target: person/mahalath
+  type: parent-of
+  refs:
+  - bible:Genesis 28:9

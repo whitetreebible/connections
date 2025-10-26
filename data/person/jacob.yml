@@ -12,7 +12,76 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:24
+  - bible:Genesis 28:5
 - target: person/isaac
   type: child-of
   refs:
   - bible:Genesis 25:24
+- target: place/paddan-aram
+  type: visited
+  refs:
+  - bible:Genesis 28:5
+- target: person/leah
+  type: married-to
+  refs:
+  - bible:Genesis 29:23
+- target: person/rachel
+  type: married-to
+  refs:
+  - bible:Genesis 29:28
+- target: person/reuben
+  type: parent-of
+  refs:
+  - bible:Genesis 29:32
+- target: person/simeon
+  type: parent-of
+  refs:
+  - bible:Genesis 29:33
+- target: person/levi
+  type: parent-of
+  refs:
+  - bible:Genesis 29:34
+- target: person/judah
+  type: parent-of
+  refs:
+  - bible:Genesis 29:35
+- target: person/bilhah
+  type: married-to
+  refs:
+  - bible:Genesis 30:4
+- target: person/dan
+  type: parent-of
+  refs:
+  - bible:Genesis 30:5
+- target: person/naphtali
+  type: parent-of
+  refs:
+  - bible:Genesis 30:7
+- target: person/zilpah
+  type: married-to
+  refs:
+  - bible:Genesis 30:9
+- target: person/gad
+  type: parent-of
+  refs:
+  - bible:Genesis 30:10
+- target: person/asher
+  type: parent-of
+  refs:
+  - bible:Genesis 30:12
+- target: person/issachar
+  type: parent-of
+  refs:
+  - bible:Genesis 30:18
+- target: person/zebulun
+  type: parent-of
+  refs:
+  - bible:Genesis 30:20
+- target: person/dinah
+  type: parent-of
+  refs:
+  - bible:Genesis 30:21
+- target: person/joseph
+  type: parent-of
+  refs:
+  - bible:Genesis 30:24

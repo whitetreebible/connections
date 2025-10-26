@@ -1,0 +1,14 @@
+id: beeri
+type: person
+name:
+  en: Beeri
+name_disambiguous:
+  en: Beeri (father of Judith)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/judith
+  type: parent-of
+  refs:
+  - bible:Genesis 26:34

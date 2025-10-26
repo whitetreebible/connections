@@ -62,3 +62,7 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 22:24
+- target: person/laban
+  type: ancestor-of
+  refs:
+  - bible:Genesis 29:5

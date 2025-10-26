@@ -12,7 +12,20 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:24
+  - bible:Genesis 28:5
 - target: person/isaac
   type: child-of
   refs:
   - bible:Genesis 25:24
+- target: person/judith
+  type: married-to
+  refs:
+  - bible:Genesis 26:34
+- target: person/basemath
+  type: married-to
+  refs:
+  - bible:Genesis 26:34
+- target: person/mahalath
+  type: married-to
+  refs:
+  - bible:Genesis 28:9

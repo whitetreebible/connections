@@ -3,7 +3,7 @@ type: person
 name:
   en: Abimelech
 name_disambiguous:
-  en: Abimelech (leader of Gerar)
+  en: Abimelech (leader of Gerar in Abraham's time)
 description:
   en: ''
 footnotes: {}
@@ -28,3 +28,6 @@ edges:
   type: leader-of
   refs:
   - bible:Genesis 21:22
+- target: person/abimelech_2
+  type: name-matches
+  refs: []

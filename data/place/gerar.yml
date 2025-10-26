@@ -12,3 +12,7 @@ edges:
   type: led-by
   refs:
   - bible:Genesis 20:2
+- target: person/isaac
+  type: associated-with
+  refs:
+  - bible:Genesis 26:1

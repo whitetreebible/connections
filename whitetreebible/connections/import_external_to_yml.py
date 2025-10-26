@@ -259,7 +259,7 @@ def get_or_create_node(node_type: str, name: str, bible_ref: str, context: str, 
     yaml_path = get_node_yaml_path(node_type, node_id)
     
     # Capitalize names for person types
-    display_name = name.title() if node_type.lower() == 'person' else name
+    display_name = name.title() if node_type.lower() in ['person', 'place', 'group'] else name
     
     # Set a meaningful disambiguated name if possible
     if edge_type and target_link and node_type.lower() == 'person':

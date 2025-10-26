@@ -13,7 +13,20 @@ edges:
   refs:
   - bible:Genesis 24:29
   - bible:Genesis 25:20
+  - bible:Genesis 28:2
 - target: group/arameans
   type: member-of
   refs:
   - bible:Genesis 25:20
+- target: person/nahor
+  type: descendant-of
+  refs:
+  - bible:Genesis 29:5
+- target: person/rachel
+  type: parent-of
+  refs:
+  - bible:Genesis 29:6
+- target: person/leah
+  type: parent-of
+  refs:
+  - bible:Genesis 29:16

@@ -1,0 +1,18 @@
+id: gad
+type: person
+name:
+  en: Gad
+name_disambiguous:
+  en: Gad (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:10
+- target: person/zilpah
+  type: child-of
+  refs:
+  - bible:Genesis 30:11

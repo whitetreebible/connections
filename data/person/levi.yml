@@ -1,0 +1,18 @@
+id: levi
+type: person
+name:
+  en: Levi
+name_disambiguous:
+  en: Levi (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 29:34
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 29:34

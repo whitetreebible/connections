@@ -1,0 +1,18 @@
+id: issachar
+type: person
+name:
+  en: Issachar
+name_disambiguous:
+  en: Issachar (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:18
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 30:18

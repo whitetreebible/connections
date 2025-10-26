@@ -1,0 +1,14 @@
+id: elon
+type: person
+name:
+  en: Elon
+name_disambiguous:
+  en: Elon (father of Basemath)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/basemath
+  type: parent-of
+  refs:
+  - bible:Genesis 26:34

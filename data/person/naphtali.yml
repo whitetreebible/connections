@@ -1,0 +1,18 @@
+id: naphtali
+type: person
+name:
+  en: Naphtali
+name_disambiguous:
+  en: Naphtali (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:7
+- target: person/bilhah
+  type: child-of
+  refs:
+  - bible:Genesis 30:8

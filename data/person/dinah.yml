@@ -1,0 +1,18 @@
+id: dinah
+type: person
+name:
+  en: Dinah
+name_disambiguous:
+  en: Dinah (only daughter of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 30:21
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 30:21
