@@ -225,6 +225,20 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#geographic">
+<span class="md-ellipsis">
+      Geographic
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#textual-symbolic">
 <span class="md-ellipsis">
       Textual / symbolic
@@ -248,14 +262,80 @@
 <li><strong>Name matches</strong> <a href="../../person/sarai/">Sarai</a> (<a href="https://biblehub.com/context/genesis/17-15.htm" target="_blank">Genesis 17:15</a>)</li>
 <li><strong>Parent of</strong> <a href="../../person/isaac/">Isaac</a> (<a href="https://biblehub.com/context/genesis/21-2.htm" target="_blank">Genesis 21:2</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/sarah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/jacob(["Jacob"])
+    person/abram(["Abram"])
+    person/sarah(["Sarah"])
+    person/haran(["Haran"])
+    person/abraham(["Abraham"])
+    person/rebekah(["Rebekah"])
+    person/nahor(["Nahor"])
+    person/bethuel(["Bethuel"])
+    person/terah(["Terah"])
+    person/esau(["Esau"])
+    person/isaac(["Isaac"])
+    click person/jacob "../../person/jacob/"
+    click person/abram "../../person/abram/"
+    click person/sarah "../../person/sarah/"
+    click person/haran "../../person/haran/"
+    click person/abraham "../../person/abraham/"
+    click person/rebekah "../../person/rebekah/"
+    click person/nahor "../../person/nahor/"
+    click person/bethuel "../../person/bethuel/"
+    click person/terah "../../person/terah/"
+    click person/esau "../../person/esau/"
+    click person/isaac "../../person/isaac/"
+    person/abraham --&gt;|parent of| person/isaac
+    person/terah --&gt;|parent of| person/haran
+    person/sarah --&gt;|parent of| person/isaac
+    person/terah --&gt;|parent of| person/abram
+    person/isaac &lt;--&gt;|married to| person/rebekah
+    person/isaac --&gt;|parent of| person/jacob
+    person/terah --&gt;|parent of| person/nahor
+    person/isaac --&gt;|parent of| person/esau
+    person/terah --&gt;|parent of| person/sarah
+    person/isaac --&gt;|related to| person/bethuel
+</div>
+<h2 id="geographic">Geographic</h2>
+<div class="mermaid">graph TD;
+    style person/sarah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    place/kiriath_arba(["Kiriath Arba"])
+    person/sarah(["Sarah"])
+    person/abraham(["Abraham"])
+    being/yahweh(["Yahweh"])
+    place/machpelah(["Machpelah"])
+    place/mamre(["Mamre"])
+    click place/kiriath_arba "../../place/kiriath_arba/"
+    click person/sarah "../../person/sarah/"
+    click person/abraham "../../person/abraham/"
+    click being/yahweh "../../being/yahweh/"
+    click place/machpelah "../../place/machpelah/"
+    click place/mamre "../../place/mamre/"
+    person/abraham --&gt;|buried in| place/machpelah
+    being/yahweh .-&gt;|visited| person/sarah
+    person/sarah --&gt;|buried in| place/machpelah
+    place/machpelah --&gt;|near| place/mamre
+    person/sarah --&gt;|died in| place/kiriath_arba
+</div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/sarah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/abimelech(["Abimelech"])
+    person/abimelech_2(["Abimelech"])
     person/sarai(["Sarai"])
     person/sarah(["Sarah"])
+    person/abraham(["Abraham"])
+    click person/abimelech "../../person/abimelech/"
+    click person/abimelech_2 "../../person/abimelech_2/"
     click person/sarai "../../person/sarai/"
     click person/sarah "../../person/sarah/"
-    person/sarai &lt;--&gt;|name matches| person/sarah
+    click person/abraham "../../person/abraham/"
+    person/sarah &lt;--&gt;|name matches| person/sarai
+    person/abimelech .-&gt;|associated with| person/abraham
+    person/abimelech &lt;--&gt;|name matches| person/abimelech_2
+    person/abimelech .-&gt;|associated with| person/sarah
 </div>
 </article>
 </div>

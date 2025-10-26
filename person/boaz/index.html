@@ -292,76 +292,76 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/salmon(["Salmon"])
-    person/mahlon(["Mahlon"])
-    person/elimelech(["Elimelech"])
-    person/jesse(["Jesse"])
-    person/kilion(["Kilion"])
-    person/nahshon(["Nahshon"])
+    person/obed(["Obed"])
     person/boaz(["Boaz"])
+    person/ruth(["Ruth"])
+    person/nahshon(["Nahshon"])
+    person/salmon(["Salmon"])
+    person/jesse(["Jesse"])
+    person/mahlon(["Mahlon"])
+    person/rahab(["Rahab"])
+    person/kilion(["Kilion"])
+    person/elimelech(["Elimelech"])
     person/naomi(["Naomi"])
     person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    person/rahab(["Rahab"])
-    person/obed(["Obed"])
-    person/ruth(["Ruth"])
-    click person/salmon "../../person/salmon/"
-    click person/mahlon "../../person/mahlon/"
-    click person/elimelech "../../person/elimelech/"
-    click person/jesse "../../person/jesse/"
-    click person/kilion "../../person/kilion/"
-    click person/nahshon "../../person/nahshon/"
+    click person/obed "../../person/obed/"
     click person/boaz "../../person/boaz/"
+    click person/ruth "../../person/ruth/"
+    click person/nahshon "../../person/nahshon/"
+    click person/salmon "../../person/salmon/"
+    click person/jesse "../../person/jesse/"
+    click person/mahlon "../../person/mahlon/"
+    click person/rahab "../../person/rahab/"
+    click person/kilion "../../person/kilion/"
+    click person/elimelech "../../person/elimelech/"
     click person/naomi "../../person/naomi/"
     click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click person/rahab "../../person/rahab/"
-    click person/obed "../../person/obed/"
-    click person/ruth "../../person/ruth/"
     person/boaz --&gt;|parent of| person/obed
     person/salmon --&gt;|parent of| person/boaz
-    person/obed --&gt;|parent of| person/jesse
-    person/naomi --&gt;|parent of| person/obed
-    person/elimelech --&gt;|parent of| person/kilion
-    person/rahab --&gt;|parent of| person/boaz
     person/naomi --&gt;|parent of| person/ruth
-    person/elimelech --&gt;|parent of| person/mahlon
-    person/salmon &lt;--&gt;|married to| person/rahab
-    person/nahshon --&gt;|parent of| person/salmon
-    person/kilion &lt;--&gt;|married to| person/ruth
-    person/boaz &lt;--&gt;|married to| person/ruth
-    person/ruth --&gt;|parent of| person/obed
+    person/naomi &lt;--&gt;|married to| person/elimelech
     person/elimelech --&gt;|related to| person/boaz
-    person/elimelech --&gt;|related to| person/elimelechs_redeemer
-    person/elimelech &lt;--&gt;|married to| person/naomi
-    person/rahab .-&gt;|ancestor of| person/jesus
+    person/ruth --&gt;|parent of| person/obed
+    person/elimelech --&gt;|parent of| person/mahlon
+    person/rahab --&gt;|parent of| person/boaz
+    person/elimelech --&gt;|parent of| person/kilion
+    person/ruth &lt;--&gt;|married to| person/kilion
+    person/nahshon --&gt;|parent of| person/salmon
+    person/naomi --&gt;|parent of| person/obed
+    person/rahab &lt;--&gt;|married to| person/salmon
     person/ruth --&gt;|related to| person/elimelechs_redeemer
+    person/boaz &lt;--&gt;|married to| person/ruth
+    person/elimelech --&gt;|related to| person/elimelechs_redeemer
+    person/rahab .-&gt;|ancestor of| person/jesus
+    person/obed --&gt;|parent of| person/jesse
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/judah(["tribe of Judah"])
     person/boaz(["Boaz"])
-    click group/judah "../../group/judah/"
+    group/judah(["tribe of Judah"])
     click person/boaz "../../person/boaz/"
+    click group/judah "../../group/judah/"
     person/boaz --&gt;|member of| group/judah
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/boaz(["Boaz"])
+    person/ruth(["Ruth"])
     place/bethlehem(["Bethlehem"])
     person/elimelech(["Elimelech"])
-    person/boaz(["Boaz"])
     person/naomi(["Naomi"])
-    person/ruth(["Ruth"])
+    click person/boaz "../../person/boaz/"
+    click person/ruth "../../person/ruth/"
     click place/bethlehem "../../place/bethlehem/"
     click person/elimelech "../../person/elimelech/"
-    click person/boaz "../../person/boaz/"
     click person/naomi "../../person/naomi/"
-    click person/ruth "../../person/ruth/"
-    person/boaz --&gt;|resident of| place/bethlehem
     person/boaz .-&gt;|visited| place/bethlehem
+    person/boaz --&gt;|resident of| place/bethlehem
+    person/naomi --&gt;|resident of| place/bethlehem
     person/ruth --&gt;|resident of| place/bethlehem
     person/elimelech --&gt;|resident of| place/bethlehem
-    person/naomi --&gt;|resident of| place/bethlehem
 </div>
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
@@ -387,49 +387,49 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/boaz fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/bethlehem(["Bethlehem"])
-    object/field(["field"])
-    theme/will_not_rest(["will not rest"])
-    place/ephrathah(["Ephrathah"])
-    person/elimelech(["Elimelech"])
-    object/city_gate(["city gate"])
-    object/wing(["wing"])
     theme/hospitality(["hospitality"])
-    animal/bird(["bird"])
+    person/ruth(["Ruth"])
     person/boaz(["Boaz"])
+    event/drinking(["drinking"])
+    theme/will_not_rest(["will not rest"])
+    place/bethlehem(["Bethlehem"])
+    person/elimelech(["Elimelech"])
+    object/wing(["wing"])
+    object/city_gate(["city gate"])
+    place/ephrathah(["Ephrathah"])
+    animal/bird(["bird"])
+    object/field(["field"])
     person/naomi(["Naomi"])
     person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    event/drinking(["drinking"])
-    person/ruth(["Ruth"])
-    click place/bethlehem "../../place/bethlehem/"
-    click object/field "../../object/field/"
-    click theme/will_not_rest "../../theme/will_not_rest/"
-    click place/ephrathah "../../place/ephrathah/"
-    click person/elimelech "../../person/elimelech/"
-    click object/city_gate "../../object/city_gate/"
-    click object/wing "../../object/wing/"
     click theme/hospitality "../../theme/hospitality/"
-    click animal/bird "../../animal/bird/"
+    click person/ruth "../../person/ruth/"
     click person/boaz "../../person/boaz/"
+    click event/drinking "../../event/drinking/"
+    click theme/will_not_rest "../../theme/will_not_rest/"
+    click place/bethlehem "../../place/bethlehem/"
+    click person/elimelech "../../person/elimelech/"
+    click object/wing "../../object/wing/"
+    click object/city_gate "../../object/city_gate/"
+    click place/ephrathah "../../place/ephrathah/"
+    click animal/bird "../../animal/bird/"
+    click object/field "../../object/field/"
     click person/naomi "../../person/naomi/"
     click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click event/drinking "../../event/drinking/"
-    click person/ruth "../../person/ruth/"
-    person/ruth &lt;.-&gt;|associated with| object/wing
-    place/bethlehem .-&gt;|associated with| person/elimelech
-    person/boaz &lt;.-&gt;|associated with| object/field
     place/bethlehem .-&gt;|associated with| person/naomi
-    person/boaz --&gt;|example of| theme/hospitality
-    person/ruth &lt;.-&gt;|associated with| object/field
-    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
-    event/drinking &lt;.-&gt;|associated with| person/boaz
-    place/bethlehem &lt;--&gt;|name matches| place/ephrathah
-    animal/bird .-&gt;|associated with| object/wing
-    object/city_gate &lt;.-&gt;|associated with| person/boaz
-    place/bethlehem .-&gt;|associated with| person/boaz
-    object/wing &lt;.-&gt;|associated with| person/boaz
-    place/bethlehem &lt;.-&gt;|associated with| person/ruth
     object/city_gate &lt;.-&gt;|associated with| person/elimelechs_redeemer
+    place/ephrathah &lt;--&gt;|name matches| place/bethlehem
+    object/field &lt;.-&gt;|associated with| person/ruth
+    object/field &lt;.-&gt;|associated with| person/boaz
+    object/wing &lt;.-&gt;|associated with| person/boaz
+    animal/bird .-&gt;|associated with| object/wing
+    person/boaz --&gt;|example of| theme/hospitality
+    person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
+    place/bethlehem &lt;.-&gt;|associated with| person/ruth
+    place/bethlehem .-&gt;|associated with| person/boaz
+    object/city_gate &lt;.-&gt;|associated with| person/boaz
+    person/ruth &lt;.-&gt;|associated with| object/wing
+    event/drinking &lt;.-&gt;|associated with| person/boaz
+    place/bethlehem .-&gt;|associated with| person/elimelech
 </div>
 <div class="footnote">
 <hr/>

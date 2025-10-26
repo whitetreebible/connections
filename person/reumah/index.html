@@ -224,6 +224,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -238,6 +245,66 @@
 <li><strong>Married to</strong> <a href="../../person/nahor/">Nahor</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>)</li>
 <li><strong>Parent of</strong> <a href="../../person/tebah/">Tebah</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>), <a href="../../person/gaham/">Gaham</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>), <a href="../../person/tahash/">Tahash</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>), <a href="../../person/maacah/">Maacah</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/reumah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/uz(["Uz"])
+    person/gaham(["Gaham"])
+    person/pildash(["Pildash"])
+    person/hazo(["Hazo"])
+    person/kesed(["Kesed"])
+    person/laban(["Laban"])
+    person/kemuel(["Kemuel"])
+    person/serug(["Serug"])
+    person/abraham(["Abraham"])
+    person/reumah(["Reumah"])
+    person/milcah(["Milcah"])
+    person/nahor(["Nahor"])
+    person/jidlaph(["Jidlaph"])
+    person/maacah(["Maacah"])
+    person/tebah(["Tebah"])
+    person/bethuel(["Bethuel"])
+    person/terah(["Terah"])
+    person/tahash(["Tahash"])
+    person/buz(["Buz"])
+    click person/uz "../../person/uz/"
+    click person/gaham "../../person/gaham/"
+    click person/pildash "../../person/pildash/"
+    click person/hazo "../../person/hazo/"
+    click person/kesed "../../person/kesed/"
+    click person/laban "../../person/laban/"
+    click person/kemuel "../../person/kemuel/"
+    click person/serug "../../person/serug/"
+    click person/abraham "../../person/abraham/"
+    click person/reumah "../../person/reumah/"
+    click person/milcah "../../person/milcah/"
+    click person/nahor "../../person/nahor/"
+    click person/jidlaph "../../person/jidlaph/"
+    click person/maacah "../../person/maacah/"
+    click person/tebah "../../person/tebah/"
+    click person/bethuel "../../person/bethuel/"
+    click person/terah "../../person/terah/"
+    click person/tahash "../../person/tahash/"
+    click person/buz "../../person/buz/"
+    person/reumah &lt;--&gt;|married to| person/nahor
+    person/nahor --&gt;|parent of| person/uz
+    person/nahor &lt;--&gt;|married to| person/milcah
+    person/nahor --&gt;|parent of| person/buz
+    person/abraham --&gt;|related to| person/nahor
+    person/nahor .-&gt;|ancestor of| person/laban
+    person/nahor --&gt;|parent of| person/kemuel
+    person/nahor --&gt;|parent of| person/hazo
+    person/nahor --&gt;|parent of| person/kesed
+    person/reumah --&gt;|parent of| person/tahash
+    person/reumah --&gt;|parent of| person/maacah
+    person/serug --&gt;|parent of| person/nahor
+    person/nahor --&gt;|parent of| person/bethuel
+    person/nahor --&gt;|parent of| person/pildash
+    person/nahor --&gt;|parent of| person/jidlaph
+    person/terah --&gt;|parent of| person/nahor
+    person/reumah --&gt;|parent of| person/tebah
+    person/reumah --&gt;|parent of| person/gaham
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -269,5 +336,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

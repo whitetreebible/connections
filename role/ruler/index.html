@@ -229,16 +229,16 @@
 <div class="mermaid">graph TD;
     style role/ruler fill:#2fa4e7,stroke:#333,stroke-width:4px;
     being/human(["human"])
-    role/ruler(["ruler"])
-    object/lesser_light(["lesser light"])
     object/greater_light(["greater light"])
+    object/lesser_light(["lesser light"])
+    role/ruler(["ruler"])
     click being/human "../../being/human/"
-    click role/ruler "../../role/ruler/"
-    click object/lesser_light "../../object/lesser_light/"
     click object/greater_light "../../object/greater_light/"
+    click object/lesser_light "../../object/lesser_light/"
+    click role/ruler "../../role/ruler/"
+    being/human --&gt;|role as| role/ruler
     object/lesser_light --&gt;|role as| role/ruler
     object/greater_light --&gt;|role as| role/ruler
-    being/human --&gt;|role as| role/ruler
 </div>
 </article>
 </div>

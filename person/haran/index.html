@@ -264,39 +264,45 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/haran fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/haran(["Haran"])
-    person/abram(["Abram"])
-    person/lot_daughter_older(["Lot's older daughter"])
-    person/nahor(["Nahor"])
     person/ben-ammi(["Ben Ammi"])
-    person/milcah(["Milcah"])
-    person/lot(["Lot"])
-    person/terah(["Terah"])
     person/moab(["Moab"])
-    person/lot_daughter_younger(["Lot's younger daughter"])
+    person/lot(["Lot"])
+    person/lot_daughter_older(["Lot's older daughter"])
+    person/abram(["Abram"])
+    person/sarah(["Sarah"])
+    person/haran(["Haran"])
+    person/milcah(["Milcah"])
+    person/nahor(["Nahor"])
     person/iscah(["Iscah"])
-    click person/haran "../../person/haran/"
-    click person/abram "../../person/abram/"
-    click person/lot_daughter_older "../../person/lot_daughter_older/"
-    click person/nahor "../../person/nahor/"
+    person/bethuel(["Bethuel"])
+    person/lot_daughter_younger(["Lot's younger daughter"])
+    person/terah(["Terah"])
     click person/ben-ammi "../../person/ben-ammi/"
-    click person/milcah "../../person/milcah/"
-    click person/lot "../../person/lot/"
-    click person/terah "../../person/terah/"
     click person/moab "../../person/moab/"
-    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
+    click person/lot "../../person/lot/"
+    click person/lot_daughter_older "../../person/lot_daughter_older/"
+    click person/abram "../../person/abram/"
+    click person/sarah "../../person/sarah/"
+    click person/haran "../../person/haran/"
+    click person/milcah "../../person/milcah/"
+    click person/nahor "../../person/nahor/"
     click person/iscah "../../person/iscah/"
-    person/lot --&gt;|parent of| person/lot_daughter_older
-    person/milcah &lt;--&gt;|married to| person/nahor
+    click person/bethuel "../../person/bethuel/"
+    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
+    click person/terah "../../person/terah/"
     person/haran --&gt;|parent of| person/lot
-    person/nahor --&gt;|parent of| person/terah
-    person/lot --&gt;|parent of| person/moab
-    person/terah --&gt;|parent of| person/abram
-    person/haran --&gt;|parent of| person/iscah
-    person/haran --&gt;|parent of| person/milcah
-    person/lot --&gt;|parent of| person/ben-ammi
-    person/terah --&gt;|parent of| person/haran
+    person/nahor &lt;--&gt;|married to| person/milcah
+    person/lot --&gt;|parent of| person/lot_daughter_older
     person/lot --&gt;|parent of| person/lot_daughter_younger
+    person/haran --&gt;|parent of| person/milcah
+    person/terah --&gt;|parent of| person/haran
+    person/haran --&gt;|parent of| person/iscah
+    person/lot --&gt;|parent of| person/moab
+    person/milcah --&gt;|parent of| person/bethuel
+    person/lot --&gt;|parent of| person/ben-ammi
+    person/terah --&gt;|parent of| person/abram
+    person/terah --&gt;|parent of| person/nahor
+    person/terah --&gt;|parent of| person/sarah
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;

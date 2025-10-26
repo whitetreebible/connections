@@ -224,6 +224,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -237,6 +244,48 @@
 <ul>
 <li><strong>Child of</strong> <a href="../../person/keturah/">Keturah</a> (<a href="https://biblehub.com/context/genesis/25-2.htm" target="_blank">Genesis 25:2</a>), <a href="../../person/abraham/">Abraham</a> (<a href="https://biblehub.com/context/genesis/25-2.htm" target="_blank">Genesis 25:2</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/shuah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/medan(["Medan"])
+    person/keturah(["Keturah"])
+    person/abraham(["Abraham"])
+    person/ishmael(["Ishmael"])
+    person/midian(["Midian"])
+    person/ishbak(["Ishbak"])
+    person/jokshan(["Jokshan"])
+    person/nahor(["Nahor"])
+    person/zimran(["Zimran"])
+    person/shuah(["Shuah"])
+    person/isaac(["Isaac"])
+    click person/medan "../../person/medan/"
+    click person/keturah "../../person/keturah/"
+    click person/abraham "../../person/abraham/"
+    click person/ishmael "../../person/ishmael/"
+    click person/midian "../../person/midian/"
+    click person/ishbak "../../person/ishbak/"
+    click person/jokshan "../../person/jokshan/"
+    click person/nahor "../../person/nahor/"
+    click person/zimran "../../person/zimran/"
+    click person/shuah "../../person/shuah/"
+    click person/isaac "../../person/isaac/"
+    person/keturah --&gt;|parent of| person/ishbak
+    person/abraham --&gt;|parent of| person/isaac
+    person/keturah --&gt;|parent of| person/medan
+    person/abraham --&gt;|related to| person/nahor
+    person/keturah &lt;--&gt;|married to| person/abraham
+    person/keturah --&gt;|parent of| person/jokshan
+    person/abraham --&gt;|parent of| person/shuah
+    person/keturah --&gt;|parent of| person/midian
+    person/keturah --&gt;|parent of| person/zimran
+    person/abraham --&gt;|parent of| person/medan
+    person/keturah --&gt;|parent of| person/shuah
+    person/abraham --&gt;|parent of| person/ishbak
+    person/abraham --&gt;|parent of| person/jokshan
+    person/abraham --&gt;|parent of| person/zimran
+    person/abraham --&gt;|parent of| person/ishmael
+    person/abraham --&gt;|parent of| person/midian
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -268,5 +317,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

@@ -257,45 +257,90 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/hagar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sarai(["Sarai"])
-    person/abram(["Abram"])
+    person/hadad(["Hadad"])
     person/ishmael(["Ishmael"])
-    person/terah(["Terah"])
+    person/naphish(["Naphish"])
+    person/nebaioth(["Nebaioth"])
+    person/jetur(["Jetur"])
     person/hagar(["Hagar"])
-    click person/sarai "../../person/sarai/"
-    click person/abram "../../person/abram/"
+    person/abram(["Abram"])
+    person/abraham(["Abraham"])
+    person/mishma(["Mishma"])
+    person/tema(["Tema"])
+    person/adbeel(["Adbeel"])
+    person/dumah(["Dumah"])
+    person/kedar(["Kedar"])
+    person/kedemah(["Kedemah"])
+    person/terah(["Terah"])
+    person/mahalath(["Mahalath"])
+    person/ishmael_wife(["Ishmael's wife"])
+    person/sarai(["Sarai"])
+    person/mibsam(["Mibsam"])
+    person/massa(["Massa"])
+    click person/hadad "../../person/hadad/"
     click person/ishmael "../../person/ishmael/"
-    click person/terah "../../person/terah/"
+    click person/naphish "../../person/naphish/"
+    click person/nebaioth "../../person/nebaioth/"
+    click person/jetur "../../person/jetur/"
     click person/hagar "../../person/hagar/"
-    person/abram &lt;--&gt;|married to| person/hagar
-    person/abram &lt;--&gt;|married to| person/sarai
-    person/abram --&gt;|parent of| person/ishmael
+    click person/abram "../../person/abram/"
+    click person/abraham "../../person/abraham/"
+    click person/mishma "../../person/mishma/"
+    click person/tema "../../person/tema/"
+    click person/adbeel "../../person/adbeel/"
+    click person/dumah "../../person/dumah/"
+    click person/kedar "../../person/kedar/"
+    click person/kedemah "../../person/kedemah/"
+    click person/terah "../../person/terah/"
+    click person/mahalath "../../person/mahalath/"
+    click person/ishmael_wife "../../person/ishmael_wife/"
+    click person/sarai "../../person/sarai/"
+    click person/mibsam "../../person/mibsam/"
+    click person/massa "../../person/massa/"
+    person/ishmael --&gt;|parent of| person/naphish
+    person/ishmael --&gt;|parent of| person/mahalath
+    person/ishmael --&gt;|parent of| person/hadad
+    person/ishmael --&gt;|parent of| person/kedar
     person/hagar --&gt;|parent of| person/ishmael
+    person/hagar &lt;--&gt;|married to| person/abram
+    person/ishmael --&gt;|parent of| person/adbeel
+    person/ishmael --&gt;|parent of| person/massa
+    person/ishmael &lt;--&gt;|married to| person/ishmael_wife
+    person/ishmael --&gt;|parent of| person/dumah
+    person/abram &lt;--&gt;|married to| person/sarai
     person/terah --&gt;|parent of| person/abram
+    person/ishmael --&gt;|parent of| person/mishma
+    person/ishmael --&gt;|parent of| person/nebaioth
+    person/ishmael --&gt;|parent of| person/tema
+    person/ishmael --&gt;|parent of| person/jetur
+    person/ishmael --&gt;|parent of| person/mibsam
+    person/abram --&gt;|parent of| person/ishmael
+    person/abraham --&gt;|parent of| person/ishmael
+    person/ishmael --&gt;|parent of| person/kedemah
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/hagar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sarai(["Sarai"])
-    person/abram(["Abram"])
-    person/mamre(["Mamre"])
     person/eshcol(["Eshcol"])
-    person/aner(["Aner"])
+    person/abram(["Abram"])
+    person/sarai(["Sarai"])
     group/egyptians(["Egyptians"])
+    person/aner(["Aner"])
     person/hagar(["Hagar"])
-    click person/sarai "../../person/sarai/"
-    click person/abram "../../person/abram/"
-    click person/mamre "../../person/mamre/"
+    person/mamre(["Mamre"])
     click person/eshcol "../../person/eshcol/"
-    click person/aner "../../person/aner/"
+    click person/abram "../../person/abram/"
+    click person/sarai "../../person/sarai/"
     click group/egyptians "../../group/egyptians/"
+    click person/aner "../../person/aner/"
     click person/hagar "../../person/hagar/"
-    person/mamre &lt;--&gt;|ally of| person/abram
+    click person/mamre "../../person/mamre/"
     person/sarai --&gt;|leader of| person/hagar
     person/abram --&gt;|leader of| person/hagar
+    person/abram &lt;--&gt;|ally of| person/aner
+    person/mamre &lt;--&gt;|ally of| person/abram
     person/hagar --&gt;|member of| group/egyptians
-    person/eshcol &lt;--&gt;|ally of| person/abram
-    person/aner &lt;--&gt;|ally of| person/abram
+    person/abram &lt;--&gt;|ally of| person/eshcol
 </div>
 </article>
 </div>

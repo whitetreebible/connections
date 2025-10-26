@@ -247,20 +247,20 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/riphath fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/gomer(["Gomer"])
     person/riphath(["Riphath"])
     person/togarmah(["Togarmah"])
-    person/ashkenaz(["Ashkenaz"])
     person/japheth(["Japheth"])
-    click person/gomer "../../person/gomer/"
+    person/ashkenaz(["Ashkenaz"])
+    person/gomer(["Gomer"])
     click person/riphath "../../person/riphath/"
     click person/togarmah "../../person/togarmah/"
-    click person/ashkenaz "../../person/ashkenaz/"
     click person/japheth "../../person/japheth/"
-    person/gomer --&gt;|parent of| person/riphath
+    click person/ashkenaz "../../person/ashkenaz/"
+    click person/gomer "../../person/gomer/"
     person/gomer --&gt;|parent of| person/ashkenaz
-    person/gomer --&gt;|parent of| person/togarmah
     person/japheth --&gt;|parent of| person/gomer
+    person/gomer --&gt;|parent of| person/togarmah
+    person/gomer --&gt;|parent of| person/riphath
 </div>
 </article>
 </div>

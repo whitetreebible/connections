@@ -254,20 +254,20 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/hebrews fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/hebrews(["Hebrews"])
     person/shem(["Shem"])
-    click group/hebrews "../../group/hebrews/"
+    group/hebrews(["Hebrews"])
     click person/shem "../../person/shem/"
+    click group/hebrews "../../group/hebrews/"
     person/shem --&gt;|origin of| group/hebrews
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style group/hebrews fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/eber(["Eber"])
     group/hebrews(["Hebrews"])
-    click person/eber "../../person/eber/"
+    person/eber(["Eber"])
     click group/hebrews "../../group/hebrews/"
-    person/eber &lt;--&gt;|name matches| group/hebrews
+    click person/eber "../../person/eber/"
+    group/hebrews &lt;--&gt;|name matches| person/eber
 </div>
 </article>
 </div>

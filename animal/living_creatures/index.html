@@ -228,66 +228,69 @@
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style animal/living_creatures fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/human(["human"])
-    concept/day(["day"])
-    concept/dry_land(["dry_land"])
-    place/heavens(["heavens"])
-    animal/sea_creature(["sea creature"])
-    animal/crawlers(["crawlers"])
-    animal/living_creatures(["living creatures"])
-    animal/livestock(["livestock"])
-    object/lesser_light(["lesser light"])
-    animal/sea_dragon(["sea dragon"])
-    concept/light(["light"])
-    being/god(["God"])
-    concept/night(["night"])
-    place/earth(["earth"])
-    object/greater_light(["greater light"])
     place/expanse(["expanse"])
+    animal/crawlers(["crawlers"])
+    being/human(["human"])
+    animal/sea_dragon(["sea dragon"])
+    place/earth(["earth"])
+    concept/light(["light"])
     animal/bird(["bird"])
-    plant/vegetation(["vegetation"])
+    object/lesser_light(["lesser light"])
+    animal/sea_creature(["sea creature"])
+    person/isaac(["Isaac"])
+    object/greater_light(["greater light"])
     object/lights(["lights"])
-    click being/human "../../being/human/"
-    click concept/day "../../concept/day/"
-    click concept/dry_land "../../concept/dry_land/"
-    click place/heavens "../../place/heavens/"
-    click animal/sea_creature "../../animal/sea_creature/"
-    click animal/crawlers "../../animal/crawlers/"
-    click animal/living_creatures "../../animal/living_creatures/"
-    click animal/livestock "../../animal/livestock/"
-    click object/lesser_light "../../object/lesser_light/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
-    click concept/light "../../concept/light/"
-    click being/god "../../being/god/"
-    click concept/night "../../concept/night/"
-    click place/earth "../../place/earth/"
-    click object/greater_light "../../object/greater_light/"
+    plant/vegetation(["vegetation"])
+    animal/livestock(["livestock"])
+    concept/night(["night"])
+    animal/living_creatures(["living creatures"])
+    concept/dry_land(["dry_land"])
+    concept/day(["day"])
+    place/heavens(["heavens"])
+    being/god(["God"])
     click place/expanse "../../place/expanse/"
+    click animal/crawlers "../../animal/crawlers/"
+    click being/human "../../being/human/"
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click place/earth "../../place/earth/"
+    click concept/light "../../concept/light/"
     click animal/bird "../../animal/bird/"
-    click plant/vegetation "../../plant/vegetation/"
+    click object/lesser_light "../../object/lesser_light/"
+    click animal/sea_creature "../../animal/sea_creature/"
+    click person/isaac "../../person/isaac/"
+    click object/greater_light "../../object/greater_light/"
     click object/lights "../../object/lights/"
-    being/god --&gt;|created| object/lesser_light
-    being/god --&gt;|blessed| animal/sea_dragon
-    being/god --&gt;|created| animal/sea_dragon
-    being/god --&gt;|created| place/heavens
-    being/god --&gt;|created| concept/dry_land
+    click plant/vegetation "../../plant/vegetation/"
+    click animal/livestock "../../animal/livestock/"
+    click concept/night "../../concept/night/"
+    click animal/living_creatures "../../animal/living_creatures/"
+    click concept/dry_land "../../concept/dry_land/"
+    click concept/day "../../concept/day/"
+    click place/heavens "../../place/heavens/"
+    click being/god "../../being/god/"
     being/god --&gt;|created| animal/living_creatures
     being/god --&gt;|blessed| animal/bird
     being/god --&gt;|created| animal/bird
-    being/god --&gt;|created| animal/crawlers
-    being/god --&gt;|created| object/greater_light
-    being/god --&gt;|created| animal/livestock
-    being/god --&gt;|created| place/earth
     being/god --&gt;|created| place/expanse
     being/god --&gt;|created| plant/vegetation
+    being/god --&gt;|created| animal/crawlers
+    being/god --&gt;|blessed| being/human
+    being/god --&gt;|created| being/human
+    being/god --&gt;|created| place/heavens
+    being/god --&gt;|created| object/lesser_light
+    being/god --&gt;|created| concept/light
+    being/god --&gt;|blessed| person/isaac
+    being/god --&gt;|created| object/greater_light
+    being/god --&gt;|created| place/earth
+    being/god --&gt;|created| animal/sea_dragon
+    being/god --&gt;|blessed| animal/sea_dragon
     being/god --&gt;|created| concept/night
-    being/god --&gt;|created| object/lights
+    being/god --&gt;|created| concept/day
     being/god --&gt;|created| animal/sea_creature
     being/god --&gt;|blessed| animal/sea_creature
-    being/god --&gt;|created| being/human
-    being/god --&gt;|blessed| being/human
-    being/god --&gt;|created| concept/light
-    being/god --&gt;|created| concept/day
+    being/god --&gt;|created| concept/dry_land
+    being/god --&gt;|created| object/lights
+    being/god --&gt;|created| animal/livestock
 </div>
 </article>
 </div>

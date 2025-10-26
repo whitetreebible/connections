@@ -249,22 +249,22 @@
 <div class="mermaid">graph TD;
     style person/enosh fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/mahalalel(["Mahalalel"])
-    person/enosh(["Enosh"])
-    person/adam(["Adam"])
     person/seth(["Seth"])
+    person/adam(["Adam"])
     person/eve(["Eve"])
     person/kenan(["Kenan"])
+    person/enosh(["Enosh"])
     click person/mahalalel "../../person/mahalalel/"
-    click person/enosh "../../person/enosh/"
-    click person/adam "../../person/adam/"
     click person/seth "../../person/seth/"
+    click person/adam "../../person/adam/"
     click person/eve "../../person/eve/"
     click person/kenan "../../person/kenan/"
+    click person/enosh "../../person/enosh/"
     person/kenan --&gt;|parent of| person/mahalalel
-    person/eve --&gt;|parent of| person/seth
-    person/enosh --&gt;|parent of| person/kenan
-    person/adam --&gt;|parent of| person/seth
     person/seth --&gt;|parent of| person/enosh
+    person/adam --&gt;|parent of| person/seth
+    person/enosh --&gt;|parent of| person/kenan
+    person/eve --&gt;|parent of| person/seth
 </div>
 </article>
 </div>

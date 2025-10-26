@@ -247,23 +247,26 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/mash fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/gether(["Gether"])
-    person/uz(["Uz"])
-    person/hul(["Hul"])
     person/mash(["Mash"])
-    person/shem(["Shem"])
+    person/uz(["Uz"])
+    person/kemuel(["Kemuel"])
+    person/hul(["Hul"])
     person/aram(["Aram"])
-    click person/gether "../../person/gether/"
-    click person/uz "../../person/uz/"
-    click person/hul "../../person/hul/"
+    person/shem(["Shem"])
+    person/gether(["Gether"])
     click person/mash "../../person/mash/"
-    click person/shem "../../person/shem/"
+    click person/uz "../../person/uz/"
+    click person/kemuel "../../person/kemuel/"
+    click person/hul "../../person/hul/"
     click person/aram "../../person/aram/"
-    person/aram --&gt;|parent of| person/hul
+    click person/shem "../../person/shem/"
+    click person/gether "../../person/gether/"
     person/shem --&gt;|parent of| person/aram
-    person/aram --&gt;|parent of| person/mash
-    person/aram --&gt;|parent of| person/uz
     person/aram --&gt;|parent of| person/gether
+    person/kemuel --&gt;|parent of| person/aram
+    person/aram --&gt;|parent of| person/uz
+    person/aram --&gt;|parent of| person/mash
+    person/aram --&gt;|parent of| person/hul
 </div>
 </article>
 </div>

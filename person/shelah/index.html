@@ -250,22 +250,22 @@
     style person/shelah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/eber(["Eber"])
     person/arphaxad(["Arphaxad"])
-    person/shelah(["Shelah"])
-    person/shem(["Shem"])
     person/peleg(["Peleg"])
+    person/shelah(["Shelah"])
     person/joktan(["Joktan"])
+    person/shem(["Shem"])
     click person/eber "../../person/eber/"
     click person/arphaxad "../../person/arphaxad/"
-    click person/shelah "../../person/shelah/"
-    click person/shem "../../person/shem/"
     click person/peleg "../../person/peleg/"
+    click person/shelah "../../person/shelah/"
     click person/joktan "../../person/joktan/"
-    person/eber --&gt;|parent of| person/peleg
-    person/shem --&gt;|parent of| person/arphaxad
+    click person/shem "../../person/shem/"
     person/shelah --&gt;|parent of| person/eber
-    person/shem .-&gt;|ancestor of| person/eber
     person/eber --&gt;|parent of| person/joktan
+    person/eber --&gt;|parent of| person/peleg
     person/arphaxad --&gt;|parent of| person/shelah
+    person/shem .-&gt;|ancestor of| person/eber
+    person/shem --&gt;|parent of| person/arphaxad
 </div>
 </article>
 </div>

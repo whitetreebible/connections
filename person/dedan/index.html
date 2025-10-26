@@ -248,17 +248,38 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/dedan fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/raamah(["Raamah"])
+    person/keturah(["Keturah"])
     person/cush(["Cush"])
-    person/sheba(["Sheba"])
     person/dedan(["Dedan"])
-    click person/raamah "../../person/raamah/"
+    person/raamah(["Raamah"])
+    person/abraham(["Abraham"])
+    person/jokshan(["Jokshan"])
+    person/sheba(["Sheba"])
+    person/sheba_son_of_joktan(["Sheba"])
+    person/asshurim(["Asshurim"])
+    person/leummim(["Leummim"])
+    person/letushim(["Letushim"])
+    click person/keturah "../../person/keturah/"
     click person/cush "../../person/cush/"
-    click person/sheba "../../person/sheba/"
     click person/dedan "../../person/dedan/"
-    person/cush --&gt;|parent of| person/raamah
+    click person/raamah "../../person/raamah/"
+    click person/abraham "../../person/abraham/"
+    click person/jokshan "../../person/jokshan/"
+    click person/sheba "../../person/sheba/"
+    click person/sheba_son_of_joktan "../../person/sheba_son_of_joktan/"
+    click person/asshurim "../../person/asshurim/"
+    click person/leummim "../../person/leummim/"
+    click person/letushim "../../person/letushim/"
+    person/keturah --&gt;|parent of| person/jokshan
     person/raamah --&gt;|parent of| person/sheba
     person/raamah --&gt;|parent of| person/dedan
+    person/dedan --&gt;|parent of| person/asshurim
+    person/cush --&gt;|parent of| person/raamah
+    person/dedan --&gt;|parent of| person/letushim
+    person/abraham --&gt;|parent of| person/jokshan
+    person/jokshan --&gt;|parent of| person/sheba_son_of_joktan
+    person/jokshan --&gt;|parent of| person/dedan
+    person/dedan --&gt;|parent of| person/leummim
 </div>
 </article>
 </div>

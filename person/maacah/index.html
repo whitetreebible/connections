@@ -224,6 +224,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -237,6 +244,27 @@
 <ul>
 <li><strong>Child of</strong> <a href="../../person/reumah/">Reumah</a> (<a href="https://biblehub.com/context/genesis/22-24.htm" target="_blank">Genesis 22:24</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/maacah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/gaham(["Gaham"])
+    person/reumah(["Reumah"])
+    person/nahor(["Nahor"])
+    person/maacah(["Maacah"])
+    person/tahash(["Tahash"])
+    person/tebah(["Tebah"])
+    click person/gaham "../../person/gaham/"
+    click person/reumah "../../person/reumah/"
+    click person/nahor "../../person/nahor/"
+    click person/maacah "../../person/maacah/"
+    click person/tahash "../../person/tahash/"
+    click person/tebah "../../person/tebah/"
+    person/reumah &lt;--&gt;|married to| person/nahor
+    person/reumah --&gt;|parent of| person/maacah
+    person/reumah --&gt;|parent of| person/tahash
+    person/reumah --&gt;|parent of| person/tebah
+    person/reumah --&gt;|parent of| person/gaham
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -268,5 +296,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

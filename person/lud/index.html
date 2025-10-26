@@ -247,30 +247,30 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/lud fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/asshur(["Asshur"])
     person/eber(["Eber"])
-    person/noah(["Noah"])
     person/arphaxad(["Arphaxad"])
+    person/japheth(["Japheth"])
     person/lud(["Lud"])
+    person/noah(["Noah"])
+    person/aram(["Aram"])
     person/shem(["Shem"])
     person/elam(["Elam"])
-    person/asshur(["Asshur"])
-    person/aram(["Aram"])
-    person/japheth(["Japheth"])
+    click person/asshur "../../person/asshur/"
     click person/eber "../../person/eber/"
-    click person/noah "../../person/noah/"
     click person/arphaxad "../../person/arphaxad/"
+    click person/japheth "../../person/japheth/"
     click person/lud "../../person/lud/"
+    click person/noah "../../person/noah/"
+    click person/aram "../../person/aram/"
     click person/shem "../../person/shem/"
     click person/elam "../../person/elam/"
-    click person/asshur "../../person/asshur/"
-    click person/aram "../../person/aram/"
-    click person/japheth "../../person/japheth/"
-    person/shem --&gt;|parent of| person/arphaxad
+    person/shem --&gt;|parent of| person/asshur
     person/shem --&gt;|parent of| person/aram
     person/shem .-&gt;|ancestor of| person/eber
-    person/noah --&gt;|parent of| person/shem
     person/shem --&gt;|parent of| person/lud
-    person/shem --&gt;|parent of| person/asshur
+    person/noah --&gt;|parent of| person/shem
+    person/shem --&gt;|parent of| person/arphaxad
     person/shem --&gt;|parent of| person/elam
     person/shem --&gt;|related to| person/japheth
 </div>

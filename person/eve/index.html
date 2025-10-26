@@ -248,32 +248,32 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/eve fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/cain(["Cain"])
     person/enoch_son_of_cain(["Enoch"])
+    person/cain(["Cain"])
     person/cain_wife(["Cain_Wife"])
-    person/enosh(["Enosh"])
-    person/abel(["Abel"])
     person/seth(["Seth"])
-    person/eve(["Eve"])
     person/adam(["Adam"])
-    click person/cain "../../person/cain/"
+    person/eve(["Eve"])
+    person/abel(["Abel"])
+    person/enosh(["Enosh"])
     click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
+    click person/cain "../../person/cain/"
     click person/cain_wife "../../person/cain_wife/"
-    click person/enosh "../../person/enosh/"
-    click person/abel "../../person/abel/"
     click person/seth "../../person/seth/"
-    click person/eve "../../person/eve/"
     click person/adam "../../person/adam/"
-    person/adam --&gt;|parent of| person/cain
-    person/eve --&gt;|parent of| person/cain
-    person/adam &lt;--&gt;|married to| person/eve
-    person/adam --&gt;|parent of| person/abel
-    person/cain --&gt;|parent of| person/enoch_son_of_cain
+    click person/eve "../../person/eve/"
+    click person/abel "../../person/abel/"
+    click person/enosh "../../person/enosh/"
+    person/eve &lt;--&gt;|married to| person/adam
     person/eve --&gt;|parent of| person/abel
-    person/eve --&gt;|parent of| person/seth
-    person/adam --&gt;|parent of| person/seth
-    person/cain_wife &lt;--&gt;|married to| person/cain
+    person/cain --&gt;|parent of| person/enoch_son_of_cain
     person/seth --&gt;|parent of| person/enosh
+    person/adam --&gt;|parent of| person/cain
+    person/eve --&gt;|parent of| person/seth
+    person/cain_wife &lt;--&gt;|married to| person/cain
+    person/adam --&gt;|parent of| person/seth
+    person/eve --&gt;|parent of| person/cain
+    person/adam --&gt;|parent of| person/abel
 </div>
 </article>
 </div>

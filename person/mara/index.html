@@ -249,13 +249,13 @@
 <div class="mermaid">graph TD;
     style person/mara fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/mara(["Mara"])
-    place/bethlehem(["Bethlehem"])
     person/naomi(["Naomi"])
+    place/bethlehem(["Bethlehem"])
     click person/mara "../../person/mara/"
-    click place/bethlehem "../../place/bethlehem/"
     click person/naomi "../../person/naomi/"
+    click place/bethlehem "../../place/bethlehem/"
+    person/mara &lt;--&gt;|name matches| person/naomi
     place/bethlehem .-&gt;|associated with| person/naomi
-    person/naomi &lt;--&gt;|name matches| person/mara
 </div>
 </article>
 </div>
