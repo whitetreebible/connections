@@ -33,7 +33,7 @@ class MdFormatters:
                 edge_map[key] = []
             edge_map[key].append(edge)
 
-        log.info(edge_map)
+        # log.info(edge_map)
         filtered_edges = []
         arrows = []
         reciprocal_priority_order = list(RECIPROCALS.keys())
@@ -68,7 +68,7 @@ class MdFormatters:
                         else:
                             continue
                     else:
-                        log.info(f"Reciprocal edge {edge.source} {etype} {edge.target} has no reciprocal defined, keeping it.")
+                        # log.info(f"Reciprocal edge {edge.source} {etype} {edge.target} has no reciprocal defined, keeping it.")
                         # the other side doesn't exist (it probably should), display
                         used.add(etype)
                         filtered_edges.append(edge)
@@ -81,7 +81,7 @@ class MdFormatters:
                     arrows.append(self.get_arrow_for_edge(edge, symmetrical=True))
                 # 4. All others: keep
                 else:
-                    log.info(f"Normal edge {edge.source} {etype} {edge.target}, keeping it.")
+                    # log.info(f"Normal edge {edge.source} {etype} {edge.target}, keeping it.")
                     used.add(etype)
                     filtered_edges.append(edge)
                     arrows.append(self.get_arrow_for_edge(edge, symmetrical=False))
@@ -110,7 +110,7 @@ class MdFormatters:
 
         # Get edges based on parameters
         edges = db.traverse_edges(start_node_link=node.link, direction=direction, types=types, max_depth=max_depth)
-        log.info(f"Node {node.link} has {len(edges)} edges for graph.")
+        # log.info(f"Node {node.link} has {len(edges)} edges for graph.")
 
         # Collect all node ids/types involved
         node_links = set()
