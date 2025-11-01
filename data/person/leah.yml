@@ -58,7 +58,7 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 30:21
-- target: person/dina
+- target: person/dinah
   type: parent-of
   refs:
   - bible:Genesis 34:1

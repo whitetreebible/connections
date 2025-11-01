@@ -24,7 +24,7 @@ edges:
   type: member-of
   refs:
   - bible:Genesis 34:2
-- target: person/dina
+- target: person/dinah
   type: attacked
   refs:
   - bible:Genesis 34:2

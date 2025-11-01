@@ -119,7 +119,7 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 33:19
-- target: person/dina
+- target: person/dinah
   type: parent-of
   refs:
   - bible:Genesis 34:1
