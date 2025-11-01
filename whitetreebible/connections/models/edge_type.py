@@ -185,7 +185,7 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.DESCENDANT_OF: "descendant of",
         EdgeType.MARRIED_TO: "married to",
         EdgeType.RELATED_TO: "related to",
-        # Social / Political
+        
         EdgeType.MEMBER_OF: "member of",
         EdgeType.LEADER_OF: "leader of",
         EdgeType.LED_BY: "led by",
@@ -196,6 +196,8 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.ASSOCIATED_WITH: "associated with",
         EdgeType.BLESSED: "blessed",
         EdgeType.CURSED: "cursed",
+        EdgeType.ATTACKED: "attacked",
+        EdgeType.LOVED: "loved",
         # Geographic
         EdgeType.RESIDENT_OF: "resident of",
         EdgeType.VISITED: "visited",
