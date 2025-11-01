@@ -16,3 +16,11 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 30:21
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 34:1
+- target: person/leah
+  type: child-of
+  refs:
+  - bible:Genesis 34:1

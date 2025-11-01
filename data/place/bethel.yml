@@ -1,0 +1,14 @@
+id: bethel
+type: place
+name:
+  en: Bethel
+name_disambiguous:
+  en: Bethel (house of God)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/allon_bacuth
+  type: near
+  refs:
+  - bible:Genesis 35:8

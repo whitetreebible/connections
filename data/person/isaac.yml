@@ -30,10 +30,12 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 25:24
+  - bible:Genesis 35:29
 - target: person/esau
   type: parent-of
   refs:
   - bible:Genesis 25:24
+  - bible:Genesis 35:29
 - target: person/abimelech_2
   type: associated-with
   refs:
@@ -59,3 +61,11 @@ edges:
   type: related-to
   refs:
   - bible:Genesis 28:1
+- target: place/mamre
+  type: died-in
+  refs:
+  - bible:Genesis 35:29
+- target: place/mamre
+  type: buried-in
+  refs:
+  - bible:Genesis 35:29

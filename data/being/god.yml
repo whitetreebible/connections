@@ -5,10 +5,10 @@ name:
 name_disambiguous:
   en: God (creator of the heavens)
 description:
-  en: 'Elohim is used for God in the Hebrew Bible. It is used for both the creator 
+  en: Elohim is used for God in the Hebrew Bible. It is used for both the creator
     God and for other gods and divine beings. The singular form Eloah is also used,
-    but less frequently. The name [[being/yahweh]] (often rendered as LORD in English translations)
-    is the personal name of the God of [[group/israel]].'
+    but less frequently. The name [[being/yahweh]] (often rendered as LORD in English
+    translations) is the personal name of the God of [[group/israel]].
 footnotes: {}
 edges:
 - target: place/heavens
@@ -20,7 +20,7 @@ edges:
   type: created
   refs:
   - bible:Genesis 1:1
-- target: concept/light 
+- target: concept/light
   type: created
   refs:
   - bible:Genesis 1:3

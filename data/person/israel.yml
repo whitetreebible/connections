@@ -1,0 +1,14 @@
+id: israel
+type: person
+name:
+  en: Israel
+name_disambiguous:
+  en: Israel (name matches Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: name-matches
+  refs:
+  - bible:Genesis 32:28

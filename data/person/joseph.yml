@@ -12,6 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 30:24
+  - bible:Genesis 35:24
 - target: person/rachel
   type: child-of
   refs:

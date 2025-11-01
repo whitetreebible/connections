@@ -1,0 +1,22 @@
+id: man_who_wrestled_with_jacob
+type: person
+name:
+  en: Man_Who_Wrestled_With_Jacob
+name_disambiguous:
+  en: Man_Who_Wrestled_With_Jacob (associated with god)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: being/god
+  type: associated-with
+  refs:
+  - bible:Genesis 32:28
+- target: person/jacob
+  type: attacked
+  refs:
+  - bible:Genesis 32:28
+- target: person/jacob
+  type: blessed
+  refs:
+  - bible:Genesis 32:29

@@ -1,0 +1,30 @@
+id: shechem
+type: person
+name:
+  en: Shechem
+name_disambiguous:
+  en: Shechem (son of Hamor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: group/sons_of_hamor
+  type: member-of
+  refs:
+  - bible:Genesis 33:19
+- target: place/shechem
+  type: name-matches
+  refs:
+  - bible:Genesis 33:19
+- target: person/hamor
+  type: child-of
+  refs:
+  - bible:Genesis 34:2
+- target: group/hivites
+  type: member-of
+  refs:
+  - bible:Genesis 34:2
+- target: person/dina
+  type: attacked
+  refs:
+  - bible:Genesis 34:2

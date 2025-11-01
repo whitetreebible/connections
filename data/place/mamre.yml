@@ -7,4 +7,12 @@ name_disambiguous:
 description:
   en: ''
 footnotes: {}
-edges: []
+edges:
+- target: place/kiriath_arba
+  type: name-matches
+  refs:
+  - bible:Genesis 35:27
+- target: place/hebron
+  type: name-matches
+  refs:
+  - bible:Genesis 35:27

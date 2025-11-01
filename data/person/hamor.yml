@@ -1,0 +1,18 @@
+id: hamor
+type: person
+name:
+  en: Hamor
+name_disambiguous:
+  en: Hamor (father of Shechem)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shechem
+  type: parent-of
+  refs:
+  - bible:Genesis 34:2
+- target: place/shechem
+  type: leader-of
+  refs:
+  - bible:Genesis 34:2

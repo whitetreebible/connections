@@ -12,3 +12,8 @@ edges:
   type: name-matches
   refs:
   - bible:Genesis 23:2
+  - bible:Genesis 35:27
+- target: place/mamre
+  type: name-matches
+  refs:
+  - bible:Genesis 35:27

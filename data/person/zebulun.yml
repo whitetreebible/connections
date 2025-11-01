@@ -12,6 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 30:20
+  - bible:Genesis 35:23
 - target: person/leah
   type: child-of
   refs:

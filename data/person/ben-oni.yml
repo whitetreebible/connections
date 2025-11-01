@@ -1,0 +1,14 @@
+id: ben-oni
+type: person
+name:
+  en: Ben-Oni
+name_disambiguous:
+  en: Ben-Oni (Benjamin, son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: name-matches
+  refs:
+  - bible:Genesis 35:18

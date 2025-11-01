@@ -32,3 +32,15 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 30:24
+- target: place/bethlehem
+  type: died-in
+  refs:
+  - bible:Genesis 35:19
+- target: place/bethlehem
+  type: buried-in
+  refs:
+  - bible:Genesis 35:19
+- target: person/benjamin
+  type: parent-of
+  refs:
+  - bible:Genesis 35:18

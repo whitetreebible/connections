@@ -1,0 +1,14 @@
+id: eder
+type: place
+name:
+  en: Eder
+name_disambiguous:
+  en: Eder
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 35:21

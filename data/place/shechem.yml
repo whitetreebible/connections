@@ -1,0 +1,26 @@
+id: shechem
+type: place
+name:
+  en: Shechem
+name_disambiguous:
+  en: Shechem
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 33:18
+- target: place/canaan
+  type: near
+  refs:
+  - bible:Genesis 33:18
+- target: person/shechem
+  type: name-matches
+  refs:
+  - bible:Genesis 33:19
+- target: person/hamor
+  type: led-by
+  refs:
+  - bible:Genesis 34:2

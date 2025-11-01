@@ -12,7 +12,12 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 29:32
+  - bible:Genesis 35:23
 - target: person/leah
   type: child-of
   refs:
   - bible:Genesis 29:32
+- target: person/bilhah
+  type: attacked
+  refs:
+  - bible:Genesis 35:22

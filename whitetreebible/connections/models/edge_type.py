@@ -50,6 +50,7 @@ class EdgeType(Enum):
     CREATED = "created"             # Asymmetrical, creator → created
     DEFEATED = "defeated"           # Asymmetrical, victor → defeated
     PROMISED = "promised"           # Asymmetrical, promiser → promised
+    ATTACKED = "attacked"           # Asymmetrical, attacker → attacked
 
     # Textual / Symbolic
     NAME_MATCHES = "name-matches"
@@ -138,6 +139,7 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.CREATED,
         EdgeType.DEFEATED,
         EdgeType.PROMISED,
+        EdgeType.ATTACKED,
     },
     EdgeGroups.TEXTUAL: {
         EdgeType.NAME_MATCHES,

@@ -17,6 +17,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:24
+  - bible:Genesis 35:29
 - target: place/paddan-aram
   type: visited
   refs:
@@ -33,18 +34,24 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 29:32
+  - bible:Genesis 35:23
 - target: person/simeon
   type: parent-of
   refs:
   - bible:Genesis 29:33
+  - bible:Genesis 34:25
+  - bible:Genesis 35:23
 - target: person/levi
   type: parent-of
   refs:
   - bible:Genesis 29:34
+  - bible:Genesis 34:25
+  - bible:Genesis 35:23
 - target: person/judah
   type: parent-of
   refs:
   - bible:Genesis 29:35
+  - bible:Genesis 35:23
 - target: person/bilhah
   type: married-to
   refs:
@@ -53,10 +60,12 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 30:5
+  - bible:Genesis 35:25
 - target: person/naphtali
   type: parent-of
   refs:
   - bible:Genesis 30:7
+  - bible:Genesis 35:25
 - target: person/zilpah
   type: married-to
   refs:
@@ -65,18 +74,22 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 30:10
+  - bible:Genesis 35:26
 - target: person/asher
   type: parent-of
   refs:
   - bible:Genesis 30:12
+  - bible:Genesis 35:26
 - target: person/issachar
   type: parent-of
   refs:
   - bible:Genesis 30:18
+  - bible:Genesis 35:23
 - target: person/zebulun
   type: parent-of
   refs:
   - bible:Genesis 30:20
+  - bible:Genesis 35:23
 - target: person/dinah
   type: parent-of
   refs:
@@ -85,3 +98,45 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 30:24
+  - bible:Genesis 35:24
+- target: person/rachel
+  type: cursed
+  refs:
+  - bible:Genesis 31:32
+- target: person/israel
+  type: name-matches
+  refs:
+  - bible:Genesis 32:28
+- target: place/succoth
+  type: resident-of
+  refs:
+  - bible:Genesis 33:17
+- target: place/shechem
+  type: resident-of
+  refs:
+  - bible:Genesis 33:18
+- target: group/sons_of_hamor
+  type: associated-with
+  refs:
+  - bible:Genesis 33:19
+- target: person/dina
+  type: parent-of
+  refs:
+  - bible:Genesis 34:1
+- target: person/benjamin
+  type: parent-of
+  refs:
+  - bible:Genesis 35:18
+  - bible:Genesis 35:24
+- target: place/eder
+  type: resident-of
+  refs:
+  - bible:Genesis 35:21
+- target: person/isaac
+  type: visited
+  refs:
+  - bible:Genesis 35:27
+- target: place/mamre
+  type: visited
+  refs:
+  - bible:Genesis 35:27

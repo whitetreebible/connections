@@ -1,0 +1,26 @@
+id: deborah
+type: person
+name:
+  en: Deborah
+name_disambiguous:
+  en: Deborah (nurse of Rebekah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/bethel
+  type: died-in
+  refs:
+  - bible:Genesis 35:8
+- target: place/bethel
+  type: buried-in
+  refs:
+  - bible:Genesis 35:8
+- target: place/allon_bacuth
+  type: buried-in
+  refs:
+  - bible:Genesis 35:8
+- target: person/rebekah
+  type: associated-with
+  refs:
+  - bible:Genesis 35:8

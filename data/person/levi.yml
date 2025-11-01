@@ -12,7 +12,17 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 29:34
+  - bible:Genesis 34:25
+  - bible:Genesis 35:23
 - target: person/leah
   type: child-of
   refs:
   - bible:Genesis 29:34
+- target: person/hamor
+  type: killed
+  refs:
+  - bible:Genesis 34:25
+- target: place/shechem
+  type: defeated
+  refs:
+  - bible:Genesis 34:25

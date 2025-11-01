@@ -1,0 +1,14 @@
+id: sons_of_hamor
+type: group
+name:
+  en: sons of Hamor
+name_disambiguous:
+  en: sons of Hamor
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shechem
+  type: parent-of
+  refs:
+  - bible:Genesis 33:19

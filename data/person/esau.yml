@@ -17,6 +17,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:24
+  - bible:Genesis 35:29
 - target: person/judith
   type: married-to
   refs:

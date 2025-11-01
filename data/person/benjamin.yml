@@ -1,0 +1,23 @@
+id: benjamin
+type: person
+name:
+  en: Benjamin
+name_disambiguous:
+  en: Benjamin (son of Jacob)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/rachel
+  type: child-of
+  refs:
+  - bible:Genesis 35:18
+- target: person/ben-oni
+  type: name-matches
+  refs:
+  - bible:Genesis 35:18
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 35:18
+  - bible:Genesis 35:24

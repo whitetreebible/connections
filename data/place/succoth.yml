@@ -1,0 +1,14 @@
+id: succoth
+type: place
+name:
+  en: Succoth
+name_disambiguous:
+  en: Succoth
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 33:17
