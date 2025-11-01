@@ -28,3 +28,7 @@ edges:
   type: attacked
   refs:
   - bible:Genesis 34:2
+- target: person/dinah
+  type: loved
+  refs:
+  - bible:Genesis 34:2
