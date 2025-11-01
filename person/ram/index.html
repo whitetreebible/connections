@@ -250,19 +250,19 @@
 <div class="mermaid">graph TD;
     style person/ram fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/amminadab(["Amminadab"])
-    person/ram(["Ram"])
     person/nahshon(["Nahshon"])
-    person/perez(["Perez"])
     person/hezron(["Hezron"])
+    person/perez(["Perez"])
+    person/ram(["Ram"])
     click person/amminadab "../../person/amminadab/"
-    click person/ram "../../person/ram/"
     click person/nahshon "../../person/nahshon/"
-    click person/perez "../../person/perez/"
     click person/hezron "../../person/hezron/"
-    person/hezron --&gt;|parent of| person/ram
+    click person/perez "../../person/perez/"
+    click person/ram "../../person/ram/"
+    person/amminadab --&gt;|parent of| person/nahshon
     person/ram --&gt;|parent of| person/amminadab
     person/perez --&gt;|parent of| person/hezron
-    person/amminadab --&gt;|parent of| person/nahshon
+    person/hezron --&gt;|parent of| person/ram
 </div>
 </article>
 </div>

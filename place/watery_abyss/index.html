@@ -236,14 +236,14 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/watery_abyss fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    symbol/darkness(["darkness"])
     place/watery_abyss(["watery abyss"])
     place/earth(["earth"])
-    symbol/darkness(["darkness"])
+    click symbol/darkness "../../symbol/darkness/"
     click place/watery_abyss "../../place/watery_abyss/"
     click place/earth "../../place/earth/"
-    click symbol/darkness "../../symbol/darkness/"
-    symbol/darkness .-&gt;|associated with| place/watery_abyss
     place/earth .-&gt;|associated with| symbol/darkness
+    symbol/darkness .-&gt;|associated with| place/watery_abyss
 </div>
 </article>
 </div>

@@ -230,15 +230,15 @@
     style group/egyptians fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/sarai(["Sarai"])
     group/egyptians(["Egyptians"])
-    person/hagar(["Hagar"])
     person/abram(["Abram"])
+    person/hagar(["Hagar"])
     click person/sarai "../../person/sarai/"
     click group/egyptians "../../group/egyptians/"
-    click person/hagar "../../person/hagar/"
     click person/abram "../../person/abram/"
-    person/sarai --&gt;|leader of| person/hagar
-    person/abram --&gt;|leader of| person/hagar
+    click person/hagar "../../person/hagar/"
     person/hagar --&gt;|member of| group/egyptians
+    person/abram --&gt;|leader of| person/hagar
+    person/sarai --&gt;|leader of| person/hagar
 </div>
 </article>
 </div>

@@ -240,28 +240,28 @@
 <div class="mermaid">graph TD;
     style place/dry_land fill:#2fa4e7,stroke:#333,stroke-width:4px;
     symbol/emptiness(["emptiness"])
-    symbol/darkness(["darkness"])
-    place/earth(["earth"])
-    animal/sea_dragon(["sea dragon"])
     symbol/wilderness(["wilderness"])
     place/waters(["waters"])
+    animal/sea_dragon(["sea dragon"])
+    symbol/darkness(["darkness"])
     place/dry_land(["dry land"])
     animal/sea_creature(["sea creature"])
+    place/earth(["earth"])
     click symbol/emptiness "../../symbol/emptiness/"
-    click symbol/darkness "../../symbol/darkness/"
-    click place/earth "../../place/earth/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
     click symbol/wilderness "../../symbol/wilderness/"
     click place/waters "../../place/waters/"
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click symbol/darkness "../../symbol/darkness/"
     click place/dry_land "../../place/dry_land/"
     click animal/sea_creature "../../animal/sea_creature/"
+    click place/earth "../../place/earth/"
     place/earth .-&gt;|associated with| symbol/emptiness
-    place/dry_land .-&gt;|associated with| place/earth
-    place/waters .-&gt;|associated with| animal/sea_creature
+    place/earth .-&gt;|associated with| symbol/darkness
     place/waters .-&gt;|associated with| animal/sea_dragon
     place/earth .-&gt;|associated with| symbol/wilderness
-    place/earth .-&gt;|associated with| symbol/darkness
+    place/waters .-&gt;|associated with| animal/sea_creature
     place/dry_land .-&gt;|associated with| place/waters
+    place/dry_land .-&gt;|associated with| place/earth
 </div>
 </article>
 </div>

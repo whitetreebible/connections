@@ -254,38 +254,38 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/abimelech_2 fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech_2(["Abimelech"])
     person/casluhim(["Casluhim"])
     group/philistines(["Philistines"])
-    click person/abimelech_2 "../../person/abimelech_2/"
+    person/abimelech_2(["Abimelech"])
     click person/casluhim "../../person/casluhim/"
     click group/philistines "../../group/philistines/"
+    click person/abimelech_2 "../../person/abimelech_2/"
     person/casluhim --&gt;|origin of| group/philistines
     group/philistines --&gt;|led by| person/abimelech_2
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech_2 fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
-    person/abimelech_2(["Abimelech"])
-    person/sarah(["Sarah"])
     person/abraham(["Abraham"])
-    place/gerar(["Gerar"])
+    person/abimelech_2(["Abimelech"])
     place/beer_lahai_roi(["Beer Lahai Roi"])
     person/isaac(["Isaac"])
-    click person/abimelech "../../person/abimelech/"
-    click person/abimelech_2 "../../person/abimelech_2/"
-    click person/sarah "../../person/sarah/"
+    person/abimelech(["Abimelech"])
+    person/sarah(["Sarah"])
+    place/gerar(["Gerar"])
     click person/abraham "../../person/abraham/"
-    click place/gerar "../../place/gerar/"
+    click person/abimelech_2 "../../person/abimelech_2/"
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
     click person/isaac "../../person/isaac/"
-    place/beer_lahai_roi .-&gt;|associated with| person/isaac
-    person/abimelech .-&gt;|associated with| person/abraham
+    click person/abimelech "../../person/abimelech/"
+    click person/sarah "../../person/sarah/"
+    click place/gerar "../../place/gerar/"
     person/isaac .-&gt;|associated with| person/abimelech_2
-    person/abimelech &lt;--&gt;|name matches| person/abimelech_2
+    person/abimelech_2 &lt;--&gt;|name matches| person/abimelech
+    place/beer_lahai_roi .-&gt;|associated with| person/isaac
     place/gerar .-&gt;|associated with| person/isaac
     person/abimelech .-&gt;|associated with| person/sarah
+    person/abimelech .-&gt;|associated with| person/abraham
 </div>
 </article>
 </div>

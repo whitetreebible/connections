@@ -239,29 +239,36 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/machpelah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/philistines(["Philistines"])
-    place/kiriath_arba(["Kiriath Arba"])
-    person/sarah(["Sarah"])
     person/abraham(["Abraham"])
-    being/yahweh(["Yahweh"])
-    place/machpelah(["Machpelah"])
+    person/jacob(["Jacob"])
+    group/philistines(["Philistines"])
+    person/isaac(["Isaac"])
     place/mamre(["Mamre"])
     place/canaan(["Canaan"])
-    click group/philistines "../../group/philistines/"
-    click place/kiriath_arba "../../place/kiriath_arba/"
-    click person/sarah "../../person/sarah/"
+    place/machpelah(["Machpelah"])
+    being/yahweh(["Yahweh"])
+    place/kiriath_arba(["Kiriath Arba"])
+    person/sarah(["Sarah"])
     click person/abraham "../../person/abraham/"
-    click being/yahweh "../../being/yahweh/"
-    click place/machpelah "../../place/machpelah/"
+    click person/jacob "../../person/jacob/"
+    click group/philistines "../../group/philistines/"
+    click person/isaac "../../person/isaac/"
     click place/mamre "../../place/mamre/"
     click place/canaan "../../place/canaan/"
-    person/abraham --&gt;|buried in| place/machpelah
-    being/yahweh .-&gt;|visited| person/sarah
-    person/abraham --&gt;|died in| place/canaan
-    person/sarah --&gt;|buried in| place/machpelah
+    click place/machpelah "../../place/machpelah/"
+    click being/yahweh "../../being/yahweh/"
+    click place/kiriath_arba "../../place/kiriath_arba/"
+    click person/sarah "../../person/sarah/"
     place/machpelah --&gt;|near| place/mamre
-    person/sarah --&gt;|died in| place/kiriath_arba
+    person/sarah --&gt;|buried in| place/machpelah
+    being/yahweh .-&gt;|visited| person/sarah
+    person/jacob .-&gt;|visited| place/mamre
+    person/abraham --&gt;|buried in| place/machpelah
+    person/isaac --&gt;|buried in| place/mamre
+    person/isaac --&gt;|died in| place/mamre
     person/abraham --&gt;|resident of| group/philistines
+    person/abraham --&gt;|died in| place/canaan
+    person/sarah --&gt;|died in| place/kiriath_arba
 </div>
 </article>
 </div>

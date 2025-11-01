@@ -239,17 +239,17 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style plant/fruit_trees fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    concept/fruit(["fruit"])
+    plant/vegetation(["vegetation"])
     concept/seed(["seed"])
     plant/fruit_trees(["fruit trees"])
-    plant/vegetation(["vegetation"])
-    click concept/fruit "../../concept/fruit/"
+    concept/fruit(["fruit"])
+    click plant/vegetation "../../plant/vegetation/"
     click concept/seed "../../concept/seed/"
     click plant/fruit_trees "../../plant/fruit_trees/"
-    click plant/vegetation "../../plant/vegetation/"
-    plant/fruit_trees .-&gt;|associated with| concept/fruit
-    plant/vegetation .-&gt;|associated with| concept/seed
+    click concept/fruit "../../concept/fruit/"
     plant/vegetation .-&gt;|associated with| plant/fruit_trees
+    plant/vegetation .-&gt;|associated with| concept/seed
+    plant/fruit_trees .-&gt;|associated with| concept/fruit
 </div>
 </article>
 </div>

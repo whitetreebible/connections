@@ -251,19 +251,19 @@
     person/japheth(["Japheth"])
     person/ham(["Ham"])
     person/noah(["Noah"])
-    person/shem(["Shem"])
     person/lamech_son_of_methuselah(["Lamech"])
+    person/shem(["Shem"])
     click person/noah_wife "../../person/noah_wife/"
     click person/japheth "../../person/japheth/"
     click person/ham "../../person/ham/"
     click person/noah "../../person/noah/"
-    click person/shem "../../person/shem/"
     click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
+    click person/shem "../../person/shem/"
     person/noah --&gt;|parent of| person/ham
-    person/noah --&gt;|parent of| person/japheth
+    person/noah &lt;--&gt;|married to| person/noah_wife
     person/noah --&gt;|parent of| person/shem
     person/noah --&gt;|child of| person/lamech_son_of_methuselah
-    person/noah &lt;--&gt;|married to| person/noah_wife
+    person/noah --&gt;|parent of| person/japheth
 </div>
 </article>
 </div>

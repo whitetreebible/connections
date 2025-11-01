@@ -263,44 +263,44 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/orpah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/elimelech(["Elimelech"])
     person/naomi(["Naomi"])
     person/orpah(["Orpah"])
     person/mahlon(["Mahlon"])
-    click person/elimelech "../../person/elimelech/"
+    person/elimelech(["Elimelech"])
     click person/naomi "../../person/naomi/"
     click person/orpah "../../person/orpah/"
     click person/mahlon "../../person/mahlon/"
-    person/orpah &lt;--&gt;|married to| person/mahlon
-    person/elimelech --&gt;|parent of| person/mahlon
+    click person/elimelech "../../person/elimelech/"
+    person/mahlon &lt;--&gt;|married to| person/orpah
     person/naomi --&gt;|parent of| person/mahlon
+    person/elimelech --&gt;|parent of| person/mahlon
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/orpah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    group/moabite(["Moabite"])
     person/orpah(["Orpah"])
     person/ruth(["Ruth"])
-    group/moabite(["Moabite"])
+    click group/moabite "../../group/moabite/"
     click person/orpah "../../person/orpah/"
     click person/ruth "../../person/ruth/"
-    click group/moabite "../../group/moabite/"
     person/ruth --&gt;|member of| group/moabite
     person/orpah --&gt;|member of| group/moabite
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/orpah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/orpah(["Orpah"])
     person/ruth(["Ruth"])
+    person/orpah(["Orpah"])
     group/moabite(["Moabite"])
     place/moab(["Moab"])
-    click person/orpah "../../person/orpah/"
     click person/ruth "../../person/ruth/"
+    click person/orpah "../../person/orpah/"
     click group/moabite "../../group/moabite/"
     click place/moab "../../place/moab/"
-    group/moabite &lt;.-&gt;|associated with| person/ruth
-    group/moabite &lt;--&gt;|name matches| place/moab
+    place/moab &lt;--&gt;|name matches| group/moabite
     group/moabite .-&gt;|associated with| person/orpah
+    person/ruth &lt;.-&gt;|associated with| group/moabite
 </div>
 <div class="footnote">
 <hr/>

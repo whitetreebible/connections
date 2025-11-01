@@ -256,41 +256,41 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/basemath fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/isaac(["Isaac"])
     person/judith(["Judith"])
+    person/esau(["Esau"])
     person/rebekah(["Rebekah"])
+    person/elon(["Elon"])
     person/basemath(["Basemath"])
     person/mahalath(["Mahalath"])
-    person/esau(["Esau"])
-    person/elon(["Elon"])
-    person/isaac(["Isaac"])
+    click person/isaac "../../person/isaac/"
     click person/judith "../../person/judith/"
+    click person/esau "../../person/esau/"
     click person/rebekah "../../person/rebekah/"
+    click person/elon "../../person/elon/"
     click person/basemath "../../person/basemath/"
     click person/mahalath "../../person/mahalath/"
-    click person/esau "../../person/esau/"
-    click person/elon "../../person/elon/"
-    click person/isaac "../../person/isaac/"
+    person/isaac --&gt;|parent of| person/esau
+    person/judith &lt;--&gt;|married to| person/esau
+    person/rebekah --&gt;|parent of| person/esau
+    person/esau &lt;--&gt;|married to| person/mahalath
     person/elon --&gt;|parent of| person/basemath
     person/basemath &lt;--&gt;|married to| person/esau
-    person/esau &lt;--&gt;|married to| person/judith
-    person/esau &lt;--&gt;|married to| person/mahalath
-    person/rebekah --&gt;|parent of| person/esau
-    person/isaac --&gt;|parent of| person/esau
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/basemath fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/hittites(["Hittites"])
-    person/judith(["Judith"])
-    person/ephron(["Ephron"])
     person/basemath(["Basemath"])
-    click group/hittites "../../group/hittites/"
-    click person/judith "../../person/judith/"
-    click person/ephron "../../person/ephron/"
+    group/hittites(["Hittites"])
+    person/ephron(["Ephron"])
+    person/judith(["Judith"])
     click person/basemath "../../person/basemath/"
-    person/basemath --&gt;|member of| group/hittites
+    click group/hittites "../../group/hittites/"
+    click person/ephron "../../person/ephron/"
+    click person/judith "../../person/judith/"
     person/ephron --&gt;|member of| group/hittites
     person/judith --&gt;|member of| group/hittites
+    person/basemath --&gt;|member of| group/hittites
 </div>
 </article>
 </div>

@@ -289,150 +289,160 @@
     click being/shaddai "../../being/shaddai/"
     click being/yahweh "../../being/yahweh/"
     click person/naomi "../../person/naomi/"
-    being/shaddai &lt;--&gt;|enemy of| person/naomi
-    person/naomi &lt;--&gt;|enemy of| being/yahweh
+    being/yahweh &lt;--&gt;|enemy of| person/naomi
+    person/naomi &lt;--&gt;|enemy of| being/shaddai
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style being/yahweh fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/kiriath_arba(["Kiriath Arba"])
     person/sarah(["Sarah"])
-    being/yahweh(["Yahweh"])
     place/machpelah(["Machpelah"])
-    click place/kiriath_arba "../../place/kiriath_arba/"
+    being/yahweh(["Yahweh"])
+    place/kiriath_arba(["Kiriath Arba"])
     click person/sarah "../../person/sarah/"
-    click being/yahweh "../../being/yahweh/"
     click place/machpelah "../../place/machpelah/"
-    being/yahweh .-&gt;|visited| person/sarah
+    click being/yahweh "../../being/yahweh/"
+    click place/kiriath_arba "../../place/kiriath_arba/"
     person/sarah --&gt;|buried in| place/machpelah
     person/sarah --&gt;|died in| place/kiriath_arba
+    being/yahweh .-&gt;|visited| person/sarah
 </div>
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style being/yahweh fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/judah(["tribe of Judah"])
     being/yahweh(["Yahweh"])
-    click group/judah "../../group/judah/"
+    group/judah(["tribe of Judah"])
     click being/yahweh "../../being/yahweh/"
+    click group/judah "../../group/judah/"
     being/yahweh --&gt;|assisted| group/judah
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style being/yahweh fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
-    person/jacob(["Jacob"])
-    person/laban(["Laban"])
-    being/cherubim(["cherubim"])
-    person/abraham_servant(["Abraham's servant"])
-    being/yahweh(["Yahweh"])
     person/abraham(["Abraham"])
-    person/esau(["Esau"])
-    being/god(["God"])
+    being/cherubim(["cherubim"])
+    person/jacob(["Jacob"])
+    person/abraham_servant(["Abraham's servant"])
     person/isaac(["Isaac"])
-    click person/abimelech "../../person/abimelech/"
-    click person/jacob "../../person/jacob/"
-    click person/laban "../../person/laban/"
-    click being/cherubim "../../being/cherubim/"
-    click person/abraham_servant "../../person/abraham_servant/"
-    click being/yahweh "../../being/yahweh/"
+    being/god(["God"])
+    person/laban(["Laban"])
+    person/abimelech(["Abimelech"])
+    being/yahweh(["Yahweh"])
+    person/rachel(["Rachel"])
+    person/esau(["Esau"])
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
     click person/abraham "../../person/abraham/"
-    click person/esau "../../person/esau/"
-    click being/god "../../being/god/"
+    click being/cherubim "../../being/cherubim/"
+    click person/jacob "../../person/jacob/"
+    click person/abraham_servant "../../person/abraham_servant/"
     click person/isaac "../../person/isaac/"
-    being/yahweh --&gt;|blessed| person/laban
-    being/yahweh --&gt;|blessed| person/abraham_servant
-    being/yahweh --&gt;|blessed| person/jacob
-    person/isaac --&gt;|blessed| person/esau
-    being/yahweh --&gt;|appointed| being/cherubim
-    being/yahweh --&gt;|blessed| person/isaac
+    click being/god "../../being/god/"
+    click person/laban "../../person/laban/"
+    click person/abimelech "../../person/abimelech/"
+    click being/yahweh "../../being/yahweh/"
+    click person/rachel "../../person/rachel/"
+    click person/esau "../../person/esau/"
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
     being/yahweh --&gt;|blessed| person/abraham
-    person/isaac --&gt;|blessed| person/jacob
-    person/isaac --&gt;|sent| person/jacob
+    being/yahweh --&gt;|appointed| being/cherubim
     being/yahweh --&gt;|cursed| person/abimelech
     being/yahweh --&gt;|healed| person/abimelech
+    person/isaac --&gt;|sent| person/jacob
+    person/isaac --&gt;|blessed| person/jacob
+    person/man_who_wrestled_with_jacob --&gt;|blessed| person/jacob
+    person/man_who_wrestled_with_jacob --&gt;|attacked| person/jacob
+    being/yahweh --&gt;|blessed| person/isaac
+    person/jacob --&gt;|cursed| person/rachel
+    being/yahweh --&gt;|blessed| person/jacob
+    person/isaac --&gt;|blessed| person/esau
+    being/yahweh --&gt;|blessed| person/laban
     being/god --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|blessed| person/abraham_servant
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/yahweh fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/ruth(["Ruth"])
-    person/rachel(["Rachel"])
-    place/bethlehem(["Bethlehem"])
-    object/barley(["barley"])
-    object/bread(["bread"])
-    place/ephrathah(["Ephrathah"])
-    group/moabite(["Moabite"])
-    role/worthy_woman(["worthy woman"])
-    theme/humility(["humility"])
-    object/wine_vinegar(["wine vinegar"])
-    person/judah(["Judah"])
-    object/wheat(["wheat"])
-    being/el-roi(["El Roi"])
-    theme/leaving_family(["leaving family"])
-    object/wing(["wing"])
-    person/tamar(["Tamar"])
     group/israelite(["Israelite"])
-    object/feet(["feet"])
+    object/wine_vinegar(["wine vinegar"])
     object/grain(["grain"])
+    theme/leaving_family(["leaving family"])
     being/el-shaddai(["El Shaddai"])
-    being/yahweh(["Yahweh"])
-    being/shaddai(["Shaddai"])
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
     person/leah(["Leah"])
-    person/perez(["Perez"])
-    object/field(["field"])
+    object/bread(["bread"])
+    object/wing(["wing"])
     being/god(["God"])
-    click person/ruth "../../person/ruth/"
-    click person/rachel "../../person/rachel/"
-    click place/bethlehem "../../place/bethlehem/"
-    click object/barley "../../object/barley/"
-    click object/bread "../../object/bread/"
-    click place/ephrathah "../../place/ephrathah/"
-    click group/moabite "../../group/moabite/"
-    click role/worthy_woman "../../role/worthy_woman/"
-    click theme/humility "../../theme/humility/"
-    click object/wine_vinegar "../../object/wine_vinegar/"
-    click person/judah "../../person/judah/"
-    click object/wheat "../../object/wheat/"
-    click being/el-roi "../../being/el-roi/"
-    click theme/leaving_family "../../theme/leaving_family/"
-    click object/wing "../../object/wing/"
-    click person/tamar "../../person/tamar/"
+    role/worthy_woman(["worthy woman"])
+    being/yahweh(["Yahweh"])
+    person/rachel(["Rachel"])
+    person/perez(["Perez"])
+    object/barley(["barley"])
+    object/feet(["feet"])
+    place/ephrathah(["Ephrathah"])
+    person/judah(["Judah"])
+    object/field(["field"])
+    person/ruth(["Ruth"])
+    being/shaddai(["Shaddai"])
+    being/el-roi(["El Roi"])
+    object/wheat(["wheat"])
+    group/moabite(["Moabite"])
+    place/bethlehem(["Bethlehem"])
+    theme/humility(["humility"])
+    person/tamar(["Tamar"])
     click group/israelite "../../group/israelite/"
-    click object/feet "../../object/feet/"
+    click object/wine_vinegar "../../object/wine_vinegar/"
     click object/grain "../../object/grain/"
+    click theme/leaving_family "../../theme/leaving_family/"
     click being/el-shaddai "../../being/el-shaddai/"
-    click being/yahweh "../../being/yahweh/"
-    click being/shaddai "../../being/shaddai/"
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
     click person/leah "../../person/leah/"
-    click person/perez "../../person/perez/"
-    click object/field "../../object/field/"
+    click object/bread "../../object/bread/"
+    click object/wing "../../object/wing/"
     click being/god "../../being/god/"
-    person/ruth &lt;.-&gt;|associated with| object/barley
+    click role/worthy_woman "../../role/worthy_woman/"
+    click being/yahweh "../../being/yahweh/"
+    click person/rachel "../../person/rachel/"
+    click person/perez "../../person/perez/"
+    click object/barley "../../object/barley/"
+    click object/feet "../../object/feet/"
+    click place/ephrathah "../../place/ephrathah/"
+    click person/judah "../../person/judah/"
+    click object/field "../../object/field/"
+    click person/ruth "../../person/ruth/"
+    click being/shaddai "../../being/shaddai/"
+    click being/el-roi "../../being/el-roi/"
+    click object/wheat "../../object/wheat/"
+    click group/moabite "../../group/moabite/"
+    click place/bethlehem "../../place/bethlehem/"
+    click theme/humility "../../theme/humility/"
+    click person/tamar "../../person/tamar/"
+    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
+    person/ruth &lt;.-&gt;|associated with| role/worthy_woman
+    object/bread &lt;.-&gt;|associated with| person/ruth
+    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
+    person/ruth &lt;.-&gt;|associated with| object/feet
+    person/ruth &lt;.-&gt;|associated with| being/yahweh
     person/ruth &lt;.-&gt;|associated with| person/tamar
+    person/perez &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| group/israelite
+    person/ruth &lt;.-&gt;|associated with| place/bethlehem
+    person/judah &lt;.-&gt;|associated with| person/ruth
+    being/el-roi &lt;--&gt;|name matches| being/yahweh
+    object/wine_vinegar &lt;.-&gt;|associated with| person/ruth
     object/field &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| person/leah
+    being/shaddai &lt;--&gt;|name matches| being/yahweh
+    object/grain &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| object/wing
+    person/rachel &lt;.-&gt;|associated with| person/ruth
     person/ruth &lt;.-&gt;|associated with| group/moabite
     being/shaddai &lt;--&gt;|name matches| being/god
-    person/ruth &lt;.-&gt;|associated with| object/wheat
-    role/worthy_woman &lt;.-&gt;|associated with| person/ruth
-    being/yahweh &lt;--&gt;|name matches| being/shaddai
-    place/bethlehem &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/grain
-    person/ruth &lt;.-&gt;|associated with| person/rachel
-    object/bread &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| group/israelite
-    person/ruth --&gt;|example of| theme/humility
-    being/el-roi &lt;--&gt;|name matches| being/yahweh
-    person/ruth &lt;.-&gt;|associated with| object/wine_vinegar
-    person/judah &lt;.-&gt;|associated with| person/ruth
-    place/ephrathah &lt;.-&gt;|associated with| person/ruth
-    person/ruth &lt;.-&gt;|associated with| object/wing
-    being/yahweh &lt;.-&gt;|associated with| person/ruth
-    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
-    person/ruth &lt;.-&gt;|associated with| person/perez
     person/ruth --&gt;|example of| theme/leaving_family
+    person/ruth --&gt;|example of| theme/humility
+    place/ephrathah &lt;.-&gt;|associated with| person/ruth
+    person/ruth &lt;.-&gt;|associated with| person/leah
+    person/ruth &lt;.-&gt;|associated with| object/barley
+    person/ruth &lt;.-&gt;|associated with| object/wheat
     being/yahweh &lt;--&gt;|name matches| being/god
-    object/feet &lt;.-&gt;|associated with| person/ruth
 </div>
 </article>
 </div>

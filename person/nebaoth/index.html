@@ -236,16 +236,16 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/nebaoth fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/mahalath(["Mahalath"])
     person/nebaoth(["Nebaoth"])
-    person/esau(["Esau"])
     person/ishmael(["Ishmael"])
-    click person/mahalath "../../person/mahalath/"
+    person/esau(["Esau"])
+    person/mahalath(["Mahalath"])
     click person/nebaoth "../../person/nebaoth/"
-    click person/esau "../../person/esau/"
     click person/ishmael "../../person/ishmael/"
-    person/esau &lt;--&gt;|married to| person/mahalath
+    click person/esau "../../person/esau/"
+    click person/mahalath "../../person/mahalath/"
     person/ishmael --&gt;|parent of| person/mahalath
+    person/esau &lt;--&gt;|married to| person/mahalath
     person/mahalath --&gt;|related to| person/nebaoth
 </div>
 </article>

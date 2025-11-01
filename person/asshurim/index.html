@@ -248,22 +248,22 @@
 <div class="mermaid">graph TD;
     style person/asshurim fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/dedan(["Dedan"])
-    person/raamah(["Raamah"])
     person/jokshan(["Jokshan"])
+    person/raamah(["Raamah"])
     person/asshurim(["Asshurim"])
-    person/leummim(["Leummim"])
     person/letushim(["Letushim"])
+    person/leummim(["Leummim"])
     click person/dedan "../../person/dedan/"
-    click person/raamah "../../person/raamah/"
     click person/jokshan "../../person/jokshan/"
+    click person/raamah "../../person/raamah/"
     click person/asshurim "../../person/asshurim/"
-    click person/leummim "../../person/leummim/"
     click person/letushim "../../person/letushim/"
+    click person/leummim "../../person/leummim/"
+    person/dedan --&gt;|parent of| person/leummim
     person/raamah --&gt;|parent of| person/dedan
+    person/dedan --&gt;|parent of| person/letushim
     person/jokshan --&gt;|parent of| person/dedan
     person/dedan --&gt;|parent of| person/asshurim
-    person/dedan --&gt;|parent of| person/leummim
-    person/dedan --&gt;|parent of| person/letushim
 </div>
 </article>
 </div>

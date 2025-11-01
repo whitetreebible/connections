@@ -255,44 +255,44 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/casluhim fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/casluhim(["Casluhim"])
-    person/ludim(["Ludim"])
-    person/lehabim(["Lehabim"])
     person/pathrusim(["Pathrusim"])
-    person/egypt(["Egypt"])
-    person/caphtorim(["Caphtorim"])
-    person/ham(["Ham"])
-    person/naphtuhim(["Naphtuhim"])
     person/anamim(["Anamim"])
-    click person/casluhim "../../person/casluhim/"
-    click person/ludim "../../person/ludim/"
-    click person/lehabim "../../person/lehabim/"
+    person/caphtorim(["Caphtorim"])
+    person/egypt(["Egypt"])
+    person/casluhim(["Casluhim"])
+    person/ham(["Ham"])
+    person/ludim(["Ludim"])
+    person/naphtuhim(["Naphtuhim"])
+    person/lehabim(["Lehabim"])
     click person/pathrusim "../../person/pathrusim/"
-    click person/egypt "../../person/egypt/"
-    click person/caphtorim "../../person/caphtorim/"
-    click person/ham "../../person/ham/"
-    click person/naphtuhim "../../person/naphtuhim/"
     click person/anamim "../../person/anamim/"
-    person/egypt --&gt;|parent of| person/pathrusim
+    click person/caphtorim "../../person/caphtorim/"
+    click person/egypt "../../person/egypt/"
+    click person/casluhim "../../person/casluhim/"
+    click person/ham "../../person/ham/"
+    click person/ludim "../../person/ludim/"
+    click person/naphtuhim "../../person/naphtuhim/"
+    click person/lehabim "../../person/lehabim/"
+    person/egypt --&gt;|parent of| person/naphtuhim
+    person/egypt --&gt;|parent of| person/anamim
+    person/egypt --&gt;|parent of| person/lehabim
+    person/egypt --&gt;|parent of| person/casluhim
     person/egypt --&gt;|parent of| person/caphtorim
     person/egypt --&gt;|parent of| person/ludim
     person/ham --&gt;|parent of| person/egypt
-    person/egypt --&gt;|parent of| person/anamim
-    person/egypt --&gt;|parent of| person/lehabim
-    person/egypt --&gt;|parent of| person/naphtuhim
-    person/egypt --&gt;|parent of| person/casluhim
+    person/egypt --&gt;|parent of| person/pathrusim
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/casluhim fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech_2(["Abimelech"])
     person/casluhim(["Casluhim"])
     group/philistines(["Philistines"])
-    click person/abimelech_2 "../../person/abimelech_2/"
+    person/abimelech_2(["Abimelech"])
     click person/casluhim "../../person/casluhim/"
     click group/philistines "../../group/philistines/"
-    group/philistines --&gt;|led by| person/abimelech_2
+    click person/abimelech_2 "../../person/abimelech_2/"
     person/casluhim --&gt;|origin of| group/philistines
+    group/philistines --&gt;|led by| person/abimelech_2
 </div>
 </article>
 </div>

@@ -228,17 +228,17 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/hittites fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/hittites(["Hittites"])
-    person/judith(["Judith"])
-    person/ephron(["Ephron"])
     person/basemath(["Basemath"])
-    click group/hittites "../../group/hittites/"
-    click person/judith "../../person/judith/"
-    click person/ephron "../../person/ephron/"
+    group/hittites(["Hittites"])
+    person/ephron(["Ephron"])
+    person/judith(["Judith"])
     click person/basemath "../../person/basemath/"
-    person/basemath --&gt;|member of| group/hittites
+    click group/hittites "../../group/hittites/"
+    click person/ephron "../../person/ephron/"
+    click person/judith "../../person/judith/"
     person/ephron --&gt;|member of| group/hittites
     person/judith --&gt;|member of| group/hittites
+    person/basemath --&gt;|member of| group/hittites
 </div>
 </article>
 </div>

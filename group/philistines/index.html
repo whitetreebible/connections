@@ -263,35 +263,35 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/philistines fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech_2(["Abimelech"])
     person/casluhim(["Casluhim"])
     group/philistines(["Philistines"])
-    click person/abimelech_2 "../../person/abimelech_2/"
+    person/abimelech_2(["Abimelech"])
     click person/casluhim "../../person/casluhim/"
     click group/philistines "../../group/philistines/"
+    click person/abimelech_2 "../../person/abimelech_2/"
     person/casluhim --&gt;|origin of| group/philistines
     group/philistines --&gt;|led by| person/abimelech_2
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style group/philistines fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/philistines(["Philistines"])
     person/abraham(["Abraham"])
-    place/gerar(["Gerar"])
-    place/machpelah(["Machpelah"])
-    place/canaan(["Canaan"])
+    group/philistines(["Philistines"])
     person/isaac(["Isaac"])
-    click group/philistines "../../group/philistines/"
+    place/canaan(["Canaan"])
+    place/machpelah(["Machpelah"])
+    place/gerar(["Gerar"])
     click person/abraham "../../person/abraham/"
-    click place/gerar "../../place/gerar/"
-    click place/machpelah "../../place/machpelah/"
-    click place/canaan "../../place/canaan/"
+    click group/philistines "../../group/philistines/"
     click person/isaac "../../person/isaac/"
+    click place/canaan "../../place/canaan/"
+    click place/machpelah "../../place/machpelah/"
+    click place/gerar "../../place/gerar/"
     person/abraham --&gt;|buried in| place/machpelah
-    group/philistines --&gt;|near| place/gerar
-    person/abraham --&gt;|died in| place/canaan
-    person/abraham --&gt;|resident of| group/philistines
     person/isaac --&gt;|resident of| place/gerar
+    person/abraham --&gt;|resident of| group/philistines
+    person/abraham --&gt;|died in| place/canaan
+    group/philistines --&gt;|near| place/gerar
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
@@ -304,9 +304,9 @@
     click person/abraham "../../person/abraham/"
     click group/philistines "../../group/philistines/"
     click person/abram "../../person/abram/"
-    person/abram &lt;--&gt;|name matches| person/abraham
-    person/abimelech .-&gt;|associated with| person/abraham
+    person/abraham &lt;--&gt;|name matches| person/abram
     group/philistines .-&gt;|associated with| person/abraham
+    person/abimelech .-&gt;|associated with| person/abraham
 </div>
 </article>
 </div>

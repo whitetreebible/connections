@@ -246,10 +246,10 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/haran fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/terah(["Terah"])
     place/haran(["Haran"])
-    click person/terah "../../person/terah/"
+    person/terah(["Terah"])
     click place/haran "../../place/haran/"
+    click person/terah "../../person/terah/"
     person/terah --&gt;|died in| place/haran
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
@@ -259,7 +259,7 @@
     place/haran(["Haran"])
     click person/haran "../../person/haran/"
     click place/haran "../../place/haran/"
-    place/haran &lt;--&gt;|name matches| person/haran
+    person/haran &lt;--&gt;|name matches| place/haran
 </div>
 </article>
 </div>

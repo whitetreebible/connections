@@ -266,32 +266,39 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/gerar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/philistines(["Philistines"])
     person/abraham(["Abraham"])
-    place/gerar(["Gerar"])
+    person/jacob(["Jacob"])
+    group/philistines(["Philistines"])
     place/beer_lahai_roi(["Beer Lahai Roi"])
     person/isaac(["Isaac"])
-    click group/philistines "../../group/philistines/"
+    place/mamre(["Mamre"])
+    place/gerar(["Gerar"])
     click person/abraham "../../person/abraham/"
-    click place/gerar "../../place/gerar/"
+    click person/jacob "../../person/jacob/"
+    click group/philistines "../../group/philistines/"
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
     click person/isaac "../../person/isaac/"
+    click place/mamre "../../place/mamre/"
+    click place/gerar "../../place/gerar/"
+    person/isaac --&gt;|buried in| place/mamre
+    person/isaac --&gt;|died in| place/mamre
+    person/jacob .-&gt;|visited| person/isaac
+    person/isaac --&gt;|resident of| place/gerar
+    person/abraham --&gt;|resident of| group/philistines
     person/isaac --&gt;|resident of| place/beer_lahai_roi
     group/philistines --&gt;|near| place/gerar
-    person/abraham --&gt;|resident of| group/philistines
-    person/isaac --&gt;|resident of| place/gerar
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/gerar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech_2(["Abimelech"])
     place/beer_lahai_roi(["Beer Lahai Roi"])
-    place/gerar(["Gerar"])
     person/isaac(["Isaac"])
-    click person/abimelech_2 "../../person/abimelech_2/"
+    place/gerar(["Gerar"])
+    person/abimelech_2(["Abimelech"])
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
-    click place/gerar "../../place/gerar/"
     click person/isaac "../../person/isaac/"
+    click place/gerar "../../place/gerar/"
+    click person/abimelech_2 "../../person/abimelech_2/"
     place/beer_lahai_roi .-&gt;|associated with| person/isaac
     person/isaac .-&gt;|associated with| person/abimelech_2
     place/gerar .-&gt;|associated with| person/isaac

@@ -257,36 +257,36 @@
     style person/havilah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/sabteca(["Sabteca"])
     person/cush(["Cush"])
-    person/havilah(["Havilah"])
-    person/raamah(["Raamah"])
     person/sabtah(["Sabtah"])
+    person/raamah(["Raamah"])
     person/ham(["Ham"])
-    person/seba(["Seba"])
     person/nimrod(["Nimrod"])
+    person/seba(["Seba"])
+    person/havilah(["Havilah"])
     click person/sabteca "../../person/sabteca/"
     click person/cush "../../person/cush/"
-    click person/havilah "../../person/havilah/"
-    click person/raamah "../../person/raamah/"
     click person/sabtah "../../person/sabtah/"
+    click person/raamah "../../person/raamah/"
     click person/ham "../../person/ham/"
-    click person/seba "../../person/seba/"
     click person/nimrod "../../person/nimrod/"
-    person/cush --&gt;|parent of| person/havilah
-    person/ham --&gt;|parent of| person/cush
-    person/cush --&gt;|parent of| person/sabtah
+    click person/seba "../../person/seba/"
+    click person/havilah "../../person/havilah/"
+    person/cush --&gt;|parent of| person/nimrod
     person/cush --&gt;|parent of| person/seba
     person/cush --&gt;|parent of| person/raamah
+    person/cush --&gt;|parent of| person/sabtah
+    person/cush --&gt;|parent of| person/havilah
+    person/ham --&gt;|parent of| person/cush
     person/cush --&gt;|parent of| person/sabteca
-    person/cush --&gt;|parent of| person/nimrod
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/havilah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/havilah(["Havilah"])
     person/havilah_son_of_joktan(["Havilah"])
-    click person/havilah "../../person/havilah/"
+    person/havilah(["Havilah"])
     click person/havilah_son_of_joktan "../../person/havilah_son_of_joktan/"
-    person/havilah_son_of_joktan &lt;--&gt;|name matches| person/havilah
+    click person/havilah "../../person/havilah/"
+    person/havilah &lt;--&gt;|name matches| person/havilah_son_of_joktan
 </div>
 </article>
 </div>
