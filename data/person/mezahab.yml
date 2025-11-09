@@ -1,0 +1,14 @@
+id: mezahab
+type: person
+name:
+  en: Mezahab
+name_disambiguous:
+  en: Mezahab (father of Matred)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/matred
+  type: parent-of
+  refs:
+  - bible:Genesis 36:39

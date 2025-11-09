@@ -1,0 +1,18 @@
+id: seir
+type: place
+name:
+  en: Seir
+name_disambiguous:
+  en: Seir (place where Seir's descendants lived)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: associated-with
+  refs:
+  - bible:Genesis 36:8
+- target: person/seir
+  type: name-matches
+  refs:
+  - bible:Genesis 36:20

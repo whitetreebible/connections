@@ -1,0 +1,14 @@
+id: bozrah
+type: place
+name:
+  en: Bozrah
+name_disambiguous:
+  en: Bozrah
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/zerah_from_bozrah
+  type: associated-with
+  refs:
+  - bible:Genesis 36:33

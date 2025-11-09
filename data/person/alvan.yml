@@ -1,0 +1,14 @@
+id: alvan
+type: person
+name:
+  en: Alvan
+name_disambiguous:
+  en: Alvan (son of Shobal)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shobal
+  type: child-of
+  refs:
+  - bible:Genesis 36:23

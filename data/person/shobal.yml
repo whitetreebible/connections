@@ -1,0 +1,42 @@
+id: shobal
+type: person
+name:
+  en: Shobal
+name_disambiguous:
+  en: Shobal (son of Seir)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/seir
+  type: child-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/alvan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:23
+- target: person/manahath
+  type: parent-of
+  refs:
+  - bible:Genesis 36:23
+- target: person/ebal
+  type: parent-of
+  refs:
+  - bible:Genesis 36:23
+- target: person/shepho
+  type: parent-of
+  refs:
+  - bible:Genesis 36:23
+- target: person/onam
+  type: parent-of
+  refs:
+  - bible:Genesis 36:23
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:29
+- target: group/horites
+  type: leader-of
+  refs:
+  - bible:Genesis 36:29

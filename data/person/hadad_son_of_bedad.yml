@@ -1,17 +1,17 @@
-id: jobab
+id: hadad_son_of_bedad
 type: person
 name:
-  en: Jobab
+  en: Hadad
 name_disambiguous:
-  en: Jobab (son of Joktan)
+  en: Hadad (son of Bedad)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: person/joktan
+- target: person/bedad
   type: child-of
   refs:
-  - bible:Genesis 10:29
-- target: person/jobab_son_of_zerah
+  - bible:Genesis 36:35
+- target: person/hadad
   type: name-matches
   refs: []

@@ -1,0 +1,30 @@
+id: lotan
+type: person
+name:
+  en: Lotan
+name_disambiguous:
+  en: Lotan (son of Seir)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/seir
+  type: child-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/hori
+  type: parent-of
+  refs:
+  - bible:Genesis 36:22
+- target: person/hemam
+  type: parent-of
+  refs:
+  - bible:Genesis 36:22
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:29
+- target: group/horites
+  type: leader-of
+  refs:
+  - bible:Genesis 36:29

@@ -1,0 +1,37 @@
+id: dishon
+type: person
+name:
+  en: Dishon
+name_disambiguous:
+  en: Dishon (son of Seir)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/seir
+  type: child-of
+  refs:
+  - bible:Genesis 36:21
+- target: person/anah
+  type: child-of
+  refs:
+  - bible:Genesis 36:25
+- target: person/hemdan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:26
+- target: person/eshban
+  type: parent-of
+  refs:
+  - bible:Genesis 36:26
+- target: person/ithran
+  type: parent-of
+  refs:
+  - bible:Genesis 36:26
+- target: person/keran
+  type: parent-of
+  refs:
+  - bible:Genesis 36:26
+- target: person/dishon_son_of_anah
+  type: name-matches
+  refs: []

@@ -1,0 +1,18 @@
+id: rehoboth
+type: place
+name:
+  en: Rehoboth
+name_disambiguous:
+  en: Rehoboth
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shaul
+  type: associated-with
+  refs:
+  - bible:Genesis 36:37
+- target: place/euphrates
+  type: near
+  refs:
+  - bible:Genesis 36:37

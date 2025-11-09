@@ -1,0 +1,14 @@
+id: keran
+type: person
+name:
+  en: Keran
+name_disambiguous:
+  en: Keran (son of Dishon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/dishon
+  type: child-of
+  refs:
+  - bible:Genesis 36:26

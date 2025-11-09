@@ -1,0 +1,38 @@
+id: horites
+type: group
+name:
+  en: Horites
+name_disambiguous:
+  en: Horites (the descendants of Seir)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: perosn/lotan
+  type: led-by
+  refs:
+  - bible:Genesis 36:29
+- target: person/shobal
+  type: led-by
+  refs:
+  - bible:Genesis 36:29
+- target: person/zibeon
+  type: led-by
+  refs:
+  - bible:Genesis 36:29
+- target: person/anah
+  type: led-by
+  refs:
+  - bible:Genesis 36:29
+- target: person/dishon_son_of_anah
+  type: led-by
+  refs:
+  - bible:Genesis 36:30
+- target: person/ezer
+  type: led-by
+  refs:
+  - bible:Genesis 36:30
+- target: person/dishan
+  type: led-by
+  refs:
+  - bible:Genesis 36:30

@@ -1,0 +1,18 @@
+id: timnah
+type: person
+name:
+  en: Timnah
+name_disambiguous:
+  en: Timnah (married to Eliphaz)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eliphaz
+  type: married-to
+  refs:
+  - bible:Genesis 36:12
+- target: person/amalek
+  type: parent-of
+  refs:
+  - bible:Genesis 36:12

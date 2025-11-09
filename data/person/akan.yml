@@ -1,0 +1,14 @@
+id: akan
+type: person
+name:
+  en: Akan
+name_disambiguous:
+  en: Akan (son of Ezer)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ezer
+  type: child-of
+  refs:
+  - bible:Genesis 36:27

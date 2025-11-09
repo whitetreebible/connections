@@ -1,0 +1,14 @@
+id: hemdan
+type: person
+name:
+  en: Hemdan
+name_disambiguous:
+  en: Hemdan (son of Dishon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/dishon
+  type: child-of
+  refs:
+  - bible:Genesis 36:26

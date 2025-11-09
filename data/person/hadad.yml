@@ -12,3 +12,6 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:15
+- target: person/hadad_son_of_bedad
+  type: name-matches
+  refs: []

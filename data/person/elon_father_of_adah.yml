@@ -1,0 +1,18 @@
+id: elon_father_of_adah
+type: person
+name:
+  en: Elon
+name_disambiguous:
+  en: Elon (father of Adah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/adah_wife_of_esau
+  type: parent-of
+  refs:
+  - bible:Genesis 36:2
+- target: group/hittites
+  type: member-of
+  refs:
+  - bible:Genesis 36:2

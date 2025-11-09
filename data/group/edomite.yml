@@ -1,0 +1,15 @@
+id: edomite
+type: group
+name:
+  en: Edomite
+name_disambiguous:
+  en: Edomite (descendants of Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: name-matches
+  refs:
+  - bible:Genesis 36:1
+  - bible:Genesis 36:9

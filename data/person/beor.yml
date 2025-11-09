@@ -1,0 +1,14 @@
+id: beor
+type: person
+name:
+  en: Beor
+name_disambiguous:
+  en: Beor (father of Bela)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/bela
+  type: parent-of
+  refs:
+  - bible:Genesis 36:32

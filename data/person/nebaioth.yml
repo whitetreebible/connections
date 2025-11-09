@@ -3,7 +3,7 @@ type: person
 name:
   en: Nebaioth
 name_disambiguous:
-  en: Nebaioth (son of Ishmael)
+  en: Nebaioth (daughter of Ishmael)
 description:
   en: ''
 footnotes: {}
@@ -11,4 +11,4 @@ edges:
 - target: person/ishmael
   type: child-of
   refs:
-  - bible:Genesis 25:13
+  - bible:Genesis 36:3

@@ -26,7 +26,56 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 26:34
+  - bible:Genesis 36:3
 - target: person/mahalath
   type: married-to
   refs:
   - bible:Genesis 28:9
+- target: group/edomite
+  type: name-matches
+  refs:
+  - bible:Genesis 36:1
+  - bible:Genesis 36:9
+- target: place/edom
+  type: name-matches
+  refs:
+  - bible:Genesis 36:1
+  - bible:Genesis 36:9
+- target: person/adah_wife_of_esau
+  type: married-to
+  refs:
+  - bible:Genesis 36:2
+- target: person/oholibamah
+  type: married-to
+  refs:
+  - bible:Genesis 36:2
+- target: person/eliphaz
+  type: parent-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:4
+- target: person/reuel
+  type: parent-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:5
+- target: person/jeush
+  type: parent-of
+  refs:
+  - bible:Genesis 36:5
+- target: person/jalam
+  type: parent-of
+  refs:
+  - bible:Genesis 36:5
+- target: person/korah_son_of_esau
+  type: parent-of
+  refs:
+  - bible:Genesis 36:5
+- target: place/seir
+  type: resident-of
+  refs:
+  - bible:Genesis 36:8
+- target: group/edomite
+  type: origin-of
+  refs:
+  - bible:Genesis 36:9

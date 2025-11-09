@@ -1,0 +1,27 @@
+id: adah_wife_of_esau
+type: person
+name:
+  en: Adah
+name_disambiguous:
+  en: Adah (married to Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: married-to
+  refs:
+  - bible:Genesis 36:2
+- target: person/canaan
+  type: descendant-of
+  refs:
+  - bible:Genesis 36:2
+- target: person/elon_father_of_adah
+  type: child-of
+  refs:
+  - bible:Genesis 36:2
+- target: person/eliphaz
+  type: parent-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:4

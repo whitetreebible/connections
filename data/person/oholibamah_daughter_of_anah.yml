@@ -1,0 +1,18 @@
+id: oholibamah_daughter_of_anah
+type: person
+name:
+  en: Oholibamah
+name_disambiguous:
+  en: Oholibamah (daughter of Anah, chief of Edom)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/anah
+  type: child-of
+  refs:
+  - bible:Genesis 36:25
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:41

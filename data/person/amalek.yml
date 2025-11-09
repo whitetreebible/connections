@@ -1,0 +1,22 @@
+id: amalek
+type: person
+name:
+  en: Amalek
+name_disambiguous:
+  en: Amalek (son of Eliphaz)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eliphaz
+  type: child-of
+  refs:
+  - bible:Genesis 36:12
+- target: person/timnah
+  type: child-of
+  refs:
+  - bible:Genesis 36:12
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:16

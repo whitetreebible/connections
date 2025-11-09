@@ -1,0 +1,36 @@
+id: reuel
+type: person
+name:
+  en: Reuel
+name_disambiguous:
+  en: Reuel (son of Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: child-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:5
+- target: person/basemath
+  type: child-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:5
+- target: person/nahath
+  type: parent-of
+  refs:
+  - bible:Genesis 36:13
+- target: person/zerah
+  type: parent-of
+  refs:
+  - bible:Genesis 36:13
+- target: person/shammah
+  type: parent-of
+  refs:
+  - bible:Genesis 36:13
+- target: person/mizzah
+  type: parent-of
+  refs:
+  - bible:Genesis 36:13

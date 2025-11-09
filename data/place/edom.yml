@@ -1,0 +1,47 @@
+id: edom
+type: place
+name:
+  en: Edom
+name_disambiguous:
+  en: Edom (place where Esau lived)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: name-matches
+  refs:
+  - bible:Genesis 36:1
+  - bible:Genesis 36:9
+- target: person/bela
+  type: led-by
+  refs:
+  - bible:Genesis 36:32
+- target: person/jobab_son_of_zerah
+  type: led-by
+  refs:
+  - bible:Genesis 36:33
+- target: person/husham
+  type: led-by
+  refs:
+  - bible:Genesis 36:34
+- target: person/hadad_son_of_bedad
+  type: led-by
+  refs:
+  - bible:Genesis 36:35
+- target: person/samlah
+  type: led-by
+  refs:
+  - bible:Genesis 36:36
+- target: person/shaul
+  type: led-by
+  refs:
+  - bible:Genesis 36:37
+- target: person/baal_hanan
+  type: led-by
+  refs:
+  - bible:Genesis 36:38
+- target: person/hadar
+  type: led-by
+  refs:
+  - bible:Genesis 36:39

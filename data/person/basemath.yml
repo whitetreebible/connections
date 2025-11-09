@@ -12,6 +12,7 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 26:34
+  - bible:Genesis 36:3
 - target: person/elon
   type: child-of
   refs:
@@ -20,3 +21,16 @@ edges:
   type: member-of
   refs:
   - bible:Genesis 26:34
+- target: person/ishmael
+  type: child-of
+  refs:
+  - bible:Genesis 36:3
+- target: person/neboioth
+  type: related-to
+  refs:
+  - bible:Genesis 36:3
+- target: person/reuel
+  type: parent-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:5

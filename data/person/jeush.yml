@@ -1,0 +1,23 @@
+id: jeush
+type: person
+name:
+  en: Jeush
+name_disambiguous:
+  en: Jeush (son of Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: child-of
+  refs:
+  - bible:Genesis 36:5
+- target: person/oholibamah
+  type: child-of
+  refs:
+  - bible:Genesis 36:14
+  - bible:Genesis 36:5
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:18

@@ -1,0 +1,14 @@
+id: shepho
+type: person
+name:
+  en: Shepho
+name_disambiguous:
+  en: Shepho (son of Shobal)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shobal
+  type: child-of
+  refs:
+  - bible:Genesis 36:23

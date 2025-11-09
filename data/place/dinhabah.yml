@@ -1,0 +1,14 @@
+id: dinhabah
+type: place
+name:
+  en: Dinhabah
+name_disambiguous:
+  en: Dinhabah
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/bela
+  type: associated-with
+  refs:
+  - bible:Genesis 36:32

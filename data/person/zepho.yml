@@ -1,0 +1,18 @@
+id: zepho
+type: person
+name:
+  en: Zepho
+name_disambiguous:
+  en: Zepho (son of Eliphaz, chief of Edom)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eliphaz
+  type: child-of
+  refs:
+  - bible:Genesis 36:11
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:15

@@ -1,0 +1,14 @@
+id: hemam
+type: person
+name:
+  en: Hemam
+name_disambiguous:
+  en: Hemam (son of Lotan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lotan
+  type: child-of
+  refs:
+  - bible:Genesis 36:22

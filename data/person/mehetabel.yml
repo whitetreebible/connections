@@ -1,0 +1,18 @@
+id: mehetabel
+type: person
+name:
+  en: Mehetabel
+name_disambiguous:
+  en: Mehetabel (married to Hadar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/hadar
+  type: married-to
+  refs:
+  - bible:Genesis 36:39
+- target: person/matred
+  type: child-of
+  refs:
+  - bible:Genesis 36:39

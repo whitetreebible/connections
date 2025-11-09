@@ -1,0 +1,14 @@
+id: acbor
+type: person
+name:
+  en: Acbor
+name_disambiguous:
+  en: Acbor (father of Baal Hanan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/baal_hanan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:38

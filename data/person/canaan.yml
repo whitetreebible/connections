@@ -57,3 +57,7 @@ edges:
   type: origin-of
   refs:
   - bible:Genesis 10:18
+- target: person/adah_wife_of_esau
+  type: ancestor-of
+  refs:
+  - bible:Genesis 36:2

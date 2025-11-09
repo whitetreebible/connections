@@ -1,0 +1,14 @@
+id: jetheth
+type: person
+name:
+  en: Jetheth
+name_disambiguous:
+  en: Jetheth (chief of Edom)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:40

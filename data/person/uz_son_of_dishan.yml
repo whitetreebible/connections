@@ -1,17 +1,17 @@
-id: jobab
+id: uz_son_of_dishan
 type: person
 name:
-  en: Jobab
+  en: Uz
 name_disambiguous:
-  en: Jobab (son of Joktan)
+  en: Uz (son of Dishan)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: person/joktan
+- target: person/dishan
   type: child-of
   refs:
-  - bible:Genesis 10:29
-- target: person/jobab_son_of_zerah
+  - bible:Genesis 36:28
+- target: person/uz
   type: name-matches
   refs: []

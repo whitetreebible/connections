@@ -1,0 +1,14 @@
+id: avith
+type: place
+name:
+  en: Avith
+name_disambiguous:
+  en: Avith
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/hadad_son_of_bedad
+  type: associated-with
+  refs:
+  - bible:Genesis 36:35

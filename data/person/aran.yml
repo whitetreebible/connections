@@ -1,0 +1,14 @@
+id: aran
+type: person
+name:
+  en: Aran
+name_disambiguous:
+  en: Aran (son of Dishan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/dishan
+  type: child-of
+  refs:
+  - bible:Genesis 36:28

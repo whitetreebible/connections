@@ -1,0 +1,14 @@
+id: alvah
+type: person
+name:
+  en: Alvah
+name_disambiguous:
+  en: Alvah
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:40

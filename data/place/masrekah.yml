@@ -1,0 +1,14 @@
+id: masrekah
+type: place
+name:
+  en: Masrekah
+name_disambiguous:
+  en: Masrekah
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/samlah
+  type: associated-with
+  refs:
+  - bible:Genesis 36:36

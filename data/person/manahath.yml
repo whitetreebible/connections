@@ -1,0 +1,14 @@
+id: manahath
+type: person
+name:
+  en: Manahath
+name_disambiguous:
+  en: Manahath (son of Shobal)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shobal
+  type: child-of
+  refs:
+  - bible:Genesis 36:23

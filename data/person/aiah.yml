@@ -1,0 +1,14 @@
+id: aiah
+type: person
+name:
+  en: Aiah
+name_disambiguous:
+  en: Aiah (son of Zibeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/zibeon
+  type: child-of
+  refs:
+  - bible:Genesis 36:24

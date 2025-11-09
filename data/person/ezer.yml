@@ -1,0 +1,34 @@
+id: ezer
+type: person
+name:
+  en: Ezer
+name_disambiguous:
+  en: Ezer (son of Seir)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/seir
+  type: child-of
+  refs:
+  - bible:Genesis 36:21
+- target: person/bilhan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:27
+- target: person/zaavan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:27
+- target: person/akan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:27
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:30
+- target: group/horites
+  type: leader-of
+  refs:
+  - bible:Genesis 36:30

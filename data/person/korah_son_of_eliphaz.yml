@@ -1,0 +1,22 @@
+id: korah_son_of_eliphaz
+type: person
+name:
+  en: Korah
+name_disambiguous:
+  en: Korah (son of Eliphaz, chief of Edom)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eliphaz
+  type: child-of
+  refs:
+  - bible:Genesis 36:16
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:16
+- target: person/korah_son_of_esau
+  type: name-matches
+  refs:
+  - bible:Genesis 36:16

@@ -1,0 +1,44 @@
+id: anah
+type: person
+name:
+  en: Anah
+name_disambiguous:
+  en: Anah (of the hot springs)
+description:
+  en: ''
+footnotes:
+  hot_springs:
+    en: Several hot springs still exist today East of the Dead Sea in the region of
+      Edom lik [this one](https://maps.app.goo.gl/2hYTejmDDrPa7KrK8).
+edges:
+- target: person/oholibamah_daughter_of_anah
+  type: parent-of
+  refs:
+  - bible:Genesis 36:2
+  - bible:Genesis 36:25
+- target: person/zibeon
+  type: child-of
+  refs:
+  - bible:Genesis 36:2
+  - bible:Genesis 36:24
+- target: person/seir
+  type: child-of
+  refs:
+  - bible:Genesis 36:20
+- target: place/edom_hot_springs
+  type: associated-with
+  refs:
+  - bible:Genesis 36:24
+  - footnote:hot_springs
+- target: person/dishon
+  type: parent-of
+  refs:
+  - bible:Genesis 36:25
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:29
+- target: group/horites
+  type: leader-of
+  refs:
+  - bible:Genesis 36:29

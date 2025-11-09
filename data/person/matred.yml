@@ -1,0 +1,18 @@
+id: matred
+type: person
+name:
+  en: Matred
+name_disambiguous:
+  en: Matred (son of Mazehab)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/mehetabel
+  type: parent-of
+  refs:
+  - bible:Genesis 36:39
+- target: person/mezahab
+  type: child-of
+  refs:
+  - bible:Genesis 36:39

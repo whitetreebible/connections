@@ -1,17 +1,17 @@
-id: jobab
+id: jobab_son_of_zerah
 type: person
 name:
   en: Jobab
 name_disambiguous:
-  en: Jobab (son of Joktan)
+  en: Jobab (son of Zerah)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: person/joktan
+- target: person/zerah_from_bozrah
   type: child-of
   refs:
-  - bible:Genesis 10:29
-- target: person/jobab_son_of_zerah
+  - bible:Genesis 36:33
+- target: person/jobab
   type: name-matches
   refs: []

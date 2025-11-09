@@ -1,0 +1,50 @@
+id: seir
+type: person
+name:
+  en: Seir
+name_disambiguous:
+  en: Seir (the Horite)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/seir
+  type: name-matches
+  refs:
+  - bible:Genesis 36:20
+- target: group/horites
+  type: member-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/lotan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/shobal
+  type: parent-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/zibeon
+  type: parent-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/anah
+  type: parent-of
+  refs:
+  - bible:Genesis 36:20
+- target: person/dishon
+  type: parent-of
+  refs:
+  - bible:Genesis 36:21
+- target: person/ezer
+  type: parent-of
+  refs:
+  - bible:Genesis 36:21
+- target: person/dishan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:21
+- target: person/timna
+  type: parent-of
+  refs:
+  - bible:Genesis 36:22

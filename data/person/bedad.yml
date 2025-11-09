@@ -1,0 +1,14 @@
+id: bedad
+type: person
+name:
+  en: Bedad
+name_disambiguous:
+  en: Bedad (father of Hadad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/hadad_son_of_bedad
+  type: parent-of
+  refs:
+  - bible:Genesis 36:35

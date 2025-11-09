@@ -1,0 +1,30 @@
+id: dishan
+type: person
+name:
+  en: Dishan
+name_disambiguous:
+  en: Dishan (son of Seir)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/seir
+  type: child-of
+  refs:
+  - bible:Genesis 36:21
+- target: person/uz_son_of_dishan
+  type: parent-of
+  refs:
+  - bible:Genesis 36:28
+- target: person/aran
+  type: parent-of
+  refs:
+  - bible:Genesis 36:28
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:30
+- target: group/horites
+  type: leader-of
+  refs:
+  - bible:Genesis 36:30

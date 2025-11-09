@@ -1,0 +1,29 @@
+id: oholibamah
+type: person
+name:
+  en: Oholibamah
+name_disambiguous:
+  en: Oholibamah (married to Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: married-to
+  refs:
+  - bible:Genesis 36:2
+- target: person/jeush
+  type: parent-of
+  refs:
+  - bible:Genesis 36:14
+  - bible:Genesis 36:5
+- target: person/jalam
+  type: parent-of
+  refs:
+  - bible:Genesis 36:14
+  - bible:Genesis 36:5
+- target: person/korah_son_of_esau
+  type: parent-of
+  refs:
+  - bible:Genesis 36:14
+  - bible:Genesis 36:5

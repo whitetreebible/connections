@@ -34,6 +34,7 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 25:13
+  - bible:Genesis 36:3
 - target: person/kedar
   type: parent-of
   refs:
@@ -86,3 +87,7 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 28:9
+- target: person/basemath
+  type: parent-of
+  refs:
+  - bible:Genesis 36:3

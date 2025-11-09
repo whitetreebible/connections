@@ -1,0 +1,22 @@
+id: shaul
+type: person
+name:
+  en: Shaul
+name_disambiguous:
+  en: Shaul (king of Edom)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/rehoboth
+  type: resident-of
+  refs:
+  - bible:Genesis 36:37
+- target: role/king
+  type: role-as
+  refs:
+  - bible:Genesis 36:37
+- target: place/edom
+  type: leader-of
+  refs:
+  - bible:Genesis 36:37

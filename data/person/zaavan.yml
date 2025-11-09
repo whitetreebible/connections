@@ -1,0 +1,14 @@
+id: zaavan
+type: person
+name:
+  en: Zaavan
+name_disambiguous:
+  en: Zaavan (son of Ezer)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ezer
+  type: child-of
+  refs:
+  - bible:Genesis 36:27

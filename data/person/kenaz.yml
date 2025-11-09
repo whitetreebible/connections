@@ -1,0 +1,19 @@
+id: kenaz
+type: person
+name:
+  en: Kenaz
+name_disambiguous:
+  en: Kenaz (son of Eliphaz)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/eliphaz
+  type: child-of
+  refs:
+  - bible:Genesis 36:11
+- target: role/chief
+  type: role-as
+  refs:
+  - bible:Genesis 36:15
+  - bible:Genesis 36:42

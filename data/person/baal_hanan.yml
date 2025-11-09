@@ -1,0 +1,22 @@
+id: baal_hanan
+type: person
+name:
+  en: Baal-Hanan
+name_disambiguous:
+  en: Baal-Hanan (son of Acbor)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/acbor
+  type: child-of
+  refs:
+  - bible:Genesis 36:38
+- target: role/king
+  type: role-as
+  refs:
+  - bible:Genesis 36:38
+- target: place/edom
+  type: leader-of
+  refs:
+  - bible:Genesis 36:38

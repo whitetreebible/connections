@@ -1,0 +1,14 @@
+id: onam
+type: person
+name:
+  en: Onam
+name_disambiguous:
+  en: Onam (son of Shobal)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shobal
+  type: child-of
+  refs:
+  - bible:Genesis 36:23

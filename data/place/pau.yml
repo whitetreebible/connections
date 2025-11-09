@@ -1,0 +1,14 @@
+id: pau
+type: place
+name:
+  en: Pau
+name_disambiguous:
+  en: Pau
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/hadar
+  type: associated-with
+  refs:
+  - bible:Genesis 36:39

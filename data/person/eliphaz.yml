@@ -1,0 +1,52 @@
+id: eliphaz
+type: person
+name:
+  en: Eliphaz
+name_disambiguous:
+  en: Eliphaz (son of Esau)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/esau
+  type: child-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:4
+- target: person/adah_wife_of_esau
+  type: child-of
+  refs:
+  - bible:Genesis 36:10
+  - bible:Genesis 36:4
+- target: person/teman
+  type: parent-of
+  refs:
+  - bible:Genesis 36:11
+- target: person/omar
+  type: parent-of
+  refs:
+  - bible:Genesis 36:11
+- target: person/zepho
+  type: parent-of
+  refs:
+  - bible:Genesis 36:11
+- target: person/gatam
+  type: parent-of
+  refs:
+  - bible:Genesis 36:11
+- target: person/kenaz
+  type: parent-of
+  refs:
+  - bible:Genesis 36:11
+- target: person/timnah
+  type: married-to
+  refs:
+  - bible:Genesis 36:12
+- target: person/amalek
+  type: parent-of
+  refs:
+  - bible:Genesis 36:12
+- target: person/korah_son_of_eliphaz
+  type: parent-of
+  refs:
+  - bible:Genesis 36:16

@@ -16,3 +16,6 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 22:20
+- target: person/uz_son_of_dishan
+  type: name-matches
+  refs: []

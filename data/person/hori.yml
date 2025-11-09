@@ -1,0 +1,14 @@
+id: hori
+type: person
+name:
+  en: Hori
+name_disambiguous:
+  en: Hori (son of Lotan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/lotan
+  type: child-of
+  refs:
+  - bible:Genesis 36:22

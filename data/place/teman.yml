@@ -1,0 +1,14 @@
+id: teman
+type: place
+name:
+  en: Teman
+name_disambiguous:
+  en: Teman
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/husham
+  type: associated-with
+  refs:
+  - bible:Genesis 36:34
