@@ -255,32 +255,32 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/lot_daughter_younger(["Lot's younger daughter"])
     person/lot_daughter_older(["Lot's older daughter"])
     person/ben-ammi(["Ben Ammi"])
-    person/lot_daughter_younger(["Lot's younger daughter"])
     person/haran(["Haran"])
-    person/moab(["Moab"])
     person/lot(["Lot"])
+    person/moab(["Moab"])
+    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
     click person/lot_daughter_older "../../person/lot_daughter_older/"
     click person/ben-ammi "../../person/ben-ammi/"
-    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
     click person/haran "../../person/haran/"
-    click person/moab "../../person/moab/"
     click person/lot "../../person/lot/"
-    person/lot --&gt;|parent of| person/ben-ammi
+    click person/moab "../../person/moab/"
     person/lot_daughter_older --&gt;|parent of| person/moab
-    person/lot --&gt;|parent of| person/lot_daughter_older
     person/lot --&gt;|parent of| person/lot_daughter_younger
     person/haran --&gt;|parent of| person/lot
     person/lot --&gt;|parent of| person/moab
+    person/lot --&gt;|parent of| person/ben-ammi
+    person/lot --&gt;|parent of| person/lot_daughter_older
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/moab fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/moab(["Moab"])
     group/moabites(["Moabites"])
-    click person/moab "../../person/moab/"
+    person/moab(["Moab"])
     click group/moabites "../../group/moabites/"
+    click person/moab "../../person/moab/"
     person/moab --&gt;|origin of| group/moabites
 </div>
 </article>

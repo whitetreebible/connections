@@ -246,32 +246,32 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/paddan-aram fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/jacob(["Jacob"])
-    place/paddan-aram(["Paddan Aram"])
-    place/paddan_aram(["Paddan Aram"])
-    person/isaac(["Isaac"])
-    place/mamre(["Mamre"])
-    person/bethuel(["Bethuel"])
     place/shechem(["Shechem"])
-    place/eder(["Eder"])
     place/succoth(["Succoth"])
-    click person/jacob "../../person/jacob/"
-    click place/paddan-aram "../../place/paddan-aram/"
-    click place/paddan_aram "../../place/paddan_aram/"
-    click person/isaac "../../person/isaac/"
-    click place/mamre "../../place/mamre/"
-    click person/bethuel "../../person/bethuel/"
+    place/paddan-aram(["Paddan Aram"])
+    place/mamre(["Mamre"])
+    person/jacob(["Jacob"])
+    person/isaac(["Isaac"])
+    place/paddan_aram(["Paddan Aram"])
+    person/bethuel(["Bethuel"])
+    place/eder(["Eder"])
     click place/shechem "../../place/shechem/"
-    click place/eder "../../place/eder/"
     click place/succoth "../../place/succoth/"
-    person/bethuel --&gt;|resident of| place/paddan_aram
-    person/jacob .-&gt;|visited| place/paddan-aram
-    person/bethuel --&gt;|resident of| place/paddan-aram
+    click place/paddan-aram "../../place/paddan-aram/"
+    click place/mamre "../../place/mamre/"
+    click person/jacob "../../person/jacob/"
+    click person/isaac "../../person/isaac/"
+    click place/paddan_aram "../../place/paddan_aram/"
+    click person/bethuel "../../person/bethuel/"
+    click place/eder "../../place/eder/"
+    person/jacob .-&gt;|visited| person/isaac
     person/jacob .-&gt;|visited| place/mamre
+    person/jacob --&gt;|resident of| place/shechem
+    person/jacob .-&gt;|visited| place/paddan-aram
     person/jacob --&gt;|resident of| place/eder
     person/jacob --&gt;|resident of| place/succoth
-    person/jacob .-&gt;|visited| person/isaac
-    person/jacob --&gt;|resident of| place/shechem
+    person/bethuel --&gt;|resident of| place/paddan_aram
+    person/bethuel --&gt;|resident of| place/paddan-aram
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;

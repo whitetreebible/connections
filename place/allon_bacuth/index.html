@@ -228,16 +228,16 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/allon_bacuth fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/bethel(["Bethel"])
     person/deborah(["Deborah"])
     place/allon_bacuth(["Allon Bacuth"])
-    click place/bethel "../../place/bethel/"
+    place/bethel(["Bethel"])
     click person/deborah "../../person/deborah/"
     click place/allon_bacuth "../../place/allon_bacuth/"
-    person/deborah --&gt;|buried in| place/allon_bacuth
-    place/bethel --&gt;|near| place/allon_bacuth
-    person/deborah --&gt;|buried in| place/bethel
+    click place/bethel "../../place/bethel/"
     person/deborah --&gt;|died in| place/bethel
+    person/deborah --&gt;|buried in| place/bethel
+    place/bethel --&gt;|near| place/allon_bacuth
+    person/deborah --&gt;|buried in| place/allon_bacuth
 </div>
 </article>
 </div>

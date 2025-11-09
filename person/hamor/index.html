@@ -262,14 +262,14 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/hamor fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/shechem(["Shechem"])
     group/sons_of_hamor(["sons of Hamor"])
+    person/shechem(["Shechem"])
     person/hamor(["Hamor"])
-    click person/shechem "../../person/shechem/"
     click group/sons_of_hamor "../../group/sons_of_hamor/"
+    click person/shechem "../../person/shechem/"
     click person/hamor "../../person/hamor/"
-    person/hamor --&gt;|parent of| person/shechem
     group/sons_of_hamor --&gt;|parent of| person/shechem
+    person/hamor --&gt;|parent of| person/shechem
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
@@ -284,16 +284,16 @@
 <div class="mermaid">graph TD;
     style person/hamor fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/shechem(["Shechem"])
-    person/simeon(["Simeon"])
     person/levi(["Levi"])
     person/hamor(["Hamor"])
+    person/simeon(["Simeon"])
     click place/shechem "../../place/shechem/"
-    click person/simeon "../../person/simeon/"
     click person/levi "../../person/levi/"
     click person/hamor "../../person/hamor/"
-    person/levi --&gt;|killed| person/hamor
+    click person/simeon "../../person/simeon/"
     person/simeon --&gt;|defeated| place/shechem
     person/levi --&gt;|defeated| place/shechem
+    person/levi --&gt;|killed| person/hamor
     person/simeon --&gt;|killed| person/hamor
 </div>
 </article>

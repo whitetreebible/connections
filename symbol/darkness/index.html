@@ -240,22 +240,22 @@
 <div class="mermaid">graph TD;
     style symbol/darkness fill:#2fa4e7,stroke:#333,stroke-width:4px;
     symbol/emptiness(["emptiness"])
-    symbol/wilderness(["wilderness"])
+    place/dry_land(["dry land"])
     place/watery_abyss(["watery abyss"])
     symbol/darkness(["darkness"])
-    place/dry_land(["dry land"])
+    symbol/wilderness(["wilderness"])
     place/earth(["earth"])
     click symbol/emptiness "../../symbol/emptiness/"
-    click symbol/wilderness "../../symbol/wilderness/"
+    click place/dry_land "../../place/dry_land/"
     click place/watery_abyss "../../place/watery_abyss/"
     click symbol/darkness "../../symbol/darkness/"
-    click place/dry_land "../../place/dry_land/"
+    click symbol/wilderness "../../symbol/wilderness/"
     click place/earth "../../place/earth/"
-    place/earth .-&gt;|associated with| symbol/emptiness
+    symbol/darkness .-&gt;|associated with| place/watery_abyss
+    place/dry_land .-&gt;|associated with| place/earth
     place/earth .-&gt;|associated with| symbol/darkness
     place/earth .-&gt;|associated with| symbol/wilderness
-    place/dry_land .-&gt;|associated with| place/earth
-    symbol/darkness .-&gt;|associated with| place/watery_abyss
+    place/earth .-&gt;|associated with| symbol/emptiness
 </div>
 </article>
 </div>

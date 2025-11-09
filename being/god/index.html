@@ -264,113 +264,113 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style being/god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
     being/god(["God"])
-    click person/abimelech "../../person/abimelech/"
+    person/abimelech(["Abimelech"])
     click being/god "../../being/god/"
+    click person/abimelech "../../person/abimelech/"
     being/god .-&gt;|visited| person/abimelech
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style being/god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    plant/vegetation(["vegetation"])
-    concept/light(["light"])
-    object/lights(["lights"])
-    animal/sea_dragon(["sea dragon"])
-    concept/night(["night"])
-    concept/day(["day"])
-    being/god(["God"])
-    person/isaac(["Isaac"])
-    being/yahweh(["Yahweh"])
-    person/esau(["Esau"])
-    place/heavens(["heavens"])
-    animal/livestock(["livestock"])
-    being/human(["human"])
-    person/jacob(["Jacob"])
-    animal/sea_creature(["sea creature"])
-    place/earth(["earth"])
-    animal/crawlers(["crawlers"])
-    place/expanse(["expanse"])
-    object/greater_light(["greater light"])
     animal/living_creatures(["living creatures"])
-    concept/dry_land(["dry_land"])
-    object/lesser_light(["lesser light"])
     animal/bird(["bird"])
-    click plant/vegetation "../../plant/vegetation/"
-    click concept/light "../../concept/light/"
-    click object/lights "../../object/lights/"
-    click animal/sea_dragon "../../animal/sea_dragon/"
-    click concept/night "../../concept/night/"
-    click concept/day "../../concept/day/"
-    click being/god "../../being/god/"
-    click person/isaac "../../person/isaac/"
-    click being/yahweh "../../being/yahweh/"
-    click person/esau "../../person/esau/"
-    click place/heavens "../../place/heavens/"
-    click animal/livestock "../../animal/livestock/"
-    click being/human "../../being/human/"
-    click person/jacob "../../person/jacob/"
-    click animal/sea_creature "../../animal/sea_creature/"
-    click place/earth "../../place/earth/"
-    click animal/crawlers "../../animal/crawlers/"
-    click place/expanse "../../place/expanse/"
-    click object/greater_light "../../object/greater_light/"
+    concept/light(["light"])
+    animal/sea_dragon(["sea dragon"])
+    person/jacob(["Jacob"])
+    person/isaac(["Isaac"])
+    place/heavens(["heavens"])
+    concept/dry_land(["dry_land"])
+    object/greater_light(["greater light"])
+    animal/crawlers(["crawlers"])
+    person/esau(["Esau"])
+    object/lesser_light(["lesser light"])
+    being/yahweh(["Yahweh"])
+    place/earth(["earth"])
+    concept/day(["day"])
+    object/lights(["lights"])
+    plant/vegetation(["vegetation"])
+    concept/night(["night"])
+    being/human(["human"])
+    animal/livestock(["livestock"])
+    animal/sea_creature(["sea creature"])
+    place/expanse(["expanse"])
+    being/god(["God"])
     click animal/living_creatures "../../animal/living_creatures/"
-    click concept/dry_land "../../concept/dry_land/"
-    click object/lesser_light "../../object/lesser_light/"
     click animal/bird "../../animal/bird/"
-    being/god --&gt;|created| plant/vegetation
+    click concept/light "../../concept/light/"
+    click animal/sea_dragon "../../animal/sea_dragon/"
+    click person/jacob "../../person/jacob/"
+    click person/isaac "../../person/isaac/"
+    click place/heavens "../../place/heavens/"
+    click concept/dry_land "../../concept/dry_land/"
+    click object/greater_light "../../object/greater_light/"
+    click animal/crawlers "../../animal/crawlers/"
+    click person/esau "../../person/esau/"
+    click object/lesser_light "../../object/lesser_light/"
+    click being/yahweh "../../being/yahweh/"
+    click place/earth "../../place/earth/"
+    click concept/day "../../concept/day/"
+    click object/lights "../../object/lights/"
+    click plant/vegetation "../../plant/vegetation/"
+    click concept/night "../../concept/night/"
+    click being/human "../../being/human/"
+    click animal/livestock "../../animal/livestock/"
+    click animal/sea_creature "../../animal/sea_creature/"
+    click place/expanse "../../place/expanse/"
+    click being/god "../../being/god/"
+    being/god --&gt;|created| animal/living_creatures
+    being/god --&gt;|created| object/lesser_light
+    being/god --&gt;|created| animal/livestock
+    being/god --&gt;|created| concept/day
+    being/god --&gt;|created| object/lights
+    being/god --&gt;|created| concept/dry_land
+    being/god --&gt;|created| animal/crawlers
+    being/god --&gt;|blessed| animal/sea_creature
+    being/god --&gt;|created| animal/sea_creature
+    being/god --&gt;|created| object/greater_light
     being/god --&gt;|blessed| animal/bird
     being/god --&gt;|created| animal/bird
-    being/god --&gt;|created| object/lesser_light
+    being/god --&gt;|blessed| being/human
+    being/god --&gt;|created| being/human
+    being/god --&gt;|created| place/expanse
+    being/god --&gt;|blessed| person/isaac
     being/god --&gt;|blessed| animal/sea_dragon
     being/god --&gt;|created| animal/sea_dragon
-    being/god --&gt;|created| being/human
-    being/god --&gt;|blessed| being/human
-    being/god --&gt;|blessed| person/isaac
-    being/god --&gt;|created| object/greater_light
-    being/god --&gt;|created| concept/day
-    person/isaac --&gt;|sent| person/jacob
-    person/isaac --&gt;|blessed| person/jacob
-    being/god --&gt;|created| animal/sea_creature
-    being/god --&gt;|blessed| animal/sea_creature
-    being/god --&gt;|created| concept/night
-    being/god --&gt;|created| animal/living_creatures
-    being/god --&gt;|created| place/heavens
     being/god --&gt;|created| concept/light
-    being/god --&gt;|created| animal/crawlers
-    being/god --&gt;|created| object/lights
-    being/god --&gt;|created| place/earth
+    being/god --&gt;|created| concept/night
+    being/god --&gt;|created| place/heavens
+    being/god --&gt;|created| plant/vegetation
     being/yahweh --&gt;|blessed| person/isaac
-    being/god --&gt;|created| place/expanse
-    being/god --&gt;|created| animal/livestock
-    being/god --&gt;|created| concept/dry_land
     person/isaac --&gt;|blessed| person/esau
+    person/isaac --&gt;|blessed| person/jacob
+    person/isaac --&gt;|sent| person/jacob
+    being/god --&gt;|created| place/earth
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/shaddai(["Shaddai"])
-    being/el-roi(["El Roi"])
-    being/god(["God"])
-    being/yahweh(["Yahweh"])
-    being/el-shaddai(["El Shaddai"])
     person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
+    being/el-roi(["El Roi"])
+    being/el-shaddai(["El Shaddai"])
+    being/yahweh(["Yahweh"])
+    being/god(["God"])
     person/ruth(["Ruth"])
-    click being/shaddai "../../being/shaddai/"
-    click being/el-roi "../../being/el-roi/"
-    click being/god "../../being/god/"
-    click being/yahweh "../../being/yahweh/"
-    click being/el-shaddai "../../being/el-shaddai/"
+    being/shaddai(["Shaddai"])
     click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
+    click being/el-roi "../../being/el-roi/"
+    click being/el-shaddai "../../being/el-shaddai/"
+    click being/yahweh "../../being/yahweh/"
+    click being/god "../../being/god/"
     click person/ruth "../../person/ruth/"
-    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
-    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
-    person/ruth &lt;.-&gt;|associated with| being/yahweh
-    being/yahweh &lt;--&gt;|name matches| being/shaddai
-    being/el-roi &lt;--&gt;|name matches| being/yahweh
+    click being/shaddai "../../being/shaddai/"
     being/shaddai &lt;--&gt;|name matches| being/god
+    being/el-roi &lt;--&gt;|name matches| being/yahweh
+    being/yahweh &lt;.-&gt;|associated with| person/ruth
+    being/el-shaddai &lt;--&gt;|name matches| being/yahweh
+    being/yahweh &lt;--&gt;|name matches| being/shaddai
     being/yahweh &lt;--&gt;|name matches| being/god
+    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
 </div>
 </article>
 </div>

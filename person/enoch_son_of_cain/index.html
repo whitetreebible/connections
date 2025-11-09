@@ -256,35 +256,35 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/enoch_son_of_cain fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/cain(["Cain"])
-    person/irad(["Irad"])
-    person/enoch_son_of_cain(["Enoch"])
-    person/adam(["Adam"])
     person/mehujael(["Mehujael"])
-    person/cain_wife(["Cain_Wife"])
+    person/adam(["Adam"])
+    person/cain(["Cain"])
+    person/enoch_son_of_cain(["Enoch"])
     person/eve(["Eve"])
-    click person/cain "../../person/cain/"
-    click person/irad "../../person/irad/"
-    click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
-    click person/adam "../../person/adam/"
+    person/cain_wife(["Cain_Wife"])
+    person/irad(["Irad"])
     click person/mehujael "../../person/mehujael/"
-    click person/cain_wife "../../person/cain_wife/"
+    click person/adam "../../person/adam/"
+    click person/cain "../../person/cain/"
+    click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
     click person/eve "../../person/eve/"
-    person/enoch_son_of_cain --&gt;|parent of| person/irad
+    click person/cain_wife "../../person/cain_wife/"
+    click person/irad "../../person/irad/"
+    person/adam --&gt;|parent of| person/cain
     person/irad --&gt;|parent of| person/mehujael
     person/cain --&gt;|parent of| person/enoch_son_of_cain
+    person/enoch_son_of_cain --&gt;|parent of| person/irad
     person/cain_wife &lt;--&gt;|married to| person/cain
     person/eve --&gt;|parent of| person/cain
-    person/adam --&gt;|parent of| person/cain
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/enoch_son_of_cain fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/enoch(["Enoch"])
     person/enoch_son_of_cain(["Enoch"])
-    click person/enoch "../../person/enoch/"
+    person/enoch(["Enoch"])
     click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
-    person/enoch &lt;--&gt;|name matches| person/enoch_son_of_cain
+    click person/enoch "../../person/enoch/"
+    person/enoch_son_of_cain &lt;--&gt;|name matches| person/enoch
 </div>
 </article>
 </div>

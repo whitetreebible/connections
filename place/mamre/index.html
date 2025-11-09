@@ -246,55 +246,55 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/mamre fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
+    place/machpelah(["Machpelah"])
+    place/shechem(["Shechem"])
+    place/succoth(["Succoth"])
+    place/gerar(["Gerar"])
     person/jacob(["Jacob"])
+    place/mamre(["Mamre"])
     place/paddan-aram(["Paddan Aram"])
     place/beer_lahai_roi(["Beer Lahai Roi"])
     person/isaac(["Isaac"])
-    place/mamre(["Mamre"])
-    place/machpelah(["Machpelah"])
-    person/sarah(["Sarah"])
-    place/shechem(["Shechem"])
-    place/gerar(["Gerar"])
+    person/abraham(["Abraham"])
     place/eder(["Eder"])
-    place/succoth(["Succoth"])
-    click person/abraham "../../person/abraham/"
+    person/sarah(["Sarah"])
+    click place/machpelah "../../place/machpelah/"
+    click place/shechem "../../place/shechem/"
+    click place/succoth "../../place/succoth/"
+    click place/gerar "../../place/gerar/"
     click person/jacob "../../person/jacob/"
+    click place/mamre "../../place/mamre/"
     click place/paddan-aram "../../place/paddan-aram/"
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
     click person/isaac "../../person/isaac/"
-    click place/mamre "../../place/mamre/"
-    click place/machpelah "../../place/machpelah/"
-    click person/sarah "../../person/sarah/"
-    click place/shechem "../../place/shechem/"
-    click place/gerar "../../place/gerar/"
+    click person/abraham "../../person/abraham/"
     click place/eder "../../place/eder/"
-    click place/succoth "../../place/succoth/"
-    place/machpelah --&gt;|near| place/mamre
-    person/sarah --&gt;|buried in| place/machpelah
-    person/jacob .-&gt;|visited| place/paddan-aram
+    click person/sarah "../../person/sarah/"
+    person/abraham --&gt;|buried in| place/machpelah
+    person/isaac --&gt;|resident of| place/gerar
+    person/jacob .-&gt;|visited| person/isaac
     person/jacob .-&gt;|visited| place/mamre
+    person/isaac --&gt;|died in| place/mamre
+    person/isaac --&gt;|buried in| place/mamre
+    person/jacob .-&gt;|visited| place/paddan-aram
+    person/jacob --&gt;|resident of| place/shechem
+    place/machpelah --&gt;|near| place/mamre
     person/jacob --&gt;|resident of| place/eder
     person/jacob --&gt;|resident of| place/succoth
-    person/abraham --&gt;|buried in| place/machpelah
-    person/isaac --&gt;|buried in| place/mamre
-    person/isaac --&gt;|died in| place/mamre
-    person/jacob .-&gt;|visited| person/isaac
-    person/isaac --&gt;|resident of| place/gerar
+    person/sarah --&gt;|buried in| place/machpelah
     person/isaac --&gt;|resident of| place/beer_lahai_roi
-    person/jacob --&gt;|resident of| place/shechem
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/mamre fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/hebron(["Hebron"])
-    place/kiriath_arba(["Kiriath Arba"])
     place/mamre(["Mamre"])
+    place/kiriath_arba(["Kiriath Arba"])
     click place/hebron "../../place/hebron/"
-    click place/kiriath_arba "../../place/kiriath_arba/"
     click place/mamre "../../place/mamre/"
-    place/mamre &lt;--&gt;|name matches| place/kiriath_arba
+    click place/kiriath_arba "../../place/kiriath_arba/"
     place/hebron &lt;--&gt;|name matches| place/kiriath_arba
+    place/kiriath_arba &lt;--&gt;|name matches| place/mamre
     place/mamre &lt;--&gt;|name matches| place/hebron
 </div>
 </article>

@@ -265,77 +265,77 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/sarah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
+    person/rebekah(["Rebekah"])
+    person/nahor(["Nahor"])
+    person/esau(["Esau"])
     person/jacob(["Jacob"])
-    person/terah(["Terah"])
+    person/haran(["Haran"])
     person/isaac(["Isaac"])
     person/abram(["Abram"])
+    person/abraham(["Abraham"])
     person/bethuel(["Bethuel"])
-    person/haran(["Haran"])
-    person/esau(["Esau"])
-    person/rebekah(["Rebekah"])
+    person/terah(["Terah"])
     person/sarah(["Sarah"])
-    person/nahor(["Nahor"])
-    click person/abraham "../../person/abraham/"
+    click person/rebekah "../../person/rebekah/"
+    click person/nahor "../../person/nahor/"
+    click person/esau "../../person/esau/"
     click person/jacob "../../person/jacob/"
-    click person/terah "../../person/terah/"
+    click person/haran "../../person/haran/"
     click person/isaac "../../person/isaac/"
     click person/abram "../../person/abram/"
+    click person/abraham "../../person/abraham/"
     click person/bethuel "../../person/bethuel/"
-    click person/haran "../../person/haran/"
-    click person/esau "../../person/esau/"
-    click person/rebekah "../../person/rebekah/"
+    click person/terah "../../person/terah/"
     click person/sarah "../../person/sarah/"
-    click person/nahor "../../person/nahor/"
-    person/isaac --&gt;|parent of| person/jacob
+    person/nahor --&gt;|parent of| person/terah
     person/terah --&gt;|parent of| person/sarah
-    person/sarah --&gt;|parent of| person/isaac
-    person/terah --&gt;|parent of| person/haran
-    person/abraham --&gt;|parent of| person/isaac
-    person/rebekah &lt;--&gt;|married to| person/isaac
-    person/terah --&gt;|parent of| person/nahor
-    person/isaac --&gt;|related to| person/bethuel
     person/isaac --&gt;|parent of| person/esau
+    person/terah --&gt;|parent of| person/haran
+    person/rebekah &lt;--&gt;|married to| person/isaac
+    person/isaac --&gt;|parent of| person/jacob
+    person/abraham --&gt;|parent of| person/isaac
+    person/sarah --&gt;|parent of| person/isaac
     person/terah --&gt;|parent of| person/abram
+    person/isaac --&gt;|related to| person/bethuel
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/sarah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
-    place/mamre(["Mamre"])
     place/machpelah(["Machpelah"])
-    being/yahweh(["Yahweh"])
+    place/mamre(["Mamre"])
     place/kiriath_arba(["Kiriath Arba"])
+    being/yahweh(["Yahweh"])
+    person/abraham(["Abraham"])
     person/sarah(["Sarah"])
-    click person/abraham "../../person/abraham/"
-    click place/mamre "../../place/mamre/"
     click place/machpelah "../../place/machpelah/"
-    click being/yahweh "../../being/yahweh/"
+    click place/mamre "../../place/mamre/"
     click place/kiriath_arba "../../place/kiriath_arba/"
+    click being/yahweh "../../being/yahweh/"
+    click person/abraham "../../person/abraham/"
     click person/sarah "../../person/sarah/"
-    person/sarah --&gt;|buried in| place/machpelah
-    place/machpelah --&gt;|near| place/mamre
-    being/yahweh .-&gt;|visited| person/sarah
     person/abraham --&gt;|buried in| place/machpelah
+    being/yahweh .-&gt;|visited| person/sarah
     person/sarah --&gt;|died in| place/kiriath_arba
+    place/machpelah --&gt;|near| place/mamre
+    person/sarah --&gt;|buried in| place/machpelah
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/sarah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
     person/abimelech_2(["Abimelech"])
     person/abimelech(["Abimelech"])
     person/sarai(["Sarai"])
+    person/abraham(["Abraham"])
     person/sarah(["Sarah"])
-    click person/abraham "../../person/abraham/"
     click person/abimelech_2 "../../person/abimelech_2/"
     click person/abimelech "../../person/abimelech/"
     click person/sarai "../../person/sarai/"
+    click person/abraham "../../person/abraham/"
     click person/sarah "../../person/sarah/"
-    person/abimelech_2 &lt;--&gt;|name matches| person/abimelech
-    person/sarai &lt;--&gt;|name matches| person/sarah
-    person/abimelech .-&gt;|associated with| person/sarah
+    person/abimelech &lt;--&gt;|name matches| person/abimelech_2
+    person/sarah &lt;--&gt;|name matches| person/sarai
     person/abimelech .-&gt;|associated with| person/abraham
+    person/abimelech .-&gt;|associated with| person/sarah
 </div>
 </article>
 </div>

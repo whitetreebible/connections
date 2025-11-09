@@ -258,57 +258,57 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/kilion fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/kilion(["Kilion"])
-    person/mahlon(["Mahlon"])
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    person/elimelech(["Elimelech"])
-    person/obed(["Obed"])
-    person/boaz(["Boaz"])
     person/naomi(["Naomi"])
+    person/elimelech(["Elimelech"])
+    person/mahlon(["Mahlon"])
+    person/kilion(["Kilion"])
+    person/boaz(["Boaz"])
     person/ruth(["Ruth"])
-    click person/kilion "../../person/kilion/"
-    click person/mahlon "../../person/mahlon/"
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click person/elimelech "../../person/elimelech/"
-    click person/obed "../../person/obed/"
-    click person/boaz "../../person/boaz/"
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
+    person/obed(["Obed"])
     click person/naomi "../../person/naomi/"
+    click person/elimelech "../../person/elimelech/"
+    click person/mahlon "../../person/mahlon/"
+    click person/kilion "../../person/kilion/"
+    click person/boaz "../../person/boaz/"
     click person/ruth "../../person/ruth/"
-    person/kilion &lt;--&gt;|married to| person/ruth
-    person/elimelech --&gt;|parent of| person/mahlon
-    person/naomi --&gt;|parent of| person/mahlon
-    person/naomi --&gt;|parent of| person/obed
-    person/boaz &lt;--&gt;|married to| person/ruth
-    person/naomi --&gt;|parent of| person/kilion
-    person/elimelech --&gt;|related to| person/boaz
-    person/elimelech --&gt;|parent of| person/kilion
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    click person/obed "../../person/obed/"
     person/elimelech &lt;--&gt;|married to| person/naomi
-    person/ruth --&gt;|related to| person/elimelechs_redeemer
-    person/ruth --&gt;|parent of| person/obed
-    person/naomi --&gt;|related to| person/elimelechs_redeemer
-    person/naomi --&gt;|parent of| person/ruth
+    person/elimelech --&gt;|parent of| person/mahlon
+    person/elimelech --&gt;|parent of| person/kilion
+    person/ruth &lt;--&gt;|married to| person/kilion
+    person/naomi --&gt;|parent of| person/mahlon
     person/elimelech --&gt;|related to| person/elimelechs_redeemer
+    person/ruth --&gt;|parent of| person/obed
+    person/naomi --&gt;|parent of| person/ruth
+    person/naomi --&gt;|parent of| person/obed
+    person/ruth --&gt;|related to| person/elimelechs_redeemer
+    person/elimelech --&gt;|related to| person/boaz
+    person/ruth &lt;--&gt;|married to| person/boaz
+    person/naomi --&gt;|parent of| person/kilion
+    person/naomi --&gt;|related to| person/elimelechs_redeemer
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/kilion fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/kilion(["Kilion"])
-    person/mahlon(["Mahlon"])
-    person/elimelech(["Elimelech"])
     person/naomi(["Naomi"])
+    person/elimelech(["Elimelech"])
+    person/mahlon(["Mahlon"])
+    person/kilion(["Kilion"])
     place/moab(["Moab"])
-    click person/kilion "../../person/kilion/"
-    click person/mahlon "../../person/mahlon/"
-    click person/elimelech "../../person/elimelech/"
     click person/naomi "../../person/naomi/"
+    click person/elimelech "../../person/elimelech/"
+    click person/mahlon "../../person/mahlon/"
+    click person/kilion "../../person/kilion/"
     click place/moab "../../place/moab/"
-    person/elimelech --&gt;|died in| place/moab
-    person/elimelech .-&gt;|visited| place/moab
-    person/naomi .-&gt;|visited| place/moab
-    person/kilion --&gt;|died in| place/moab
-    person/kilion .-&gt;|visited| place/moab
-    person/mahlon --&gt;|died in| place/moab
     person/mahlon .-&gt;|visited| place/moab
+    person/mahlon --&gt;|died in| place/moab
+    person/kilion .-&gt;|visited| place/moab
+    person/kilion --&gt;|died in| place/moab
+    person/elimelech .-&gt;|visited| place/moab
+    person/elimelech --&gt;|died in| place/moab
+    person/naomi .-&gt;|visited| place/moab
 </div>
 <div class="footnote">
 <hr/>

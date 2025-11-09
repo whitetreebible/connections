@@ -256,24 +256,24 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/deborah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/bethel(["Bethel"])
     person/deborah(["Deborah"])
     place/allon_bacuth(["Allon Bacuth"])
-    click place/bethel "../../place/bethel/"
+    place/bethel(["Bethel"])
     click person/deborah "../../person/deborah/"
     click place/allon_bacuth "../../place/allon_bacuth/"
+    click place/bethel "../../place/bethel/"
+    person/deborah --&gt;|died in| place/bethel
+    person/deborah --&gt;|buried in| place/bethel
     person/deborah --&gt;|buried in| place/allon_bacuth
     place/bethel --&gt;|near| place/allon_bacuth
-    person/deborah --&gt;|buried in| place/bethel
-    person/deborah --&gt;|died in| place/bethel
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/deborah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/deborah(["Deborah"])
     person/rebekah(["Rebekah"])
-    click person/deborah "../../person/deborah/"
+    person/deborah(["Deborah"])
     click person/rebekah "../../person/rebekah/"
+    click person/deborah "../../person/deborah/"
     person/deborah .-&gt;|associated with| person/rebekah
 </div>
 </article>

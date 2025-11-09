@@ -247,22 +247,22 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/put fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/put(["Put"])
-    person/egypt(["Egypt"])
-    person/cush(["Cush"])
     person/ham(["Ham"])
+    person/put(["Put"])
     person/noah(["Noah"])
+    person/cush(["Cush"])
+    person/egypt(["Egypt"])
     person/canaan(["Canaan"])
-    click person/put "../../person/put/"
-    click person/egypt "../../person/egypt/"
-    click person/cush "../../person/cush/"
     click person/ham "../../person/ham/"
+    click person/put "../../person/put/"
     click person/noah "../../person/noah/"
+    click person/cush "../../person/cush/"
+    click person/egypt "../../person/egypt/"
     click person/canaan "../../person/canaan/"
-    person/ham --&gt;|parent of| person/canaan
+    person/ham --&gt;|parent of| person/cush
     person/noah --&gt;|parent of| person/ham
     person/ham --&gt;|parent of| person/egypt
-    person/ham --&gt;|parent of| person/cush
+    person/ham --&gt;|parent of| person/canaan
     person/ham --&gt;|parent of| person/put
 </div>
 </article>

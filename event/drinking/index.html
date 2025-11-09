@@ -239,29 +239,29 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style event/drinking fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    theme/hospitality(["hospitality"])
     object/wing(["wing"])
     theme/will_not_rest(["will not rest"])
-    event/drinking(["drinking"])
-    object/city_gate(["city gate"])
-    theme/hospitality(["hospitality"])
-    place/bethlehem(["Bethlehem"])
-    person/boaz(["Boaz"])
     object/field(["field"])
+    object/city_gate(["city gate"])
+    event/drinking(["drinking"])
+    person/boaz(["Boaz"])
+    place/bethlehem(["Bethlehem"])
+    click theme/hospitality "../../theme/hospitality/"
     click object/wing "../../object/wing/"
     click theme/will_not_rest "../../theme/will_not_rest/"
-    click event/drinking "../../event/drinking/"
-    click object/city_gate "../../object/city_gate/"
-    click theme/hospitality "../../theme/hospitality/"
-    click place/bethlehem "../../place/bethlehem/"
-    click person/boaz "../../person/boaz/"
     click object/field "../../object/field/"
-    person/boaz &lt;.-&gt;|associated with| event/drinking
-    object/field &lt;.-&gt;|associated with| person/boaz
-    object/city_gate &lt;.-&gt;|associated with| person/boaz
-    person/boaz --&gt;|example of| theme/hospitality
-    place/bethlehem .-&gt;|associated with| person/boaz
+    click object/city_gate "../../object/city_gate/"
+    click event/drinking "../../event/drinking/"
+    click person/boaz "../../person/boaz/"
+    click place/bethlehem "../../place/bethlehem/"
+    event/drinking &lt;.-&gt;|associated with| person/boaz
     person/boaz &lt;.-&gt;|associated with| theme/will_not_rest
-    person/boaz &lt;.-&gt;|associated with| object/wing
+    person/boaz &lt;.-&gt;|associated with| object/city_gate
+    object/wing &lt;.-&gt;|associated with| person/boaz
+    person/boaz --&gt;|example of| theme/hospitality
+    person/boaz &lt;.-&gt;|associated with| object/field
+    place/bethlehem .-&gt;|associated with| person/boaz
 </div>
 </article>
 </div>

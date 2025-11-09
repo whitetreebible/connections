@@ -263,47 +263,47 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/sarai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/terah(["Terah"])
     person/ishmael(["Ishmael"])
-    person/abram(["Abram"])
     person/hagar(["Hagar"])
+    person/abram(["Abram"])
     person/sarai(["Sarai"])
-    click person/terah "../../person/terah/"
+    person/terah(["Terah"])
     click person/ishmael "../../person/ishmael/"
-    click person/abram "../../person/abram/"
     click person/hagar "../../person/hagar/"
+    click person/abram "../../person/abram/"
     click person/sarai "../../person/sarai/"
-    person/abram --&gt;|parent of| person/ishmael
-    person/hagar &lt;--&gt;|married to| person/abram
+    click person/terah "../../person/terah/"
+    person/abram &lt;--&gt;|married to| person/hagar
     person/terah --&gt;|parent of| person/abram
-    person/abram &lt;--&gt;|married to| person/sarai
+    person/sarai &lt;--&gt;|married to| person/abram
+    person/abram --&gt;|parent of| person/ishmael
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/sarai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sarai(["Sarai"])
     group/egyptians(["Egyptians"])
     person/abram(["Abram"])
+    person/sarai(["Sarai"])
     person/hagar(["Hagar"])
-    click person/sarai "../../person/sarai/"
     click group/egyptians "../../group/egyptians/"
     click person/abram "../../person/abram/"
+    click person/sarai "../../person/sarai/"
     click person/hagar "../../person/hagar/"
-    person/hagar --&gt;|member of| group/egyptians
-    person/abram --&gt;|leader of| person/hagar
     person/sarai --&gt;|leader of| person/hagar
+    person/abram --&gt;|leader of| person/hagar
+    person/hagar --&gt;|member of| group/egyptians
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/sarai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sarah(["Sarah"])
     person/abimelech(["Abimelech"])
+    person/sarah(["Sarah"])
     person/sarai(["Sarai"])
-    click person/sarah "../../person/sarah/"
     click person/abimelech "../../person/abimelech/"
+    click person/sarah "../../person/sarah/"
     click person/sarai "../../person/sarai/"
-    person/sarah &lt;--&gt;|name matches| person/sarai
     person/abimelech .-&gt;|associated with| person/sarah
+    person/sarah &lt;--&gt;|name matches| person/sarai
 </div>
 </article>
 </div>

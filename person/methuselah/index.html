@@ -248,20 +248,20 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/methuselah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/jared(["Jared"])
-    person/methuselah(["Methuselah"])
-    person/noah(["Noah"])
-    person/enoch(["Enoch"])
     person/lamech_son_of_methuselah(["Lamech"])
-    click person/jared "../../person/jared/"
-    click person/methuselah "../../person/methuselah/"
-    click person/noah "../../person/noah/"
-    click person/enoch "../../person/enoch/"
+    person/noah(["Noah"])
+    person/methuselah(["Methuselah"])
+    person/jared(["Jared"])
+    person/enoch(["Enoch"])
     click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
-    person/enoch --&gt;|parent of| person/methuselah
+    click person/noah "../../person/noah/"
+    click person/methuselah "../../person/methuselah/"
+    click person/jared "../../person/jared/"
+    click person/enoch "../../person/enoch/"
     person/methuselah --&gt;|parent of| person/lamech_son_of_methuselah
-    person/jared --&gt;|parent of| person/enoch
+    person/enoch --&gt;|parent of| person/methuselah
     person/noah --&gt;|child of| person/lamech_son_of_methuselah
+    person/jared --&gt;|parent of| person/enoch
 </div>
 </article>
 </div>

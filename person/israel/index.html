@@ -247,23 +247,23 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/israel fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/israel(["Israel"])
-    person/jacob(["Jacob"])
-    group/sons_of_hamor(["sons of Hamor"])
     place/shechem(["Shechem"])
-    place/eder(["Eder"])
     place/succoth(["Succoth"])
-    click person/israel "../../person/israel/"
-    click person/jacob "../../person/jacob/"
-    click group/sons_of_hamor "../../group/sons_of_hamor/"
+    person/jacob(["Jacob"])
+    person/israel(["Israel"])
+    place/eder(["Eder"])
+    group/sons_of_hamor(["sons of Hamor"])
     click place/shechem "../../place/shechem/"
-    click place/eder "../../place/eder/"
     click place/succoth "../../place/succoth/"
-    person/jacob .-&gt;|associated with| group/sons_of_hamor
+    click person/jacob "../../person/jacob/"
+    click person/israel "../../person/israel/"
+    click place/eder "../../place/eder/"
+    click group/sons_of_hamor "../../group/sons_of_hamor/"
     place/shechem .-&gt;|associated with| person/jacob
     person/jacob &lt;--&gt;|name matches| person/israel
-    place/succoth .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| group/sons_of_hamor
     place/eder .-&gt;|associated with| person/jacob
+    place/succoth .-&gt;|associated with| person/jacob
 </div>
 </article>
 </div>

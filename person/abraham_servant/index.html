@@ -272,39 +272,39 @@
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style person/abraham_servant fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham_servant(["Abraham's servant"])
     role/manager(["manager"])
-    click person/abraham_servant "../../person/abraham_servant/"
+    person/abraham_servant(["Abraham's servant"])
     click role/manager "../../role/manager/"
+    click person/abraham_servant "../../person/abraham_servant/"
     person/abraham_servant --&gt;|role as| role/manager
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/abraham_servant fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
+    person/abimelech(["Abimelech"])
+    person/abraham_servant(["Abraham's servant"])
     being/cherubim(["cherubim"])
     person/jacob(["Jacob"])
-    person/abraham_servant(["Abraham's servant"])
+    being/yahweh(["Yahweh"])
     person/isaac(["Isaac"])
     person/laban(["Laban"])
-    person/abimelech(["Abimelech"])
-    being/yahweh(["Yahweh"])
-    click person/abraham "../../person/abraham/"
+    person/abraham(["Abraham"])
+    click person/abimelech "../../person/abimelech/"
+    click person/abraham_servant "../../person/abraham_servant/"
     click being/cherubim "../../being/cherubim/"
     click person/jacob "../../person/jacob/"
-    click person/abraham_servant "../../person/abraham_servant/"
+    click being/yahweh "../../being/yahweh/"
     click person/isaac "../../person/isaac/"
     click person/laban "../../person/laban/"
-    click person/abimelech "../../person/abimelech/"
-    click being/yahweh "../../being/yahweh/"
-    being/yahweh --&gt;|blessed| person/abraham
-    being/yahweh --&gt;|appointed| being/cherubim
+    click person/abraham "../../person/abraham/"
+    being/yahweh --&gt;|blessed| person/jacob
     being/yahweh --&gt;|cursed| person/abimelech
     being/yahweh --&gt;|healed| person/abimelech
-    being/yahweh --&gt;|blessed| person/isaac
-    being/yahweh --&gt;|blessed| person/jacob
     being/yahweh --&gt;|blessed| person/laban
+    being/yahweh --&gt;|blessed| person/abraham
     being/yahweh --&gt;|blessed| person/abraham_servant
+    being/yahweh --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|appointed| being/cherubim
 </div>
 </article>
 </div>

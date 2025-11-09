@@ -247,22 +247,22 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/el-shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/shaddai(["Shaddai"])
     being/el-roi(["El Roi"])
-    being/god(["God"])
-    being/yahweh(["Yahweh"])
     being/el-shaddai(["El Shaddai"])
+    being/yahweh(["Yahweh"])
+    being/god(["God"])
     person/ruth(["Ruth"])
-    click being/shaddai "../../being/shaddai/"
+    being/shaddai(["Shaddai"])
     click being/el-roi "../../being/el-roi/"
-    click being/god "../../being/god/"
-    click being/yahweh "../../being/yahweh/"
     click being/el-shaddai "../../being/el-shaddai/"
+    click being/yahweh "../../being/yahweh/"
+    click being/god "../../being/god/"
     click person/ruth "../../person/ruth/"
-    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
-    person/ruth &lt;.-&gt;|associated with| being/yahweh
-    being/yahweh &lt;--&gt;|name matches| being/shaddai
+    click being/shaddai "../../being/shaddai/"
     being/el-roi &lt;--&gt;|name matches| being/yahweh
+    being/yahweh &lt;.-&gt;|associated with| person/ruth
+    being/yahweh &lt;--&gt;|name matches| being/shaddai
+    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
     being/yahweh &lt;--&gt;|name matches| being/god
 </div>
 </article>

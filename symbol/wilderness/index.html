@@ -229,14 +229,14 @@
 <div class="mermaid">graph TD;
     style symbol/wilderness fill:#2fa4e7,stroke:#333,stroke-width:4px;
     symbol/emptiness(["emptiness"])
-    symbol/wilderness(["wilderness"])
-    symbol/darkness(["darkness"])
     place/dry_land(["dry land"])
+    symbol/darkness(["darkness"])
+    symbol/wilderness(["wilderness"])
     place/earth(["earth"])
     click symbol/emptiness "../../symbol/emptiness/"
-    click symbol/wilderness "../../symbol/wilderness/"
-    click symbol/darkness "../../symbol/darkness/"
     click place/dry_land "../../place/dry_land/"
+    click symbol/darkness "../../symbol/darkness/"
+    click symbol/wilderness "../../symbol/wilderness/"
     click place/earth "../../place/earth/"
     place/dry_land .-&gt;|associated with| place/earth
     place/earth .-&gt;|associated with| symbol/wilderness

@@ -254,26 +254,26 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/ephrathite fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/ephrathite(["Ephrathite"])
     person/elimelech(["Elimelech"])
-    click group/ephrathite "../../group/ephrathite/"
+    group/ephrathite(["Ephrathite"])
     click person/elimelech "../../person/elimelech/"
+    click group/ephrathite "../../group/ephrathite/"
     person/elimelech --&gt;|member of| group/ephrathite
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style group/ephrathite fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    event/plague(["plague"])
+    person/elimelech(["Elimelech"])
     place/bethlehem(["Bethlehem"])
     group/ephrathite(["Ephrathite"])
-    person/elimelech(["Elimelech"])
-    click event/plague "../../event/plague/"
+    event/plague(["plague"])
+    click person/elimelech "../../person/elimelech/"
     click place/bethlehem "../../place/bethlehem/"
     click group/ephrathite "../../group/ephrathite/"
-    click person/elimelech "../../person/elimelech/"
+    click event/plague "../../event/plague/"
+    group/ephrathite .-&gt;|associated with| person/elimelech
     person/elimelech &lt;--&gt;|mentioned with| event/plague
     place/bethlehem .-&gt;|associated with| person/elimelech
-    group/ephrathite .-&gt;|associated with| person/elimelech
 </div>
 </article>
 </div>

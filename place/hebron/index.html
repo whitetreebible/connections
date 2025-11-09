@@ -248,13 +248,13 @@
 <div class="mermaid">graph TD;
     style place/hebron fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/hebron(["Hebron"])
-    place/kiriath_arba(["Kiriath Arba"])
     place/mamre(["Mamre"])
+    place/kiriath_arba(["Kiriath Arba"])
     click place/hebron "../../place/hebron/"
-    click place/kiriath_arba "../../place/kiriath_arba/"
     click place/mamre "../../place/mamre/"
-    place/mamre &lt;--&gt;|name matches| place/kiriath_arba
+    click place/kiriath_arba "../../place/kiriath_arba/"
     place/hebron &lt;--&gt;|name matches| place/kiriath_arba
+    place/kiriath_arba &lt;--&gt;|name matches| place/mamre
     place/mamre &lt;--&gt;|name matches| place/hebron
 </div>
 </article>

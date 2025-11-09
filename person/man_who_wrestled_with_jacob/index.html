@@ -256,37 +256,37 @@
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/man_who_wrestled_with_jacob fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
     person/jacob(["Jacob"])
-    person/isaac(["Isaac"])
     person/rachel(["Rachel"])
     being/yahweh(["Yahweh"])
-    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
+    person/isaac(["Isaac"])
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
     click person/jacob "../../person/jacob/"
-    click person/isaac "../../person/isaac/"
     click person/rachel "../../person/rachel/"
     click being/yahweh "../../being/yahweh/"
-    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
-    person/isaac --&gt;|sent| person/jacob
-    person/isaac --&gt;|blessed| person/jacob
+    click person/isaac "../../person/isaac/"
+    being/yahweh --&gt;|blessed| person/jacob
     person/man_who_wrestled_with_jacob --&gt;|blessed| person/jacob
     person/man_who_wrestled_with_jacob --&gt;|attacked| person/jacob
-    being/yahweh --&gt;|blessed| person/jacob
     person/jacob --&gt;|cursed| person/rachel
+    person/isaac --&gt;|blessed| person/jacob
+    person/isaac --&gt;|sent| person/jacob
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/man_who_wrestled_with_jacob fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
-    being/yahweh(["Yahweh"])
     being/god(["God"])
+    being/yahweh(["Yahweh"])
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
     being/shaddai(["Shaddai"])
-    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
-    click being/yahweh "../../being/yahweh/"
     click being/god "../../being/god/"
+    click being/yahweh "../../being/yahweh/"
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
     click being/shaddai "../../being/shaddai/"
+    being/shaddai &lt;--&gt;|name matches| being/god
     being/yahweh &lt;--&gt;|name matches| being/god
     person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
-    being/shaddai &lt;--&gt;|name matches| being/god
 </div>
 </article>
 </div>

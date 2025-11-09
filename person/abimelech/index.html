@@ -271,11 +271,11 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
     person/phicol(["Phicol"])
+    person/abimelech(["Abimelech"])
     place/gerar(["Gerar"])
-    click person/abimelech "../../person/abimelech/"
     click person/phicol "../../person/phicol/"
+    click person/abimelech "../../person/abimelech/"
     click place/gerar "../../place/gerar/"
     person/abimelech --&gt;|leader of| person/phicol
     person/abimelech --&gt;|leader of| place/gerar
@@ -283,66 +283,66 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
     being/god(["God"])
-    click person/abimelech "../../person/abimelech/"
+    person/abimelech(["Abimelech"])
     click being/god "../../being/god/"
+    click person/abimelech "../../person/abimelech/"
     being/god .-&gt;|visited| person/abimelech
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
+    person/abimelech(["Abimelech"])
+    person/abraham_servant(["Abraham's servant"])
     being/cherubim(["cherubim"])
     person/jacob(["Jacob"])
-    person/abraham_servant(["Abraham's servant"])
+    being/yahweh(["Yahweh"])
     person/isaac(["Isaac"])
     person/laban(["Laban"])
-    person/abimelech(["Abimelech"])
-    being/yahweh(["Yahweh"])
-    click person/abraham "../../person/abraham/"
+    person/abraham(["Abraham"])
+    click person/abimelech "../../person/abimelech/"
+    click person/abraham_servant "../../person/abraham_servant/"
     click being/cherubim "../../being/cherubim/"
     click person/jacob "../../person/jacob/"
-    click person/abraham_servant "../../person/abraham_servant/"
+    click being/yahweh "../../being/yahweh/"
     click person/isaac "../../person/isaac/"
     click person/laban "../../person/laban/"
-    click person/abimelech "../../person/abimelech/"
-    click being/yahweh "../../being/yahweh/"
-    being/yahweh --&gt;|blessed| person/abraham
-    being/yahweh --&gt;|appointed| being/cherubim
+    click person/abraham "../../person/abraham/"
+    being/yahweh --&gt;|blessed| person/jacob
     being/yahweh --&gt;|cursed| person/abimelech
     being/yahweh --&gt;|healed| person/abimelech
-    being/yahweh --&gt;|blessed| person/isaac
-    being/yahweh --&gt;|blessed| person/jacob
     being/yahweh --&gt;|blessed| person/laban
+    being/yahweh --&gt;|blessed| person/abraham
     being/yahweh --&gt;|blessed| person/abraham_servant
+    being/yahweh --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|appointed| being/cherubim
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abraham(["Abraham"])
-    group/philistines(["Philistines"])
     person/abimelech_2(["Abimelech"])
-    person/isaac(["Isaac"])
-    person/abram(["Abram"])
     person/abimelech(["Abimelech"])
+    group/philistines(["Philistines"])
+    person/abram(["Abram"])
+    person/isaac(["Isaac"])
     person/sarai(["Sarai"])
+    person/abraham(["Abraham"])
     person/sarah(["Sarah"])
-    click person/abraham "../../person/abraham/"
-    click group/philistines "../../group/philistines/"
     click person/abimelech_2 "../../person/abimelech_2/"
-    click person/isaac "../../person/isaac/"
-    click person/abram "../../person/abram/"
     click person/abimelech "../../person/abimelech/"
+    click group/philistines "../../group/philistines/"
+    click person/abram "../../person/abram/"
+    click person/isaac "../../person/isaac/"
     click person/sarai "../../person/sarai/"
+    click person/abraham "../../person/abraham/"
     click person/sarah "../../person/sarah/"
+    person/abimelech &lt;--&gt;|name matches| person/abimelech_2
+    person/sarah &lt;--&gt;|name matches| person/sarai
+    person/abraham &lt;--&gt;|name matches| person/abram
     group/philistines .-&gt;|associated with| person/abraham
     person/isaac .-&gt;|associated with| person/abimelech_2
-    person/abimelech_2 &lt;--&gt;|name matches| person/abimelech
-    person/abraham &lt;--&gt;|name matches| person/abram
-    person/sarai &lt;--&gt;|name matches| person/sarah
-    person/abimelech .-&gt;|associated with| person/sarah
     person/abimelech .-&gt;|associated with| person/abraham
+    person/abimelech .-&gt;|associated with| person/sarah
 </div>
 </article>
 </div>
