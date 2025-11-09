@@ -204,6 +204,7 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.BORN_IN: "born in",
         EdgeType.DIED_IN: "died in",
         EdgeType.BURIED_IN: "buried in",
+        EdgeType.NEAR: "near",
         # Vocational / Functional
         EdgeType.ROLE_AS: "role as",
         EdgeType.WORKED_WITH: "worked with",
