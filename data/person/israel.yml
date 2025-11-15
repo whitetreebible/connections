@@ -12,3 +12,11 @@ edges:
   type: name-matches
   refs:
   - bible:Genesis 32:28
+- target: person/joseph
+  type: parent-of
+  refs:
+  - bible:Genesis 37:2
+- target: person/joseph
+  type: loved
+  refs:
+  - bible:Genesis 37:3

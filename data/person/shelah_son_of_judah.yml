@@ -1,0 +1,18 @@
+id: shelah_son_of_judah
+type: person
+name:
+  en: Shelah
+name_disambiguous:
+  en: Shelah (son of Judah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/judah
+  type: child-of
+  refs:
+  - bible:Genesis 38:5
+- target: person/shua
+  type: child-of
+  refs:
+  - bible:Genesis 38:5

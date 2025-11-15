@@ -1,0 +1,22 @@
+id: er
+type: person
+name:
+  en: Er
+name_disambiguous:
+  en: Er (son of Judah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/judah
+  type: child-of
+  refs:
+  - bible:Genesis 38:3
+- target: person/shua
+  type: child-of
+  refs:
+  - bible:Genesis 38:3
+- target: person/tamar
+  type: married-to
+  refs:
+  - bible:Genesis 38:6

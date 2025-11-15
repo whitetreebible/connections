@@ -12,6 +12,9 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 36:33
-- target: person/zerah
+- target: person/zerah_son_of_reuel
+  type: name-matches
+  refs: []
+- target: person/zerah_son_of_judah
   type: name-matches
   refs: []

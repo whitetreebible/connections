@@ -1,0 +1,14 @@
+id: midianites
+type: group
+name:
+  en: Midianites
+name_disambiguous:
+  en: Midianites (descendants of Midian)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: group/ishmaelites
+  type: associated-with
+  refs:
+  - bible:Genesis 37:28

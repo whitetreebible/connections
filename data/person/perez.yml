@@ -5,11 +5,12 @@ name:
 name_disambiguous:
   en: Perez (son of Judah and Tamar)
 description:
-  en: 'Perez was the son of Judah and Tamar, making him an important figure in the lineage of King David.
-    His birth is notable because it occurred under unusual circumstances, as Tamar disguised
-    herself as a prostitute to seduce Judah after he failed to fulfill his duty to provide
-    her with a husband from his family. Perez is recognized as an ancestor of King David
-    and, according to Christian tradition, Jesus Christ.'
+  en: Perez was the son of Judah and Tamar, making him an important figure in the
+    lineage of King David. His birth is notable because it occurred under unusual
+    circumstances, as Tamar disguised herself as a prostitute to seduce Judah after
+    he failed to fulfill his duty to provide her with a husband from his family. Perez
+    is recognized as an ancestor of King David and, according to Christian tradition,
+    Jesus Christ.
 footnotes: {}
 edges:
 - target: person/ruth
@@ -19,10 +20,12 @@ edges:
 - target: person/tamar
   type: child-of
   refs:
+  - bible:Genesis 38:29
   - bible:Ruth 4:12
 - target: person/judah
   type: child-of
   refs:
+  - bible:Genesis 38:29
   - bible:Ruth 4:12
 - target: person/hezron
   type: parent-of

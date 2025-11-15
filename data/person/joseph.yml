@@ -17,3 +17,19 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 30:24
+- target: person/israel
+  type: child-of
+  refs:
+  - bible:Genesis 37:2
+- target: group/ishmaelites
+  type: associated-with
+  refs:
+  - bible:Genesis 37:27
+- target: place/egypt
+  type: resident-of
+  refs:
+  - bible:Genesis 37:28
+- target: person/potiphar
+  type: led-by
+  refs:
+  - bible:Genesis 37:36

@@ -18,6 +18,7 @@ edges:
 - target: person/perez
   type: parent-of
   refs:
+  - bible:Genesis 38:29
   - bible:Ruth 4:12
 - target: person/tamar
   type: married-to
@@ -32,3 +33,44 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 29:35
+- target: person/hirah
+  type: ally-of
+  refs:
+  - bible:Genesis 38:1
+  - bible:Genesis 38:12
+- target: person/shua
+  type: married-to
+  refs:
+  - bible:Genesis 38:2
+- target: person/er
+  type: parent-of
+  refs:
+  - bible:Genesis 38:3
+- target: person/onan
+  type: parent-of
+  refs:
+  - bible:Genesis 38:4
+- target: person/shelah_son_of_judah
+  type: parent-of
+  refs:
+  - bible:Genesis 38:5
+- target: place/chezib
+  type: resident-of
+  refs:
+  - bible:Genesis 38:5
+- target: place/timnah
+  type: visited
+  refs:
+  - bible:Genesis 38:12
+- target: person/tamar
+  type: gave-to
+  refs:
+  - bible:Genesis 38:18
+- target: person/tamar
+  type: blessed
+  refs:
+  - bible:Genesis 38:26
+- target: person/zerah_son_of_judah
+  type: parent-of
+  refs:
+  - bible:Genesis 38:30

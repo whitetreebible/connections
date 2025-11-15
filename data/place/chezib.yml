@@ -1,0 +1,14 @@
+id: chezib
+type: place
+name:
+  en: Chezib
+name_disambiguous:
+  en: Chezib
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/judah
+  type: associated-with
+  refs:
+  - bible:Genesis 38:5

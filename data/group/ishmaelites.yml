@@ -1,0 +1,14 @@
+id: ishmaelites
+type: group
+name:
+  en: Ishmaelites
+name_disambiguous:
+  en: Ishmaelites (descendants of Ishmael)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/ishmael
+  type: descendant-of
+  refs:
+  - bible:Genesis 25:12-18

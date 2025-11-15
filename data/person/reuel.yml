@@ -22,7 +22,7 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 36:13
-- target: person/zerah
+- target: person/zerah_son_of_reuel
   type: parent-of
   refs:
   - bible:Genesis 36:13

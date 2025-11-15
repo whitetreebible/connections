@@ -5,13 +5,15 @@ name:
 name_disambiguous:
   en: Tamar (mother of Perez)
 description:
-  en: 'Tamar was the daughter-in-law of Judah and the mother of Perez and Zerah. After the death of her husband
-    Er, who was Judah''s firstborn son, Tamar was left childless. According to the custom of levirate marriage,
-    she was supposed to marry her husband''s brother, Onan, to produce offspring in Er''s name. However,
-    Onan refused to fulfill this duty and was subsequently killed by God. Judah then promised to give
-    his youngest son, Shelah, to Tamar when he came of age, but he failed to do so. In response, Tamar
-    disguised herself as a prostitute and seduced Judah, resulting in the birth of twins, Perez and Zerah.
-    Perez is significant as an ancestor of King David and, according to Christian tradition, Jesus Christ.'
+  en: Tamar was the daughter-in-law of Judah and the mother of Perez and Zerah. After
+    the death of her husband Er, who was Judah's firstborn son, Tamar was left childless.
+    According to the custom of levirate marriage, she was supposed to marry her husband's
+    brother, Onan, to produce offspring in Er's name. However, Onan refused to fulfill
+    this duty and was subsequently killed by God. Judah then promised to give his
+    youngest son, Shelah, to Tamar when he came of age, but he failed to do so. In
+    response, Tamar disguised herself as a prostitute and seduced Judah, resulting
+    in the birth of twins, Perez and Zerah. Perez is significant as an ancestor of
+    King David and, according to Christian tradition, Jesus Christ.
 footnotes: {}
 edges:
 - target: person/ruth
@@ -21,8 +23,25 @@ edges:
 - target: person/perez
   type: parent-of
   refs:
+  - bible:Genesis 38:29
   - bible:Ruth 4:12
 - target: person/judah
   type: married-to
   refs:
   - bible:Ruth 4:12
+- target: person/er
+  type: married-to
+  refs:
+  - bible:Genesis 38:6
+- target: person/onan
+  type: married-to
+  refs:
+  - bible:Genesis 38:8
+- target: place/eynayim
+  type: visited
+  refs:
+  - bible:Genesis 38:14
+- target: person/zerah_son_of_judah
+  type: parent-of
+  refs:
+  - bible:Genesis 38:30

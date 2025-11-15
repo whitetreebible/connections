@@ -1,4 +1,4 @@
-id: zerah
+id: zerah_son_of_reuel
 type: person
 name:
   en: Zerah
@@ -17,5 +17,8 @@ edges:
   refs:
   - bible:Genesis 36:17
 - target: person/zerah_from_bozrah
+  type: name-matches
+  refs: []
+- target: person/zerah_son_of_judah
   type: name-matches
   refs: []

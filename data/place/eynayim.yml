@@ -1,0 +1,14 @@
+id: eynayim
+type: place
+name:
+  en: Eynayim
+name_disambiguous:
+  en: Eynayim
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/timnah
+  type: near
+  refs:
+  - bible:Genesis 38:14

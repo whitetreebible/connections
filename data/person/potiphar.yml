@@ -1,0 +1,22 @@
+id: potiphar
+type: person
+name:
+  en: Potiphar
+name_disambiguous:
+  en: Potiphar (captain of Pharaoh's guard)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joseph
+  type: leader-of
+  refs:
+  - bible:Genesis 37:36
+- target: place/egypt
+  type: associated-with
+  refs:
+  - bible:Genesis 37:36
+- target: person/pharaoh_of_joseph
+  type: led-by
+  refs:
+  - bible:Genesis 37:36

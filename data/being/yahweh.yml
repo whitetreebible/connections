@@ -73,3 +73,11 @@ edges:
   type: blessed
   refs:
   - bible:Genesis 26:12
+- target: person/er
+  type: killed
+  refs:
+  - bible:Genesis 38:7
+- target: person/onan
+  type: killed
+  refs:
+  - bible:Genesis 38:10

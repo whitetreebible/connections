@@ -12,3 +12,7 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 21:21
+- target: person/joseph
+  type: associated-with
+  refs:
+  - bible:Genesis 37:28

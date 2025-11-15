@@ -1,0 +1,20 @@
+id: pharaoh_of_joseph
+type: person
+name:
+  en: Pharaoh
+name_disambiguous:
+  en: Pharaoh (of Joseph)
+description:
+  en: 'Pharaoh is the title used for the ancient Egyptian monarchs. In the
+    Book of Genesis, the Pharaoh during Joseph''s time plays a significant role in
+    the narrative, particularly in relation to Joseph''s rise to power and the
+    events leading to the migration of Jacob''s family to Egypt. In order to differentiate
+    this Pharaoh from others mentioned in the Bible, he is often referred to as
+    "Pharaoh of Joseph" or "the Pharaoh who knew not Joseph." Pharaoh is also used to 
+    refer to the ruling household or dynasty--as a broader term.'
+footnotes: {}
+edges:
+- target: person/potiphar
+  type: leader-of
+  refs:
+  - bible:Genesis 37:36
