@@ -16,7 +16,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 25:2
-- target: person/sheba_son_of_joktan
+- target: person/sheba_son_of_jokshan
   type: parent-of
   refs:
   - bible:Genesis 25:3

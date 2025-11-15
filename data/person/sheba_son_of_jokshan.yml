@@ -1,20 +1,20 @@
-id: sheba_son_of_joktan
+id: sheba_son_of_jokshan
 type: person
 name:
   en: Sheba
 name_disambiguous:
-  en: Sheba (son of Joktan)
+  en: Sheba (son of Jokshan)
 description:
   en: ''
 footnotes: {}
 edges:
-- target: person/joktan
-  type: child-of
-  refs:
-  - bible:Genesis 10:28
 - target: person/sheba_son_of_raamah
   type: name-matches
   refs: []
-- target: person/sheba_son_of_jokshan
+- target: person/sheba_son_of_joktan
   type: name-matches
   refs: []
+- target: person/jokshan
+  type: child-of
+  refs:
+  - bible:Genesis 25:3

@@ -12,7 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 10:7
-- target: person/sheba
+- target: person/sheba_son_of_raamah
   type: parent-of
   refs:
   - bible:Genesis 10:7

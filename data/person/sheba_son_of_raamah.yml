@@ -1,4 +1,4 @@
-id: sheba
+id: sheba_son_of_raamah
 type: person
 name:
   en: Sheba
@@ -13,5 +13,8 @@ edges:
   refs:
   - bible:Genesis 10:7
 - target: person/sheba_son_of_joktan
+  type: name-matches
+  refs: []
+- target: person/sheba_son_of_jokshan
   type: name-matches
   refs: []
