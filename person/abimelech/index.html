@@ -266,83 +266,83 @@
 <li><strong>Associated with</strong> <a href="../../person/sarah/">Sarah</a> (<a href="https://biblehub.com/context/genesis/20-2.htm" target="_blank">Genesis 20:2</a>), <a href="../../person/abraham/">Abraham</a> (<a href="https://biblehub.com/context/genesis/21-22.htm" target="_blank">Genesis 21:22</a>)</li>
 <li><strong>Gave-to</strong> <a href="../../person/abraham/">Abraham</a> (<a href="https://biblehub.com/context/genesis/20-12.htm" target="_blank">Genesis 20:12</a>)</li>
 <li><strong>Leader of</strong> <a href="../../place/gerar/">Gerar</a> (<a href="https://biblehub.com/context/genesis/20-2.htm" target="_blank">Genesis 20:2</a>), <a href="../../person/phicol/">Phicol</a> (<a href="https://biblehub.com/context/genesis/21-22.htm" target="_blank">Genesis 21:22</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/abimelech_2/">Abimelech</a></li>
+<li><strong>Name matches</strong> <a href="../../person/abimelech_2/">Abimelech (leader of Gerar in Isaac's time)</a></li>
 </ul>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/phicol(["Phicol"])
-    person/abimelech(["Abimelech"])
     place/gerar(["Gerar"])
-    click person/phicol "../../person/phicol/"
-    click person/abimelech "../../person/abimelech/"
+    person/abimelech(["Abimelech"])
+    person/phicol(["Phicol"])
     click place/gerar "../../place/gerar/"
+    click person/abimelech "../../person/abimelech/"
+    click person/phicol "../../person/phicol/"
     person/abimelech --&gt;|leader of| person/phicol
     person/abimelech --&gt;|leader of| place/gerar
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/god(["God"])
     person/abimelech(["Abimelech"])
-    click being/god "../../being/god/"
+    being/god(["God"])
     click person/abimelech "../../person/abimelech/"
+    click being/god "../../being/god/"
     being/god .-&gt;|visited| person/abimelech
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
-    person/abraham_servant(["Abraham's servant"])
-    being/cherubim(["cherubim"])
     person/jacob(["Jacob"])
+    being/cherubim(["cherubim"])
+    person/abimelech(["Abimelech"])
+    person/laban(["Laban"])
+    person/abraham_servant(["Abraham's servant"])
+    person/abraham(["Abraham"])
     being/yahweh(["Yahweh"])
     person/isaac(["Isaac"])
-    person/laban(["Laban"])
-    person/abraham(["Abraham"])
-    click person/abimelech "../../person/abimelech/"
-    click person/abraham_servant "../../person/abraham_servant/"
-    click being/cherubim "../../being/cherubim/"
     click person/jacob "../../person/jacob/"
+    click being/cherubim "../../being/cherubim/"
+    click person/abimelech "../../person/abimelech/"
+    click person/laban "../../person/laban/"
+    click person/abraham_servant "../../person/abraham_servant/"
+    click person/abraham "../../person/abraham/"
     click being/yahweh "../../being/yahweh/"
     click person/isaac "../../person/isaac/"
-    click person/laban "../../person/laban/"
-    click person/abraham "../../person/abraham/"
+    being/yahweh --&gt;|blessed| person/abraham
+    being/yahweh --&gt;|appointed| being/cherubim
+    being/yahweh --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|blessed| person/laban
+    being/yahweh --&gt;|blessed| person/abraham_servant
     being/yahweh --&gt;|blessed| person/jacob
     being/yahweh --&gt;|cursed| person/abimelech
     being/yahweh --&gt;|healed| person/abimelech
-    being/yahweh --&gt;|blessed| person/laban
-    being/yahweh --&gt;|blessed| person/abraham
-    being/yahweh --&gt;|blessed| person/abraham_servant
-    being/yahweh --&gt;|blessed| person/isaac
-    being/yahweh --&gt;|appointed| being/cherubim
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech_2(["Abimelech"])
-    person/abimelech(["Abimelech"])
     group/philistines(["Philistines"])
-    person/abram(["Abram"])
-    person/isaac(["Isaac"])
-    person/sarai(["Sarai"])
-    person/abraham(["Abraham"])
+    person/abimelech(["Abimelech"])
     person/sarah(["Sarah"])
-    click person/abimelech_2 "../../person/abimelech_2/"
-    click person/abimelech "../../person/abimelech/"
+    person/abram(["Abram"])
+    person/abimelech_2(["Abimelech"])
+    person/abraham(["Abraham"])
+    person/sarai(["Sarai"])
+    person/isaac(["Isaac"])
     click group/philistines "../../group/philistines/"
-    click person/abram "../../person/abram/"
-    click person/isaac "../../person/isaac/"
-    click person/sarai "../../person/sarai/"
-    click person/abraham "../../person/abraham/"
+    click person/abimelech "../../person/abimelech/"
     click person/sarah "../../person/sarah/"
-    person/abimelech &lt;--&gt;|name matches| person/abimelech_2
-    person/sarah &lt;--&gt;|name matches| person/sarai
+    click person/abram "../../person/abram/"
+    click person/abimelech_2 "../../person/abimelech_2/"
+    click person/abraham "../../person/abraham/"
+    click person/sarai "../../person/sarai/"
+    click person/isaac "../../person/isaac/"
     person/abraham &lt;--&gt;|name matches| person/abram
-    group/philistines .-&gt;|associated with| person/abraham
+    person/abimelech_2 &lt;--&gt;|name matches| person/abimelech
+    person/abimelech .-&gt;|associated with| person/sarah
     person/isaac .-&gt;|associated with| person/abimelech_2
     person/abimelech .-&gt;|associated with| person/abraham
-    person/abimelech .-&gt;|associated with| person/sarah
+    person/sarah &lt;--&gt;|name matches| person/sarai
+    group/philistines .-&gt;|associated with| person/abraham
 </div>
 </article>
 </div>

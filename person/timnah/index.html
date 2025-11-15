@@ -224,6 +224,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -238,6 +245,43 @@
 <li><strong>Married to</strong> <a href="../../person/eliphaz/">Eliphaz</a> (<a href="https://biblehub.com/context/genesis/36-12.htm" target="_blank">Genesis 36:12</a>)</li>
 <li><strong>Parent of</strong> <a href="../../person/amalek/">Amalek</a> (<a href="https://biblehub.com/context/genesis/36-12.htm" target="_blank">Genesis 36:12</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/timnah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/teman(["Teman"])
+    person/zepho(["Zepho"])
+    person/kenaz(["Kenaz"])
+    person/timnah(["Timnah"])
+    person/korah_son_of_eliphaz(["Korah"])
+    person/eliphaz(["Eliphaz"])
+    person/gatam(["Gatam"])
+    person/adah_wife_of_esau(["Adah"])
+    person/amalek(["Amalek"])
+    person/esau(["Esau"])
+    person/omar(["Omar"])
+    click person/teman "../../person/teman/"
+    click person/zepho "../../person/zepho/"
+    click person/kenaz "../../person/kenaz/"
+    click person/timnah "../../person/timnah/"
+    click person/korah_son_of_eliphaz "../../person/korah_son_of_eliphaz/"
+    click person/eliphaz "../../person/eliphaz/"
+    click person/gatam "../../person/gatam/"
+    click person/adah_wife_of_esau "../../person/adah_wife_of_esau/"
+    click person/amalek "../../person/amalek/"
+    click person/esau "../../person/esau/"
+    click person/omar "../../person/omar/"
+    person/esau --&gt;|parent of| person/eliphaz
+    person/eliphaz --&gt;|parent of| person/korah_son_of_eliphaz
+    person/eliphaz &lt;--&gt;|married to| person/timnah
+    person/eliphaz --&gt;|parent of| person/teman
+    person/eliphaz --&gt;|parent of| person/amalek
+    person/eliphaz --&gt;|parent of| person/zepho
+    person/eliphaz --&gt;|parent of| person/kenaz
+    person/adah_wife_of_esau --&gt;|parent of| person/eliphaz
+    person/timnah --&gt;|parent of| person/amalek
+    person/eliphaz --&gt;|parent of| person/gatam
+    person/eliphaz --&gt;|parent of| person/omar
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -269,5 +313,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

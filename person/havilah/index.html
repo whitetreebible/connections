@@ -250,43 +250,43 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/cush/">Cush</a> (<a href="https://biblehub.com/context/genesis/10-7.htm" target="_blank">Genesis 10:7</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/havilah_son_of_joktan/">Havilah</a></li>
+<li><strong>Name matches</strong> <a href="../../person/havilah_son_of_joktan/">Havilah (son of Joktan)</a></li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/havilah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/ham(["Ham"])
-    person/raamah(["Raamah"])
-    person/sabtah(["Sabtah"])
-    person/havilah(["Havilah"])
-    person/cush(["Cush"])
     person/seba(["Seba"])
-    person/nimrod(["Nimrod"])
+    person/cush(["Cush"])
+    person/ham(["Ham"])
+    person/sabtah(["Sabtah"])
     person/sabteca(["Sabteca"])
-    click person/ham "../../person/ham/"
-    click person/raamah "../../person/raamah/"
-    click person/sabtah "../../person/sabtah/"
-    click person/havilah "../../person/havilah/"
-    click person/cush "../../person/cush/"
+    person/raamah(["Raamah"])
+    person/nimrod(["Nimrod"])
+    person/havilah(["Havilah"])
     click person/seba "../../person/seba/"
-    click person/nimrod "../../person/nimrod/"
+    click person/cush "../../person/cush/"
+    click person/ham "../../person/ham/"
+    click person/sabtah "../../person/sabtah/"
     click person/sabteca "../../person/sabteca/"
-    person/ham --&gt;|parent of| person/cush
-    person/cush --&gt;|parent of| person/havilah
-    person/cush --&gt;|parent of| person/raamah
-    person/cush --&gt;|parent of| person/sabtah
-    person/cush --&gt;|parent of| person/nimrod
+    click person/raamah "../../person/raamah/"
+    click person/nimrod "../../person/nimrod/"
+    click person/havilah "../../person/havilah/"
     person/cush --&gt;|parent of| person/seba
+    person/cush --&gt;|parent of| person/raamah
+    person/cush --&gt;|parent of| person/nimrod
+    person/cush --&gt;|parent of| person/havilah
+    person/ham --&gt;|parent of| person/cush
+    person/cush --&gt;|parent of| person/sabtah
     person/cush --&gt;|parent of| person/sabteca
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/havilah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/havilah_son_of_joktan(["Havilah"])
     person/havilah(["Havilah"])
-    click person/havilah_son_of_joktan "../../person/havilah_son_of_joktan/"
+    person/havilah_son_of_joktan(["Havilah"])
     click person/havilah "../../person/havilah/"
-    person/havilah_son_of_joktan &lt;--&gt;|name matches| person/havilah
+    click person/havilah_son_of_joktan "../../person/havilah_son_of_joktan/"
+    person/havilah &lt;--&gt;|name matches| person/havilah_son_of_joktan
 </div>
 </article>
 </div>

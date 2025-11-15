@@ -262,76 +262,79 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/ishmael_wife fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/ishmael(["Ishmael"])
-    person/mibsam(["Mibsam"])
-    person/kedar(["Kedar"])
-    person/tema(["Tema"])
     person/hadad(["Hadad"])
     person/hagar(["Hagar"])
-    person/jetur(["Jetur"])
-    person/massa(["Massa"])
-    person/nebaioth(["Nebaioth"])
-    person/abram(["Abram"])
-    person/abraham(["Abraham"])
     person/ishmael_wife(["Ishmael's wife"])
-    person/naphish(["Naphish"])
     person/mishma(["Mishma"])
-    person/adbeel(["Adbeel"])
-    person/dumah(["Dumah"])
+    person/abram(["Abram"])
+    person/tema(["Tema"])
     person/mahalath(["Mahalath"])
+    person/naphish(["Naphish"])
     person/kedemah(["Kedemah"])
-    click person/ishmael "../../person/ishmael/"
-    click person/mibsam "../../person/mibsam/"
-    click person/kedar "../../person/kedar/"
-    click person/tema "../../person/tema/"
+    person/ishmael(["Ishmael"])
+    person/dumah(["Dumah"])
+    person/abraham(["Abraham"])
+    person/nebaioth(["Nebaioth"])
+    person/basemath(["Basemath"])
+    person/massa(["Massa"])
+    person/kedar(["Kedar"])
+    person/mibsam(["Mibsam"])
+    person/jetur(["Jetur"])
+    person/adbeel(["Adbeel"])
     click person/hadad "../../person/hadad/"
     click person/hagar "../../person/hagar/"
-    click person/jetur "../../person/jetur/"
-    click person/massa "../../person/massa/"
-    click person/nebaioth "../../person/nebaioth/"
-    click person/abram "../../person/abram/"
-    click person/abraham "../../person/abraham/"
     click person/ishmael_wife "../../person/ishmael_wife/"
-    click person/naphish "../../person/naphish/"
     click person/mishma "../../person/mishma/"
-    click person/adbeel "../../person/adbeel/"
-    click person/dumah "../../person/dumah/"
+    click person/abram "../../person/abram/"
+    click person/tema "../../person/tema/"
     click person/mahalath "../../person/mahalath/"
+    click person/naphish "../../person/naphish/"
     click person/kedemah "../../person/kedemah/"
-    person/hagar --&gt;|parent of| person/ishmael
+    click person/ishmael "../../person/ishmael/"
+    click person/dumah "../../person/dumah/"
+    click person/abraham "../../person/abraham/"
+    click person/nebaioth "../../person/nebaioth/"
+    click person/basemath "../../person/basemath/"
+    click person/massa "../../person/massa/"
+    click person/kedar "../../person/kedar/"
+    click person/mibsam "../../person/mibsam/"
+    click person/jetur "../../person/jetur/"
+    click person/adbeel "../../person/adbeel/"
     person/ishmael --&gt;|parent of| person/jetur
-    person/abraham --&gt;|parent of| person/ishmael
-    person/ishmael --&gt;|parent of| person/nebaioth
-    person/ishmael --&gt;|parent of| person/adbeel
-    person/ishmael --&gt;|parent of| person/kedemah
-    person/ishmael --&gt;|parent of| person/naphish
-    person/ishmael_wife &lt;--&gt;|married to| person/ishmael
-    person/ishmael --&gt;|parent of| person/mibsam
-    person/ishmael --&gt;|parent of| person/kedar
-    person/ishmael --&gt;|parent of| person/hadad
+    person/ishmael --&gt;|parent of| person/basemath
     person/abram --&gt;|parent of| person/ishmael
-    person/ishmael --&gt;|parent of| person/tema
-    person/ishmael --&gt;|parent of| person/dumah
-    person/ishmael --&gt;|parent of| person/mishma
+    person/ishmael --&gt;|parent of| person/hadad
+    person/abraham --&gt;|parent of| person/ishmael
     person/ishmael --&gt;|parent of| person/massa
     person/ishmael --&gt;|parent of| person/mahalath
+    person/ishmael --&gt;|parent of| person/kedemah
+    person/ishmael &lt;--&gt;|married to| person/ishmael_wife
+    person/ishmael --&gt;|parent of| person/kedar
+    person/ishmael --&gt;|parent of| person/nebaioth
+    person/ishmael --&gt;|parent of| person/mibsam
+    person/ishmael --&gt;|parent of| person/tema
+    person/ishmael --&gt;|parent of| person/adbeel
+    person/ishmael --&gt;|parent of| person/dumah
+    person/hagar --&gt;|parent of| person/ishmael
+    person/ishmael --&gt;|parent of| person/naphish
+    person/ishmael --&gt;|parent of| person/mishma
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/ishmael_wife fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/egypt(["Egypt"])
     person/ishmael_wife(["Ishmael's wife"])
-    click place/egypt "../../place/egypt/"
+    place/egypt(["Egypt"])
     click person/ishmael_wife "../../person/ishmael_wife/"
+    click place/egypt "../../place/egypt/"
     person/ishmael_wife --&gt;|resident of| place/egypt
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/ishmael_wife fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/egypt(["Egypt"])
     person/ishmael_wife(["Ishmael's wife"])
-    click place/egypt "../../place/egypt/"
+    place/egypt(["Egypt"])
     click person/ishmael_wife "../../person/ishmael_wife/"
+    click place/egypt "../../place/egypt/"
     place/egypt .-&gt;|associated with| person/ishmael_wife
 </div>
 </article>

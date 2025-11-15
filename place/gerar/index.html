@@ -254,51 +254,51 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style place/gerar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/phicol(["Phicol"])
-    person/abimelech(["Abimelech"])
     place/gerar(["Gerar"])
-    click person/phicol "../../person/phicol/"
-    click person/abimelech "../../person/abimelech/"
+    person/abimelech(["Abimelech"])
+    person/phicol(["Phicol"])
     click place/gerar "../../place/gerar/"
+    click person/abimelech "../../person/abimelech/"
+    click person/phicol "../../person/phicol/"
     person/abimelech --&gt;|leader of| person/phicol
     person/abimelech --&gt;|leader of| place/gerar
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/gerar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/gerar(["Gerar"])
-    place/mamre(["Mamre"])
-    person/jacob(["Jacob"])
-    group/philistines(["Philistines"])
     place/beer_lahai_roi(["Beer Lahai Roi"])
-    person/isaac(["Isaac"])
+    group/philistines(["Philistines"])
+    person/jacob(["Jacob"])
+    place/mamre(["Mamre"])
+    place/gerar(["Gerar"])
     person/abraham(["Abraham"])
-    click place/gerar "../../place/gerar/"
-    click place/mamre "../../place/mamre/"
-    click person/jacob "../../person/jacob/"
-    click group/philistines "../../group/philistines/"
+    person/isaac(["Isaac"])
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
-    click person/isaac "../../person/isaac/"
+    click group/philistines "../../group/philistines/"
+    click person/jacob "../../person/jacob/"
+    click place/mamre "../../place/mamre/"
+    click place/gerar "../../place/gerar/"
     click person/abraham "../../person/abraham/"
-    person/isaac --&gt;|resident of| place/gerar
-    person/jacob .-&gt;|visited| person/isaac
-    person/isaac --&gt;|died in| place/mamre
-    person/isaac --&gt;|buried in| place/mamre
-    person/abraham --&gt;|resident of| group/philistines
+    click person/isaac "../../person/isaac/"
     group/philistines --&gt;|near| place/gerar
     person/isaac --&gt;|resident of| place/beer_lahai_roi
+    person/isaac --&gt;|died in| place/mamre
+    person/isaac --&gt;|buried in| place/mamre
+    person/jacob .-&gt;|visited| person/isaac
+    person/abraham --&gt;|resident of| group/philistines
+    person/isaac --&gt;|resident of| place/gerar
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/gerar fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/isaac(["Isaac"])
-    place/gerar(["Gerar"])
     place/beer_lahai_roi(["Beer Lahai Roi"])
     person/abimelech_2(["Abimelech"])
-    click person/isaac "../../person/isaac/"
-    click place/gerar "../../place/gerar/"
+    place/gerar(["Gerar"])
+    person/isaac(["Isaac"])
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
     click person/abimelech_2 "../../person/abimelech_2/"
+    click place/gerar "../../place/gerar/"
+    click person/isaac "../../person/isaac/"
     place/beer_lahai_roi .-&gt;|associated with| person/isaac
     place/gerar .-&gt;|associated with| person/isaac
     person/isaac .-&gt;|associated with| person/abimelech_2

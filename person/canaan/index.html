@@ -257,65 +257,80 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/cush(["Cush"])
+    person/noah(["Noah"])
+    person/elon_father_of_adah(["Elon"])
     person/ham(["Ham"])
     person/put(["Put"])
-    person/sidon(["Sidon"])
-    person/noah(["Noah"])
-    person/cush(["Cush"])
-    person/egypt(["Egypt"])
-    person/heth(["Heth"])
+    person/eliphaz(["Eliphaz"])
     person/canaan(["Canaan"])
+    person/adah_wife_of_esau(["Adah"])
+    person/sidon(["Sidon"])
+    person/heth(["Heth"])
+    person/esau(["Esau"])
+    person/egypt(["Egypt"])
+    click person/cush "../../person/cush/"
+    click person/noah "../../person/noah/"
+    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
     click person/ham "../../person/ham/"
     click person/put "../../person/put/"
-    click person/sidon "../../person/sidon/"
-    click person/noah "../../person/noah/"
-    click person/cush "../../person/cush/"
-    click person/egypt "../../person/egypt/"
-    click person/heth "../../person/heth/"
+    click person/eliphaz "../../person/eliphaz/"
     click person/canaan "../../person/canaan/"
-    person/ham --&gt;|parent of| person/cush
-    person/noah --&gt;|parent of| person/ham
-    person/canaan --&gt;|parent of| person/heth
-    person/ham --&gt;|parent of| person/egypt
-    person/ham --&gt;|parent of| person/canaan
+    click person/adah_wife_of_esau "../../person/adah_wife_of_esau/"
+    click person/sidon "../../person/sidon/"
+    click person/heth "../../person/heth/"
+    click person/esau "../../person/esau/"
+    click person/egypt "../../person/egypt/"
+    person/elon_father_of_adah --&gt;|parent of| person/adah_wife_of_esau
     person/ham --&gt;|parent of| person/put
     person/canaan --&gt;|parent of| person/sidon
+    person/canaan .-&gt;|ancestor of| person/adah_wife_of_esau
+    person/ham --&gt;|parent of| person/cush
+    person/ham --&gt;|parent of| person/canaan
+    person/adah_wife_of_esau --&gt;|parent of| person/eliphaz
+    person/adah_wife_of_esau &lt;--&gt;|married to| person/esau
+    person/canaan --&gt;|parent of| person/heth
+    person/noah --&gt;|parent of| person/ham
+    person/ham --&gt;|parent of| person/egypt
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/hivites(["Hivites"])
-    group/girgashites(["Girgashites"])
-    group/arvadites(["Arvadites"])
-    group/hamathites(["Hamathites"])
-    group/arkites(["Arkites"])
     person/shechem(["Shechem"])
-    group/sinites(["Sinites"])
-    group/zemarites(["Zemarites"])
-    group/amorites(["Amorites"])
+    person/zibeon(["Zibeon"])
+    group/hamathites(["Hamathites"])
+    group/girgashites(["Girgashites"])
     person/canaan(["Canaan"])
+    group/amorites(["Amorites"])
+    group/arvadites(["Arvadites"])
+    group/hivites(["Hivites"])
+    group/zemarites(["Zemarites"])
+    group/arkites(["Arkites"])
     group/jebusites(["Jebusites"])
-    click group/hivites "../../group/hivites/"
-    click group/girgashites "../../group/girgashites/"
-    click group/arvadites "../../group/arvadites/"
-    click group/hamathites "../../group/hamathites/"
-    click group/arkites "../../group/arkites/"
+    group/sinites(["Sinites"])
     click person/shechem "../../person/shechem/"
-    click group/sinites "../../group/sinites/"
-    click group/zemarites "../../group/zemarites/"
-    click group/amorites "../../group/amorites/"
+    click person/zibeon "../../person/zibeon/"
+    click group/hamathites "../../group/hamathites/"
+    click group/girgashites "../../group/girgashites/"
     click person/canaan "../../person/canaan/"
+    click group/amorites "../../group/amorites/"
+    click group/arvadites "../../group/arvadites/"
+    click group/hivites "../../group/hivites/"
+    click group/zemarites "../../group/zemarites/"
+    click group/arkites "../../group/arkites/"
     click group/jebusites "../../group/jebusites/"
-    person/canaan --&gt;|origin of| group/girgashites
-    person/canaan --&gt;|origin of| group/arkites
-    person/shechem --&gt;|member of| group/hivites
-    person/canaan --&gt;|origin of| group/hivites
-    person/canaan --&gt;|origin of| group/arvadites
-    person/canaan --&gt;|origin of| group/hamathites
-    person/canaan --&gt;|origin of| group/zemarites
-    person/canaan --&gt;|origin of| group/jebusites
+    click group/sinites "../../group/sinites/"
     person/canaan --&gt;|origin of| group/sinites
+    person/canaan --&gt;|origin of| group/hivites
+    person/shechem --&gt;|member of| group/hivites
+    person/canaan --&gt;|origin of| group/arvadites
+    person/canaan --&gt;|origin of| group/arkites
+    person/canaan --&gt;|origin of| group/jebusites
+    person/canaan --&gt;|origin of| group/zemarites
     person/canaan --&gt;|origin of| group/amorites
+    person/zibeon --&gt;|member of| group/hivites
+    person/canaan --&gt;|origin of| group/hamathites
+    person/canaan --&gt;|origin of| group/girgashites
 </div>
 </article>
 </div>

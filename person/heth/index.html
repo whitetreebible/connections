@@ -249,15 +249,18 @@
     style person/heth fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/ham(["Ham"])
     person/canaan(["Canaan"])
+    person/adah_wife_of_esau(["Adah"])
     person/sidon(["Sidon"])
     person/heth(["Heth"])
     click person/ham "../../person/ham/"
     click person/canaan "../../person/canaan/"
+    click person/adah_wife_of_esau "../../person/adah_wife_of_esau/"
     click person/sidon "../../person/sidon/"
     click person/heth "../../person/heth/"
-    person/canaan --&gt;|parent of| person/heth
-    person/ham --&gt;|parent of| person/canaan
     person/canaan --&gt;|parent of| person/sidon
+    person/canaan --&gt;|parent of| person/heth
+    person/canaan .-&gt;|ancestor of| person/adah_wife_of_esau
+    person/ham --&gt;|parent of| person/canaan
 </div>
 </article>
 </div>

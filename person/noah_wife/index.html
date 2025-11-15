@@ -247,23 +247,23 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/noah_wife fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/shem(["Shem"])
-    person/ham(["Ham"])
     person/lamech_son_of_methuselah(["Lamech"])
-    person/noah_wife(["Noah's wife"])
+    person/shem(["Shem"])
     person/noah(["Noah"])
+    person/ham(["Ham"])
+    person/noah_wife(["Noah's wife"])
     person/japheth(["Japheth"])
-    click person/shem "../../person/shem/"
-    click person/ham "../../person/ham/"
     click person/lamech_son_of_methuselah "../../person/lamech_son_of_methuselah/"
-    click person/noah_wife "../../person/noah_wife/"
+    click person/shem "../../person/shem/"
     click person/noah "../../person/noah/"
+    click person/ham "../../person/ham/"
+    click person/noah_wife "../../person/noah_wife/"
     click person/japheth "../../person/japheth/"
-    person/noah_wife &lt;--&gt;|married to| person/noah
     person/noah --&gt;|parent of| person/ham
+    person/noah_wife &lt;--&gt;|married to| person/noah
     person/noah --&gt;|child of| person/lamech_son_of_methuselah
-    person/noah --&gt;|parent of| person/japheth
     person/noah --&gt;|parent of| person/shem
+    person/noah --&gt;|parent of| person/japheth
 </div>
 </article>
 </div>

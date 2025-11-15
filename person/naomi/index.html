@@ -274,7 +274,7 @@
 <li><strong>Blessed</strong> <a href="../../person/boaz/">Boaz</a> (<a href="https://biblehub.com/context/ruth/2-19.htm" target="_blank">Ruth 2:19</a>)</li>
 <li><strong>Enemy of</strong> <a href="../../being/yahweh/">Yahweh</a> (<a href="https://biblehub.com/context/ruth/1-13.htm" target="_blank">Ruth 1:13</a>), <a href="../../being/shaddai/">Shaddai</a> (<a href="https://biblehub.com/context/ruth/1.htm" target="_blank">Ruth 1:20-21</a>)</li>
 <li><strong>Married to</strong> <a href="../../person/elimelech/">Elimelech</a> (<a href="https://biblehub.com/context/ruth/1.htm" target="_blank">Ruth 1:1-2</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/mara/">Mara</a> (<a href="https://biblehub.com/context/ruth/1-20.htm" target="_blank">Ruth 1:20</a>)</li>
+<li><strong>Name matches</strong> <a href="../../person/mara/">Mara (Naomi name matches Mara)</a> (<a href="https://biblehub.com/context/ruth/1-20.htm" target="_blank">Ruth 1:20</a>)</li>
 <li><strong>Parent of</strong> <a href="../../person/mahlon/">Mahlon</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>), <a href="../../person/kilion/">Kilion</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>), <a href="../../person/ruth/">Ruth</a> (<a href="https://biblehub.com/context/ruth/1-2.htm" target="_blank">Ruth 1:2</a>), <a href="../../person/obed/">Obed</a> (<a href="https://biblehub.com/context/ruth/4-17.htm" target="_blank">Ruth 4:17</a>)</li>
 <li><strong>Related to</strong> <a href="../../person/elimelechs_redeemer/">Elimelech's Redeemer</a> (<a href="https://biblehub.com/context/ruth/3-12.htm" target="_blank">Ruth 3:12</a>)</li>
 <li><strong>Resident of</strong> <a href="../../place/bethlehem/">Bethlehem</a> (<a href="https://biblehub.com/context/ruth/1-19.htm" target="_blank">Ruth 1:19</a>)</li>
@@ -283,91 +283,91 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
+    person/obed(["Obed"])
     person/elimelech(["Elimelech"])
-    person/mahlon(["Mahlon"])
+    person/elimelechs_redeemer(["Elimelech's Redeemer"])
+    person/naomi(["Naomi"])
     person/orpah(["Orpah"])
-    person/kilion(["Kilion"])
     person/boaz(["Boaz"])
     person/jesse(["Jesse"])
     person/ruth(["Ruth"])
-    person/elimelechs_redeemer(["Elimelech's Redeemer"])
-    person/obed(["Obed"])
-    click person/naomi "../../person/naomi/"
+    person/kilion(["Kilion"])
+    person/mahlon(["Mahlon"])
+    click person/obed "../../person/obed/"
     click person/elimelech "../../person/elimelech/"
-    click person/mahlon "../../person/mahlon/"
+    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
+    click person/naomi "../../person/naomi/"
     click person/orpah "../../person/orpah/"
-    click person/kilion "../../person/kilion/"
     click person/boaz "../../person/boaz/"
     click person/jesse "../../person/jesse/"
     click person/ruth "../../person/ruth/"
-    click person/elimelechs_redeemer "../../person/elimelechs_redeemer/"
-    click person/obed "../../person/obed/"
-    person/elimelech &lt;--&gt;|married to| person/naomi
-    person/elimelech --&gt;|parent of| person/mahlon
-    person/elimelech --&gt;|parent of| person/kilion
-    person/obed --&gt;|parent of| person/jesse
-    person/ruth &lt;--&gt;|married to| person/kilion
-    person/mahlon &lt;--&gt;|married to| person/orpah
+    click person/kilion "../../person/kilion/"
+    click person/mahlon "../../person/mahlon/"
+    person/ruth &lt;--&gt;|married to| person/boaz
     person/naomi --&gt;|parent of| person/mahlon
+    person/elimelech --&gt;|parent of| person/mahlon
+    person/orpah &lt;--&gt;|married to| person/mahlon
+    person/boaz --&gt;|parent of| person/obed
+    person/naomi --&gt;|parent of| person/kilion
+    person/naomi --&gt;|parent of| person/ruth
+    person/elimelech --&gt;|parent of| person/kilion
+    person/naomi &lt;--&gt;|married to| person/elimelech
+    person/ruth &lt;--&gt;|married to| person/kilion
+    person/naomi --&gt;|parent of| person/obed
+    person/obed --&gt;|parent of| person/jesse
+    person/naomi --&gt;|related to| person/elimelechs_redeemer
     person/elimelech --&gt;|related to| person/elimelechs_redeemer
     person/ruth --&gt;|parent of| person/obed
-    person/naomi --&gt;|parent of| person/ruth
-    person/boaz --&gt;|parent of| person/obed
-    person/naomi --&gt;|parent of| person/obed
-    person/ruth --&gt;|related to| person/elimelechs_redeemer
     person/elimelech --&gt;|related to| person/boaz
-    person/ruth &lt;--&gt;|married to| person/boaz
-    person/naomi --&gt;|parent of| person/kilion
-    person/naomi --&gt;|related to| person/elimelechs_redeemer
+    person/ruth --&gt;|related to| person/elimelechs_redeemer
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/naomi(["Naomi"])
-    being/yahweh(["Yahweh"])
     being/shaddai(["Shaddai"])
+    being/yahweh(["Yahweh"])
     click person/naomi "../../person/naomi/"
-    click being/yahweh "../../being/yahweh/"
     click being/shaddai "../../being/shaddai/"
+    click being/yahweh "../../being/yahweh/"
     person/naomi &lt;--&gt;|enemy of| being/yahweh
     person/naomi &lt;--&gt;|enemy of| being/shaddai
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
     person/elimelech(["Elimelech"])
-    person/mahlon(["Mahlon"])
-    person/rachel(["Rachel"])
-    person/kilion(["Kilion"])
-    person/boaz(["Boaz"])
     place/moab(["Moab"])
-    person/ruth(["Ruth"])
+    person/naomi(["Naomi"])
+    person/boaz(["Boaz"])
     place/bethlehem(["Bethlehem"])
-    click person/naomi "../../person/naomi/"
+    person/ruth(["Ruth"])
+    person/kilion(["Kilion"])
+    person/rachel(["Rachel"])
+    person/mahlon(["Mahlon"])
     click person/elimelech "../../person/elimelech/"
-    click person/mahlon "../../person/mahlon/"
-    click person/rachel "../../person/rachel/"
-    click person/kilion "../../person/kilion/"
-    click person/boaz "../../person/boaz/"
     click place/moab "../../place/moab/"
-    click person/ruth "../../person/ruth/"
+    click person/naomi "../../person/naomi/"
+    click person/boaz "../../person/boaz/"
     click place/bethlehem "../../place/bethlehem/"
-    person/mahlon .-&gt;|visited| place/moab
-    person/mahlon --&gt;|died in| place/moab
+    click person/ruth "../../person/ruth/"
+    click person/kilion "../../person/kilion/"
+    click person/rachel "../../person/rachel/"
+    click person/mahlon "../../person/mahlon/"
+    person/naomi .-&gt;|visited| place/moab
     person/rachel --&gt;|buried in| place/bethlehem
     person/rachel --&gt;|died in| place/bethlehem
     person/naomi --&gt;|resident of| place/bethlehem
+    person/elimelech --&gt;|resident of| place/bethlehem
     person/boaz .-&gt;|visited| place/bethlehem
     person/boaz --&gt;|resident of| place/bethlehem
-    person/kilion .-&gt;|visited| place/moab
+    person/ruth --&gt;|resident of| place/bethlehem
     person/kilion --&gt;|died in| place/moab
+    person/kilion .-&gt;|visited| place/moab
+    person/mahlon .-&gt;|visited| place/moab
+    person/mahlon --&gt;|died in| place/moab
     person/elimelech .-&gt;|visited| place/moab
     person/elimelech --&gt;|died in| place/moab
-    person/naomi .-&gt;|visited| place/moab
-    person/ruth --&gt;|resident of| place/bethlehem
-    person/elimelech --&gt;|resident of| place/bethlehem
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
@@ -381,26 +381,26 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/naomi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
     person/elimelech(["Elimelech"])
-    place/ephrathah(["Ephrathah"])
-    person/mara(["Mara"])
+    person/naomi(["Naomi"])
     person/boaz(["Boaz"])
-    person/ruth(["Ruth"])
     place/bethlehem(["Bethlehem"])
-    click person/naomi "../../person/naomi/"
+    place/ephrathah(["Ephrathah"])
+    person/ruth(["Ruth"])
+    person/mara(["Mara"])
     click person/elimelech "../../person/elimelech/"
-    click place/ephrathah "../../place/ephrathah/"
-    click person/mara "../../person/mara/"
+    click person/naomi "../../person/naomi/"
     click person/boaz "../../person/boaz/"
-    click person/ruth "../../person/ruth/"
     click place/bethlehem "../../place/bethlehem/"
+    click place/ephrathah "../../place/ephrathah/"
+    click person/ruth "../../person/ruth/"
+    click person/mara "../../person/mara/"
+    place/bethlehem .-&gt;|associated with| person/elimelech
+    person/naomi &lt;--&gt;|name matches| person/mara
     place/bethlehem &lt;.-&gt;|associated with| person/ruth
-    place/bethlehem .-&gt;|associated with| person/naomi
-    person/mara &lt;--&gt;|name matches| person/naomi
     place/bethlehem &lt;--&gt;|name matches| place/ephrathah
     place/bethlehem .-&gt;|associated with| person/boaz
-    place/bethlehem .-&gt;|associated with| person/elimelech
+    place/bethlehem .-&gt;|associated with| person/naomi
 </div>
 </article>
 </div>

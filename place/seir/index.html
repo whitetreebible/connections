@@ -224,6 +224,20 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#geographic">
+<span class="md-ellipsis">
+      Geographic
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -236,8 +250,35 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Associated with</strong> <a href="../../person/esau/">Esau</a> (<a href="https://biblehub.com/context/genesis/36-8.htm" target="_blank">Genesis 36:8</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/seir/">Seir</a> (<a href="https://biblehub.com/context/genesis/36-20.htm" target="_blank">Genesis 36:20</a>)</li>
+<li><strong>Name matches</strong> <a href="../../person/seir/">Seir (the Horite)</a> (<a href="https://biblehub.com/context/genesis/36-20.htm" target="_blank">Genesis 36:20</a>)</li>
 </ul>
+<h2 id="geographic">Geographic</h2>
+<div class="mermaid">graph TD;
+    style place/seir fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    place/seir(["Seir"])
+    person/esau(["Esau"])
+    click place/seir "../../place/seir/"
+    click person/esau "../../person/esau/"
+    person/esau --&gt;|resident of| place/seir
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style place/seir fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    group/edomite(["Edomite"])
+    place/edom(["Edom"])
+    person/seir(["Seir"])
+    person/esau(["Esau"])
+    place/seir(["Seir"])
+    click group/edomite "../../group/edomite/"
+    click place/edom "../../place/edom/"
+    click person/seir "../../person/seir/"
+    click person/esau "../../person/esau/"
+    click place/seir "../../place/seir/"
+    person/esau &lt;--&gt;|name matches| group/edomite
+    place/seir .-&gt;|associated with| person/esau
+    place/seir &lt;--&gt;|name matches| person/seir
+    place/edom &lt;--&gt;|name matches| person/esau
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -269,5 +310,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

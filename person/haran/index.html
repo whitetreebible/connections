@@ -264,45 +264,45 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/haran fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/nahor(["Nahor"])
-    person/lot_daughter_younger(["Lot's younger daughter"])
-    person/milcah(["Milcah"])
-    person/ben-ammi(["Ben Ammi"])
-    person/lot_daughter_older(["Lot's older daughter"])
-    person/haran(["Haran"])
-    person/lot(["Lot"])
-    person/moab(["Moab"])
-    person/abram(["Abram"])
-    person/sarah(["Sarah"])
-    person/bethuel(["Bethuel"])
     person/terah(["Terah"])
+    person/sarah(["Sarah"])
+    person/nahor(["Nahor"])
     person/iscah(["Iscah"])
-    click person/nahor "../../person/nahor/"
-    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
-    click person/milcah "../../person/milcah/"
-    click person/ben-ammi "../../person/ben-ammi/"
-    click person/lot_daughter_older "../../person/lot_daughter_older/"
-    click person/haran "../../person/haran/"
-    click person/lot "../../person/lot/"
-    click person/moab "../../person/moab/"
-    click person/abram "../../person/abram/"
-    click person/sarah "../../person/sarah/"
-    click person/bethuel "../../person/bethuel/"
+    person/ben-ammi(["Ben Ammi"])
+    person/bethuel(["Bethuel"])
+    person/milcah(["Milcah"])
+    person/moab(["Moab"])
+    person/lot_daughter_younger(["Lot's younger daughter"])
+    person/abram(["Abram"])
+    person/lot(["Lot"])
+    person/haran(["Haran"])
+    person/lot_daughter_older(["Lot's older daughter"])
     click person/terah "../../person/terah/"
+    click person/sarah "../../person/sarah/"
+    click person/nahor "../../person/nahor/"
     click person/iscah "../../person/iscah/"
-    person/lot --&gt;|parent of| person/lot_daughter_younger
-    person/nahor --&gt;|parent of| person/terah
-    person/nahor &lt;--&gt;|married to| person/milcah
-    person/haran --&gt;|parent of| person/iscah
+    click person/ben-ammi "../../person/ben-ammi/"
+    click person/bethuel "../../person/bethuel/"
+    click person/milcah "../../person/milcah/"
+    click person/moab "../../person/moab/"
+    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
+    click person/abram "../../person/abram/"
+    click person/lot "../../person/lot/"
+    click person/haran "../../person/haran/"
+    click person/lot_daughter_older "../../person/lot_daughter_older/"
     person/haran --&gt;|parent of| person/lot
-    person/lot --&gt;|parent of| person/moab
-    person/lot --&gt;|parent of| person/ben-ammi
-    person/terah --&gt;|parent of| person/sarah
-    person/lot --&gt;|parent of| person/lot_daughter_older
-    person/terah --&gt;|parent of| person/haran
+    person/nahor &lt;--&gt;|married to| person/milcah
     person/haran --&gt;|parent of| person/milcah
+    person/nahor --&gt;|parent of| person/terah
+    person/haran --&gt;|parent of| person/iscah
+    person/terah --&gt;|parent of| person/haran
+    person/lot --&gt;|parent of| person/ben-ammi
     person/terah --&gt;|parent of| person/abram
+    person/terah --&gt;|parent of| person/sarah
     person/milcah --&gt;|parent of| person/bethuel
+    person/lot --&gt;|parent of| person/lot_daughter_younger
+    person/lot --&gt;|parent of| person/moab
+    person/lot --&gt;|parent of| person/lot_daughter_older
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
@@ -320,7 +320,7 @@
     person/haran(["Haran"])
     click place/haran "../../place/haran/"
     click person/haran "../../person/haran/"
-    place/haran &lt;--&gt;|name matches| person/haran
+    person/haran &lt;--&gt;|name matches| place/haran
 </div>
 </article>
 </div>

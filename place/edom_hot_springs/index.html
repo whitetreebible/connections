@@ -217,6 +217,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -226,6 +233,15 @@
 <article class="md-content__inner md-typeset">
 <h1 id="edom-hot-springs">Edom Hot Springs</h1>
 <h2 id="edom-hot-springs-discovered-by-anah">Edom Hot Springs (discovered by Anah)</h2>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style place/edom_hot_springs fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    place/edom_hot_springs(["Edom Hot Springs"])
+    person/anah(["Anah"])
+    click place/edom_hot_springs "../../place/edom_hot_springs/"
+    click person/anah "../../person/anah/"
+    person/anah .-&gt;|associated with| place/edom_hot_springs
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -257,5 +273,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

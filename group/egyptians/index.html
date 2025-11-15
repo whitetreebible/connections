@@ -228,17 +228,17 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/egyptians fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/hagar(["Hagar"])
+    person/sarai(["Sarai"])
     group/egyptians(["Egyptians"])
     person/abram(["Abram"])
-    person/sarai(["Sarai"])
-    person/hagar(["Hagar"])
+    click person/hagar "../../person/hagar/"
+    click person/sarai "../../person/sarai/"
     click group/egyptians "../../group/egyptians/"
     click person/abram "../../person/abram/"
-    click person/sarai "../../person/sarai/"
-    click person/hagar "../../person/hagar/"
     person/sarai --&gt;|leader of| person/hagar
-    person/abram --&gt;|leader of| person/hagar
     person/hagar --&gt;|member of| group/egyptians
+    person/abram --&gt;|leader of| person/hagar
 </div>
 </article>
 </div>

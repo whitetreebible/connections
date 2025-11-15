@@ -217,6 +217,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vocational-functional">
+<span class="md-ellipsis">
+      Vocational / functional
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -226,6 +233,30 @@
 <article class="md-content__inner md-typeset">
 <h1 id="king">king</h1>
 <h2 id="king-royal-title">king (royal title)</h2>
+<h2 id="vocational-functional">Vocational / functional</h2>
+<div class="mermaid">graph TD;
+    style role/king fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/husham(["Husham"])
+    person/bela(["Bela"])
+    person/hadar(["Hadar"])
+    person/shaul(["Shaul"])
+    role/king(["king"])
+    person/samlah(["Samlah"])
+    person/baal_hanan(["Baal-Hanan"])
+    click person/husham "../../person/husham/"
+    click person/bela "../../person/bela/"
+    click person/hadar "../../person/hadar/"
+    click person/shaul "../../person/shaul/"
+    click role/king "../../role/king/"
+    click person/samlah "../../person/samlah/"
+    click person/baal_hanan "../../person/baal_hanan/"
+    person/bela --&gt;|role as| role/king
+    person/husham --&gt;|role as| role/king
+    person/shaul --&gt;|role as| role/king
+    person/baal_hanan --&gt;|role as| role/king
+    person/samlah --&gt;|role as| role/king
+    person/hadar --&gt;|role as| role/king
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -257,5 +288,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

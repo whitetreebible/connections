@@ -224,6 +224,27 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#social-political">
+<span class="md-ellipsis">
+      Social / political
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -236,8 +257,59 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/bedad/">Bedad</a> (<a href="https://biblehub.com/context/genesis/36-35.htm" target="_blank">Genesis 36:35</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/hadad/">Hadad</a></li>
+<li><strong>Name matches</strong> <a href="../../person/hadad/">Hadad (son of Ishmael)</a></li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/hadad_son_of_bedad fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/hadad_son_of_bedad(["Hadad"])
+    person/bedad(["Bedad"])
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    click person/bedad "../../person/bedad/"
+    person/bedad --&gt;|parent of| person/hadad_son_of_bedad
+</div>
+<h2 id="social-political">Social / political</h2>
+<div class="mermaid">graph TD;
+    style person/hadad_son_of_bedad fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/husham(["Husham"])
+    person/hadar(["Hadar"])
+    person/bela(["Bela"])
+    person/shaul(["Shaul"])
+    place/edom(["Edom"])
+    person/jobab_son_of_zerah(["Jobab"])
+    person/hadad_son_of_bedad(["Hadad"])
+    person/samlah(["Samlah"])
+    person/baal_hanan(["Baal-Hanan"])
+    click person/husham "../../person/husham/"
+    click person/hadar "../../person/hadar/"
+    click person/bela "../../person/bela/"
+    click person/shaul "../../person/shaul/"
+    click place/edom "../../place/edom/"
+    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    click person/samlah "../../person/samlah/"
+    click person/baal_hanan "../../person/baal_hanan/"
+    person/baal_hanan --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/hadad_son_of_bedad
+    person/hadar --&gt;|leader of| place/edom
+    person/husham --&gt;|leader of| place/edom
+    person/shaul --&gt;|leader of| place/edom
+    person/bela --&gt;|leader of| place/edom
+    person/samlah --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/jobab_son_of_zerah
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style person/hadad_son_of_bedad fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    place/avith(["Avith"])
+    person/hadad_son_of_bedad(["Hadad"])
+    person/hadad(["Hadad"])
+    click place/avith "../../place/avith/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    click person/hadad "../../person/hadad/"
+    person/hadad_son_of_bedad &lt;--&gt;|name matches| person/hadad
+    place/avith .-&gt;|associated with| person/hadad_son_of_bedad
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -269,5 +341,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

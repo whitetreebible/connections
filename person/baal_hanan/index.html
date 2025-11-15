@@ -224,6 +224,27 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#social-political">
+<span class="md-ellipsis">
+      Social / political
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#vocational-functional">
+<span class="md-ellipsis">
+      Vocational / functional
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -239,6 +260,69 @@
 <li><strong>Leader of</strong> <a href="../../place/edom/">Edom</a> (<a href="https://biblehub.com/context/genesis/36-38.htm" target="_blank">Genesis 36:38</a>)</li>
 <li><strong>Role as</strong> <a href="../../role/king/">king</a> (<a href="https://biblehub.com/context/genesis/36-38.htm" target="_blank">Genesis 36:38</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/baal_hanan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/acbor(["Acbor"])
+    person/baal_hanan(["Baal-Hanan"])
+    click person/acbor "../../person/acbor/"
+    click person/baal_hanan "../../person/baal_hanan/"
+    person/acbor --&gt;|parent of| person/baal_hanan
+</div>
+<h2 id="social-political">Social / political</h2>
+<div class="mermaid">graph TD;
+    style person/baal_hanan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/husham(["Husham"])
+    person/hadar(["Hadar"])
+    person/bela(["Bela"])
+    person/shaul(["Shaul"])
+    place/edom(["Edom"])
+    person/jobab_son_of_zerah(["Jobab"])
+    person/hadad_son_of_bedad(["Hadad"])
+    person/samlah(["Samlah"])
+    person/baal_hanan(["Baal-Hanan"])
+    click person/husham "../../person/husham/"
+    click person/hadar "../../person/hadar/"
+    click person/bela "../../person/bela/"
+    click person/shaul "../../person/shaul/"
+    click place/edom "../../place/edom/"
+    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    click person/samlah "../../person/samlah/"
+    click person/baal_hanan "../../person/baal_hanan/"
+    person/baal_hanan --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/hadad_son_of_bedad
+    person/hadar --&gt;|leader of| place/edom
+    person/husham --&gt;|leader of| place/edom
+    person/shaul --&gt;|leader of| place/edom
+    person/bela --&gt;|leader of| place/edom
+    person/samlah --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/jobab_son_of_zerah
+</div>
+<h2 id="vocational-functional">Vocational / functional</h2>
+<div class="mermaid">graph TD;
+    style person/baal_hanan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/husham(["Husham"])
+    person/bela(["Bela"])
+    person/hadar(["Hadar"])
+    person/shaul(["Shaul"])
+    role/king(["king"])
+    person/samlah(["Samlah"])
+    person/baal_hanan(["Baal-Hanan"])
+    click person/husham "../../person/husham/"
+    click person/bela "../../person/bela/"
+    click person/hadar "../../person/hadar/"
+    click person/shaul "../../person/shaul/"
+    click role/king "../../role/king/"
+    click person/samlah "../../person/samlah/"
+    click person/baal_hanan "../../person/baal_hanan/"
+    person/bela --&gt;|role as| role/king
+    person/husham --&gt;|role as| role/king
+    person/shaul --&gt;|role as| role/king
+    person/baal_hanan --&gt;|role as| role/king
+    person/samlah --&gt;|role as| role/king
+    person/hadar --&gt;|role as| role/king
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -270,5 +354,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

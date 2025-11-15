@@ -241,22 +241,22 @@
 <h1 id="kiriath-arba">Kiriath Arba</h1>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Name matches</strong> <a href="../../place/hebron/">Hebron</a> (<a href="https://biblehub.com/context/genesis/23-2.htm" target="_blank">Genesis 23:2</a>, <a href="https://biblehub.com/context/genesis/35-27.htm" target="_blank">Genesis 35:27</a>), <a href="../../place/mamre/">Mamre</a> (<a href="https://biblehub.com/context/genesis/35-27.htm" target="_blank">Genesis 35:27</a>)</li>
+<li><strong>Name matches</strong> <a href="../../place/hebron/">Hebron (aka Kiriath Arba)</a> (<a href="https://biblehub.com/context/genesis/23-2.htm" target="_blank">Genesis 23:2</a>, <a href="https://biblehub.com/context/genesis/35-27.htm" target="_blank">Genesis 35:27</a>), <a href="../../place/mamre/">Mamre</a> (<a href="https://biblehub.com/context/genesis/35-27.htm" target="_blank">Genesis 35:27</a>)</li>
 </ul>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/kiriath_arba fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/machpelah(["Machpelah"])
-    being/yahweh(["Yahweh"])
     person/sarah(["Sarah"])
+    place/machpelah(["Machpelah"])
     place/kiriath_arba(["Kiriath Arba"])
-    click place/machpelah "../../place/machpelah/"
-    click being/yahweh "../../being/yahweh/"
+    being/yahweh(["Yahweh"])
     click person/sarah "../../person/sarah/"
+    click place/machpelah "../../place/machpelah/"
     click place/kiriath_arba "../../place/kiriath_arba/"
+    click being/yahweh "../../being/yahweh/"
+    being/yahweh .-&gt;|visited| person/sarah
     person/sarah --&gt;|buried in| place/machpelah
     person/sarah --&gt;|died in| place/kiriath_arba
-    being/yahweh .-&gt;|visited| person/sarah
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
@@ -268,8 +268,8 @@
     click place/mamre "../../place/mamre/"
     click place/kiriath_arba "../../place/kiriath_arba/"
     place/hebron &lt;--&gt;|name matches| place/kiriath_arba
+    place/hebron &lt;--&gt;|name matches| place/mamre
     place/kiriath_arba &lt;--&gt;|name matches| place/mamre
-    place/mamre &lt;--&gt;|name matches| place/hebron
 </div>
 </article>
 </div>

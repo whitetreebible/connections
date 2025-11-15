@@ -255,22 +255,22 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/phicol fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/phicol(["Phicol"])
-    person/abimelech(["Abimelech"])
     place/gerar(["Gerar"])
-    click person/phicol "../../person/phicol/"
-    click person/abimelech "../../person/abimelech/"
+    person/abimelech(["Abimelech"])
+    person/phicol(["Phicol"])
     click place/gerar "../../place/gerar/"
-    person/abimelech --&gt;|leader of| place/gerar
+    click person/abimelech "../../person/abimelech/"
+    click person/phicol "../../person/phicol/"
     person/abimelech --&gt;|leader of| person/phicol
+    person/abimelech --&gt;|leader of| place/gerar
 </div>
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style person/phicol fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/phicol(["Phicol"])
     role/army_commander(["army commander"])
-    click person/phicol "../../person/phicol/"
+    person/phicol(["Phicol"])
     click role/army_commander "../../role/army_commander/"
+    click person/phicol "../../person/phicol/"
     person/phicol --&gt;|role as| role/army_commander
 </div>
 </article>

@@ -246,47 +246,47 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/succoth fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/shechem(["Shechem"])
-    place/succoth(["Succoth"])
-    place/paddan-aram(["Paddan Aram"])
-    place/mamre(["Mamre"])
-    person/jacob(["Jacob"])
-    person/isaac(["Isaac"])
     place/eder(["Eder"])
-    click place/shechem "../../place/shechem/"
-    click place/succoth "../../place/succoth/"
-    click place/paddan-aram "../../place/paddan-aram/"
-    click place/mamre "../../place/mamre/"
-    click person/jacob "../../person/jacob/"
-    click person/isaac "../../person/isaac/"
+    place/paddan-aram(["Paddan Aram"])
+    place/succoth(["Succoth"])
+    person/jacob(["Jacob"])
+    place/mamre(["Mamre"])
+    place/shechem(["Shechem"])
+    person/isaac(["Isaac"])
     click place/eder "../../place/eder/"
-    person/jacob .-&gt;|visited| person/isaac
-    person/jacob .-&gt;|visited| place/mamre
-    person/jacob --&gt;|resident of| place/shechem
+    click place/paddan-aram "../../place/paddan-aram/"
+    click place/succoth "../../place/succoth/"
+    click person/jacob "../../person/jacob/"
+    click place/mamre "../../place/mamre/"
+    click place/shechem "../../place/shechem/"
+    click person/isaac "../../person/isaac/"
     person/jacob .-&gt;|visited| place/paddan-aram
     person/jacob --&gt;|resident of| place/eder
+    person/jacob --&gt;|resident of| place/shechem
+    person/jacob .-&gt;|visited| person/isaac
+    person/jacob .-&gt;|visited| place/mamre
     person/jacob --&gt;|resident of| place/succoth
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/succoth fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/shechem(["Shechem"])
+    place/eder(["Eder"])
     place/succoth(["Succoth"])
     person/jacob(["Jacob"])
+    place/shechem(["Shechem"])
     person/israel(["Israel"])
-    place/eder(["Eder"])
     group/sons_of_hamor(["sons of Hamor"])
-    click place/shechem "../../place/shechem/"
+    click place/eder "../../place/eder/"
     click place/succoth "../../place/succoth/"
     click person/jacob "../../person/jacob/"
+    click place/shechem "../../place/shechem/"
     click person/israel "../../person/israel/"
-    click place/eder "../../place/eder/"
     click group/sons_of_hamor "../../group/sons_of_hamor/"
-    place/shechem .-&gt;|associated with| person/jacob
-    person/jacob &lt;--&gt;|name matches| person/israel
-    person/jacob .-&gt;|associated with| group/sons_of_hamor
     place/eder .-&gt;|associated with| person/jacob
+    place/shechem .-&gt;|associated with| person/jacob
+    person/israel &lt;--&gt;|name matches| person/jacob
     place/succoth .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| group/sons_of_hamor
 </div>
 </article>
 </div>

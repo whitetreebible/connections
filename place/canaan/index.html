@@ -228,29 +228,29 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    place/canaan(["Canaan"])
+    group/philistines(["Philistines"])
+    person/abraham(["Abraham"])
+    person/jacob(["Jacob"])
     place/machpelah(["Machpelah"])
     place/shechem(["Shechem"])
     person/ishmael(["Ishmael"])
-    group/philistines(["Philistines"])
-    person/jacob(["Jacob"])
-    person/abraham(["Abraham"])
     place/paran(["Paran"])
-    place/canaan(["Canaan"])
+    click place/canaan "../../place/canaan/"
+    click group/philistines "../../group/philistines/"
+    click person/abraham "../../person/abraham/"
+    click person/jacob "../../person/jacob/"
     click place/machpelah "../../place/machpelah/"
     click place/shechem "../../place/shechem/"
     click person/ishmael "../../person/ishmael/"
-    click group/philistines "../../group/philistines/"
-    click person/jacob "../../person/jacob/"
-    click person/abraham "../../person/abraham/"
     click place/paran "../../place/paran/"
-    click place/canaan "../../place/canaan/"
     person/abraham --&gt;|buried in| place/machpelah
-    place/shechem --&gt;|near| place/canaan
-    person/jacob --&gt;|resident of| place/shechem
     person/abraham --&gt;|died in| place/canaan
-    person/abraham --&gt;|resident of| group/philistines
     person/ishmael --&gt;|resident of| place/paran
     person/ishmael --&gt;|died in| place/canaan
+    person/jacob --&gt;|resident of| place/shechem
+    person/abraham --&gt;|resident of| group/philistines
+    place/shechem --&gt;|near| place/canaan
 </div>
 </article>
 </div>

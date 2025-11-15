@@ -249,23 +249,23 @@
 <div class="mermaid">graph TD;
     style person/shelah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/shem(["Shem"])
+    person/joktan(["Joktan"])
     person/eber(["Eber"])
-    person/arphaxad(["Arphaxad"])
     person/peleg(["Peleg"])
     person/shelah(["Shelah"])
-    person/joktan(["Joktan"])
+    person/arphaxad(["Arphaxad"])
     click person/shem "../../person/shem/"
+    click person/joktan "../../person/joktan/"
     click person/eber "../../person/eber/"
-    click person/arphaxad "../../person/arphaxad/"
     click person/peleg "../../person/peleg/"
     click person/shelah "../../person/shelah/"
-    click person/joktan "../../person/joktan/"
+    click person/arphaxad "../../person/arphaxad/"
+    person/shem .-&gt;|ancestor of| person/eber
+    person/eber --&gt;|parent of| person/joktan
+    person/eber --&gt;|parent of| person/peleg
     person/shelah --&gt;|parent of| person/eber
     person/shem --&gt;|parent of| person/arphaxad
     person/arphaxad --&gt;|parent of| person/shelah
-    person/eber --&gt;|parent of| person/joktan
-    person/shem .-&gt;|ancestor of| person/eber
-    person/eber --&gt;|parent of| person/peleg
 </div>
 </article>
 </div>

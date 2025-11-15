@@ -272,49 +272,52 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/shechem fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/sons_of_hamor(["sons of Hamor"])
-    person/shechem(["Shechem"])
     person/hamor(["Hamor"])
-    click group/sons_of_hamor "../../group/sons_of_hamor/"
-    click person/shechem "../../person/shechem/"
+    person/shechem(["Shechem"])
+    group/sons_of_hamor(["sons of Hamor"])
     click person/hamor "../../person/hamor/"
-    group/sons_of_hamor --&gt;|parent of| person/shechem
+    click person/shechem "../../person/shechem/"
+    click group/sons_of_hamor "../../group/sons_of_hamor/"
     person/hamor --&gt;|parent of| person/shechem
+    group/sons_of_hamor --&gt;|parent of| person/shechem
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/shechem fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/sons_of_hamor(["sons of Hamor"])
-    group/hivites(["Hivites"])
     person/shechem(["Shechem"])
+    person/zibeon(["Zibeon"])
     person/canaan(["Canaan"])
-    click group/sons_of_hamor "../../group/sons_of_hamor/"
-    click group/hivites "../../group/hivites/"
+    group/hivites(["Hivites"])
+    group/sons_of_hamor(["sons of Hamor"])
     click person/shechem "../../person/shechem/"
+    click person/zibeon "../../person/zibeon/"
     click person/canaan "../../person/canaan/"
+    click group/hivites "../../group/hivites/"
+    click group/sons_of_hamor "../../group/sons_of_hamor/"
+    person/zibeon --&gt;|member of| group/hivites
     person/shechem --&gt;|member of| group/sons_of_hamor
-    person/shechem --&gt;|member of| group/hivites
     person/canaan --&gt;|origin of| group/hivites
+    person/shechem --&gt;|member of| group/hivites
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/shechem fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/dinah(["Dinah"])
     person/shechem(["Shechem"])
-    click person/dinah "../../person/dinah/"
+    person/dinah(["Dinah"])
     click person/shechem "../../person/shechem/"
-    person/shechem --&gt;|attacked| person/dinah
+    click person/dinah "../../person/dinah/"
     person/shechem --&gt;|loved| person/dinah
+    person/shechem --&gt;|attacked| person/dinah
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/shechem fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/jacob(["Jacob"])
     place/shechem(["Shechem"])
     person/shechem(["Shechem"])
-    person/jacob(["Jacob"])
+    click person/jacob "../../person/jacob/"
     click place/shechem "../../place/shechem/"
     click person/shechem "../../person/shechem/"
-    click person/jacob "../../person/jacob/"
     place/shechem &lt;--&gt;|name matches| person/shechem
     place/shechem .-&gt;|associated with| person/jacob
 </div>

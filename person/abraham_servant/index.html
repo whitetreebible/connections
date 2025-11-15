@@ -281,30 +281,30 @@
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/abraham_servant fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
-    person/abraham_servant(["Abraham's servant"])
-    being/cherubim(["cherubim"])
     person/jacob(["Jacob"])
+    being/cherubim(["cherubim"])
+    person/abimelech(["Abimelech"])
+    person/laban(["Laban"])
+    person/abraham_servant(["Abraham's servant"])
+    person/abraham(["Abraham"])
     being/yahweh(["Yahweh"])
     person/isaac(["Isaac"])
-    person/laban(["Laban"])
-    person/abraham(["Abraham"])
-    click person/abimelech "../../person/abimelech/"
-    click person/abraham_servant "../../person/abraham_servant/"
-    click being/cherubim "../../being/cherubim/"
     click person/jacob "../../person/jacob/"
+    click being/cherubim "../../being/cherubim/"
+    click person/abimelech "../../person/abimelech/"
+    click person/laban "../../person/laban/"
+    click person/abraham_servant "../../person/abraham_servant/"
+    click person/abraham "../../person/abraham/"
     click being/yahweh "../../being/yahweh/"
     click person/isaac "../../person/isaac/"
-    click person/laban "../../person/laban/"
-    click person/abraham "../../person/abraham/"
+    being/yahweh --&gt;|blessed| person/abraham
+    being/yahweh --&gt;|appointed| being/cherubim
+    being/yahweh --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|blessed| person/laban
+    being/yahweh --&gt;|blessed| person/abraham_servant
     being/yahweh --&gt;|blessed| person/jacob
     being/yahweh --&gt;|cursed| person/abimelech
     being/yahweh --&gt;|healed| person/abimelech
-    being/yahweh --&gt;|blessed| person/laban
-    being/yahweh --&gt;|blessed| person/abraham
-    being/yahweh --&gt;|blessed| person/abraham_servant
-    being/yahweh --&gt;|blessed| person/isaac
-    being/yahweh --&gt;|appointed| being/cherubim
 </div>
 </article>
 </div>

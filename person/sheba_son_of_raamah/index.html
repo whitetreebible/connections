@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://connections.whitetreebible.com/person/sheba/" rel="canonical"/>
+<link href="https://connections.whitetreebible.com/person/sheba_son_of_raamah/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.20" name="generator"/>
 <title>Sheba - WhiteTreeBible - Connections</title>
@@ -250,31 +250,35 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/raamah/">Raamah</a> (<a href="https://biblehub.com/context/genesis/10-7.htm" target="_blank">Genesis 10:7</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/sheba_son_of_joktan/">Sheba</a></li>
+<li><strong>Name matches</strong> <a href="../../person/sheba_son_of_joktan/">Sheba (son of Joktan)</a>, <a href="../../person/sheba_son_of_jokshan/">Sheba (son of Jokshan)</a></li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
-    style person/sheba fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/cush(["Cush"])
-    person/sheba(["Sheba"])
+    style person/sheba_son_of_raamah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/raamah(["Raamah"])
+    person/sheba_son_of_raamah(["Sheba"])
+    person/cush(["Cush"])
     person/dedan(["Dedan"])
-    click person/cush "../../person/cush/"
-    click person/sheba "../../person/sheba/"
     click person/raamah "../../person/raamah/"
+    click person/sheba_son_of_raamah "../../person/sheba_son_of_raamah/"
+    click person/cush "../../person/cush/"
     click person/dedan "../../person/dedan/"
-    person/cush --&gt;|parent of| person/raamah
-    person/raamah --&gt;|parent of| person/sheba
     person/raamah --&gt;|parent of| person/dedan
+    person/cush --&gt;|parent of| person/raamah
+    person/raamah --&gt;|parent of| person/sheba_son_of_raamah
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
-    style person/sheba fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sheba(["Sheba"])
+    style person/sheba_son_of_raamah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/sheba_son_of_jokshan(["Sheba"])
     person/sheba_son_of_joktan(["Sheba"])
-    click person/sheba "../../person/sheba/"
+    person/sheba_son_of_raamah(["Sheba"])
+    click person/sheba_son_of_jokshan "../../person/sheba_son_of_jokshan/"
     click person/sheba_son_of_joktan "../../person/sheba_son_of_joktan/"
-    person/sheba &lt;--&gt;|name matches| person/sheba_son_of_joktan
+    click person/sheba_son_of_raamah "../../person/sheba_son_of_raamah/"
+    person/sheba_son_of_joktan &lt;--&gt;|name matches| person/sheba_son_of_jokshan
+    person/sheba_son_of_raamah &lt;--&gt;|name matches| person/sheba_son_of_joktan
+    person/sheba_son_of_raamah &lt;--&gt;|name matches| person/sheba_son_of_jokshan
 </div>
 </article>
 </div>

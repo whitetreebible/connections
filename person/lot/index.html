@@ -248,34 +248,34 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/lot fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/lot_daughter_younger(["Lot's younger daughter"])
-    person/ben-ammi(["Ben Ammi"])
-    person/lot_daughter_older(["Lot's older daughter"])
-    person/milcah(["Milcah"])
-    person/haran(["Haran"])
-    person/lot(["Lot"])
-    person/moab(["Moab"])
     person/terah(["Terah"])
     person/iscah(["Iscah"])
-    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
-    click person/ben-ammi "../../person/ben-ammi/"
-    click person/lot_daughter_older "../../person/lot_daughter_older/"
-    click person/milcah "../../person/milcah/"
-    click person/haran "../../person/haran/"
-    click person/lot "../../person/lot/"
-    click person/moab "../../person/moab/"
+    person/moab(["Moab"])
+    person/ben-ammi(["Ben Ammi"])
+    person/milcah(["Milcah"])
+    person/lot_daughter_younger(["Lot's younger daughter"])
+    person/lot(["Lot"])
+    person/haran(["Haran"])
+    person/lot_daughter_older(["Lot's older daughter"])
     click person/terah "../../person/terah/"
     click person/iscah "../../person/iscah/"
-    person/lot --&gt;|parent of| person/lot_daughter_younger
+    click person/moab "../../person/moab/"
+    click person/ben-ammi "../../person/ben-ammi/"
+    click person/milcah "../../person/milcah/"
+    click person/lot_daughter_younger "../../person/lot_daughter_younger/"
+    click person/lot "../../person/lot/"
+    click person/haran "../../person/haran/"
+    click person/lot_daughter_older "../../person/lot_daughter_older/"
     person/haran --&gt;|parent of| person/lot
+    person/haran --&gt;|parent of| person/milcah
     person/haran --&gt;|parent of| person/iscah
-    person/lot --&gt;|parent of| person/moab
-    person/lot --&gt;|parent of| person/ben-ammi
-    person/lot --&gt;|parent of| person/lot_daughter_older
     person/lot_daughter_older --&gt;|parent of| person/moab
     person/terah --&gt;|parent of| person/haran
-    person/haran --&gt;|parent of| person/milcah
+    person/lot --&gt;|parent of| person/ben-ammi
     person/lot_daughter_younger --&gt;|parent of| person/ben-ammi
+    person/lot --&gt;|parent of| person/lot_daughter_younger
+    person/lot --&gt;|parent of| person/moab
+    person/lot --&gt;|parent of| person/lot_daughter_older
 </div>
 </article>
 </div>

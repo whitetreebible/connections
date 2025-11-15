@@ -247,20 +247,20 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/eshcol fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/aner(["Aner"])
     person/hagar(["Hagar"])
+    person/aner(["Aner"])
     person/eshcol(["Eshcol"])
-    person/abram(["Abram"])
     person/mamre(["Mamre"])
-    click person/aner "../../person/aner/"
+    person/abram(["Abram"])
     click person/hagar "../../person/hagar/"
+    click person/aner "../../person/aner/"
     click person/eshcol "../../person/eshcol/"
-    click person/abram "../../person/abram/"
     click person/mamre "../../person/mamre/"
+    click person/abram "../../person/abram/"
+    person/abram &lt;--&gt;|ally of| person/mamre
+    person/eshcol &lt;--&gt;|ally of| person/abram
     person/aner &lt;--&gt;|ally of| person/abram
     person/abram --&gt;|leader of| person/hagar
-    person/abram &lt;--&gt;|ally of| person/eshcol
-    person/abram &lt;--&gt;|ally of| person/mamre
 </div>
 </article>
 </div>

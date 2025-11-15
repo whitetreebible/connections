@@ -224,6 +224,20 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -236,9 +250,65 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/seir/">Seir</a> (<a href="https://biblehub.com/context/genesis/36-21.htm" target="_blank">Genesis 36:21</a>), <a href="../../person/anah/">Anah</a> (<a href="https://biblehub.com/context/genesis/36-25.htm" target="_blank">Genesis 36:25</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/dishon_son_of_anah/">Dishon</a></li>
+<li><strong>Name matches</strong> <a href="../../person/dishon_son_of_anah/">Dishon (chief of Edom)</a></li>
 <li><strong>Parent of</strong> <a href="../../person/hemdan/">Hemdan</a> (<a href="https://biblehub.com/context/genesis/36-26.htm" target="_blank">Genesis 36:26</a>), <a href="../../person/eshban/">Eshban</a> (<a href="https://biblehub.com/context/genesis/36-26.htm" target="_blank">Genesis 36:26</a>), <a href="../../person/ithran/">Ithran</a> (<a href="https://biblehub.com/context/genesis/36-26.htm" target="_blank">Genesis 36:26</a>), <a href="../../person/keran/">Keran</a> (<a href="https://biblehub.com/context/genesis/36-26.htm" target="_blank">Genesis 36:26</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/dishon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/keran(["Keran"])
+    person/shobal(["Shobal"])
+    person/timna(["Timna"])
+    person/hemdan(["Hemdan"])
+    person/zibeon(["Zibeon"])
+    person/oholibamah_daughter_of_anah(["Oholibamah"])
+    person/ithran(["Ithran"])
+    person/seir(["Seir"])
+    person/lotan(["Lotan"])
+    person/dishan(["Dishan"])
+    person/eshban(["Eshban"])
+    person/ezer(["Ezer"])
+    person/dishon(["Dishon"])
+    person/anah(["Anah"])
+    click person/keran "../../person/keran/"
+    click person/shobal "../../person/shobal/"
+    click person/timna "../../person/timna/"
+    click person/hemdan "../../person/hemdan/"
+    click person/zibeon "../../person/zibeon/"
+    click person/oholibamah_daughter_of_anah "../../person/oholibamah_daughter_of_anah/"
+    click person/ithran "../../person/ithran/"
+    click person/seir "../../person/seir/"
+    click person/lotan "../../person/lotan/"
+    click person/dishan "../../person/dishan/"
+    click person/eshban "../../person/eshban/"
+    click person/ezer "../../person/ezer/"
+    click person/dishon "../../person/dishon/"
+    click person/anah "../../person/anah/"
+    person/dishon --&gt;|parent of| person/hemdan
+    person/seir --&gt;|parent of| person/timna
+    person/dishon --&gt;|parent of| person/ithran
+    person/seir --&gt;|parent of| person/dishon
+    person/seir --&gt;|parent of| person/anah
+    person/anah --&gt;|parent of| person/dishon
+    person/anah --&gt;|parent of| person/oholibamah_daughter_of_anah
+    person/seir --&gt;|parent of| person/zibeon
+    person/seir --&gt;|parent of| person/ezer
+    person/seir --&gt;|parent of| person/lotan
+    person/dishon --&gt;|parent of| person/keran
+    person/seir --&gt;|parent of| person/dishan
+    person/dishon --&gt;|parent of| person/eshban
+    person/seir --&gt;|parent of| person/shobal
+    person/zibeon --&gt;|parent of| person/anah
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style person/dishon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/dishon_son_of_anah(["Dishon"])
+    person/dishon(["Dishon"])
+    click person/dishon_son_of_anah "../../person/dishon_son_of_anah/"
+    click person/dishon "../../person/dishon/"
+    person/dishon_son_of_anah &lt;--&gt;|name matches| person/dishon
+</div>
 </article>
 </div>
 <script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
@@ -270,5 +340,5 @@
 <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
 <script src="https://unpkg.com/mermaid@10.9.0/dist/mermaid.min.js"></script>
 <script src="../../mermaid-mod.js"></script>
-</body>
+<script>mermaid.initialize({});</script></body>
 </html>

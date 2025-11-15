@@ -248,13 +248,20 @@
 <div class="mermaid">graph TD;
     style person/elon fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/basemath(["Basemath"])
-    person/esau(["Esau"])
     person/elon(["Elon"])
+    person/ishmael(["Ishmael"])
+    person/reuel(["Reuel"])
+    person/esau(["Esau"])
     click person/basemath "../../person/basemath/"
-    click person/esau "../../person/esau/"
     click person/elon "../../person/elon/"
-    person/esau &lt;--&gt;|married to| person/basemath
+    click person/ishmael "../../person/ishmael/"
+    click person/reuel "../../person/reuel/"
+    click person/esau "../../person/esau/"
+    person/basemath &lt;--&gt;|married to| person/esau
+    person/ishmael --&gt;|parent of| person/basemath
     person/elon --&gt;|parent of| person/basemath
+    person/basemath --&gt;|parent of| person/reuel
+    person/basemath --&gt;|related to| person/neboioth
 </div>
 </article>
 </div>
