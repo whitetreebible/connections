@@ -97,6 +97,15 @@ class SqliteDB:
         )
         row = cur.fetchone()
         return row[0] if row else None
+    
+    def select_name_disambiguous(self, node_type: str, node_id: str, lang: str = "en") -> Optional[str]:
+        cur = self.conn.cursor()
+        cur.execute(
+            "SELECT name_disambiguous FROM nodes WHERE id = ? AND type = ? AND lang = ?",
+            (node_id, node_type, lang)
+        )
+        row = cur.fetchone()
+        return row[0] if row else None
 
     def select_edges(self, node_id: str) -> list:
         cur = self.conn.cursor()

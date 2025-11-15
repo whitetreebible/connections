@@ -222,8 +222,10 @@ class MdFormatters:
                 # Collect targets and their references for this edge type
                 targets_with_refs = []
                 for edge in edges:
+                    # Check if this is a name_matches edge to use disambiguous name
+                    use_disambiguous = edge.type == EdgeType.NAME_MATCHES
                     # Turn target into an id link
-                    target_link = self.format_links(db=db, node=node, md=f"[[{edge.target}]]", lang=lang)
+                    target_link = self.format_links(db=db, node=node, md=f"[[{edge.target}]]", lang=lang, use_disambiguous=use_disambiguous)
                     # Show refs in readable format (bible:..., footnote:...)
                     ref_strs = []
                     for ref in getattr(edge, 'refs', []):
@@ -298,10 +300,11 @@ class MdFormatters:
 
 
 
-    def format_links(self, db: SqliteDB, node=None, md=None, lang='en'):
+    def format_links(self, db: SqliteDB, node=None, md=None, lang='en', use_disambiguous=False):
         """
         Replace [[bible:Book Chapter:Verse]] with BibleHub links, and [[id]] with /type/id links.
         For internal links, use the localized name from the sqlite db if available.
+        If use_disambiguous is True, use name_disambiguous instead of name for internal links.
         """
         db = SqliteDB()
 
@@ -336,7 +339,12 @@ class MdFormatters:
             # Try to get localized name from db
             link_text = page_id
             if node_type and node_id:
-                db_name = db.select_name(node_type=node_type, node_id=node_id, lang=lang or "en")
+                if use_disambiguous:
+                    db_name = db.select_name_disambiguous(node_type=node_type, node_id=node_id, lang=lang or "en")
+                    if not db_name:  # fallback to regular name if disambiguous not available
+                        db_name = db.select_name(node_type=node_type, node_id=node_id, lang=lang or "en")
+                else:
+                    db_name = db.select_name(node_type=node_type, node_id=node_id, lang=lang or "en")
                 if db_name:
                     link_text = db_name
             return f"[{link_text}]({url})"
