@@ -1,0 +1,26 @@
+id: beriah
+type: person
+name:
+  en: Beriah
+name_disambiguous:
+  en: Beriah (son of Asher)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/asher
+  type: child-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/heber
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/malkiel
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17

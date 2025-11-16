@@ -1,0 +1,22 @@
+id: goshen
+type: place
+name:
+  en: Goshen
+name_disambiguous:
+  en: Goshen (land in Egypt)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 46:28
+- target: region/egypt
+  type: resident-of
+  refs:
+  - bible:Genesis 46:28
+- target: role/shepherds
+  type: associated-with
+  refs:
+  - bible:Genesis 46:34

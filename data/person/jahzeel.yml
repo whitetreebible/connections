@@ -1,0 +1,14 @@
+id: jahzeel
+type: person
+name:
+  en: Jahzeel
+name_disambiguous:
+  en: Jahzeel (son of Naphtali)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/naphtali
+  type: child-of
+  refs:
+  - bible:Genesis 46:24

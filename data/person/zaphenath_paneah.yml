@@ -1,0 +1,14 @@
+id: zaphenath_paneah
+type: person
+name:
+  en: Zaphenath Paneah
+name_disambiguous:
+  en: Zaphenath Paneah (Joseph)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joseph
+  type: name-matches
+  refs:
+  - bible:Genesis 41:45

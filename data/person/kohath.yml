@@ -1,0 +1,14 @@
+id: kohath
+type: person
+name:
+  en: Kohath
+name_disambiguous:
+  en: Kohath (son of Levi)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/levi
+  type: child-of
+  refs:
+  - bible:Genesis 46:11

@@ -1,0 +1,19 @@
+id: asenath
+type: person
+name:
+  en: Asenath
+name_disambiguous:
+  en: Asenath (married to Joseph)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joseph
+  type: married-to
+  refs:
+  - bible:Genesis 41:45
+- target: person/potiphera
+  type: child-of
+  refs:
+  - bible:Genesis 41:45
+  - bible:Genesis 46:20

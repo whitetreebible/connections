@@ -1,0 +1,14 @@
+id: ehi
+type: person
+name:
+  en: Ehi
+name_disambiguous:
+  en: Ehi (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

@@ -14,6 +14,7 @@ edges:
   - bible:Genesis 29:34
   - bible:Genesis 34:25
   - bible:Genesis 35:23
+  - bible:Genesis 46:11
 - target: person/leah
   type: child-of
   refs:
@@ -26,3 +27,15 @@ edges:
   type: defeated
   refs:
   - bible:Genesis 34:25
+- target: person/gershon
+  type: parent-of
+  refs:
+  - bible:Genesis 46:11
+- target: person/kohath
+  type: parent-of
+  refs:
+  - bible:Genesis 46:11
+- target: person/merari
+  type: parent-of
+  refs:
+  - bible:Genesis 46:11

@@ -1,0 +1,14 @@
+id: ezbon
+type: person
+name:
+  en: Ezbon
+name_disambiguous:
+  en: Ezbon (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

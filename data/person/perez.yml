@@ -9,8 +9,7 @@ description:
     lineage of King David. His birth is notable because it occurred under unusual
     circumstances, as Tamar disguised herself as a prostitute to seduce Judah after
     he failed to fulfill his duty to provide her with a husband from his family. Perez
-    is recognized as an ancestor of King David and, according to Christian tradition,
-    Jesus Christ.
+    is recognized as an ancestor of King David and ultimately, Jesus.
 footnotes: {}
 edges:
 - target: person/ruth
@@ -26,8 +25,14 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 38:29
+  - bible:Genesis 46:12
   - bible:Ruth 4:12
 - target: person/hezron
   type: parent-of
   refs:
+  - bible:Genesis 46:12
   - bible:Ruth 4:18
+- target: person/hamul
+  type: parent-of
+  refs:
+  - bible:Genesis 46:12

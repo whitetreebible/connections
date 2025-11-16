@@ -1,0 +1,14 @@
+id: carmi
+type: person
+name:
+  en: Carmi
+name_disambiguous:
+  en: Carmi (son of Reuben)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reuben
+  type: child-of
+  refs:
+  - bible:Genesis 46:9

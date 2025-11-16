@@ -1,0 +1,14 @@
+id: ohad
+type: person
+name:
+  en: Ohad
+name_disambiguous:
+  en: Ohad (son of Simeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/simeon
+  type: child-of
+  refs:
+  - bible:Genesis 46:10

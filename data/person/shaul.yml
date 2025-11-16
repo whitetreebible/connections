@@ -20,3 +20,6 @@ edges:
   type: leader-of
   refs:
   - bible:Genesis 36:37
+- target: person/shaul_son_of_simeon
+  type: name-matches
+  refs: []

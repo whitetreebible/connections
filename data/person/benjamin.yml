@@ -21,3 +21,44 @@ edges:
   refs:
   - bible:Genesis 35:18
   - bible:Genesis 35:24
+  - bible:Genesis 46:19
+- target: person/bela_son_of_benjamin
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/beker
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/ashbel
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/gera
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/naaman
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/ehi
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/rosh
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/muppim
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/huppim
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/ard
+  type: parent-of
+  refs:
+  - bible:Genesis 46:21

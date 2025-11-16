@@ -1,0 +1,14 @@
+id: areli
+type: person
+name:
+  en: Areli
+name_disambiguous:
+  en: Areli (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

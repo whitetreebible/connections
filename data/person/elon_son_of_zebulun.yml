@@ -1,0 +1,20 @@
+id: elon_son_of_zebulun
+type: person
+name:
+  en: Elon
+name_disambiguous:
+  en: Elon (son of Zebulun)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/zebulun
+  type: child-of
+  refs:
+  - bible:Genesis 46:14
+- target: person/elon
+  type: name-matches
+  refs: []
+- target: person/elon_father_of_adah
+  type: name-matches
+  refs: []

@@ -1,0 +1,14 @@
+id: ishvah
+type: person
+name:
+  en: Ishvah
+name_disambiguous:
+  en: Ishvah (son of Asher)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/asher
+  type: child-of
+  refs:
+  - bible:Genesis 46:17

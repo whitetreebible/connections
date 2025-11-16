@@ -1,0 +1,14 @@
+id: gera
+type: person
+name:
+  en: Gera
+name_disambiguous:
+  en: Gera (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

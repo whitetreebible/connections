@@ -12,6 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 38:5
+  - bible:Genesis 46:12
 - target: person/shua
   type: child-of
   refs:

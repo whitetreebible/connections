@@ -1,0 +1,14 @@
+id: rosh
+type: person
+name:
+  en: Rosh
+name_disambiguous:
+  en: Rosh (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

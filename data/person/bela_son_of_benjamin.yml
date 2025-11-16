@@ -1,0 +1,17 @@
+id: bela_son_of_benjamin
+type: person
+name:
+  en: Bela
+name_disambiguous:
+  en: Bela (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21
+- target: person/bela
+  type: name-matches
+  refs: []

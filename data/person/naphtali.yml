@@ -13,7 +13,24 @@ edges:
   refs:
   - bible:Genesis 30:7
   - bible:Genesis 35:25
+  - bible:Genesis 46:24
 - target: person/bilhah
   type: child-of
   refs:
   - bible:Genesis 30:8
+- target: person/jahzeel
+  type: parent-of
+  refs:
+  - bible:Genesis 46:24
+- target: person/guni
+  type: parent-of
+  refs:
+  - bible:Genesis 46:24
+- target: person/jezer
+  type: parent-of
+  refs:
+  - bible:Genesis 46:24
+- target: person/shillem
+  type: parent-of
+  refs:
+  - bible:Genesis 46:24

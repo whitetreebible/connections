@@ -24,3 +24,6 @@ edges:
   type: leader-of
   refs:
   - bible:Genesis 36:32
+- target: person/bela_son_of_benjamin
+  type: name-matches
+  refs: []

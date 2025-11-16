@@ -1,0 +1,14 @@
+id: pallu
+type: person
+name:
+  en: Pallu
+name_disambiguous:
+  en: Pallu (son of Reuben)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reuben
+  type: child-of
+  refs:
+  - bible:Genesis 46:9

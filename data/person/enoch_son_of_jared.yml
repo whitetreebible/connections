@@ -1,9 +1,9 @@
-id: enoch
+id: enoch_son_of_jared
 type: person
 name:
   en: Enoch
 name_disambiguous:
-  en: Enoch (son of Jared)
+  en: Enoch (walked with God)
 description:
   en: ''
 footnotes: {}
@@ -20,3 +20,6 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 5:21
+- target: person/enoch_son_of_reuben
+  type: name-matches
+  refs: []

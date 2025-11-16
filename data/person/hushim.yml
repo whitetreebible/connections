@@ -1,0 +1,14 @@
+id: hushim
+type: person
+name:
+  en: Hushim
+name_disambiguous:
+  en: Hushim (son of Dan)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/dan
+  type: child-of
+  refs:
+  - bible:Genesis 46:23

@@ -16,3 +16,6 @@ edges:
   type: member-of
   refs:
   - bible:Genesis 36:2
+- target: person/elon_son_of_zebulun
+  type: name-matches
+  refs: []

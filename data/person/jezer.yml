@@ -1,0 +1,14 @@
+id: jezer
+type: person
+name:
+  en: Jezer
+name_disambiguous:
+  en: Jezer (son of Naphtali)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/naphtali
+  type: child-of
+  refs:
+  - bible:Genesis 46:24

@@ -1,0 +1,15 @@
+id: manasseh
+type: person
+name:
+  en: Manasseh
+name_disambiguous:
+  en: Manasseh (son of Joseph)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joseph
+  type: child-of
+  refs:
+  - bible:Genesis 41:50
+  - bible:Genesis 46:20

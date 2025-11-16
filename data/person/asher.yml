@@ -13,7 +13,28 @@ edges:
   refs:
   - bible:Genesis 30:12
   - bible:Genesis 35:26
+  - bible:Genesis 46:17
 - target: person/zilpah
   type: child-of
   refs:
   - bible:Genesis 30:13
+- target: person/imnah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/ishvah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/ishvi
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/beriah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17
+- target: person/serah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17

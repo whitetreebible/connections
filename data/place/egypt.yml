@@ -16,3 +16,8 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 37:28
+- target: place/goshen
+  type: associated-with
+  refs:
+  - bible:Genesis 46:28
+

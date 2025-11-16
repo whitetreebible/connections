@@ -12,6 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 38:3
+  - bible:Genesis 46:12
 - target: person/shua
   type: child-of
   refs:
@@ -20,3 +21,7 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 38:6
+- target: place/canaan
+  type: died-in
+  refs:
+  - bible:Genesis 46:12

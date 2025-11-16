@@ -1,0 +1,14 @@
+id: jamin
+type: person
+name:
+  en: Jamin
+name_disambiguous:
+  en: Jamin (son of Simeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/simeon
+  type: child-of
+  refs:
+  - bible:Genesis 46:10

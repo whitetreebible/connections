@@ -1,0 +1,18 @@
+id: baker_of_pharaoh
+type: person
+name:
+  en: baker of Pharaoh
+name_disambiguous:
+  en: baker of Pharaoh (in Joseph's time)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/pharaoh_of_joseph
+  type: led-by
+  refs:
+  - bible:Genesis 40:1
+- target: person/joseph
+  type: led-by
+  refs:
+  - bible:Genesis 40:4

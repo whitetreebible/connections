@@ -1,0 +1,18 @@
+id: simeon_canaanite_wife
+type: person
+name:
+  en: Simeon_Canaanite_Wife
+name_disambiguous:
+  en: Simeon_Canaanite_Wife (father of Shaul)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/shaul_son_of_simeon
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/simeon
+  type: married-to
+  refs:
+  - bible:Genesis 46:10

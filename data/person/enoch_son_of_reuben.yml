@@ -1,0 +1,20 @@
+id: enoch_son_of_reuben
+type: person
+name:
+  en: Enoch
+name_disambiguous:
+  en: Enoch (son of Reuben)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reuben
+  type: child-of
+  refs:
+  - bible:Genesis 46:9
+- target: person/enoch_son_of_cain
+  type: name-matches
+  refs: []
+- target: person/enoch_son_of_jared
+  type: name-matches
+  refs: []

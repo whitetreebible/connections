@@ -1,0 +1,14 @@
+id: shuni
+type: person
+name:
+  en: Shuni
+name_disambiguous:
+  en: Shuni (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

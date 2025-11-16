@@ -13,6 +13,7 @@ edges:
   refs:
   - bible:Genesis 30:24
   - bible:Genesis 35:24
+  - bible:Genesis 46:19
 - target: person/rachel
   type: child-of
   refs:
@@ -33,3 +34,45 @@ edges:
   type: led-by
   refs:
   - bible:Genesis 37:36
+- target: person/cupbearer_of_pharaoh
+  type: leader-of
+  refs:
+  - bible:Genesis 40:4
+- target: person/baker_of_pharaoh
+  type: leader-of
+  refs:
+  - bible:Genesis 40:4
+- target: person/cupbearer_of_pharaoh
+  type: assisted
+  refs:
+  - bible:Genesis 40:4
+- target: person/baker_of_pharaoh
+  type: assisted
+  refs:
+  - bible:Genesis 40:4
+- target: person/pharaoh_of_joseph
+  type: assisted
+  refs:
+  - bible:Genesis 41:14
+- target: person/pharaoh_of_joseph
+  type: led-by
+  refs:
+  - bible:Genesis 41:39
+- target: person/zaphenath_paneah
+  type: name-matches
+  refs:
+  - bible:Genesis 41:45
+- target: person/asenath
+  type: married-to
+  refs:
+  - bible:Genesis 41:45
+- target: person/manasseh
+  type: parent-of
+  refs:
+  - bible:Genesis 41:50
+  - bible:Genesis 46:20
+- target: person/ephraim
+  type: parent-of
+  refs:
+  - bible:Genesis 41:51
+  - bible:Genesis 46:20

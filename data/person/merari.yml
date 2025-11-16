@@ -1,0 +1,14 @@
+id: merari
+type: person
+name:
+  en: Merari
+name_disambiguous:
+  en: Merari (son of Levi)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/levi
+  type: child-of
+  refs:
+  - bible:Genesis 46:11

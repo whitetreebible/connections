@@ -16,6 +16,7 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 30:9
+  - bible:Genesis 46:18
 - target: person/gad
   type: parent-of
   refs:

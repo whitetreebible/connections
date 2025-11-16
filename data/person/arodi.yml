@@ -1,0 +1,14 @@
+id: arodi
+type: person
+name:
+  en: Arodi
+name_disambiguous:
+  en: Arodi (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

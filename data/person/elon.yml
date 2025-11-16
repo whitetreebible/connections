@@ -12,3 +12,6 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 26:34
+- target: person/elon_son_of_zebulun
+  type: name-matches
+  refs: []

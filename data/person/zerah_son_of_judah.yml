@@ -12,6 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 38:30
+  - bible:Genesis 46:12
 - target: person/zerah_from_bozrah
   type: name-matches
   refs: []

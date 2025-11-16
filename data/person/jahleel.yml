@@ -1,0 +1,14 @@
+id: jahleel
+type: person
+name:
+  en: Jahleel
+name_disambiguous:
+  en: Jahleel (son of Zebulun)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/zebulun
+  type: child-of
+  refs:
+  - bible:Genesis 46:14

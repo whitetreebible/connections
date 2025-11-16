@@ -13,6 +13,7 @@ edges:
   refs:
   - bible:Genesis 29:32
   - bible:Genesis 35:23
+  - bible:Genesis 46:9
 - target: person/leah
   type: child-of
   refs:
@@ -21,3 +22,19 @@ edges:
   type: attacked
   refs:
   - bible:Genesis 35:22
+- target: person/enoch_son_of_reuben
+  type: parent-of
+  refs:
+  - bible:Genesis 46:9
+- target: person/pallu
+  type: parent-of
+  refs:
+  - bible:Genesis 46:9
+- target: person/hezron_son_of_reuben
+  type: parent-of
+  refs:
+  - bible:Genesis 46:9
+- target: person/carmi
+  type: parent-of
+  refs:
+  - bible:Genesis 46:9

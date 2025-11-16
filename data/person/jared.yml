@@ -12,7 +12,7 @@ edges:
   type: child-of
   refs:
   - bible:Genesis 5:15
-- target: person/enoch
+- target: person/enoch_son_of_jared
   type: parent-of
   refs:
   - bible:Genesis 5:18

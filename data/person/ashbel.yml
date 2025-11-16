@@ -1,0 +1,14 @@
+id: ashbel
+type: person
+name:
+  en: Ashbel
+name_disambiguous:
+  en: Ashbel (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

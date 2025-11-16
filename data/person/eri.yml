@@ -1,0 +1,14 @@
+id: eri
+type: person
+name:
+  en: Eri
+name_disambiguous:
+  en: Eri (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

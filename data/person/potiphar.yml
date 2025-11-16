@@ -20,3 +20,11 @@ edges:
   type: led-by
   refs:
   - bible:Genesis 37:36
+- target: group/egyptians
+  type: member-of
+  refs:
+  - bible:Genesis 39:1
+- target: person/potiphar_wife
+  type: married-to
+  refs:
+  - bible:Genesis 39:7

@@ -1,0 +1,14 @@
+id: sered
+type: person
+name:
+  en: Sered
+name_disambiguous:
+  en: Sered (son of Zebulun)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/zebulun
+  type: child-of
+  refs:
+  - bible:Genesis 46:14

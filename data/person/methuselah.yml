@@ -8,7 +8,7 @@ description:
   en: ''
 footnotes: {}
 edges:
-- target: person/enoch
+- target: person/enoch_son_of_jared
   type: child-of
   refs:
   - bible:Genesis 5:21

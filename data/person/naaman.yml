@@ -1,0 +1,14 @@
+id: naaman
+type: person
+name:
+  en: Naaman
+name_disambiguous:
+  en: Naaman (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

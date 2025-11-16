@@ -13,7 +13,20 @@ edges:
   refs:
   - bible:Genesis 30:20
   - bible:Genesis 35:23
+  - bible:Genesis 46:14
 - target: person/leah
   type: child-of
   refs:
   - bible:Genesis 30:20
+- target: person/sered
+  type: parent-of
+  refs:
+  - bible:Genesis 46:14
+- target: person/elon_son_of_zebulun
+  type: parent-of
+  refs:
+  - bible:Genesis 46:14
+- target: person/jahleel
+  type: parent-of
+  refs:
+  - bible:Genesis 46:14

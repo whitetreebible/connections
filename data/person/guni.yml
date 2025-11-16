@@ -1,0 +1,14 @@
+id: guni
+type: person
+name:
+  en: Guni
+name_disambiguous:
+  en: Guni (son of Naphtali)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/naphtali
+  type: child-of
+  refs:
+  - bible:Genesis 46:24

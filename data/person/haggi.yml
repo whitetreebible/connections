@@ -1,0 +1,14 @@
+id: haggi
+type: person
+name:
+  en: Haggi
+name_disambiguous:
+  en: Haggi (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

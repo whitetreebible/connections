@@ -12,3 +12,7 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 25:20
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 46:15

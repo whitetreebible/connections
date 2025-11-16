@@ -24,6 +24,7 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 29:28
+  - bible:Genesis 46:19
 - target: person/bilhah
   type: leader-of
   refs:

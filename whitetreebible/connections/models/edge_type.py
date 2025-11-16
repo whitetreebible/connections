@@ -52,6 +52,7 @@ class EdgeType(Enum):
     PROMISED = "promised"           # Asymmetrical, promiser → promised
     ATTACKED = "attacked"           # Asymmetrical, attacker → attacked
     LOVED = "loved"                 # Asymmetrical, lover → loved
+    EXTRAMARITAL_WITH = "extramarital-with" # Asymmetrical, adulterer → extramarital partner
 
     # Textual / Symbolic
     NAME_MATCHES = "name-matches"
@@ -142,6 +143,7 @@ EDGE_GROUPS_ASSOCIATIONS = {
         EdgeType.PROMISED,
         EdgeType.ATTACKED,
         EdgeType.LOVED,
+        EdgeType.EXTRAMARITAL_WITH,
     },
     EdgeGroups.TEXTUAL: {
         EdgeType.NAME_MATCHES,
@@ -171,6 +173,7 @@ RECIPROCALS = {
     EdgeType.WORKED_WITH: EdgeType.WORKED_WITH,         # symmetric
     EdgeType.NAME_MATCHES: EdgeType.NAME_MATCHES,       # symmetric
     EdgeType.MENTIONED_WITH: EdgeType.MENTIONED_WITH,   # symmetric
+    EdgeType.EXTRAMARITAL_WITH: EdgeType.EXTRAMARITAL_WITH, # symmetric
 }
 
 
@@ -198,6 +201,7 @@ EDGE_TYPE_LANG_LABELS = {
         EdgeType.CURSED: "cursed",
         EdgeType.ATTACKED: "attacked",
         EdgeType.LOVED: "loved",
+        EdgeType.EXTRAMARITAL_WITH: "extramarital relations with",
         # Geographic
         EdgeType.RESIDENT_OF: "resident of",
         EdgeType.VISITED: "visited",

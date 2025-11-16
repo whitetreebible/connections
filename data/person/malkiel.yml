@@ -1,0 +1,14 @@
+id: malkiel
+type: person
+name:
+  en: Malkiel
+name_disambiguous:
+  en: Malkiel (son of Beriah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/beriah
+  type: child-of
+  refs:
+  - bible:Genesis 46:17

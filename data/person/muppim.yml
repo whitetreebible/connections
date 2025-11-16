@@ -1,0 +1,14 @@
+id: muppim
+type: person
+name:
+  en: Muppim
+name_disambiguous:
+  en: Muppim (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

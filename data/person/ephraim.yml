@@ -1,0 +1,15 @@
+id: ephraim
+type: person
+name:
+  en: Ephraim
+name_disambiguous:
+  en: Ephraim (son of Joseph)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/joseph
+  type: child-of
+  refs:
+  - bible:Genesis 41:51
+  - bible:Genesis 46:20

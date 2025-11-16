@@ -30,3 +30,11 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 29:16
+- target: person/leah
+  type: gave-to
+  refs:
+  - bible:Genesis 46:18
+- target: person/rachel
+  type: gave-to
+  refs:
+  - bible:Genesis 46:25

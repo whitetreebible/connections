@@ -1,0 +1,18 @@
+id: cupbearer_of_pharaoh
+type: person
+name:
+  en: Cupbearer_Of_Pharaoh
+name_disambiguous:
+  en: Cupbearer_Of_Pharaoh (led by Pharaoh Of Joseph)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/pharaoh_of_joseph
+  type: led-by
+  refs:
+  - bible:Genesis 40:1
+- target: person/joseph
+  type: led-by
+  refs:
+  - bible:Genesis 40:4

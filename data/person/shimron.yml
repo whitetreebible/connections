@@ -1,0 +1,14 @@
+id: shimron
+type: person
+name:
+  en: Shimron
+name_disambiguous:
+  en: Shimron (son of Issachar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/issachar
+  type: child-of
+  refs:
+  - bible:Genesis 46:13

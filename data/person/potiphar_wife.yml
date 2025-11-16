@@ -1,0 +1,18 @@
+id: potiphar_wife
+type: person
+name:
+  en: Potiphar's wife
+name_disambiguous:
+  en: Potiphar's wife (unnamed)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/potiphar
+  type: married-to
+  refs:
+  - bible:Genesis 39:7
+- target: person/joseph
+  type: attacked
+  refs:
+  - bible:Genesis 39:12

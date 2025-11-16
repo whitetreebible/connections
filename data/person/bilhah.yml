@@ -16,6 +16,7 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 30:4
+  - bible:Genesis 46:25
 - target: person/dan
   type: parent-of
   refs:

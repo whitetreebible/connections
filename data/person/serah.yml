@@ -1,0 +1,14 @@
+id: serah
+type: person
+name:
+  en: Serah
+name_disambiguous:
+  en: Serah (daughter of Asher)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/asher
+  type: child-of
+  refs:
+  - bible:Genesis 46:17

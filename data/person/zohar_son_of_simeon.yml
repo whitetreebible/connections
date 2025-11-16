@@ -1,0 +1,17 @@
+id: zohar_son_of_simeon
+type: person
+name:
+  en: Zohar
+name_disambiguous:
+  en: Zohar (son of Simeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/simeon
+  type: child-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/zohar
+  type: name-matches
+  refs: []

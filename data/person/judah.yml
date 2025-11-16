@@ -8,7 +8,7 @@ description:
   en: Judah was the fourth son of Jacob and Leah, and his descendants formed the tribe
     of Judah, one of the twelve tribes of Israel. He is a significant figure in the
     biblical narrative, known for his role in the story of Joseph and for being an
-    ancestor of King David and, according to Christian tradition, Jesus Christ.
+    ancestor of King David and ultimately, Jesus Christ.
 footnotes: {}
 edges:
 - target: person/ruth
@@ -19,6 +19,7 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 38:29
+  - bible:Genesis 46:12
   - bible:Ruth 4:12
 - target: person/tamar
   type: married-to
@@ -29,6 +30,7 @@ edges:
   refs:
   - bible:Genesis 29:35
   - bible:Genesis 35:23
+  - bible:Genesis 46:12
 - target: person/leah
   type: child-of
   refs:
@@ -46,14 +48,17 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 38:3
+  - bible:Genesis 46:12
 - target: person/onan
   type: parent-of
   refs:
   - bible:Genesis 38:4
+  - bible:Genesis 46:12
 - target: person/shelah_son_of_judah
   type: parent-of
   refs:
   - bible:Genesis 38:5
+  - bible:Genesis 46:12
 - target: place/chezib
   type: resident-of
   refs:
@@ -74,3 +79,4 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 38:30
+  - bible:Genesis 46:12

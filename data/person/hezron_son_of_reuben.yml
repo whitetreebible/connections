@@ -1,0 +1,17 @@
+id: hezron_son_of_reuben
+type: person
+name:
+  en: Hezron
+name_disambiguous:
+  en: Hezron (son of Reuben)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/reuben
+  type: child-of
+  refs:
+  - bible:Genesis 46:9
+- target: person/hezron
+  type: name-matches
+  refs: []

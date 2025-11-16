@@ -1,0 +1,14 @@
+id: tolah
+type: person
+name:
+  en: Tolah
+name_disambiguous:
+  en: Tolah (son of Issachar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/issachar
+  type: child-of
+  refs:
+  - bible:Genesis 46:13

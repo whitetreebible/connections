@@ -16,7 +16,10 @@ edges:
   type: parent-of
   refs:
   - bible:Genesis 4:18
-- target: person/enoch
+- target: person/enoch_son_of_jared
   type: name-matches
   refs:
   - bible:Genesis 4:17
+- target: person/enoch_son_of_reuben
+  type: name-matches
+  refs: []

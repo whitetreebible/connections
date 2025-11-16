@@ -13,6 +13,7 @@ edges:
   refs:
   - bible:Genesis 30:21
   - bible:Genesis 34:1
+  - bible:Genesis 46:15
 - target: person/leah
   type: child-of
   refs:

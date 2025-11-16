@@ -108,3 +108,7 @@ edges:
   type: blessed
   refs:
   - bible:Genesis 25:11
+- target: person/jacob
+  type: visited
+  refs:
+  - bible:Genesis 46:2

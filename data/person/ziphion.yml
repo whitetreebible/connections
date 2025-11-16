@@ -1,0 +1,14 @@
+id: ziphion
+type: person
+name:
+  en: Ziphion
+name_disambiguous:
+  en: Ziphion (son of Gad)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/gad
+  type: child-of
+  refs:
+  - bible:Genesis 46:16

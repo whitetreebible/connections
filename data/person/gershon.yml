@@ -1,0 +1,14 @@
+id: gershon
+type: person
+name:
+  en: Gershon
+name_disambiguous:
+  en: Gershon (son of Levi)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/levi
+  type: child-of
+  refs:
+  - bible:Genesis 46:11

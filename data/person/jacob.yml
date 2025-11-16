@@ -26,79 +26,96 @@ edges:
   type: married-to
   refs:
   - bible:Genesis 29:23
+  - bible:Genesis 46:15
 - target: person/rachel
   type: married-to
   refs:
   - bible:Genesis 29:28
+  - bible:Genesis 46:19
 - target: person/reuben
   type: parent-of
   refs:
   - bible:Genesis 29:32
   - bible:Genesis 35:23
+  - bible:Genesis 46:9
 - target: person/simeon
   type: parent-of
   refs:
   - bible:Genesis 29:33
   - bible:Genesis 34:25
   - bible:Genesis 35:23
+  - bible:Genesis 46:10
 - target: person/levi
   type: parent-of
   refs:
   - bible:Genesis 29:34
   - bible:Genesis 34:25
   - bible:Genesis 35:23
+  - bible:Genesis 46:11
 - target: person/judah
   type: parent-of
   refs:
   - bible:Genesis 29:35
   - bible:Genesis 35:23
+  - bible:Genesis 46:12
 - target: person/bilhah
   type: married-to
   refs:
   - bible:Genesis 30:4
+  - bible:Genesis 46:25
 - target: person/dan
   type: parent-of
   refs:
   - bible:Genesis 30:5
   - bible:Genesis 35:25
+  - bible:Genesis 46:23
 - target: person/naphtali
   type: parent-of
   refs:
   - bible:Genesis 30:7
   - bible:Genesis 35:25
+  - bible:Genesis 46:24
 - target: person/zilpah
   type: married-to
   refs:
   - bible:Genesis 30:9
+  - bible:Genesis 46:18
 - target: person/gad
   type: parent-of
   refs:
   - bible:Genesis 30:10
   - bible:Genesis 35:26
+  - bible:Genesis 46:16
 - target: person/asher
   type: parent-of
   refs:
   - bible:Genesis 30:12
   - bible:Genesis 35:26
+  - bible:Genesis 46:17
 - target: person/issachar
   type: parent-of
   refs:
   - bible:Genesis 30:18
   - bible:Genesis 35:23
+  - bible:Genesis 46:13
 - target: person/zebulun
   type: parent-of
   refs:
   - bible:Genesis 30:20
   - bible:Genesis 35:23
+  - bible:Genesis 46:14
 - target: person/dinah
   type: parent-of
   refs:
   - bible:Genesis 30:21
+  - bible:Genesis 34:1
+  - bible:Genesis 46:15
 - target: person/joseph
   type: parent-of
   refs:
   - bible:Genesis 30:24
   - bible:Genesis 35:24
+  - bible:Genesis 46:19
 - target: person/rachel
   type: cursed
   refs:
@@ -119,15 +136,12 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 33:19
-- target: person/dinah
-  type: parent-of
-  refs:
-  - bible:Genesis 34:1
 - target: person/benjamin
   type: parent-of
   refs:
   - bible:Genesis 35:18
   - bible:Genesis 35:24
+  - bible:Genesis 46:19
 - target: place/eder
   type: resident-of
   refs:
@@ -140,3 +154,23 @@ edges:
   type: visited
   refs:
   - bible:Genesis 35:27
+- target: place/beer_sheba
+  type: visited
+  refs:
+  - bible:Genesis 46:1
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 46:8
+- target: place/paddan_aram
+  type: resident-of
+  refs:
+  - bible:Genesis 46:15
+- target: person/beriah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:17
+- target: place/goshen
+  type: resident-of
+  refs:
+  - bible:Genesis 46:28

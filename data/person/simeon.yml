@@ -14,6 +14,7 @@ edges:
   - bible:Genesis 29:33
   - bible:Genesis 34:25
   - bible:Genesis 35:23
+  - bible:Genesis 46:10
 - target: person/leah
   type: child-of
   refs:
@@ -26,3 +27,31 @@ edges:
   type: defeated
   refs:
   - bible:Genesis 34:25
+- target: person/jemuel
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/jamin
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/ohad
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/jakin
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/zohar_son_of_simeon
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/shaul_son_of_simeon
+  type: parent-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/simeon_canaanite_wife
+  type: married-to
+  refs:
+  - bible:Genesis 46:10

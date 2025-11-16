@@ -1,0 +1,14 @@
+id: shillem
+type: person
+name:
+  en: Shillem
+name_disambiguous:
+  en: Shillem (son of Naphtali)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/naphtali
+  type: child-of
+  refs:
+  - bible:Genesis 46:24

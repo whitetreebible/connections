@@ -1,0 +1,24 @@
+id: potiphera
+type: person
+name:
+  en: Potiphera
+name_disambiguous:
+  en: Potiphera (father of Asenath)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/asenath
+  type: parent-of
+  refs:
+  - bible:Genesis 41:45
+  - bible:Genesis 46:20
+- target: role/priest
+  type: role-as
+  refs:
+  - bible:Genesis 41:45
+  - bible:Genesis 46:20
+- target: place/on
+  type: associated-with
+  refs:
+  - bible:Genesis 41:45

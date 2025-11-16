@@ -1,0 +1,14 @@
+id: hamul
+type: person
+name:
+  en: Hamul
+name_disambiguous:
+  en: Hamul (son of Perez)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/perez
+  type: child-of
+  refs:
+  - bible:Genesis 46:12

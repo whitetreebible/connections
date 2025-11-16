@@ -1,0 +1,14 @@
+id: heber
+type: person
+name:
+  en: Heber
+name_disambiguous:
+  en: Heber (son of Beriah)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/beriah
+  type: child-of
+  refs:
+  - bible:Genesis 46:17

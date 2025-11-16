@@ -13,7 +13,24 @@ edges:
   refs:
   - bible:Genesis 30:18
   - bible:Genesis 35:23
+  - bible:Genesis 46:13
 - target: person/leah
   type: child-of
   refs:
   - bible:Genesis 30:18
+- target: person/tolah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:13
+- target: person/puvah
+  type: parent-of
+  refs:
+  - bible:Genesis 46:13
+- target: person/iob
+  type: parent-of
+  refs:
+  - bible:Genesis 46:13
+- target: person/shimron
+  type: parent-of
+  refs:
+  - bible:Genesis 46:13

@@ -13,7 +13,36 @@ edges:
   refs:
   - bible:Genesis 30:10
   - bible:Genesis 35:26
+  - bible:Genesis 46:16
 - target: person/zilpah
   type: child-of
   refs:
   - bible:Genesis 30:11
+- target: person/ziphion
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16
+- target: person/haggi
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16
+- target: person/shuni
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16
+- target: person/ezbon
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16
+- target: person/eri
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16
+- target: person/arodi
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16
+- target: person/areli
+  type: parent-of
+  refs:
+  - bible:Genesis 46:16

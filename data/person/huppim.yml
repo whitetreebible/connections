@@ -1,0 +1,14 @@
+id: huppim
+type: person
+name:
+  en: Huppim
+name_disambiguous:
+  en: Huppim (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

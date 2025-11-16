@@ -1,0 +1,17 @@
+id: shaul_son_of_simeon
+type: person
+name:
+  en: Shaul
+name_disambiguous:
+  en: Shaul (son of Simeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/simeon
+  type: child-of
+  refs:
+  - bible:Genesis 46:10
+- target: person/shaul
+  type: name-matches
+  refs: []

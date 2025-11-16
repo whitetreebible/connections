@@ -1,0 +1,14 @@
+id: jemuel
+type: person
+name:
+  en: Jemuel
+name_disambiguous:
+  en: Jemuel (son of Simeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/simeon
+  type: child-of
+  refs:
+  - bible:Genesis 46:10

@@ -1,0 +1,14 @@
+id: beker
+type: person
+name:
+  en: Beker
+name_disambiguous:
+  en: Beker (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

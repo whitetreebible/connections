@@ -13,3 +13,6 @@ edges:
   refs:
   - bible:Genesis 23:8
   - bible:Genesis 25:9
+- target: person/zohar_son_of_simeon
+  type: name-matches
+  refs: []

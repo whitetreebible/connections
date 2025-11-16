@@ -1,0 +1,14 @@
+id: puvah
+type: person
+name:
+  en: Puvah
+name_disambiguous:
+  en: Puvah (son of Issachar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/issachar
+  type: child-of
+  refs:
+  - bible:Genesis 46:13

@@ -1,0 +1,14 @@
+id: iob
+type: person
+name:
+  en: Iob
+name_disambiguous:
+  en: Iob (son of Issachar)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/issachar
+  type: child-of
+  refs:
+  - bible:Genesis 46:13

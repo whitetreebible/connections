@@ -1,0 +1,14 @@
+id: jakin
+type: person
+name:
+  en: Jakin
+name_disambiguous:
+  en: Jakin (son of Simeon)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/simeon
+  type: child-of
+  refs:
+  - bible:Genesis 46:10

@@ -1,0 +1,14 @@
+id: ishvi
+type: person
+name:
+  en: Ishvi
+name_disambiguous:
+  en: Ishvi (son of Asher)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/asher
+  type: child-of
+  refs:
+  - bible:Genesis 46:17

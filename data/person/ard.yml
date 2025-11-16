@@ -1,0 +1,14 @@
+id: ard
+type: person
+name:
+  en: Ard
+name_disambiguous:
+  en: Ard (son of Benjamin)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/benjamin
+  type: child-of
+  refs:
+  - bible:Genesis 46:21

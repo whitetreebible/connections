@@ -13,7 +13,12 @@ edges:
   refs:
   - bible:Genesis 30:5
   - bible:Genesis 35:25
+  - bible:Genesis 46:23
 - target: person/bilhah
   type: child-of
   refs:
   - bible:Genesis 30:6
+- target: person/hushim
+  type: parent-of
+  refs:
+  - bible:Genesis 46:23
