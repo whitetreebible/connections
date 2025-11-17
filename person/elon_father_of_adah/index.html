@@ -238,6 +238,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -250,43 +257,56 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Member of</strong> <a href="../../group/hittites/">Hittites</a> (<a href="https://biblehub.com/context/genesis/36-2.htm" target="_blank">Genesis 36:2</a>)</li>
+<li><strong>Name matches</strong> <a href="../../person/elon_son_of_zebulun/">Elon (son of Zebulun)</a></li>
 <li><strong>Parent of</strong> <a href="../../person/adah_wife_of_esau/">Adah</a> (<a href="https://biblehub.com/context/genesis/36-2.htm" target="_blank">Genesis 36:2</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/elon_father_of_adah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/elon_father_of_adah(["Elon"])
-    person/eliphaz(["Eliphaz"])
     person/canaan(["Canaan"])
-    person/adah_wife_of_esau(["Adah"])
+    person/eliphaz(["Eliphaz"])
+    person/elon_father_of_adah(["Elon"])
     person/esau(["Esau"])
-    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
-    click person/eliphaz "../../person/eliphaz/"
+    person/adah_wife_of_esau(["Adah"])
     click person/canaan "../../person/canaan/"
-    click person/adah_wife_of_esau "../../person/adah_wife_of_esau/"
+    click person/eliphaz "../../person/eliphaz/"
+    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
     click person/esau "../../person/esau/"
-    person/elon_father_of_adah --&gt;|parent of| person/adah_wife_of_esau
-    person/canaan .-&gt;|ancestor of| person/adah_wife_of_esau
-    person/adah_wife_of_esau --&gt;|parent of| person/eliphaz
+    click person/adah_wife_of_esau "../../person/adah_wife_of_esau/"
     person/adah_wife_of_esau &lt;--&gt;|married to| person/esau
+    person/adah_wife_of_esau --&gt;|parent of| person/eliphaz
+    person/canaan .-&gt;|ancestor of| person/adah_wife_of_esau
+    person/elon_father_of_adah --&gt;|parent of| person/adah_wife_of_esau
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/elon_father_of_adah fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/judith(["Judith"])
-    person/elon_father_of_adah(["Elon"])
     group/hittites(["Hittites"])
+    person/elon_father_of_adah(["Elon"])
     person/basemath(["Basemath"])
     person/ephron(["Ephron"])
     click person/judith "../../person/judith/"
-    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
     click group/hittites "../../group/hittites/"
+    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
     click person/basemath "../../person/basemath/"
     click person/ephron "../../person/ephron/"
-    person/judith --&gt;|member of| group/hittites
     person/elon_father_of_adah --&gt;|member of| group/hittites
+    person/judith --&gt;|member of| group/hittites
     person/basemath --&gt;|member of| group/hittites
     person/ephron --&gt;|member of| group/hittites
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style person/elon_father_of_adah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/elon(["Elon"])
+    person/elon_father_of_adah(["Elon"])
+    person/elon_son_of_zebulun(["Elon"])
+    click person/elon "../../person/elon/"
+    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
+    click person/elon_son_of_zebulun "../../person/elon_son_of_zebulun/"
+    person/elon_son_of_zebulun &lt;--&gt;|name matches| person/elon
+    person/elon_son_of_zebulun &lt;--&gt;|name matches| person/elon_father_of_adah
 </div>
 </article>
 </div>

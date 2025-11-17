@@ -243,25 +243,25 @@
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/mahalalel/">Mahalalel</a> (<a href="https://biblehub.com/context/genesis/5-15.htm" target="_blank">Genesis 5:15</a>)</li>
-<li><strong>Parent of</strong> <a href="../../person/enoch/">Enoch</a> (<a href="https://biblehub.com/context/genesis/5-18.htm" target="_blank">Genesis 5:18</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/enoch_son_of_jared/">Enoch</a> (<a href="https://biblehub.com/context/genesis/5-18.htm" target="_blank">Genesis 5:18</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/jared fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/enoch(["Enoch"])
-    person/mahalalel(["Mahalalel"])
     person/kenan(["Kenan"])
+    person/enoch_son_of_jared(["Enoch"])
     person/methuselah(["Methuselah"])
+    person/mahalalel(["Mahalalel"])
     person/jared(["Jared"])
-    click person/enoch "../../person/enoch/"
-    click person/mahalalel "../../person/mahalalel/"
     click person/kenan "../../person/kenan/"
+    click person/enoch_son_of_jared "../../person/enoch_son_of_jared/"
     click person/methuselah "../../person/methuselah/"
+    click person/mahalalel "../../person/mahalalel/"
     click person/jared "../../person/jared/"
-    person/enoch --&gt;|parent of| person/methuselah
-    person/jared --&gt;|parent of| person/enoch
+    person/enoch_son_of_jared --&gt;|parent of| person/methuselah
     person/mahalalel --&gt;|parent of| person/jared
     person/kenan --&gt;|parent of| person/mahalalel
+    person/jared --&gt;|parent of| person/enoch_son_of_jared
 </div>
 </article>
 </div>

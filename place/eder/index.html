@@ -246,46 +246,89 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/eder fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/eder(["Eder"])
-    place/paddan-aram(["Paddan Aram"])
-    place/succoth(["Succoth"])
-    person/jacob(["Jacob"])
     place/mamre(["Mamre"])
-    place/shechem(["Shechem"])
+    place/rameses(["Rameses"])
+    place/succoth(["Succoth"])
+    being/god(["God"])
+    place/paddan_aram(["Paddan Aram"])
+    place/paddan-aram(["Paddan Aram"])
+    place/beer_sheba(["Beer Sheba"])
+    being/el_shaddai(["El Shaddai"])
+    place/eder(["Eder"])
+    place/goshen(["Goshen"])
+    person/jacob(["Jacob"])
     person/isaac(["Isaac"])
-    click place/eder "../../place/eder/"
-    click place/paddan-aram "../../place/paddan-aram/"
-    click place/succoth "../../place/succoth/"
-    click person/jacob "../../person/jacob/"
+    place/machpelah(["Machpelah"])
+    place/shechem(["Shechem"])
     click place/mamre "../../place/mamre/"
-    click place/shechem "../../place/shechem/"
+    click place/rameses "../../place/rameses/"
+    click place/succoth "../../place/succoth/"
+    click being/god "../../being/god/"
+    click place/paddan_aram "../../place/paddan_aram/"
+    click place/paddan-aram "../../place/paddan-aram/"
+    click place/beer_sheba "../../place/beer_sheba/"
+    click being/el_shaddai "../../being/el_shaddai/"
+    click place/eder "../../place/eder/"
+    click place/goshen "../../place/goshen/"
+    click person/jacob "../../person/jacob/"
     click person/isaac "../../person/isaac/"
-    person/jacob .-&gt;|visited| place/paddan-aram
-    person/jacob --&gt;|resident of| place/eder
-    person/jacob --&gt;|resident of| place/shechem
+    click place/machpelah "../../place/machpelah/"
+    click place/shechem "../../place/shechem/"
+    being/el_shaddai .-&gt;|visited| person/jacob
+    person/jacob --&gt;|buried in| place/machpelah
+    person/jacob --&gt;|resident of| place/rameses
+    person/jacob --&gt;|resident of| place/goshen
+    person/jacob --&gt;|died in| place/goshen
     person/jacob .-&gt;|visited| person/isaac
-    person/jacob .-&gt;|visited| place/mamre
     person/jacob --&gt;|resident of| place/succoth
+    person/jacob --&gt;|resident of| place/eder
+    person/jacob .-&gt;|visited| place/mamre
+    person/jacob .-&gt;|visited| place/beer_sheba
+    person/jacob --&gt;|resident of| place/paddan_aram
+    being/god .-&gt;|visited| person/jacob
+    person/jacob .-&gt;|visited| place/paddan-aram
+    person/jacob --&gt;|resident of| place/shechem
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/eder fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/eder(["Eder"])
-    place/succoth(["Succoth"])
-    person/jacob(["Jacob"])
-    place/shechem(["Shechem"])
-    person/israel(["Israel"])
+    place/luz(["Luz"])
     group/sons_of_hamor(["sons of Hamor"])
-    click place/eder "../../place/eder/"
-    click place/succoth "../../place/succoth/"
-    click person/jacob "../../person/jacob/"
-    click place/shechem "../../place/shechem/"
-    click person/israel "../../person/israel/"
+    place/rameses(["Rameses"])
+    place/succoth(["Succoth"])
+    object/sword(["sword"])
+    place/paddan_aram(["Paddan Aram"])
+    object/bow(["bow"])
+    place/eder(["Eder"])
+    person/israel(["Israel"])
+    place/goshen(["Goshen"])
+    person/jacob(["Jacob"])
+    place/machpelah(["Machpelah"])
+    place/shechem(["Shechem"])
+    click place/luz "../../place/luz/"
     click group/sons_of_hamor "../../group/sons_of_hamor/"
-    place/shechem .-&gt;|associated with| person/jacob
+    click place/rameses "../../place/rameses/"
+    click place/succoth "../../place/succoth/"
+    click object/sword "../../object/sword/"
+    click place/paddan_aram "../../place/paddan_aram/"
+    click object/bow "../../object/bow/"
+    click place/eder "../../place/eder/"
+    click person/israel "../../person/israel/"
+    click place/goshen "../../place/goshen/"
+    click person/jacob "../../person/jacob/"
+    click place/machpelah "../../place/machpelah/"
+    click place/shechem "../../place/shechem/"
     place/eder .-&gt;|associated with| person/jacob
-    person/israel &lt;--&gt;|name matches| person/jacob
+    person/jacob .-&gt;|associated with| place/machpelah
+    person/jacob &lt;--&gt;|name matches| person/israel
+    place/luz .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| object/bow
+    place/shechem .-&gt;|associated with| person/jacob
+    place/rameses .-&gt;|associated with| person/jacob
     place/succoth .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| object/sword
+    place/goshen .-&gt;|associated with| person/jacob
+    place/paddan_aram .-&gt;|associated with| person/jacob
     person/jacob .-&gt;|associated with| group/sons_of_hamor
 </div>
 </article>

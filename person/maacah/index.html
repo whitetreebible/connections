@@ -247,23 +247,23 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/maacah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/tebah(["Tebah"])
+    person/nahor(["Nahor"])
     person/reumah(["Reumah"])
+    person/gaham(["Gaham"])
+    person/tebah(["Tebah"])
     person/maacah(["Maacah"])
     person/tahash(["Tahash"])
-    person/nahor(["Nahor"])
-    person/gaham(["Gaham"])
-    click person/tebah "../../person/tebah/"
+    click person/nahor "../../person/nahor/"
     click person/reumah "../../person/reumah/"
+    click person/gaham "../../person/gaham/"
+    click person/tebah "../../person/tebah/"
     click person/maacah "../../person/maacah/"
     click person/tahash "../../person/tahash/"
-    click person/nahor "../../person/nahor/"
-    click person/gaham "../../person/gaham/"
-    person/reumah --&gt;|parent of| person/tahash
+    person/reumah &lt;--&gt;|married to| person/nahor
     person/reumah --&gt;|parent of| person/maacah
+    person/reumah --&gt;|parent of| person/tahash
     person/reumah --&gt;|parent of| person/gaham
     person/reumah --&gt;|parent of| person/tebah
-    person/reumah &lt;--&gt;|married to| person/nahor
 </div>
 </article>
 </div>

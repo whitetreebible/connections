@@ -271,32 +271,32 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/jobab_son_of_zerah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/baal_hanan(["Baal-Hanan"])
+    place/edom(["Edom"])
+    person/hadad_son_of_bedad(["Hadad"])
     person/husham(["Husham"])
     person/hadar(["Hadar"])
     person/bela(["Bela"])
     person/shaul(["Shaul"])
-    place/edom(["Edom"])
-    person/jobab_son_of_zerah(["Jobab"])
-    person/hadad_son_of_bedad(["Hadad"])
     person/samlah(["Samlah"])
-    person/baal_hanan(["Baal-Hanan"])
+    person/jobab_son_of_zerah(["Jobab"])
+    click person/baal_hanan "../../person/baal_hanan/"
+    click place/edom "../../place/edom/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     click person/husham "../../person/husham/"
     click person/hadar "../../person/hadar/"
     click person/bela "../../person/bela/"
     click person/shaul "../../person/shaul/"
-    click place/edom "../../place/edom/"
-    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
-    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     click person/samlah "../../person/samlah/"
-    click person/baal_hanan "../../person/baal_hanan/"
-    person/baal_hanan --&gt;|leader of| place/edom
-    place/edom --&gt;|led by| person/hadad_son_of_bedad
+    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
+    person/samlah --&gt;|leader of| place/edom
+    person/shaul --&gt;|leader of| place/edom
     person/hadar --&gt;|leader of| place/edom
     person/husham --&gt;|leader of| place/edom
-    person/shaul --&gt;|leader of| place/edom
-    person/bela --&gt;|leader of| place/edom
-    person/samlah --&gt;|leader of| place/edom
+    person/baal_hanan --&gt;|leader of| place/edom
     place/edom --&gt;|led by| person/jobab_son_of_zerah
+    person/bela --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/hadad_son_of_bedad
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
@@ -305,7 +305,7 @@
     person/jobab_son_of_zerah(["Jobab"])
     click person/jobab "../../person/jobab/"
     click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
-    person/jobab &lt;--&gt;|name matches| person/jobab_son_of_zerah
+    person/jobab_son_of_zerah &lt;--&gt;|name matches| person/jobab
 </div>
 </article>
 </div>

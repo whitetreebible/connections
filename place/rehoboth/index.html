@@ -247,11 +247,11 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/rehoboth fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/rehoboth(["Rehoboth"])
     place/euphrates(["Euphrates"])
+    place/rehoboth(["Rehoboth"])
     person/shaul(["Shaul"])
-    click place/rehoboth "../../place/rehoboth/"
     click place/euphrates "../../place/euphrates/"
+    click place/rehoboth "../../place/rehoboth/"
     click person/shaul "../../person/shaul/"
     place/rehoboth --&gt;|near| place/euphrates
     person/shaul --&gt;|resident of| place/rehoboth
@@ -259,10 +259,13 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/rehoboth fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/rehoboth(["Rehoboth"])
+    person/shaul_son_of_simeon(["Shaul"])
     person/shaul(["Shaul"])
-    click place/rehoboth "../../place/rehoboth/"
+    place/rehoboth(["Rehoboth"])
+    click person/shaul_son_of_simeon "../../person/shaul_son_of_simeon/"
     click person/shaul "../../person/shaul/"
+    click place/rehoboth "../../place/rehoboth/"
+    person/shaul &lt;--&gt;|name matches| person/shaul_son_of_simeon
     place/rehoboth .-&gt;|associated with| person/shaul
 </div>
 </article>

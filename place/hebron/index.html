@@ -247,15 +247,15 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/hebron fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/hebron(["Hebron"])
     place/mamre(["Mamre"])
+    place/hebron(["Hebron"])
     place/kiriath_arba(["Kiriath Arba"])
-    click place/hebron "../../place/hebron/"
     click place/mamre "../../place/mamre/"
+    click place/hebron "../../place/hebron/"
     click place/kiriath_arba "../../place/kiriath_arba/"
+    place/kiriath_arba &lt;--&gt;|name matches| place/mamre
     place/hebron &lt;--&gt;|name matches| place/kiriath_arba
     place/hebron &lt;--&gt;|name matches| place/mamre
-    place/kiriath_arba &lt;--&gt;|name matches| place/mamre
 </div>
 </article>
 </div>

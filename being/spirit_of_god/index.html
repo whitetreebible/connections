@@ -248,16 +248,16 @@
 <div class="mermaid">graph TD;
     style being/spirit_of_god fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/expanse(["expanse"])
-    animal/bird(["bird"])
     object/wing(["wing"])
     being/spirit_of_god(["Spirit of God"])
+    animal/bird(["bird"])
     click place/expanse "../../place/expanse/"
-    click animal/bird "../../animal/bird/"
     click object/wing "../../object/wing/"
     click being/spirit_of_god "../../being/spirit_of_god/"
-    being/spirit_of_god .-&gt;|associated with| animal/bird
-    animal/bird .-&gt;|associated with| object/wing
+    click animal/bird "../../animal/bird/"
     place/expanse .-&gt;|associated with| animal/bird
+    animal/bird .-&gt;|associated with| object/wing
+    being/spirit_of_god .-&gt;|associated with| animal/bird
 </div>
 </article>
 </div>

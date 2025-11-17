@@ -254,45 +254,66 @@
 <div class="mermaid">graph TD;
     style group/sons_of_hamor fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/hamor(["Hamor"])
-    person/shechem(["Shechem"])
     group/sons_of_hamor(["sons of Hamor"])
+    person/shechem(["Shechem"])
     click person/hamor "../../person/hamor/"
-    click person/shechem "../../person/shechem/"
     click group/sons_of_hamor "../../group/sons_of_hamor/"
+    click person/shechem "../../person/shechem/"
     person/hamor --&gt;|parent of| person/shechem
     group/sons_of_hamor --&gt;|parent of| person/shechem
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/sons_of_hamor fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/shechem(["Shechem"])
     group/sons_of_hamor(["sons of Hamor"])
     group/hivites(["Hivites"])
-    click person/shechem "../../person/shechem/"
+    person/shechem(["Shechem"])
     click group/sons_of_hamor "../../group/sons_of_hamor/"
     click group/hivites "../../group/hivites/"
-    person/shechem --&gt;|member of| group/sons_of_hamor
+    click person/shechem "../../person/shechem/"
     person/shechem --&gt;|member of| group/hivites
+    person/shechem --&gt;|member of| group/sons_of_hamor
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style group/sons_of_hamor fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/eder(["Eder"])
-    place/succoth(["Succoth"])
-    person/jacob(["Jacob"])
-    place/shechem(["Shechem"])
-    person/israel(["Israel"])
+    place/luz(["Luz"])
     group/sons_of_hamor(["sons of Hamor"])
-    click place/eder "../../place/eder/"
-    click place/succoth "../../place/succoth/"
-    click person/jacob "../../person/jacob/"
-    click place/shechem "../../place/shechem/"
-    click person/israel "../../person/israel/"
+    place/rameses(["Rameses"])
+    place/succoth(["Succoth"])
+    object/sword(["sword"])
+    place/paddan_aram(["Paddan Aram"])
+    object/bow(["bow"])
+    place/eder(["Eder"])
+    person/israel(["Israel"])
+    place/goshen(["Goshen"])
+    person/jacob(["Jacob"])
+    place/machpelah(["Machpelah"])
+    place/shechem(["Shechem"])
+    click place/luz "../../place/luz/"
     click group/sons_of_hamor "../../group/sons_of_hamor/"
+    click place/rameses "../../place/rameses/"
+    click place/succoth "../../place/succoth/"
+    click object/sword "../../object/sword/"
+    click place/paddan_aram "../../place/paddan_aram/"
+    click object/bow "../../object/bow/"
+    click place/eder "../../place/eder/"
+    click person/israel "../../person/israel/"
+    click place/goshen "../../place/goshen/"
+    click person/jacob "../../person/jacob/"
+    click place/machpelah "../../place/machpelah/"
+    click place/shechem "../../place/shechem/"
+    person/jacob .-&gt;|associated with| place/machpelah
     place/eder .-&gt;|associated with| person/jacob
+    person/jacob &lt;--&gt;|name matches| person/israel
+    place/luz .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| object/bow
     place/shechem .-&gt;|associated with| person/jacob
-    person/israel &lt;--&gt;|name matches| person/jacob
+    place/rameses .-&gt;|associated with| person/jacob
     place/succoth .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| object/sword
+    place/goshen .-&gt;|associated with| person/jacob
+    place/paddan_aram .-&gt;|associated with| person/jacob
     person/jacob .-&gt;|associated with| group/sons_of_hamor
 </div>
 </article>

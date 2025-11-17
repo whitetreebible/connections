@@ -239,13 +239,16 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/bozrah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/zerah(["Zerah"])
     person/zerah_from_bozrah(["Zerah"])
+    person/zerah_son_of_judah(["Zerah"])
     place/bozrah(["Bozrah"])
-    click person/zerah "../../person/zerah/"
+    person/zerah_son_of_reuel(["Zerah"])
     click person/zerah_from_bozrah "../../person/zerah_from_bozrah/"
+    click person/zerah_son_of_judah "../../person/zerah_son_of_judah/"
     click place/bozrah "../../place/bozrah/"
-    person/zerah &lt;--&gt;|name matches| person/zerah_from_bozrah
+    click person/zerah_son_of_reuel "../../person/zerah_son_of_reuel/"
+    person/zerah_son_of_reuel &lt;--&gt;|name matches| person/zerah_from_bozrah
+    person/zerah_son_of_judah &lt;--&gt;|name matches| person/zerah_from_bozrah
     place/bozrah .-&gt;|associated with| person/zerah_from_bozrah
 </div>
 </article>

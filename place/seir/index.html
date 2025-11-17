@@ -264,19 +264,19 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/seir fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/edomite(["Edomite"])
-    place/edom(["Edom"])
     person/seir(["Seir"])
-    person/esau(["Esau"])
+    place/edom(["Edom"])
     place/seir(["Seir"])
-    click group/edomite "../../group/edomite/"
-    click place/edom "../../place/edom/"
+    group/edomite(["Edomite"])
+    person/esau(["Esau"])
     click person/seir "../../person/seir/"
-    click person/esau "../../person/esau/"
+    click place/edom "../../place/edom/"
     click place/seir "../../place/seir/"
-    person/esau &lt;--&gt;|name matches| group/edomite
+    click group/edomite "../../group/edomite/"
+    click person/esau "../../person/esau/"
+    group/edomite &lt;--&gt;|name matches| person/esau
     place/seir .-&gt;|associated with| person/esau
-    place/seir &lt;--&gt;|name matches| person/seir
+    person/seir &lt;--&gt;|name matches| place/seir
     place/edom &lt;--&gt;|name matches| person/esau
 </div>
 </article>

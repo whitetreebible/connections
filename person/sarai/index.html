@@ -258,52 +258,52 @@
 <ul>
 <li><strong>Leader of</strong> <a href="../../person/hagar/">Hagar</a> (<a href="https://biblehub.com/context/genesis/16-1.htm" target="_blank">Genesis 16:1</a>)</li>
 <li><strong>Married to</strong> <a href="../../person/abram/">Abram</a> (<a href="https://biblehub.com/context/genesis/11-29.htm" target="_blank">Genesis 11:29</a>, <a href="https://biblehub.com/context/genesis/16-1.htm" target="_blank">Genesis 16:1</a>)</li>
-<li><strong>Name matches</strong> <a href="../../person/sarah/">Sarah (name matches Sarai)</a> (<a href="https://biblehub.com/context/genesis/17-15.htm" target="_blank">Genesis 17:15</a>)</li>
+<li><strong>Name matches</strong> <a href="../../person/sarah/">Sarah (also Sarai, wife of Abraham)</a> (<a href="https://biblehub.com/context/genesis/17-15.htm" target="_blank">Genesis 17:15</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/sarai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/hagar(["Hagar"])
     person/terah(["Terah"])
-    person/ishmael(["Ishmael"])
-    person/abram(["Abram"])
     person/sarai(["Sarai"])
-    click person/hagar "../../person/hagar/"
+    person/abram(["Abram"])
+    person/hagar(["Hagar"])
+    person/ishmael(["Ishmael"])
     click person/terah "../../person/terah/"
-    click person/ishmael "../../person/ishmael/"
-    click person/abram "../../person/abram/"
     click person/sarai "../../person/sarai/"
+    click person/abram "../../person/abram/"
+    click person/hagar "../../person/hagar/"
+    click person/ishmael "../../person/ishmael/"
+    person/hagar &lt;--&gt;|married to| person/abram
     person/terah --&gt;|parent of| person/abram
-    person/abram &lt;--&gt;|married to| person/hagar
+    person/sarai &lt;--&gt;|married to| person/abram
     person/abram --&gt;|parent of| person/ishmael
-    person/abram &lt;--&gt;|married to| person/sarai
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/sarai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/hagar(["Hagar"])
-    person/sarai(["Sarai"])
-    group/egyptians(["Egyptians"])
     person/abram(["Abram"])
-    click person/hagar "../../person/hagar/"
-    click person/sarai "../../person/sarai/"
-    click group/egyptians "../../group/egyptians/"
+    person/sarai(["Sarai"])
+    person/hagar(["Hagar"])
+    group/egyptians(["Egyptians"])
     click person/abram "../../person/abram/"
-    person/sarai --&gt;|leader of| person/hagar
-    person/hagar --&gt;|member of| group/egyptians
+    click person/sarai "../../person/sarai/"
+    click person/hagar "../../person/hagar/"
+    click group/egyptians "../../group/egyptians/"
     person/abram --&gt;|leader of| person/hagar
+    person/hagar --&gt;|member of| group/egyptians
+    person/sarai --&gt;|leader of| person/hagar
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/sarai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
-    person/sarah(["Sarah"])
     person/sarai(["Sarai"])
-    click person/abimelech "../../person/abimelech/"
-    click person/sarah "../../person/sarah/"
+    person/sarah(["Sarah"])
+    person/abimelech(["Abimelech"])
     click person/sarai "../../person/sarai/"
-    person/abimelech .-&gt;|associated with| person/sarah
+    click person/sarah "../../person/sarah/"
+    click person/abimelech "../../person/abimelech/"
     person/sarai &lt;--&gt;|name matches| person/sarah
+    person/abimelech .-&gt;|associated with| person/sarah
 </div>
 </article>
 </div>

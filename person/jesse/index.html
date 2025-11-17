@@ -251,21 +251,21 @@
     style person/jesse fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/obed(["Obed"])
     person/naomi(["Naomi"])
-    person/boaz(["Boaz"])
     person/jesse(["Jesse"])
     person/david(["David"])
     person/ruth(["Ruth"])
+    person/boaz(["Boaz"])
     click person/obed "../../person/obed/"
     click person/naomi "../../person/naomi/"
-    click person/boaz "../../person/boaz/"
     click person/jesse "../../person/jesse/"
     click person/david "../../person/david/"
     click person/ruth "../../person/ruth/"
+    click person/boaz "../../person/boaz/"
     person/boaz --&gt;|parent of| person/obed
-    person/obed --&gt;|parent of| person/jesse
-    person/ruth --&gt;|parent of| person/obed
     person/naomi --&gt;|parent of| person/obed
     person/jesse --&gt;|parent of| person/david
+    person/obed --&gt;|parent of| person/jesse
+    person/ruth --&gt;|parent of| person/obed
 </div>
 </article>
 </div>

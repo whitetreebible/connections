@@ -217,6 +217,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -228,29 +235,67 @@
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/canaan(["Canaan"])
+    person/er(["Er"])
+    person/rachel(["Rachel"])
     group/philistines(["Philistines"])
+    place/bethlehem(["Bethlehem"])
     person/abraham(["Abraham"])
+    place/canaan(["Canaan"])
+    person/jacob(["Jacob"])
+    person/onan(["Onan"])
+    place/paran(["Paran"])
+    place/machpelah(["Machpelah"])
+    person/ishmael(["Ishmael"])
+    place/shechem(["Shechem"])
+    click person/er "../../person/er/"
+    click person/rachel "../../person/rachel/"
+    click group/philistines "../../group/philistines/"
+    click place/bethlehem "../../place/bethlehem/"
+    click person/abraham "../../person/abraham/"
+    click place/canaan "../../place/canaan/"
+    click person/jacob "../../person/jacob/"
+    click person/onan "../../person/onan/"
+    click place/paran "../../place/paran/"
+    click place/machpelah "../../place/machpelah/"
+    click person/ishmael "../../person/ishmael/"
+    click place/shechem "../../place/shechem/"
+    place/shechem --&gt;|near| place/canaan
+    person/abraham --&gt;|died in| place/canaan
+    person/abraham --&gt;|resident of| group/philistines
+    person/ishmael --&gt;|resident of| place/paran
+    person/er --&gt;|died in| place/canaan
+    person/ishmael --&gt;|died in| place/canaan
+    person/rachel --&gt;|buried in| place/bethlehem
+    person/rachel --&gt;|died in| place/bethlehem
+    person/rachel --&gt;|died in| place/canaan
+    person/onan --&gt;|died in| place/canaan
+    person/jacob --&gt;|resident of| place/shechem
+    person/abraham --&gt;|buried in| place/machpelah
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style place/canaan fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    place/luz(["Luz"])
+    person/abraham(["Abraham"])
+    place/canaan(["Canaan"])
+    person/mamre(["Mamre"])
     person/jacob(["Jacob"])
     place/machpelah(["Machpelah"])
-    place/shechem(["Shechem"])
-    person/ishmael(["Ishmael"])
-    place/paran(["Paran"])
-    click place/canaan "../../place/canaan/"
-    click group/philistines "../../group/philistines/"
+    person/ephron(["Ephron"])
+    click place/luz "../../place/luz/"
     click person/abraham "../../person/abraham/"
+    click place/canaan "../../place/canaan/"
+    click person/mamre "../../person/mamre/"
     click person/jacob "../../person/jacob/"
     click place/machpelah "../../place/machpelah/"
-    click place/shechem "../../place/shechem/"
-    click person/ishmael "../../person/ishmael/"
-    click place/paran "../../place/paran/"
-    person/abraham --&gt;|buried in| place/machpelah
-    person/abraham --&gt;|died in| place/canaan
-    person/ishmael --&gt;|resident of| place/paran
-    person/ishmael --&gt;|died in| place/canaan
-    person/jacob --&gt;|resident of| place/shechem
-    person/abraham --&gt;|resident of| group/philistines
-    place/shechem --&gt;|near| place/canaan
+    click person/ephron "../../person/ephron/"
+    person/jacob .-&gt;|associated with| place/machpelah
+    place/machpelah &lt;.-&gt;|associated with| person/abraham
+    place/luz .-&gt;|associated with| person/jacob
+    place/machpelah .-&gt;|associated with| place/canaan
+    person/ephron .-&gt;|associated with| place/machpelah
+    place/luz .-&gt;|associated with| place/canaan
+    place/machpelah &lt;.-&gt;|associated with| person/mamre
 </div>
 </article>
 </div>

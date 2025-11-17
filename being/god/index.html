@@ -259,117 +259,157 @@
 <ul>
 <li><strong>Blessed</strong> <a href="../../animal/bird/">bird</a> (<a href="https://biblehub.com/context/genesis/1-22.htm" target="_blank">Genesis 1:22</a>), <a href="../../animal/sea_creature/">sea creature</a> (<a href="https://biblehub.com/context/genesis/1-22.htm" target="_blank">Genesis 1:22</a>), <a href="../../animal/sea_dragon/">sea dragon</a> (<a href="https://biblehub.com/context/genesis/1-22.htm" target="_blank">Genesis 1:22</a>), <a href="../../being/human/">human</a> (<a href="https://biblehub.com/context/genesis/1-28.htm" target="_blank">Genesis 1:28</a>), <a href="../../person/isaac/">Isaac</a> (<a href="https://biblehub.com/context/genesis/25-11.htm" target="_blank">Genesis 25:11</a>)</li>
 <li><strong>Created</strong> <a href="../../place/heavens/">heavens</a> (<a href="https://biblehub.com/context/genesis/1-1.htm" target="_blank">Genesis 1:1</a>, <a href="https://biblehub.com/context/genesis/1-8.htm" target="_blank">Genesis 1:8</a>), <a href="../../place/earth/">earth</a> (<a href="https://biblehub.com/context/genesis/1-1.htm" target="_blank">Genesis 1:1</a>), <a href="../../concept/light/">light</a> (<a href="https://biblehub.com/context/genesis/1-3.htm" target="_blank">Genesis 1:3</a>), <a href="../../concept/night/">night</a> (<a href="https://biblehub.com/context/genesis/1-5.htm" target="_blank">Genesis 1:5</a>), <a href="../../concept/day/">day</a> (<a href="https://biblehub.com/context/genesis/1-5.htm" target="_blank">Genesis 1:5</a>), <a href="../../place/expanse/">expanse</a> (<a href="https://biblehub.com/context/genesis/1-6.htm" target="_blank">Genesis 1:6</a>), <a href="../../concept/dry_land/">dry_land</a> (<a href="https://biblehub.com/context/genesis/1-9.htm" target="_blank">Genesis 1:9</a>), <a href="../../plant/vegetation/">vegetation</a> (<a href="https://biblehub.com/context/genesis/1-11.htm" target="_blank">Genesis 1:11</a>), <a href="../../object/lights/">lights</a> (<a href="https://biblehub.com/context/genesis/1-14.htm" target="_blank">Genesis 1:14</a>), <a href="../../object/greater_light/">greater light</a> (<a href="https://biblehub.com/context/genesis/1-16.htm" target="_blank">Genesis 1:16</a>), <a href="../../object/lesser_light/">lesser light</a> (<a href="https://biblehub.com/context/genesis/1-16.htm" target="_blank">Genesis 1:16</a>), <a href="../../animal/bird/">bird</a> (<a href="https://biblehub.com/context/genesis/1-20.htm" target="_blank">Genesis 1:20</a>), <a href="../../animal/sea_dragon/">sea dragon</a> (<a href="https://biblehub.com/context/genesis/1-21.htm" target="_blank">Genesis 1:21</a>), <a href="../../animal/sea_creature/">sea creature</a> (<a href="https://biblehub.com/context/genesis/1-21.htm" target="_blank">Genesis 1:21</a>), <a href="../../animal/livestock/">livestock</a> (<a href="https://biblehub.com/context/genesis/1-24.htm" target="_blank">Genesis 1:24</a>), <a href="../../animal/crawlers/">crawlers</a> (<a href="https://biblehub.com/context/genesis/1-24.htm" target="_blank">Genesis 1:24</a>), <a href="../../animal/living_creatures/">living creatures</a> (<a href="https://biblehub.com/context/genesis/1-24.htm" target="_blank">Genesis 1:24</a>), <a href="../../being/human/">human</a> (<a href="https://biblehub.com/context/genesis/1-26.htm" target="_blank">Genesis 1:26</a>)</li>
-<li><strong>Visited</strong> <a href="../../person/abimelech/">Abimelech</a> (<a href="https://biblehub.com/context/genesis/20-3.htm" target="_blank">Genesis 20:3</a>)</li>
+<li><strong>Visited</strong> <a href="../../person/abimelech/">Abimelech</a> (<a href="https://biblehub.com/context/genesis/20-3.htm" target="_blank">Genesis 20:3</a>), <a href="../../person/jacob/">Jacob</a> (<a href="https://biblehub.com/context/genesis/46-2.htm" target="_blank">Genesis 46:2</a>)</li>
 </ul>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style being/god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/abimelech(["Abimelech"])
+    place/mamre(["Mamre"])
+    place/rameses(["Rameses"])
     being/god(["God"])
-    click person/abimelech "../../person/abimelech/"
+    place/succoth(["Succoth"])
+    place/paddan_aram(["Paddan Aram"])
+    place/paddan-aram(["Paddan Aram"])
+    place/beer_sheba(["Beer Sheba"])
+    being/el_shaddai(["El Shaddai"])
+    person/abimelech(["Abimelech"])
+    place/eder(["Eder"])
+    place/goshen(["Goshen"])
+    person/jacob(["Jacob"])
+    person/isaac(["Isaac"])
+    place/machpelah(["Machpelah"])
+    place/shechem(["Shechem"])
+    click place/mamre "../../place/mamre/"
+    click place/rameses "../../place/rameses/"
     click being/god "../../being/god/"
+    click place/succoth "../../place/succoth/"
+    click place/paddan_aram "../../place/paddan_aram/"
+    click place/paddan-aram "../../place/paddan-aram/"
+    click place/beer_sheba "../../place/beer_sheba/"
+    click being/el_shaddai "../../being/el_shaddai/"
+    click person/abimelech "../../person/abimelech/"
+    click place/eder "../../place/eder/"
+    click place/goshen "../../place/goshen/"
+    click person/jacob "../../person/jacob/"
+    click person/isaac "../../person/isaac/"
+    click place/machpelah "../../place/machpelah/"
+    click place/shechem "../../place/shechem/"
+    being/el_shaddai .-&gt;|visited| person/jacob
+    person/jacob --&gt;|buried in| place/machpelah
+    person/jacob --&gt;|resident of| place/rameses
+    person/jacob --&gt;|resident of| place/goshen
+    person/jacob --&gt;|died in| place/goshen
     being/god .-&gt;|visited| person/abimelech
+    being/god .-&gt;|visited| person/jacob
+    person/jacob --&gt;|resident of| place/succoth
+    person/jacob --&gt;|resident of| place/eder
+    person/jacob .-&gt;|visited| person/isaac
+    person/jacob .-&gt;|visited| place/mamre
+    person/jacob .-&gt;|visited| place/beer_sheba
+    person/jacob --&gt;|resident of| place/paddan_aram
+    person/jacob .-&gt;|visited| place/paddan-aram
+    person/jacob --&gt;|resident of| place/shechem
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style being/god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    concept/light(["light"])
-    person/jacob(["Jacob"])
-    concept/day(["day"])
-    concept/dry_land(["dry_land"])
-    being/yahweh(["Yahweh"])
-    person/esau(["Esau"])
-    object/lights(["lights"])
-    being/human(["human"])
-    animal/living_creatures(["living creatures"])
     object/greater_light(["greater light"])
-    place/expanse(["expanse"])
-    concept/night(["night"])
-    being/god(["God"])
-    animal/livestock(["livestock"])
-    animal/bird(["bird"])
+    object/lesser_light(["lesser light"])
+    object/lights(["lights"])
+    place/earth(["earth"])
+    being/human(["human"])
     plant/vegetation(["vegetation"])
-    place/heavens(["heavens"])
+    animal/sea_creature(["sea creature"])
+    animal/crawlers(["crawlers"])
+    animal/living_creatures(["living creatures"])
     animal/sea_dragon(["sea dragon"])
     person/isaac(["Isaac"])
-    object/lesser_light(["lesser light"])
-    place/earth(["earth"])
-    animal/crawlers(["crawlers"])
-    animal/sea_creature(["sea creature"])
-    click concept/light "../../concept/light/"
-    click person/jacob "../../person/jacob/"
-    click concept/day "../../concept/day/"
-    click concept/dry_land "../../concept/dry_land/"
-    click being/yahweh "../../being/yahweh/"
-    click person/esau "../../person/esau/"
-    click object/lights "../../object/lights/"
-    click being/human "../../being/human/"
-    click animal/living_creatures "../../animal/living_creatures/"
+    concept/day(["day"])
+    place/expanse(["expanse"])
+    concept/light(["light"])
+    person/esau(["Esau"])
+    place/heavens(["heavens"])
+    being/god(["God"])
+    concept/night(["night"])
+    being/yahweh(["Yahweh"])
+    animal/livestock(["livestock"])
+    person/jacob(["Jacob"])
+    concept/dry_land(["dry_land"])
+    animal/bird(["bird"])
     click object/greater_light "../../object/greater_light/"
-    click place/expanse "../../place/expanse/"
-    click concept/night "../../concept/night/"
-    click being/god "../../being/god/"
-    click animal/livestock "../../animal/livestock/"
-    click animal/bird "../../animal/bird/"
+    click object/lesser_light "../../object/lesser_light/"
+    click object/lights "../../object/lights/"
+    click place/earth "../../place/earth/"
+    click being/human "../../being/human/"
     click plant/vegetation "../../plant/vegetation/"
-    click place/heavens "../../place/heavens/"
+    click animal/sea_creature "../../animal/sea_creature/"
+    click animal/crawlers "../../animal/crawlers/"
+    click animal/living_creatures "../../animal/living_creatures/"
     click animal/sea_dragon "../../animal/sea_dragon/"
     click person/isaac "../../person/isaac/"
-    click object/lesser_light "../../object/lesser_light/"
-    click place/earth "../../place/earth/"
-    click animal/crawlers "../../animal/crawlers/"
-    click animal/sea_creature "../../animal/sea_creature/"
-    being/god --&gt;|created| animal/livestock
-    being/god --&gt;|created| concept/light
-    being/god --&gt;|created| place/heavens
-    being/god --&gt;|created| animal/sea_dragon
-    being/god --&gt;|blessed| animal/sea_dragon
-    being/god --&gt;|blessed| animal/sea_creature
-    being/god --&gt;|created| animal/sea_creature
+    click concept/day "../../concept/day/"
+    click place/expanse "../../place/expanse/"
+    click concept/light "../../concept/light/"
+    click person/esau "../../person/esau/"
+    click place/heavens "../../place/heavens/"
+    click being/god "../../being/god/"
+    click concept/night "../../concept/night/"
+    click being/yahweh "../../being/yahweh/"
+    click animal/livestock "../../animal/livestock/"
+    click person/jacob "../../person/jacob/"
+    click concept/dry_land "../../concept/dry_land/"
+    click animal/bird "../../animal/bird/"
     being/god --&gt;|created| being/human
     being/god --&gt;|blessed| being/human
-    being/god --&gt;|created| concept/day
+    being/god --&gt;|created| plant/vegetation
+    being/god --&gt;|created| concept/night
     being/god --&gt;|created| place/earth
-    being/god --&gt;|blessed| person/isaac
-    being/god --&gt;|created| animal/living_creatures
+    being/god --&gt;|created| object/lesser_light
+    being/yahweh --&gt;|blessed| person/isaac
+    being/god --&gt;|created| place/heavens
+    being/god --&gt;|created| animal/sea_creature
+    being/god --&gt;|blessed| animal/sea_creature
     person/isaac --&gt;|blessed| person/esau
+    being/god --&gt;|created| object/lights
     being/god --&gt;|created| animal/bird
     being/god --&gt;|blessed| animal/bird
-    being/god --&gt;|created| object/greater_light
-    being/yahweh --&gt;|blessed| person/isaac
-    being/god --&gt;|created| animal/crawlers
-    being/god --&gt;|created| concept/night
     person/isaac --&gt;|blessed| person/jacob
     person/isaac --&gt;|sent| person/jacob
-    being/god --&gt;|created| place/expanse
     being/god --&gt;|created| concept/dry_land
-    being/god --&gt;|created| object/lights
-    being/god --&gt;|created| plant/vegetation
-    being/god --&gt;|created| object/lesser_light
+    being/god --&gt;|created| concept/day
+    being/god --&gt;|created| animal/sea_dragon
+    being/god --&gt;|blessed| animal/sea_dragon
+    being/god --&gt;|created| animal/livestock
+    being/god --&gt;|created| animal/crawlers
+    being/god --&gt;|created| animal/living_creatures
+    being/god --&gt;|created| concept/light
+    being/god --&gt;|created| place/expanse
+    being/god --&gt;|created| object/greater_light
+    being/god --&gt;|blessed| person/isaac
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/god fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/el-roi(["El Roi"])
+    being/el_roi(["El Roi"])
     being/god(["God"])
-    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
-    being/el-shaddai(["El Shaddai"])
+    being/yahweh(["Yahweh"])
+    being/el_shaddai(["El Shaddai"])
     being/shaddai(["Shaddai"])
     person/ruth(["Ruth"])
-    being/yahweh(["Yahweh"])
-    click being/el-roi "../../being/el-roi/"
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
+    click being/el_roi "../../being/el_roi/"
     click being/god "../../being/god/"
-    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
-    click being/el-shaddai "../../being/el-shaddai/"
+    click being/yahweh "../../being/yahweh/"
+    click being/el_shaddai "../../being/el_shaddai/"
     click being/shaddai "../../being/shaddai/"
     click person/ruth "../../person/ruth/"
-    click being/yahweh "../../being/yahweh/"
-    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
-    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
-    being/shaddai &lt;--&gt;|name matches| being/god
-    person/ruth &lt;.-&gt;|associated with| being/yahweh
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
+    being/el_roi &lt;--&gt;|name matches| being/yahweh
     being/yahweh &lt;--&gt;|name matches| being/shaddai
-    being/yahweh &lt;--&gt;|name matches| being/el-roi
+    being/yahweh &lt;.-&gt;|associated with| person/ruth
+    being/shaddai &lt;--&gt;|name matches| being/god
+    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
+    being/el_shaddai &lt;--&gt;|name matches| being/yahweh
     being/yahweh &lt;--&gt;|name matches| being/god
 </div>
 </article>

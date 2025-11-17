@@ -248,31 +248,31 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/zillah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/jabal(["Jabal"])
-    person/zillah(["Zillah"])
-    person/jubal(["Jubal"])
-    person/methushael(["Methushael"])
-    person/naamah(["Naamah"])
-    person/lamech(["Lamech"])
     person/tubal_cain(["Tubal Cain"])
+    person/jubal(["Jubal"])
     person/adah(["Adah"])
-    click person/jabal "../../person/jabal/"
-    click person/zillah "../../person/zillah/"
-    click person/jubal "../../person/jubal/"
-    click person/methushael "../../person/methushael/"
-    click person/naamah "../../person/naamah/"
-    click person/lamech "../../person/lamech/"
+    person/zillah(["Zillah"])
+    person/methushael(["Methushael"])
+    person/jabal(["Jabal"])
+    person/lamech(["Lamech"])
+    person/naamah(["Naamah"])
     click person/tubal_cain "../../person/tubal_cain/"
+    click person/jubal "../../person/jubal/"
     click person/adah "../../person/adah/"
-    person/lamech --&gt;|parent of| person/naamah
+    click person/zillah "../../person/zillah/"
+    click person/methushael "../../person/methushael/"
+    click person/jabal "../../person/jabal/"
+    click person/lamech "../../person/lamech/"
+    click person/naamah "../../person/naamah/"
+    person/lamech &lt;--&gt;|married to| person/zillah
+    person/lamech --&gt;|parent of| person/tubal_cain
+    person/lamech --&gt;|parent of| person/jubal
     person/zillah --&gt;|parent of| person/tubal_cain
     person/lamech --&gt;|parent of| person/jabal
-    person/methushael --&gt;|parent of| person/lamech
-    person/zillah &lt;--&gt;|married to| person/lamech
-    person/adah &lt;--&gt;|married to| person/lamech
-    person/lamech --&gt;|parent of| person/jubal
-    person/lamech --&gt;|parent of| person/tubal_cain
+    person/lamech --&gt;|parent of| person/naamah
     person/zillah --&gt;|parent of| person/naamah
+    person/methushael --&gt;|parent of| person/lamech
+    person/adah &lt;--&gt;|married to| person/lamech
 </div>
 </article>
 </div>

@@ -247,35 +247,38 @@
 <div class="mermaid">graph TD;
     style place/beer_lahai_roi fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/beer_lahai_roi(["Beer Lahai Roi"])
-    person/jacob(["Jacob"])
     place/mamre(["Mamre"])
+    person/jacob(["Jacob"])
     place/gerar(["Gerar"])
     person/isaac(["Isaac"])
+    place/machpelah(["Machpelah"])
     click place/beer_lahai_roi "../../place/beer_lahai_roi/"
-    click person/jacob "../../person/jacob/"
     click place/mamre "../../place/mamre/"
+    click person/jacob "../../person/jacob/"
     click place/gerar "../../place/gerar/"
     click person/isaac "../../person/isaac/"
-    person/isaac --&gt;|resident of| place/beer_lahai_roi
-    person/isaac --&gt;|died in| place/mamre
+    click place/machpelah "../../place/machpelah/"
     person/isaac --&gt;|buried in| place/mamre
+    person/isaac --&gt;|died in| place/mamre
     person/jacob .-&gt;|visited| person/isaac
     person/isaac --&gt;|resident of| place/gerar
+    person/isaac --&gt;|resident of| place/beer_lahai_roi
+    person/isaac --&gt;|buried in| place/machpelah
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/beer_lahai_roi fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/gerar(["Gerar"])
-    place/beer_lahai_roi(["Beer Lahai Roi"])
     person/abimelech_2(["Abimelech"])
+    place/beer_lahai_roi(["Beer Lahai Roi"])
     person/isaac(["Isaac"])
-    click place/gerar "../../place/gerar/"
-    click place/beer_lahai_roi "../../place/beer_lahai_roi/"
+    place/gerar(["Gerar"])
     click person/abimelech_2 "../../person/abimelech_2/"
+    click place/beer_lahai_roi "../../place/beer_lahai_roi/"
     click person/isaac "../../person/isaac/"
-    place/gerar .-&gt;|associated with| person/isaac
+    click place/gerar "../../place/gerar/"
     place/beer_lahai_roi .-&gt;|associated with| person/isaac
     person/isaac .-&gt;|associated with| person/abimelech_2
+    place/gerar .-&gt;|associated with| person/isaac
 </div>
 </article>
 </div>

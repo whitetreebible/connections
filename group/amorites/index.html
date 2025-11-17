@@ -224,6 +224,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#action-event">
+<span class="md-ellipsis">
+      Action / event
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -236,35 +243,76 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/amorites fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/hamathites(["Hamathites"])
+    group/amorites(["Amorites"])
+    group/sinites(["Sinites"])
+    group/zemarites(["Zemarites"])
+    group/arvadites(["Arvadites"])
+    group/arkites(["Arkites"])
     group/girgashites(["Girgashites"])
     person/canaan(["Canaan"])
-    group/amorites(["Amorites"])
-    group/arvadites(["Arvadites"])
+    group/hamathites(["Hamathites"])
     group/hivites(["Hivites"])
-    group/zemarites(["Zemarites"])
-    group/arkites(["Arkites"])
     group/jebusites(["Jebusites"])
-    group/sinites(["Sinites"])
-    click group/hamathites "../../group/hamathites/"
+    click group/amorites "../../group/amorites/"
+    click group/sinites "../../group/sinites/"
+    click group/zemarites "../../group/zemarites/"
+    click group/arvadites "../../group/arvadites/"
+    click group/arkites "../../group/arkites/"
     click group/girgashites "../../group/girgashites/"
     click person/canaan "../../person/canaan/"
-    click group/amorites "../../group/amorites/"
-    click group/arvadites "../../group/arvadites/"
+    click group/hamathites "../../group/hamathites/"
     click group/hivites "../../group/hivites/"
-    click group/zemarites "../../group/zemarites/"
-    click group/arkites "../../group/arkites/"
     click group/jebusites "../../group/jebusites/"
-    click group/sinites "../../group/sinites/"
     person/canaan --&gt;|origin of| group/sinites
-    person/canaan --&gt;|origin of| group/hivites
+    person/canaan --&gt;|origin of| group/amorites
     person/canaan --&gt;|origin of| group/arvadites
     person/canaan --&gt;|origin of| group/arkites
-    person/canaan --&gt;|origin of| group/jebusites
+    person/canaan --&gt;|origin of| group/hivites
     person/canaan --&gt;|origin of| group/zemarites
-    person/canaan --&gt;|origin of| group/amorites
     person/canaan --&gt;|origin of| group/hamathites
+    person/canaan --&gt;|origin of| group/jebusites
     person/canaan --&gt;|origin of| group/girgashites
+</div>
+<h2 id="action-event">Action / event</h2>
+<div class="mermaid">graph TD;
+    style group/amorites fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/rachel(["Rachel"])
+    group/amorites(["Amorites"])
+    person/reuben(["Reuben"])
+    person/manasseh(["Manasseh"])
+    person/joseph(["Joseph"])
+    being/yahweh(["Yahweh"])
+    being/el_shaddai(["El Shaddai"])
+    person/pharaoh_of_joseph(["Pharaoh"])
+    person/jacob(["Jacob"])
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
+    person/isaac(["Isaac"])
+    person/ephraim(["Ephraim"])
+    click person/rachel "../../person/rachel/"
+    click group/amorites "../../group/amorites/"
+    click person/reuben "../../person/reuben/"
+    click person/manasseh "../../person/manasseh/"
+    click person/joseph "../../person/joseph/"
+    click being/yahweh "../../being/yahweh/"
+    click being/el_shaddai "../../being/el_shaddai/"
+    click person/pharaoh_of_joseph "../../person/pharaoh_of_joseph/"
+    click person/jacob "../../person/jacob/"
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
+    click person/isaac "../../person/isaac/"
+    click person/ephraim "../../person/ephraim/"
+    person/jacob --&gt;|blessed| person/joseph
+    person/jacob --&gt;|blessed| person/ephraim
+    person/jacob --&gt;|blessed| person/manasseh
+    being/el_shaddai --&gt;|blessed| person/jacob
+    person/man_who_wrestled_with_jacob --&gt;|blessed| person/jacob
+    person/man_who_wrestled_with_jacob --&gt;|attacked| person/jacob
+    person/isaac --&gt;|blessed| person/jacob
+    person/isaac --&gt;|sent| person/jacob
+    person/jacob --&gt;|blessed| person/pharaoh_of_joseph
+    person/jacob --&gt;|attacked| group/amorites
+    person/jacob --&gt;|cursed| person/reuben
+    being/yahweh --&gt;|blessed| person/jacob
+    person/jacob --&gt;|cursed| person/rachel
 </div>
 </article>
 </div>

@@ -247,14 +247,14 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/aran fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/seir(["Seir"])
     person/dishan(["Dishan"])
-    person/aran(["Aran"])
     person/uz_son_of_dishan(["Uz"])
-    click person/seir "../../person/seir/"
+    person/seir(["Seir"])
+    person/aran(["Aran"])
     click person/dishan "../../person/dishan/"
-    click person/aran "../../person/aran/"
     click person/uz_son_of_dishan "../../person/uz_son_of_dishan/"
+    click person/seir "../../person/seir/"
+    click person/aran "../../person/aran/"
     person/seir --&gt;|parent of| person/dishan
     person/dishan --&gt;|parent of| person/aran
     person/dishan --&gt;|parent of| person/uz_son_of_dishan

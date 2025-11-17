@@ -255,30 +255,30 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/sheba_son_of_raamah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/raamah(["Raamah"])
-    person/sheba_son_of_raamah(["Sheba"])
     person/cush(["Cush"])
     person/dedan(["Dedan"])
-    click person/raamah "../../person/raamah/"
-    click person/sheba_son_of_raamah "../../person/sheba_son_of_raamah/"
+    person/sheba_son_of_raamah(["Sheba"])
+    person/raamah(["Raamah"])
     click person/cush "../../person/cush/"
     click person/dedan "../../person/dedan/"
+    click person/sheba_son_of_raamah "../../person/sheba_son_of_raamah/"
+    click person/raamah "../../person/raamah/"
+    person/raamah --&gt;|parent of| person/sheba_son_of_raamah
     person/raamah --&gt;|parent of| person/dedan
     person/cush --&gt;|parent of| person/raamah
-    person/raamah --&gt;|parent of| person/sheba_son_of_raamah
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/sheba_son_of_raamah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/sheba_son_of_jokshan(["Sheba"])
     person/sheba_son_of_joktan(["Sheba"])
     person/sheba_son_of_raamah(["Sheba"])
-    click person/sheba_son_of_jokshan "../../person/sheba_son_of_jokshan/"
+    person/sheba_son_of_jokshan(["Sheba"])
     click person/sheba_son_of_joktan "../../person/sheba_son_of_joktan/"
     click person/sheba_son_of_raamah "../../person/sheba_son_of_raamah/"
-    person/sheba_son_of_joktan &lt;--&gt;|name matches| person/sheba_son_of_jokshan
-    person/sheba_son_of_raamah &lt;--&gt;|name matches| person/sheba_son_of_joktan
-    person/sheba_son_of_raamah &lt;--&gt;|name matches| person/sheba_son_of_jokshan
+    click person/sheba_son_of_jokshan "../../person/sheba_son_of_jokshan/"
+    person/sheba_son_of_jokshan &lt;--&gt;|name matches| person/sheba_son_of_joktan
+    person/sheba_son_of_joktan &lt;--&gt;|name matches| person/sheba_son_of_raamah
+    person/sheba_son_of_jokshan &lt;--&gt;|name matches| person/sheba_son_of_raamah
 </div>
 </article>
 </div>

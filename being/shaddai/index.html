@@ -255,38 +255,38 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style being/shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/naomi(["Naomi"])
     being/shaddai(["Shaddai"])
+    person/naomi(["Naomi"])
     being/yahweh(["Yahweh"])
-    click person/naomi "../../person/naomi/"
     click being/shaddai "../../being/shaddai/"
+    click person/naomi "../../person/naomi/"
     click being/yahweh "../../being/yahweh/"
-    person/naomi &lt;--&gt;|enemy of| being/yahweh
+    being/yahweh &lt;--&gt;|enemy of| person/naomi
     person/naomi &lt;--&gt;|enemy of| being/shaddai
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style being/shaddai fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    being/el-roi(["El Roi"])
+    being/el_roi(["El Roi"])
     being/god(["God"])
-    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
-    being/el-shaddai(["El Shaddai"])
+    being/yahweh(["Yahweh"])
+    being/el_shaddai(["El Shaddai"])
     being/shaddai(["Shaddai"])
     person/ruth(["Ruth"])
-    being/yahweh(["Yahweh"])
-    click being/el-roi "../../being/el-roi/"
+    person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
+    click being/el_roi "../../being/el_roi/"
     click being/god "../../being/god/"
-    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
-    click being/el-shaddai "../../being/el-shaddai/"
+    click being/yahweh "../../being/yahweh/"
+    click being/el_shaddai "../../being/el_shaddai/"
     click being/shaddai "../../being/shaddai/"
     click person/ruth "../../person/ruth/"
-    click being/yahweh "../../being/yahweh/"
-    being/yahweh &lt;--&gt;|name matches| being/el-shaddai
-    being/shaddai &lt;--&gt;|name matches| being/god
-    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
-    person/ruth &lt;.-&gt;|associated with| being/yahweh
+    click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
+    being/el_roi &lt;--&gt;|name matches| being/yahweh
     being/yahweh &lt;--&gt;|name matches| being/shaddai
-    being/yahweh &lt;--&gt;|name matches| being/el-roi
+    being/yahweh &lt;.-&gt;|associated with| person/ruth
+    being/shaddai &lt;--&gt;|name matches| being/god
+    being/el_shaddai &lt;--&gt;|name matches| being/yahweh
+    person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
     being/yahweh &lt;--&gt;|name matches| being/god
 </div>
 </article>

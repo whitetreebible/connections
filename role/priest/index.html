@@ -228,10 +228,13 @@
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style role/priest fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/melchizedek(["Melchizedek"])
     role/priest(["priest"])
-    click person/melchizedek "../../person/melchizedek/"
+    person/potiphera(["Potiphera"])
+    person/melchizedek(["Melchizedek"])
     click role/priest "../../role/priest/"
+    click person/potiphera "../../person/potiphera/"
+    click person/melchizedek "../../person/melchizedek/"
+    person/potiphera --&gt;|role as| role/priest
     person/melchizedek --&gt;|role as| role/priest
 </div>
 </article>

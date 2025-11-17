@@ -230,15 +230,24 @@
     style group/egyptians fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/hagar(["Hagar"])
     person/sarai(["Sarai"])
+    person/joseph(["Joseph"])
     group/egyptians(["Egyptians"])
+    person/pharaoh_of_joseph(["Pharaoh"])
     person/abram(["Abram"])
+    person/potiphar(["Potiphar"])
     click person/hagar "../../person/hagar/"
     click person/sarai "../../person/sarai/"
+    click person/joseph "../../person/joseph/"
     click group/egyptians "../../group/egyptians/"
+    click person/pharaoh_of_joseph "../../person/pharaoh_of_joseph/"
     click person/abram "../../person/abram/"
-    person/sarai --&gt;|leader of| person/hagar
-    person/hagar --&gt;|member of| group/egyptians
+    click person/potiphar "../../person/potiphar/"
     person/abram --&gt;|leader of| person/hagar
+    person/potiphar --&gt;|member of| group/egyptians
+    person/hagar --&gt;|member of| group/egyptians
+    person/potiphar --&gt;|leader of| person/joseph
+    person/sarai --&gt;|leader of| person/hagar
+    person/pharaoh_of_joseph --&gt;|leader of| person/potiphar
 </div>
 </article>
 </div>

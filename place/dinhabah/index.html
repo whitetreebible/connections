@@ -255,10 +255,13 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/dinhabah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/bela_son_of_benjamin(["Bela"])
     person/bela(["Bela"])
     place/dinhabah(["Dinhabah"])
+    click person/bela_son_of_benjamin "../../person/bela_son_of_benjamin/"
     click person/bela "../../person/bela/"
     click place/dinhabah "../../place/dinhabah/"
+    person/bela_son_of_benjamin &lt;--&gt;|name matches| person/bela
     place/dinhabah .-&gt;|associated with| person/bela
 </div>
 </article>

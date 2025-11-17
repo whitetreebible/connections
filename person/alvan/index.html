@@ -247,25 +247,25 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/alvan fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/manahath(["Manahath"])
-    person/alvan(["Alvan"])
     person/seir(["Seir"])
     person/onam(["Onam"])
     person/ebal(["Ebal"])
     person/shobal(["Shobal"])
     person/shepho(["Shepho"])
-    click person/manahath "../../person/manahath/"
-    click person/alvan "../../person/alvan/"
+    person/manahath(["Manahath"])
+    person/alvan(["Alvan"])
     click person/seir "../../person/seir/"
     click person/onam "../../person/onam/"
     click person/ebal "../../person/ebal/"
     click person/shobal "../../person/shobal/"
     click person/shepho "../../person/shepho/"
+    click person/manahath "../../person/manahath/"
+    click person/alvan "../../person/alvan/"
+    person/shobal --&gt;|parent of| person/manahath
     person/shobal --&gt;|parent of| person/alvan
+    person/shobal --&gt;|parent of| person/onam
     person/seir --&gt;|parent of| person/shobal
     person/shobal --&gt;|parent of| person/ebal
-    person/shobal --&gt;|parent of| person/manahath
-    person/shobal --&gt;|parent of| person/onam
     person/shobal --&gt;|parent of| person/shepho
 </div>
 </article>

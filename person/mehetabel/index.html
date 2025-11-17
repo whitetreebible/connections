@@ -249,16 +249,16 @@
 <div class="mermaid">graph TD;
     style person/mehetabel fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/mehetabel(["Mehetabel"])
-    person/mezahab(["Mezahab"])
     person/matred(["Matred"])
+    person/mezahab(["Mezahab"])
     person/hadar(["Hadar"])
     click person/mehetabel "../../person/mehetabel/"
-    click person/mezahab "../../person/mezahab/"
     click person/matred "../../person/matred/"
+    click person/mezahab "../../person/mezahab/"
     click person/hadar "../../person/hadar/"
-    person/hadar &lt;--&gt;|married to| person/mehetabel
-    person/matred --&gt;|parent of| person/mehetabel
     person/mezahab --&gt;|parent of| person/matred
+    person/matred --&gt;|parent of| person/mehetabel
+    person/mehetabel &lt;--&gt;|married to| person/hadar
 </div>
 </article>
 </div>

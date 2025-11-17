@@ -231,6 +231,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -242,26 +249,39 @@
 <h2 id="elon-father-of-basemath">Elon (father of Basemath)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
+<li><strong>Name matches</strong> <a href="../../person/elon_son_of_zebulun/">Elon (son of Zebulun)</a></li>
 <li><strong>Parent of</strong> <a href="../../person/basemath/">Basemath</a> (<a href="https://biblehub.com/context/genesis/26-34.htm" target="_blank">Genesis 26:34</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/elon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/reuel(["Reuel"])
     person/basemath(["Basemath"])
+    person/esau(["Esau"])
     person/elon(["Elon"])
     person/ishmael(["Ishmael"])
-    person/reuel(["Reuel"])
-    person/esau(["Esau"])
+    click person/reuel "../../person/reuel/"
     click person/basemath "../../person/basemath/"
+    click person/esau "../../person/esau/"
     click person/elon "../../person/elon/"
     click person/ishmael "../../person/ishmael/"
-    click person/reuel "../../person/reuel/"
-    click person/esau "../../person/esau/"
-    person/basemath &lt;--&gt;|married to| person/esau
     person/ishmael --&gt;|parent of| person/basemath
     person/elon --&gt;|parent of| person/basemath
-    person/basemath --&gt;|parent of| person/reuel
     person/basemath --&gt;|related to| person/neboioth
+    person/esau &lt;--&gt;|married to| person/basemath
+    person/basemath --&gt;|parent of| person/reuel
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style person/elon fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/elon(["Elon"])
+    person/elon_father_of_adah(["Elon"])
+    person/elon_son_of_zebulun(["Elon"])
+    click person/elon "../../person/elon/"
+    click person/elon_father_of_adah "../../person/elon_father_of_adah/"
+    click person/elon_son_of_zebulun "../../person/elon_son_of_zebulun/"
+    person/elon_son_of_zebulun &lt;--&gt;|name matches| person/elon
+    person/elon_son_of_zebulun &lt;--&gt;|name matches| person/elon_father_of_adah
 </div>
 </article>
 </div>

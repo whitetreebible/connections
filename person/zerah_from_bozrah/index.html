@@ -249,7 +249,7 @@
 <h2 id="zerah-father-of-jobab">Zerah (father of Jobab)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Name matches</strong> <a href="../../person/zerah/">Zerah (son of Reuel, chief of Edom)</a></li>
+<li><strong>Name matches</strong> <a href="../../person/zerah_son_of_reuel/">Zerah (son of Reuel, chief of Edom)</a>, <a href="../../person/zerah_son_of_judah/">Zerah (son of Judah)</a></li>
 <li><strong>Parent of</strong> <a href="../../person/jobab_son_of_zerah/">Jobab</a> (<a href="https://biblehub.com/context/genesis/36-33.htm" target="_blank">Genesis 36:33</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
@@ -264,13 +264,17 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/zerah_from_bozrah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/zerah(["Zerah"])
     person/zerah_from_bozrah(["Zerah"])
+    person/zerah_son_of_judah(["Zerah"])
     place/bozrah(["Bozrah"])
-    click person/zerah "../../person/zerah/"
+    person/zerah_son_of_reuel(["Zerah"])
     click person/zerah_from_bozrah "../../person/zerah_from_bozrah/"
+    click person/zerah_son_of_judah "../../person/zerah_son_of_judah/"
     click place/bozrah "../../place/bozrah/"
-    person/zerah &lt;--&gt;|name matches| person/zerah_from_bozrah
+    click person/zerah_son_of_reuel "../../person/zerah_son_of_reuel/"
+    person/zerah_son_of_reuel &lt;--&gt;|name matches| person/zerah_from_bozrah
+    person/zerah_son_of_reuel &lt;--&gt;|name matches| person/zerah_son_of_judah
+    person/zerah_son_of_judah &lt;--&gt;|name matches| person/zerah_from_bozrah
     place/bozrah .-&gt;|associated with| person/zerah_from_bozrah
 </div>
 </article>

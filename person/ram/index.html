@@ -249,20 +249,20 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/ram fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/hezron(["Hezron"])
     person/perez(["Perez"])
+    person/nahshon(["Nahshon"])
     person/amminadab(["Amminadab"])
     person/ram(["Ram"])
-    person/hezron(["Hezron"])
-    person/nahshon(["Nahshon"])
+    click person/hezron "../../person/hezron/"
     click person/perez "../../person/perez/"
+    click person/nahshon "../../person/nahshon/"
     click person/amminadab "../../person/amminadab/"
     click person/ram "../../person/ram/"
-    click person/hezron "../../person/hezron/"
-    click person/nahshon "../../person/nahshon/"
-    person/hezron --&gt;|parent of| person/ram
     person/perez --&gt;|parent of| person/hezron
-    person/ram --&gt;|parent of| person/amminadab
     person/amminadab --&gt;|parent of| person/nahshon
+    person/ram --&gt;|parent of| person/amminadab
+    person/hezron --&gt;|parent of| person/ram
 </div>
 </article>
 </div>

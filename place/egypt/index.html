@@ -241,24 +241,56 @@
 <h1 id="egypt">Egypt</h1>
 <h2 id="associations">Associations</h2>
 <ul>
-<li><strong>Associated with</strong> <a href="../../person/ishmael_wife/">Ishmael's wife</a> (<a href="https://biblehub.com/context/genesis/21-21.htm" target="_blank">Genesis 21:21</a>)</li>
+<li><strong>Associated with</strong> <a href="../../person/ishmael_wife/">Ishmael's wife</a> (<a href="https://biblehub.com/context/genesis/21-21.htm" target="_blank">Genesis 21:21</a>), <a href="../../person/joseph/">Joseph</a> (<a href="https://biblehub.com/context/genesis/37-28.htm" target="_blank">Genesis 37:28</a>), <a href="../../place/goshen/">Goshen</a> (<a href="https://biblehub.com/context/genesis/46-28.htm" target="_blank">Genesis 46:28</a>)</li>
 </ul>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style place/egypt fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/ishmael_wife(["Ishmael's wife"])
+    person/joseph(["Joseph"])
+    place/atad(["Atad"])
     place/egypt(["Egypt"])
     click person/ishmael_wife "../../person/ishmael_wife/"
+    click person/joseph "../../person/joseph/"
+    click place/atad "../../place/atad/"
     click place/egypt "../../place/egypt/"
     person/ishmael_wife --&gt;|resident of| place/egypt
+    person/joseph --&gt;|resident of| place/egypt
+    person/joseph --&gt;|buried in| place/egypt
+    person/joseph --&gt;|died in| place/egypt
+    person/joseph .-&gt;|visited| place/atad
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/egypt fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/ishmael_wife(["Ishmael's wife"])
+    place/rameses(["Rameses"])
+    person/joseph(["Joseph"])
+    group/ishmaelites(["Ishmaelites"])
+    person/zaphenath_paneah(["Zaphenath Paneah"])
+    role/shepherds(["shepherds"])
+    place/goshen(["Goshen"])
     place/egypt(["Egypt"])
-    click person/ishmael_wife "../../person/ishmael_wife/"
+    person/jacob(["Jacob"])
+    person/ishmael_wife(["Ishmael's wife"])
+    person/potiphar(["Potiphar"])
+    click place/rameses "../../place/rameses/"
+    click person/joseph "../../person/joseph/"
+    click group/ishmaelites "../../group/ishmaelites/"
+    click person/zaphenath_paneah "../../person/zaphenath_paneah/"
+    click role/shepherds "../../role/shepherds/"
+    click place/goshen "../../place/goshen/"
     click place/egypt "../../place/egypt/"
+    click person/jacob "../../person/jacob/"
+    click person/ishmael_wife "../../person/ishmael_wife/"
+    click person/potiphar "../../person/potiphar/"
+    person/zaphenath_paneah &lt;--&gt;|name matches| person/joseph
+    place/egypt .-&gt;|associated with| person/joseph
+    place/egypt .-&gt;|associated with| place/goshen
+    person/joseph .-&gt;|associated with| group/ishmaelites
+    place/goshen .-&gt;|associated with| place/rameses
+    person/potiphar .-&gt;|associated with| place/egypt
+    place/goshen .-&gt;|associated with| role/shepherds
+    place/goshen .-&gt;|associated with| person/jacob
     place/egypt .-&gt;|associated with| person/ishmael_wife
 </div>
 </article>

@@ -247,23 +247,23 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/leummim fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/letushim(["Letushim"])
     person/jokshan(["Jokshan"])
-    person/asshurim(["Asshurim"])
-    person/dedan(["Dedan"])
     person/raamah(["Raamah"])
+    person/dedan(["Dedan"])
+    person/letushim(["Letushim"])
     person/leummim(["Leummim"])
-    click person/letushim "../../person/letushim/"
+    person/asshurim(["Asshurim"])
     click person/jokshan "../../person/jokshan/"
-    click person/asshurim "../../person/asshurim/"
-    click person/dedan "../../person/dedan/"
     click person/raamah "../../person/raamah/"
+    click person/dedan "../../person/dedan/"
+    click person/letushim "../../person/letushim/"
     click person/leummim "../../person/leummim/"
-    person/jokshan --&gt;|parent of| person/dedan
-    person/raamah --&gt;|parent of| person/dedan
-    person/dedan --&gt;|parent of| person/leummim
+    click person/asshurim "../../person/asshurim/"
     person/dedan --&gt;|parent of| person/asshurim
     person/dedan --&gt;|parent of| person/letushim
+    person/raamah --&gt;|parent of| person/dedan
+    person/dedan --&gt;|parent of| person/leummim
+    person/jokshan --&gt;|parent of| person/dedan
 </div>
 </article>
 </div>

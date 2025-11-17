@@ -270,73 +270,73 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/samlah fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/baal_hanan(["Baal-Hanan"])
+    place/edom(["Edom"])
+    person/hadad_son_of_bedad(["Hadad"])
     person/husham(["Husham"])
     person/hadar(["Hadar"])
     person/bela(["Bela"])
     person/shaul(["Shaul"])
-    place/edom(["Edom"])
-    person/jobab_son_of_zerah(["Jobab"])
-    person/hadad_son_of_bedad(["Hadad"])
     person/samlah(["Samlah"])
-    person/baal_hanan(["Baal-Hanan"])
+    person/jobab_son_of_zerah(["Jobab"])
+    click person/baal_hanan "../../person/baal_hanan/"
+    click place/edom "../../place/edom/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     click person/husham "../../person/husham/"
     click person/hadar "../../person/hadar/"
     click person/bela "../../person/bela/"
     click person/shaul "../../person/shaul/"
-    click place/edom "../../place/edom/"
-    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
-    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     click person/samlah "../../person/samlah/"
-    click person/baal_hanan "../../person/baal_hanan/"
-    person/baal_hanan --&gt;|leader of| place/edom
-    place/edom --&gt;|led by| person/hadad_son_of_bedad
+    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
+    person/samlah --&gt;|leader of| place/edom
+    person/shaul --&gt;|leader of| place/edom
     person/hadar --&gt;|leader of| place/edom
     person/husham --&gt;|leader of| place/edom
-    person/shaul --&gt;|leader of| place/edom
-    person/bela --&gt;|leader of| place/edom
-    person/samlah --&gt;|leader of| place/edom
+    person/baal_hanan --&gt;|leader of| place/edom
     place/edom --&gt;|led by| person/jobab_son_of_zerah
+    person/bela --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/hadad_son_of_bedad
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/samlah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/masrekah(["Masrekah"])
     person/samlah(["Samlah"])
-    click place/masrekah "../../place/masrekah/"
+    place/masrekah(["Masrekah"])
     click person/samlah "../../person/samlah/"
+    click place/masrekah "../../place/masrekah/"
     person/samlah --&gt;|resident of| place/masrekah
 </div>
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style person/samlah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/husham(["Husham"])
-    person/bela(["Bela"])
-    person/hadar(["Hadar"])
-    person/shaul(["Shaul"])
-    role/king(["king"])
-    person/samlah(["Samlah"])
     person/baal_hanan(["Baal-Hanan"])
-    click person/husham "../../person/husham/"
-    click person/bela "../../person/bela/"
-    click person/hadar "../../person/hadar/"
-    click person/shaul "../../person/shaul/"
-    click role/king "../../role/king/"
-    click person/samlah "../../person/samlah/"
+    person/husham(["Husham"])
+    person/hadar(["Hadar"])
+    person/bela(["Bela"])
+    person/shaul(["Shaul"])
+    person/samlah(["Samlah"])
+    role/king(["king"])
     click person/baal_hanan "../../person/baal_hanan/"
-    person/bela --&gt;|role as| role/king
-    person/husham --&gt;|role as| role/king
+    click person/husham "../../person/husham/"
+    click person/hadar "../../person/hadar/"
+    click person/bela "../../person/bela/"
+    click person/shaul "../../person/shaul/"
+    click person/samlah "../../person/samlah/"
+    click role/king "../../role/king/"
     person/shaul --&gt;|role as| role/king
     person/baal_hanan --&gt;|role as| role/king
     person/samlah --&gt;|role as| role/king
+    person/husham --&gt;|role as| role/king
     person/hadar --&gt;|role as| role/king
+    person/bela --&gt;|role as| role/king
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/samlah fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/masrekah(["Masrekah"])
     person/samlah(["Samlah"])
-    click place/masrekah "../../place/masrekah/"
+    place/masrekah(["Masrekah"])
     click person/samlah "../../person/samlah/"
+    click place/masrekah "../../place/masrekah/"
     place/masrekah .-&gt;|associated with| person/samlah
 </div>
 </article>

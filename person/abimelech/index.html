@@ -271,78 +271,90 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/gerar(["Gerar"])
     person/abimelech(["Abimelech"])
     person/phicol(["Phicol"])
-    click place/gerar "../../place/gerar/"
+    place/gerar(["Gerar"])
     click person/abimelech "../../person/abimelech/"
     click person/phicol "../../person/phicol/"
-    person/abimelech --&gt;|leader of| person/phicol
+    click place/gerar "../../place/gerar/"
     person/abimelech --&gt;|leader of| place/gerar
+    person/abimelech --&gt;|leader of| person/phicol
 </div>
 <h2 id="geographic">Geographic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/abimelech(["Abimelech"])
     being/god(["God"])
+    person/jacob(["Jacob"])
     click person/abimelech "../../person/abimelech/"
     click being/god "../../being/god/"
+    click person/jacob "../../person/jacob/"
+    being/god .-&gt;|visited| person/jacob
     being/god .-&gt;|visited| person/abimelech
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/jacob(["Jacob"])
-    being/cherubim(["cherubim"])
-    person/abimelech(["Abimelech"])
-    person/laban(["Laban"])
-    person/abraham_servant(["Abraham's servant"])
+    person/er(["Er"])
     person/abraham(["Abraham"])
+    person/abraham_servant(["Abraham's servant"])
     being/yahweh(["Yahweh"])
+    person/abimelech(["Abimelech"])
+    person/jacob(["Jacob"])
+    person/onan(["Onan"])
+    being/cherubim(["cherubim"])
     person/isaac(["Isaac"])
-    click person/jacob "../../person/jacob/"
-    click being/cherubim "../../being/cherubim/"
-    click person/abimelech "../../person/abimelech/"
-    click person/laban "../../person/laban/"
-    click person/abraham_servant "../../person/abraham_servant/"
+    person/laban(["Laban"])
+    click person/er "../../person/er/"
     click person/abraham "../../person/abraham/"
+    click person/abraham_servant "../../person/abraham_servant/"
     click being/yahweh "../../being/yahweh/"
+    click person/abimelech "../../person/abimelech/"
+    click person/jacob "../../person/jacob/"
+    click person/onan "../../person/onan/"
+    click being/cherubim "../../being/cherubim/"
     click person/isaac "../../person/isaac/"
-    being/yahweh --&gt;|blessed| person/abraham
-    being/yahweh --&gt;|appointed| being/cherubim
-    being/yahweh --&gt;|blessed| person/isaac
-    being/yahweh --&gt;|blessed| person/laban
-    being/yahweh --&gt;|blessed| person/abraham_servant
-    being/yahweh --&gt;|blessed| person/jacob
-    being/yahweh --&gt;|cursed| person/abimelech
+    click person/laban "../../person/laban/"
     being/yahweh --&gt;|healed| person/abimelech
+    being/yahweh --&gt;|cursed| person/abimelech
+    being/yahweh --&gt;|appointed| being/cherubim
+    being/yahweh --&gt;|blessed| person/abraham_servant
+    being/yahweh --&gt;|blessed| person/laban
+    being/yahweh --&gt;|killed| person/onan
+    being/yahweh --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|blessed| person/jacob
+    being/yahweh --&gt;|killed| person/er
+    being/yahweh --&gt;|blessed| person/abraham
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/abimelech fill:#2fa4e7,stroke:#333,stroke-width:4px;
     group/philistines(["Philistines"])
-    person/abimelech(["Abimelech"])
-    person/sarah(["Sarah"])
-    person/abram(["Abram"])
     person/abimelech_2(["Abimelech"])
     person/abraham(["Abraham"])
     person/sarai(["Sarai"])
+    person/abimelech(["Abimelech"])
+    person/abram(["Abram"])
     person/isaac(["Isaac"])
+    place/machpelah(["Machpelah"])
+    person/sarah(["Sarah"])
     click group/philistines "../../group/philistines/"
-    click person/abimelech "../../person/abimelech/"
-    click person/sarah "../../person/sarah/"
-    click person/abram "../../person/abram/"
     click person/abimelech_2 "../../person/abimelech_2/"
     click person/abraham "../../person/abraham/"
     click person/sarai "../../person/sarai/"
+    click person/abimelech "../../person/abimelech/"
+    click person/abram "../../person/abram/"
     click person/isaac "../../person/isaac/"
-    person/abraham &lt;--&gt;|name matches| person/abram
-    person/abimelech_2 &lt;--&gt;|name matches| person/abimelech
-    person/abimelech .-&gt;|associated with| person/sarah
-    person/isaac .-&gt;|associated with| person/abimelech_2
-    person/abimelech .-&gt;|associated with| person/abraham
+    click place/machpelah "../../place/machpelah/"
+    click person/sarah "../../person/sarah/"
+    place/machpelah &lt;.-&gt;|associated with| person/abraham
+    person/abram &lt;--&gt;|name matches| person/abraham
     person/sarah &lt;--&gt;|name matches| person/sarai
+    person/isaac .-&gt;|associated with| person/abimelech_2
+    person/abimelech &lt;--&gt;|name matches| person/abimelech_2
     group/philistines .-&gt;|associated with| person/abraham
+    person/abimelech .-&gt;|associated with| person/abraham
+    person/abimelech .-&gt;|associated with| person/sarah
 </div>
 </article>
 </div>

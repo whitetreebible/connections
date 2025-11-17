@@ -272,39 +272,45 @@
 <h2 id="vocational-functional">Vocational / functional</h2>
 <div class="mermaid">graph TD;
     style person/abraham_servant fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    role/manager(["manager"])
     person/abraham_servant(["Abraham's servant"])
-    click role/manager "../../role/manager/"
+    role/manager(["manager"])
     click person/abraham_servant "../../person/abraham_servant/"
+    click role/manager "../../role/manager/"
     person/abraham_servant --&gt;|role as| role/manager
 </div>
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/abraham_servant fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/jacob(["Jacob"])
-    being/cherubim(["cherubim"])
-    person/abimelech(["Abimelech"])
-    person/laban(["Laban"])
-    person/abraham_servant(["Abraham's servant"])
+    person/er(["Er"])
     person/abraham(["Abraham"])
+    person/abraham_servant(["Abraham's servant"])
     being/yahweh(["Yahweh"])
+    person/abimelech(["Abimelech"])
+    person/jacob(["Jacob"])
+    person/onan(["Onan"])
+    being/cherubim(["cherubim"])
     person/isaac(["Isaac"])
-    click person/jacob "../../person/jacob/"
-    click being/cherubim "../../being/cherubim/"
-    click person/abimelech "../../person/abimelech/"
-    click person/laban "../../person/laban/"
-    click person/abraham_servant "../../person/abraham_servant/"
+    person/laban(["Laban"])
+    click person/er "../../person/er/"
     click person/abraham "../../person/abraham/"
+    click person/abraham_servant "../../person/abraham_servant/"
     click being/yahweh "../../being/yahweh/"
+    click person/abimelech "../../person/abimelech/"
+    click person/jacob "../../person/jacob/"
+    click person/onan "../../person/onan/"
+    click being/cherubim "../../being/cherubim/"
     click person/isaac "../../person/isaac/"
-    being/yahweh --&gt;|blessed| person/abraham
-    being/yahweh --&gt;|appointed| being/cherubim
-    being/yahweh --&gt;|blessed| person/isaac
-    being/yahweh --&gt;|blessed| person/laban
-    being/yahweh --&gt;|blessed| person/abraham_servant
-    being/yahweh --&gt;|blessed| person/jacob
-    being/yahweh --&gt;|cursed| person/abimelech
+    click person/laban "../../person/laban/"
     being/yahweh --&gt;|healed| person/abimelech
+    being/yahweh --&gt;|cursed| person/abimelech
+    being/yahweh --&gt;|appointed| being/cherubim
+    being/yahweh --&gt;|blessed| person/abraham_servant
+    being/yahweh --&gt;|blessed| person/laban
+    being/yahweh --&gt;|killed| person/onan
+    being/yahweh --&gt;|blessed| person/isaac
+    being/yahweh --&gt;|blessed| person/jacob
+    being/yahweh --&gt;|killed| person/er
+    being/yahweh --&gt;|blessed| person/abraham
 </div>
 </article>
 </div>

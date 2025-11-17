@@ -225,6 +225,20 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#family">
+<span class="md-ellipsis">
+      Family
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#action-event">
+<span class="md-ellipsis">
+      Action / event
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#textual-symbolic">
 <span class="md-ellipsis">
       Textual / symbolic
@@ -242,27 +256,89 @@
 <h2 id="israel-name-matches-jacob">Israel (name matches Jacob)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
+<li><strong>Loved</strong> <a href="../../person/joseph/">Joseph</a> (<a href="https://biblehub.com/context/genesis/37-3.htm" target="_blank">Genesis 37:3</a>)</li>
 <li><strong>Name matches</strong> <a href="../../person/jacob/">Jacob (son of Isaac)</a> (<a href="https://biblehub.com/context/genesis/32-28.htm" target="_blank">Genesis 32:28</a>)</li>
+<li><strong>Parent of</strong> <a href="../../person/joseph/">Joseph</a> (<a href="https://biblehub.com/context/genesis/37-2.htm" target="_blank">Genesis 37:2</a>)</li>
 </ul>
+<h2 id="family">Family</h2>
+<div class="mermaid">graph TD;
+    style person/israel fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/rachel(["Rachel"])
+    person/manasseh(["Manasseh"])
+    person/joseph(["Joseph"])
+    person/israel(["Israel"])
+    person/asenath(["Asenath"])
+    person/jacob(["Jacob"])
+    person/ephraim(["Ephraim"])
+    click person/rachel "../../person/rachel/"
+    click person/manasseh "../../person/manasseh/"
+    click person/joseph "../../person/joseph/"
+    click person/israel "../../person/israel/"
+    click person/asenath "../../person/asenath/"
+    click person/jacob "../../person/jacob/"
+    click person/ephraim "../../person/ephraim/"
+    person/jacob --&gt;|parent of| person/joseph
+    person/joseph --&gt;|parent of| person/manasseh
+    person/israel --&gt;|parent of| person/joseph
+    person/rachel --&gt;|parent of| person/joseph
+    person/joseph &lt;--&gt;|married to| person/asenath
+    person/joseph --&gt;|parent of| person/ephraim
+</div>
+<h2 id="action-event">Action / event</h2>
+<div class="mermaid">graph TD;
+    style person/israel fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/potiphar_wife(["Potiphar's wife"])
+    person/israel(["Israel"])
+    person/joseph(["Joseph"])
+    person/jacob(["Jacob"])
+    click person/potiphar_wife "../../person/potiphar_wife/"
+    click person/israel "../../person/israel/"
+    click person/joseph "../../person/joseph/"
+    click person/jacob "../../person/jacob/"
+    person/jacob --&gt;|blessed| person/joseph
+    person/israel --&gt;|loved| person/joseph
+    person/potiphar_wife --&gt;|attacked| person/joseph
+</div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/israel fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/eder(["Eder"])
-    place/succoth(["Succoth"])
-    person/jacob(["Jacob"])
-    place/shechem(["Shechem"])
-    person/israel(["Israel"])
+    place/luz(["Luz"])
     group/sons_of_hamor(["sons of Hamor"])
-    click place/eder "../../place/eder/"
-    click place/succoth "../../place/succoth/"
-    click person/jacob "../../person/jacob/"
-    click place/shechem "../../place/shechem/"
-    click person/israel "../../person/israel/"
+    place/rameses(["Rameses"])
+    place/succoth(["Succoth"])
+    object/sword(["sword"])
+    place/paddan_aram(["Paddan Aram"])
+    object/bow(["bow"])
+    place/eder(["Eder"])
+    person/israel(["Israel"])
+    place/goshen(["Goshen"])
+    person/jacob(["Jacob"])
+    place/machpelah(["Machpelah"])
+    place/shechem(["Shechem"])
+    click place/luz "../../place/luz/"
     click group/sons_of_hamor "../../group/sons_of_hamor/"
+    click place/rameses "../../place/rameses/"
+    click place/succoth "../../place/succoth/"
+    click object/sword "../../object/sword/"
+    click place/paddan_aram "../../place/paddan_aram/"
+    click object/bow "../../object/bow/"
+    click place/eder "../../place/eder/"
+    click person/israel "../../person/israel/"
+    click place/goshen "../../place/goshen/"
+    click person/jacob "../../person/jacob/"
+    click place/machpelah "../../place/machpelah/"
+    click place/shechem "../../place/shechem/"
+    person/jacob .-&gt;|associated with| place/machpelah
     place/eder .-&gt;|associated with| person/jacob
+    person/jacob &lt;--&gt;|name matches| person/israel
+    place/luz .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| object/bow
     place/shechem .-&gt;|associated with| person/jacob
-    person/israel &lt;--&gt;|name matches| person/jacob
+    place/rameses .-&gt;|associated with| person/jacob
     place/succoth .-&gt;|associated with| person/jacob
+    person/jacob .-&gt;|associated with| object/sword
+    place/goshen .-&gt;|associated with| person/jacob
+    place/paddan_aram .-&gt;|associated with| person/jacob
     person/jacob .-&gt;|associated with| group/sons_of_hamor
 </div>
 </article>

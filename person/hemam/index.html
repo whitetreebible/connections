@@ -247,17 +247,17 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/hemam fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/hemam(["Hemam"])
-    person/hori(["Hori"])
     person/lotan(["Lotan"])
+    person/hori(["Hori"])
     person/seir(["Seir"])
-    click person/hemam "../../person/hemam/"
-    click person/hori "../../person/hori/"
+    person/hemam(["Hemam"])
     click person/lotan "../../person/lotan/"
+    click person/hori "../../person/hori/"
     click person/seir "../../person/seir/"
+    click person/hemam "../../person/hemam/"
     person/lotan --&gt;|parent of| person/hori
-    person/seir --&gt;|parent of| person/lotan
     person/lotan --&gt;|parent of| person/hemam
+    person/seir --&gt;|parent of| person/lotan
 </div>
 </article>
 </div>

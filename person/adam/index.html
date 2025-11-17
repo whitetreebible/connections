@@ -248,32 +248,32 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/adam fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/cain_wife(["Cain_Wife"])
-    person/enosh(["Enosh"])
-    person/abel(["Abel"])
-    person/eve(["Eve"])
-    person/adam(["Adam"])
-    person/enoch_son_of_cain(["Enoch"])
-    person/cain(["Cain"])
     person/seth(["Seth"])
-    click person/cain_wife "../../person/cain_wife/"
-    click person/enosh "../../person/enosh/"
-    click person/abel "../../person/abel/"
-    click person/eve "../../person/eve/"
-    click person/adam "../../person/adam/"
-    click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
-    click person/cain "../../person/cain/"
+    person/abel(["Abel"])
+    person/enosh(["Enosh"])
+    person/adam(["Adam"])
+    person/cain_wife(["Cain_Wife"])
+    person/cain(["Cain"])
+    person/eve(["Eve"])
+    person/enoch_son_of_cain(["Enoch"])
     click person/seth "../../person/seth/"
+    click person/abel "../../person/abel/"
+    click person/enosh "../../person/enosh/"
+    click person/adam "../../person/adam/"
+    click person/cain_wife "../../person/cain_wife/"
+    click person/cain "../../person/cain/"
+    click person/eve "../../person/eve/"
+    click person/enoch_son_of_cain "../../person/enoch_son_of_cain/"
     person/adam --&gt;|parent of| person/seth
+    person/eve &lt;--&gt;|married to| person/adam
     person/adam --&gt;|parent of| person/cain
+    person/cain --&gt;|parent of| person/enoch_son_of_cain
     person/adam --&gt;|parent of| person/abel
-    person/seth --&gt;|parent of| person/enosh
-    person/eve --&gt;|parent of| person/cain
     person/eve --&gt;|parent of| person/seth
-    person/adam &lt;--&gt;|married to| person/eve
+    person/eve --&gt;|parent of| person/cain
     person/eve --&gt;|parent of| person/abel
     person/cain_wife &lt;--&gt;|married to| person/cain
-    person/cain --&gt;|parent of| person/enoch_son_of_cain
+    person/seth --&gt;|parent of| person/enosh
 </div>
 </article>
 </div>

@@ -238,6 +238,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -249,35 +256,57 @@
 <h2 id="ephron-son-of-zohar">Ephron (son of Zohar)</h2>
 <h2 id="associations">Associations</h2>
 <ul>
+<li><strong>Associated with</strong> <a href="../../place/machpelah/">Machpelah</a> (<a href="https://biblehub.com/context/genesis/49-29.htm" target="_blank">Genesis 49:29</a>, <a href="https://biblehub.com/context/genesis/50-13.htm" target="_blank">Genesis 50:13</a>)</li>
 <li><strong>Child of</strong> <a href="../../person/zohar/">Zohar</a> (<a href="https://biblehub.com/context/genesis/23-8.htm" target="_blank">Genesis 23:8</a>, <a href="https://biblehub.com/context/genesis/25-9.htm" target="_blank">Genesis 25:9</a>)</li>
-<li><strong>Member of</strong> <a href="../../group/hittites/">Hittites</a> (<a href="https://biblehub.com/context/genesis/23-10.htm" target="_blank">Genesis 23:10</a>, <a href="https://biblehub.com/context/genesis/25-9.htm" target="_blank">Genesis 25:9</a>)</li>
+<li><strong>Member of</strong> <a href="../../group/hittites/">Hittites</a> (<a href="https://biblehub.com/context/genesis/23-10.htm" target="_blank">Genesis 23:10</a>, <a href="https://biblehub.com/context/genesis/25-9.htm" target="_blank">Genesis 25:9</a>, <a href="https://biblehub.com/context/genesis/49-29.htm" target="_blank">Genesis 49:29</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/ephron fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/zohar(["Zohar"])
     person/ephron(["Ephron"])
-    click person/zohar "../../person/zohar/"
+    person/zohar(["Zohar"])
     click person/ephron "../../person/ephron/"
+    click person/zohar "../../person/zohar/"
     person/zohar --&gt;|parent of| person/ephron
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/ephron fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/judith(["Judith"])
-    person/ephron(["Ephron"])
     group/hittites(["Hittites"])
-    person/basemath(["Basemath"])
     person/elon_father_of_adah(["Elon"])
+    person/basemath(["Basemath"])
+    person/ephron(["Ephron"])
     click person/judith "../../person/judith/"
-    click person/ephron "../../person/ephron/"
     click group/hittites "../../group/hittites/"
-    click person/basemath "../../person/basemath/"
     click person/elon_father_of_adah "../../person/elon_father_of_adah/"
-    person/judith --&gt;|member of| group/hittites
+    click person/basemath "../../person/basemath/"
+    click person/ephron "../../person/ephron/"
+    person/elon_father_of_adah --&gt;|member of| group/hittites
     person/ephron --&gt;|member of| group/hittites
     person/basemath --&gt;|member of| group/hittites
-    person/elon_father_of_adah --&gt;|member of| group/hittites
+    person/judith --&gt;|member of| group/hittites
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style person/ephron fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/abraham(["Abraham"])
+    place/canaan(["Canaan"])
+    person/mamre(["Mamre"])
+    person/jacob(["Jacob"])
+    place/machpelah(["Machpelah"])
+    person/ephron(["Ephron"])
+    click person/abraham "../../person/abraham/"
+    click place/canaan "../../place/canaan/"
+    click person/mamre "../../person/mamre/"
+    click person/jacob "../../person/jacob/"
+    click place/machpelah "../../place/machpelah/"
+    click person/ephron "../../person/ephron/"
+    person/jacob .-&gt;|associated with| place/machpelah
+    place/machpelah &lt;.-&gt;|associated with| person/abraham
+    place/machpelah .-&gt;|associated with| place/canaan
+    person/ephron .-&gt;|associated with| place/machpelah
+    place/machpelah &lt;.-&gt;|associated with| person/mamre
 </div>
 </article>
 </div>

@@ -247,26 +247,26 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/ithran fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/keran(["Keran"])
-    person/hemdan(["Hemdan"])
-    person/ithran(["Ithran"])
-    person/seir(["Seir"])
-    person/eshban(["Eshban"])
-    person/dishon(["Dishon"])
     person/anah(["Anah"])
-    click person/keran "../../person/keran/"
-    click person/hemdan "../../person/hemdan/"
-    click person/ithran "../../person/ithran/"
-    click person/seir "../../person/seir/"
-    click person/eshban "../../person/eshban/"
-    click person/dishon "../../person/dishon/"
+    person/dishon(["Dishon"])
+    person/seir(["Seir"])
+    person/keran(["Keran"])
+    person/ithran(["Ithran"])
+    person/eshban(["Eshban"])
+    person/hemdan(["Hemdan"])
     click person/anah "../../person/anah/"
-    person/dishon --&gt;|parent of| person/hemdan
+    click person/dishon "../../person/dishon/"
+    click person/seir "../../person/seir/"
+    click person/keran "../../person/keran/"
+    click person/ithran "../../person/ithran/"
+    click person/eshban "../../person/eshban/"
+    click person/hemdan "../../person/hemdan/"
     person/dishon --&gt;|parent of| person/keran
     person/dishon --&gt;|parent of| person/ithran
+    person/anah --&gt;|parent of| person/dishon
+    person/dishon --&gt;|parent of| person/hemdan
     person/seir --&gt;|parent of| person/dishon
     person/dishon --&gt;|parent of| person/eshban
-    person/anah --&gt;|parent of| person/dishon
 </div>
 </article>
 </div>

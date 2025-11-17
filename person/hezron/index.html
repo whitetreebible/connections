@@ -231,6 +231,13 @@
     </span>
 </a>
 </li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#textual-symbolic">
+<span class="md-ellipsis">
+      Textual / symbolic
+    </span>
+</a>
+</li>
 </ul>
 </nav>
 </div>
@@ -240,32 +247,45 @@
 <article class="md-content__inner md-typeset">
 <h1 id="hezron">Hezron</h1>
 <h2 id="hezron-son-of-perez">Hezron (son of Perez)</h2>
-<p>Hezron was the son of Perez and the grandson of Judah, making him a descendant of Abraham, Isaac, and Jacob. He is an important figure in the genealogies of the Bible, as he is an ancestor of King David and, according to Christian tradition, Jesus Christ. He lived during the period of the Judges and is mentioned in the genealogies found in the books of Ruth and 1 Chronicles.</p>
+<p>Hezron was the son of Perez and the grandson of Judah, making him a descendant of Abraham, Isaac, and Jacob. He is an important figure in the genealogies of the Bible, as he is an ancestor of King David and ultimately, Jesus. He lived during the period of the Judges and is mentioned in the genealogies found in the books of Ruth and 1 Chronicles.</p>
 <h2 id="associations">Associations</h2>
 <ul>
 <li><strong>Child of</strong> <a href="../../person/perez/">Perez</a> (<a href="https://biblehub.com/context/ruth/4-18.htm" target="_blank">Ruth 4:18</a>)</li>
+<li><strong>Name matches</strong> <a href="../../person/hezron_son_of_reuben/">Hezron (son of Reuben)</a></li>
 <li><strong>Parent of</strong> <a href="../../person/ram/">Ram</a> (<a href="https://biblehub.com/context/ruth/4-19.htm" target="_blank">Ruth 4:19</a>)</li>
 </ul>
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/hezron fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/hezron(["Hezron"])
     person/perez(["Perez"])
     person/amminadab(["Amminadab"])
-    person/ram(["Ram"])
-    person/judah(["Judah"])
-    person/hezron(["Hezron"])
     person/tamar(["Tamar"])
+    person/judah(["Judah"])
+    person/ram(["Ram"])
+    person/hamul(["Hamul"])
+    click person/hezron "../../person/hezron/"
     click person/perez "../../person/perez/"
     click person/amminadab "../../person/amminadab/"
-    click person/ram "../../person/ram/"
-    click person/judah "../../person/judah/"
-    click person/hezron "../../person/hezron/"
     click person/tamar "../../person/tamar/"
-    person/hezron --&gt;|parent of| person/ram
+    click person/judah "../../person/judah/"
+    click person/ram "../../person/ram/"
+    click person/hamul "../../person/hamul/"
     person/perez --&gt;|parent of| person/hezron
-    person/judah --&gt;|parent of| person/perez
     person/ram --&gt;|parent of| person/amminadab
+    person/hezron --&gt;|parent of| person/ram
+    person/judah --&gt;|parent of| person/perez
+    person/perez --&gt;|parent of| person/hamul
     person/tamar --&gt;|parent of| person/perez
+</div>
+<h2 id="textual-symbolic">Textual / symbolic</h2>
+<div class="mermaid">graph TD;
+    style person/hezron fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/hezron(["Hezron"])
+    person/hezron_son_of_reuben(["Hezron"])
+    click person/hezron "../../person/hezron/"
+    click person/hezron_son_of_reuben "../../person/hezron_son_of_reuben/"
+    person/hezron_son_of_reuben &lt;--&gt;|name matches| person/hezron
 </div>
 </article>
 </div>

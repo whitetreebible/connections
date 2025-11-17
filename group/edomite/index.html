@@ -254,24 +254,24 @@
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style group/edomite fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    group/edomite(["Edomite"])
     person/esau(["Esau"])
-    click group/edomite "../../group/edomite/"
+    group/edomite(["Edomite"])
     click person/esau "../../person/esau/"
+    click group/edomite "../../group/edomite/"
     person/esau --&gt;|origin of| group/edomite
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style group/edomite fill:#2fa4e7,stroke:#333,stroke-width:4px;
     place/seir(["Seir"])
+    person/esau(["Esau"])
     group/edomite(["Edomite"])
     place/edom(["Edom"])
-    person/esau(["Esau"])
     click place/seir "../../place/seir/"
+    click person/esau "../../person/esau/"
     click group/edomite "../../group/edomite/"
     click place/edom "../../place/edom/"
-    click person/esau "../../person/esau/"
-    person/esau &lt;--&gt;|name matches| group/edomite
+    group/edomite &lt;--&gt;|name matches| person/esau
     place/seir .-&gt;|associated with| person/esau
     place/edom &lt;--&gt;|name matches| person/esau
 </div>

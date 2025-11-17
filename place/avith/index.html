@@ -239,13 +239,13 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style place/avith fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/avith(["Avith"])
-    person/hadad_son_of_bedad(["Hadad"])
     person/hadad(["Hadad"])
-    click place/avith "../../place/avith/"
-    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    person/hadad_son_of_bedad(["Hadad"])
+    place/avith(["Avith"])
     click person/hadad "../../person/hadad/"
-    person/hadad_son_of_bedad &lt;--&gt;|name matches| person/hadad
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    click place/avith "../../place/avith/"
+    person/hadad &lt;--&gt;|name matches| person/hadad_son_of_bedad
     place/avith .-&gt;|associated with| person/hadad_son_of_bedad
 </div>
 </article>

@@ -228,20 +228,20 @@
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style symbol/emptiness fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    symbol/darkness(["darkness"])
-    place/dry_land(["dry land"])
     symbol/wilderness(["wilderness"])
     place/earth(["earth"])
+    place/dry_land(["dry land"])
+    symbol/darkness(["darkness"])
     symbol/emptiness(["emptiness"])
-    click symbol/darkness "../../symbol/darkness/"
-    click place/dry_land "../../place/dry_land/"
     click symbol/wilderness "../../symbol/wilderness/"
     click place/earth "../../place/earth/"
+    click place/dry_land "../../place/dry_land/"
+    click symbol/darkness "../../symbol/darkness/"
     click symbol/emptiness "../../symbol/emptiness/"
     place/earth .-&gt;|associated with| symbol/wilderness
+    place/earth .-&gt;|associated with| symbol/emptiness
     place/earth .-&gt;|associated with| symbol/darkness
     place/dry_land .-&gt;|associated with| place/earth
-    place/earth .-&gt;|associated with| symbol/emptiness
 </div>
 </article>
 </div>

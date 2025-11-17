@@ -262,52 +262,52 @@
 <h2 id="family">Family</h2>
 <div class="mermaid">graph TD;
     style person/hadad_son_of_bedad fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    person/hadad_son_of_bedad(["Hadad"])
     person/bedad(["Bedad"])
-    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    person/hadad_son_of_bedad(["Hadad"])
     click person/bedad "../../person/bedad/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     person/bedad --&gt;|parent of| person/hadad_son_of_bedad
 </div>
 <h2 id="social-political">Social / political</h2>
 <div class="mermaid">graph TD;
     style person/hadad_son_of_bedad fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/baal_hanan(["Baal-Hanan"])
+    place/edom(["Edom"])
+    person/hadad_son_of_bedad(["Hadad"])
     person/husham(["Husham"])
     person/hadar(["Hadar"])
     person/bela(["Bela"])
     person/shaul(["Shaul"])
-    place/edom(["Edom"])
-    person/jobab_son_of_zerah(["Jobab"])
-    person/hadad_son_of_bedad(["Hadad"])
     person/samlah(["Samlah"])
-    person/baal_hanan(["Baal-Hanan"])
+    person/jobab_son_of_zerah(["Jobab"])
+    click person/baal_hanan "../../person/baal_hanan/"
+    click place/edom "../../place/edom/"
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     click person/husham "../../person/husham/"
     click person/hadar "../../person/hadar/"
     click person/bela "../../person/bela/"
     click person/shaul "../../person/shaul/"
-    click place/edom "../../place/edom/"
-    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
-    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
     click person/samlah "../../person/samlah/"
-    click person/baal_hanan "../../person/baal_hanan/"
-    person/baal_hanan --&gt;|leader of| place/edom
-    place/edom --&gt;|led by| person/hadad_son_of_bedad
+    click person/jobab_son_of_zerah "../../person/jobab_son_of_zerah/"
+    person/samlah --&gt;|leader of| place/edom
+    person/shaul --&gt;|leader of| place/edom
     person/hadar --&gt;|leader of| place/edom
     person/husham --&gt;|leader of| place/edom
-    person/shaul --&gt;|leader of| place/edom
-    person/bela --&gt;|leader of| place/edom
-    person/samlah --&gt;|leader of| place/edom
+    person/baal_hanan --&gt;|leader of| place/edom
     place/edom --&gt;|led by| person/jobab_son_of_zerah
+    person/bela --&gt;|leader of| place/edom
+    place/edom --&gt;|led by| person/hadad_son_of_bedad
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/hadad_son_of_bedad fill:#2fa4e7,stroke:#333,stroke-width:4px;
-    place/avith(["Avith"])
-    person/hadad_son_of_bedad(["Hadad"])
     person/hadad(["Hadad"])
-    click place/avith "../../place/avith/"
-    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    person/hadad_son_of_bedad(["Hadad"])
+    place/avith(["Avith"])
     click person/hadad "../../person/hadad/"
-    person/hadad_son_of_bedad &lt;--&gt;|name matches| person/hadad
+    click person/hadad_son_of_bedad "../../person/hadad_son_of_bedad/"
+    click place/avith "../../place/avith/"
+    person/hadad &lt;--&gt;|name matches| person/hadad_son_of_bedad
     place/avith .-&gt;|associated with| person/hadad_son_of_bedad
 </div>
 </article>

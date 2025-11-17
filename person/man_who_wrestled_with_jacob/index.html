@@ -256,37 +256,58 @@
 <h2 id="action-event">Action / event</h2>
 <div class="mermaid">graph TD;
     style person/man_who_wrestled_with_jacob fill:#2fa4e7,stroke:#333,stroke-width:4px;
+    person/rachel(["Rachel"])
+    group/amorites(["Amorites"])
+    person/reuben(["Reuben"])
+    person/manasseh(["Manasseh"])
+    person/joseph(["Joseph"])
+    being/yahweh(["Yahweh"])
+    being/el_shaddai(["El Shaddai"])
+    person/pharaoh_of_joseph(["Pharaoh"])
     person/jacob(["Jacob"])
     person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
-    person/rachel(["Rachel"])
-    being/yahweh(["Yahweh"])
     person/isaac(["Isaac"])
+    person/ephraim(["Ephraim"])
+    click person/rachel "../../person/rachel/"
+    click group/amorites "../../group/amorites/"
+    click person/reuben "../../person/reuben/"
+    click person/manasseh "../../person/manasseh/"
+    click person/joseph "../../person/joseph/"
+    click being/yahweh "../../being/yahweh/"
+    click being/el_shaddai "../../being/el_shaddai/"
+    click person/pharaoh_of_joseph "../../person/pharaoh_of_joseph/"
     click person/jacob "../../person/jacob/"
     click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
-    click person/rachel "../../person/rachel/"
-    click being/yahweh "../../being/yahweh/"
     click person/isaac "../../person/isaac/"
-    person/man_who_wrestled_with_jacob --&gt;|attacked| person/jacob
+    click person/ephraim "../../person/ephraim/"
+    person/jacob --&gt;|blessed| person/joseph
+    person/jacob --&gt;|blessed| person/ephraim
+    person/jacob --&gt;|blessed| person/manasseh
+    being/el_shaddai --&gt;|blessed| person/jacob
     person/man_who_wrestled_with_jacob --&gt;|blessed| person/jacob
+    person/man_who_wrestled_with_jacob --&gt;|attacked| person/jacob
+    person/isaac --&gt;|blessed| person/jacob
+    person/isaac --&gt;|sent| person/jacob
+    person/jacob --&gt;|blessed| person/pharaoh_of_joseph
+    person/jacob --&gt;|attacked| group/amorites
+    person/jacob --&gt;|cursed| person/reuben
     being/yahweh --&gt;|blessed| person/jacob
     person/jacob --&gt;|cursed| person/rachel
-    person/isaac --&gt;|sent| person/jacob
-    person/isaac --&gt;|blessed| person/jacob
 </div>
 <h2 id="textual-symbolic">Textual / symbolic</h2>
 <div class="mermaid">graph TD;
     style person/man_who_wrestled_with_jacob fill:#2fa4e7,stroke:#333,stroke-width:4px;
     person/man_who_wrestled_with_jacob(["Man_Who_Wrestled_With_Jacob"])
     being/shaddai(["Shaddai"])
-    being/yahweh(["Yahweh"])
     being/god(["God"])
+    being/yahweh(["Yahweh"])
     click person/man_who_wrestled_with_jacob "../../person/man_who_wrestled_with_jacob/"
     click being/shaddai "../../being/shaddai/"
-    click being/yahweh "../../being/yahweh/"
     click being/god "../../being/god/"
-    being/yahweh &lt;--&gt;|name matches| being/god
+    click being/yahweh "../../being/yahweh/"
     being/shaddai &lt;--&gt;|name matches| being/god
     person/man_who_wrestled_with_jacob .-&gt;|associated with| being/god
+    being/yahweh &lt;--&gt;|name matches| being/god
 </div>
 </article>
 </div>
