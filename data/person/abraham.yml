@@ -3,7 +3,7 @@ type: person
 name:
   en: Abraham
 name_disambiguous:
-  en: Abraham (aka Abram)
+  en: Abraham (also Abram)
 description:
   en: ''
 footnotes: {}
@@ -70,8 +70,13 @@ edges:
   type: buried-in
   refs:
   - bible:Genesis 25:9
+  - bible:Genesis 49:31
 - target: person/ishmael
   type: parent-of
   refs:
   - bible:Genesis 25:12
   - bible:Genesis 28:9
+- target: place/machpelah
+  type: associated-with
+  refs:
+  - bible:Genesis 50:13

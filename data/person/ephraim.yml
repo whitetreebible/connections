@@ -13,3 +13,7 @@ edges:
   refs:
   - bible:Genesis 41:51
   - bible:Genesis 46:20
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 48:5

@@ -12,3 +12,7 @@ edges:
   type: ally-of
   refs:
   - bible:Genesis 14:13
+- target: place/machpelah
+  type: associated-with
+  refs:
+  - bible:Genesis 50:13

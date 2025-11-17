@@ -20,3 +20,7 @@ edges:
   type: associated-with
   refs:
   - bible:Genesis 46:34
+- target: place/rameses
+  type: associated-with
+  refs:
+  - bible:Genesis 47:11

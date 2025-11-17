@@ -1,0 +1,14 @@
+id: makir
+type: person
+name:
+  en: Makir
+name_disambiguous:
+  en: Makir (son of Manasseh)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/manasseh
+  type: child-of
+  refs:
+  - bible:Genesis 50:23

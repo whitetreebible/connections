@@ -38,6 +38,7 @@ edges:
   - bible:Genesis 29:32
   - bible:Genesis 35:23
   - bible:Genesis 46:9
+  - bible:Genesis 48:5
 - target: person/simeon
   type: parent-of
   refs:
@@ -45,6 +46,7 @@ edges:
   - bible:Genesis 34:25
   - bible:Genesis 35:23
   - bible:Genesis 46:10
+  - bible:Genesis 48:5
 - target: person/levi
   type: parent-of
   refs:
@@ -174,3 +176,59 @@ edges:
   type: resident-of
   refs:
   - bible:Genesis 46:28
+- target: person/pharaoh_of_joseph
+  type: blessed
+  refs:
+  - bible:Genesis 47:7
+- target: place/rameses
+  type: resident-of
+  refs:
+  - bible:Genesis 47:11
+- target: person/ephraim
+  type: parent-of
+  refs:
+  - bible:Genesis 48:5
+- target: person/manasseh
+  type: parent-of
+  refs:
+  - bible:Genesis 48:5
+- target: person/joseph
+  type: blessed
+  refs:
+  - bible:Genesis 48:15
+- target: person/ephraim
+  type: blessed
+  refs:
+  - bible:Genesis 48:16
+- target: person/manasseh
+  type: blessed
+  refs:
+  - bible:Genesis 48:16
+- target: group/amorites
+  type: attacked
+  refs:
+  - bible:Genesis 48:22
+- target: object/sword
+  type: associated-with
+  refs:
+  - bible:Genesis 48:22
+- target: object/bow
+  type: associated-with
+  refs:
+  - bible:Genesis 48:22
+- target: person/reuben
+  type: cursed
+  refs:
+  - bible:Genesis 49:4
+- target: place/machpelah
+  type: associated-with
+  refs:
+  - bible:Genesis 49:29
+- target: place/goshen
+  type: died-in
+  refs:
+  - bible:Genesis 49:33
+- target: place/machpelah
+  type: buried-in
+  refs:
+  - bible:Genesis 50:13

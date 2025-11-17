@@ -69,3 +69,7 @@ edges:
   type: buried-in
   refs:
   - bible:Genesis 35:29
+- target: place/machpelah
+  type: buried-in
+  refs:
+  - bible:Genesis 49:31

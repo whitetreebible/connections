@@ -1,0 +1,14 @@
+id: abel_mizraim
+type: place
+name:
+  en: Abel Mizraim
+name_disambiguous:
+  en: Abel Mizraim ("mourning of Egypt")
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/atad
+  type: name-matches
+  refs:
+  - bible:Genesis 50:11

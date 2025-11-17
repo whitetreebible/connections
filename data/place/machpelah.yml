@@ -3,7 +3,7 @@ type: place
 name:
   en: Machpelah
 name_disambiguous:
-  en: Machpelah
+  en: Machpelah (burial place in Canaan)
 description:
   en: ''
 footnotes: {}
@@ -12,3 +12,15 @@ edges:
   type: near
   refs:
   - bible:Genesis 23:19
+- target: place/canaan
+  type: associated-with
+  refs:
+  - bible:Genesis 49:30
+- target: person/mamre
+  type: associated-with
+  refs:
+  - bible:Genesis 49:30
+- target: person/abraham
+  type: associated-with
+  refs:
+  - bible:Genesis 49:30

@@ -1,0 +1,18 @@
+id: luz
+type: place
+name:
+  en: Luz
+name_disambiguous:
+  en: Luz
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 48:3
+- target: place/canaan
+  type: associated-with
+  refs:
+  - bible:Genesis 48:3

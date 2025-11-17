@@ -60,3 +60,7 @@ edges:
   refs:
   - bible:Genesis 30:21
   - bible:Genesis 34:1
+- target: place/machpelah
+  type: buried-in
+  refs:
+  - bible:Genesis 49:31

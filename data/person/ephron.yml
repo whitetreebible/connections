@@ -18,3 +18,9 @@ edges:
   refs:
   - bible:Genesis 23:10
   - bible:Genesis 25:9
+  - bible:Genesis 49:29
+- target: place/machpelah
+  type: associated-with
+  refs:
+  - bible:Genesis 49:29
+  - bible:Genesis 50:13

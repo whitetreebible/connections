@@ -14,6 +14,7 @@ edges:
   - bible:Genesis 29:32
   - bible:Genesis 35:23
   - bible:Genesis 46:9
+  - bible:Genesis 48:5
 - target: person/leah
   type: child-of
   refs:

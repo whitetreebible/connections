@@ -1,0 +1,18 @@
+id: atad
+type: place
+name:
+  en: Atad
+name_disambiguous:
+  en: Atad (also Abel Mizraim)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: place/jordan
+  type: near
+  refs:
+  - bible:Genesis 50:10
+- target: place/abel_mizraim
+  type: name-matches
+  refs:
+  - bible:Genesis 50:11

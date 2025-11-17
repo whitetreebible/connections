@@ -35,3 +35,7 @@ edges:
   refs:
   - bible:Genesis 25:24
   - bible:Genesis 28:5
+- target: place/machpelah
+  type: buried-in
+  refs:
+  - bible:Genesis 49:31

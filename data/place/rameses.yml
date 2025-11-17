@@ -1,0 +1,14 @@
+id: rameses
+type: place
+name:
+  en: Rameses
+name_disambiguous:
+  en: Rameses (Egyptian city)
+description:
+  en: ''
+footnotes: {}
+edges:
+- target: person/jacob
+  type: associated-with
+  refs:
+  - bible:Genesis 47:11

@@ -76,3 +76,15 @@ edges:
   refs:
   - bible:Genesis 41:51
   - bible:Genesis 46:20
+- target: place/atad
+  type: visited
+  refs:
+  - bible:Genesis 50:10
+- target: place/egypt
+  type: died-in
+  refs:
+  - bible:Genesis 50:26
+- target: place/egypt
+  type: buried-in
+  refs:
+  - bible:Genesis 50:26

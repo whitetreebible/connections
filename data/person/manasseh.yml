@@ -13,3 +13,11 @@ edges:
   refs:
   - bible:Genesis 41:50
   - bible:Genesis 46:20
+- target: person/jacob
+  type: child-of
+  refs:
+  - bible:Genesis 48:5
+- target: person/makir
+  type: parent-of
+  refs:
+  - bible:Genesis 50:23

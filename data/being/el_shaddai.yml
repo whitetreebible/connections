@@ -1,4 +1,4 @@
-id: el-shaddai
+id: el_shaddai
 type: being
 name:
   en: El Shaddai
@@ -12,3 +12,11 @@ edges:
   type: name-matches
   refs:
   - bible:Genesis 17:1
+- target: person/jacob
+  type: visited
+  refs:
+  - bible:Genesis 48:3
+- target: person/jacob
+  type: blessed
+  refs:
+  - bible:Genesis 48:3

@@ -41,7 +41,12 @@ edges:
   type: buried-in
   refs:
   - bible:Genesis 35:19
+  - bible:Genesis 48:7
 - target: person/benjamin
   type: parent-of
   refs:
   - bible:Genesis 35:18
+- target: place/canaan
+  type: died-in
+  refs:
+  - bible:Genesis 48:7

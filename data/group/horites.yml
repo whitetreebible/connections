@@ -8,7 +8,7 @@ description:
   en: ''
 footnotes: {}
 edges:
-- target: perosn/lotan
+- target: person/lotan
   type: led-by
   refs:
   - bible:Genesis 36:29

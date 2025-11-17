@@ -1,0 +1,10 @@
+id: bow
+type: object
+name:
+  en: bow
+name_disambiguous:
+  en: bow (weapon, shooty kind)
+description:
+  en: ''
+footnotes: {}
+edges: []
